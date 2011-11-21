@@ -4,7 +4,9 @@ import java.util.List;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.xtext.common.types.JvmGenericType;
 import org.eclipse.xtext.common.types.JvmType;
+import org.eclipse.xtext.common.types.TypesFactory;
 import org.eclipse.xtext.generator.IFileSystemAccess;
 import org.eclipse.xtext.generator.IGenerator;
 import org.eclipse.xtext.xbase.compiler.ImportManager;
@@ -33,7 +35,8 @@ public class HelloJvmTypesGenerator implements IGenerator {
   
   public StringConcatenation compile(final Greeting greeting) {
     StringConcatenation _builder = new StringConcatenation();
-    ImportManager _importManager = new ImportManager(true);
+    JvmGenericType _createJvmType = this.createJvmType(greeting);
+    ImportManager _importManager = new ImportManager(true, _createJvmType);
     final ImportManager importManager = _importManager;
     _builder.newLineIfNotEmpty();
     StringConcatenation _compile = this.compile(greeting, importManager);
@@ -65,6 +68,20 @@ public class HelloJvmTypesGenerator implements IGenerator {
     _builder.append(mainMethod, "");
     _builder.newLineIfNotEmpty();
     return _builder;
+  }
+  
+  public JvmGenericType createJvmType(final Greeting greeting) {
+    JvmGenericType _xblockexpression = null;
+    {
+      JvmGenericType _createJvmGenericType = TypesFactory.eINSTANCE.createJvmGenericType();
+      final JvmGenericType declaredType = _createJvmGenericType;
+      String _className = this.className(greeting);
+      declaredType.setSimpleName(_className);
+      String _packageName = this.packageName(greeting);
+      declaredType.setPackageName(_packageName);
+      _xblockexpression = (declaredType);
+    }
+    return _xblockexpression;
   }
   
   public StringConcatenation compile(final Greeting greeting, final ImportManager importManager) {

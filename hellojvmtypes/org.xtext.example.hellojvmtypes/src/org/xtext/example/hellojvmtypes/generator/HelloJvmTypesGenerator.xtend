@@ -10,6 +10,7 @@ import org.xtext.example.hellojvmtypes.helloJvmTypes.Greeting
 
 import static extension org.eclipse.xtext.xtend2.lib.ResourceExtensions.*
 import org.eclipse.xtext.xbase.compiler.ImportManager
+import org.eclipse.xtext.common.types.TypesFactory
 
 class HelloJvmTypesGenerator implements IGenerator {
 	
@@ -23,7 +24,7 @@ class HelloJvmTypesGenerator implements IGenerator {
 	}
 	
 	def compile(Greeting greeting) '''
-	«val importManager = new ImportManager(true)»
+	«val importManager = new ImportManager(true, createJvmType(greeting))»
 	«val mainMethod = compile(greeting, importManager)»
 	package «greeting.packageName»;
 	«IF !importManager.imports.empty»
@@ -36,6 +37,13 @@ class HelloJvmTypesGenerator implements IGenerator {
 	«mainMethod»
 	'''
 
+	def createJvmType(Greeting greeting) {
+	    val declaredType = TypesFactory::eINSTANCE.createJvmGenericType
+	    declaredType.setSimpleName(greeting.className)
+	    declaredType.setPackageName(greeting.packageName)
+	    declaredType
+	}
+	
 	def compile(Greeting greeting, ImportManager importManager) '''
 	public class «greeting.className» {
 		public static void main(String args[]) {
