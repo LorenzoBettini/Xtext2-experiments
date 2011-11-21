@@ -12,6 +12,8 @@ import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
+import org.eclipse.xtext.common.types.TypesPackage;
+
 import org.xtext.example.hellojvmtypes.helloJvmTypes.Greeting;
 import org.xtext.example.hellojvmtypes.helloJvmTypes.HelloJvmTypesFactory;
 import org.xtext.example.hellojvmtypes.helloJvmTypes.HelloJvmTypesPackage;
@@ -87,6 +89,9 @@ public class HelloJvmTypesPackageImpl extends EPackageImpl implements HelloJvmTy
 
     isInited = true;
 
+    // Initialize simple dependencies
+    TypesPackage.eINSTANCE.eClass();
+
     // Create package meta-data objects
     theHelloJvmTypesPackage.createPackageContents();
 
@@ -147,6 +152,16 @@ public class HelloJvmTypesPackageImpl extends EPackageImpl implements HelloJvmTy
    * <!-- end-user-doc -->
    * @generated
    */
+  public EReference getGreeting_JavaTypes()
+  {
+    return (EReference)greetingEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public HelloJvmTypesFactory getHelloJvmTypesFactory()
   {
     return (HelloJvmTypesFactory)getEFactoryInstance();
@@ -177,6 +192,7 @@ public class HelloJvmTypesPackageImpl extends EPackageImpl implements HelloJvmTy
 
     greetingEClass = createEClass(GREETING);
     createEAttribute(greetingEClass, GREETING__NAME);
+    createEReference(greetingEClass, GREETING__JAVA_TYPES);
   }
 
   /**
@@ -203,6 +219,9 @@ public class HelloJvmTypesPackageImpl extends EPackageImpl implements HelloJvmTy
     setNsPrefix(eNS_PREFIX);
     setNsURI(eNS_URI);
 
+    // Obtain other dependent packages
+    TypesPackage theTypesPackage = (TypesPackage)EPackage.Registry.INSTANCE.getEPackage(TypesPackage.eNS_URI);
+
     // Create type parameters
 
     // Set bounds for type parameters
@@ -215,6 +234,7 @@ public class HelloJvmTypesPackageImpl extends EPackageImpl implements HelloJvmTy
 
     initEClass(greetingEClass, Greeting.class, "Greeting", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getGreeting_Name(), ecorePackage.getEString(), "name", null, 0, 1, Greeting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getGreeting_JavaTypes(), theTypesPackage.getJvmType(), null, "javaTypes", null, 0, -1, Greeting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     // Create resource
     createResource(eNS_URI);

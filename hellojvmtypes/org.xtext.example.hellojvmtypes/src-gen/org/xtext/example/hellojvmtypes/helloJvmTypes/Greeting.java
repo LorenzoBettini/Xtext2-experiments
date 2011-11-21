@@ -5,7 +5,11 @@
  */
 package org.xtext.example.hellojvmtypes.helloJvmTypes;
 
+import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.xtext.common.types.JvmType;
 
 /**
  * <!-- begin-user-doc -->
@@ -16,6 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * <ul>
  *   <li>{@link org.xtext.example.hellojvmtypes.helloJvmTypes.Greeting#getName <em>Name</em>}</li>
+ *   <li>{@link org.xtext.example.hellojvmtypes.helloJvmTypes.Greeting#getJavaTypes <em>Java Types</em>}</li>
  * </ul>
  * </p>
  *
@@ -50,5 +55,21 @@ public interface Greeting extends EObject
    * @generated
    */
   void setName(String value);
+
+  /**
+   * Returns the value of the '<em><b>Java Types</b></em>' reference list.
+   * The list contents are of type {@link org.eclipse.xtext.common.types.JvmType}.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Java Types</em>' reference list isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Java Types</em>' reference list.
+   * @see org.xtext.example.hellojvmtypes.helloJvmTypes.HelloJvmTypesPackage#getGreeting_JavaTypes()
+   * @model
+   * @generated
+   */
+  EList<JvmType> getJavaTypes();
 
 } // Greeting

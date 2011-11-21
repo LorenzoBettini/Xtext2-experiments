@@ -14,8 +14,11 @@ import java.util.ArrayList;
 public class InternalHelloJvmTypesLexer extends Lexer {
     public static final int RULE_ID=4;
     public static final int RULE_STRING=6;
+    public static final int T__15=15;
     public static final int T__12=12;
     public static final int T__11=11;
+    public static final int T__14=14;
+    public static final int T__13=13;
     public static final int RULE_ANY_OTHER=10;
     public static final int RULE_INT=5;
     public static final int RULE_WS=9;
@@ -62,10 +65,11 @@ public class InternalHelloJvmTypesLexer extends Lexer {
         try {
             int _type = T__12;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:12:7: ( '!' )
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:12:9: '!'
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:12:7: ( 'from' )
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:12:9: 'from'
             {
-            match('!'); 
+            match("from"); 
+
 
             }
 
@@ -77,15 +81,75 @@ public class InternalHelloJvmTypesLexer extends Lexer {
     }
     // $ANTLR end "T__12"
 
+    // $ANTLR start "T__13"
+    public final void mT__13() throws RecognitionException {
+        try {
+            int _type = T__13;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:13:7: ( '!' )
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:13:9: '!'
+            {
+            match('!'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__13"
+
+    // $ANTLR start "T__14"
+    public final void mT__14() throws RecognitionException {
+        try {
+            int _type = T__14;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:14:7: ( ',' )
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:14:9: ','
+            {
+            match(','); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__14"
+
+    // $ANTLR start "T__15"
+    public final void mT__15() throws RecognitionException {
+        try {
+            int _type = T__15;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:15:7: ( '.' )
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:15:9: '.'
+            {
+            match('.'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end "T__15"
+
     // $ANTLR start "RULE_ID"
     public final void mRULE_ID() throws RecognitionException {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:246:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:246:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:594:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:594:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:246:11: ( '^' )?
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:594:11: ( '^' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -94,7 +158,7 @@ public class InternalHelloJvmTypesLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:246:11: '^'
+                    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:594:11: '^'
                     {
                     match('^'); 
 
@@ -112,7 +176,7 @@ public class InternalHelloJvmTypesLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:246:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:594:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop2:
             do {
                 int alt2=2;
@@ -161,10 +225,10 @@ public class InternalHelloJvmTypesLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:248:10: ( ( '0' .. '9' )+ )
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:248:12: ( '0' .. '9' )+
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:596:10: ( ( '0' .. '9' )+ )
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:596:12: ( '0' .. '9' )+
             {
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:248:12: ( '0' .. '9' )+
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:596:12: ( '0' .. '9' )+
             int cnt3=0;
             loop3:
             do {
@@ -178,7 +242,7 @@ public class InternalHelloJvmTypesLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:248:13: '0' .. '9'
+            	    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:596:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -210,10 +274,10 @@ public class InternalHelloJvmTypesLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:250:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:250:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:598:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:598:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:250:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:598:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -231,10 +295,10 @@ public class InternalHelloJvmTypesLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:250:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:598:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:250:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:598:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop4:
                     do {
                         int alt4=3;
@@ -250,7 +314,7 @@ public class InternalHelloJvmTypesLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:250:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:598:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -266,7 +330,7 @@ public class InternalHelloJvmTypesLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:250:66: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:598:66: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -291,10 +355,10 @@ public class InternalHelloJvmTypesLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:250:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:598:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:250:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:598:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -310,7 +374,7 @@ public class InternalHelloJvmTypesLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:250:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:598:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -326,7 +390,7 @@ public class InternalHelloJvmTypesLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:250:137: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:598:137: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -369,12 +433,12 @@ public class InternalHelloJvmTypesLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:252:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:252:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:600:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:600:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:252:24: ( options {greedy=false; } : . )*
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:600:24: ( options {greedy=false; } : . )*
             loop7:
             do {
                 int alt7=2;
@@ -399,7 +463,7 @@ public class InternalHelloJvmTypesLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:252:52: .
+            	    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:600:52: .
             	    {
             	    matchAny(); 
 
@@ -429,12 +493,12 @@ public class InternalHelloJvmTypesLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:254:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:254:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:602:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:602:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:254:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:602:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop8:
             do {
                 int alt8=2;
@@ -447,7 +511,7 @@ public class InternalHelloJvmTypesLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:254:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:602:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -467,7 +531,7 @@ public class InternalHelloJvmTypesLexer extends Lexer {
                 }
             } while (true);
 
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:254:40: ( ( '\\r' )? '\\n' )?
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:602:40: ( ( '\\r' )? '\\n' )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -476,9 +540,9 @@ public class InternalHelloJvmTypesLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:254:41: ( '\\r' )? '\\n'
+                    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:602:41: ( '\\r' )? '\\n'
                     {
-                    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:254:41: ( '\\r' )?
+                    // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:602:41: ( '\\r' )?
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -487,7 +551,7 @@ public class InternalHelloJvmTypesLexer extends Lexer {
                     }
                     switch (alt9) {
                         case 1 :
-                            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:254:41: '\\r'
+                            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:602:41: '\\r'
                             {
                             match('\r'); 
 
@@ -519,10 +583,10 @@ public class InternalHelloJvmTypesLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:256:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:256:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:604:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:604:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:256:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:604:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt11=0;
             loop11:
             do {
@@ -576,8 +640,8 @@ public class InternalHelloJvmTypesLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:258:16: ( . )
-            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:258:18: .
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:606:16: ( . )
+            // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:606:18: .
             {
             matchAny(); 
 
@@ -592,8 +656,8 @@ public class InternalHelloJvmTypesLexer extends Lexer {
     // $ANTLR end "RULE_ANY_OTHER"
 
     public void mTokens() throws RecognitionException {
-        // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:1:8: ( T__11 | T__12 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
-        int alt12=9;
+        // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:1:8: ( T__11 | T__12 | T__13 | T__14 | T__15 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
+        int alt12=12;
         alt12 = dfa12.predict(input);
         switch (alt12) {
             case 1 :
@@ -611,49 +675,70 @@ public class InternalHelloJvmTypesLexer extends Lexer {
                 }
                 break;
             case 3 :
-                // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:1:22: RULE_ID
+                // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:1:22: T__13
+                {
+                mT__13(); 
+
+                }
+                break;
+            case 4 :
+                // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:1:28: T__14
+                {
+                mT__14(); 
+
+                }
+                break;
+            case 5 :
+                // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:1:34: T__15
+                {
+                mT__15(); 
+
+                }
+                break;
+            case 6 :
+                // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:1:40: RULE_ID
                 {
                 mRULE_ID(); 
 
                 }
                 break;
-            case 4 :
-                // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:1:30: RULE_INT
+            case 7 :
+                // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:1:48: RULE_INT
                 {
                 mRULE_INT(); 
 
                 }
                 break;
-            case 5 :
-                // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:1:39: RULE_STRING
+            case 8 :
+                // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:1:57: RULE_STRING
                 {
                 mRULE_STRING(); 
 
                 }
                 break;
-            case 6 :
-                // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:1:51: RULE_ML_COMMENT
+            case 9 :
+                // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:1:69: RULE_ML_COMMENT
                 {
                 mRULE_ML_COMMENT(); 
 
                 }
                 break;
-            case 7 :
-                // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:1:67: RULE_SL_COMMENT
+            case 10 :
+                // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:1:85: RULE_SL_COMMENT
                 {
                 mRULE_SL_COMMENT(); 
 
                 }
                 break;
-            case 8 :
-                // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:1:83: RULE_WS
+            case 11 :
+                // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:1:101: RULE_WS
                 {
                 mRULE_WS(); 
 
                 }
                 break;
-            case 9 :
-                // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:1:91: RULE_ANY_OTHER
+            case 12 :
+                // ../org.xtext.example.hellojvmtypes.ui/src-gen/org/xtext/example/hellojvmtypes/ui/contentassist/antlr/internal/InternalHelloJvmTypes.g:1:109: RULE_ANY_OTHER
                 {
                 mRULE_ANY_OTHER(); 
 
@@ -667,45 +752,55 @@ public class InternalHelloJvmTypesLexer extends Lexer {
 
     protected DFA12 dfa12 = new DFA12(this);
     static final String DFA12_eotS =
-        "\1\uffff\1\14\1\uffff\1\12\2\uffff\3\12\2\uffff\1\14\7\uffff\2\14"+
-        "\1\26\1\uffff";
+        "\1\uffff\2\17\3\uffff\1\15\2\uffff\3\15\2\uffff\1\17\1\uffff\1\17"+
+        "\10\uffff\3\17\1\36\1\37\2\uffff";
     static final String DFA12_eofS =
-        "\27\uffff";
+        "\40\uffff";
     static final String DFA12_minS =
-        "\1\0\1\145\1\uffff\1\101\2\uffff\2\0\1\52\2\uffff\1\154\7\uffff"+
-        "\1\154\1\157\1\60\1\uffff";
+        "\1\0\1\145\1\162\3\uffff\1\101\2\uffff\2\0\1\52\2\uffff\1\154\1"+
+        "\uffff\1\157\10\uffff\1\154\1\155\1\157\2\60\2\uffff";
     static final String DFA12_maxS =
-        "\1\uffff\1\145\1\uffff\1\172\2\uffff\2\uffff\1\57\2\uffff\1\154"+
-        "\7\uffff\1\154\1\157\1\172\1\uffff";
+        "\1\uffff\1\145\1\162\3\uffff\1\172\2\uffff\2\uffff\1\57\2\uffff"+
+        "\1\154\1\uffff\1\157\10\uffff\1\154\1\155\1\157\2\172\2\uffff";
     static final String DFA12_acceptS =
-        "\2\uffff\1\2\1\uffff\1\3\1\4\3\uffff\1\10\1\11\1\uffff\1\3\1\2\1"+
-        "\4\1\5\1\6\1\7\1\10\3\uffff\1\1";
+        "\3\uffff\1\3\1\4\1\5\1\uffff\1\6\1\7\3\uffff\1\13\1\14\1\uffff\1"+
+        "\6\1\uffff\1\3\1\4\1\5\1\7\1\10\1\11\1\12\1\13\5\uffff\1\2\1\1";
     static final String DFA12_specialS =
-        "\1\0\5\uffff\1\2\1\1\17\uffff}>";
+        "\1\1\10\uffff\1\2\1\0\25\uffff}>";
     static final String[] DFA12_transitionS = {
-            "\11\12\2\11\2\12\1\11\22\12\1\11\1\2\1\6\4\12\1\7\7\12\1\10"+
-            "\12\5\7\12\7\4\1\1\22\4\3\12\1\3\1\4\1\12\32\4\uff85\12",
-            "\1\13",
-            "",
-            "\32\14\4\uffff\1\14\1\uffff\32\14",
-            "",
-            "",
-            "\0\17",
-            "\0\17",
-            "\1\20\4\uffff\1\21",
-            "",
-            "",
-            "\1\23",
+            "\11\15\2\14\2\15\1\14\22\15\1\14\1\3\1\11\4\15\1\12\4\15\1\4"+
+            "\1\15\1\5\1\13\12\10\7\15\7\7\1\1\22\7\3\15\1\6\1\7\1\15\5\7"+
+            "\1\2\24\7\uff85\15",
+            "\1\16",
+            "\1\20",
             "",
             "",
             "",
+            "\32\17\4\uffff\1\17\1\uffff\32\17",
+            "",
+            "",
+            "\0\25",
+            "\0\25",
+            "\1\26\4\uffff\1\27",
+            "",
+            "",
+            "\1\31",
+            "",
+            "\1\32",
             "",
             "",
             "",
             "",
-            "\1\24",
-            "\1\25",
-            "\12\14\7\uffff\32\14\4\uffff\1\14\1\uffff\32\14",
+            "",
+            "",
+            "",
+            "",
+            "\1\33",
+            "\1\34",
+            "\1\35",
+            "\12\17\7\uffff\32\17\4\uffff\1\17\1\uffff\32\17",
+            "\12\17\7\uffff\32\17\4\uffff\1\17\1\uffff\32\17",
+            "",
             ""
     };
 
@@ -739,55 +834,61 @@ public class InternalHelloJvmTypesLexer extends Lexer {
             this.transition = DFA12_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( T__11 | T__12 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
+            return "1:1: Tokens : ( T__11 | T__12 | T__13 | T__14 | T__15 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             IntStream input = _input;
         	int _s = s;
             switch ( s ) {
                     case 0 : 
+                        int LA12_10 = input.LA(1);
+
+                        s = -1;
+                        if ( ((LA12_10>='\u0000' && LA12_10<='\uFFFF')) ) {s = 21;}
+
+                        else s = 13;
+
+                        if ( s>=0 ) return s;
+                        break;
+                    case 1 : 
                         int LA12_0 = input.LA(1);
 
                         s = -1;
                         if ( (LA12_0=='H') ) {s = 1;}
 
-                        else if ( (LA12_0=='!') ) {s = 2;}
+                        else if ( (LA12_0=='f') ) {s = 2;}
 
-                        else if ( (LA12_0=='^') ) {s = 3;}
+                        else if ( (LA12_0=='!') ) {s = 3;}
 
-                        else if ( ((LA12_0>='A' && LA12_0<='G')||(LA12_0>='I' && LA12_0<='Z')||LA12_0=='_'||(LA12_0>='a' && LA12_0<='z')) ) {s = 4;}
+                        else if ( (LA12_0==',') ) {s = 4;}
 
-                        else if ( ((LA12_0>='0' && LA12_0<='9')) ) {s = 5;}
+                        else if ( (LA12_0=='.') ) {s = 5;}
 
-                        else if ( (LA12_0=='\"') ) {s = 6;}
+                        else if ( (LA12_0=='^') ) {s = 6;}
 
-                        else if ( (LA12_0=='\'') ) {s = 7;}
+                        else if ( ((LA12_0>='A' && LA12_0<='G')||(LA12_0>='I' && LA12_0<='Z')||LA12_0=='_'||(LA12_0>='a' && LA12_0<='e')||(LA12_0>='g' && LA12_0<='z')) ) {s = 7;}
 
-                        else if ( (LA12_0=='/') ) {s = 8;}
+                        else if ( ((LA12_0>='0' && LA12_0<='9')) ) {s = 8;}
 
-                        else if ( ((LA12_0>='\t' && LA12_0<='\n')||LA12_0=='\r'||LA12_0==' ') ) {s = 9;}
+                        else if ( (LA12_0=='\"') ) {s = 9;}
 
-                        else if ( ((LA12_0>='\u0000' && LA12_0<='\b')||(LA12_0>='\u000B' && LA12_0<='\f')||(LA12_0>='\u000E' && LA12_0<='\u001F')||(LA12_0>='#' && LA12_0<='&')||(LA12_0>='(' && LA12_0<='.')||(LA12_0>=':' && LA12_0<='@')||(LA12_0>='[' && LA12_0<=']')||LA12_0=='`'||(LA12_0>='{' && LA12_0<='\uFFFF')) ) {s = 10;}
+                        else if ( (LA12_0=='\'') ) {s = 10;}
 
-                        if ( s>=0 ) return s;
-                        break;
-                    case 1 : 
-                        int LA12_7 = input.LA(1);
+                        else if ( (LA12_0=='/') ) {s = 11;}
 
-                        s = -1;
-                        if ( ((LA12_7>='\u0000' && LA12_7<='\uFFFF')) ) {s = 15;}
+                        else if ( ((LA12_0>='\t' && LA12_0<='\n')||LA12_0=='\r'||LA12_0==' ') ) {s = 12;}
 
-                        else s = 10;
+                        else if ( ((LA12_0>='\u0000' && LA12_0<='\b')||(LA12_0>='\u000B' && LA12_0<='\f')||(LA12_0>='\u000E' && LA12_0<='\u001F')||(LA12_0>='#' && LA12_0<='&')||(LA12_0>='(' && LA12_0<='+')||LA12_0=='-'||(LA12_0>=':' && LA12_0<='@')||(LA12_0>='[' && LA12_0<=']')||LA12_0=='`'||(LA12_0>='{' && LA12_0<='\uFFFF')) ) {s = 13;}
 
                         if ( s>=0 ) return s;
                         break;
                     case 2 : 
-                        int LA12_6 = input.LA(1);
+                        int LA12_9 = input.LA(1);
 
                         s = -1;
-                        if ( ((LA12_6>='\u0000' && LA12_6<='\uFFFF')) ) {s = 15;}
+                        if ( ((LA12_9>='\u0000' && LA12_9<='\uFFFF')) ) {s = 21;}
 
-                        else s = 10;
+                        else s = 13;
 
                         if ( s>=0 ) return s;
                         break;

@@ -1,9 +1,16 @@
 grammar org.xtext.example.hellojvmtypes.HelloJvmTypes with org.eclipse.xtext.common.Terminals
 
+import "http://www.eclipse.org/xtext/common/JavaVMTypes" as jvmTypes 
+
 generate helloJvmTypes "http://www.xtext.org/example/hellojvmtypes/HelloJvmTypes"
 
 Model:
 	greetings+=Greeting*;
 	
 Greeting:
-	'Hello' name=ID '!';
+    'Hello' name=ID 'from' 
+    javaTypes+=[jvmTypes::JvmType|QualifiedName]
+    (',' javaTypes+=[jvmTypes::JvmType|QualifiedName])* '!'
+;
+
+QualifiedName: ID ('.' ID)* ;

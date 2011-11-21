@@ -38,8 +38,13 @@ public class HelloJvmTypesParser extends AbstractContentAssistParser {
 				private static final long serialVersionUID = 1L;
 				{
 					put(grammarAccess.getGreetingAccess().getGroup(), "rule__Greeting__Group__0");
+					put(grammarAccess.getGreetingAccess().getGroup_4(), "rule__Greeting__Group_4__0");
+					put(grammarAccess.getQualifiedNameAccess().getGroup(), "rule__QualifiedName__Group__0");
+					put(grammarAccess.getQualifiedNameAccess().getGroup_1(), "rule__QualifiedName__Group_1__0");
 					put(grammarAccess.getModelAccess().getGreetingsAssignment(), "rule__Model__GreetingsAssignment");
 					put(grammarAccess.getGreetingAccess().getNameAssignment_1(), "rule__Greeting__NameAssignment_1");
+					put(grammarAccess.getGreetingAccess().getJavaTypesAssignment_3(), "rule__Greeting__JavaTypesAssignment_3");
+					put(grammarAccess.getGreetingAccess().getJavaTypesAssignment_4_1(), "rule__Greeting__JavaTypesAssignment_4_1");
 				}
 			};
 		}

@@ -39,13 +39,24 @@ public class HelloJvmTypesGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cHelloKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
-		private final Keyword cExclamationMarkKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final Keyword cFromKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final Assignment cJavaTypesAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final CrossReference cJavaTypesJvmTypeCrossReference_3_0 = (CrossReference)cJavaTypesAssignment_3.eContents().get(0);
+		private final RuleCall cJavaTypesJvmTypeQualifiedNameParserRuleCall_3_0_1 = (RuleCall)cJavaTypesJvmTypeCrossReference_3_0.eContents().get(1);
+		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
+		private final Keyword cCommaKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
+		private final Assignment cJavaTypesAssignment_4_1 = (Assignment)cGroup_4.eContents().get(1);
+		private final CrossReference cJavaTypesJvmTypeCrossReference_4_1_0 = (CrossReference)cJavaTypesAssignment_4_1.eContents().get(0);
+		private final RuleCall cJavaTypesJvmTypeQualifiedNameParserRuleCall_4_1_0_1 = (RuleCall)cJavaTypesJvmTypeCrossReference_4_1_0.eContents().get(1);
+		private final Keyword cExclamationMarkKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		
 		//Greeting:
-		//	"Hello" name=ID "!";
+		//	"Hello" name=ID "from" javaTypes+=[jvmTypes::JvmType|QualifiedName] (","
+		//	javaTypes+=[jvmTypes::JvmType|QualifiedName])* "!";
 		public ParserRule getRule() { return rule; }
 
-		//"Hello" name=ID "!"
+		//"Hello" name=ID "from" javaTypes+=[jvmTypes::JvmType|QualifiedName] ("," javaTypes+=[jvmTypes::JvmType|QualifiedName])*
+		//"!"
 		public Group getGroup() { return cGroup; }
 
 		//"Hello"
@@ -57,13 +68,69 @@ public class HelloJvmTypesGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
 
+		//"from"
+		public Keyword getFromKeyword_2() { return cFromKeyword_2; }
+
+		//javaTypes+=[jvmTypes::JvmType|QualifiedName]
+		public Assignment getJavaTypesAssignment_3() { return cJavaTypesAssignment_3; }
+
+		//[jvmTypes::JvmType|QualifiedName]
+		public CrossReference getJavaTypesJvmTypeCrossReference_3_0() { return cJavaTypesJvmTypeCrossReference_3_0; }
+
+		//QualifiedName
+		public RuleCall getJavaTypesJvmTypeQualifiedNameParserRuleCall_3_0_1() { return cJavaTypesJvmTypeQualifiedNameParserRuleCall_3_0_1; }
+
+		//("," javaTypes+=[jvmTypes::JvmType|QualifiedName])*
+		public Group getGroup_4() { return cGroup_4; }
+
+		//","
+		public Keyword getCommaKeyword_4_0() { return cCommaKeyword_4_0; }
+
+		//javaTypes+=[jvmTypes::JvmType|QualifiedName]
+		public Assignment getJavaTypesAssignment_4_1() { return cJavaTypesAssignment_4_1; }
+
+		//[jvmTypes::JvmType|QualifiedName]
+		public CrossReference getJavaTypesJvmTypeCrossReference_4_1_0() { return cJavaTypesJvmTypeCrossReference_4_1_0; }
+
+		//QualifiedName
+		public RuleCall getJavaTypesJvmTypeQualifiedNameParserRuleCall_4_1_0_1() { return cJavaTypesJvmTypeQualifiedNameParserRuleCall_4_1_0_1; }
+
 		//"!"
-		public Keyword getExclamationMarkKeyword_2() { return cExclamationMarkKeyword_2; }
+		public Keyword getExclamationMarkKeyword_5() { return cExclamationMarkKeyword_5; }
+	}
+
+	public class QualifiedNameElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "QualifiedName");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
+		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
+		private final Keyword cFullStopKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
+		private final RuleCall cIDTerminalRuleCall_1_1 = (RuleCall)cGroup_1.eContents().get(1);
+		
+		//QualifiedName:
+		//	ID ("." ID)*;
+		public ParserRule getRule() { return rule; }
+
+		//ID ("." ID)*
+		public Group getGroup() { return cGroup; }
+
+		//ID
+		public RuleCall getIDTerminalRuleCall_0() { return cIDTerminalRuleCall_0; }
+
+		//("." ID)*
+		public Group getGroup_1() { return cGroup_1; }
+
+		//"."
+		public Keyword getFullStopKeyword_1_0() { return cFullStopKeyword_1_0; }
+
+		//ID
+		public RuleCall getIDTerminalRuleCall_1_1() { return cIDTerminalRuleCall_1_1; }
 	}
 	
 	
 	private ModelElements pModel;
 	private GreetingElements pGreeting;
+	private QualifiedNameElements pQualifiedName;
 	
 	private final GrammarProvider grammarProvider;
 
@@ -97,13 +164,24 @@ public class HelloJvmTypesGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Greeting:
-	//	"Hello" name=ID "!";
+	//	"Hello" name=ID "from" javaTypes+=[jvmTypes::JvmType|QualifiedName] (","
+	//	javaTypes+=[jvmTypes::JvmType|QualifiedName])* "!";
 	public GreetingElements getGreetingAccess() {
 		return (pGreeting != null) ? pGreeting : (pGreeting = new GreetingElements());
 	}
 	
 	public ParserRule getGreetingRule() {
 		return getGreetingAccess().getRule();
+	}
+
+	//QualifiedName:
+	//	ID ("." ID)*;
+	public QualifiedNameElements getQualifiedNameAccess() {
+		return (pQualifiedName != null) ? pQualifiedName : (pQualifiedName = new QualifiedNameElements());
+	}
+	
+	public ParserRule getQualifiedNameRule() {
+		return getQualifiedNameAccess().getRule();
 	}
 
 	//terminal ID:

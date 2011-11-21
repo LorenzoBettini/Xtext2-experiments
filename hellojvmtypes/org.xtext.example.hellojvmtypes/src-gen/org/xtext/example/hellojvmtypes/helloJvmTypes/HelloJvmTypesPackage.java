@@ -107,13 +107,22 @@ public interface HelloJvmTypesPackage extends EPackage
   int GREETING__NAME = 0;
 
   /**
+   * The feature id for the '<em><b>Java Types</b></em>' reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int GREETING__JAVA_TYPES = 1;
+
+  /**
    * The number of structural features of the '<em>Greeting</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int GREETING_FEATURE_COUNT = 1;
+  int GREETING_FEATURE_COUNT = 2;
 
 
   /**
@@ -157,6 +166,17 @@ public interface HelloJvmTypesPackage extends EPackage
    * @generated
    */
   EAttribute getGreeting_Name();
+
+  /**
+   * Returns the meta object for the reference list '{@link org.xtext.example.hellojvmtypes.helloJvmTypes.Greeting#getJavaTypes <em>Java Types</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the reference list '<em>Java Types</em>'.
+   * @see org.xtext.example.hellojvmtypes.helloJvmTypes.Greeting#getJavaTypes()
+   * @see #getGreeting()
+   * @generated
+   */
+  EReference getGreeting_JavaTypes();
 
   /**
    * Returns the factory that creates the instances of the model.
@@ -216,6 +236,14 @@ public interface HelloJvmTypesPackage extends EPackage
      * @generated
      */
     EAttribute GREETING__NAME = eINSTANCE.getGreeting_Name();
+
+    /**
+     * The meta object literal for the '<em><b>Java Types</b></em>' reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference GREETING__JAVA_TYPES = eINSTANCE.getGreeting_JavaTypes();
 
   }
 
