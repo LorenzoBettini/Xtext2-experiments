@@ -12,7 +12,27 @@ Require-Bundle: org.eclipse.xtext;bundle-version="2.1.0";visibility:=reexport,
  org.eclipse.xtext.generator;resolution:=optional,
  org.eclipse.emf.codegen.ecore;resolution:=optional,
  org.eclipse.emf.mwe.utils;resolution:=optional,
- org.eclipse.emf.mwe2.launch;resolution:=optional
+ org.eclipse.emf.mwe2.launch;resolution:=optional,
+ org.eclipse.xtext.util,
+ org.eclipse.emf.ecore,
+ org.eclipse.emf.common,
+ org.antlr.runtime,
+ org.eclipse.xtext.common.types
 Import-Package: org.apache.log4j,
- org.apache.commons.logging
+ org.apache.commons.logging,
+ org.eclipse.xtext.xbase.lib,
+ org.eclipse.xtext.xtend2.lib
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: org.xtext.example.hellojvmtypes,
+ org.xtext.example.hellojvmtypes.services,
+ org.xtext.example.hellojvmtypes.helloJvmTypes,
+ org.xtext.example.hellojvmtypes.helloJvmTypes.impl,
+ org.xtext.example.hellojvmtypes.helloJvmTypes.util,
+ org.xtext.example.hellojvmtypes.serializer,
+ org.xtext.example.hellojvmtypes.parser.antlr,
+ org.xtext.example.hellojvmtypes.parser.antlr.internal,
+ org.xtext.example.hellojvmtypes.validation,
+ org.xtext.example.hellojvmtypes.scoping,
+ org.xtext.example.hellojvmtypes.generator,
+ org.xtext.example.hellojvmtypes.formatting
+
