@@ -6,10 +6,52 @@ package org.xtext.example.hellojvmtypes.generator
 import org.eclipse.emf.ecore.resource.Resource
 import org.eclipse.xtext.generator.IGenerator
 import org.eclipse.xtext.generator.IFileSystemAccess
+import org.xtext.example.hellojvmtypes.helloJvmTypes.Greeting
+
+import static extension org.eclipse.xtext.xtend2.lib.ResourceExtensions.*
+import org.eclipse.xtext.xbase.compiler.ImportManager
 
 class HelloJvmTypesGenerator implements IGenerator {
 	
 	override void doGenerate(Resource resource, IFileSystemAccess fsa) {
-		//TODO implement me
+		for(greeting: resource.allContentsIterable.filter(typeof(Greeting))) {
+			fsa.generateFile(
+				greeting.packageName + "/" + // package
+				greeting.className + ".java", // class name
+				greeting.compile)
+		}
+	}
+	
+	def compile(Greeting greeting) '''
+	«val importManager = new ImportManager(true)»
+	«val mainMethod = compile(greeting, importManager)»
+	package «greeting.packageName»;
+	«IF !importManager.imports.empty»
+	
+	«FOR i : importManager.imports»
+		import «i»;
+	«ENDFOR»
+	«ENDIF»
+	
+	«mainMethod»
+	'''
+
+	def compile(Greeting greeting, ImportManager importManager) '''
+	public class «greeting.className» {
+		public static void main(String args[]) {
+			«FOR javaType : greeting.javaTypes»
+			System.out.println("Hello «greeting.name» from " +
+				«importManager.serialize(javaType)».class.getName());
+			«ENDFOR»
+		}
+	}
+	'''
+	
+	def className(Greeting greeting) {
+		greeting.name.toFirstUpper
+	}
+	
+	def packageName(Greeting greeting) {
+		greeting.name.toLowerCase
 	}
 }
