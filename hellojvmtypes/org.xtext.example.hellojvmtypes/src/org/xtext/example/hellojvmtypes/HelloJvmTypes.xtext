@@ -1,0 +1,9 @@
+grammar org.xtext.example.hellojvmtypes.HelloJvmTypes with org.eclipse.xtext.common.Terminals
+
+generate helloJvmTypes "http://www.xtext.org/example/hellojvmtypes/HelloJvmTypes"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
