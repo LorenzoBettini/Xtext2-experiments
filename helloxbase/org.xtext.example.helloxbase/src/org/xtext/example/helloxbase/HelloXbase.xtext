@@ -1,0 +1,16 @@
+grammar org.xtext.example.helloxbase.HelloXbase with org.eclipse.xtext.common.Terminals
+
+import "http://www.eclipse.org/xtext/common/JavaVMTypes" as jvmTypes 
+
+generate helloXbase "http://www.xtext.org/example/helloxbase/HelloXbase"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID 'from' javaType=[jvmTypes::JvmType|QualifiedName] '!'
+	;
+
+QualifiedName:
+  ID ('.' ID)*
+;
