@@ -8,7 +8,10 @@ import org.eclipse.xtext.common.types.JvmGenericType;
 import org.eclipse.xtext.common.types.TypesFactory;
 import org.eclipse.xtext.generator.IFileSystemAccess;
 import org.eclipse.xtext.generator.IGenerator;
+import org.eclipse.xtext.xbase.XExpression;
 import org.eclipse.xtext.xbase.compiler.ImportManager;
+import org.eclipse.xtext.xbase.compiler.StringBuilderBasedAppendable;
+import org.eclipse.xtext.xbase.compiler.XbaseCompiler;
 import org.eclipse.xtext.xbase.lib.BooleanExtensions;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
 import org.eclipse.xtext.xbase.lib.StringExtensions;
@@ -21,6 +24,9 @@ import org.xtext.example.helloxbase.helloXbase.Greeting;
 public class HelloXbaseGenerator implements IGenerator {
   @Inject
   private HelloXbaseExtensions _helloXbaseExtensions;
+  
+  @Inject
+  protected XbaseCompiler xbaseCompiler;
   
   public void doGenerate(final Resource resource, final IFileSystemAccess fsa) {
     Iterable<EObject> _allContentsIterable = ResourceExtensions.allContentsIterable(resource);
@@ -89,6 +95,10 @@ public class HelloXbaseGenerator implements IGenerator {
   
   public StringConcatenation compile(final Greeting greeting, final ImportManager importManager) {
     StringConcatenation _builder = new StringConcatenation();
+    XExpression _expressions = greeting.getExpressions();
+    StringBuilderBasedAppendable _compile = this.compile(_expressions, importManager);
+    final StringBuilderBasedAppendable builder = _compile;
+    _builder.newLineIfNotEmpty();
     _builder.append("public class ");
     String _className = this._helloXbaseExtensions.className(greeting);
     _builder.append(_className, "");
@@ -97,17 +107,43 @@ public class HelloXbaseGenerator implements IGenerator {
     _builder.append("    ");
     _builder.append("public static void main(String args[]) {");
     _builder.newLine();
+    _builder.append("    \t");
+    _builder.append(builder, "    	");
+    _builder.newLineIfNotEmpty();
+    _builder.newLine();
+    _builder.append("    \t");
+    _builder.append("Object expression = ");
+    XExpression _expressions_1 = greeting.getExpressions();
+    String _name = builder.getName(_expressions_1);
+    _builder.append(_name, "    	");
+    _builder.append(";");
+    _builder.newLineIfNotEmpty();
     _builder.append("        ");
     _builder.append("System.out.println(\"Hello ");
-    String _name = greeting.getName();
-    _builder.append(_name, "        ");
-    _builder.append(" \");");
+    String _name_1 = greeting.getName();
+    _builder.append(_name_1, "        ");
+    _builder.append(" from \" +");
     _builder.newLineIfNotEmpty();
+    _builder.append("        \t");
+    _builder.append("expression.toString());");
+    _builder.newLine();
     _builder.append("    ");
     _builder.append("}");
     _builder.newLine();
     _builder.append("}");
     _builder.newLine();
     return _builder;
+  }
+  
+  public StringBuilderBasedAppendable compile(final XExpression xExpression, final ImportManager importManager) {
+    StringBuilderBasedAppendable _xblockexpression = null;
+    {
+      StringBuilderBasedAppendable _stringBuilderBasedAppendable = new StringBuilderBasedAppendable(importManager);
+      final StringBuilderBasedAppendable result = _stringBuilderBasedAppendable;
+      result.declareVariable(xExpression, "expressionResult");
+      this.xbaseCompiler.toJavaStatement(xExpression, result, true);
+      _xblockexpression = (result);
+    }
+    return _xblockexpression;
   }
 }
