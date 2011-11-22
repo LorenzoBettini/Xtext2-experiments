@@ -17,7 +17,8 @@ Require-Bundle: org.eclipse.xtext;bundle-version="2.1.0";visibility:=reexport,
  org.eclipse.emf.ecore,
  org.eclipse.emf.common,
  org.antlr.runtime,
- org.eclipse.xtext.common.types
+ org.eclipse.xtext.common.types,
+ org.eclipse.xtext.xtend2.lib
 Import-Package: org.apache.log4j,
  org.apache.commons.logging,
  org.eclipse.xtext.xbase.lib,
@@ -34,5 +35,6 @@ Export-Package: org.xtext.example.helloxbase,
  org.xtext.example.helloxbase.validation,
  org.xtext.example.helloxbase.scoping,
  org.xtext.example.helloxbase.generator,
- org.xtext.example.helloxbase.formatting
+ org.xtext.example.helloxbase.formatting,
+ org.xtext.example.helloxbase.jvmmodel
 

@@ -1,16 +1,24 @@
-grammar org.xtext.example.helloxbase.HelloXbase with org.eclipse.xtext.common.Terminals
+grammar org.xtext.example.helloxbase.HelloXbase with 
+	org.eclipse.xtext.xbase.Xbase
 
 import "http://www.eclipse.org/xtext/common/JavaVMTypes" as jvmTypes 
 
 generate helloXbase "http://www.xtext.org/example/helloxbase/HelloXbase"
 
 Model:
+	imports += Import*
 	greetings+=Greeting*;
-	
-Greeting:
-	'Hello' name=ID 'from' javaType=[jvmTypes::JvmType|QualifiedName] '!'
-	;
 
-QualifiedName:
-  ID ('.' ID)*
+Import:
+  'import' importedNamespace = QualifiedNameWithWildcard
+;
+
+QualifiedNameWithWildcard:
+  QualifiedName '.*'?
+; 
+
+Greeting:
+    'Hello' name=ID 'from' 
+    javaTypes+=[jvmTypes::JvmType|QualifiedName]
+    (',' javaTypes+=[jvmTypes::JvmType|QualifiedName])* '!'
 ;
