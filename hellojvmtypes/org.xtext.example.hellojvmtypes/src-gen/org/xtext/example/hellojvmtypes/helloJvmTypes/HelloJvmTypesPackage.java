@@ -70,13 +70,22 @@ public interface HelloJvmTypesPackage extends EPackage
   int MODEL = 0;
 
   /**
+   * The feature id for the '<em><b>Imports</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MODEL__IMPORTS = 0;
+
+  /**
    * The feature id for the '<em><b>Greetings</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int MODEL__GREETINGS = 0;
+  int MODEL__GREETINGS = 1;
 
   /**
    * The number of structural features of the '<em>Model</em>' class.
@@ -85,7 +94,35 @@ public interface HelloJvmTypesPackage extends EPackage
    * @generated
    * @ordered
    */
-  int MODEL_FEATURE_COUNT = 1;
+  int MODEL_FEATURE_COUNT = 2;
+
+  /**
+   * The meta object id for the '{@link org.xtext.example.hellojvmtypes.helloJvmTypes.impl.ImportImpl <em>Import</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see org.xtext.example.hellojvmtypes.helloJvmTypes.impl.ImportImpl
+   * @see org.xtext.example.hellojvmtypes.helloJvmTypes.impl.HelloJvmTypesPackageImpl#getImport()
+   * @generated
+   */
+  int IMPORT = 1;
+
+  /**
+   * The feature id for the '<em><b>Imported Namespace</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int IMPORT__IMPORTED_NAMESPACE = 0;
+
+  /**
+   * The number of structural features of the '<em>Import</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int IMPORT_FEATURE_COUNT = 1;
 
   /**
    * The meta object id for the '{@link org.xtext.example.hellojvmtypes.helloJvmTypes.impl.GreetingImpl <em>Greeting</em>}' class.
@@ -95,7 +132,7 @@ public interface HelloJvmTypesPackage extends EPackage
    * @see org.xtext.example.hellojvmtypes.helloJvmTypes.impl.HelloJvmTypesPackageImpl#getGreeting()
    * @generated
    */
-  int GREETING = 1;
+  int GREETING = 2;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -136,6 +173,17 @@ public interface HelloJvmTypesPackage extends EPackage
   EClass getModel();
 
   /**
+   * Returns the meta object for the containment reference list '{@link org.xtext.example.hellojvmtypes.helloJvmTypes.Model#getImports <em>Imports</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Imports</em>'.
+   * @see org.xtext.example.hellojvmtypes.helloJvmTypes.Model#getImports()
+   * @see #getModel()
+   * @generated
+   */
+  EReference getModel_Imports();
+
+  /**
    * Returns the meta object for the containment reference list '{@link org.xtext.example.hellojvmtypes.helloJvmTypes.Model#getGreetings <em>Greetings</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -145,6 +193,27 @@ public interface HelloJvmTypesPackage extends EPackage
    * @generated
    */
   EReference getModel_Greetings();
+
+  /**
+   * Returns the meta object for class '{@link org.xtext.example.hellojvmtypes.helloJvmTypes.Import <em>Import</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Import</em>'.
+   * @see org.xtext.example.hellojvmtypes.helloJvmTypes.Import
+   * @generated
+   */
+  EClass getImport();
+
+  /**
+   * Returns the meta object for the attribute '{@link org.xtext.example.hellojvmtypes.helloJvmTypes.Import#getImportedNamespace <em>Imported Namespace</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Imported Namespace</em>'.
+   * @see org.xtext.example.hellojvmtypes.helloJvmTypes.Import#getImportedNamespace()
+   * @see #getImport()
+   * @generated
+   */
+  EAttribute getImport_ImportedNamespace();
 
   /**
    * Returns the meta object for class '{@link org.xtext.example.hellojvmtypes.helloJvmTypes.Greeting <em>Greeting</em>}'.
@@ -212,12 +281,38 @@ public interface HelloJvmTypesPackage extends EPackage
     EClass MODEL = eINSTANCE.getModel();
 
     /**
+     * The meta object literal for the '<em><b>Imports</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference MODEL__IMPORTS = eINSTANCE.getModel_Imports();
+
+    /**
      * The meta object literal for the '<em><b>Greetings</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
     EReference MODEL__GREETINGS = eINSTANCE.getModel_Greetings();
+
+    /**
+     * The meta object literal for the '{@link org.xtext.example.hellojvmtypes.helloJvmTypes.impl.ImportImpl <em>Import</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.xtext.example.hellojvmtypes.helloJvmTypes.impl.ImportImpl
+     * @see org.xtext.example.hellojvmtypes.helloJvmTypes.impl.HelloJvmTypesPackageImpl#getImport()
+     * @generated
+     */
+    EClass IMPORT = eINSTANCE.getImport();
+
+    /**
+     * The meta object literal for the '<em><b>Imported Namespace</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute IMPORT__IMPORTED_NAMESPACE = eINSTANCE.getImport_ImportedNamespace();
 
     /**
      * The meta object literal for the '{@link org.xtext.example.hellojvmtypes.helloJvmTypes.impl.GreetingImpl <em>Greeting</em>}' class.

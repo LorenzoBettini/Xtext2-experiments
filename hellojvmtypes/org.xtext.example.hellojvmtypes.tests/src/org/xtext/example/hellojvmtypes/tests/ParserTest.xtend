@@ -26,6 +26,14 @@ class ParserTest {
     def void testParsingAndLinking() {
         parser.parse('''Hello foo from java.util.List!''').assertNoErrors
     }
+
+    @Test
+    def void testParsingAndLinkingWithImports() {
+        parser.parse('''
+        	import java.util.List
+        	Hello foo from List!
+        ''').assertNoErrors
+    }
     
     @Test
     def void testJvmTypeAccess() {

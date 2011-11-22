@@ -19,18 +19,102 @@ public class HelloJvmTypesGrammarAccess extends AbstractGrammarElementFinder {
 	
 	public class ModelElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
-		private final Assignment cGreetingsAssignment = (Assignment)rule.eContents().get(1);
-		private final RuleCall cGreetingsGreetingParserRuleCall_0 = (RuleCall)cGreetingsAssignment.eContents().get(0);
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Assignment cImportsAssignment_0 = (Assignment)cGroup.eContents().get(0);
+		private final RuleCall cImportsImportParserRuleCall_0_0 = (RuleCall)cImportsAssignment_0.eContents().get(0);
+		private final Assignment cGreetingsAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cGreetingsGreetingParserRuleCall_1_0 = (RuleCall)cGreetingsAssignment_1.eContents().get(0);
 		
 		//Model:
-		//	greetings+=Greeting*;
+		//	imports+=Import* greetings+=Greeting*;
 		public ParserRule getRule() { return rule; }
 
+		//imports+=Import* greetings+=Greeting*
+		public Group getGroup() { return cGroup; }
+
+		//imports+=Import*
+		public Assignment getImportsAssignment_0() { return cImportsAssignment_0; }
+
+		//Import
+		public RuleCall getImportsImportParserRuleCall_0_0() { return cImportsImportParserRuleCall_0_0; }
+
 		//greetings+=Greeting*
-		public Assignment getGreetingsAssignment() { return cGreetingsAssignment; }
+		public Assignment getGreetingsAssignment_1() { return cGreetingsAssignment_1; }
 
 		//Greeting
-		public RuleCall getGreetingsGreetingParserRuleCall_0() { return cGreetingsGreetingParserRuleCall_0; }
+		public RuleCall getGreetingsGreetingParserRuleCall_1_0() { return cGreetingsGreetingParserRuleCall_1_0; }
+	}
+
+	public class ImportElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Import");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cImportKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Assignment cImportedNamespaceAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cImportedNamespaceQualifiedNameWithWildcardParserRuleCall_1_0 = (RuleCall)cImportedNamespaceAssignment_1.eContents().get(0);
+		
+		//Import:
+		//	"import" importedNamespace=QualifiedNameWithWildcard;
+		public ParserRule getRule() { return rule; }
+
+		//"import" importedNamespace=QualifiedNameWithWildcard
+		public Group getGroup() { return cGroup; }
+
+		//"import"
+		public Keyword getImportKeyword_0() { return cImportKeyword_0; }
+
+		//importedNamespace=QualifiedNameWithWildcard
+		public Assignment getImportedNamespaceAssignment_1() { return cImportedNamespaceAssignment_1; }
+
+		//QualifiedNameWithWildcard
+		public RuleCall getImportedNamespaceQualifiedNameWithWildcardParserRuleCall_1_0() { return cImportedNamespaceQualifiedNameWithWildcardParserRuleCall_1_0; }
+	}
+
+	public class QualifiedNameWithWildcardElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "QualifiedNameWithWildcard");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final RuleCall cQualifiedNameParserRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
+		private final Keyword cFullStopAsteriskKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		
+		//QualifiedNameWithWildcard:
+		//	QualifiedName ".*"?;
+		public ParserRule getRule() { return rule; }
+
+		//QualifiedName ".*"?
+		public Group getGroup() { return cGroup; }
+
+		//QualifiedName
+		public RuleCall getQualifiedNameParserRuleCall_0() { return cQualifiedNameParserRuleCall_0; }
+
+		//".*"?
+		public Keyword getFullStopAsteriskKeyword_1() { return cFullStopAsteriskKeyword_1; }
+	}
+
+	public class QualifiedNameElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "QualifiedName");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
+		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
+		private final Keyword cFullStopKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
+		private final RuleCall cIDTerminalRuleCall_1_1 = (RuleCall)cGroup_1.eContents().get(1);
+		
+		//QualifiedName:
+		//	ID ("." ID)*;
+		public ParserRule getRule() { return rule; }
+
+		//ID ("." ID)*
+		public Group getGroup() { return cGroup; }
+
+		//ID
+		public RuleCall getIDTerminalRuleCall_0() { return cIDTerminalRuleCall_0; }
+
+		//("." ID)*
+		public Group getGroup_1() { return cGroup_1; }
+
+		//"."
+		public Keyword getFullStopKeyword_1_0() { return cFullStopKeyword_1_0; }
+
+		//ID
+		public RuleCall getIDTerminalRuleCall_1_1() { return cIDTerminalRuleCall_1_1; }
 	}
 
 	public class GreetingElements extends AbstractParserRuleElementFinder {
@@ -98,39 +182,13 @@ public class HelloJvmTypesGrammarAccess extends AbstractGrammarElementFinder {
 		//"!"
 		public Keyword getExclamationMarkKeyword_5() { return cExclamationMarkKeyword_5; }
 	}
-
-	public class QualifiedNameElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "QualifiedName");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final RuleCall cIDTerminalRuleCall_0 = (RuleCall)cGroup.eContents().get(0);
-		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
-		private final Keyword cFullStopKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
-		private final RuleCall cIDTerminalRuleCall_1_1 = (RuleCall)cGroup_1.eContents().get(1);
-		
-		//QualifiedName:
-		//	ID ("." ID)*;
-		public ParserRule getRule() { return rule; }
-
-		//ID ("." ID)*
-		public Group getGroup() { return cGroup; }
-
-		//ID
-		public RuleCall getIDTerminalRuleCall_0() { return cIDTerminalRuleCall_0; }
-
-		//("." ID)*
-		public Group getGroup_1() { return cGroup_1; }
-
-		//"."
-		public Keyword getFullStopKeyword_1_0() { return cFullStopKeyword_1_0; }
-
-		//ID
-		public RuleCall getIDTerminalRuleCall_1_1() { return cIDTerminalRuleCall_1_1; }
-	}
 	
 	
 	private ModelElements pModel;
-	private GreetingElements pGreeting;
+	private ImportElements pImport;
+	private QualifiedNameWithWildcardElements pQualifiedNameWithWildcard;
 	private QualifiedNameElements pQualifiedName;
+	private GreetingElements pGreeting;
 	
 	private final GrammarProvider grammarProvider;
 
@@ -154,13 +212,43 @@ public class HelloJvmTypesGrammarAccess extends AbstractGrammarElementFinder {
 
 	
 	//Model:
-	//	greetings+=Greeting*;
+	//	imports+=Import* greetings+=Greeting*;
 	public ModelElements getModelAccess() {
 		return (pModel != null) ? pModel : (pModel = new ModelElements());
 	}
 	
 	public ParserRule getModelRule() {
 		return getModelAccess().getRule();
+	}
+
+	//Import:
+	//	"import" importedNamespace=QualifiedNameWithWildcard;
+	public ImportElements getImportAccess() {
+		return (pImport != null) ? pImport : (pImport = new ImportElements());
+	}
+	
+	public ParserRule getImportRule() {
+		return getImportAccess().getRule();
+	}
+
+	//QualifiedNameWithWildcard:
+	//	QualifiedName ".*"?;
+	public QualifiedNameWithWildcardElements getQualifiedNameWithWildcardAccess() {
+		return (pQualifiedNameWithWildcard != null) ? pQualifiedNameWithWildcard : (pQualifiedNameWithWildcard = new QualifiedNameWithWildcardElements());
+	}
+	
+	public ParserRule getQualifiedNameWithWildcardRule() {
+		return getQualifiedNameWithWildcardAccess().getRule();
+	}
+
+	//QualifiedName:
+	//	ID ("." ID)*;
+	public QualifiedNameElements getQualifiedNameAccess() {
+		return (pQualifiedName != null) ? pQualifiedName : (pQualifiedName = new QualifiedNameElements());
+	}
+	
+	public ParserRule getQualifiedNameRule() {
+		return getQualifiedNameAccess().getRule();
 	}
 
 	//Greeting:
@@ -172,16 +260,6 @@ public class HelloJvmTypesGrammarAccess extends AbstractGrammarElementFinder {
 	
 	public ParserRule getGreetingRule() {
 		return getGreetingAccess().getRule();
-	}
-
-	//QualifiedName:
-	//	ID ("." ID)*;
-	public QualifiedNameElements getQualifiedNameAccess() {
-		return (pQualifiedName != null) ? pQualifiedName : (pQualifiedName = new QualifiedNameElements());
-	}
-	
-	public ParserRule getQualifiedNameRule() {
-		return getQualifiedNameAccess().getRule();
 	}
 
 	//terminal ID:

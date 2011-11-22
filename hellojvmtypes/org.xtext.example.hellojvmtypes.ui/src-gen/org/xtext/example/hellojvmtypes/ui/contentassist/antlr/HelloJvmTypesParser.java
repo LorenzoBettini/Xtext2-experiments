@@ -37,11 +37,16 @@ public class HelloJvmTypesParser extends AbstractContentAssistParser {
 			nameMappings = new HashMap<AbstractElement, String>() {
 				private static final long serialVersionUID = 1L;
 				{
-					put(grammarAccess.getGreetingAccess().getGroup(), "rule__Greeting__Group__0");
-					put(grammarAccess.getGreetingAccess().getGroup_4(), "rule__Greeting__Group_4__0");
+					put(grammarAccess.getModelAccess().getGroup(), "rule__Model__Group__0");
+					put(grammarAccess.getImportAccess().getGroup(), "rule__Import__Group__0");
+					put(grammarAccess.getQualifiedNameWithWildcardAccess().getGroup(), "rule__QualifiedNameWithWildcard__Group__0");
 					put(grammarAccess.getQualifiedNameAccess().getGroup(), "rule__QualifiedName__Group__0");
 					put(grammarAccess.getQualifiedNameAccess().getGroup_1(), "rule__QualifiedName__Group_1__0");
-					put(grammarAccess.getModelAccess().getGreetingsAssignment(), "rule__Model__GreetingsAssignment");
+					put(grammarAccess.getGreetingAccess().getGroup(), "rule__Greeting__Group__0");
+					put(grammarAccess.getGreetingAccess().getGroup_4(), "rule__Greeting__Group_4__0");
+					put(grammarAccess.getModelAccess().getImportsAssignment_0(), "rule__Model__ImportsAssignment_0");
+					put(grammarAccess.getModelAccess().getGreetingsAssignment_1(), "rule__Model__GreetingsAssignment_1");
+					put(grammarAccess.getImportAccess().getImportedNamespaceAssignment_1(), "rule__Import__ImportedNamespaceAssignment_1");
 					put(grammarAccess.getGreetingAccess().getNameAssignment_1(), "rule__Greeting__NameAssignment_1");
 					put(grammarAccess.getGreetingAccess().getJavaTypesAssignment_3(), "rule__Greeting__JavaTypesAssignment_3");
 					put(grammarAccess.getGreetingAccess().getJavaTypesAssignment_4_1(), "rule__Greeting__JavaTypesAssignment_4_1");

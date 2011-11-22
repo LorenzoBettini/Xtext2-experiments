@@ -68,6 +68,7 @@ public class HelloJvmTypesFactoryImpl extends EFactoryImpl implements HelloJvmTy
     switch (eClass.getClassifierID())
     {
       case HelloJvmTypesPackage.MODEL: return createModel();
+      case HelloJvmTypesPackage.IMPORT: return createImport();
       case HelloJvmTypesPackage.GREETING: return createGreeting();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
@@ -83,6 +84,17 @@ public class HelloJvmTypesFactoryImpl extends EFactoryImpl implements HelloJvmTy
   {
     ModelImpl model = new ModelImpl();
     return model;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Import createImport()
+  {
+    ImportImpl import_ = new ImportImpl();
+    return import_;
   }
 
   /**

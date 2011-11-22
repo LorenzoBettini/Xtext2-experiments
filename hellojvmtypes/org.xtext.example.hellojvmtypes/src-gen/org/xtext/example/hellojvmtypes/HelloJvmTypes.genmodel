@@ -10,7 +10,11 @@
   <genPackages prefix="HelloJvmTypes" basePackage="org.xtext.example.hellojvmtypes"
       disposableProviderFactory="true" ecorePackage="HelloJvmTypes.ecore#/">
     <genClasses ecoreClass="HelloJvmTypes.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloJvmTypes.ecore#//Model/imports"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloJvmTypes.ecore#//Model/greetings"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloJvmTypes.ecore#//Import">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloJvmTypes.ecore#//Import/importedNamespace"/>
     </genClasses>
     <genClasses ecoreClass="HelloJvmTypes.ecore#//Greeting">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloJvmTypes.ecore#//Greeting/name"/>

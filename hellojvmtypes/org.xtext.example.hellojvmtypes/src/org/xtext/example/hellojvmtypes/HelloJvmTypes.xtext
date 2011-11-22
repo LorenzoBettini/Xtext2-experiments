@@ -5,12 +5,21 @@ import "http://www.eclipse.org/xtext/common/JavaVMTypes" as jvmTypes
 generate helloJvmTypes "http://www.xtext.org/example/hellojvmtypes/HelloJvmTypes"
 
 Model:
+	imports += Import*
 	greetings+=Greeting*;
-	
+
+Import:
+  'import' importedNamespace = QualifiedNameWithWildcard
+;
+
+QualifiedNameWithWildcard:
+  QualifiedName '.*'?
+; 
+
+QualifiedName: ID ('.' ID)* ;
+
 Greeting:
     'Hello' name=ID 'from' 
     javaTypes+=[jvmTypes::JvmType|QualifiedName]
     (',' javaTypes+=[jvmTypes::JvmType|QualifiedName])* '!'
 ;
-
-QualifiedName: ID ('.' ID)* ;

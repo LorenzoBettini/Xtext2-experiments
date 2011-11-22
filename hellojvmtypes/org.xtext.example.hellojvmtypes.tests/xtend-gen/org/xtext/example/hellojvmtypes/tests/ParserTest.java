@@ -36,6 +36,17 @@ public class ParserTest {
   }
   
   @Test
+  public void testParsingAndLinkingWithImports() throws Exception {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("import java.util.List");
+    _builder.newLine();
+    _builder.append("Hello foo from List!");
+    _builder.newLine();
+    Model _parse = this.parser.parse(_builder);
+    this._validationTestHelper.assertNoErrors(_parse);
+  }
+  
+  @Test
   public void testJvmTypeAccess() throws Exception {
       Model _parse = this.parser.parse("Hello foo from java.util.List!");
       final Model model = _parse;
