@@ -19,6 +19,5 @@ QualifiedNameWithWildcard:
 
 Greeting:
     'Hello' name=ID 'from' 
-    javaTypes+=[jvmTypes::JvmType|QualifiedName]
-    (',' javaTypes+=[jvmTypes::JvmType|QualifiedName])* '!'
+    expressions = XExpression '!'
 ;

@@ -6,6 +6,7 @@
 package org.xtext.example.helloxbase.helloXbase.impl;
 
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
@@ -13,7 +14,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.xtext.common.types.JvmType;
+import org.eclipse.xtext.xbase.XExpression;
 
 import org.xtext.example.helloxbase.helloXbase.Greeting;
 import org.xtext.example.helloxbase.helloXbase.HelloXbasePackage;
@@ -26,7 +27,7 @@ import org.xtext.example.helloxbase.helloXbase.HelloXbasePackage;
  * The following features are implemented:
  * <ul>
  *   <li>{@link org.xtext.example.helloxbase.helloXbase.impl.GreetingImpl#getName <em>Name</em>}</li>
- *   <li>{@link org.xtext.example.helloxbase.helloXbase.impl.GreetingImpl#getJavaType <em>Java Type</em>}</li>
+ *   <li>{@link org.xtext.example.helloxbase.helloXbase.impl.GreetingImpl#getExpressions <em>Expressions</em>}</li>
  * </ul>
  * </p>
  *
@@ -55,14 +56,14 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
   protected String name = NAME_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getJavaType() <em>Java Type</em>}' reference.
+   * The cached value of the '{@link #getExpressions() <em>Expressions</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getJavaType()
+   * @see #getExpressions()
    * @generated
    * @ordered
    */
-  protected JvmType javaType;
+  protected XExpression expressions;
 
   /**
    * <!-- begin-user-doc -->
@@ -113,19 +114,9 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
    * <!-- end-user-doc -->
    * @generated
    */
-  public JvmType getJavaType()
+  public XExpression getExpressions()
   {
-    if (javaType != null && javaType.eIsProxy())
-    {
-      InternalEObject oldJavaType = (InternalEObject)javaType;
-      javaType = (JvmType)eResolveProxy(oldJavaType);
-      if (javaType != oldJavaType)
-      {
-        if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, HelloXbasePackage.GREETING__JAVA_TYPE, oldJavaType, javaType));
-      }
-    }
-    return javaType;
+    return expressions;
   }
 
   /**
@@ -133,22 +124,53 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
    * <!-- end-user-doc -->
    * @generated
    */
-  public JvmType basicGetJavaType()
+  public NotificationChain basicSetExpressions(XExpression newExpressions, NotificationChain msgs)
   {
-    return javaType;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setJavaType(JvmType newJavaType)
-  {
-    JvmType oldJavaType = javaType;
-    javaType = newJavaType;
+    XExpression oldExpressions = expressions;
+    expressions = newExpressions;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, HelloXbasePackage.GREETING__JAVA_TYPE, oldJavaType, javaType));
+    {
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, HelloXbasePackage.GREETING__EXPRESSIONS, oldExpressions, newExpressions);
+      if (msgs == null) msgs = notification; else msgs.add(notification);
+    }
+    return msgs;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setExpressions(XExpression newExpressions)
+  {
+    if (newExpressions != expressions)
+    {
+      NotificationChain msgs = null;
+      if (expressions != null)
+        msgs = ((InternalEObject)expressions).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - HelloXbasePackage.GREETING__EXPRESSIONS, null, msgs);
+      if (newExpressions != null)
+        msgs = ((InternalEObject)newExpressions).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - HelloXbasePackage.GREETING__EXPRESSIONS, null, msgs);
+      msgs = basicSetExpressions(newExpressions, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, HelloXbasePackage.GREETING__EXPRESSIONS, newExpressions, newExpressions));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  {
+    switch (featureID)
+    {
+      case HelloXbasePackage.GREETING__EXPRESSIONS:
+        return basicSetExpressions(null, msgs);
+    }
+    return super.eInverseRemove(otherEnd, featureID, msgs);
   }
 
   /**
@@ -163,9 +185,8 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
     {
       case HelloXbasePackage.GREETING__NAME:
         return getName();
-      case HelloXbasePackage.GREETING__JAVA_TYPE:
-        if (resolve) return getJavaType();
-        return basicGetJavaType();
+      case HelloXbasePackage.GREETING__EXPRESSIONS:
+        return getExpressions();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -183,8 +204,8 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
       case HelloXbasePackage.GREETING__NAME:
         setName((String)newValue);
         return;
-      case HelloXbasePackage.GREETING__JAVA_TYPE:
-        setJavaType((JvmType)newValue);
+      case HelloXbasePackage.GREETING__EXPRESSIONS:
+        setExpressions((XExpression)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -203,8 +224,8 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
       case HelloXbasePackage.GREETING__NAME:
         setName(NAME_EDEFAULT);
         return;
-      case HelloXbasePackage.GREETING__JAVA_TYPE:
-        setJavaType((JvmType)null);
+      case HelloXbasePackage.GREETING__EXPRESSIONS:
+        setExpressions((XExpression)null);
         return;
     }
     super.eUnset(featureID);
@@ -222,8 +243,8 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
     {
       case HelloXbasePackage.GREETING__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case HelloXbasePackage.GREETING__JAVA_TYPE:
-        return javaType != null;
+      case HelloXbasePackage.GREETING__EXPRESSIONS:
+        return expressions != null;
     }
     return super.eIsSet(featureID);
   }

@@ -50,8 +50,7 @@ class HelloXbaseGenerator implements IGenerator {
     def compile(Greeting greeting, ImportManager importManager) '''
     public class «greeting.className» {
         public static void main(String args[]) {
-            System.out.println("Hello «greeting.name» from " +
-               «importManager.serialize(greeting.javaType)».class.getName());
+            System.out.println("Hello «greeting.name» ");
         }
     }
     '''

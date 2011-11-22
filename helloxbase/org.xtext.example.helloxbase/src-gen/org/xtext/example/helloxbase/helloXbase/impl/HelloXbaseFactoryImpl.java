@@ -68,6 +68,7 @@ public class HelloXbaseFactoryImpl extends EFactoryImpl implements HelloXbaseFac
     switch (eClass.getClassifierID())
     {
       case HelloXbasePackage.MODEL: return createModel();
+      case HelloXbasePackage.IMPORT: return createImport();
       case HelloXbasePackage.GREETING: return createGreeting();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
@@ -83,6 +84,17 @@ public class HelloXbaseFactoryImpl extends EFactoryImpl implements HelloXbaseFac
   {
     ModelImpl model = new ModelImpl();
     return model;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Import createImport()
+  {
+    ImportImpl import_ = new ImportImpl();
+    return import_;
   }
 
   /**

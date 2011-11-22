@@ -7,7 +7,7 @@ package org.xtext.example.helloxbase.helloXbase;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.eclipse.xtext.common.types.JvmType;
+import org.eclipse.xtext.xbase.XExpression;
 
 /**
  * <!-- begin-user-doc -->
@@ -18,7 +18,7 @@ import org.eclipse.xtext.common.types.JvmType;
  * The following features are supported:
  * <ul>
  *   <li>{@link org.xtext.example.helloxbase.helloXbase.Greeting#getName <em>Name</em>}</li>
- *   <li>{@link org.xtext.example.helloxbase.helloXbase.Greeting#getJavaType <em>Java Type</em>}</li>
+ *   <li>{@link org.xtext.example.helloxbase.helloXbase.Greeting#getExpressions <em>Expressions</em>}</li>
  * </ul>
  * </p>
  *
@@ -55,29 +55,29 @@ public interface Greeting extends EObject
   void setName(String value);
 
   /**
-   * Returns the value of the '<em><b>Java Type</b></em>' reference.
+   * Returns the value of the '<em><b>Expressions</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Java Type</em>' reference isn't clear,
+   * If the meaning of the '<em>Expressions</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Java Type</em>' reference.
-   * @see #setJavaType(JvmType)
-   * @see org.xtext.example.helloxbase.helloXbase.HelloXbasePackage#getGreeting_JavaType()
-   * @model
+   * @return the value of the '<em>Expressions</em>' containment reference.
+   * @see #setExpressions(XExpression)
+   * @see org.xtext.example.helloxbase.helloXbase.HelloXbasePackage#getGreeting_Expressions()
+   * @model containment="true"
    * @generated
    */
-  JvmType getJavaType();
+  XExpression getExpressions();
 
   /**
-   * Sets the value of the '{@link org.xtext.example.helloxbase.helloXbase.Greeting#getJavaType <em>Java Type</em>}' reference.
+   * Sets the value of the '{@link org.xtext.example.helloxbase.helloXbase.Greeting#getExpressions <em>Expressions</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Java Type</em>' reference.
-   * @see #getJavaType()
+   * @param value the new value of the '<em>Expressions</em>' containment reference.
+   * @see #getExpressions()
    * @generated
    */
-  void setJavaType(JvmType value);
+  void setExpressions(XExpression value);
 
 } // Greeting

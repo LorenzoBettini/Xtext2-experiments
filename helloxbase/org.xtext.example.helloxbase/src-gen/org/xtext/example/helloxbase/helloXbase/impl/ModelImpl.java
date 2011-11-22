@@ -21,6 +21,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
 
 import org.xtext.example.helloxbase.helloXbase.Greeting;
 import org.xtext.example.helloxbase.helloXbase.HelloXbasePackage;
+import org.xtext.example.helloxbase.helloXbase.Import;
 import org.xtext.example.helloxbase.helloXbase.Model;
 
 /**
@@ -30,6 +31,7 @@ import org.xtext.example.helloxbase.helloXbase.Model;
  * <p>
  * The following features are implemented:
  * <ul>
+ *   <li>{@link org.xtext.example.helloxbase.helloXbase.impl.ModelImpl#getImports <em>Imports</em>}</li>
  *   <li>{@link org.xtext.example.helloxbase.helloXbase.impl.ModelImpl#getGreetings <em>Greetings</em>}</li>
  * </ul>
  * </p>
@@ -38,6 +40,16 @@ import org.xtext.example.helloxbase.helloXbase.Model;
  */
 public class ModelImpl extends MinimalEObjectImpl.Container implements Model
 {
+  /**
+   * The cached value of the '{@link #getImports() <em>Imports</em>}' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getImports()
+   * @generated
+   * @ordered
+   */
+  protected EList<Import> imports;
+
   /**
    * The cached value of the '{@link #getGreetings() <em>Greetings</em>}' containment reference list.
    * <!-- begin-user-doc -->
@@ -74,6 +86,20 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
    * <!-- end-user-doc -->
    * @generated
    */
+  public EList<Import> getImports()
+  {
+    if (imports == null)
+    {
+      imports = new EObjectContainmentEList<Import>(Import.class, this, HelloXbasePackage.MODEL__IMPORTS);
+    }
+    return imports;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EList<Greeting> getGreetings()
   {
     if (greetings == null)
@@ -93,6 +119,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
+      case HelloXbasePackage.MODEL__IMPORTS:
+        return ((InternalEList<?>)getImports()).basicRemove(otherEnd, msgs);
       case HelloXbasePackage.MODEL__GREETINGS:
         return ((InternalEList<?>)getGreetings()).basicRemove(otherEnd, msgs);
     }
@@ -109,6 +137,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
+      case HelloXbasePackage.MODEL__IMPORTS:
+        return getImports();
       case HelloXbasePackage.MODEL__GREETINGS:
         return getGreetings();
     }
@@ -126,6 +156,10 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
+      case HelloXbasePackage.MODEL__IMPORTS:
+        getImports().clear();
+        getImports().addAll((Collection<? extends Import>)newValue);
+        return;
       case HelloXbasePackage.MODEL__GREETINGS:
         getGreetings().clear();
         getGreetings().addAll((Collection<? extends Greeting>)newValue);
@@ -144,6 +178,9 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
+      case HelloXbasePackage.MODEL__IMPORTS:
+        getImports().clear();
+        return;
       case HelloXbasePackage.MODEL__GREETINGS:
         getGreetings().clear();
         return;
@@ -161,6 +198,8 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
+      case HelloXbasePackage.MODEL__IMPORTS:
+        return imports != null && !imports.isEmpty();
       case HelloXbasePackage.MODEL__GREETINGS:
         return greetings != null && !greetings.isEmpty();
     }

@@ -53,6 +53,7 @@ import org.eclipse.xtext.xtype.XFunctionTypeRef;
 import org.eclipse.xtext.xtype.XtypePackage;
 import org.xtext.example.helloxbase.helloXbase.Greeting;
 import org.xtext.example.helloxbase.helloXbase.HelloXbasePackage;
+import org.xtext.example.helloxbase.helloXbase.Import;
 import org.xtext.example.helloxbase.helloXbase.Model;
 import org.xtext.example.helloxbase.services.HelloXbaseGrammarAccess;
 
@@ -93,6 +94,12 @@ public class AbstractHelloXbaseSemanticSequencer extends AbstractSemanticSequenc
 			case HelloXbasePackage.GREETING:
 				if(context == grammarAccess.getGreetingRule()) {
 					sequence_Greeting(context, (Greeting) semanticObject); 
+					return; 
+				}
+				else break;
+			case HelloXbasePackage.IMPORT:
+				if(context == grammarAccess.getImportRule()) {
+					sequence_Import(context, (Import) semanticObject); 
 					return; 
 				}
 				else break;
@@ -973,19 +980,35 @@ public class AbstractHelloXbaseSemanticSequencer extends AbstractSemanticSequenc
 	
 	/**
 	 * Constraint:
-	 *     (name=ID javaType=[JvmType|QualifiedName])
+	 *     (name=ID expressions=XExpression)
 	 */
 	protected void sequence_Greeting(EObject context, Greeting semanticObject) {
 		if(errorAcceptor != null) {
 			if(transientValues.isValueTransient(semanticObject, HelloXbasePackage.Literals.GREETING__NAME) == ValueTransient.YES)
 				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HelloXbasePackage.Literals.GREETING__NAME));
-			if(transientValues.isValueTransient(semanticObject, HelloXbasePackage.Literals.GREETING__JAVA_TYPE) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HelloXbasePackage.Literals.GREETING__JAVA_TYPE));
+			if(transientValues.isValueTransient(semanticObject, HelloXbasePackage.Literals.GREETING__EXPRESSIONS) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HelloXbasePackage.Literals.GREETING__EXPRESSIONS));
 		}
 		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
 		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
 		feeder.accept(grammarAccess.getGreetingAccess().getNameIDTerminalRuleCall_1_0(), semanticObject.getName());
-		feeder.accept(grammarAccess.getGreetingAccess().getJavaTypeJvmTypeQualifiedNameParserRuleCall_3_0_1(), semanticObject.getJavaType());
+		feeder.accept(grammarAccess.getGreetingAccess().getExpressionsXExpressionParserRuleCall_3_0(), semanticObject.getExpressions());
+		feeder.finish();
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     importedNamespace=QualifiedNameWithWildcard
+	 */
+	protected void sequence_Import(EObject context, Import semanticObject) {
+		if(errorAcceptor != null) {
+			if(transientValues.isValueTransient(semanticObject, HelloXbasePackage.Literals.IMPORT__IMPORTED_NAMESPACE) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HelloXbasePackage.Literals.IMPORT__IMPORTED_NAMESPACE));
+		}
+		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
+		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
+		feeder.accept(grammarAccess.getImportAccess().getImportedNamespaceQualifiedNameWithWildcardParserRuleCall_1_0(), semanticObject.getImportedNamespace());
 		feeder.finish();
 	}
 	
@@ -1064,7 +1087,7 @@ public class AbstractHelloXbaseSemanticSequencer extends AbstractSemanticSequenc
 	
 	/**
 	 * Constraint:
-	 *     greetings+=Greeting*
+	 *     (imports+=Import* greetings+=Greeting*)
 	 */
 	protected void sequence_Model(EObject context, Model semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

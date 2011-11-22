@@ -1,10 +1,7 @@
 package org.xtext.example.helloxbase.tests;
 
 import com.google.inject.Inject;
-import junit.framework.Assert;
 import org.eclipse.emf.common.util.EList;
-import org.eclipse.xtext.common.types.JvmGenericType;
-import org.eclipse.xtext.common.types.JvmType;
 import org.eclipse.xtext.junit4.InjectWith;
 import org.eclipse.xtext.junit4.XtextRunner;
 import org.eclipse.xtext.junit4.util.ParseHelper;
@@ -30,21 +27,17 @@ public class ParserTest {
   @Test
   public void testParsingAndLinking() throws Exception {
     StringConcatenation _builder = new StringConcatenation();
-    _builder.append("Hello foo from java.util.List!");
+    _builder.append("Hello foo from new String()!");
     Model _parse = this.parser.parse(_builder);
     this._validationTestHelper.assertNoErrors(_parse);
   }
   
   @Test
-  public void testJvmTypeAccess() throws Exception {
-      Model _parse = this.parser.parse("Hello foo from java.util.List!");
+  public void testExpression() throws Exception {
+      Model _parse = this.parser.parse("Hello foo from new String()!");
       final Model model = _parse;
       EList<Greeting> _greetings = model.getGreetings();
       Greeting _head = IterableExtensions.<Greeting>head(_greetings);
       final Greeting greeting = ((Greeting) _head);
-      JvmType _javaType = greeting.getJavaType();
-      final JvmGenericType jvmType = ((JvmGenericType) _javaType);
-      String _identifier = jvmType.getIdentifier();
-      Assert.assertEquals("java.util.List", _identifier);
   }
 }
