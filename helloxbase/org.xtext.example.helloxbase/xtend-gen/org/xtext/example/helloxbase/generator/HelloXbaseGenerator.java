@@ -140,7 +140,6 @@ public class HelloXbaseGenerator implements IGenerator {
     {
       StringBuilderBasedAppendable _stringBuilderBasedAppendable = new StringBuilderBasedAppendable(importManager);
       final StringBuilderBasedAppendable result = _stringBuilderBasedAppendable;
-      result.declareVariable(xExpression, "expressionResult");
       this.xbaseCompiler.toJavaStatement(xExpression, result, true);
       _xblockexpression = (result);
     }

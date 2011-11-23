@@ -68,7 +68,6 @@ class HelloXbaseGenerator implements IGenerator {
     
     def compile(XExpression xExpression, ImportManager importManager) {
     	val result = new StringBuilderBasedAppendable(importManager)
-    	result.declareVariable(xExpression, "expressionResult")
     	xbaseCompiler.toJavaStatement(xExpression, result, true)
     	result
     }
