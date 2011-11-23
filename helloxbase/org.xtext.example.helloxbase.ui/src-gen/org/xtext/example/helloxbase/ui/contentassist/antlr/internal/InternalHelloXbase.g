@@ -2940,9 +2940,9 @@ rule__Greeting__Group__3__Impl
     }
 :
 (
-{ before(grammarAccess.getGreetingAccess().getExpressionsAssignment_3()); }
-(rule__Greeting__ExpressionsAssignment_3)
-{ after(grammarAccess.getGreetingAccess().getExpressionsAssignment_3()); }
+{ before(grammarAccess.getGreetingAccess().getExpressionAssignment_3()); }
+(rule__Greeting__ExpressionAssignment_3)
+{ after(grammarAccess.getGreetingAccess().getExpressionAssignment_3()); }
 )
 
 ;
@@ -12850,14 +12850,14 @@ finally {
 	restoreStackSize(stackSize);
 }
 
-rule__Greeting__ExpressionsAssignment_3
+rule__Greeting__ExpressionAssignment_3
     @init {
 		int stackSize = keepStackSize();
     }
 :
 (
-{ before(grammarAccess.getGreetingAccess().getExpressionsXExpressionParserRuleCall_3_0()); }
-	ruleXExpression{ after(grammarAccess.getGreetingAccess().getExpressionsXExpressionParserRuleCall_3_0()); }
+{ before(grammarAccess.getGreetingAccess().getExpressionXExpressionParserRuleCall_3_0()); }
+	ruleXExpression{ after(grammarAccess.getGreetingAccess().getExpressionXExpressionParserRuleCall_3_0()); }
 )
 
 ;

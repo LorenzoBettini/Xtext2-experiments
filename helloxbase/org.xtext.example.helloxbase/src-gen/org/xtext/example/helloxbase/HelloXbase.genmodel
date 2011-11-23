@@ -18,7 +18,7 @@
     </genClasses>
     <genClasses ecoreClass="HelloXbase.ecore#//Greeting">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloXbase.ecore#//Greeting/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloXbase.ecore#//Greeting/expressions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloXbase.ecore#//Greeting/expression"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

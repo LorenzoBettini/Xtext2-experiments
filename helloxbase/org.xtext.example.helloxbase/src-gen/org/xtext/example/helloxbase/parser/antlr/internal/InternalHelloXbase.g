@@ -244,16 +244,16 @@ ruleGreeting returns [EObject current=null]
 (
 (
 		{ 
-	        newCompositeNode(grammarAccess.getGreetingAccess().getExpressionsXExpressionParserRuleCall_3_0()); 
+	        newCompositeNode(grammarAccess.getGreetingAccess().getExpressionXExpressionParserRuleCall_3_0()); 
 	    }
-		lv_expressions_3_0=ruleXExpression		{
+		lv_expression_3_0=ruleXExpression		{
 	        if ($current==null) {
 	            $current = createModelElementForParent(grammarAccess.getGreetingRule());
 	        }
        		set(
        			$current, 
-       			"expressions",
-        		lv_expressions_3_0, 
+       			"expression",
+        		lv_expression_3_0, 
         		"XExpression");
 	        afterParserOrEnumRuleCall();
 	    }

@@ -1,8 +1,6 @@
 grammar org.xtext.example.helloxbase.HelloXbase with 
 	org.eclipse.xtext.xbase.Xbase
 
-import "http://www.eclipse.org/xtext/common/JavaVMTypes" as jvmTypes 
-
 generate helloXbase "http://www.xtext.org/example/helloxbase/HelloXbase"
 
 Model:
@@ -18,6 +16,5 @@ QualifiedNameWithWildcard:
 ; 
 
 Greeting:
-    'Hello' name=ID 'from' 
-    expressions = XExpression '!'
+    'Hello' name=ID 'from' expression = XExpression '!'
 ;

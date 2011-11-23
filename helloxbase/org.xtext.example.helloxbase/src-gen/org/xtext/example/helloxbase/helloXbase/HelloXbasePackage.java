@@ -144,13 +144,13 @@ public interface HelloXbasePackage extends EPackage
   int GREETING__NAME = 0;
 
   /**
-   * The feature id for the '<em><b>Expressions</b></em>' containment reference.
+   * The feature id for the '<em><b>Expression</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int GREETING__EXPRESSIONS = 1;
+  int GREETING__EXPRESSION = 1;
 
   /**
    * The number of structural features of the '<em>Greeting</em>' class.
@@ -237,15 +237,15 @@ public interface HelloXbasePackage extends EPackage
   EAttribute getGreeting_Name();
 
   /**
-   * Returns the meta object for the containment reference '{@link org.xtext.example.helloxbase.helloXbase.Greeting#getExpressions <em>Expressions</em>}'.
+   * Returns the meta object for the containment reference '{@link org.xtext.example.helloxbase.helloXbase.Greeting#getExpression <em>Expression</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference '<em>Expressions</em>'.
-   * @see org.xtext.example.helloxbase.helloXbase.Greeting#getExpressions()
+   * @return the meta object for the containment reference '<em>Expression</em>'.
+   * @see org.xtext.example.helloxbase.helloXbase.Greeting#getExpression()
    * @see #getGreeting()
    * @generated
    */
-  EReference getGreeting_Expressions();
+  EReference getGreeting_Expression();
 
   /**
    * Returns the factory that creates the instances of the model.
@@ -333,12 +333,12 @@ public interface HelloXbasePackage extends EPackage
     EAttribute GREETING__NAME = eINSTANCE.getGreeting_Name();
 
     /**
-     * The meta object literal for the '<em><b>Expressions</b></em>' containment reference feature.
+     * The meta object literal for the '<em><b>Expression</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference GREETING__EXPRESSIONS = eINSTANCE.getGreeting_Expressions();
+    EReference GREETING__EXPRESSION = eINSTANCE.getGreeting_Expression();
 
   }
 

@@ -95,8 +95,8 @@ public class HelloXbaseGenerator implements IGenerator {
   
   public StringConcatenation compile(final Greeting greeting, final ImportManager importManager) {
     StringConcatenation _builder = new StringConcatenation();
-    XExpression _expressions = greeting.getExpressions();
-    StringBuilderBasedAppendable _compile = this.compile(_expressions, importManager);
+    XExpression _expression = greeting.getExpression();
+    StringBuilderBasedAppendable _compile = this.compile(_expression, importManager);
     final StringBuilderBasedAppendable builder = _compile;
     _builder.newLineIfNotEmpty();
     _builder.append("public class ");
@@ -113,8 +113,8 @@ public class HelloXbaseGenerator implements IGenerator {
     _builder.newLine();
     _builder.append("    \t");
     _builder.append("Object expression = ");
-    XExpression _expressions_1 = greeting.getExpressions();
-    String _name = builder.getName(_expressions_1);
+    XExpression _expression_1 = greeting.getExpression();
+    String _name = builder.getName(_expression_1);
     _builder.append(_name, "    	");
     _builder.append(";");
     _builder.newLineIfNotEmpty();

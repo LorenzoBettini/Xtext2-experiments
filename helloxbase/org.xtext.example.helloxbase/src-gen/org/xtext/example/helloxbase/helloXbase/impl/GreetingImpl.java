@@ -27,7 +27,7 @@ import org.xtext.example.helloxbase.helloXbase.HelloXbasePackage;
  * The following features are implemented:
  * <ul>
  *   <li>{@link org.xtext.example.helloxbase.helloXbase.impl.GreetingImpl#getName <em>Name</em>}</li>
- *   <li>{@link org.xtext.example.helloxbase.helloXbase.impl.GreetingImpl#getExpressions <em>Expressions</em>}</li>
+ *   <li>{@link org.xtext.example.helloxbase.helloXbase.impl.GreetingImpl#getExpression <em>Expression</em>}</li>
  * </ul>
  * </p>
  *
@@ -56,14 +56,14 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
   protected String name = NAME_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getExpressions() <em>Expressions</em>}' containment reference.
+   * The cached value of the '{@link #getExpression() <em>Expression</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getExpressions()
+   * @see #getExpression()
    * @generated
    * @ordered
    */
-  protected XExpression expressions;
+  protected XExpression expression;
 
   /**
    * <!-- begin-user-doc -->
@@ -114,9 +114,9 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
    * <!-- end-user-doc -->
    * @generated
    */
-  public XExpression getExpressions()
+  public XExpression getExpression()
   {
-    return expressions;
+    return expression;
   }
 
   /**
@@ -124,13 +124,13 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
    * <!-- end-user-doc -->
    * @generated
    */
-  public NotificationChain basicSetExpressions(XExpression newExpressions, NotificationChain msgs)
+  public NotificationChain basicSetExpression(XExpression newExpression, NotificationChain msgs)
   {
-    XExpression oldExpressions = expressions;
-    expressions = newExpressions;
+    XExpression oldExpression = expression;
+    expression = newExpression;
     if (eNotificationRequired())
     {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, HelloXbasePackage.GREETING__EXPRESSIONS, oldExpressions, newExpressions);
+      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, HelloXbasePackage.GREETING__EXPRESSION, oldExpression, newExpression);
       if (msgs == null) msgs = notification; else msgs.add(notification);
     }
     return msgs;
@@ -141,20 +141,20 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setExpressions(XExpression newExpressions)
+  public void setExpression(XExpression newExpression)
   {
-    if (newExpressions != expressions)
+    if (newExpression != expression)
     {
       NotificationChain msgs = null;
-      if (expressions != null)
-        msgs = ((InternalEObject)expressions).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - HelloXbasePackage.GREETING__EXPRESSIONS, null, msgs);
-      if (newExpressions != null)
-        msgs = ((InternalEObject)newExpressions).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - HelloXbasePackage.GREETING__EXPRESSIONS, null, msgs);
-      msgs = basicSetExpressions(newExpressions, msgs);
+      if (expression != null)
+        msgs = ((InternalEObject)expression).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - HelloXbasePackage.GREETING__EXPRESSION, null, msgs);
+      if (newExpression != null)
+        msgs = ((InternalEObject)newExpression).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - HelloXbasePackage.GREETING__EXPRESSION, null, msgs);
+      msgs = basicSetExpression(newExpression, msgs);
       if (msgs != null) msgs.dispatch();
     }
     else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, HelloXbasePackage.GREETING__EXPRESSIONS, newExpressions, newExpressions));
+      eNotify(new ENotificationImpl(this, Notification.SET, HelloXbasePackage.GREETING__EXPRESSION, newExpression, newExpression));
   }
 
   /**
@@ -167,8 +167,8 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
   {
     switch (featureID)
     {
-      case HelloXbasePackage.GREETING__EXPRESSIONS:
-        return basicSetExpressions(null, msgs);
+      case HelloXbasePackage.GREETING__EXPRESSION:
+        return basicSetExpression(null, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -185,8 +185,8 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
     {
       case HelloXbasePackage.GREETING__NAME:
         return getName();
-      case HelloXbasePackage.GREETING__EXPRESSIONS:
-        return getExpressions();
+      case HelloXbasePackage.GREETING__EXPRESSION:
+        return getExpression();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -204,8 +204,8 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
       case HelloXbasePackage.GREETING__NAME:
         setName((String)newValue);
         return;
-      case HelloXbasePackage.GREETING__EXPRESSIONS:
-        setExpressions((XExpression)newValue);
+      case HelloXbasePackage.GREETING__EXPRESSION:
+        setExpression((XExpression)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -224,8 +224,8 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
       case HelloXbasePackage.GREETING__NAME:
         setName(NAME_EDEFAULT);
         return;
-      case HelloXbasePackage.GREETING__EXPRESSIONS:
-        setExpressions((XExpression)null);
+      case HelloXbasePackage.GREETING__EXPRESSION:
+        setExpression((XExpression)null);
         return;
     }
     super.eUnset(featureID);
@@ -243,8 +243,8 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
     {
       case HelloXbasePackage.GREETING__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case HelloXbasePackage.GREETING__EXPRESSIONS:
-        return expressions != null;
+      case HelloXbasePackage.GREETING__EXPRESSION:
+        return expression != null;
     }
     return super.eIsSet(featureID);
   }

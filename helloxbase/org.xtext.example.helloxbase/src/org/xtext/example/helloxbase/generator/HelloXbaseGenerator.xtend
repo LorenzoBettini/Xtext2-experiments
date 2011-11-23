@@ -54,12 +54,12 @@ class HelloXbaseGenerator implements IGenerator {
 	'''
 
     def compile(Greeting greeting, ImportManager importManager) '''
-    «val builder = compile(greeting.expressions, importManager)»
+    «val builder = compile(greeting.expression, importManager)»
     public class «greeting.className» {
         public static void main(String args[]) {
         	«builder»
 
-        	Object expression = «builder.getName(greeting.expressions)»;
+        	Object expression = «builder.getName(greeting.expression)»;
             System.out.println("Hello «greeting.name» from " +
             	expression.toString());
         }

@@ -97,15 +97,15 @@ public class HelloXbaseGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
 		private final Keyword cFromKeyword_2 = (Keyword)cGroup.eContents().get(2);
-		private final Assignment cExpressionsAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final RuleCall cExpressionsXExpressionParserRuleCall_3_0 = (RuleCall)cExpressionsAssignment_3.eContents().get(0);
+		private final Assignment cExpressionAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final RuleCall cExpressionXExpressionParserRuleCall_3_0 = (RuleCall)cExpressionAssignment_3.eContents().get(0);
 		private final Keyword cExclamationMarkKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
 		//Greeting:
-		//	"Hello" name=ID "from" expressions=XExpression "!";
+		//	"Hello" name=ID "from" expression=XExpression "!";
 		public ParserRule getRule() { return rule; }
 
-		//"Hello" name=ID "from" expressions=XExpression "!"
+		//"Hello" name=ID "from" expression=XExpression "!"
 		public Group getGroup() { return cGroup; }
 
 		//"Hello"
@@ -120,11 +120,11 @@ public class HelloXbaseGrammarAccess extends AbstractGrammarElementFinder {
 		//"from"
 		public Keyword getFromKeyword_2() { return cFromKeyword_2; }
 
-		//expressions=XExpression
-		public Assignment getExpressionsAssignment_3() { return cExpressionsAssignment_3; }
+		//expression=XExpression
+		public Assignment getExpressionAssignment_3() { return cExpressionAssignment_3; }
 
 		//XExpression
-		public RuleCall getExpressionsXExpressionParserRuleCall_3_0() { return cExpressionsXExpressionParserRuleCall_3_0; }
+		public RuleCall getExpressionXExpressionParserRuleCall_3_0() { return cExpressionXExpressionParserRuleCall_3_0; }
 
 		//"!"
 		public Keyword getExclamationMarkKeyword_4() { return cExclamationMarkKeyword_4; }
@@ -188,7 +188,7 @@ public class HelloXbaseGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Greeting:
-	//	"Hello" name=ID "from" expressions=XExpression "!";
+	//	"Hello" name=ID "from" expression=XExpression "!";
 	public GreetingElements getGreetingAccess() {
 		return (pGreeting != null) ? pGreeting : (pGreeting = new GreetingElements());
 	}

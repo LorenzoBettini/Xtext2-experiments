@@ -9469,26 +9469,26 @@ public class InternalHelloXbaseParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Greeting__Group__3__Impl"
-    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:2937:1: rule__Greeting__Group__3__Impl : ( ( rule__Greeting__ExpressionsAssignment_3 ) ) ;
+    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:2937:1: rule__Greeting__Group__3__Impl : ( ( rule__Greeting__ExpressionAssignment_3 ) ) ;
     public final void rule__Greeting__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:2941:1: ( ( ( rule__Greeting__ExpressionsAssignment_3 ) ) )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:2942:1: ( ( rule__Greeting__ExpressionsAssignment_3 ) )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:2941:1: ( ( ( rule__Greeting__ExpressionAssignment_3 ) ) )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:2942:1: ( ( rule__Greeting__ExpressionAssignment_3 ) )
             {
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:2942:1: ( ( rule__Greeting__ExpressionsAssignment_3 ) )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:2943:1: ( rule__Greeting__ExpressionsAssignment_3 )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:2942:1: ( ( rule__Greeting__ExpressionAssignment_3 ) )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:2943:1: ( rule__Greeting__ExpressionAssignment_3 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getGreetingAccess().getExpressionsAssignment_3()); 
+               before(grammarAccess.getGreetingAccess().getExpressionAssignment_3()); 
             }
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:2944:1: ( rule__Greeting__ExpressionsAssignment_3 )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:2944:2: rule__Greeting__ExpressionsAssignment_3
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:2944:1: ( rule__Greeting__ExpressionAssignment_3 )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:2944:2: rule__Greeting__ExpressionAssignment_3
             {
-            pushFollow(FOLLOW_rule__Greeting__ExpressionsAssignment_3_in_rule__Greeting__Group__3__Impl6314);
-            rule__Greeting__ExpressionsAssignment_3();
+            pushFollow(FOLLOW_rule__Greeting__ExpressionAssignment_3_in_rule__Greeting__Group__3__Impl6314);
+            rule__Greeting__ExpressionAssignment_3();
 
             state._fsp--;
             if (state.failed) return ;
@@ -9496,7 +9496,7 @@ public class InternalHelloXbaseParser extends AbstractInternalContentAssistParse
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getGreetingAccess().getExpressionsAssignment_3()); 
+               after(grammarAccess.getGreetingAccess().getExpressionAssignment_3()); 
             }
 
             }
@@ -36736,9 +36736,9 @@ public class InternalHelloXbaseParser extends AbstractInternalContentAssistParse
     // $ANTLR end "rule__Greeting__NameAssignment_1"
 
 
-    // $ANTLR start "rule__Greeting__ExpressionsAssignment_3"
-    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:12853:1: rule__Greeting__ExpressionsAssignment_3 : ( ruleXExpression ) ;
-    public final void rule__Greeting__ExpressionsAssignment_3() throws RecognitionException {
+    // $ANTLR start "rule__Greeting__ExpressionAssignment_3"
+    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:12853:1: rule__Greeting__ExpressionAssignment_3 : ( ruleXExpression ) ;
+    public final void rule__Greeting__ExpressionAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -36750,15 +36750,15 @@ public class InternalHelloXbaseParser extends AbstractInternalContentAssistParse
             // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:12859:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getGreetingAccess().getExpressionsXExpressionParserRuleCall_3_0()); 
+               before(grammarAccess.getGreetingAccess().getExpressionXExpressionParserRuleCall_3_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__Greeting__ExpressionsAssignment_325798);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__Greeting__ExpressionAssignment_325798);
             ruleXExpression();
 
             state._fsp--;
             if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getGreetingAccess().getExpressionsXExpressionParserRuleCall_3_0()); 
+               after(grammarAccess.getGreetingAccess().getExpressionXExpressionParserRuleCall_3_0()); 
             }
 
             }
@@ -36778,7 +36778,7 @@ public class InternalHelloXbaseParser extends AbstractInternalContentAssistParse
         }
         return ;
     }
-    // $ANTLR end "rule__Greeting__ExpressionsAssignment_3"
+    // $ANTLR end "rule__Greeting__ExpressionAssignment_3"
 
 
     // $ANTLR start "rule__XAssignment__FeatureAssignment_0_1"
@@ -44881,7 +44881,7 @@ public class InternalHelloXbaseParser extends AbstractInternalContentAssistParse
     public static final BitSet FOLLOW_37_in_rule__Greeting__Group__2__Impl6253 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Greeting__Group__3__Impl_in_rule__Greeting__Group__36284 = new BitSet(new long[]{0x0000000020000000L});
     public static final BitSet FOLLOW_rule__Greeting__Group__4_in_rule__Greeting__Group__36287 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Greeting__ExpressionsAssignment_3_in_rule__Greeting__Group__3__Impl6314 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Greeting__ExpressionAssignment_3_in_rule__Greeting__Group__3__Impl6314 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Greeting__Group__4__Impl_in_rule__Greeting__Group__46344 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_29_in_rule__Greeting__Group__4__Impl6372 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__XAssignment__Group_0__0__Impl_in_rule__XAssignment__Group_0__06413 = new BitSet(new long[]{0x0000000000000010L});
@@ -45666,7 +45666,7 @@ public class InternalHelloXbaseParser extends AbstractInternalContentAssistParse
     public static final BitSet FOLLOW_ruleGreeting_in_rule__Model__GreetingsAssignment_125705 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleQualifiedNameWithWildcard_in_rule__Import__ImportedNamespaceAssignment_125736 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__Greeting__NameAssignment_125767 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__Greeting__ExpressionsAssignment_325798 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__Greeting__ExpressionAssignment_325798 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleValidID_in_rule__XAssignment__FeatureAssignment_0_125833 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleXAssignment_in_rule__XAssignment__ValueAssignment_0_325868 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleOpMultiAssign_in_rule__XAssignment__FeatureAssignment_1_1_0_0_125903 = new BitSet(new long[]{0x0000000000000002L});

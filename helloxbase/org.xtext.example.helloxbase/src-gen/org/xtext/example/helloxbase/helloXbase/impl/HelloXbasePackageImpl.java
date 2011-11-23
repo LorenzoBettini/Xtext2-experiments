@@ -190,7 +190,7 @@ public class HelloXbasePackageImpl extends EPackageImpl implements HelloXbasePac
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getGreeting_Expressions()
+  public EReference getGreeting_Expression()
   {
     return (EReference)greetingEClass.getEStructuralFeatures().get(1);
   }
@@ -234,7 +234,7 @@ public class HelloXbasePackageImpl extends EPackageImpl implements HelloXbasePac
 
     greetingEClass = createEClass(GREETING);
     createEAttribute(greetingEClass, GREETING__NAME);
-    createEReference(greetingEClass, GREETING__EXPRESSIONS);
+    createEReference(greetingEClass, GREETING__EXPRESSION);
   }
 
   /**
@@ -280,7 +280,7 @@ public class HelloXbasePackageImpl extends EPackageImpl implements HelloXbasePac
 
     initEClass(greetingEClass, Greeting.class, "Greeting", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getGreeting_Name(), ecorePackage.getEString(), "name", null, 0, 1, Greeting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getGreeting_Expressions(), theXbasePackage.getXExpression(), null, "expressions", null, 0, 1, Greeting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getGreeting_Expression(), theXbasePackage.getXExpression(), null, "expression", null, 0, 1, Greeting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     // Create resource
     createResource(eNS_URI);

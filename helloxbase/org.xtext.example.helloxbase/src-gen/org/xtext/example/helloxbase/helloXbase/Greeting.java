@@ -18,7 +18,7 @@ import org.eclipse.xtext.xbase.XExpression;
  * The following features are supported:
  * <ul>
  *   <li>{@link org.xtext.example.helloxbase.helloXbase.Greeting#getName <em>Name</em>}</li>
- *   <li>{@link org.xtext.example.helloxbase.helloXbase.Greeting#getExpressions <em>Expressions</em>}</li>
+ *   <li>{@link org.xtext.example.helloxbase.helloXbase.Greeting#getExpression <em>Expression</em>}</li>
  * </ul>
  * </p>
  *
@@ -55,29 +55,29 @@ public interface Greeting extends EObject
   void setName(String value);
 
   /**
-   * Returns the value of the '<em><b>Expressions</b></em>' containment reference.
+   * Returns the value of the '<em><b>Expression</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Expressions</em>' containment reference isn't clear,
+   * If the meaning of the '<em>Expression</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Expressions</em>' containment reference.
-   * @see #setExpressions(XExpression)
-   * @see org.xtext.example.helloxbase.helloXbase.HelloXbasePackage#getGreeting_Expressions()
+   * @return the value of the '<em>Expression</em>' containment reference.
+   * @see #setExpression(XExpression)
+   * @see org.xtext.example.helloxbase.helloXbase.HelloXbasePackage#getGreeting_Expression()
    * @model containment="true"
    * @generated
    */
-  XExpression getExpressions();
+  XExpression getExpression();
 
   /**
-   * Sets the value of the '{@link org.xtext.example.helloxbase.helloXbase.Greeting#getExpressions <em>Expressions</em>}' containment reference.
+   * Sets the value of the '{@link org.xtext.example.helloxbase.helloXbase.Greeting#getExpression <em>Expression</em>}' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Expressions</em>' containment reference.
-   * @see #getExpressions()
+   * @param value the new value of the '<em>Expression</em>' containment reference.
+   * @see #getExpression()
    * @generated
    */
-  void setExpressions(XExpression value);
+  void setExpression(XExpression value);
 
 } // Greeting
