@@ -19,61 +19,61 @@ import static extension org.eclipse.xtext.xtend2.lib.ResourceExtensions.*
 class HelloXbaseGenerator implements IGenerator {
 	
 	@Inject
-  	protected XbaseCompiler xbaseCompiler
-	
+	protected XbaseCompiler xbaseCompiler
+
 	override void doGenerate(Resource resource, IFileSystemAccess fsa) {
 		for(greeting: resource.allContentsIterable.filter(typeof(Greeting))) {
-		    fsa.generateFile(
-                greeting.packageName + "/" + // package
-                greeting.className + ".java", // class name
-                greeting.compile)
+			fsa.generateFile(
+				greeting.packageName + "/" + // package
+				greeting.className + ".java", // class name
+				greeting.compile)
 		}
 	}
-	
+
 	def getJvmType(Greeting greeting) {
-	    val declaredType = TypesFactory::eINSTANCE.createJvmGenericType
-	    declaredType.setSimpleName(greeting.className)
-	    declaredType.setPackageName(greeting.packageName)
-	    declaredType
+		val declaredType = TypesFactory::eINSTANCE.createJvmGenericType
+		declaredType.setSimpleName(greeting.className)
+		declaredType.setPackageName(greeting.packageName)
+		declaredType
 	}
-	
+
 	def compile(Greeting greeting) '''
 	«val importManager = new ImportManager(true, getJvmType(greeting))»
 	«val mainMethod = compile(greeting, importManager)»
 	package «greeting.packageName»;
 	«IF !importManager.imports.empty»
-	
+
 	«FOR i : importManager.imports»
-	   import «i»;
+		import «i»;
 	«ENDFOR»
 	«ENDIF»
-	
+
 	«mainMethod»
 	'''
 
-    def compile(Greeting greeting, ImportManager importManager) '''
-    «val builder = compile(greeting.expression, importManager)»
-    public class «greeting.className» {
-        public static void main(String args[]) {
-        	«builder»
+	def compile(Greeting greeting, ImportManager importManager) '''
+	«val result = compile(greeting.expression, importManager)»
+	public class «greeting.className» {
+		public static void main(String args[]) {
+			«result»
 
-        	Object expression = «builder.getName(greeting.expression)»;
-            System.out.println("Hello «greeting.name» from " +
-            	expression.toString());
-        }
-    }
-    '''
+			Object expression = «result.getName(greeting.expression)»;
+			System.out.println("Hello «greeting.name» from " +
+				expression.toString());
+		}
+	}
+	'''
     
-    def compile(XExpression xExpression, ImportManager importManager) {
-    	val result = new StringBuilderBasedAppendable(importManager)
-    	xbaseCompiler.toJavaStatement(xExpression, result, true)
-    	result
-    }
-    
-    def className(Greeting greeting) {
+	def compile(XExpression xExpression, ImportManager importManager) {
+		val result = new StringBuilderBasedAppendable(importManager)
+		xbaseCompiler.toJavaStatement(xExpression, result, true)
+		result
+	}
+
+	def className(Greeting greeting) {
 		greeting.name.toFirstUpper
 	}
-	
+
 	def packageName(Greeting greeting) {
 		greeting.name.toLowerCase
 	}
