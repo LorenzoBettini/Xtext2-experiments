@@ -1,0 +1,17 @@
+h1. Xtext 2 experiment
+
+Here you will find some experiments with Xtext 2.1 and Xbase.
+
+You will find the following projects:
+
+h2. hellojvmtypes
+
+Some experiments accessing JVM Types from an Xtext DSL (without using Xbase).  Blogged here: "Using JVM Types in Xtext 2.1 and the ImportManager":http://www.rcp-vision.com/?p=1573 .
+
+h2. helloxbase
+
+Some experiments using Xbase expressions in an Xtext DSL, while keeping control on the generation (and reusing XbaseCompiler for generating Java code corresponding to Xbase expressions).  Blogged here: "Xtext 2.1: using Xbase expressions":http://www.rcp-vision.com/?p=1640 .
+
+
+
+
