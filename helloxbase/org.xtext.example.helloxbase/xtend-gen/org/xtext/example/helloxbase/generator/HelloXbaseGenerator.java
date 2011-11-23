@@ -17,14 +17,10 @@ import org.eclipse.xtext.xbase.lib.IterableExtensions;
 import org.eclipse.xtext.xbase.lib.StringExtensions;
 import org.eclipse.xtext.xtend2.lib.ResourceExtensions;
 import org.eclipse.xtext.xtend2.lib.StringConcatenation;
-import org.xtext.example.helloxbase.generator.HelloXbaseExtensions;
 import org.xtext.example.helloxbase.helloXbase.Greeting;
 
 @SuppressWarnings("all")
 public class HelloXbaseGenerator implements IGenerator {
-  @Inject
-  private HelloXbaseExtensions _helloXbaseExtensions;
-  
   @Inject
   protected XbaseCompiler xbaseCompiler;
   
@@ -32,9 +28,9 @@ public class HelloXbaseGenerator implements IGenerator {
     Iterable<EObject> _allContentsIterable = ResourceExtensions.allContentsIterable(resource);
     Iterable<Greeting> _filter = IterableExtensions.<Greeting>filter(_allContentsIterable, org.xtext.example.helloxbase.helloXbase.Greeting.class);
     for (final Greeting greeting : _filter) {
-      String _packageName = this._helloXbaseExtensions.packageName(greeting);
+      String _packageName = this.packageName(greeting);
       String _operator_plus = StringExtensions.operator_plus(_packageName, "/");
-      String _className = this._helloXbaseExtensions.className(greeting);
+      String _className = this.className(greeting);
       String _operator_plus_1 = StringExtensions.operator_plus(_operator_plus, _className);
       String _operator_plus_2 = StringExtensions.operator_plus(_operator_plus_1, ".java");
       StringConcatenation _compile = this.compile(greeting);
@@ -47,9 +43,9 @@ public class HelloXbaseGenerator implements IGenerator {
     {
       JvmGenericType _createJvmGenericType = TypesFactory.eINSTANCE.createJvmGenericType();
       final JvmGenericType declaredType = _createJvmGenericType;
-      String _className = this._helloXbaseExtensions.className(greeting);
+      String _className = this.className(greeting);
       declaredType.setSimpleName(_className);
-      String _packageName = this._helloXbaseExtensions.packageName(greeting);
+      String _packageName = this.packageName(greeting);
       declaredType.setPackageName(_packageName);
       _xblockexpression = (declaredType);
     }
@@ -66,7 +62,7 @@ public class HelloXbaseGenerator implements IGenerator {
     final StringConcatenation mainMethod = _compile;
     _builder.newLineIfNotEmpty();
     _builder.append("package ");
-    String _packageName = this._helloXbaseExtensions.packageName(greeting);
+    String _packageName = this.packageName(greeting);
     _builder.append(_packageName, "");
     _builder.append(";");
     _builder.newLineIfNotEmpty();
@@ -100,7 +96,7 @@ public class HelloXbaseGenerator implements IGenerator {
     final StringBuilderBasedAppendable builder = _compile;
     _builder.newLineIfNotEmpty();
     _builder.append("public class ");
-    String _className = this._helloXbaseExtensions.className(greeting);
+    String _className = this.className(greeting);
     _builder.append(_className, "");
     _builder.append(" {");
     _builder.newLineIfNotEmpty();
@@ -144,5 +140,17 @@ public class HelloXbaseGenerator implements IGenerator {
       _xblockexpression = (result);
     }
     return _xblockexpression;
+  }
+  
+  public String className(final Greeting greeting) {
+    String _name = greeting.getName();
+    String _firstUpper = StringExtensions.toFirstUpper(_name);
+    return _firstUpper;
+  }
+  
+  public String packageName(final Greeting greeting) {
+    String _name = greeting.getName();
+    String _lowerCase = _name.toLowerCase();
+    return _lowerCase;
   }
 }

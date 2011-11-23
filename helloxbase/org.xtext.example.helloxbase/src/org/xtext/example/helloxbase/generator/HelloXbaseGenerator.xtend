@@ -3,22 +3,20 @@
  */
 package org.xtext.example.helloxbase.generator
 
+import com.google.inject.Inject
 import org.eclipse.emf.ecore.resource.Resource
+import org.eclipse.xtext.common.types.TypesFactory
 import org.eclipse.xtext.generator.IFileSystemAccess
 import org.eclipse.xtext.generator.IGenerator
+import org.eclipse.xtext.xbase.XExpression
 import org.eclipse.xtext.xbase.compiler.ImportManager
+import org.eclipse.xtext.xbase.compiler.StringBuilderBasedAppendable
+import org.eclipse.xtext.xbase.compiler.XbaseCompiler
 import org.xtext.example.helloxbase.helloXbase.Greeting
 
 import static extension org.eclipse.xtext.xtend2.lib.ResourceExtensions.*
-import org.eclipse.xtext.common.types.TypesFactory
-import com.google.inject.Inject
-import org.eclipse.xtext.xbase.XExpression
-import org.eclipse.xtext.xbase.compiler.StringBuilderBasedAppendable
-import org.eclipse.xtext.xbase.compiler.XbaseCompiler
 
 class HelloXbaseGenerator implements IGenerator {
-	
-	@Inject extension HelloXbaseExtensions
 	
 	@Inject
   	protected XbaseCompiler xbaseCompiler
@@ -71,4 +69,12 @@ class HelloXbaseGenerator implements IGenerator {
     	xbaseCompiler.toJavaStatement(xExpression, result, true)
     	result
     }
+    
+    def className(Greeting greeting) {
+		greeting.name.toFirstUpper
+	}
+	
+	def packageName(Greeting greeting) {
+		greeting.name.toLowerCase
+	}
 }
