@@ -68,6 +68,7 @@ public class HelloXvarsFactoryImpl extends EFactoryImpl implements HelloXvarsFac
     switch (eClass.getClassifierID())
     {
       case HelloXvarsPackage.MODEL: return createModel();
+      case HelloXvarsPackage.IMPORT: return createImport();
       case HelloXvarsPackage.GREETING: return createGreeting();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
@@ -83,6 +84,17 @@ public class HelloXvarsFactoryImpl extends EFactoryImpl implements HelloXvarsFac
   {
     ModelImpl model = new ModelImpl();
     return model;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Import createImport()
+  {
+    ImportImpl import_ = new ImportImpl();
+    return import_;
   }
 
   /**

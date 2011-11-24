@@ -6,14 +6,20 @@
     modelPluginID="org.xtext.example.helloxvars" forceOverwrite="true" modelName="HelloXvars"
     updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     complianceLevel="5.0" copyrightFields="false" editPluginID="org.xtext.example.helloxvars.edit"
-    editorPluginID="org.xtext.example.helloxvars.editor">
+    editorPluginID="org.xtext.example.helloxvars.editor" usedGenPackages="../../../../../../org.eclipse.xtext.xbase/model/Xbase.genmodel#//xbase">
   <genPackages prefix="HelloXvars" basePackage="org.xtext.example.helloxvars" disposableProviderFactory="true"
       ecorePackage="HelloXvars.ecore#/">
     <genClasses ecoreClass="HelloXvars.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloXvars.ecore#//Model/imports"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloXvars.ecore#//Model/varDeclarations"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloXvars.ecore#//Model/greetings"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloXvars.ecore#//Import">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloXvars.ecore#//Import/importedNamespace"/>
     </genClasses>
     <genClasses ecoreClass="HelloXvars.ecore#//Greeting">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloXvars.ecore#//Greeting/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloXvars.ecore#//Greeting/expression"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

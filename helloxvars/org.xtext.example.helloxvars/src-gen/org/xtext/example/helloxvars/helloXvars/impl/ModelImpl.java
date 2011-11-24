@@ -19,8 +19,11 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.eclipse.xtext.xbase.XExpression;
+
 import org.xtext.example.helloxvars.helloXvars.Greeting;
 import org.xtext.example.helloxvars.helloXvars.HelloXvarsPackage;
+import org.xtext.example.helloxvars.helloXvars.Import;
 import org.xtext.example.helloxvars.helloXvars.Model;
 
 /**
@@ -30,6 +33,8 @@ import org.xtext.example.helloxvars.helloXvars.Model;
  * <p>
  * The following features are implemented:
  * <ul>
+ *   <li>{@link org.xtext.example.helloxvars.helloXvars.impl.ModelImpl#getImports <em>Imports</em>}</li>
+ *   <li>{@link org.xtext.example.helloxvars.helloXvars.impl.ModelImpl#getVarDeclarations <em>Var Declarations</em>}</li>
  *   <li>{@link org.xtext.example.helloxvars.helloXvars.impl.ModelImpl#getGreetings <em>Greetings</em>}</li>
  * </ul>
  * </p>
@@ -38,6 +43,26 @@ import org.xtext.example.helloxvars.helloXvars.Model;
  */
 public class ModelImpl extends MinimalEObjectImpl.Container implements Model
 {
+  /**
+   * The cached value of the '{@link #getImports() <em>Imports</em>}' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getImports()
+   * @generated
+   * @ordered
+   */
+  protected EList<Import> imports;
+
+  /**
+   * The cached value of the '{@link #getVarDeclarations() <em>Var Declarations</em>}' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getVarDeclarations()
+   * @generated
+   * @ordered
+   */
+  protected EList<XExpression> varDeclarations;
+
   /**
    * The cached value of the '{@link #getGreetings() <em>Greetings</em>}' containment reference list.
    * <!-- begin-user-doc -->
@@ -74,6 +99,34 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
    * <!-- end-user-doc -->
    * @generated
    */
+  public EList<Import> getImports()
+  {
+    if (imports == null)
+    {
+      imports = new EObjectContainmentEList<Import>(Import.class, this, HelloXvarsPackage.MODEL__IMPORTS);
+    }
+    return imports;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EList<XExpression> getVarDeclarations()
+  {
+    if (varDeclarations == null)
+    {
+      varDeclarations = new EObjectContainmentEList<XExpression>(XExpression.class, this, HelloXvarsPackage.MODEL__VAR_DECLARATIONS);
+    }
+    return varDeclarations;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EList<Greeting> getGreetings()
   {
     if (greetings == null)
@@ -93,6 +146,10 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
+      case HelloXvarsPackage.MODEL__IMPORTS:
+        return ((InternalEList<?>)getImports()).basicRemove(otherEnd, msgs);
+      case HelloXvarsPackage.MODEL__VAR_DECLARATIONS:
+        return ((InternalEList<?>)getVarDeclarations()).basicRemove(otherEnd, msgs);
       case HelloXvarsPackage.MODEL__GREETINGS:
         return ((InternalEList<?>)getGreetings()).basicRemove(otherEnd, msgs);
     }
@@ -109,6 +166,10 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
+      case HelloXvarsPackage.MODEL__IMPORTS:
+        return getImports();
+      case HelloXvarsPackage.MODEL__VAR_DECLARATIONS:
+        return getVarDeclarations();
       case HelloXvarsPackage.MODEL__GREETINGS:
         return getGreetings();
     }
@@ -126,6 +187,14 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
+      case HelloXvarsPackage.MODEL__IMPORTS:
+        getImports().clear();
+        getImports().addAll((Collection<? extends Import>)newValue);
+        return;
+      case HelloXvarsPackage.MODEL__VAR_DECLARATIONS:
+        getVarDeclarations().clear();
+        getVarDeclarations().addAll((Collection<? extends XExpression>)newValue);
+        return;
       case HelloXvarsPackage.MODEL__GREETINGS:
         getGreetings().clear();
         getGreetings().addAll((Collection<? extends Greeting>)newValue);
@@ -144,6 +213,12 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
+      case HelloXvarsPackage.MODEL__IMPORTS:
+        getImports().clear();
+        return;
+      case HelloXvarsPackage.MODEL__VAR_DECLARATIONS:
+        getVarDeclarations().clear();
+        return;
       case HelloXvarsPackage.MODEL__GREETINGS:
         getGreetings().clear();
         return;
@@ -161,6 +236,10 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
   {
     switch (featureID)
     {
+      case HelloXvarsPackage.MODEL__IMPORTS:
+        return imports != null && !imports.isEmpty();
+      case HelloXvarsPackage.MODEL__VAR_DECLARATIONS:
+        return varDeclarations != null && !varDeclarations.isEmpty();
       case HelloXvarsPackage.MODEL__GREETINGS:
         return greetings != null && !greetings.isEmpty();
     }
