@@ -4,7 +4,6 @@
 package org.xtext.example.helloxvars.scoping;
 
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.xtext.EcoreUtil2;
 import org.eclipse.xtext.scoping.IScope;
 import org.eclipse.xtext.scoping.Scopes;
 import org.eclipse.xtext.xbase.scoping.LocalVariableScopeContext;
@@ -25,9 +24,10 @@ public class HelloXvarsScopeProvider extends XbaseScopeProvider {
 			LocalVariableScopeContext scopeContext) {
 		if (scopeContext != null && scopeContext.getContext() != null) {
 			EObject context = scopeContext.getContext();
-			Model model = EcoreUtil2.getContainerOfType(context, Model.class);
-			if (model != null)
+			if (context instanceof Model) {
+				Model model = (Model) context;
 				return Scopes.scopeFor(model.getVarDeclarations());
+			}	
 		}
 		
 		return super.createLocalVarScope(parentScope, scopeContext);
