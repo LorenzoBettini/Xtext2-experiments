@@ -47,6 +47,17 @@ public class ParserTest {
   }
   
   @Test
+  public void testParsingAndLinkingWithGreetingImports() throws Exception {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("import org.xtext.example.hellojvmtypes.helloJvmTypes.*");
+    _builder.newLine();
+    _builder.append("Hello foo from Greeting!");
+    _builder.newLine();
+    Model _parse = this.parser.parse(_builder);
+    this._validationTestHelper.assertNoErrors(_parse);
+  }
+  
+  @Test
   public void testJvmTypeAccess() throws Exception {
       Model _parse = this.parser.parse("Hello foo from java.util.List!");
       final Model model = _parse;

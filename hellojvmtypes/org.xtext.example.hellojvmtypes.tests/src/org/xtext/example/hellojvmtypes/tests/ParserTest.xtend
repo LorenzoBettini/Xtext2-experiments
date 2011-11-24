@@ -36,6 +36,14 @@ class ParserTest {
     }
     
     @Test
+    def void testParsingAndLinkingWithGreetingImports() {
+        parser.parse('''
+        	import org.xtext.example.hellojvmtypes.helloJvmTypes.*
+        	Hello foo from Greeting!
+        ''').assertNoErrors
+    }
+    
+    @Test
     def void testJvmTypeAccess() {
         val model = parser.parse(
             "Hello foo from java.util.List!")
