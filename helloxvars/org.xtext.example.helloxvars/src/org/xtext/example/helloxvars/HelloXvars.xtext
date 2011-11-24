@@ -1,0 +1,9 @@
+grammar org.xtext.example.helloxvars.HelloXvars with org.eclipse.xtext.common.Terminals
+
+generate helloXvars "http://www.xtext.org/example/helloxvars/HelloXvars"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
