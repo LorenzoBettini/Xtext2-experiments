@@ -3,9 +3,14 @@
  */
 package org.xtext.example.helloxvars.scoping;
 
+import java.util.List;
+
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.xtext.EcoreUtil2;
 import org.eclipse.xtext.scoping.IScope;
 import org.eclipse.xtext.scoping.Scopes;
+import org.eclipse.xtext.xbase.XExpression;
+import org.eclipse.xtext.xbase.XVariableDeclaration;
 import org.eclipse.xtext.xbase.scoping.LocalVariableScopeContext;
 import org.eclipse.xtext.xbase.scoping.XbaseScopeProvider;
 import org.xtext.example.helloxvars.helloXvars.Model;
@@ -24,14 +29,19 @@ public class HelloXvarsScopeProvider extends XbaseScopeProvider {
 			LocalVariableScopeContext scopeContext) {
 		if (scopeContext != null && scopeContext.getContext() != null) {
 			EObject context = scopeContext.getContext();
-			if (context instanceof Model) {
-				Model model = (Model) context;
-				return Scopes.scopeFor(model.getVarDeclarations());
-			}	
+			Model containingModel = EcoreUtil2.getContainerOfType(context,
+					Model.class);
+			XVariableDeclaration containingVarDecl = EcoreUtil2
+					.getContainerOfType(context, XVariableDeclaration.class);
+			List<XExpression> varDeclarations = containingModel.getVarDeclarations();
+			int index = varDeclarations.size();
+			if (containingVarDecl != null) {
+				index = varDeclarations.indexOf(containingVarDecl);
+			}
+			return Scopes.scopeFor(varDeclarations.subList(0, index));
 		}
-		
+
 		return super.createLocalVarScope(parentScope, scopeContext);
 	}
 
-	
 }
