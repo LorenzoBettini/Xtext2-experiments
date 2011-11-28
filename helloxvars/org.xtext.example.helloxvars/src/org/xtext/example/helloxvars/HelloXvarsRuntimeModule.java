@@ -3,7 +3,9 @@
  */
 package org.xtext.example.helloxvars;
 
+import org.eclipse.xtext.generator.IGenerator;
 import org.eclipse.xtext.scoping.IScopeProvider;
+import org.xtext.example.helloxvars.generator.HelloXvarsGenerator;
 import org.xtext.example.helloxvars.scoping.HelloXvarsScopeProvider;
 
 /**
@@ -16,6 +18,11 @@ public class HelloXvarsRuntimeModule extends
 	@Override
 	public Class<? extends IScopeProvider> bindIScopeProvider() {
 		return HelloXvarsScopeProvider.class;
+	}
+
+	@Override
+	public Class<? extends IGenerator> bindIGenerator() {
+		return HelloXvarsGenerator.class;
 	}
 
 }
