@@ -10,7 +10,6 @@ import org.eclipse.xtext.xbase.XbasePackage
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.xtext.example.helloxvars.HelloXvarsInjectorProvider
-import org.xtext.example.helloxvars.helloXvars.Greeting
 import org.xtext.example.helloxvars.helloXvars.Model
 
 @InjectWith(typeof(HelloXvarsInjectorProvider))
@@ -24,29 +23,37 @@ class HelloXvarsParserTest {
 
 	@Test
 	def void testParsingAndLinking() {
-		parser.parse('''Hello foo from new String()!''').assertNoErrors
+		parser.parse("Hello foo from new String()!").assertNoErrors
 	}
 
 	@Test
 	def void testParsingAndLinkingWithVars() {
-		parser.parse('''
-			val s = 'foo'
-			Hello foo from new String(s)!
-		''').assertNoErrors
+		parser.parse("
+			val s1 = 'foo'
+			val s2 = 'bar'
+			val s3 = s1 + s2
+			Hello foo from new String(s3)!
+		").assertNoErrors
 	}
 
 	@Test
 	def void testParsingAndLinkingWithMissingVar() {
-		parser.parse('''
+		parser.parse("
 			Hello foo from new String(s)!
-		''').assertError(XbasePackage::eINSTANCE.XFeatureCall,
+		").assertError(XbasePackage::eINSTANCE.XFeatureCall,
 				Diagnostic::LINKING_DIAGNOSTIC,
 				"Couldn't resolve reference to JvmIdentifiableElement 's'.")
 	}
-    
-    @Test
-    def void testExpression() {
-		val model = parser.parse("Hello foo from new String()!")
-		val greeting = model.greetings.head as Greeting
+
+	@Test
+	def void testParsingAndLinkingWithWrongVarOrder() {
+		parser.parse("
+			val s1 = s2
+			val s2 = s1
+			Hello foo from new String(s1)!
+		").assertError(XbasePackage::eINSTANCE.XFeatureCall,
+				Diagnostic::LINKING_DIAGNOSTIC,
+				"Couldn't resolve reference to JvmIdentifiableElement 's2'.")
 	}
+    
 }
