@@ -36,6 +36,12 @@ public class HelloXvarsParserTest {
   }
   
   @Test
+  public void testParsingAndLinkingWithClosures() throws Exception {
+    Model _parse = this.parser.parse("\n\t\t\tval s1 = \'foo\'\n\t\t\tval s2 = \'bar\'\n\t\t\tval s3 = s1 + [ s | s.toFirstLower + s1 ].apply(s2 + s1)\n\t\t\tHello foo from new String(s3)!\n\t\t");
+    this._validationTestHelper.assertNoErrors(_parse);
+  }
+  
+  @Test
   public void testParsingAndLinkingWithMissingVar() throws Exception {
     Model _parse = this.parser.parse("\n\t\t\tHello foo from new String(s)!\n\t\t");
     EClass _xFeatureCall = XbasePackage.eINSTANCE.getXFeatureCall();

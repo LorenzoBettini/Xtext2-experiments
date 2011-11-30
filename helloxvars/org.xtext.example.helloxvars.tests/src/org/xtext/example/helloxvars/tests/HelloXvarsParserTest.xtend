@@ -35,6 +35,16 @@ class HelloXvarsParserTest {
 			Hello foo from new String(s3)!
 		").assertNoErrors
 	}
+	
+	@Test
+	def void testParsingAndLinkingWithClosures() {
+		parser.parse("
+			val s1 = 'foo'
+			val s2 = 'bar'
+			val s3 = s1 + [ s | s.toFirstLower + s1 ].apply(s2 + s1)
+			Hello foo from new String(s3)!
+		").assertNoErrors
+	}
 
 	@Test
 	def void testParsingAndLinkingWithMissingVar() {
