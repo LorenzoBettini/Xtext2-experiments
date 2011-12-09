@@ -29,7 +29,7 @@ class ParserTest {
     def void testExpression() {
         val model = parser.parse(
             "Hello foo from new String()!")
-        val greeting = model.greetings.head as Greeting
+        model.greetings.head as Greeting
     }
     
 }

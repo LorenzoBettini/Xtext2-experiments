@@ -44,8 +44,7 @@ public class ParserTest {
         Model _parse = this.parser.parse("Hello foo from new String()!");
         final Model model = _parse;
         EList<Greeting> _greetings = model.getGreetings();
-        Greeting _head = IterableExtensions.<Greeting>head(_greetings);
-        final Greeting greeting = ((Greeting) _head);
+        IterableExtensions.<Greeting>head(_greetings);
       }
     } catch (Exception _e) {
       throw Exceptions.sneakyThrow(_e);
