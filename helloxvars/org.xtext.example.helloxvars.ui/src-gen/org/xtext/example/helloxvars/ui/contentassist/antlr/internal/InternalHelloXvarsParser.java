@@ -6676,17 +6676,14 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
             if ( (LA11_0==30) ) {
                 int LA11_1 = input.LA(2);
 
-                if ( (LA11_1==20) ) {
-                    alt11=2;
-                }
-                else if ( (LA11_1==RULE_ID) ) {
+                if ( (LA11_1==RULE_ID) ) {
                     int LA11_3 = input.LA(3);
 
-                    if ( (LA11_3==11) ) {
-                        alt11=1;
-                    }
-                    else if ( (LA11_3==EOF||(LA11_3>=RULE_ID && LA11_3<=RULE_STRING)||(LA11_3>=12 && LA11_3<=33)||LA11_3==36||(LA11_3>=38 && LA11_3<=56)||(LA11_3>=58 && LA11_3<=66)||(LA11_3>=70 && LA11_3<=71)||(LA11_3>=73 && LA11_3<=74)) ) {
+                    if ( (LA11_3==EOF||(LA11_3>=RULE_ID && LA11_3<=RULE_STRING)||(LA11_3>=12 && LA11_3<=33)||LA11_3==36||(LA11_3>=38 && LA11_3<=56)||(LA11_3>=58 && LA11_3<=66)||(LA11_3>=70 && LA11_3<=71)||(LA11_3>=73 && LA11_3<=74)) ) {
                         alt11=2;
+                    }
+                    else if ( (LA11_3==11) ) {
+                        alt11=1;
                     }
                     else {
                         if (state.backtracking>0) {state.failed=true; return ;}
@@ -6695,6 +6692,9 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
                         throw nvae;
                     }
+                }
+                else if ( (LA11_1==20) ) {
+                    alt11=2;
                 }
                 else {
                     if (state.backtracking>0) {state.failed=true; return ;}
@@ -34833,34 +34833,45 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XFunctionTypeRef__Group_0__1__Impl"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12138:1: rule__XFunctionTypeRef__Group_0__1__Impl : ( ( rule__XFunctionTypeRef__ParamTypesAssignment_0_1 ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12138:1: rule__XFunctionTypeRef__Group_0__1__Impl : ( ( rule__XFunctionTypeRef__Group_0_1__0 )? ) ;
     public final void rule__XFunctionTypeRef__Group_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12142:1: ( ( ( rule__XFunctionTypeRef__ParamTypesAssignment_0_1 ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12143:1: ( ( rule__XFunctionTypeRef__ParamTypesAssignment_0_1 ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12142:1: ( ( ( rule__XFunctionTypeRef__Group_0_1__0 )? ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12143:1: ( ( rule__XFunctionTypeRef__Group_0_1__0 )? )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12143:1: ( ( rule__XFunctionTypeRef__ParamTypesAssignment_0_1 ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12144:1: ( rule__XFunctionTypeRef__ParamTypesAssignment_0_1 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12143:1: ( ( rule__XFunctionTypeRef__Group_0_1__0 )? )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12144:1: ( rule__XFunctionTypeRef__Group_0_1__0 )?
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXFunctionTypeRefAccess().getParamTypesAssignment_0_1()); 
+               before(grammarAccess.getXFunctionTypeRefAccess().getGroup_0_1()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12145:1: ( rule__XFunctionTypeRef__ParamTypesAssignment_0_1 )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12145:2: rule__XFunctionTypeRef__ParamTypesAssignment_0_1
-            {
-            pushFollow(FOLLOW_rule__XFunctionTypeRef__ParamTypesAssignment_0_1_in_rule__XFunctionTypeRef__Group_0__1__Impl24396);
-            rule__XFunctionTypeRef__ParamTypesAssignment_0_1();
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12145:1: ( rule__XFunctionTypeRef__Group_0_1__0 )?
+            int alt82=2;
+            int LA82_0 = input.LA(1);
 
-            state._fsp--;
-            if (state.failed) return ;
+            if ( (LA82_0==RULE_ID||LA82_0==45||LA82_0==66) ) {
+                alt82=1;
+            }
+            switch (alt82) {
+                case 1 :
+                    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12145:2: rule__XFunctionTypeRef__Group_0_1__0
+                    {
+                    pushFollow(FOLLOW_rule__XFunctionTypeRef__Group_0_1__0_in_rule__XFunctionTypeRef__Group_0__1__Impl24396);
+                    rule__XFunctionTypeRef__Group_0_1__0();
+
+                    state._fsp--;
+                    if (state.failed) return ;
+
+                    }
+                    break;
 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXFunctionTypeRefAccess().getParamTypesAssignment_0_1()); 
+               after(grammarAccess.getXFunctionTypeRefAccess().getGroup_0_1()); 
             }
 
             }
@@ -34884,22 +34895,17 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XFunctionTypeRef__Group_0__2"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12155:1: rule__XFunctionTypeRef__Group_0__2 : rule__XFunctionTypeRef__Group_0__2__Impl rule__XFunctionTypeRef__Group_0__3 ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12155:1: rule__XFunctionTypeRef__Group_0__2 : rule__XFunctionTypeRef__Group_0__2__Impl ;
     public final void rule__XFunctionTypeRef__Group_0__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12159:1: ( rule__XFunctionTypeRef__Group_0__2__Impl rule__XFunctionTypeRef__Group_0__3 )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12160:2: rule__XFunctionTypeRef__Group_0__2__Impl rule__XFunctionTypeRef__Group_0__3
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12159:1: ( rule__XFunctionTypeRef__Group_0__2__Impl )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12160:2: rule__XFunctionTypeRef__Group_0__2__Impl
             {
-            pushFollow(FOLLOW_rule__XFunctionTypeRef__Group_0__2__Impl_in_rule__XFunctionTypeRef__Group_0__224426);
+            pushFollow(FOLLOW_rule__XFunctionTypeRef__Group_0__2__Impl_in_rule__XFunctionTypeRef__Group_0__224427);
             rule__XFunctionTypeRef__Group_0__2__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_rule__XFunctionTypeRef__Group_0__3_in_rule__XFunctionTypeRef__Group_0__224429);
-            rule__XFunctionTypeRef__Group_0__3();
 
             state._fsp--;
             if (state.failed) return ;
@@ -34922,52 +34928,24 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XFunctionTypeRef__Group_0__2__Impl"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12167:1: rule__XFunctionTypeRef__Group_0__2__Impl : ( ( rule__XFunctionTypeRef__Group_0_2__0 )* ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12166:1: rule__XFunctionTypeRef__Group_0__2__Impl : ( ')' ) ;
     public final void rule__XFunctionTypeRef__Group_0__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12171:1: ( ( ( rule__XFunctionTypeRef__Group_0_2__0 )* ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12172:1: ( ( rule__XFunctionTypeRef__Group_0_2__0 )* )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12170:1: ( ( ')' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12171:1: ( ')' )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12172:1: ( ( rule__XFunctionTypeRef__Group_0_2__0 )* )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12173:1: ( rule__XFunctionTypeRef__Group_0_2__0 )*
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12171:1: ( ')' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12172:1: ')'
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXFunctionTypeRefAccess().getGroup_0_2()); 
+               before(grammarAccess.getXFunctionTypeRefAccess().getRightParenthesisKeyword_0_2()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12174:1: ( rule__XFunctionTypeRef__Group_0_2__0 )*
-            loop82:
-            do {
-                int alt82=2;
-                int LA82_0 = input.LA(1);
-
-                if ( (LA82_0==40) ) {
-                    alt82=1;
-                }
-
-
-                switch (alt82) {
-            	case 1 :
-            	    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12174:2: rule__XFunctionTypeRef__Group_0_2__0
-            	    {
-            	    pushFollow(FOLLOW_rule__XFunctionTypeRef__Group_0_2__0_in_rule__XFunctionTypeRef__Group_0__2__Impl24456);
-            	    rule__XFunctionTypeRef__Group_0_2__0();
-
-            	    state._fsp--;
-            	    if (state.failed) return ;
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop82;
-                }
-            } while (true);
-
+            match(input,41,FOLLOW_41_in_rule__XFunctionTypeRef__Group_0__2__Impl24455); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXFunctionTypeRefAccess().getGroup_0_2()); 
+               after(grammarAccess.getXFunctionTypeRefAccess().getRightParenthesisKeyword_0_2()); 
             }
 
             }
@@ -34990,18 +34968,23 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
     // $ANTLR end "rule__XFunctionTypeRef__Group_0__2__Impl"
 
 
-    // $ANTLR start "rule__XFunctionTypeRef__Group_0__3"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12184:1: rule__XFunctionTypeRef__Group_0__3 : rule__XFunctionTypeRef__Group_0__3__Impl ;
-    public final void rule__XFunctionTypeRef__Group_0__3() throws RecognitionException {
+    // $ANTLR start "rule__XFunctionTypeRef__Group_0_1__0"
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12191:1: rule__XFunctionTypeRef__Group_0_1__0 : rule__XFunctionTypeRef__Group_0_1__0__Impl rule__XFunctionTypeRef__Group_0_1__1 ;
+    public final void rule__XFunctionTypeRef__Group_0_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12188:1: ( rule__XFunctionTypeRef__Group_0__3__Impl )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12189:2: rule__XFunctionTypeRef__Group_0__3__Impl
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12195:1: ( rule__XFunctionTypeRef__Group_0_1__0__Impl rule__XFunctionTypeRef__Group_0_1__1 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12196:2: rule__XFunctionTypeRef__Group_0_1__0__Impl rule__XFunctionTypeRef__Group_0_1__1
             {
-            pushFollow(FOLLOW_rule__XFunctionTypeRef__Group_0__3__Impl_in_rule__XFunctionTypeRef__Group_0__324487);
-            rule__XFunctionTypeRef__Group_0__3__Impl();
+            pushFollow(FOLLOW_rule__XFunctionTypeRef__Group_0_1__0__Impl_in_rule__XFunctionTypeRef__Group_0_1__024492);
+            rule__XFunctionTypeRef__Group_0_1__0__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+            pushFollow(FOLLOW_rule__XFunctionTypeRef__Group_0_1__1_in_rule__XFunctionTypeRef__Group_0_1__024495);
+            rule__XFunctionTypeRef__Group_0_1__1();
 
             state._fsp--;
             if (state.failed) return ;
@@ -35020,107 +35003,38 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
         }
         return ;
     }
-    // $ANTLR end "rule__XFunctionTypeRef__Group_0__3"
+    // $ANTLR end "rule__XFunctionTypeRef__Group_0_1__0"
 
 
-    // $ANTLR start "rule__XFunctionTypeRef__Group_0__3__Impl"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12195:1: rule__XFunctionTypeRef__Group_0__3__Impl : ( ')' ) ;
-    public final void rule__XFunctionTypeRef__Group_0__3__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12199:1: ( ( ')' ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12200:1: ( ')' )
-            {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12200:1: ( ')' )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12201:1: ')'
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXFunctionTypeRefAccess().getRightParenthesisKeyword_0_3()); 
-            }
-            match(input,41,FOLLOW_41_in_rule__XFunctionTypeRef__Group_0__3__Impl24515); if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXFunctionTypeRefAccess().getRightParenthesisKeyword_0_3()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XFunctionTypeRef__Group_0__3__Impl"
-
-
-    // $ANTLR start "rule__XFunctionTypeRef__Group_0_2__0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12222:1: rule__XFunctionTypeRef__Group_0_2__0 : rule__XFunctionTypeRef__Group_0_2__0__Impl rule__XFunctionTypeRef__Group_0_2__1 ;
-    public final void rule__XFunctionTypeRef__Group_0_2__0() throws RecognitionException {
+    // $ANTLR start "rule__XFunctionTypeRef__Group_0_1__0__Impl"
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12203:1: rule__XFunctionTypeRef__Group_0_1__0__Impl : ( ( rule__XFunctionTypeRef__ParamTypesAssignment_0_1_0 ) ) ;
+    public final void rule__XFunctionTypeRef__Group_0_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12226:1: ( rule__XFunctionTypeRef__Group_0_2__0__Impl rule__XFunctionTypeRef__Group_0_2__1 )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12227:2: rule__XFunctionTypeRef__Group_0_2__0__Impl rule__XFunctionTypeRef__Group_0_2__1
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12207:1: ( ( ( rule__XFunctionTypeRef__ParamTypesAssignment_0_1_0 ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12208:1: ( ( rule__XFunctionTypeRef__ParamTypesAssignment_0_1_0 ) )
             {
-            pushFollow(FOLLOW_rule__XFunctionTypeRef__Group_0_2__0__Impl_in_rule__XFunctionTypeRef__Group_0_2__024554);
-            rule__XFunctionTypeRef__Group_0_2__0__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-            pushFollow(FOLLOW_rule__XFunctionTypeRef__Group_0_2__1_in_rule__XFunctionTypeRef__Group_0_2__024557);
-            rule__XFunctionTypeRef__Group_0_2__1();
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12208:1: ( ( rule__XFunctionTypeRef__ParamTypesAssignment_0_1_0 ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12209:1: ( rule__XFunctionTypeRef__ParamTypesAssignment_0_1_0 )
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXFunctionTypeRefAccess().getParamTypesAssignment_0_1_0()); 
+            }
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12210:1: ( rule__XFunctionTypeRef__ParamTypesAssignment_0_1_0 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12210:2: rule__XFunctionTypeRef__ParamTypesAssignment_0_1_0
+            {
+            pushFollow(FOLLOW_rule__XFunctionTypeRef__ParamTypesAssignment_0_1_0_in_rule__XFunctionTypeRef__Group_0_1__0__Impl24522);
+            rule__XFunctionTypeRef__ParamTypesAssignment_0_1_0();
 
             state._fsp--;
             if (state.failed) return ;
 
             }
 
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XFunctionTypeRef__Group_0_2__0"
-
-
-    // $ANTLR start "rule__XFunctionTypeRef__Group_0_2__0__Impl"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12234:1: rule__XFunctionTypeRef__Group_0_2__0__Impl : ( ',' ) ;
-    public final void rule__XFunctionTypeRef__Group_0_2__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12238:1: ( ( ',' ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12239:1: ( ',' )
-            {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12239:1: ( ',' )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12240:1: ','
-            {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXFunctionTypeRefAccess().getCommaKeyword_0_2_0()); 
-            }
-            match(input,40,FOLLOW_40_in_rule__XFunctionTypeRef__Group_0_2__0__Impl24585); if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXFunctionTypeRefAccess().getCommaKeyword_0_2_0()); 
+               after(grammarAccess.getXFunctionTypeRefAccess().getParamTypesAssignment_0_1_0()); 
             }
 
             }
@@ -35140,21 +35054,21 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
         }
         return ;
     }
-    // $ANTLR end "rule__XFunctionTypeRef__Group_0_2__0__Impl"
+    // $ANTLR end "rule__XFunctionTypeRef__Group_0_1__0__Impl"
 
 
-    // $ANTLR start "rule__XFunctionTypeRef__Group_0_2__1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12253:1: rule__XFunctionTypeRef__Group_0_2__1 : rule__XFunctionTypeRef__Group_0_2__1__Impl ;
-    public final void rule__XFunctionTypeRef__Group_0_2__1() throws RecognitionException {
+    // $ANTLR start "rule__XFunctionTypeRef__Group_0_1__1"
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12220:1: rule__XFunctionTypeRef__Group_0_1__1 : rule__XFunctionTypeRef__Group_0_1__1__Impl ;
+    public final void rule__XFunctionTypeRef__Group_0_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12257:1: ( rule__XFunctionTypeRef__Group_0_2__1__Impl )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12258:2: rule__XFunctionTypeRef__Group_0_2__1__Impl
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12224:1: ( rule__XFunctionTypeRef__Group_0_1__1__Impl )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12225:2: rule__XFunctionTypeRef__Group_0_1__1__Impl
             {
-            pushFollow(FOLLOW_rule__XFunctionTypeRef__Group_0_2__1__Impl_in_rule__XFunctionTypeRef__Group_0_2__124616);
-            rule__XFunctionTypeRef__Group_0_2__1__Impl();
+            pushFollow(FOLLOW_rule__XFunctionTypeRef__Group_0_1__1__Impl_in_rule__XFunctionTypeRef__Group_0_1__124552);
+            rule__XFunctionTypeRef__Group_0_1__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
@@ -35173,38 +35087,56 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
         }
         return ;
     }
-    // $ANTLR end "rule__XFunctionTypeRef__Group_0_2__1"
+    // $ANTLR end "rule__XFunctionTypeRef__Group_0_1__1"
 
 
-    // $ANTLR start "rule__XFunctionTypeRef__Group_0_2__1__Impl"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12264:1: rule__XFunctionTypeRef__Group_0_2__1__Impl : ( ( rule__XFunctionTypeRef__ParamTypesAssignment_0_2_1 ) ) ;
-    public final void rule__XFunctionTypeRef__Group_0_2__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__XFunctionTypeRef__Group_0_1__1__Impl"
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12231:1: rule__XFunctionTypeRef__Group_0_1__1__Impl : ( ( rule__XFunctionTypeRef__Group_0_1_1__0 )* ) ;
+    public final void rule__XFunctionTypeRef__Group_0_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12268:1: ( ( ( rule__XFunctionTypeRef__ParamTypesAssignment_0_2_1 ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12269:1: ( ( rule__XFunctionTypeRef__ParamTypesAssignment_0_2_1 ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12235:1: ( ( ( rule__XFunctionTypeRef__Group_0_1_1__0 )* ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12236:1: ( ( rule__XFunctionTypeRef__Group_0_1_1__0 )* )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12269:1: ( ( rule__XFunctionTypeRef__ParamTypesAssignment_0_2_1 ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12270:1: ( rule__XFunctionTypeRef__ParamTypesAssignment_0_2_1 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12236:1: ( ( rule__XFunctionTypeRef__Group_0_1_1__0 )* )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12237:1: ( rule__XFunctionTypeRef__Group_0_1_1__0 )*
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getXFunctionTypeRefAccess().getParamTypesAssignment_0_2_1()); 
+               before(grammarAccess.getXFunctionTypeRefAccess().getGroup_0_1_1()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12271:1: ( rule__XFunctionTypeRef__ParamTypesAssignment_0_2_1 )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12271:2: rule__XFunctionTypeRef__ParamTypesAssignment_0_2_1
-            {
-            pushFollow(FOLLOW_rule__XFunctionTypeRef__ParamTypesAssignment_0_2_1_in_rule__XFunctionTypeRef__Group_0_2__1__Impl24643);
-            rule__XFunctionTypeRef__ParamTypesAssignment_0_2_1();
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12238:1: ( rule__XFunctionTypeRef__Group_0_1_1__0 )*
+            loop83:
+            do {
+                int alt83=2;
+                int LA83_0 = input.LA(1);
 
-            state._fsp--;
-            if (state.failed) return ;
+                if ( (LA83_0==40) ) {
+                    alt83=1;
+                }
 
-            }
+
+                switch (alt83) {
+            	case 1 :
+            	    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12238:2: rule__XFunctionTypeRef__Group_0_1_1__0
+            	    {
+            	    pushFollow(FOLLOW_rule__XFunctionTypeRef__Group_0_1_1__0_in_rule__XFunctionTypeRef__Group_0_1__1__Impl24579);
+            	    rule__XFunctionTypeRef__Group_0_1_1__0();
+
+            	    state._fsp--;
+            	    if (state.failed) return ;
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop83;
+                }
+            } while (true);
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getXFunctionTypeRefAccess().getParamTypesAssignment_0_2_1()); 
+               after(grammarAccess.getXFunctionTypeRefAccess().getGroup_0_1_1()); 
             }
 
             }
@@ -35224,25 +35156,188 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
         }
         return ;
     }
-    // $ANTLR end "rule__XFunctionTypeRef__Group_0_2__1__Impl"
+    // $ANTLR end "rule__XFunctionTypeRef__Group_0_1__1__Impl"
+
+
+    // $ANTLR start "rule__XFunctionTypeRef__Group_0_1_1__0"
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12252:1: rule__XFunctionTypeRef__Group_0_1_1__0 : rule__XFunctionTypeRef__Group_0_1_1__0__Impl rule__XFunctionTypeRef__Group_0_1_1__1 ;
+    public final void rule__XFunctionTypeRef__Group_0_1_1__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12256:1: ( rule__XFunctionTypeRef__Group_0_1_1__0__Impl rule__XFunctionTypeRef__Group_0_1_1__1 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12257:2: rule__XFunctionTypeRef__Group_0_1_1__0__Impl rule__XFunctionTypeRef__Group_0_1_1__1
+            {
+            pushFollow(FOLLOW_rule__XFunctionTypeRef__Group_0_1_1__0__Impl_in_rule__XFunctionTypeRef__Group_0_1_1__024614);
+            rule__XFunctionTypeRef__Group_0_1_1__0__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+            pushFollow(FOLLOW_rule__XFunctionTypeRef__Group_0_1_1__1_in_rule__XFunctionTypeRef__Group_0_1_1__024617);
+            rule__XFunctionTypeRef__Group_0_1_1__1();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XFunctionTypeRef__Group_0_1_1__0"
+
+
+    // $ANTLR start "rule__XFunctionTypeRef__Group_0_1_1__0__Impl"
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12264:1: rule__XFunctionTypeRef__Group_0_1_1__0__Impl : ( ',' ) ;
+    public final void rule__XFunctionTypeRef__Group_0_1_1__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12268:1: ( ( ',' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12269:1: ( ',' )
+            {
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12269:1: ( ',' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12270:1: ','
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXFunctionTypeRefAccess().getCommaKeyword_0_1_1_0()); 
+            }
+            match(input,40,FOLLOW_40_in_rule__XFunctionTypeRef__Group_0_1_1__0__Impl24645); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXFunctionTypeRefAccess().getCommaKeyword_0_1_1_0()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XFunctionTypeRef__Group_0_1_1__0__Impl"
+
+
+    // $ANTLR start "rule__XFunctionTypeRef__Group_0_1_1__1"
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12283:1: rule__XFunctionTypeRef__Group_0_1_1__1 : rule__XFunctionTypeRef__Group_0_1_1__1__Impl ;
+    public final void rule__XFunctionTypeRef__Group_0_1_1__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12287:1: ( rule__XFunctionTypeRef__Group_0_1_1__1__Impl )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12288:2: rule__XFunctionTypeRef__Group_0_1_1__1__Impl
+            {
+            pushFollow(FOLLOW_rule__XFunctionTypeRef__Group_0_1_1__1__Impl_in_rule__XFunctionTypeRef__Group_0_1_1__124676);
+            rule__XFunctionTypeRef__Group_0_1_1__1__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XFunctionTypeRef__Group_0_1_1__1"
+
+
+    // $ANTLR start "rule__XFunctionTypeRef__Group_0_1_1__1__Impl"
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12294:1: rule__XFunctionTypeRef__Group_0_1_1__1__Impl : ( ( rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_1 ) ) ;
+    public final void rule__XFunctionTypeRef__Group_0_1_1__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12298:1: ( ( ( rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_1 ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12299:1: ( ( rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_1 ) )
+            {
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12299:1: ( ( rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_1 ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12300:1: ( rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_1 )
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXFunctionTypeRefAccess().getParamTypesAssignment_0_1_1_1()); 
+            }
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12301:1: ( rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_1 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12301:2: rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_1
+            {
+            pushFollow(FOLLOW_rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_1_in_rule__XFunctionTypeRef__Group_0_1_1__1__Impl24703);
+            rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_1();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXFunctionTypeRefAccess().getParamTypesAssignment_0_1_1_1()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XFunctionTypeRef__Group_0_1_1__1__Impl"
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__Group__0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12285:1: rule__JvmParameterizedTypeReference__Group__0 : rule__JvmParameterizedTypeReference__Group__0__Impl rule__JvmParameterizedTypeReference__Group__1 ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12315:1: rule__JvmParameterizedTypeReference__Group__0 : rule__JvmParameterizedTypeReference__Group__0__Impl rule__JvmParameterizedTypeReference__Group__1 ;
     public final void rule__JvmParameterizedTypeReference__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12289:1: ( rule__JvmParameterizedTypeReference__Group__0__Impl rule__JvmParameterizedTypeReference__Group__1 )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12290:2: rule__JvmParameterizedTypeReference__Group__0__Impl rule__JvmParameterizedTypeReference__Group__1
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12319:1: ( rule__JvmParameterizedTypeReference__Group__0__Impl rule__JvmParameterizedTypeReference__Group__1 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12320:2: rule__JvmParameterizedTypeReference__Group__0__Impl rule__JvmParameterizedTypeReference__Group__1
             {
-            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group__0__Impl_in_rule__JvmParameterizedTypeReference__Group__024677);
+            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group__0__Impl_in_rule__JvmParameterizedTypeReference__Group__024737);
             rule__JvmParameterizedTypeReference__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group__1_in_rule__JvmParameterizedTypeReference__Group__024680);
+            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group__1_in_rule__JvmParameterizedTypeReference__Group__024740);
             rule__JvmParameterizedTypeReference__Group__1();
 
             state._fsp--;
@@ -35266,25 +35361,25 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__Group__0__Impl"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12297:1: rule__JvmParameterizedTypeReference__Group__0__Impl : ( ( rule__JvmParameterizedTypeReference__TypeAssignment_0 ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12327:1: rule__JvmParameterizedTypeReference__Group__0__Impl : ( ( rule__JvmParameterizedTypeReference__TypeAssignment_0 ) ) ;
     public final void rule__JvmParameterizedTypeReference__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12301:1: ( ( ( rule__JvmParameterizedTypeReference__TypeAssignment_0 ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12302:1: ( ( rule__JvmParameterizedTypeReference__TypeAssignment_0 ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12331:1: ( ( ( rule__JvmParameterizedTypeReference__TypeAssignment_0 ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12332:1: ( ( rule__JvmParameterizedTypeReference__TypeAssignment_0 ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12302:1: ( ( rule__JvmParameterizedTypeReference__TypeAssignment_0 ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12303:1: ( rule__JvmParameterizedTypeReference__TypeAssignment_0 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12332:1: ( ( rule__JvmParameterizedTypeReference__TypeAssignment_0 ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12333:1: ( rule__JvmParameterizedTypeReference__TypeAssignment_0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmParameterizedTypeReferenceAccess().getTypeAssignment_0()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12304:1: ( rule__JvmParameterizedTypeReference__TypeAssignment_0 )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12304:2: rule__JvmParameterizedTypeReference__TypeAssignment_0
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12334:1: ( rule__JvmParameterizedTypeReference__TypeAssignment_0 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12334:2: rule__JvmParameterizedTypeReference__TypeAssignment_0
             {
-            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__TypeAssignment_0_in_rule__JvmParameterizedTypeReference__Group__0__Impl24707);
+            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__TypeAssignment_0_in_rule__JvmParameterizedTypeReference__Group__0__Impl24767);
             rule__JvmParameterizedTypeReference__TypeAssignment_0();
 
             state._fsp--;
@@ -35317,16 +35412,16 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__Group__1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12314:1: rule__JvmParameterizedTypeReference__Group__1 : rule__JvmParameterizedTypeReference__Group__1__Impl ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12344:1: rule__JvmParameterizedTypeReference__Group__1 : rule__JvmParameterizedTypeReference__Group__1__Impl ;
     public final void rule__JvmParameterizedTypeReference__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12318:1: ( rule__JvmParameterizedTypeReference__Group__1__Impl )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12319:2: rule__JvmParameterizedTypeReference__Group__1__Impl
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12348:1: ( rule__JvmParameterizedTypeReference__Group__1__Impl )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12349:2: rule__JvmParameterizedTypeReference__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group__1__Impl_in_rule__JvmParameterizedTypeReference__Group__124737);
+            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group__1__Impl_in_rule__JvmParameterizedTypeReference__Group__124797);
             rule__JvmParameterizedTypeReference__Group__1__Impl();
 
             state._fsp--;
@@ -35350,29 +35445,29 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__Group__1__Impl"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12325:1: rule__JvmParameterizedTypeReference__Group__1__Impl : ( ( rule__JvmParameterizedTypeReference__Group_1__0 )? ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12355:1: rule__JvmParameterizedTypeReference__Group__1__Impl : ( ( rule__JvmParameterizedTypeReference__Group_1__0 )? ) ;
     public final void rule__JvmParameterizedTypeReference__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12329:1: ( ( ( rule__JvmParameterizedTypeReference__Group_1__0 )? ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12330:1: ( ( rule__JvmParameterizedTypeReference__Group_1__0 )? )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12359:1: ( ( ( rule__JvmParameterizedTypeReference__Group_1__0 )? ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12360:1: ( ( rule__JvmParameterizedTypeReference__Group_1__0 )? )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12330:1: ( ( rule__JvmParameterizedTypeReference__Group_1__0 )? )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12331:1: ( rule__JvmParameterizedTypeReference__Group_1__0 )?
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12360:1: ( ( rule__JvmParameterizedTypeReference__Group_1__0 )? )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12361:1: ( rule__JvmParameterizedTypeReference__Group_1__0 )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmParameterizedTypeReferenceAccess().getGroup_1()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12332:1: ( rule__JvmParameterizedTypeReference__Group_1__0 )?
-            int alt83=2;
-            alt83 = dfa83.predict(input);
-            switch (alt83) {
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12362:1: ( rule__JvmParameterizedTypeReference__Group_1__0 )?
+            int alt84=2;
+            alt84 = dfa84.predict(input);
+            switch (alt84) {
                 case 1 :
-                    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12332:2: rule__JvmParameterizedTypeReference__Group_1__0
+                    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12362:2: rule__JvmParameterizedTypeReference__Group_1__0
                     {
-                    pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1__0_in_rule__JvmParameterizedTypeReference__Group__1__Impl24764);
+                    pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1__0_in_rule__JvmParameterizedTypeReference__Group__1__Impl24824);
                     rule__JvmParameterizedTypeReference__Group_1__0();
 
                     state._fsp--;
@@ -35408,21 +35503,21 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__Group_1__0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12346:1: rule__JvmParameterizedTypeReference__Group_1__0 : rule__JvmParameterizedTypeReference__Group_1__0__Impl rule__JvmParameterizedTypeReference__Group_1__1 ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12376:1: rule__JvmParameterizedTypeReference__Group_1__0 : rule__JvmParameterizedTypeReference__Group_1__0__Impl rule__JvmParameterizedTypeReference__Group_1__1 ;
     public final void rule__JvmParameterizedTypeReference__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12350:1: ( rule__JvmParameterizedTypeReference__Group_1__0__Impl rule__JvmParameterizedTypeReference__Group_1__1 )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12351:2: rule__JvmParameterizedTypeReference__Group_1__0__Impl rule__JvmParameterizedTypeReference__Group_1__1
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12380:1: ( rule__JvmParameterizedTypeReference__Group_1__0__Impl rule__JvmParameterizedTypeReference__Group_1__1 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12381:2: rule__JvmParameterizedTypeReference__Group_1__0__Impl rule__JvmParameterizedTypeReference__Group_1__1
             {
-            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1__0__Impl_in_rule__JvmParameterizedTypeReference__Group_1__024799);
+            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1__0__Impl_in_rule__JvmParameterizedTypeReference__Group_1__024859);
             rule__JvmParameterizedTypeReference__Group_1__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1__1_in_rule__JvmParameterizedTypeReference__Group_1__024802);
+            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1__1_in_rule__JvmParameterizedTypeReference__Group_1__024862);
             rule__JvmParameterizedTypeReference__Group_1__1();
 
             state._fsp--;
@@ -35446,25 +35541,25 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__Group_1__0__Impl"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12358:1: rule__JvmParameterizedTypeReference__Group_1__0__Impl : ( ( '<' ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12388:1: rule__JvmParameterizedTypeReference__Group_1__0__Impl : ( ( '<' ) ) ;
     public final void rule__JvmParameterizedTypeReference__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12362:1: ( ( ( '<' ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12363:1: ( ( '<' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12392:1: ( ( ( '<' ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12393:1: ( ( '<' ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12363:1: ( ( '<' ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12364:1: ( '<' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12393:1: ( ( '<' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12394:1: ( '<' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmParameterizedTypeReferenceAccess().getLessThanSignKeyword_1_0()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12365:1: ( '<' )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12366:2: '<'
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12395:1: ( '<' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12396:2: '<'
             {
-            match(input,20,FOLLOW_20_in_rule__JvmParameterizedTypeReference__Group_1__0__Impl24831); if (state.failed) return ;
+            match(input,20,FOLLOW_20_in_rule__JvmParameterizedTypeReference__Group_1__0__Impl24891); if (state.failed) return ;
 
             }
 
@@ -35493,21 +35588,21 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__Group_1__1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12377:1: rule__JvmParameterizedTypeReference__Group_1__1 : rule__JvmParameterizedTypeReference__Group_1__1__Impl rule__JvmParameterizedTypeReference__Group_1__2 ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12407:1: rule__JvmParameterizedTypeReference__Group_1__1 : rule__JvmParameterizedTypeReference__Group_1__1__Impl rule__JvmParameterizedTypeReference__Group_1__2 ;
     public final void rule__JvmParameterizedTypeReference__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12381:1: ( rule__JvmParameterizedTypeReference__Group_1__1__Impl rule__JvmParameterizedTypeReference__Group_1__2 )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12382:2: rule__JvmParameterizedTypeReference__Group_1__1__Impl rule__JvmParameterizedTypeReference__Group_1__2
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12411:1: ( rule__JvmParameterizedTypeReference__Group_1__1__Impl rule__JvmParameterizedTypeReference__Group_1__2 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12412:2: rule__JvmParameterizedTypeReference__Group_1__1__Impl rule__JvmParameterizedTypeReference__Group_1__2
             {
-            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1__1__Impl_in_rule__JvmParameterizedTypeReference__Group_1__124863);
+            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1__1__Impl_in_rule__JvmParameterizedTypeReference__Group_1__124923);
             rule__JvmParameterizedTypeReference__Group_1__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1__2_in_rule__JvmParameterizedTypeReference__Group_1__124866);
+            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1__2_in_rule__JvmParameterizedTypeReference__Group_1__124926);
             rule__JvmParameterizedTypeReference__Group_1__2();
 
             state._fsp--;
@@ -35531,25 +35626,25 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__Group_1__1__Impl"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12389:1: rule__JvmParameterizedTypeReference__Group_1__1__Impl : ( ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1 ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12419:1: rule__JvmParameterizedTypeReference__Group_1__1__Impl : ( ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1 ) ) ;
     public final void rule__JvmParameterizedTypeReference__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12393:1: ( ( ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1 ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12394:1: ( ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1 ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12423:1: ( ( ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1 ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12424:1: ( ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1 ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12394:1: ( ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1 ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12395:1: ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12424:1: ( ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1 ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12425:1: ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmParameterizedTypeReferenceAccess().getArgumentsAssignment_1_1()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12396:1: ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1 )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12396:2: rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12426:1: ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12426:2: rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1
             {
-            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1_in_rule__JvmParameterizedTypeReference__Group_1__1__Impl24893);
+            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1_in_rule__JvmParameterizedTypeReference__Group_1__1__Impl24953);
             rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1();
 
             state._fsp--;
@@ -35582,21 +35677,21 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__Group_1__2"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12406:1: rule__JvmParameterizedTypeReference__Group_1__2 : rule__JvmParameterizedTypeReference__Group_1__2__Impl rule__JvmParameterizedTypeReference__Group_1__3 ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12436:1: rule__JvmParameterizedTypeReference__Group_1__2 : rule__JvmParameterizedTypeReference__Group_1__2__Impl rule__JvmParameterizedTypeReference__Group_1__3 ;
     public final void rule__JvmParameterizedTypeReference__Group_1__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12410:1: ( rule__JvmParameterizedTypeReference__Group_1__2__Impl rule__JvmParameterizedTypeReference__Group_1__3 )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12411:2: rule__JvmParameterizedTypeReference__Group_1__2__Impl rule__JvmParameterizedTypeReference__Group_1__3
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12440:1: ( rule__JvmParameterizedTypeReference__Group_1__2__Impl rule__JvmParameterizedTypeReference__Group_1__3 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12441:2: rule__JvmParameterizedTypeReference__Group_1__2__Impl rule__JvmParameterizedTypeReference__Group_1__3
             {
-            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1__2__Impl_in_rule__JvmParameterizedTypeReference__Group_1__224923);
+            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1__2__Impl_in_rule__JvmParameterizedTypeReference__Group_1__224983);
             rule__JvmParameterizedTypeReference__Group_1__2__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1__3_in_rule__JvmParameterizedTypeReference__Group_1__224926);
+            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1__3_in_rule__JvmParameterizedTypeReference__Group_1__224986);
             rule__JvmParameterizedTypeReference__Group_1__3();
 
             state._fsp--;
@@ -35620,37 +35715,37 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__Group_1__2__Impl"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12418:1: rule__JvmParameterizedTypeReference__Group_1__2__Impl : ( ( rule__JvmParameterizedTypeReference__Group_1_2__0 )* ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12448:1: rule__JvmParameterizedTypeReference__Group_1__2__Impl : ( ( rule__JvmParameterizedTypeReference__Group_1_2__0 )* ) ;
     public final void rule__JvmParameterizedTypeReference__Group_1__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12422:1: ( ( ( rule__JvmParameterizedTypeReference__Group_1_2__0 )* ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12423:1: ( ( rule__JvmParameterizedTypeReference__Group_1_2__0 )* )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12452:1: ( ( ( rule__JvmParameterizedTypeReference__Group_1_2__0 )* ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12453:1: ( ( rule__JvmParameterizedTypeReference__Group_1_2__0 )* )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12423:1: ( ( rule__JvmParameterizedTypeReference__Group_1_2__0 )* )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12424:1: ( rule__JvmParameterizedTypeReference__Group_1_2__0 )*
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12453:1: ( ( rule__JvmParameterizedTypeReference__Group_1_2__0 )* )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12454:1: ( rule__JvmParameterizedTypeReference__Group_1_2__0 )*
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmParameterizedTypeReferenceAccess().getGroup_1_2()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12425:1: ( rule__JvmParameterizedTypeReference__Group_1_2__0 )*
-            loop84:
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12455:1: ( rule__JvmParameterizedTypeReference__Group_1_2__0 )*
+            loop85:
             do {
-                int alt84=2;
-                int LA84_0 = input.LA(1);
+                int alt85=2;
+                int LA85_0 = input.LA(1);
 
-                if ( (LA84_0==40) ) {
-                    alt84=1;
+                if ( (LA85_0==40) ) {
+                    alt85=1;
                 }
 
 
-                switch (alt84) {
+                switch (alt85) {
             	case 1 :
-            	    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12425:2: rule__JvmParameterizedTypeReference__Group_1_2__0
+            	    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12455:2: rule__JvmParameterizedTypeReference__Group_1_2__0
             	    {
-            	    pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1_2__0_in_rule__JvmParameterizedTypeReference__Group_1__2__Impl24953);
+            	    pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1_2__0_in_rule__JvmParameterizedTypeReference__Group_1__2__Impl25013);
             	    rule__JvmParameterizedTypeReference__Group_1_2__0();
 
             	    state._fsp--;
@@ -35660,7 +35755,7 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
             	    break;
 
             	default :
-            	    break loop84;
+            	    break loop85;
                 }
             } while (true);
 
@@ -35689,16 +35784,16 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__Group_1__3"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12435:1: rule__JvmParameterizedTypeReference__Group_1__3 : rule__JvmParameterizedTypeReference__Group_1__3__Impl ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12465:1: rule__JvmParameterizedTypeReference__Group_1__3 : rule__JvmParameterizedTypeReference__Group_1__3__Impl ;
     public final void rule__JvmParameterizedTypeReference__Group_1__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12439:1: ( rule__JvmParameterizedTypeReference__Group_1__3__Impl )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12440:2: rule__JvmParameterizedTypeReference__Group_1__3__Impl
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12469:1: ( rule__JvmParameterizedTypeReference__Group_1__3__Impl )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12470:2: rule__JvmParameterizedTypeReference__Group_1__3__Impl
             {
-            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1__3__Impl_in_rule__JvmParameterizedTypeReference__Group_1__324984);
+            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1__3__Impl_in_rule__JvmParameterizedTypeReference__Group_1__325044);
             rule__JvmParameterizedTypeReference__Group_1__3__Impl();
 
             state._fsp--;
@@ -35722,22 +35817,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__Group_1__3__Impl"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12446:1: rule__JvmParameterizedTypeReference__Group_1__3__Impl : ( '>' ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12476:1: rule__JvmParameterizedTypeReference__Group_1__3__Impl : ( '>' ) ;
     public final void rule__JvmParameterizedTypeReference__Group_1__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12450:1: ( ( '>' ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12451:1: ( '>' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12480:1: ( ( '>' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12481:1: ( '>' )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12451:1: ( '>' )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12452:1: '>'
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12481:1: ( '>' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12482:1: '>'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmParameterizedTypeReferenceAccess().getGreaterThanSignKeyword_1_3()); 
             }
-            match(input,19,FOLLOW_19_in_rule__JvmParameterizedTypeReference__Group_1__3__Impl25012); if (state.failed) return ;
+            match(input,19,FOLLOW_19_in_rule__JvmParameterizedTypeReference__Group_1__3__Impl25072); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getJvmParameterizedTypeReferenceAccess().getGreaterThanSignKeyword_1_3()); 
             }
@@ -35763,21 +35858,21 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__Group_1_2__0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12473:1: rule__JvmParameterizedTypeReference__Group_1_2__0 : rule__JvmParameterizedTypeReference__Group_1_2__0__Impl rule__JvmParameterizedTypeReference__Group_1_2__1 ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12503:1: rule__JvmParameterizedTypeReference__Group_1_2__0 : rule__JvmParameterizedTypeReference__Group_1_2__0__Impl rule__JvmParameterizedTypeReference__Group_1_2__1 ;
     public final void rule__JvmParameterizedTypeReference__Group_1_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12477:1: ( rule__JvmParameterizedTypeReference__Group_1_2__0__Impl rule__JvmParameterizedTypeReference__Group_1_2__1 )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12478:2: rule__JvmParameterizedTypeReference__Group_1_2__0__Impl rule__JvmParameterizedTypeReference__Group_1_2__1
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12507:1: ( rule__JvmParameterizedTypeReference__Group_1_2__0__Impl rule__JvmParameterizedTypeReference__Group_1_2__1 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12508:2: rule__JvmParameterizedTypeReference__Group_1_2__0__Impl rule__JvmParameterizedTypeReference__Group_1_2__1
             {
-            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1_2__0__Impl_in_rule__JvmParameterizedTypeReference__Group_1_2__025051);
+            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1_2__0__Impl_in_rule__JvmParameterizedTypeReference__Group_1_2__025111);
             rule__JvmParameterizedTypeReference__Group_1_2__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1_2__1_in_rule__JvmParameterizedTypeReference__Group_1_2__025054);
+            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1_2__1_in_rule__JvmParameterizedTypeReference__Group_1_2__025114);
             rule__JvmParameterizedTypeReference__Group_1_2__1();
 
             state._fsp--;
@@ -35801,22 +35896,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__Group_1_2__0__Impl"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12485:1: rule__JvmParameterizedTypeReference__Group_1_2__0__Impl : ( ',' ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12515:1: rule__JvmParameterizedTypeReference__Group_1_2__0__Impl : ( ',' ) ;
     public final void rule__JvmParameterizedTypeReference__Group_1_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12489:1: ( ( ',' ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12490:1: ( ',' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12519:1: ( ( ',' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12520:1: ( ',' )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12490:1: ( ',' )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12491:1: ','
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12520:1: ( ',' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12521:1: ','
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmParameterizedTypeReferenceAccess().getCommaKeyword_1_2_0()); 
             }
-            match(input,40,FOLLOW_40_in_rule__JvmParameterizedTypeReference__Group_1_2__0__Impl25082); if (state.failed) return ;
+            match(input,40,FOLLOW_40_in_rule__JvmParameterizedTypeReference__Group_1_2__0__Impl25142); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getJvmParameterizedTypeReferenceAccess().getCommaKeyword_1_2_0()); 
             }
@@ -35842,16 +35937,16 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__Group_1_2__1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12504:1: rule__JvmParameterizedTypeReference__Group_1_2__1 : rule__JvmParameterizedTypeReference__Group_1_2__1__Impl ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12534:1: rule__JvmParameterizedTypeReference__Group_1_2__1 : rule__JvmParameterizedTypeReference__Group_1_2__1__Impl ;
     public final void rule__JvmParameterizedTypeReference__Group_1_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12508:1: ( rule__JvmParameterizedTypeReference__Group_1_2__1__Impl )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12509:2: rule__JvmParameterizedTypeReference__Group_1_2__1__Impl
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12538:1: ( rule__JvmParameterizedTypeReference__Group_1_2__1__Impl )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12539:2: rule__JvmParameterizedTypeReference__Group_1_2__1__Impl
             {
-            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1_2__1__Impl_in_rule__JvmParameterizedTypeReference__Group_1_2__125113);
+            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1_2__1__Impl_in_rule__JvmParameterizedTypeReference__Group_1_2__125173);
             rule__JvmParameterizedTypeReference__Group_1_2__1__Impl();
 
             state._fsp--;
@@ -35875,25 +35970,25 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__Group_1_2__1__Impl"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12515:1: rule__JvmParameterizedTypeReference__Group_1_2__1__Impl : ( ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1 ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12545:1: rule__JvmParameterizedTypeReference__Group_1_2__1__Impl : ( ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1 ) ) ;
     public final void rule__JvmParameterizedTypeReference__Group_1_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12519:1: ( ( ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1 ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12520:1: ( ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1 ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12549:1: ( ( ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1 ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12550:1: ( ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1 ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12520:1: ( ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1 ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12521:1: ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12550:1: ( ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1 ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12551:1: ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmParameterizedTypeReferenceAccess().getArgumentsAssignment_1_2_1()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12522:1: ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1 )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12522:2: rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12552:1: ( rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12552:2: rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1
             {
-            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1_in_rule__JvmParameterizedTypeReference__Group_1_2__1__Impl25140);
+            pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1_in_rule__JvmParameterizedTypeReference__Group_1_2__1__Impl25200);
             rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1();
 
             state._fsp--;
@@ -35926,21 +36021,21 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmWildcardTypeReference__Group__0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12536:1: rule__JvmWildcardTypeReference__Group__0 : rule__JvmWildcardTypeReference__Group__0__Impl rule__JvmWildcardTypeReference__Group__1 ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12566:1: rule__JvmWildcardTypeReference__Group__0 : rule__JvmWildcardTypeReference__Group__0__Impl rule__JvmWildcardTypeReference__Group__1 ;
     public final void rule__JvmWildcardTypeReference__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12540:1: ( rule__JvmWildcardTypeReference__Group__0__Impl rule__JvmWildcardTypeReference__Group__1 )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12541:2: rule__JvmWildcardTypeReference__Group__0__Impl rule__JvmWildcardTypeReference__Group__1
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12570:1: ( rule__JvmWildcardTypeReference__Group__0__Impl rule__JvmWildcardTypeReference__Group__1 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12571:2: rule__JvmWildcardTypeReference__Group__0__Impl rule__JvmWildcardTypeReference__Group__1
             {
-            pushFollow(FOLLOW_rule__JvmWildcardTypeReference__Group__0__Impl_in_rule__JvmWildcardTypeReference__Group__025174);
+            pushFollow(FOLLOW_rule__JvmWildcardTypeReference__Group__0__Impl_in_rule__JvmWildcardTypeReference__Group__025234);
             rule__JvmWildcardTypeReference__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__JvmWildcardTypeReference__Group__1_in_rule__JvmWildcardTypeReference__Group__025177);
+            pushFollow(FOLLOW_rule__JvmWildcardTypeReference__Group__1_in_rule__JvmWildcardTypeReference__Group__025237);
             rule__JvmWildcardTypeReference__Group__1();
 
             state._fsp--;
@@ -35964,23 +36059,23 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmWildcardTypeReference__Group__0__Impl"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12548:1: rule__JvmWildcardTypeReference__Group__0__Impl : ( () ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12578:1: rule__JvmWildcardTypeReference__Group__0__Impl : ( () ) ;
     public final void rule__JvmWildcardTypeReference__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12552:1: ( ( () ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12553:1: ( () )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12582:1: ( ( () ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12583:1: ( () )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12553:1: ( () )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12554:1: ()
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12583:1: ( () )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12584:1: ()
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmWildcardTypeReferenceAccess().getJvmWildcardTypeReferenceAction_0()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12555:1: ()
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12557:1: 
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12585:1: ()
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12587:1: 
             {
             }
 
@@ -36005,21 +36100,21 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmWildcardTypeReference__Group__1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12567:1: rule__JvmWildcardTypeReference__Group__1 : rule__JvmWildcardTypeReference__Group__1__Impl rule__JvmWildcardTypeReference__Group__2 ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12597:1: rule__JvmWildcardTypeReference__Group__1 : rule__JvmWildcardTypeReference__Group__1__Impl rule__JvmWildcardTypeReference__Group__2 ;
     public final void rule__JvmWildcardTypeReference__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12571:1: ( rule__JvmWildcardTypeReference__Group__1__Impl rule__JvmWildcardTypeReference__Group__2 )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12572:2: rule__JvmWildcardTypeReference__Group__1__Impl rule__JvmWildcardTypeReference__Group__2
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12601:1: ( rule__JvmWildcardTypeReference__Group__1__Impl rule__JvmWildcardTypeReference__Group__2 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12602:2: rule__JvmWildcardTypeReference__Group__1__Impl rule__JvmWildcardTypeReference__Group__2
             {
-            pushFollow(FOLLOW_rule__JvmWildcardTypeReference__Group__1__Impl_in_rule__JvmWildcardTypeReference__Group__125235);
+            pushFollow(FOLLOW_rule__JvmWildcardTypeReference__Group__1__Impl_in_rule__JvmWildcardTypeReference__Group__125295);
             rule__JvmWildcardTypeReference__Group__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__JvmWildcardTypeReference__Group__2_in_rule__JvmWildcardTypeReference__Group__125238);
+            pushFollow(FOLLOW_rule__JvmWildcardTypeReference__Group__2_in_rule__JvmWildcardTypeReference__Group__125298);
             rule__JvmWildcardTypeReference__Group__2();
 
             state._fsp--;
@@ -36043,22 +36138,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmWildcardTypeReference__Group__1__Impl"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12579:1: rule__JvmWildcardTypeReference__Group__1__Impl : ( '?' ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12609:1: rule__JvmWildcardTypeReference__Group__1__Impl : ( '?' ) ;
     public final void rule__JvmWildcardTypeReference__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12583:1: ( ( '?' ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12584:1: ( '?' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12613:1: ( ( '?' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12614:1: ( '?' )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12584:1: ( '?' )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12585:1: '?'
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12614:1: ( '?' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12615:1: '?'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmWildcardTypeReferenceAccess().getQuestionMarkKeyword_1()); 
             }
-            match(input,67,FOLLOW_67_in_rule__JvmWildcardTypeReference__Group__1__Impl25266); if (state.failed) return ;
+            match(input,67,FOLLOW_67_in_rule__JvmWildcardTypeReference__Group__1__Impl25326); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getJvmWildcardTypeReferenceAccess().getQuestionMarkKeyword_1()); 
             }
@@ -36084,16 +36179,16 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmWildcardTypeReference__Group__2"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12598:1: rule__JvmWildcardTypeReference__Group__2 : rule__JvmWildcardTypeReference__Group__2__Impl ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12628:1: rule__JvmWildcardTypeReference__Group__2 : rule__JvmWildcardTypeReference__Group__2__Impl ;
     public final void rule__JvmWildcardTypeReference__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12602:1: ( rule__JvmWildcardTypeReference__Group__2__Impl )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12603:2: rule__JvmWildcardTypeReference__Group__2__Impl
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12632:1: ( rule__JvmWildcardTypeReference__Group__2__Impl )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12633:2: rule__JvmWildcardTypeReference__Group__2__Impl
             {
-            pushFollow(FOLLOW_rule__JvmWildcardTypeReference__Group__2__Impl_in_rule__JvmWildcardTypeReference__Group__225297);
+            pushFollow(FOLLOW_rule__JvmWildcardTypeReference__Group__2__Impl_in_rule__JvmWildcardTypeReference__Group__225357);
             rule__JvmWildcardTypeReference__Group__2__Impl();
 
             state._fsp--;
@@ -36117,33 +36212,33 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmWildcardTypeReference__Group__2__Impl"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12609:1: rule__JvmWildcardTypeReference__Group__2__Impl : ( ( rule__JvmWildcardTypeReference__Alternatives_2 )? ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12639:1: rule__JvmWildcardTypeReference__Group__2__Impl : ( ( rule__JvmWildcardTypeReference__Alternatives_2 )? ) ;
     public final void rule__JvmWildcardTypeReference__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12613:1: ( ( ( rule__JvmWildcardTypeReference__Alternatives_2 )? ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12614:1: ( ( rule__JvmWildcardTypeReference__Alternatives_2 )? )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12643:1: ( ( ( rule__JvmWildcardTypeReference__Alternatives_2 )? ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12644:1: ( ( rule__JvmWildcardTypeReference__Alternatives_2 )? )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12614:1: ( ( rule__JvmWildcardTypeReference__Alternatives_2 )? )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12615:1: ( rule__JvmWildcardTypeReference__Alternatives_2 )?
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12644:1: ( ( rule__JvmWildcardTypeReference__Alternatives_2 )? )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12645:1: ( rule__JvmWildcardTypeReference__Alternatives_2 )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmWildcardTypeReferenceAccess().getAlternatives_2()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12616:1: ( rule__JvmWildcardTypeReference__Alternatives_2 )?
-            int alt85=2;
-            int LA85_0 = input.LA(1);
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12646:1: ( rule__JvmWildcardTypeReference__Alternatives_2 )?
+            int alt86=2;
+            int LA86_0 = input.LA(1);
 
-            if ( (LA85_0==32||LA85_0==68) ) {
-                alt85=1;
+            if ( (LA86_0==32||LA86_0==68) ) {
+                alt86=1;
             }
-            switch (alt85) {
+            switch (alt86) {
                 case 1 :
-                    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12616:2: rule__JvmWildcardTypeReference__Alternatives_2
+                    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12646:2: rule__JvmWildcardTypeReference__Alternatives_2
                     {
-                    pushFollow(FOLLOW_rule__JvmWildcardTypeReference__Alternatives_2_in_rule__JvmWildcardTypeReference__Group__2__Impl25324);
+                    pushFollow(FOLLOW_rule__JvmWildcardTypeReference__Alternatives_2_in_rule__JvmWildcardTypeReference__Group__2__Impl25384);
                     rule__JvmWildcardTypeReference__Alternatives_2();
 
                     state._fsp--;
@@ -36179,21 +36274,21 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmUpperBound__Group__0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12632:1: rule__JvmUpperBound__Group__0 : rule__JvmUpperBound__Group__0__Impl rule__JvmUpperBound__Group__1 ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12662:1: rule__JvmUpperBound__Group__0 : rule__JvmUpperBound__Group__0__Impl rule__JvmUpperBound__Group__1 ;
     public final void rule__JvmUpperBound__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12636:1: ( rule__JvmUpperBound__Group__0__Impl rule__JvmUpperBound__Group__1 )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12637:2: rule__JvmUpperBound__Group__0__Impl rule__JvmUpperBound__Group__1
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12666:1: ( rule__JvmUpperBound__Group__0__Impl rule__JvmUpperBound__Group__1 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12667:2: rule__JvmUpperBound__Group__0__Impl rule__JvmUpperBound__Group__1
             {
-            pushFollow(FOLLOW_rule__JvmUpperBound__Group__0__Impl_in_rule__JvmUpperBound__Group__025361);
+            pushFollow(FOLLOW_rule__JvmUpperBound__Group__0__Impl_in_rule__JvmUpperBound__Group__025421);
             rule__JvmUpperBound__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__JvmUpperBound__Group__1_in_rule__JvmUpperBound__Group__025364);
+            pushFollow(FOLLOW_rule__JvmUpperBound__Group__1_in_rule__JvmUpperBound__Group__025424);
             rule__JvmUpperBound__Group__1();
 
             state._fsp--;
@@ -36217,22 +36312,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmUpperBound__Group__0__Impl"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12644:1: rule__JvmUpperBound__Group__0__Impl : ( 'extends' ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12674:1: rule__JvmUpperBound__Group__0__Impl : ( 'extends' ) ;
     public final void rule__JvmUpperBound__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12648:1: ( ( 'extends' ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12649:1: ( 'extends' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12678:1: ( ( 'extends' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12679:1: ( 'extends' )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12649:1: ( 'extends' )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12650:1: 'extends'
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12679:1: ( 'extends' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12680:1: 'extends'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmUpperBoundAccess().getExtendsKeyword_0()); 
             }
-            match(input,68,FOLLOW_68_in_rule__JvmUpperBound__Group__0__Impl25392); if (state.failed) return ;
+            match(input,68,FOLLOW_68_in_rule__JvmUpperBound__Group__0__Impl25452); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getJvmUpperBoundAccess().getExtendsKeyword_0()); 
             }
@@ -36258,16 +36353,16 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmUpperBound__Group__1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12663:1: rule__JvmUpperBound__Group__1 : rule__JvmUpperBound__Group__1__Impl ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12693:1: rule__JvmUpperBound__Group__1 : rule__JvmUpperBound__Group__1__Impl ;
     public final void rule__JvmUpperBound__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12667:1: ( rule__JvmUpperBound__Group__1__Impl )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12668:2: rule__JvmUpperBound__Group__1__Impl
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12697:1: ( rule__JvmUpperBound__Group__1__Impl )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12698:2: rule__JvmUpperBound__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__JvmUpperBound__Group__1__Impl_in_rule__JvmUpperBound__Group__125423);
+            pushFollow(FOLLOW_rule__JvmUpperBound__Group__1__Impl_in_rule__JvmUpperBound__Group__125483);
             rule__JvmUpperBound__Group__1__Impl();
 
             state._fsp--;
@@ -36291,25 +36386,25 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmUpperBound__Group__1__Impl"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12674:1: rule__JvmUpperBound__Group__1__Impl : ( ( rule__JvmUpperBound__TypeReferenceAssignment_1 ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12704:1: rule__JvmUpperBound__Group__1__Impl : ( ( rule__JvmUpperBound__TypeReferenceAssignment_1 ) ) ;
     public final void rule__JvmUpperBound__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12678:1: ( ( ( rule__JvmUpperBound__TypeReferenceAssignment_1 ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12679:1: ( ( rule__JvmUpperBound__TypeReferenceAssignment_1 ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12708:1: ( ( ( rule__JvmUpperBound__TypeReferenceAssignment_1 ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12709:1: ( ( rule__JvmUpperBound__TypeReferenceAssignment_1 ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12679:1: ( ( rule__JvmUpperBound__TypeReferenceAssignment_1 ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12680:1: ( rule__JvmUpperBound__TypeReferenceAssignment_1 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12709:1: ( ( rule__JvmUpperBound__TypeReferenceAssignment_1 ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12710:1: ( rule__JvmUpperBound__TypeReferenceAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmUpperBoundAccess().getTypeReferenceAssignment_1()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12681:1: ( rule__JvmUpperBound__TypeReferenceAssignment_1 )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12681:2: rule__JvmUpperBound__TypeReferenceAssignment_1
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12711:1: ( rule__JvmUpperBound__TypeReferenceAssignment_1 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12711:2: rule__JvmUpperBound__TypeReferenceAssignment_1
             {
-            pushFollow(FOLLOW_rule__JvmUpperBound__TypeReferenceAssignment_1_in_rule__JvmUpperBound__Group__1__Impl25450);
+            pushFollow(FOLLOW_rule__JvmUpperBound__TypeReferenceAssignment_1_in_rule__JvmUpperBound__Group__1__Impl25510);
             rule__JvmUpperBound__TypeReferenceAssignment_1();
 
             state._fsp--;
@@ -36342,21 +36437,21 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmUpperBoundAnded__Group__0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12695:1: rule__JvmUpperBoundAnded__Group__0 : rule__JvmUpperBoundAnded__Group__0__Impl rule__JvmUpperBoundAnded__Group__1 ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12725:1: rule__JvmUpperBoundAnded__Group__0 : rule__JvmUpperBoundAnded__Group__0__Impl rule__JvmUpperBoundAnded__Group__1 ;
     public final void rule__JvmUpperBoundAnded__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12699:1: ( rule__JvmUpperBoundAnded__Group__0__Impl rule__JvmUpperBoundAnded__Group__1 )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12700:2: rule__JvmUpperBoundAnded__Group__0__Impl rule__JvmUpperBoundAnded__Group__1
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12729:1: ( rule__JvmUpperBoundAnded__Group__0__Impl rule__JvmUpperBoundAnded__Group__1 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12730:2: rule__JvmUpperBoundAnded__Group__0__Impl rule__JvmUpperBoundAnded__Group__1
             {
-            pushFollow(FOLLOW_rule__JvmUpperBoundAnded__Group__0__Impl_in_rule__JvmUpperBoundAnded__Group__025484);
+            pushFollow(FOLLOW_rule__JvmUpperBoundAnded__Group__0__Impl_in_rule__JvmUpperBoundAnded__Group__025544);
             rule__JvmUpperBoundAnded__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__JvmUpperBoundAnded__Group__1_in_rule__JvmUpperBoundAnded__Group__025487);
+            pushFollow(FOLLOW_rule__JvmUpperBoundAnded__Group__1_in_rule__JvmUpperBoundAnded__Group__025547);
             rule__JvmUpperBoundAnded__Group__1();
 
             state._fsp--;
@@ -36380,22 +36475,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmUpperBoundAnded__Group__0__Impl"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12707:1: rule__JvmUpperBoundAnded__Group__0__Impl : ( '&' ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12737:1: rule__JvmUpperBoundAnded__Group__0__Impl : ( '&' ) ;
     public final void rule__JvmUpperBoundAnded__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12711:1: ( ( '&' ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12712:1: ( '&' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12741:1: ( ( '&' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12742:1: ( '&' )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12712:1: ( '&' )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12713:1: '&'
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12742:1: ( '&' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12743:1: '&'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmUpperBoundAndedAccess().getAmpersandKeyword_0()); 
             }
-            match(input,69,FOLLOW_69_in_rule__JvmUpperBoundAnded__Group__0__Impl25515); if (state.failed) return ;
+            match(input,69,FOLLOW_69_in_rule__JvmUpperBoundAnded__Group__0__Impl25575); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getJvmUpperBoundAndedAccess().getAmpersandKeyword_0()); 
             }
@@ -36421,16 +36516,16 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmUpperBoundAnded__Group__1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12726:1: rule__JvmUpperBoundAnded__Group__1 : rule__JvmUpperBoundAnded__Group__1__Impl ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12756:1: rule__JvmUpperBoundAnded__Group__1 : rule__JvmUpperBoundAnded__Group__1__Impl ;
     public final void rule__JvmUpperBoundAnded__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12730:1: ( rule__JvmUpperBoundAnded__Group__1__Impl )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12731:2: rule__JvmUpperBoundAnded__Group__1__Impl
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12760:1: ( rule__JvmUpperBoundAnded__Group__1__Impl )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12761:2: rule__JvmUpperBoundAnded__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__JvmUpperBoundAnded__Group__1__Impl_in_rule__JvmUpperBoundAnded__Group__125546);
+            pushFollow(FOLLOW_rule__JvmUpperBoundAnded__Group__1__Impl_in_rule__JvmUpperBoundAnded__Group__125606);
             rule__JvmUpperBoundAnded__Group__1__Impl();
 
             state._fsp--;
@@ -36454,25 +36549,25 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmUpperBoundAnded__Group__1__Impl"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12737:1: rule__JvmUpperBoundAnded__Group__1__Impl : ( ( rule__JvmUpperBoundAnded__TypeReferenceAssignment_1 ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12767:1: rule__JvmUpperBoundAnded__Group__1__Impl : ( ( rule__JvmUpperBoundAnded__TypeReferenceAssignment_1 ) ) ;
     public final void rule__JvmUpperBoundAnded__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12741:1: ( ( ( rule__JvmUpperBoundAnded__TypeReferenceAssignment_1 ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12742:1: ( ( rule__JvmUpperBoundAnded__TypeReferenceAssignment_1 ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12771:1: ( ( ( rule__JvmUpperBoundAnded__TypeReferenceAssignment_1 ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12772:1: ( ( rule__JvmUpperBoundAnded__TypeReferenceAssignment_1 ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12742:1: ( ( rule__JvmUpperBoundAnded__TypeReferenceAssignment_1 ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12743:1: ( rule__JvmUpperBoundAnded__TypeReferenceAssignment_1 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12772:1: ( ( rule__JvmUpperBoundAnded__TypeReferenceAssignment_1 ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12773:1: ( rule__JvmUpperBoundAnded__TypeReferenceAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmUpperBoundAndedAccess().getTypeReferenceAssignment_1()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12744:1: ( rule__JvmUpperBoundAnded__TypeReferenceAssignment_1 )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12744:2: rule__JvmUpperBoundAnded__TypeReferenceAssignment_1
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12774:1: ( rule__JvmUpperBoundAnded__TypeReferenceAssignment_1 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12774:2: rule__JvmUpperBoundAnded__TypeReferenceAssignment_1
             {
-            pushFollow(FOLLOW_rule__JvmUpperBoundAnded__TypeReferenceAssignment_1_in_rule__JvmUpperBoundAnded__Group__1__Impl25573);
+            pushFollow(FOLLOW_rule__JvmUpperBoundAnded__TypeReferenceAssignment_1_in_rule__JvmUpperBoundAnded__Group__1__Impl25633);
             rule__JvmUpperBoundAnded__TypeReferenceAssignment_1();
 
             state._fsp--;
@@ -36505,21 +36600,21 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmLowerBound__Group__0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12758:1: rule__JvmLowerBound__Group__0 : rule__JvmLowerBound__Group__0__Impl rule__JvmLowerBound__Group__1 ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12788:1: rule__JvmLowerBound__Group__0 : rule__JvmLowerBound__Group__0__Impl rule__JvmLowerBound__Group__1 ;
     public final void rule__JvmLowerBound__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12762:1: ( rule__JvmLowerBound__Group__0__Impl rule__JvmLowerBound__Group__1 )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12763:2: rule__JvmLowerBound__Group__0__Impl rule__JvmLowerBound__Group__1
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12792:1: ( rule__JvmLowerBound__Group__0__Impl rule__JvmLowerBound__Group__1 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12793:2: rule__JvmLowerBound__Group__0__Impl rule__JvmLowerBound__Group__1
             {
-            pushFollow(FOLLOW_rule__JvmLowerBound__Group__0__Impl_in_rule__JvmLowerBound__Group__025607);
+            pushFollow(FOLLOW_rule__JvmLowerBound__Group__0__Impl_in_rule__JvmLowerBound__Group__025667);
             rule__JvmLowerBound__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__JvmLowerBound__Group__1_in_rule__JvmLowerBound__Group__025610);
+            pushFollow(FOLLOW_rule__JvmLowerBound__Group__1_in_rule__JvmLowerBound__Group__025670);
             rule__JvmLowerBound__Group__1();
 
             state._fsp--;
@@ -36543,22 +36638,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmLowerBound__Group__0__Impl"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12770:1: rule__JvmLowerBound__Group__0__Impl : ( 'super' ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12800:1: rule__JvmLowerBound__Group__0__Impl : ( 'super' ) ;
     public final void rule__JvmLowerBound__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12774:1: ( ( 'super' ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12775:1: ( 'super' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12804:1: ( ( 'super' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12805:1: ( 'super' )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12775:1: ( 'super' )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12776:1: 'super'
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12805:1: ( 'super' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12806:1: 'super'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmLowerBoundAccess().getSuperKeyword_0()); 
             }
-            match(input,32,FOLLOW_32_in_rule__JvmLowerBound__Group__0__Impl25638); if (state.failed) return ;
+            match(input,32,FOLLOW_32_in_rule__JvmLowerBound__Group__0__Impl25698); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getJvmLowerBoundAccess().getSuperKeyword_0()); 
             }
@@ -36584,16 +36679,16 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmLowerBound__Group__1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12789:1: rule__JvmLowerBound__Group__1 : rule__JvmLowerBound__Group__1__Impl ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12819:1: rule__JvmLowerBound__Group__1 : rule__JvmLowerBound__Group__1__Impl ;
     public final void rule__JvmLowerBound__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12793:1: ( rule__JvmLowerBound__Group__1__Impl )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12794:2: rule__JvmLowerBound__Group__1__Impl
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12823:1: ( rule__JvmLowerBound__Group__1__Impl )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12824:2: rule__JvmLowerBound__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__JvmLowerBound__Group__1__Impl_in_rule__JvmLowerBound__Group__125669);
+            pushFollow(FOLLOW_rule__JvmLowerBound__Group__1__Impl_in_rule__JvmLowerBound__Group__125729);
             rule__JvmLowerBound__Group__1__Impl();
 
             state._fsp--;
@@ -36617,25 +36712,25 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmLowerBound__Group__1__Impl"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12800:1: rule__JvmLowerBound__Group__1__Impl : ( ( rule__JvmLowerBound__TypeReferenceAssignment_1 ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12830:1: rule__JvmLowerBound__Group__1__Impl : ( ( rule__JvmLowerBound__TypeReferenceAssignment_1 ) ) ;
     public final void rule__JvmLowerBound__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12804:1: ( ( ( rule__JvmLowerBound__TypeReferenceAssignment_1 ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12805:1: ( ( rule__JvmLowerBound__TypeReferenceAssignment_1 ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12834:1: ( ( ( rule__JvmLowerBound__TypeReferenceAssignment_1 ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12835:1: ( ( rule__JvmLowerBound__TypeReferenceAssignment_1 ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12805:1: ( ( rule__JvmLowerBound__TypeReferenceAssignment_1 ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12806:1: ( rule__JvmLowerBound__TypeReferenceAssignment_1 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12835:1: ( ( rule__JvmLowerBound__TypeReferenceAssignment_1 ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12836:1: ( rule__JvmLowerBound__TypeReferenceAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmLowerBoundAccess().getTypeReferenceAssignment_1()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12807:1: ( rule__JvmLowerBound__TypeReferenceAssignment_1 )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12807:2: rule__JvmLowerBound__TypeReferenceAssignment_1
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12837:1: ( rule__JvmLowerBound__TypeReferenceAssignment_1 )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12837:2: rule__JvmLowerBound__TypeReferenceAssignment_1
             {
-            pushFollow(FOLLOW_rule__JvmLowerBound__TypeReferenceAssignment_1_in_rule__JvmLowerBound__Group__1__Impl25696);
+            pushFollow(FOLLOW_rule__JvmLowerBound__TypeReferenceAssignment_1_in_rule__JvmLowerBound__Group__1__Impl25756);
             rule__JvmLowerBound__TypeReferenceAssignment_1();
 
             state._fsp--;
@@ -36668,22 +36763,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Model__ImportsAssignment_0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12824:1: rule__Model__ImportsAssignment_0 : ( ruleImport ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12854:1: rule__Model__ImportsAssignment_0 : ( ruleImport ) ;
     public final void rule__Model__ImportsAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12828:1: ( ( ruleImport ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12829:1: ( ruleImport )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12858:1: ( ( ruleImport ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12859:1: ( ruleImport )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12829:1: ( ruleImport )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12830:1: ruleImport
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12859:1: ( ruleImport )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12860:1: ruleImport
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getModelAccess().getImportsImportParserRuleCall_0_0()); 
             }
-            pushFollow(FOLLOW_ruleImport_in_rule__Model__ImportsAssignment_025737);
+            pushFollow(FOLLOW_ruleImport_in_rule__Model__ImportsAssignment_025797);
             ruleImport();
 
             state._fsp--;
@@ -36713,22 +36808,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Model__VarDeclarationsAssignment_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12839:1: rule__Model__VarDeclarationsAssignment_1 : ( ruleXVariableDeclaration ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12869:1: rule__Model__VarDeclarationsAssignment_1 : ( ruleXVariableDeclaration ) ;
     public final void rule__Model__VarDeclarationsAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12843:1: ( ( ruleXVariableDeclaration ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12844:1: ( ruleXVariableDeclaration )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12873:1: ( ( ruleXVariableDeclaration ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12874:1: ( ruleXVariableDeclaration )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12844:1: ( ruleXVariableDeclaration )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12845:1: ruleXVariableDeclaration
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12874:1: ( ruleXVariableDeclaration )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12875:1: ruleXVariableDeclaration
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getModelAccess().getVarDeclarationsXVariableDeclarationParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXVariableDeclaration_in_rule__Model__VarDeclarationsAssignment_125768);
+            pushFollow(FOLLOW_ruleXVariableDeclaration_in_rule__Model__VarDeclarationsAssignment_125828);
             ruleXVariableDeclaration();
 
             state._fsp--;
@@ -36758,22 +36853,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Model__GreetingsAssignment_2"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12854:1: rule__Model__GreetingsAssignment_2 : ( ruleGreeting ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12884:1: rule__Model__GreetingsAssignment_2 : ( ruleGreeting ) ;
     public final void rule__Model__GreetingsAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12858:1: ( ( ruleGreeting ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12859:1: ( ruleGreeting )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12888:1: ( ( ruleGreeting ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12889:1: ( ruleGreeting )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12859:1: ( ruleGreeting )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12860:1: ruleGreeting
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12889:1: ( ruleGreeting )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12890:1: ruleGreeting
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getModelAccess().getGreetingsGreetingParserRuleCall_2_0()); 
             }
-            pushFollow(FOLLOW_ruleGreeting_in_rule__Model__GreetingsAssignment_225799);
+            pushFollow(FOLLOW_ruleGreeting_in_rule__Model__GreetingsAssignment_225859);
             ruleGreeting();
 
             state._fsp--;
@@ -36803,22 +36898,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Import__ImportedNamespaceAssignment_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12869:1: rule__Import__ImportedNamespaceAssignment_1 : ( ruleQualifiedNameWithWildcard ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12899:1: rule__Import__ImportedNamespaceAssignment_1 : ( ruleQualifiedNameWithWildcard ) ;
     public final void rule__Import__ImportedNamespaceAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12873:1: ( ( ruleQualifiedNameWithWildcard ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12874:1: ( ruleQualifiedNameWithWildcard )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12903:1: ( ( ruleQualifiedNameWithWildcard ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12904:1: ( ruleQualifiedNameWithWildcard )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12874:1: ( ruleQualifiedNameWithWildcard )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12875:1: ruleQualifiedNameWithWildcard
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12904:1: ( ruleQualifiedNameWithWildcard )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12905:1: ruleQualifiedNameWithWildcard
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getImportAccess().getImportedNamespaceQualifiedNameWithWildcardParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleQualifiedNameWithWildcard_in_rule__Import__ImportedNamespaceAssignment_125830);
+            pushFollow(FOLLOW_ruleQualifiedNameWithWildcard_in_rule__Import__ImportedNamespaceAssignment_125890);
             ruleQualifiedNameWithWildcard();
 
             state._fsp--;
@@ -36848,22 +36943,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Greeting__NameAssignment_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12884:1: rule__Greeting__NameAssignment_1 : ( RULE_ID ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12914:1: rule__Greeting__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__Greeting__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12888:1: ( ( RULE_ID ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12889:1: ( RULE_ID )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12918:1: ( ( RULE_ID ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12919:1: ( RULE_ID )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12889:1: ( RULE_ID )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12890:1: RULE_ID
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12919:1: ( RULE_ID )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12920:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGreetingAccess().getNameIDTerminalRuleCall_1_0()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Greeting__NameAssignment_125861); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Greeting__NameAssignment_125921); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getGreetingAccess().getNameIDTerminalRuleCall_1_0()); 
             }
@@ -36889,22 +36984,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Greeting__ExpressionAssignment_3"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12899:1: rule__Greeting__ExpressionAssignment_3 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12929:1: rule__Greeting__ExpressionAssignment_3 : ( ruleXExpression ) ;
     public final void rule__Greeting__ExpressionAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12903:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12904:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12933:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12934:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12904:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12905:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12934:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12935:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getGreetingAccess().getExpressionXExpressionParserRuleCall_3_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__Greeting__ExpressionAssignment_325892);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__Greeting__ExpressionAssignment_325952);
             ruleXExpression();
 
             state._fsp--;
@@ -36934,28 +37029,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XAssignment__FeatureAssignment_0_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12914:1: rule__XAssignment__FeatureAssignment_0_1 : ( ( ruleValidID ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12944:1: rule__XAssignment__FeatureAssignment_0_1 : ( ( ruleValidID ) ) ;
     public final void rule__XAssignment__FeatureAssignment_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12918:1: ( ( ( ruleValidID ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12919:1: ( ( ruleValidID ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12948:1: ( ( ( ruleValidID ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12949:1: ( ( ruleValidID ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12919:1: ( ( ruleValidID ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12920:1: ( ruleValidID )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12949:1: ( ( ruleValidID ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12950:1: ( ruleValidID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAssignmentAccess().getFeatureJvmIdentifiableElementCrossReference_0_1_0()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12921:1: ( ruleValidID )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12922:1: ruleValidID
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12951:1: ( ruleValidID )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12952:1: ruleValidID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAssignmentAccess().getFeatureJvmIdentifiableElementValidIDParserRuleCall_0_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleValidID_in_rule__XAssignment__FeatureAssignment_0_125927);
+            pushFollow(FOLLOW_ruleValidID_in_rule__XAssignment__FeatureAssignment_0_125987);
             ruleValidID();
 
             state._fsp--;
@@ -36991,22 +37086,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XAssignment__ValueAssignment_0_3"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12933:1: rule__XAssignment__ValueAssignment_0_3 : ( ruleXAssignment ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12963:1: rule__XAssignment__ValueAssignment_0_3 : ( ruleXAssignment ) ;
     public final void rule__XAssignment__ValueAssignment_0_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12937:1: ( ( ruleXAssignment ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12938:1: ( ruleXAssignment )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12967:1: ( ( ruleXAssignment ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12968:1: ( ruleXAssignment )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12938:1: ( ruleXAssignment )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12939:1: ruleXAssignment
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12968:1: ( ruleXAssignment )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12969:1: ruleXAssignment
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAssignmentAccess().getValueXAssignmentParserRuleCall_0_3_0()); 
             }
-            pushFollow(FOLLOW_ruleXAssignment_in_rule__XAssignment__ValueAssignment_0_325962);
+            pushFollow(FOLLOW_ruleXAssignment_in_rule__XAssignment__ValueAssignment_0_326022);
             ruleXAssignment();
 
             state._fsp--;
@@ -37036,28 +37131,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XAssignment__FeatureAssignment_1_1_0_0_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12948:1: rule__XAssignment__FeatureAssignment_1_1_0_0_1 : ( ( ruleOpMultiAssign ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12978:1: rule__XAssignment__FeatureAssignment_1_1_0_0_1 : ( ( ruleOpMultiAssign ) ) ;
     public final void rule__XAssignment__FeatureAssignment_1_1_0_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12952:1: ( ( ( ruleOpMultiAssign ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12953:1: ( ( ruleOpMultiAssign ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12982:1: ( ( ( ruleOpMultiAssign ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12983:1: ( ( ruleOpMultiAssign ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12953:1: ( ( ruleOpMultiAssign ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12954:1: ( ruleOpMultiAssign )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12983:1: ( ( ruleOpMultiAssign ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12984:1: ( ruleOpMultiAssign )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAssignmentAccess().getFeatureJvmIdentifiableElementCrossReference_1_1_0_0_1_0()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12955:1: ( ruleOpMultiAssign )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12956:1: ruleOpMultiAssign
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12985:1: ( ruleOpMultiAssign )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12986:1: ruleOpMultiAssign
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAssignmentAccess().getFeatureJvmIdentifiableElementOpMultiAssignParserRuleCall_1_1_0_0_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleOpMultiAssign_in_rule__XAssignment__FeatureAssignment_1_1_0_0_125997);
+            pushFollow(FOLLOW_ruleOpMultiAssign_in_rule__XAssignment__FeatureAssignment_1_1_0_0_126057);
             ruleOpMultiAssign();
 
             state._fsp--;
@@ -37093,22 +37188,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XAssignment__RightOperandAssignment_1_1_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12967:1: rule__XAssignment__RightOperandAssignment_1_1_1 : ( ruleXAssignment ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12997:1: rule__XAssignment__RightOperandAssignment_1_1_1 : ( ruleXAssignment ) ;
     public final void rule__XAssignment__RightOperandAssignment_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12971:1: ( ( ruleXAssignment ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12972:1: ( ruleXAssignment )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13001:1: ( ( ruleXAssignment ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13002:1: ( ruleXAssignment )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12972:1: ( ruleXAssignment )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12973:1: ruleXAssignment
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13002:1: ( ruleXAssignment )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13003:1: ruleXAssignment
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAssignmentAccess().getRightOperandXAssignmentParserRuleCall_1_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXAssignment_in_rule__XAssignment__RightOperandAssignment_1_1_126032);
+            pushFollow(FOLLOW_ruleXAssignment_in_rule__XAssignment__RightOperandAssignment_1_1_126092);
             ruleXAssignment();
 
             state._fsp--;
@@ -37138,28 +37233,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XOrExpression__FeatureAssignment_1_0_0_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12982:1: rule__XOrExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpOr ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13012:1: rule__XOrExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpOr ) ) ;
     public final void rule__XOrExpression__FeatureAssignment_1_0_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12986:1: ( ( ( ruleOpOr ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12987:1: ( ( ruleOpOr ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13016:1: ( ( ( ruleOpOr ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13017:1: ( ( ruleOpOr ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12987:1: ( ( ruleOpOr ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12988:1: ( ruleOpOr )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13017:1: ( ( ruleOpOr ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13018:1: ( ruleOpOr )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXOrExpressionAccess().getFeatureJvmIdentifiableElementCrossReference_1_0_0_1_0()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12989:1: ( ruleOpOr )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12990:1: ruleOpOr
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13019:1: ( ruleOpOr )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13020:1: ruleOpOr
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXOrExpressionAccess().getFeatureJvmIdentifiableElementOpOrParserRuleCall_1_0_0_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleOpOr_in_rule__XOrExpression__FeatureAssignment_1_0_0_126067);
+            pushFollow(FOLLOW_ruleOpOr_in_rule__XOrExpression__FeatureAssignment_1_0_0_126127);
             ruleOpOr();
 
             state._fsp--;
@@ -37195,22 +37290,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XOrExpression__RightOperandAssignment_1_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13001:1: rule__XOrExpression__RightOperandAssignment_1_1 : ( ruleXAndExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13031:1: rule__XOrExpression__RightOperandAssignment_1_1 : ( ruleXAndExpression ) ;
     public final void rule__XOrExpression__RightOperandAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13005:1: ( ( ruleXAndExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13006:1: ( ruleXAndExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13035:1: ( ( ruleXAndExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13036:1: ( ruleXAndExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13006:1: ( ruleXAndExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13007:1: ruleXAndExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13036:1: ( ruleXAndExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13037:1: ruleXAndExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXOrExpressionAccess().getRightOperandXAndExpressionParserRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXAndExpression_in_rule__XOrExpression__RightOperandAssignment_1_126102);
+            pushFollow(FOLLOW_ruleXAndExpression_in_rule__XOrExpression__RightOperandAssignment_1_126162);
             ruleXAndExpression();
 
             state._fsp--;
@@ -37240,28 +37335,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XAndExpression__FeatureAssignment_1_0_0_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13016:1: rule__XAndExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpAnd ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13046:1: rule__XAndExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpAnd ) ) ;
     public final void rule__XAndExpression__FeatureAssignment_1_0_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13020:1: ( ( ( ruleOpAnd ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13021:1: ( ( ruleOpAnd ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13050:1: ( ( ( ruleOpAnd ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13051:1: ( ( ruleOpAnd ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13021:1: ( ( ruleOpAnd ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13022:1: ( ruleOpAnd )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13051:1: ( ( ruleOpAnd ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13052:1: ( ruleOpAnd )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAndExpressionAccess().getFeatureJvmIdentifiableElementCrossReference_1_0_0_1_0()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13023:1: ( ruleOpAnd )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13024:1: ruleOpAnd
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13053:1: ( ruleOpAnd )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13054:1: ruleOpAnd
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAndExpressionAccess().getFeatureJvmIdentifiableElementOpAndParserRuleCall_1_0_0_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleOpAnd_in_rule__XAndExpression__FeatureAssignment_1_0_0_126137);
+            pushFollow(FOLLOW_ruleOpAnd_in_rule__XAndExpression__FeatureAssignment_1_0_0_126197);
             ruleOpAnd();
 
             state._fsp--;
@@ -37297,22 +37392,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XAndExpression__RightOperandAssignment_1_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13035:1: rule__XAndExpression__RightOperandAssignment_1_1 : ( ruleXEqualityExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13065:1: rule__XAndExpression__RightOperandAssignment_1_1 : ( ruleXEqualityExpression ) ;
     public final void rule__XAndExpression__RightOperandAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13039:1: ( ( ruleXEqualityExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13040:1: ( ruleXEqualityExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13069:1: ( ( ruleXEqualityExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13070:1: ( ruleXEqualityExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13040:1: ( ruleXEqualityExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13041:1: ruleXEqualityExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13070:1: ( ruleXEqualityExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13071:1: ruleXEqualityExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAndExpressionAccess().getRightOperandXEqualityExpressionParserRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXEqualityExpression_in_rule__XAndExpression__RightOperandAssignment_1_126172);
+            pushFollow(FOLLOW_ruleXEqualityExpression_in_rule__XAndExpression__RightOperandAssignment_1_126232);
             ruleXEqualityExpression();
 
             state._fsp--;
@@ -37342,28 +37437,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XEqualityExpression__FeatureAssignment_1_0_0_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13050:1: rule__XEqualityExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpEquality ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13080:1: rule__XEqualityExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpEquality ) ) ;
     public final void rule__XEqualityExpression__FeatureAssignment_1_0_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13054:1: ( ( ( ruleOpEquality ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13055:1: ( ( ruleOpEquality ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13084:1: ( ( ( ruleOpEquality ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13085:1: ( ( ruleOpEquality ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13055:1: ( ( ruleOpEquality ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13056:1: ( ruleOpEquality )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13085:1: ( ( ruleOpEquality ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13086:1: ( ruleOpEquality )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXEqualityExpressionAccess().getFeatureJvmIdentifiableElementCrossReference_1_0_0_1_0()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13057:1: ( ruleOpEquality )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13058:1: ruleOpEquality
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13087:1: ( ruleOpEquality )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13088:1: ruleOpEquality
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXEqualityExpressionAccess().getFeatureJvmIdentifiableElementOpEqualityParserRuleCall_1_0_0_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleOpEquality_in_rule__XEqualityExpression__FeatureAssignment_1_0_0_126207);
+            pushFollow(FOLLOW_ruleOpEquality_in_rule__XEqualityExpression__FeatureAssignment_1_0_0_126267);
             ruleOpEquality();
 
             state._fsp--;
@@ -37399,22 +37494,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XEqualityExpression__RightOperandAssignment_1_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13069:1: rule__XEqualityExpression__RightOperandAssignment_1_1 : ( ruleXRelationalExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13099:1: rule__XEqualityExpression__RightOperandAssignment_1_1 : ( ruleXRelationalExpression ) ;
     public final void rule__XEqualityExpression__RightOperandAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13073:1: ( ( ruleXRelationalExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13074:1: ( ruleXRelationalExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13103:1: ( ( ruleXRelationalExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13104:1: ( ruleXRelationalExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13074:1: ( ruleXRelationalExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13075:1: ruleXRelationalExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13104:1: ( ruleXRelationalExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13105:1: ruleXRelationalExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXEqualityExpressionAccess().getRightOperandXRelationalExpressionParserRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXRelationalExpression_in_rule__XEqualityExpression__RightOperandAssignment_1_126242);
+            pushFollow(FOLLOW_ruleXRelationalExpression_in_rule__XEqualityExpression__RightOperandAssignment_1_126302);
             ruleXRelationalExpression();
 
             state._fsp--;
@@ -37444,28 +37539,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XRelationalExpression__TypeAssignment_1_0_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13084:1: rule__XRelationalExpression__TypeAssignment_1_0_1 : ( ( ruleQualifiedName ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13114:1: rule__XRelationalExpression__TypeAssignment_1_0_1 : ( ( ruleQualifiedName ) ) ;
     public final void rule__XRelationalExpression__TypeAssignment_1_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13088:1: ( ( ( ruleQualifiedName ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13089:1: ( ( ruleQualifiedName ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13118:1: ( ( ( ruleQualifiedName ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13119:1: ( ( ruleQualifiedName ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13089:1: ( ( ruleQualifiedName ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13090:1: ( ruleQualifiedName )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13119:1: ( ( ruleQualifiedName ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13120:1: ( ruleQualifiedName )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXRelationalExpressionAccess().getTypeJvmTypeCrossReference_1_0_1_0()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13091:1: ( ruleQualifiedName )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13092:1: ruleQualifiedName
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13121:1: ( ruleQualifiedName )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13122:1: ruleQualifiedName
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXRelationalExpressionAccess().getTypeJvmTypeQualifiedNameParserRuleCall_1_0_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleQualifiedName_in_rule__XRelationalExpression__TypeAssignment_1_0_126277);
+            pushFollow(FOLLOW_ruleQualifiedName_in_rule__XRelationalExpression__TypeAssignment_1_0_126337);
             ruleQualifiedName();
 
             state._fsp--;
@@ -37501,28 +37596,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XRelationalExpression__FeatureAssignment_1_1_0_0_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13103:1: rule__XRelationalExpression__FeatureAssignment_1_1_0_0_1 : ( ( ruleOpCompare ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13133:1: rule__XRelationalExpression__FeatureAssignment_1_1_0_0_1 : ( ( ruleOpCompare ) ) ;
     public final void rule__XRelationalExpression__FeatureAssignment_1_1_0_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13107:1: ( ( ( ruleOpCompare ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13108:1: ( ( ruleOpCompare ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13137:1: ( ( ( ruleOpCompare ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13138:1: ( ( ruleOpCompare ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13108:1: ( ( ruleOpCompare ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13109:1: ( ruleOpCompare )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13138:1: ( ( ruleOpCompare ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13139:1: ( ruleOpCompare )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXRelationalExpressionAccess().getFeatureJvmIdentifiableElementCrossReference_1_1_0_0_1_0()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13110:1: ( ruleOpCompare )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13111:1: ruleOpCompare
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13140:1: ( ruleOpCompare )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13141:1: ruleOpCompare
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXRelationalExpressionAccess().getFeatureJvmIdentifiableElementOpCompareParserRuleCall_1_1_0_0_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleOpCompare_in_rule__XRelationalExpression__FeatureAssignment_1_1_0_0_126316);
+            pushFollow(FOLLOW_ruleOpCompare_in_rule__XRelationalExpression__FeatureAssignment_1_1_0_0_126376);
             ruleOpCompare();
 
             state._fsp--;
@@ -37558,22 +37653,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XRelationalExpression__RightOperandAssignment_1_1_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13122:1: rule__XRelationalExpression__RightOperandAssignment_1_1_1 : ( ruleXOtherOperatorExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13152:1: rule__XRelationalExpression__RightOperandAssignment_1_1_1 : ( ruleXOtherOperatorExpression ) ;
     public final void rule__XRelationalExpression__RightOperandAssignment_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13126:1: ( ( ruleXOtherOperatorExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13127:1: ( ruleXOtherOperatorExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13156:1: ( ( ruleXOtherOperatorExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13157:1: ( ruleXOtherOperatorExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13127:1: ( ruleXOtherOperatorExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13128:1: ruleXOtherOperatorExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13157:1: ( ruleXOtherOperatorExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13158:1: ruleXOtherOperatorExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXRelationalExpressionAccess().getRightOperandXOtherOperatorExpressionParserRuleCall_1_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXOtherOperatorExpression_in_rule__XRelationalExpression__RightOperandAssignment_1_1_126351);
+            pushFollow(FOLLOW_ruleXOtherOperatorExpression_in_rule__XRelationalExpression__RightOperandAssignment_1_1_126411);
             ruleXOtherOperatorExpression();
 
             state._fsp--;
@@ -37603,28 +37698,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XOtherOperatorExpression__FeatureAssignment_1_0_0_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13137:1: rule__XOtherOperatorExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpOther ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13167:1: rule__XOtherOperatorExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpOther ) ) ;
     public final void rule__XOtherOperatorExpression__FeatureAssignment_1_0_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13141:1: ( ( ( ruleOpOther ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13142:1: ( ( ruleOpOther ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13171:1: ( ( ( ruleOpOther ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13172:1: ( ( ruleOpOther ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13142:1: ( ( ruleOpOther ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13143:1: ( ruleOpOther )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13172:1: ( ( ruleOpOther ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13173:1: ( ruleOpOther )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXOtherOperatorExpressionAccess().getFeatureJvmIdentifiableElementCrossReference_1_0_0_1_0()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13144:1: ( ruleOpOther )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13145:1: ruleOpOther
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13174:1: ( ruleOpOther )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13175:1: ruleOpOther
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXOtherOperatorExpressionAccess().getFeatureJvmIdentifiableElementOpOtherParserRuleCall_1_0_0_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleOpOther_in_rule__XOtherOperatorExpression__FeatureAssignment_1_0_0_126386);
+            pushFollow(FOLLOW_ruleOpOther_in_rule__XOtherOperatorExpression__FeatureAssignment_1_0_0_126446);
             ruleOpOther();
 
             state._fsp--;
@@ -37660,22 +37755,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XOtherOperatorExpression__RightOperandAssignment_1_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13156:1: rule__XOtherOperatorExpression__RightOperandAssignment_1_1 : ( ruleXAdditiveExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13186:1: rule__XOtherOperatorExpression__RightOperandAssignment_1_1 : ( ruleXAdditiveExpression ) ;
     public final void rule__XOtherOperatorExpression__RightOperandAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13160:1: ( ( ruleXAdditiveExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13161:1: ( ruleXAdditiveExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13190:1: ( ( ruleXAdditiveExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13191:1: ( ruleXAdditiveExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13161:1: ( ruleXAdditiveExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13162:1: ruleXAdditiveExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13191:1: ( ruleXAdditiveExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13192:1: ruleXAdditiveExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXOtherOperatorExpressionAccess().getRightOperandXAdditiveExpressionParserRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXAdditiveExpression_in_rule__XOtherOperatorExpression__RightOperandAssignment_1_126421);
+            pushFollow(FOLLOW_ruleXAdditiveExpression_in_rule__XOtherOperatorExpression__RightOperandAssignment_1_126481);
             ruleXAdditiveExpression();
 
             state._fsp--;
@@ -37705,28 +37800,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XAdditiveExpression__FeatureAssignment_1_0_0_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13171:1: rule__XAdditiveExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpAdd ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13201:1: rule__XAdditiveExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpAdd ) ) ;
     public final void rule__XAdditiveExpression__FeatureAssignment_1_0_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13175:1: ( ( ( ruleOpAdd ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13176:1: ( ( ruleOpAdd ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13205:1: ( ( ( ruleOpAdd ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13206:1: ( ( ruleOpAdd ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13176:1: ( ( ruleOpAdd ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13177:1: ( ruleOpAdd )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13206:1: ( ( ruleOpAdd ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13207:1: ( ruleOpAdd )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAdditiveExpressionAccess().getFeatureJvmIdentifiableElementCrossReference_1_0_0_1_0()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13178:1: ( ruleOpAdd )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13179:1: ruleOpAdd
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13208:1: ( ruleOpAdd )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13209:1: ruleOpAdd
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAdditiveExpressionAccess().getFeatureJvmIdentifiableElementOpAddParserRuleCall_1_0_0_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleOpAdd_in_rule__XAdditiveExpression__FeatureAssignment_1_0_0_126456);
+            pushFollow(FOLLOW_ruleOpAdd_in_rule__XAdditiveExpression__FeatureAssignment_1_0_0_126516);
             ruleOpAdd();
 
             state._fsp--;
@@ -37762,22 +37857,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XAdditiveExpression__RightOperandAssignment_1_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13190:1: rule__XAdditiveExpression__RightOperandAssignment_1_1 : ( ruleXMultiplicativeExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13220:1: rule__XAdditiveExpression__RightOperandAssignment_1_1 : ( ruleXMultiplicativeExpression ) ;
     public final void rule__XAdditiveExpression__RightOperandAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13194:1: ( ( ruleXMultiplicativeExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13195:1: ( ruleXMultiplicativeExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13224:1: ( ( ruleXMultiplicativeExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13225:1: ( ruleXMultiplicativeExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13195:1: ( ruleXMultiplicativeExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13196:1: ruleXMultiplicativeExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13225:1: ( ruleXMultiplicativeExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13226:1: ruleXMultiplicativeExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXAdditiveExpressionAccess().getRightOperandXMultiplicativeExpressionParserRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXMultiplicativeExpression_in_rule__XAdditiveExpression__RightOperandAssignment_1_126491);
+            pushFollow(FOLLOW_ruleXMultiplicativeExpression_in_rule__XAdditiveExpression__RightOperandAssignment_1_126551);
             ruleXMultiplicativeExpression();
 
             state._fsp--;
@@ -37807,28 +37902,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XMultiplicativeExpression__FeatureAssignment_1_0_0_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13205:1: rule__XMultiplicativeExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpMulti ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13235:1: rule__XMultiplicativeExpression__FeatureAssignment_1_0_0_1 : ( ( ruleOpMulti ) ) ;
     public final void rule__XMultiplicativeExpression__FeatureAssignment_1_0_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13209:1: ( ( ( ruleOpMulti ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13210:1: ( ( ruleOpMulti ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13239:1: ( ( ( ruleOpMulti ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13240:1: ( ( ruleOpMulti ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13210:1: ( ( ruleOpMulti ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13211:1: ( ruleOpMulti )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13240:1: ( ( ruleOpMulti ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13241:1: ( ruleOpMulti )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMultiplicativeExpressionAccess().getFeatureJvmIdentifiableElementCrossReference_1_0_0_1_0()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13212:1: ( ruleOpMulti )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13213:1: ruleOpMulti
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13242:1: ( ruleOpMulti )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13243:1: ruleOpMulti
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMultiplicativeExpressionAccess().getFeatureJvmIdentifiableElementOpMultiParserRuleCall_1_0_0_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleOpMulti_in_rule__XMultiplicativeExpression__FeatureAssignment_1_0_0_126526);
+            pushFollow(FOLLOW_ruleOpMulti_in_rule__XMultiplicativeExpression__FeatureAssignment_1_0_0_126586);
             ruleOpMulti();
 
             state._fsp--;
@@ -37864,22 +37959,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XMultiplicativeExpression__RightOperandAssignment_1_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13224:1: rule__XMultiplicativeExpression__RightOperandAssignment_1_1 : ( ruleXUnaryOperation ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13254:1: rule__XMultiplicativeExpression__RightOperandAssignment_1_1 : ( ruleXUnaryOperation ) ;
     public final void rule__XMultiplicativeExpression__RightOperandAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13228:1: ( ( ruleXUnaryOperation ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13229:1: ( ruleXUnaryOperation )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13258:1: ( ( ruleXUnaryOperation ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13259:1: ( ruleXUnaryOperation )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13229:1: ( ruleXUnaryOperation )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13230:1: ruleXUnaryOperation
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13259:1: ( ruleXUnaryOperation )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13260:1: ruleXUnaryOperation
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMultiplicativeExpressionAccess().getRightOperandXUnaryOperationParserRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXUnaryOperation_in_rule__XMultiplicativeExpression__RightOperandAssignment_1_126561);
+            pushFollow(FOLLOW_ruleXUnaryOperation_in_rule__XMultiplicativeExpression__RightOperandAssignment_1_126621);
             ruleXUnaryOperation();
 
             state._fsp--;
@@ -37909,28 +38004,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XUnaryOperation__FeatureAssignment_0_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13239:1: rule__XUnaryOperation__FeatureAssignment_0_1 : ( ( ruleOpUnary ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13269:1: rule__XUnaryOperation__FeatureAssignment_0_1 : ( ( ruleOpUnary ) ) ;
     public final void rule__XUnaryOperation__FeatureAssignment_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13243:1: ( ( ( ruleOpUnary ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13244:1: ( ( ruleOpUnary ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13273:1: ( ( ( ruleOpUnary ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13274:1: ( ( ruleOpUnary ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13244:1: ( ( ruleOpUnary ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13245:1: ( ruleOpUnary )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13274:1: ( ( ruleOpUnary ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13275:1: ( ruleOpUnary )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXUnaryOperationAccess().getFeatureJvmIdentifiableElementCrossReference_0_1_0()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13246:1: ( ruleOpUnary )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13247:1: ruleOpUnary
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13276:1: ( ruleOpUnary )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13277:1: ruleOpUnary
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXUnaryOperationAccess().getFeatureJvmIdentifiableElementOpUnaryParserRuleCall_0_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleOpUnary_in_rule__XUnaryOperation__FeatureAssignment_0_126596);
+            pushFollow(FOLLOW_ruleOpUnary_in_rule__XUnaryOperation__FeatureAssignment_0_126656);
             ruleOpUnary();
 
             state._fsp--;
@@ -37966,22 +38061,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XUnaryOperation__OperandAssignment_0_2"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13258:1: rule__XUnaryOperation__OperandAssignment_0_2 : ( ruleXCastedExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13288:1: rule__XUnaryOperation__OperandAssignment_0_2 : ( ruleXCastedExpression ) ;
     public final void rule__XUnaryOperation__OperandAssignment_0_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13262:1: ( ( ruleXCastedExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13263:1: ( ruleXCastedExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13292:1: ( ( ruleXCastedExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13293:1: ( ruleXCastedExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13263:1: ( ruleXCastedExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13264:1: ruleXCastedExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13293:1: ( ruleXCastedExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13294:1: ruleXCastedExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXUnaryOperationAccess().getOperandXCastedExpressionParserRuleCall_0_2_0()); 
             }
-            pushFollow(FOLLOW_ruleXCastedExpression_in_rule__XUnaryOperation__OperandAssignment_0_226631);
+            pushFollow(FOLLOW_ruleXCastedExpression_in_rule__XUnaryOperation__OperandAssignment_0_226691);
             ruleXCastedExpression();
 
             state._fsp--;
@@ -38011,22 +38106,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XCastedExpression__TypeAssignment_1_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13273:1: rule__XCastedExpression__TypeAssignment_1_1 : ( ruleJvmTypeReference ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13303:1: rule__XCastedExpression__TypeAssignment_1_1 : ( ruleJvmTypeReference ) ;
     public final void rule__XCastedExpression__TypeAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13277:1: ( ( ruleJvmTypeReference ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13278:1: ( ruleJvmTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13307:1: ( ( ruleJvmTypeReference ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13308:1: ( ruleJvmTypeReference )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13278:1: ( ruleJvmTypeReference )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13279:1: ruleJvmTypeReference
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13308:1: ( ruleJvmTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13309:1: ruleJvmTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXCastedExpressionAccess().getTypeJvmTypeReferenceParserRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XCastedExpression__TypeAssignment_1_126662);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XCastedExpression__TypeAssignment_1_126722);
             ruleJvmTypeReference();
 
             state._fsp--;
@@ -38056,28 +38151,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XMemberFeatureCall__FeatureAssignment_1_0_0_0_2"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13288:1: rule__XMemberFeatureCall__FeatureAssignment_1_0_0_0_2 : ( ( ruleValidID ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13318:1: rule__XMemberFeatureCall__FeatureAssignment_1_0_0_0_2 : ( ( ruleValidID ) ) ;
     public final void rule__XMemberFeatureCall__FeatureAssignment_1_0_0_0_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13292:1: ( ( ( ruleValidID ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13293:1: ( ( ruleValidID ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13322:1: ( ( ( ruleValidID ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13323:1: ( ( ruleValidID ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13293:1: ( ( ruleValidID ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13294:1: ( ruleValidID )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13323:1: ( ( ruleValidID ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13324:1: ( ruleValidID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getFeatureJvmIdentifiableElementCrossReference_1_0_0_0_2_0()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13295:1: ( ruleValidID )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13296:1: ruleValidID
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13325:1: ( ruleValidID )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13326:1: ruleValidID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getFeatureJvmIdentifiableElementValidIDParserRuleCall_1_0_0_0_2_0_1()); 
             }
-            pushFollow(FOLLOW_ruleValidID_in_rule__XMemberFeatureCall__FeatureAssignment_1_0_0_0_226697);
+            pushFollow(FOLLOW_ruleValidID_in_rule__XMemberFeatureCall__FeatureAssignment_1_0_0_0_226757);
             ruleValidID();
 
             state._fsp--;
@@ -38113,22 +38208,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XMemberFeatureCall__ValueAssignment_1_0_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13307:1: rule__XMemberFeatureCall__ValueAssignment_1_0_1 : ( ruleXAssignment ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13337:1: rule__XMemberFeatureCall__ValueAssignment_1_0_1 : ( ruleXAssignment ) ;
     public final void rule__XMemberFeatureCall__ValueAssignment_1_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13311:1: ( ( ruleXAssignment ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13312:1: ( ruleXAssignment )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13341:1: ( ( ruleXAssignment ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13342:1: ( ruleXAssignment )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13312:1: ( ruleXAssignment )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13313:1: ruleXAssignment
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13342:1: ( ruleXAssignment )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13343:1: ruleXAssignment
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getValueXAssignmentParserRuleCall_1_0_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXAssignment_in_rule__XMemberFeatureCall__ValueAssignment_1_0_126732);
+            pushFollow(FOLLOW_ruleXAssignment_in_rule__XMemberFeatureCall__ValueAssignment_1_0_126792);
             ruleXAssignment();
 
             state._fsp--;
@@ -38158,28 +38253,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XMemberFeatureCall__NullSafeAssignment_1_1_0_0_1_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13322:1: rule__XMemberFeatureCall__NullSafeAssignment_1_1_0_0_1_1 : ( ( '?.' ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13352:1: rule__XMemberFeatureCall__NullSafeAssignment_1_1_0_0_1_1 : ( ( '?.' ) ) ;
     public final void rule__XMemberFeatureCall__NullSafeAssignment_1_1_0_0_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13326:1: ( ( ( '?.' ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13327:1: ( ( '?.' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13356:1: ( ( ( '?.' ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13357:1: ( ( '?.' ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13327:1: ( ( '?.' ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13328:1: ( '?.' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXMemberFeatureCallAccess().getNullSafeQuestionMarkFullStopKeyword_1_1_0_0_1_1_0()); 
-            }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13329:1: ( '?.' )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13330:1: '?.'
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13357:1: ( ( '?.' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13358:1: ( '?.' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getNullSafeQuestionMarkFullStopKeyword_1_1_0_0_1_1_0()); 
             }
-            match(input,70,FOLLOW_70_in_rule__XMemberFeatureCall__NullSafeAssignment_1_1_0_0_1_126768); if (state.failed) return ;
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13359:1: ( '?.' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13360:1: '?.'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXMemberFeatureCallAccess().getNullSafeQuestionMarkFullStopKeyword_1_1_0_0_1_1_0()); 
+            }
+            match(input,70,FOLLOW_70_in_rule__XMemberFeatureCall__NullSafeAssignment_1_1_0_0_1_126828); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXMemberFeatureCallAccess().getNullSafeQuestionMarkFullStopKeyword_1_1_0_0_1_1_0()); 
             }
@@ -38211,28 +38306,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XMemberFeatureCall__SpreadingAssignment_1_1_0_0_1_2"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13345:1: rule__XMemberFeatureCall__SpreadingAssignment_1_1_0_0_1_2 : ( ( '*.' ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13375:1: rule__XMemberFeatureCall__SpreadingAssignment_1_1_0_0_1_2 : ( ( '*.' ) ) ;
     public final void rule__XMemberFeatureCall__SpreadingAssignment_1_1_0_0_1_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13349:1: ( ( ( '*.' ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13350:1: ( ( '*.' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13379:1: ( ( ( '*.' ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13380:1: ( ( '*.' ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13350:1: ( ( '*.' ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13351:1: ( '*.' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXMemberFeatureCallAccess().getSpreadingAsteriskFullStopKeyword_1_1_0_0_1_2_0()); 
-            }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13352:1: ( '*.' )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13353:1: '*.'
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13380:1: ( ( '*.' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13381:1: ( '*.' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getSpreadingAsteriskFullStopKeyword_1_1_0_0_1_2_0()); 
             }
-            match(input,71,FOLLOW_71_in_rule__XMemberFeatureCall__SpreadingAssignment_1_1_0_0_1_226812); if (state.failed) return ;
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13382:1: ( '*.' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13383:1: '*.'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXMemberFeatureCallAccess().getSpreadingAsteriskFullStopKeyword_1_1_0_0_1_2_0()); 
+            }
+            match(input,71,FOLLOW_71_in_rule__XMemberFeatureCall__SpreadingAssignment_1_1_0_0_1_226872); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXMemberFeatureCallAccess().getSpreadingAsteriskFullStopKeyword_1_1_0_0_1_2_0()); 
             }
@@ -38264,22 +38359,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13368:1: rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_1 : ( ruleJvmArgumentTypeReference ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13398:1: rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_1 : ( ruleJvmArgumentTypeReference ) ;
     public final void rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13372:1: ( ( ruleJvmArgumentTypeReference ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13373:1: ( ruleJvmArgumentTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13402:1: ( ( ruleJvmArgumentTypeReference ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13403:1: ( ruleJvmArgumentTypeReference )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13373:1: ( ruleJvmArgumentTypeReference )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13374:1: ruleJvmArgumentTypeReference
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13403:1: ( ruleJvmArgumentTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13404:1: ruleJvmArgumentTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getTypeArgumentsJvmArgumentTypeReferenceParserRuleCall_1_1_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_126851);
+            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_126911);
             ruleJvmArgumentTypeReference();
 
             state._fsp--;
@@ -38309,22 +38404,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_2_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13383:1: rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_2_1 : ( ruleJvmArgumentTypeReference ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13413:1: rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_2_1 : ( ruleJvmArgumentTypeReference ) ;
     public final void rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13387:1: ( ( ruleJvmArgumentTypeReference ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13388:1: ( ruleJvmArgumentTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13417:1: ( ( ruleJvmArgumentTypeReference ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13418:1: ( ruleJvmArgumentTypeReference )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13388:1: ( ruleJvmArgumentTypeReference )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13389:1: ruleJvmArgumentTypeReference
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13418:1: ( ruleJvmArgumentTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13419:1: ruleJvmArgumentTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getTypeArgumentsJvmArgumentTypeReferenceParserRuleCall_1_1_1_2_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_2_126882);
+            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_2_126942);
             ruleJvmArgumentTypeReference();
 
             state._fsp--;
@@ -38354,28 +38449,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XMemberFeatureCall__FeatureAssignment_1_1_2"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13398:1: rule__XMemberFeatureCall__FeatureAssignment_1_1_2 : ( ( ruleValidID ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13428:1: rule__XMemberFeatureCall__FeatureAssignment_1_1_2 : ( ( ruleValidID ) ) ;
     public final void rule__XMemberFeatureCall__FeatureAssignment_1_1_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13402:1: ( ( ( ruleValidID ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13403:1: ( ( ruleValidID ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13432:1: ( ( ( ruleValidID ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13433:1: ( ( ruleValidID ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13403:1: ( ( ruleValidID ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13404:1: ( ruleValidID )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13433:1: ( ( ruleValidID ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13434:1: ( ruleValidID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getFeatureJvmIdentifiableElementCrossReference_1_1_2_0()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13405:1: ( ruleValidID )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13406:1: ruleValidID
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13435:1: ( ruleValidID )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13436:1: ruleValidID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getFeatureJvmIdentifiableElementValidIDParserRuleCall_1_1_2_0_1()); 
             }
-            pushFollow(FOLLOW_ruleValidID_in_rule__XMemberFeatureCall__FeatureAssignment_1_1_226917);
+            pushFollow(FOLLOW_ruleValidID_in_rule__XMemberFeatureCall__FeatureAssignment_1_1_226977);
             ruleValidID();
 
             state._fsp--;
@@ -38411,28 +38506,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XMemberFeatureCall__ExplicitOperationCallAssignment_1_1_3_0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13417:1: rule__XMemberFeatureCall__ExplicitOperationCallAssignment_1_1_3_0 : ( ( '(' ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13447:1: rule__XMemberFeatureCall__ExplicitOperationCallAssignment_1_1_3_0 : ( ( '(' ) ) ;
     public final void rule__XMemberFeatureCall__ExplicitOperationCallAssignment_1_1_3_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13421:1: ( ( ( '(' ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13422:1: ( ( '(' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13451:1: ( ( ( '(' ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13452:1: ( ( '(' ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13422:1: ( ( '(' ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13423:1: ( '(' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXMemberFeatureCallAccess().getExplicitOperationCallLeftParenthesisKeyword_1_1_3_0_0()); 
-            }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13424:1: ( '(' )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13425:1: '('
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13452:1: ( ( '(' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13453:1: ( '(' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getExplicitOperationCallLeftParenthesisKeyword_1_1_3_0_0()); 
             }
-            match(input,45,FOLLOW_45_in_rule__XMemberFeatureCall__ExplicitOperationCallAssignment_1_1_3_026957); if (state.failed) return ;
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13454:1: ( '(' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13455:1: '('
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXMemberFeatureCallAccess().getExplicitOperationCallLeftParenthesisKeyword_1_1_3_0_0()); 
+            }
+            match(input,45,FOLLOW_45_in_rule__XMemberFeatureCall__ExplicitOperationCallAssignment_1_1_3_027017); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXMemberFeatureCallAccess().getExplicitOperationCallLeftParenthesisKeyword_1_1_3_0_0()); 
             }
@@ -38464,22 +38559,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13440:1: rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_0 : ( ruleXShortClosure ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13470:1: rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_0 : ( ruleXShortClosure ) ;
     public final void rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13444:1: ( ( ruleXShortClosure ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13445:1: ( ruleXShortClosure )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13474:1: ( ( ruleXShortClosure ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13475:1: ( ruleXShortClosure )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13445:1: ( ruleXShortClosure )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13446:1: ruleXShortClosure
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13475:1: ( ruleXShortClosure )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13476:1: ruleXShortClosure
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getMemberCallArgumentsXShortClosureParserRuleCall_1_1_3_1_0_0()); 
             }
-            pushFollow(FOLLOW_ruleXShortClosure_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_026996);
+            pushFollow(FOLLOW_ruleXShortClosure_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_027056);
             ruleXShortClosure();
 
             state._fsp--;
@@ -38509,22 +38604,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13455:1: rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_0 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13485:1: rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_0 : ( ruleXExpression ) ;
     public final void rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13459:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13460:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13489:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13490:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13460:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13461:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13490:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13491:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getMemberCallArgumentsXExpressionParserRuleCall_1_1_3_1_1_0_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_027027);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_027087);
             ruleXExpression();
 
             state._fsp--;
@@ -38554,22 +38649,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_1_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13470:1: rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_1_1 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13500:1: rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_1_1 : ( ruleXExpression ) ;
     public final void rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13474:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13475:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13504:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13505:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13475:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13476:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13505:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13506:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getMemberCallArgumentsXExpressionParserRuleCall_1_1_3_1_1_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_1_127058);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_1_127118);
             ruleXExpression();
 
             state._fsp--;
@@ -38599,22 +38694,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_4"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13485:1: rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_4 : ( ruleXClosure ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13515:1: rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_4 : ( ruleXClosure ) ;
     public final void rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13489:1: ( ( ruleXClosure ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13490:1: ( ruleXClosure )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13519:1: ( ( ruleXClosure ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13520:1: ( ruleXClosure )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13490:1: ( ruleXClosure )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13491:1: ruleXClosure
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13520:1: ( ruleXClosure )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13521:1: ruleXClosure
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXMemberFeatureCallAccess().getMemberCallArgumentsXClosureParserRuleCall_1_1_4_0()); 
             }
-            pushFollow(FOLLOW_ruleXClosure_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_427089);
+            pushFollow(FOLLOW_ruleXClosure_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_427149);
             ruleXClosure();
 
             state._fsp--;
@@ -38644,22 +38739,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XClosure__DeclaredFormalParametersAssignment_2_0_0_0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13500:1: rule__XClosure__DeclaredFormalParametersAssignment_2_0_0_0 : ( ruleJvmFormalParameter ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13530:1: rule__XClosure__DeclaredFormalParametersAssignment_2_0_0_0 : ( ruleJvmFormalParameter ) ;
     public final void rule__XClosure__DeclaredFormalParametersAssignment_2_0_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13504:1: ( ( ruleJvmFormalParameter ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13505:1: ( ruleJvmFormalParameter )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13534:1: ( ( ruleJvmFormalParameter ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13535:1: ( ruleJvmFormalParameter )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13505:1: ( ruleJvmFormalParameter )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13506:1: ruleJvmFormalParameter
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13535:1: ( ruleJvmFormalParameter )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13536:1: ruleJvmFormalParameter
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXClosureAccess().getDeclaredFormalParametersJvmFormalParameterParserRuleCall_2_0_0_0_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XClosure__DeclaredFormalParametersAssignment_2_0_0_027120);
+            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XClosure__DeclaredFormalParametersAssignment_2_0_0_027180);
             ruleJvmFormalParameter();
 
             state._fsp--;
@@ -38689,22 +38784,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XClosure__DeclaredFormalParametersAssignment_2_0_0_1_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13515:1: rule__XClosure__DeclaredFormalParametersAssignment_2_0_0_1_1 : ( ruleJvmFormalParameter ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13545:1: rule__XClosure__DeclaredFormalParametersAssignment_2_0_0_1_1 : ( ruleJvmFormalParameter ) ;
     public final void rule__XClosure__DeclaredFormalParametersAssignment_2_0_0_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13519:1: ( ( ruleJvmFormalParameter ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13520:1: ( ruleJvmFormalParameter )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13549:1: ( ( ruleJvmFormalParameter ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13550:1: ( ruleJvmFormalParameter )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13520:1: ( ruleJvmFormalParameter )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13521:1: ruleJvmFormalParameter
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13550:1: ( ruleJvmFormalParameter )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13551:1: ruleJvmFormalParameter
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXClosureAccess().getDeclaredFormalParametersJvmFormalParameterParserRuleCall_2_0_0_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XClosure__DeclaredFormalParametersAssignment_2_0_0_1_127151);
+            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XClosure__DeclaredFormalParametersAssignment_2_0_0_1_127211);
             ruleJvmFormalParameter();
 
             state._fsp--;
@@ -38734,28 +38829,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XClosure__ExplicitSyntaxAssignment_2_0_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13530:1: rule__XClosure__ExplicitSyntaxAssignment_2_0_1 : ( ( '|' ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13560:1: rule__XClosure__ExplicitSyntaxAssignment_2_0_1 : ( ( '|' ) ) ;
     public final void rule__XClosure__ExplicitSyntaxAssignment_2_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13534:1: ( ( ( '|' ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13535:1: ( ( '|' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13564:1: ( ( ( '|' ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13565:1: ( ( '|' ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13535:1: ( ( '|' ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13536:1: ( '|' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXClosureAccess().getExplicitSyntaxVerticalLineKeyword_2_0_1_0()); 
-            }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13537:1: ( '|' )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13538:1: '|'
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13565:1: ( ( '|' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13566:1: ( '|' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXClosureAccess().getExplicitSyntaxVerticalLineKeyword_2_0_1_0()); 
             }
-            match(input,72,FOLLOW_72_in_rule__XClosure__ExplicitSyntaxAssignment_2_0_127187); if (state.failed) return ;
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13567:1: ( '|' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13568:1: '|'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXClosureAccess().getExplicitSyntaxVerticalLineKeyword_2_0_1_0()); 
+            }
+            match(input,72,FOLLOW_72_in_rule__XClosure__ExplicitSyntaxAssignment_2_0_127247); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXClosureAccess().getExplicitSyntaxVerticalLineKeyword_2_0_1_0()); 
             }
@@ -38787,22 +38882,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XClosure__ExpressionAssignment_3"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13553:1: rule__XClosure__ExpressionAssignment_3 : ( ruleXExpressionInClosure ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13583:1: rule__XClosure__ExpressionAssignment_3 : ( ruleXExpressionInClosure ) ;
     public final void rule__XClosure__ExpressionAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13557:1: ( ( ruleXExpressionInClosure ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13558:1: ( ruleXExpressionInClosure )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13587:1: ( ( ruleXExpressionInClosure ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13588:1: ( ruleXExpressionInClosure )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13558:1: ( ruleXExpressionInClosure )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13559:1: ruleXExpressionInClosure
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13588:1: ( ruleXExpressionInClosure )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13589:1: ruleXExpressionInClosure
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXClosureAccess().getExpressionXExpressionInClosureParserRuleCall_3_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpressionInClosure_in_rule__XClosure__ExpressionAssignment_327226);
+            pushFollow(FOLLOW_ruleXExpressionInClosure_in_rule__XClosure__ExpressionAssignment_327286);
             ruleXExpressionInClosure();
 
             state._fsp--;
@@ -38832,22 +38927,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XExpressionInClosure__ExpressionsAssignment_1_0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13568:1: rule__XExpressionInClosure__ExpressionsAssignment_1_0 : ( ruleXExpressionInsideBlock ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13598:1: rule__XExpressionInClosure__ExpressionsAssignment_1_0 : ( ruleXExpressionInsideBlock ) ;
     public final void rule__XExpressionInClosure__ExpressionsAssignment_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13572:1: ( ( ruleXExpressionInsideBlock ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13573:1: ( ruleXExpressionInsideBlock )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13602:1: ( ( ruleXExpressionInsideBlock ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13603:1: ( ruleXExpressionInsideBlock )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13573:1: ( ruleXExpressionInsideBlock )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13574:1: ruleXExpressionInsideBlock
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13603:1: ( ruleXExpressionInsideBlock )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13604:1: ruleXExpressionInsideBlock
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXExpressionInClosureAccess().getExpressionsXExpressionInsideBlockParserRuleCall_1_0_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpressionInsideBlock_in_rule__XExpressionInClosure__ExpressionsAssignment_1_027257);
+            pushFollow(FOLLOW_ruleXExpressionInsideBlock_in_rule__XExpressionInClosure__ExpressionsAssignment_1_027317);
             ruleXExpressionInsideBlock();
 
             state._fsp--;
@@ -38877,22 +38972,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13583:1: rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_0 : ( ruleJvmFormalParameter ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13613:1: rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_0 : ( ruleJvmFormalParameter ) ;
     public final void rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13587:1: ( ( ruleJvmFormalParameter ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13588:1: ( ruleJvmFormalParameter )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13617:1: ( ( ruleJvmFormalParameter ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13618:1: ( ruleJvmFormalParameter )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13588:1: ( ruleJvmFormalParameter )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13589:1: ruleJvmFormalParameter
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13618:1: ( ruleJvmFormalParameter )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13619:1: ruleJvmFormalParameter
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXShortClosureAccess().getDeclaredFormalParametersJvmFormalParameterParserRuleCall_0_0_1_0_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_027288);
+            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_027348);
             ruleJvmFormalParameter();
 
             state._fsp--;
@@ -38922,22 +39017,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_1_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13598:1: rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_1_1 : ( ruleJvmFormalParameter ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13628:1: rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_1_1 : ( ruleJvmFormalParameter ) ;
     public final void rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13602:1: ( ( ruleJvmFormalParameter ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13603:1: ( ruleJvmFormalParameter )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13632:1: ( ( ruleJvmFormalParameter ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13633:1: ( ruleJvmFormalParameter )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13603:1: ( ruleJvmFormalParameter )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13604:1: ruleJvmFormalParameter
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13633:1: ( ruleJvmFormalParameter )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13634:1: ruleJvmFormalParameter
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXShortClosureAccess().getDeclaredFormalParametersJvmFormalParameterParserRuleCall_0_0_1_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_1_127319);
+            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_1_127379);
             ruleJvmFormalParameter();
 
             state._fsp--;
@@ -38967,28 +39062,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XShortClosure__ExplicitSyntaxAssignment_0_0_2"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13613:1: rule__XShortClosure__ExplicitSyntaxAssignment_0_0_2 : ( ( '|' ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13643:1: rule__XShortClosure__ExplicitSyntaxAssignment_0_0_2 : ( ( '|' ) ) ;
     public final void rule__XShortClosure__ExplicitSyntaxAssignment_0_0_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13617:1: ( ( ( '|' ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13618:1: ( ( '|' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13647:1: ( ( ( '|' ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13648:1: ( ( '|' ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13618:1: ( ( '|' ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13619:1: ( '|' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXShortClosureAccess().getExplicitSyntaxVerticalLineKeyword_0_0_2_0()); 
-            }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13620:1: ( '|' )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13621:1: '|'
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13648:1: ( ( '|' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13649:1: ( '|' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXShortClosureAccess().getExplicitSyntaxVerticalLineKeyword_0_0_2_0()); 
             }
-            match(input,72,FOLLOW_72_in_rule__XShortClosure__ExplicitSyntaxAssignment_0_0_227355); if (state.failed) return ;
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13650:1: ( '|' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13651:1: '|'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXShortClosureAccess().getExplicitSyntaxVerticalLineKeyword_0_0_2_0()); 
+            }
+            match(input,72,FOLLOW_72_in_rule__XShortClosure__ExplicitSyntaxAssignment_0_0_227415); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXShortClosureAccess().getExplicitSyntaxVerticalLineKeyword_0_0_2_0()); 
             }
@@ -39020,22 +39115,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XShortClosure__ExpressionAssignment_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13636:1: rule__XShortClosure__ExpressionAssignment_1 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13666:1: rule__XShortClosure__ExpressionAssignment_1 : ( ruleXExpression ) ;
     public final void rule__XShortClosure__ExpressionAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13640:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13641:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13670:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13671:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13641:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13642:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13671:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13672:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXShortClosureAccess().getExpressionXExpressionParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XShortClosure__ExpressionAssignment_127394);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XShortClosure__ExpressionAssignment_127454);
             ruleXExpression();
 
             state._fsp--;
@@ -39065,22 +39160,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XIfExpression__IfAssignment_3"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13651:1: rule__XIfExpression__IfAssignment_3 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13681:1: rule__XIfExpression__IfAssignment_3 : ( ruleXExpression ) ;
     public final void rule__XIfExpression__IfAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13655:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13656:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13685:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13686:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13656:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13657:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13686:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13687:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXIfExpressionAccess().getIfXExpressionParserRuleCall_3_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XIfExpression__IfAssignment_327425);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XIfExpression__IfAssignment_327485);
             ruleXExpression();
 
             state._fsp--;
@@ -39110,22 +39205,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XIfExpression__ThenAssignment_5"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13666:1: rule__XIfExpression__ThenAssignment_5 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13696:1: rule__XIfExpression__ThenAssignment_5 : ( ruleXExpression ) ;
     public final void rule__XIfExpression__ThenAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13670:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13671:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13700:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13701:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13671:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13672:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13701:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13702:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXIfExpressionAccess().getThenXExpressionParserRuleCall_5_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XIfExpression__ThenAssignment_527456);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XIfExpression__ThenAssignment_527516);
             ruleXExpression();
 
             state._fsp--;
@@ -39155,22 +39250,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XIfExpression__ElseAssignment_6_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13681:1: rule__XIfExpression__ElseAssignment_6_1 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13711:1: rule__XIfExpression__ElseAssignment_6_1 : ( ruleXExpression ) ;
     public final void rule__XIfExpression__ElseAssignment_6_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13685:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13686:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13715:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13716:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13686:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13687:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13716:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13717:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXIfExpressionAccess().getElseXExpressionParserRuleCall_6_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XIfExpression__ElseAssignment_6_127487);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XIfExpression__ElseAssignment_6_127547);
             ruleXExpression();
 
             state._fsp--;
@@ -39200,22 +39295,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XSwitchExpression__LocalVarNameAssignment_2_0_0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13696:1: rule__XSwitchExpression__LocalVarNameAssignment_2_0_0 : ( ruleValidID ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13726:1: rule__XSwitchExpression__LocalVarNameAssignment_2_0_0 : ( ruleValidID ) ;
     public final void rule__XSwitchExpression__LocalVarNameAssignment_2_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13700:1: ( ( ruleValidID ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13701:1: ( ruleValidID )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13730:1: ( ( ruleValidID ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13731:1: ( ruleValidID )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13701:1: ( ruleValidID )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13702:1: ruleValidID
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13731:1: ( ruleValidID )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13732:1: ruleValidID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSwitchExpressionAccess().getLocalVarNameValidIDParserRuleCall_2_0_0_0()); 
             }
-            pushFollow(FOLLOW_ruleValidID_in_rule__XSwitchExpression__LocalVarNameAssignment_2_0_027518);
+            pushFollow(FOLLOW_ruleValidID_in_rule__XSwitchExpression__LocalVarNameAssignment_2_0_027578);
             ruleValidID();
 
             state._fsp--;
@@ -39245,22 +39340,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XSwitchExpression__SwitchAssignment_3"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13711:1: rule__XSwitchExpression__SwitchAssignment_3 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13741:1: rule__XSwitchExpression__SwitchAssignment_3 : ( ruleXExpression ) ;
     public final void rule__XSwitchExpression__SwitchAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13715:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13716:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13745:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13746:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13716:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13717:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13746:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13747:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSwitchExpressionAccess().getSwitchXExpressionParserRuleCall_3_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XSwitchExpression__SwitchAssignment_327549);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XSwitchExpression__SwitchAssignment_327609);
             ruleXExpression();
 
             state._fsp--;
@@ -39290,22 +39385,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XSwitchExpression__CasesAssignment_5"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13726:1: rule__XSwitchExpression__CasesAssignment_5 : ( ruleXCasePart ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13756:1: rule__XSwitchExpression__CasesAssignment_5 : ( ruleXCasePart ) ;
     public final void rule__XSwitchExpression__CasesAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13730:1: ( ( ruleXCasePart ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13731:1: ( ruleXCasePart )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13760:1: ( ( ruleXCasePart ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13761:1: ( ruleXCasePart )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13731:1: ( ruleXCasePart )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13732:1: ruleXCasePart
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13761:1: ( ruleXCasePart )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13762:1: ruleXCasePart
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSwitchExpressionAccess().getCasesXCasePartParserRuleCall_5_0()); 
             }
-            pushFollow(FOLLOW_ruleXCasePart_in_rule__XSwitchExpression__CasesAssignment_527580);
+            pushFollow(FOLLOW_ruleXCasePart_in_rule__XSwitchExpression__CasesAssignment_527640);
             ruleXCasePart();
 
             state._fsp--;
@@ -39335,22 +39430,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XSwitchExpression__DefaultAssignment_6_2"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13741:1: rule__XSwitchExpression__DefaultAssignment_6_2 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13771:1: rule__XSwitchExpression__DefaultAssignment_6_2 : ( ruleXExpression ) ;
     public final void rule__XSwitchExpression__DefaultAssignment_6_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13745:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13746:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13775:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13776:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13746:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13747:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13776:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13777:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXSwitchExpressionAccess().getDefaultXExpressionParserRuleCall_6_2_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XSwitchExpression__DefaultAssignment_6_227611);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XSwitchExpression__DefaultAssignment_6_227671);
             ruleXExpression();
 
             state._fsp--;
@@ -39380,22 +39475,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XCasePart__TypeGuardAssignment_0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13756:1: rule__XCasePart__TypeGuardAssignment_0 : ( ruleJvmTypeReference ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13786:1: rule__XCasePart__TypeGuardAssignment_0 : ( ruleJvmTypeReference ) ;
     public final void rule__XCasePart__TypeGuardAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13760:1: ( ( ruleJvmTypeReference ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13761:1: ( ruleJvmTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13790:1: ( ( ruleJvmTypeReference ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13791:1: ( ruleJvmTypeReference )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13761:1: ( ruleJvmTypeReference )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13762:1: ruleJvmTypeReference
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13791:1: ( ruleJvmTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13792:1: ruleJvmTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXCasePartAccess().getTypeGuardJvmTypeReferenceParserRuleCall_0_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XCasePart__TypeGuardAssignment_027642);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XCasePart__TypeGuardAssignment_027702);
             ruleJvmTypeReference();
 
             state._fsp--;
@@ -39425,22 +39520,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XCasePart__CaseAssignment_1_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13771:1: rule__XCasePart__CaseAssignment_1_1 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13801:1: rule__XCasePart__CaseAssignment_1_1 : ( ruleXExpression ) ;
     public final void rule__XCasePart__CaseAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13775:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13776:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13805:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13806:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13776:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13777:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13806:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13807:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXCasePartAccess().getCaseXExpressionParserRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XCasePart__CaseAssignment_1_127673);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XCasePart__CaseAssignment_1_127733);
             ruleXExpression();
 
             state._fsp--;
@@ -39470,22 +39565,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XCasePart__ThenAssignment_3"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13786:1: rule__XCasePart__ThenAssignment_3 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13816:1: rule__XCasePart__ThenAssignment_3 : ( ruleXExpression ) ;
     public final void rule__XCasePart__ThenAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13790:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13791:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13820:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13821:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13791:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13792:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13821:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13822:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXCasePartAccess().getThenXExpressionParserRuleCall_3_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XCasePart__ThenAssignment_327704);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XCasePart__ThenAssignment_327764);
             ruleXExpression();
 
             state._fsp--;
@@ -39515,22 +39610,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XForLoopExpression__DeclaredParamAssignment_3"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13801:1: rule__XForLoopExpression__DeclaredParamAssignment_3 : ( ruleJvmFormalParameter ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13831:1: rule__XForLoopExpression__DeclaredParamAssignment_3 : ( ruleJvmFormalParameter ) ;
     public final void rule__XForLoopExpression__DeclaredParamAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13805:1: ( ( ruleJvmFormalParameter ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13806:1: ( ruleJvmFormalParameter )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13835:1: ( ( ruleJvmFormalParameter ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13836:1: ( ruleJvmFormalParameter )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13806:1: ( ruleJvmFormalParameter )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13807:1: ruleJvmFormalParameter
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13836:1: ( ruleJvmFormalParameter )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13837:1: ruleJvmFormalParameter
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXForLoopExpressionAccess().getDeclaredParamJvmFormalParameterParserRuleCall_3_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XForLoopExpression__DeclaredParamAssignment_327735);
+            pushFollow(FOLLOW_ruleJvmFormalParameter_in_rule__XForLoopExpression__DeclaredParamAssignment_327795);
             ruleJvmFormalParameter();
 
             state._fsp--;
@@ -39560,22 +39655,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XForLoopExpression__ForExpressionAssignment_5"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13816:1: rule__XForLoopExpression__ForExpressionAssignment_5 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13846:1: rule__XForLoopExpression__ForExpressionAssignment_5 : ( ruleXExpression ) ;
     public final void rule__XForLoopExpression__ForExpressionAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13820:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13821:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13850:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13851:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13821:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13822:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13851:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13852:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXForLoopExpressionAccess().getForExpressionXExpressionParserRuleCall_5_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XForLoopExpression__ForExpressionAssignment_527766);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XForLoopExpression__ForExpressionAssignment_527826);
             ruleXExpression();
 
             state._fsp--;
@@ -39605,22 +39700,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XForLoopExpression__EachExpressionAssignment_7"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13831:1: rule__XForLoopExpression__EachExpressionAssignment_7 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13861:1: rule__XForLoopExpression__EachExpressionAssignment_7 : ( ruleXExpression ) ;
     public final void rule__XForLoopExpression__EachExpressionAssignment_7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13835:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13836:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13865:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13866:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13836:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13837:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13866:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13867:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXForLoopExpressionAccess().getEachExpressionXExpressionParserRuleCall_7_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XForLoopExpression__EachExpressionAssignment_727797);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XForLoopExpression__EachExpressionAssignment_727857);
             ruleXExpression();
 
             state._fsp--;
@@ -39650,22 +39745,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XWhileExpression__PredicateAssignment_3"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13846:1: rule__XWhileExpression__PredicateAssignment_3 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13876:1: rule__XWhileExpression__PredicateAssignment_3 : ( ruleXExpression ) ;
     public final void rule__XWhileExpression__PredicateAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13850:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13851:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13880:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13881:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13851:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13852:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13881:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13882:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXWhileExpressionAccess().getPredicateXExpressionParserRuleCall_3_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XWhileExpression__PredicateAssignment_327828);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XWhileExpression__PredicateAssignment_327888);
             ruleXExpression();
 
             state._fsp--;
@@ -39695,22 +39790,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XWhileExpression__BodyAssignment_5"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13861:1: rule__XWhileExpression__BodyAssignment_5 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13891:1: rule__XWhileExpression__BodyAssignment_5 : ( ruleXExpression ) ;
     public final void rule__XWhileExpression__BodyAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13865:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13866:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13895:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13896:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13866:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13867:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13896:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13897:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXWhileExpressionAccess().getBodyXExpressionParserRuleCall_5_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XWhileExpression__BodyAssignment_527859);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XWhileExpression__BodyAssignment_527919);
             ruleXExpression();
 
             state._fsp--;
@@ -39740,22 +39835,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XDoWhileExpression__BodyAssignment_2"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13876:1: rule__XDoWhileExpression__BodyAssignment_2 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13906:1: rule__XDoWhileExpression__BodyAssignment_2 : ( ruleXExpression ) ;
     public final void rule__XDoWhileExpression__BodyAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13880:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13881:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13910:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13911:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13881:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13882:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13911:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13912:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXDoWhileExpressionAccess().getBodyXExpressionParserRuleCall_2_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XDoWhileExpression__BodyAssignment_227890);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XDoWhileExpression__BodyAssignment_227950);
             ruleXExpression();
 
             state._fsp--;
@@ -39785,22 +39880,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XDoWhileExpression__PredicateAssignment_5"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13891:1: rule__XDoWhileExpression__PredicateAssignment_5 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13921:1: rule__XDoWhileExpression__PredicateAssignment_5 : ( ruleXExpression ) ;
     public final void rule__XDoWhileExpression__PredicateAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13895:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13896:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13925:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13926:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13896:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13897:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13926:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13927:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXDoWhileExpressionAccess().getPredicateXExpressionParserRuleCall_5_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XDoWhileExpression__PredicateAssignment_527921);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XDoWhileExpression__PredicateAssignment_527981);
             ruleXExpression();
 
             state._fsp--;
@@ -39830,22 +39925,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XBlockExpression__ExpressionsAssignment_2_0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13906:1: rule__XBlockExpression__ExpressionsAssignment_2_0 : ( ruleXExpressionInsideBlock ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13936:1: rule__XBlockExpression__ExpressionsAssignment_2_0 : ( ruleXExpressionInsideBlock ) ;
     public final void rule__XBlockExpression__ExpressionsAssignment_2_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13910:1: ( ( ruleXExpressionInsideBlock ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13911:1: ( ruleXExpressionInsideBlock )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13940:1: ( ( ruleXExpressionInsideBlock ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13941:1: ( ruleXExpressionInsideBlock )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13911:1: ( ruleXExpressionInsideBlock )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13912:1: ruleXExpressionInsideBlock
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13941:1: ( ruleXExpressionInsideBlock )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13942:1: ruleXExpressionInsideBlock
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXBlockExpressionAccess().getExpressionsXExpressionInsideBlockParserRuleCall_2_0_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpressionInsideBlock_in_rule__XBlockExpression__ExpressionsAssignment_2_027952);
+            pushFollow(FOLLOW_ruleXExpressionInsideBlock_in_rule__XBlockExpression__ExpressionsAssignment_2_028012);
             ruleXExpressionInsideBlock();
 
             state._fsp--;
@@ -39875,28 +39970,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XVariableDeclaration__WriteableAssignment_1_0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13921:1: rule__XVariableDeclaration__WriteableAssignment_1_0 : ( ( 'var' ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13951:1: rule__XVariableDeclaration__WriteableAssignment_1_0 : ( ( 'var' ) ) ;
     public final void rule__XVariableDeclaration__WriteableAssignment_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13925:1: ( ( ( 'var' ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13926:1: ( ( 'var' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13955:1: ( ( ( 'var' ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13956:1: ( ( 'var' ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13926:1: ( ( 'var' ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13927:1: ( 'var' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXVariableDeclarationAccess().getWriteableVarKeyword_1_0_0()); 
-            }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13928:1: ( 'var' )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13929:1: 'var'
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13956:1: ( ( 'var' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13957:1: ( 'var' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXVariableDeclarationAccess().getWriteableVarKeyword_1_0_0()); 
             }
-            match(input,73,FOLLOW_73_in_rule__XVariableDeclaration__WriteableAssignment_1_027988); if (state.failed) return ;
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13958:1: ( 'var' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13959:1: 'var'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXVariableDeclarationAccess().getWriteableVarKeyword_1_0_0()); 
+            }
+            match(input,73,FOLLOW_73_in_rule__XVariableDeclaration__WriteableAssignment_1_028048); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXVariableDeclarationAccess().getWriteableVarKeyword_1_0_0()); 
             }
@@ -39928,22 +40023,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XVariableDeclaration__TypeAssignment_2_0_0_0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13944:1: rule__XVariableDeclaration__TypeAssignment_2_0_0_0 : ( ruleJvmTypeReference ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13974:1: rule__XVariableDeclaration__TypeAssignment_2_0_0_0 : ( ruleJvmTypeReference ) ;
     public final void rule__XVariableDeclaration__TypeAssignment_2_0_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13948:1: ( ( ruleJvmTypeReference ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13949:1: ( ruleJvmTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13978:1: ( ( ruleJvmTypeReference ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13979:1: ( ruleJvmTypeReference )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13949:1: ( ruleJvmTypeReference )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13950:1: ruleJvmTypeReference
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13979:1: ( ruleJvmTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13980:1: ruleJvmTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXVariableDeclarationAccess().getTypeJvmTypeReferenceParserRuleCall_2_0_0_0_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XVariableDeclaration__TypeAssignment_2_0_0_028027);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XVariableDeclaration__TypeAssignment_2_0_0_028087);
             ruleJvmTypeReference();
 
             state._fsp--;
@@ -39973,22 +40068,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XVariableDeclaration__NameAssignment_2_0_0_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13959:1: rule__XVariableDeclaration__NameAssignment_2_0_0_1 : ( ruleValidID ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13989:1: rule__XVariableDeclaration__NameAssignment_2_0_0_1 : ( ruleValidID ) ;
     public final void rule__XVariableDeclaration__NameAssignment_2_0_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13963:1: ( ( ruleValidID ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13964:1: ( ruleValidID )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13993:1: ( ( ruleValidID ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13994:1: ( ruleValidID )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13964:1: ( ruleValidID )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13965:1: ruleValidID
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13994:1: ( ruleValidID )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13995:1: ruleValidID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXVariableDeclarationAccess().getNameValidIDParserRuleCall_2_0_0_1_0()); 
             }
-            pushFollow(FOLLOW_ruleValidID_in_rule__XVariableDeclaration__NameAssignment_2_0_0_128058);
+            pushFollow(FOLLOW_ruleValidID_in_rule__XVariableDeclaration__NameAssignment_2_0_0_128118);
             ruleValidID();
 
             state._fsp--;
@@ -40018,22 +40113,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XVariableDeclaration__NameAssignment_2_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13974:1: rule__XVariableDeclaration__NameAssignment_2_1 : ( ruleValidID ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14004:1: rule__XVariableDeclaration__NameAssignment_2_1 : ( ruleValidID ) ;
     public final void rule__XVariableDeclaration__NameAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13978:1: ( ( ruleValidID ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13979:1: ( ruleValidID )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14008:1: ( ( ruleValidID ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14009:1: ( ruleValidID )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13979:1: ( ruleValidID )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13980:1: ruleValidID
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14009:1: ( ruleValidID )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14010:1: ruleValidID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXVariableDeclarationAccess().getNameValidIDParserRuleCall_2_1_0()); 
             }
-            pushFollow(FOLLOW_ruleValidID_in_rule__XVariableDeclaration__NameAssignment_2_128089);
+            pushFollow(FOLLOW_ruleValidID_in_rule__XVariableDeclaration__NameAssignment_2_128149);
             ruleValidID();
 
             state._fsp--;
@@ -40063,22 +40158,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XVariableDeclaration__RightAssignment_3_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13989:1: rule__XVariableDeclaration__RightAssignment_3_1 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14019:1: rule__XVariableDeclaration__RightAssignment_3_1 : ( ruleXExpression ) ;
     public final void rule__XVariableDeclaration__RightAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13993:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13994:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14023:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14024:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13994:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:13995:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14024:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14025:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXVariableDeclarationAccess().getRightXExpressionParserRuleCall_3_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XVariableDeclaration__RightAssignment_3_128120);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XVariableDeclaration__RightAssignment_3_128180);
             ruleXExpression();
 
             state._fsp--;
@@ -40108,22 +40203,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmFormalParameter__ParameterTypeAssignment_0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14004:1: rule__JvmFormalParameter__ParameterTypeAssignment_0 : ( ruleJvmTypeReference ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14034:1: rule__JvmFormalParameter__ParameterTypeAssignment_0 : ( ruleJvmTypeReference ) ;
     public final void rule__JvmFormalParameter__ParameterTypeAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14008:1: ( ( ruleJvmTypeReference ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14009:1: ( ruleJvmTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14038:1: ( ( ruleJvmTypeReference ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14039:1: ( ruleJvmTypeReference )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14009:1: ( ruleJvmTypeReference )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14010:1: ruleJvmTypeReference
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14039:1: ( ruleJvmTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14040:1: ruleJvmTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmFormalParameterAccess().getParameterTypeJvmTypeReferenceParserRuleCall_0_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__JvmFormalParameter__ParameterTypeAssignment_028151);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__JvmFormalParameter__ParameterTypeAssignment_028211);
             ruleJvmTypeReference();
 
             state._fsp--;
@@ -40153,22 +40248,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmFormalParameter__NameAssignment_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14019:1: rule__JvmFormalParameter__NameAssignment_1 : ( ruleValidID ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14049:1: rule__JvmFormalParameter__NameAssignment_1 : ( ruleValidID ) ;
     public final void rule__JvmFormalParameter__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14023:1: ( ( ruleValidID ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14024:1: ( ruleValidID )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14053:1: ( ( ruleValidID ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14054:1: ( ruleValidID )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14024:1: ( ruleValidID )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14025:1: ruleValidID
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14054:1: ( ruleValidID )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14055:1: ruleValidID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmFormalParameterAccess().getNameValidIDParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleValidID_in_rule__JvmFormalParameter__NameAssignment_128182);
+            pushFollow(FOLLOW_ruleValidID_in_rule__JvmFormalParameter__NameAssignment_128242);
             ruleValidID();
 
             state._fsp--;
@@ -40198,22 +40293,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__FullJvmFormalParameter__ParameterTypeAssignment_0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14034:1: rule__FullJvmFormalParameter__ParameterTypeAssignment_0 : ( ruleJvmTypeReference ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14064:1: rule__FullJvmFormalParameter__ParameterTypeAssignment_0 : ( ruleJvmTypeReference ) ;
     public final void rule__FullJvmFormalParameter__ParameterTypeAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14038:1: ( ( ruleJvmTypeReference ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14039:1: ( ruleJvmTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14068:1: ( ( ruleJvmTypeReference ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14069:1: ( ruleJvmTypeReference )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14039:1: ( ruleJvmTypeReference )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14040:1: ruleJvmTypeReference
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14069:1: ( ruleJvmTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14070:1: ruleJvmTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getFullJvmFormalParameterAccess().getParameterTypeJvmTypeReferenceParserRuleCall_0_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__FullJvmFormalParameter__ParameterTypeAssignment_028213);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__FullJvmFormalParameter__ParameterTypeAssignment_028273);
             ruleJvmTypeReference();
 
             state._fsp--;
@@ -40243,22 +40338,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__FullJvmFormalParameter__NameAssignment_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14049:1: rule__FullJvmFormalParameter__NameAssignment_1 : ( ruleValidID ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14079:1: rule__FullJvmFormalParameter__NameAssignment_1 : ( ruleValidID ) ;
     public final void rule__FullJvmFormalParameter__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14053:1: ( ( ruleValidID ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14054:1: ( ruleValidID )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14083:1: ( ( ruleValidID ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14084:1: ( ruleValidID )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14054:1: ( ruleValidID )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14055:1: ruleValidID
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14084:1: ( ruleValidID )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14085:1: ruleValidID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getFullJvmFormalParameterAccess().getNameValidIDParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleValidID_in_rule__FullJvmFormalParameter__NameAssignment_128244);
+            pushFollow(FOLLOW_ruleValidID_in_rule__FullJvmFormalParameter__NameAssignment_128304);
             ruleValidID();
 
             state._fsp--;
@@ -40288,28 +40383,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XFeatureCall__DeclaringTypeAssignment_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14064:1: rule__XFeatureCall__DeclaringTypeAssignment_1 : ( ( ruleStaticQualifier ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14094:1: rule__XFeatureCall__DeclaringTypeAssignment_1 : ( ( ruleStaticQualifier ) ) ;
     public final void rule__XFeatureCall__DeclaringTypeAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14068:1: ( ( ( ruleStaticQualifier ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14069:1: ( ( ruleStaticQualifier ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14098:1: ( ( ( ruleStaticQualifier ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14099:1: ( ( ruleStaticQualifier ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14069:1: ( ( ruleStaticQualifier ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14070:1: ( ruleStaticQualifier )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14099:1: ( ( ruleStaticQualifier ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14100:1: ( ruleStaticQualifier )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getDeclaringTypeJvmDeclaredTypeCrossReference_1_0()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14071:1: ( ruleStaticQualifier )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14072:1: ruleStaticQualifier
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14101:1: ( ruleStaticQualifier )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14102:1: ruleStaticQualifier
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getDeclaringTypeJvmDeclaredTypeStaticQualifierParserRuleCall_1_0_1()); 
             }
-            pushFollow(FOLLOW_ruleStaticQualifier_in_rule__XFeatureCall__DeclaringTypeAssignment_128279);
+            pushFollow(FOLLOW_ruleStaticQualifier_in_rule__XFeatureCall__DeclaringTypeAssignment_128339);
             ruleStaticQualifier();
 
             state._fsp--;
@@ -40345,22 +40440,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XFeatureCall__TypeArgumentsAssignment_2_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14083:1: rule__XFeatureCall__TypeArgumentsAssignment_2_1 : ( ruleJvmArgumentTypeReference ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14113:1: rule__XFeatureCall__TypeArgumentsAssignment_2_1 : ( ruleJvmArgumentTypeReference ) ;
     public final void rule__XFeatureCall__TypeArgumentsAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14087:1: ( ( ruleJvmArgumentTypeReference ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14088:1: ( ruleJvmArgumentTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14117:1: ( ( ruleJvmArgumentTypeReference ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14118:1: ( ruleJvmArgumentTypeReference )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14088:1: ( ruleJvmArgumentTypeReference )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14089:1: ruleJvmArgumentTypeReference
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14118:1: ( ruleJvmArgumentTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14119:1: ruleJvmArgumentTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getTypeArgumentsJvmArgumentTypeReferenceParserRuleCall_2_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XFeatureCall__TypeArgumentsAssignment_2_128314);
+            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XFeatureCall__TypeArgumentsAssignment_2_128374);
             ruleJvmArgumentTypeReference();
 
             state._fsp--;
@@ -40390,22 +40485,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XFeatureCall__TypeArgumentsAssignment_2_2_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14098:1: rule__XFeatureCall__TypeArgumentsAssignment_2_2_1 : ( ruleJvmArgumentTypeReference ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14128:1: rule__XFeatureCall__TypeArgumentsAssignment_2_2_1 : ( ruleJvmArgumentTypeReference ) ;
     public final void rule__XFeatureCall__TypeArgumentsAssignment_2_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14102:1: ( ( ruleJvmArgumentTypeReference ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14103:1: ( ruleJvmArgumentTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14132:1: ( ( ruleJvmArgumentTypeReference ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14133:1: ( ruleJvmArgumentTypeReference )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14103:1: ( ruleJvmArgumentTypeReference )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14104:1: ruleJvmArgumentTypeReference
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14133:1: ( ruleJvmArgumentTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14134:1: ruleJvmArgumentTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getTypeArgumentsJvmArgumentTypeReferenceParserRuleCall_2_2_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XFeatureCall__TypeArgumentsAssignment_2_2_128345);
+            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XFeatureCall__TypeArgumentsAssignment_2_2_128405);
             ruleJvmArgumentTypeReference();
 
             state._fsp--;
@@ -40435,28 +40530,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XFeatureCall__FeatureAssignment_3"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14113:1: rule__XFeatureCall__FeatureAssignment_3 : ( ( ruleIdOrSuper ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14143:1: rule__XFeatureCall__FeatureAssignment_3 : ( ( ruleIdOrSuper ) ) ;
     public final void rule__XFeatureCall__FeatureAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14117:1: ( ( ( ruleIdOrSuper ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14118:1: ( ( ruleIdOrSuper ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14147:1: ( ( ( ruleIdOrSuper ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14148:1: ( ( ruleIdOrSuper ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14118:1: ( ( ruleIdOrSuper ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14119:1: ( ruleIdOrSuper )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14148:1: ( ( ruleIdOrSuper ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14149:1: ( ruleIdOrSuper )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getFeatureJvmIdentifiableElementCrossReference_3_0()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14120:1: ( ruleIdOrSuper )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14121:1: ruleIdOrSuper
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14150:1: ( ruleIdOrSuper )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14151:1: ruleIdOrSuper
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getFeatureJvmIdentifiableElementIdOrSuperParserRuleCall_3_0_1()); 
             }
-            pushFollow(FOLLOW_ruleIdOrSuper_in_rule__XFeatureCall__FeatureAssignment_328380);
+            pushFollow(FOLLOW_ruleIdOrSuper_in_rule__XFeatureCall__FeatureAssignment_328440);
             ruleIdOrSuper();
 
             state._fsp--;
@@ -40492,28 +40587,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XFeatureCall__ExplicitOperationCallAssignment_4_0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14132:1: rule__XFeatureCall__ExplicitOperationCallAssignment_4_0 : ( ( '(' ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14162:1: rule__XFeatureCall__ExplicitOperationCallAssignment_4_0 : ( ( '(' ) ) ;
     public final void rule__XFeatureCall__ExplicitOperationCallAssignment_4_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14136:1: ( ( ( '(' ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14137:1: ( ( '(' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14166:1: ( ( ( '(' ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14167:1: ( ( '(' ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14137:1: ( ( '(' ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14138:1: ( '(' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXFeatureCallAccess().getExplicitOperationCallLeftParenthesisKeyword_4_0_0()); 
-            }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14139:1: ( '(' )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14140:1: '('
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14167:1: ( ( '(' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14168:1: ( '(' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getExplicitOperationCallLeftParenthesisKeyword_4_0_0()); 
             }
-            match(input,45,FOLLOW_45_in_rule__XFeatureCall__ExplicitOperationCallAssignment_4_028420); if (state.failed) return ;
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14169:1: ( '(' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14170:1: '('
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXFeatureCallAccess().getExplicitOperationCallLeftParenthesisKeyword_4_0_0()); 
+            }
+            match(input,45,FOLLOW_45_in_rule__XFeatureCall__ExplicitOperationCallAssignment_4_028480); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXFeatureCallAccess().getExplicitOperationCallLeftParenthesisKeyword_4_0_0()); 
             }
@@ -40545,22 +40640,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14155:1: rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_0 : ( ruleXShortClosure ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14185:1: rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_0 : ( ruleXShortClosure ) ;
     public final void rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14159:1: ( ( ruleXShortClosure ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14160:1: ( ruleXShortClosure )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14189:1: ( ( ruleXShortClosure ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14190:1: ( ruleXShortClosure )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14160:1: ( ruleXShortClosure )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14161:1: ruleXShortClosure
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14190:1: ( ruleXShortClosure )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14191:1: ruleXShortClosure
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getFeatureCallArgumentsXShortClosureParserRuleCall_4_1_0_0()); 
             }
-            pushFollow(FOLLOW_ruleXShortClosure_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_028459);
+            pushFollow(FOLLOW_ruleXShortClosure_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_028519);
             ruleXShortClosure();
 
             state._fsp--;
@@ -40590,22 +40685,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_1_0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14170:1: rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_1_0 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14200:1: rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_1_0 : ( ruleXExpression ) ;
     public final void rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14174:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14175:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14204:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14205:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14175:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14176:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14205:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14206:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getFeatureCallArgumentsXExpressionParserRuleCall_4_1_1_0_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_1_028490);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_1_028550);
             ruleXExpression();
 
             state._fsp--;
@@ -40635,22 +40730,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_1_1_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14185:1: rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_1_1_1 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14215:1: rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_1_1_1 : ( ruleXExpression ) ;
     public final void rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14189:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14190:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14219:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14220:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14190:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14191:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14220:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14221:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getFeatureCallArgumentsXExpressionParserRuleCall_4_1_1_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_1_1_128521);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_1_1_128581);
             ruleXExpression();
 
             state._fsp--;
@@ -40680,22 +40775,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XFeatureCall__FeatureCallArgumentsAssignment_5"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14200:1: rule__XFeatureCall__FeatureCallArgumentsAssignment_5 : ( ruleXClosure ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14230:1: rule__XFeatureCall__FeatureCallArgumentsAssignment_5 : ( ruleXClosure ) ;
     public final void rule__XFeatureCall__FeatureCallArgumentsAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14204:1: ( ( ruleXClosure ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14205:1: ( ruleXClosure )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14234:1: ( ( ruleXClosure ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14235:1: ( ruleXClosure )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14205:1: ( ruleXClosure )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14206:1: ruleXClosure
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14235:1: ( ruleXClosure )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14236:1: ruleXClosure
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXFeatureCallAccess().getFeatureCallArgumentsXClosureParserRuleCall_5_0()); 
             }
-            pushFollow(FOLLOW_ruleXClosure_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_528552);
+            pushFollow(FOLLOW_ruleXClosure_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_528612);
             ruleXClosure();
 
             state._fsp--;
@@ -40725,28 +40820,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XConstructorCall__ConstructorAssignment_2"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14215:1: rule__XConstructorCall__ConstructorAssignment_2 : ( ( ruleQualifiedName ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14245:1: rule__XConstructorCall__ConstructorAssignment_2 : ( ( ruleQualifiedName ) ) ;
     public final void rule__XConstructorCall__ConstructorAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14219:1: ( ( ( ruleQualifiedName ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14220:1: ( ( ruleQualifiedName ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14249:1: ( ( ( ruleQualifiedName ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14250:1: ( ( ruleQualifiedName ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14220:1: ( ( ruleQualifiedName ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14221:1: ( ruleQualifiedName )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14250:1: ( ( ruleQualifiedName ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14251:1: ( ruleQualifiedName )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXConstructorCallAccess().getConstructorJvmConstructorCrossReference_2_0()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14222:1: ( ruleQualifiedName )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14223:1: ruleQualifiedName
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14252:1: ( ruleQualifiedName )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14253:1: ruleQualifiedName
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXConstructorCallAccess().getConstructorJvmConstructorQualifiedNameParserRuleCall_2_0_1()); 
             }
-            pushFollow(FOLLOW_ruleQualifiedName_in_rule__XConstructorCall__ConstructorAssignment_228587);
+            pushFollow(FOLLOW_ruleQualifiedName_in_rule__XConstructorCall__ConstructorAssignment_228647);
             ruleQualifiedName();
 
             state._fsp--;
@@ -40782,22 +40877,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XConstructorCall__TypeArgumentsAssignment_3_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14234:1: rule__XConstructorCall__TypeArgumentsAssignment_3_1 : ( ruleJvmArgumentTypeReference ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14264:1: rule__XConstructorCall__TypeArgumentsAssignment_3_1 : ( ruleJvmArgumentTypeReference ) ;
     public final void rule__XConstructorCall__TypeArgumentsAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14238:1: ( ( ruleJvmArgumentTypeReference ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14239:1: ( ruleJvmArgumentTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14268:1: ( ( ruleJvmArgumentTypeReference ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14269:1: ( ruleJvmArgumentTypeReference )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14239:1: ( ruleJvmArgumentTypeReference )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14240:1: ruleJvmArgumentTypeReference
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14269:1: ( ruleJvmArgumentTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14270:1: ruleJvmArgumentTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXConstructorCallAccess().getTypeArgumentsJvmArgumentTypeReferenceParserRuleCall_3_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XConstructorCall__TypeArgumentsAssignment_3_128622);
+            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XConstructorCall__TypeArgumentsAssignment_3_128682);
             ruleJvmArgumentTypeReference();
 
             state._fsp--;
@@ -40827,22 +40922,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XConstructorCall__TypeArgumentsAssignment_3_2_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14249:1: rule__XConstructorCall__TypeArgumentsAssignment_3_2_1 : ( ruleJvmArgumentTypeReference ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14279:1: rule__XConstructorCall__TypeArgumentsAssignment_3_2_1 : ( ruleJvmArgumentTypeReference ) ;
     public final void rule__XConstructorCall__TypeArgumentsAssignment_3_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14253:1: ( ( ruleJvmArgumentTypeReference ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14254:1: ( ruleJvmArgumentTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14283:1: ( ( ruleJvmArgumentTypeReference ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14284:1: ( ruleJvmArgumentTypeReference )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14254:1: ( ruleJvmArgumentTypeReference )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14255:1: ruleJvmArgumentTypeReference
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14284:1: ( ruleJvmArgumentTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14285:1: ruleJvmArgumentTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXConstructorCallAccess().getTypeArgumentsJvmArgumentTypeReferenceParserRuleCall_3_2_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XConstructorCall__TypeArgumentsAssignment_3_2_128653);
+            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__XConstructorCall__TypeArgumentsAssignment_3_2_128713);
             ruleJvmArgumentTypeReference();
 
             state._fsp--;
@@ -40872,22 +40967,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XConstructorCall__ArgumentsAssignment_5_0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14264:1: rule__XConstructorCall__ArgumentsAssignment_5_0 : ( ruleXShortClosure ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14294:1: rule__XConstructorCall__ArgumentsAssignment_5_0 : ( ruleXShortClosure ) ;
     public final void rule__XConstructorCall__ArgumentsAssignment_5_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14268:1: ( ( ruleXShortClosure ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14269:1: ( ruleXShortClosure )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14298:1: ( ( ruleXShortClosure ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14299:1: ( ruleXShortClosure )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14269:1: ( ruleXShortClosure )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14270:1: ruleXShortClosure
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14299:1: ( ruleXShortClosure )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14300:1: ruleXShortClosure
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXConstructorCallAccess().getArgumentsXShortClosureParserRuleCall_5_0_0()); 
             }
-            pushFollow(FOLLOW_ruleXShortClosure_in_rule__XConstructorCall__ArgumentsAssignment_5_028684);
+            pushFollow(FOLLOW_ruleXShortClosure_in_rule__XConstructorCall__ArgumentsAssignment_5_028744);
             ruleXShortClosure();
 
             state._fsp--;
@@ -40917,22 +41012,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XConstructorCall__ArgumentsAssignment_5_1_0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14279:1: rule__XConstructorCall__ArgumentsAssignment_5_1_0 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14309:1: rule__XConstructorCall__ArgumentsAssignment_5_1_0 : ( ruleXExpression ) ;
     public final void rule__XConstructorCall__ArgumentsAssignment_5_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14283:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14284:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14313:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14314:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14284:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14285:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14314:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14315:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXConstructorCallAccess().getArgumentsXExpressionParserRuleCall_5_1_0_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XConstructorCall__ArgumentsAssignment_5_1_028715);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XConstructorCall__ArgumentsAssignment_5_1_028775);
             ruleXExpression();
 
             state._fsp--;
@@ -40962,22 +41057,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XConstructorCall__ArgumentsAssignment_5_1_1_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14294:1: rule__XConstructorCall__ArgumentsAssignment_5_1_1_1 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14324:1: rule__XConstructorCall__ArgumentsAssignment_5_1_1_1 : ( ruleXExpression ) ;
     public final void rule__XConstructorCall__ArgumentsAssignment_5_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14298:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14299:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14328:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14329:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14299:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14300:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14329:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14330:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXConstructorCallAccess().getArgumentsXExpressionParserRuleCall_5_1_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XConstructorCall__ArgumentsAssignment_5_1_1_128746);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XConstructorCall__ArgumentsAssignment_5_1_1_128806);
             ruleXExpression();
 
             state._fsp--;
@@ -41007,22 +41102,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XConstructorCall__ArgumentsAssignment_7"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14309:1: rule__XConstructorCall__ArgumentsAssignment_7 : ( ruleXClosure ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14339:1: rule__XConstructorCall__ArgumentsAssignment_7 : ( ruleXClosure ) ;
     public final void rule__XConstructorCall__ArgumentsAssignment_7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14313:1: ( ( ruleXClosure ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14314:1: ( ruleXClosure )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14343:1: ( ( ruleXClosure ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14344:1: ( ruleXClosure )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14314:1: ( ruleXClosure )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14315:1: ruleXClosure
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14344:1: ( ruleXClosure )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14345:1: ruleXClosure
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXConstructorCallAccess().getArgumentsXClosureParserRuleCall_7_0()); 
             }
-            pushFollow(FOLLOW_ruleXClosure_in_rule__XConstructorCall__ArgumentsAssignment_728777);
+            pushFollow(FOLLOW_ruleXClosure_in_rule__XConstructorCall__ArgumentsAssignment_728837);
             ruleXClosure();
 
             state._fsp--;
@@ -41052,28 +41147,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XBooleanLiteral__IsTrueAssignment_1_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14324:1: rule__XBooleanLiteral__IsTrueAssignment_1_1 : ( ( 'true' ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14354:1: rule__XBooleanLiteral__IsTrueAssignment_1_1 : ( ( 'true' ) ) ;
     public final void rule__XBooleanLiteral__IsTrueAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14328:1: ( ( ( 'true' ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14329:1: ( ( 'true' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14358:1: ( ( ( 'true' ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14359:1: ( ( 'true' ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14329:1: ( ( 'true' ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14330:1: ( 'true' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXBooleanLiteralAccess().getIsTrueTrueKeyword_1_1_0()); 
-            }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14331:1: ( 'true' )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14332:1: 'true'
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14359:1: ( ( 'true' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14360:1: ( 'true' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXBooleanLiteralAccess().getIsTrueTrueKeyword_1_1_0()); 
             }
-            match(input,74,FOLLOW_74_in_rule__XBooleanLiteral__IsTrueAssignment_1_128813); if (state.failed) return ;
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14361:1: ( 'true' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14362:1: 'true'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXBooleanLiteralAccess().getIsTrueTrueKeyword_1_1_0()); 
+            }
+            match(input,74,FOLLOW_74_in_rule__XBooleanLiteral__IsTrueAssignment_1_128873); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXBooleanLiteralAccess().getIsTrueTrueKeyword_1_1_0()); 
             }
@@ -41105,22 +41200,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XIntLiteral__ValueAssignment_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14347:1: rule__XIntLiteral__ValueAssignment_1 : ( RULE_INT ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14377:1: rule__XIntLiteral__ValueAssignment_1 : ( RULE_INT ) ;
     public final void rule__XIntLiteral__ValueAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14351:1: ( ( RULE_INT ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14352:1: ( RULE_INT )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14381:1: ( ( RULE_INT ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14382:1: ( RULE_INT )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14352:1: ( RULE_INT )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14353:1: RULE_INT
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14382:1: ( RULE_INT )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14383:1: RULE_INT
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXIntLiteralAccess().getValueINTTerminalRuleCall_1_0()); 
             }
-            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__XIntLiteral__ValueAssignment_128852); if (state.failed) return ;
+            match(input,RULE_INT,FOLLOW_RULE_INT_in_rule__XIntLiteral__ValueAssignment_128912); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXIntLiteralAccess().getValueINTTerminalRuleCall_1_0()); 
             }
@@ -41146,22 +41241,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XStringLiteral__ValueAssignment_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14362:1: rule__XStringLiteral__ValueAssignment_1 : ( RULE_STRING ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14392:1: rule__XStringLiteral__ValueAssignment_1 : ( RULE_STRING ) ;
     public final void rule__XStringLiteral__ValueAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14366:1: ( ( RULE_STRING ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14367:1: ( RULE_STRING )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14396:1: ( ( RULE_STRING ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14397:1: ( RULE_STRING )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14367:1: ( RULE_STRING )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14368:1: RULE_STRING
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14397:1: ( RULE_STRING )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14398:1: RULE_STRING
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXStringLiteralAccess().getValueSTRINGTerminalRuleCall_1_0()); 
             }
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__XStringLiteral__ValueAssignment_128883); if (state.failed) return ;
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__XStringLiteral__ValueAssignment_128943); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getXStringLiteralAccess().getValueSTRINGTerminalRuleCall_1_0()); 
             }
@@ -41187,28 +41282,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XTypeLiteral__TypeAssignment_3"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14377:1: rule__XTypeLiteral__TypeAssignment_3 : ( ( ruleQualifiedName ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14407:1: rule__XTypeLiteral__TypeAssignment_3 : ( ( ruleQualifiedName ) ) ;
     public final void rule__XTypeLiteral__TypeAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14381:1: ( ( ( ruleQualifiedName ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14382:1: ( ( ruleQualifiedName ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14411:1: ( ( ( ruleQualifiedName ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14412:1: ( ( ruleQualifiedName ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14382:1: ( ( ruleQualifiedName ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14383:1: ( ruleQualifiedName )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14412:1: ( ( ruleQualifiedName ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14413:1: ( ruleQualifiedName )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXTypeLiteralAccess().getTypeJvmTypeCrossReference_3_0()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14384:1: ( ruleQualifiedName )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14385:1: ruleQualifiedName
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14414:1: ( ruleQualifiedName )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14415:1: ruleQualifiedName
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXTypeLiteralAccess().getTypeJvmTypeQualifiedNameParserRuleCall_3_0_1()); 
             }
-            pushFollow(FOLLOW_ruleQualifiedName_in_rule__XTypeLiteral__TypeAssignment_328918);
+            pushFollow(FOLLOW_ruleQualifiedName_in_rule__XTypeLiteral__TypeAssignment_328978);
             ruleQualifiedName();
 
             state._fsp--;
@@ -41244,22 +41339,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XThrowExpression__ExpressionAssignment_2"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14396:1: rule__XThrowExpression__ExpressionAssignment_2 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14426:1: rule__XThrowExpression__ExpressionAssignment_2 : ( ruleXExpression ) ;
     public final void rule__XThrowExpression__ExpressionAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14400:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14401:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14430:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14431:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14401:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14402:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14431:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14432:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXThrowExpressionAccess().getExpressionXExpressionParserRuleCall_2_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XThrowExpression__ExpressionAssignment_228953);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XThrowExpression__ExpressionAssignment_229013);
             ruleXExpression();
 
             state._fsp--;
@@ -41289,22 +41384,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XReturnExpression__ExpressionAssignment_2"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14411:1: rule__XReturnExpression__ExpressionAssignment_2 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14441:1: rule__XReturnExpression__ExpressionAssignment_2 : ( ruleXExpression ) ;
     public final void rule__XReturnExpression__ExpressionAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14415:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14416:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14445:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14446:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14416:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14417:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14446:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14447:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXReturnExpressionAccess().getExpressionXExpressionParserRuleCall_2_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XReturnExpression__ExpressionAssignment_228984);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XReturnExpression__ExpressionAssignment_229044);
             ruleXExpression();
 
             state._fsp--;
@@ -41334,22 +41429,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XTryCatchFinallyExpression__ExpressionAssignment_2"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14426:1: rule__XTryCatchFinallyExpression__ExpressionAssignment_2 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14456:1: rule__XTryCatchFinallyExpression__ExpressionAssignment_2 : ( ruleXExpression ) ;
     public final void rule__XTryCatchFinallyExpression__ExpressionAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14430:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14431:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14460:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14461:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14431:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14432:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14461:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14462:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXTryCatchFinallyExpressionAccess().getExpressionXExpressionParserRuleCall_2_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__ExpressionAssignment_229015);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__ExpressionAssignment_229075);
             ruleXExpression();
 
             state._fsp--;
@@ -41379,22 +41474,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XTryCatchFinallyExpression__CatchClausesAssignment_3_0_0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14441:1: rule__XTryCatchFinallyExpression__CatchClausesAssignment_3_0_0 : ( ruleXCatchClause ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14471:1: rule__XTryCatchFinallyExpression__CatchClausesAssignment_3_0_0 : ( ruleXCatchClause ) ;
     public final void rule__XTryCatchFinallyExpression__CatchClausesAssignment_3_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14445:1: ( ( ruleXCatchClause ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14446:1: ( ruleXCatchClause )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14475:1: ( ( ruleXCatchClause ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14476:1: ( ruleXCatchClause )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14446:1: ( ruleXCatchClause )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14447:1: ruleXCatchClause
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14476:1: ( ruleXCatchClause )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14477:1: ruleXCatchClause
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXTryCatchFinallyExpressionAccess().getCatchClausesXCatchClauseParserRuleCall_3_0_0_0()); 
             }
-            pushFollow(FOLLOW_ruleXCatchClause_in_rule__XTryCatchFinallyExpression__CatchClausesAssignment_3_0_029046);
+            pushFollow(FOLLOW_ruleXCatchClause_in_rule__XTryCatchFinallyExpression__CatchClausesAssignment_3_0_029106);
             ruleXCatchClause();
 
             state._fsp--;
@@ -41424,22 +41519,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_0_1_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14456:1: rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_0_1_1 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14486:1: rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_0_1_1 : ( ruleXExpression ) ;
     public final void rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_0_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14460:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14461:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14490:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14491:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14461:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14462:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14491:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14492:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXTryCatchFinallyExpressionAccess().getFinallyExpressionXExpressionParserRuleCall_3_0_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_0_1_129077);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_0_1_129137);
             ruleXExpression();
 
             state._fsp--;
@@ -41469,22 +41564,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_1_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14471:1: rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_1_1 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14501:1: rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_1_1 : ( ruleXExpression ) ;
     public final void rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14475:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14476:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14505:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14506:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14476:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14477:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14506:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14507:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXTryCatchFinallyExpressionAccess().getFinallyExpressionXExpressionParserRuleCall_3_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_1_129108);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_1_129168);
             ruleXExpression();
 
             state._fsp--;
@@ -41514,22 +41609,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XCatchClause__DeclaredParamAssignment_2"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14486:1: rule__XCatchClause__DeclaredParamAssignment_2 : ( ruleFullJvmFormalParameter ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14516:1: rule__XCatchClause__DeclaredParamAssignment_2 : ( ruleFullJvmFormalParameter ) ;
     public final void rule__XCatchClause__DeclaredParamAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14490:1: ( ( ruleFullJvmFormalParameter ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14491:1: ( ruleFullJvmFormalParameter )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14520:1: ( ( ruleFullJvmFormalParameter ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14521:1: ( ruleFullJvmFormalParameter )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14491:1: ( ruleFullJvmFormalParameter )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14492:1: ruleFullJvmFormalParameter
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14521:1: ( ruleFullJvmFormalParameter )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14522:1: ruleFullJvmFormalParameter
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXCatchClauseAccess().getDeclaredParamFullJvmFormalParameterParserRuleCall_2_0()); 
             }
-            pushFollow(FOLLOW_ruleFullJvmFormalParameter_in_rule__XCatchClause__DeclaredParamAssignment_229139);
+            pushFollow(FOLLOW_ruleFullJvmFormalParameter_in_rule__XCatchClause__DeclaredParamAssignment_229199);
             ruleFullJvmFormalParameter();
 
             state._fsp--;
@@ -41559,22 +41654,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__XCatchClause__ExpressionAssignment_4"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14501:1: rule__XCatchClause__ExpressionAssignment_4 : ( ruleXExpression ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14531:1: rule__XCatchClause__ExpressionAssignment_4 : ( ruleXExpression ) ;
     public final void rule__XCatchClause__ExpressionAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14505:1: ( ( ruleXExpression ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14506:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14535:1: ( ( ruleXExpression ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14536:1: ( ruleXExpression )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14506:1: ( ruleXExpression )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14507:1: ruleXExpression
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14536:1: ( ruleXExpression )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14537:1: ruleXExpression
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getXCatchClauseAccess().getExpressionXExpressionParserRuleCall_4_0()); 
             }
-            pushFollow(FOLLOW_ruleXExpression_in_rule__XCatchClause__ExpressionAssignment_429170);
+            pushFollow(FOLLOW_ruleXExpression_in_rule__XCatchClause__ExpressionAssignment_429230);
             ruleXExpression();
 
             state._fsp--;
@@ -41603,99 +41698,9 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
     // $ANTLR end "rule__XCatchClause__ExpressionAssignment_4"
 
 
-    // $ANTLR start "rule__XFunctionTypeRef__ParamTypesAssignment_0_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14516:1: rule__XFunctionTypeRef__ParamTypesAssignment_0_1 : ( ruleJvmTypeReference ) ;
-    public final void rule__XFunctionTypeRef__ParamTypesAssignment_0_1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14520:1: ( ( ruleJvmTypeReference ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14521:1: ( ruleJvmTypeReference )
-            {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14521:1: ( ruleJvmTypeReference )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14522:1: ruleJvmTypeReference
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXFunctionTypeRefAccess().getParamTypesJvmTypeReferenceParserRuleCall_0_1_0()); 
-            }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ParamTypesAssignment_0_129201);
-            ruleJvmTypeReference();
-
-            state._fsp--;
-            if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXFunctionTypeRefAccess().getParamTypesJvmTypeReferenceParserRuleCall_0_1_0()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XFunctionTypeRef__ParamTypesAssignment_0_1"
-
-
-    // $ANTLR start "rule__XFunctionTypeRef__ParamTypesAssignment_0_2_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14531:1: rule__XFunctionTypeRef__ParamTypesAssignment_0_2_1 : ( ruleJvmTypeReference ) ;
-    public final void rule__XFunctionTypeRef__ParamTypesAssignment_0_2_1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-            
-        try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14535:1: ( ( ruleJvmTypeReference ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14536:1: ( ruleJvmTypeReference )
-            {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14536:1: ( ruleJvmTypeReference )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14537:1: ruleJvmTypeReference
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getXFunctionTypeRefAccess().getParamTypesJvmTypeReferenceParserRuleCall_0_2_1_0()); 
-            }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ParamTypesAssignment_0_2_129232);
-            ruleJvmTypeReference();
-
-            state._fsp--;
-            if (state.failed) return ;
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getXFunctionTypeRefAccess().getParamTypesJvmTypeReferenceParserRuleCall_0_2_1_0()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__XFunctionTypeRef__ParamTypesAssignment_0_2_1"
-
-
-    // $ANTLR start "rule__XFunctionTypeRef__ReturnTypeAssignment_2"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14546:1: rule__XFunctionTypeRef__ReturnTypeAssignment_2 : ( ruleJvmTypeReference ) ;
-    public final void rule__XFunctionTypeRef__ReturnTypeAssignment_2() throws RecognitionException {
+    // $ANTLR start "rule__XFunctionTypeRef__ParamTypesAssignment_0_1_0"
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14546:1: rule__XFunctionTypeRef__ParamTypesAssignment_0_1_0 : ( ruleJvmTypeReference ) ;
+    public final void rule__XFunctionTypeRef__ParamTypesAssignment_0_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -41707,9 +41712,99 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
             // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14552:1: ruleJvmTypeReference
             {
             if ( state.backtracking==0 ) {
+               before(grammarAccess.getXFunctionTypeRefAccess().getParamTypesJvmTypeReferenceParserRuleCall_0_1_0_0()); 
+            }
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ParamTypesAssignment_0_1_029261);
+            ruleJvmTypeReference();
+
+            state._fsp--;
+            if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXFunctionTypeRefAccess().getParamTypesJvmTypeReferenceParserRuleCall_0_1_0_0()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XFunctionTypeRef__ParamTypesAssignment_0_1_0"
+
+
+    // $ANTLR start "rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_1"
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14561:1: rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_1 : ( ruleJvmTypeReference ) ;
+    public final void rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14565:1: ( ( ruleJvmTypeReference ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14566:1: ( ruleJvmTypeReference )
+            {
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14566:1: ( ruleJvmTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14567:1: ruleJvmTypeReference
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getXFunctionTypeRefAccess().getParamTypesJvmTypeReferenceParserRuleCall_0_1_1_1_0()); 
+            }
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_129292);
+            ruleJvmTypeReference();
+
+            state._fsp--;
+            if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getXFunctionTypeRefAccess().getParamTypesJvmTypeReferenceParserRuleCall_0_1_1_1_0()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_1"
+
+
+    // $ANTLR start "rule__XFunctionTypeRef__ReturnTypeAssignment_2"
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14576:1: rule__XFunctionTypeRef__ReturnTypeAssignment_2 : ( ruleJvmTypeReference ) ;
+    public final void rule__XFunctionTypeRef__ReturnTypeAssignment_2() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14580:1: ( ( ruleJvmTypeReference ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14581:1: ( ruleJvmTypeReference )
+            {
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14581:1: ( ruleJvmTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14582:1: ruleJvmTypeReference
+            {
+            if ( state.backtracking==0 ) {
                before(grammarAccess.getXFunctionTypeRefAccess().getReturnTypeJvmTypeReferenceParserRuleCall_2_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ReturnTypeAssignment_229263);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ReturnTypeAssignment_229323);
             ruleJvmTypeReference();
 
             state._fsp--;
@@ -41739,28 +41834,28 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__TypeAssignment_0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14561:1: rule__JvmParameterizedTypeReference__TypeAssignment_0 : ( ( ruleQualifiedName ) ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14591:1: rule__JvmParameterizedTypeReference__TypeAssignment_0 : ( ( ruleQualifiedName ) ) ;
     public final void rule__JvmParameterizedTypeReference__TypeAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14565:1: ( ( ( ruleQualifiedName ) ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14566:1: ( ( ruleQualifiedName ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14595:1: ( ( ( ruleQualifiedName ) ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14596:1: ( ( ruleQualifiedName ) )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14566:1: ( ( ruleQualifiedName ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14567:1: ( ruleQualifiedName )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14596:1: ( ( ruleQualifiedName ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14597:1: ( ruleQualifiedName )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmParameterizedTypeReferenceAccess().getTypeJvmTypeCrossReference_0_0()); 
             }
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14568:1: ( ruleQualifiedName )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14569:1: ruleQualifiedName
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14598:1: ( ruleQualifiedName )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14599:1: ruleQualifiedName
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmParameterizedTypeReferenceAccess().getTypeJvmTypeQualifiedNameParserRuleCall_0_0_1()); 
             }
-            pushFollow(FOLLOW_ruleQualifiedName_in_rule__JvmParameterizedTypeReference__TypeAssignment_029298);
+            pushFollow(FOLLOW_ruleQualifiedName_in_rule__JvmParameterizedTypeReference__TypeAssignment_029358);
             ruleQualifiedName();
 
             state._fsp--;
@@ -41796,22 +41891,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14580:1: rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1 : ( ruleJvmArgumentTypeReference ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14610:1: rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1 : ( ruleJvmArgumentTypeReference ) ;
     public final void rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14584:1: ( ( ruleJvmArgumentTypeReference ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14585:1: ( ruleJvmArgumentTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14614:1: ( ( ruleJvmArgumentTypeReference ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14615:1: ( ruleJvmArgumentTypeReference )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14585:1: ( ruleJvmArgumentTypeReference )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14586:1: ruleJvmArgumentTypeReference
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14615:1: ( ruleJvmArgumentTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14616:1: ruleJvmArgumentTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmParameterizedTypeReferenceAccess().getArgumentsJvmArgumentTypeReferenceParserRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_129333);
+            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_129393);
             ruleJvmArgumentTypeReference();
 
             state._fsp--;
@@ -41841,22 +41936,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14595:1: rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1 : ( ruleJvmArgumentTypeReference ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14625:1: rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1 : ( ruleJvmArgumentTypeReference ) ;
     public final void rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14599:1: ( ( ruleJvmArgumentTypeReference ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14600:1: ( ruleJvmArgumentTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14629:1: ( ( ruleJvmArgumentTypeReference ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14630:1: ( ruleJvmArgumentTypeReference )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14600:1: ( ruleJvmArgumentTypeReference )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14601:1: ruleJvmArgumentTypeReference
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14630:1: ( ruleJvmArgumentTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14631:1: ruleJvmArgumentTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmParameterizedTypeReferenceAccess().getArgumentsJvmArgumentTypeReferenceParserRuleCall_1_2_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_129364);
+            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_129424);
             ruleJvmArgumentTypeReference();
 
             state._fsp--;
@@ -41886,22 +41981,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmWildcardTypeReference__ConstraintsAssignment_2_0"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14610:1: rule__JvmWildcardTypeReference__ConstraintsAssignment_2_0 : ( ruleJvmUpperBound ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14640:1: rule__JvmWildcardTypeReference__ConstraintsAssignment_2_0 : ( ruleJvmUpperBound ) ;
     public final void rule__JvmWildcardTypeReference__ConstraintsAssignment_2_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14614:1: ( ( ruleJvmUpperBound ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14615:1: ( ruleJvmUpperBound )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14644:1: ( ( ruleJvmUpperBound ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14645:1: ( ruleJvmUpperBound )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14615:1: ( ruleJvmUpperBound )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14616:1: ruleJvmUpperBound
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14645:1: ( ruleJvmUpperBound )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14646:1: ruleJvmUpperBound
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmWildcardTypeReferenceAccess().getConstraintsJvmUpperBoundParserRuleCall_2_0_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmUpperBound_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_029395);
+            pushFollow(FOLLOW_ruleJvmUpperBound_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_029455);
             ruleJvmUpperBound();
 
             state._fsp--;
@@ -41931,22 +42026,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmWildcardTypeReference__ConstraintsAssignment_2_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14625:1: rule__JvmWildcardTypeReference__ConstraintsAssignment_2_1 : ( ruleJvmLowerBound ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14655:1: rule__JvmWildcardTypeReference__ConstraintsAssignment_2_1 : ( ruleJvmLowerBound ) ;
     public final void rule__JvmWildcardTypeReference__ConstraintsAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14629:1: ( ( ruleJvmLowerBound ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14630:1: ( ruleJvmLowerBound )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14659:1: ( ( ruleJvmLowerBound ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14660:1: ( ruleJvmLowerBound )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14630:1: ( ruleJvmLowerBound )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14631:1: ruleJvmLowerBound
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14660:1: ( ruleJvmLowerBound )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14661:1: ruleJvmLowerBound
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmWildcardTypeReferenceAccess().getConstraintsJvmLowerBoundParserRuleCall_2_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmLowerBound_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_129426);
+            pushFollow(FOLLOW_ruleJvmLowerBound_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_129486);
             ruleJvmLowerBound();
 
             state._fsp--;
@@ -41976,22 +42071,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmUpperBound__TypeReferenceAssignment_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14640:1: rule__JvmUpperBound__TypeReferenceAssignment_1 : ( ruleJvmTypeReference ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14670:1: rule__JvmUpperBound__TypeReferenceAssignment_1 : ( ruleJvmTypeReference ) ;
     public final void rule__JvmUpperBound__TypeReferenceAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14644:1: ( ( ruleJvmTypeReference ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14645:1: ( ruleJvmTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14674:1: ( ( ruleJvmTypeReference ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14675:1: ( ruleJvmTypeReference )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14645:1: ( ruleJvmTypeReference )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14646:1: ruleJvmTypeReference
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14675:1: ( ruleJvmTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14676:1: ruleJvmTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmUpperBoundAccess().getTypeReferenceJvmTypeReferenceParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__JvmUpperBound__TypeReferenceAssignment_129457);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__JvmUpperBound__TypeReferenceAssignment_129517);
             ruleJvmTypeReference();
 
             state._fsp--;
@@ -42021,22 +42116,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmUpperBoundAnded__TypeReferenceAssignment_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14655:1: rule__JvmUpperBoundAnded__TypeReferenceAssignment_1 : ( ruleJvmTypeReference ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14685:1: rule__JvmUpperBoundAnded__TypeReferenceAssignment_1 : ( ruleJvmTypeReference ) ;
     public final void rule__JvmUpperBoundAnded__TypeReferenceAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14659:1: ( ( ruleJvmTypeReference ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14660:1: ( ruleJvmTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14689:1: ( ( ruleJvmTypeReference ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14690:1: ( ruleJvmTypeReference )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14660:1: ( ruleJvmTypeReference )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14661:1: ruleJvmTypeReference
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14690:1: ( ruleJvmTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14691:1: ruleJvmTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmUpperBoundAndedAccess().getTypeReferenceJvmTypeReferenceParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__JvmUpperBoundAnded__TypeReferenceAssignment_129488);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__JvmUpperBoundAnded__TypeReferenceAssignment_129548);
             ruleJvmTypeReference();
 
             state._fsp--;
@@ -42066,22 +42161,22 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__JvmLowerBound__TypeReferenceAssignment_1"
-    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14670:1: rule__JvmLowerBound__TypeReferenceAssignment_1 : ( ruleJvmTypeReference ) ;
+    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14700:1: rule__JvmLowerBound__TypeReferenceAssignment_1 : ( ruleJvmTypeReference ) ;
     public final void rule__JvmLowerBound__TypeReferenceAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14674:1: ( ( ruleJvmTypeReference ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14675:1: ( ruleJvmTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14704:1: ( ( ruleJvmTypeReference ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14705:1: ( ruleJvmTypeReference )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14675:1: ( ruleJvmTypeReference )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14676:1: ruleJvmTypeReference
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14705:1: ( ruleJvmTypeReference )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14706:1: ruleJvmTypeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getJvmLowerBoundAccess().getTypeReferenceJvmTypeReferenceParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__JvmLowerBound__TypeReferenceAssignment_129519);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_rule__JvmLowerBound__TypeReferenceAssignment_129579);
             ruleJvmTypeReference();
 
             state._fsp--;
@@ -42559,12 +42654,12 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
     }
     // $ANTLR end synpred101_InternalHelloXvars
 
-    // $ANTLR start synpred104_InternalHelloXvars
-    public final void synpred104_InternalHelloXvars_fragment() throws RecognitionException {   
-        // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12332:2: ( rule__JvmParameterizedTypeReference__Group_1__0 )
-        // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12332:2: rule__JvmParameterizedTypeReference__Group_1__0
+    // $ANTLR start synpred105_InternalHelloXvars
+    public final void synpred105_InternalHelloXvars_fragment() throws RecognitionException {   
+        // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12362:2: ( rule__JvmParameterizedTypeReference__Group_1__0 )
+        // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:12362:2: rule__JvmParameterizedTypeReference__Group_1__0
         {
-        pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1__0_in_synpred104_InternalHelloXvars24764);
+        pushFollow(FOLLOW_rule__JvmParameterizedTypeReference__Group_1__0_in_synpred105_InternalHelloXvars24824);
         rule__JvmParameterizedTypeReference__Group_1__0();
 
         state._fsp--;
@@ -42572,7 +42667,7 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
 
         }
     }
-    // $ANTLR end synpred104_InternalHelloXvars
+    // $ANTLR end synpred105_InternalHelloXvars
 
     // Delegated rules
 
@@ -42814,6 +42909,20 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
         state.failed=false;
         return success;
     }
+    public final boolean synpred105_InternalHelloXvars() {
+        state.backtracking++;
+        int start = input.mark();
+        try {
+            synpred105_InternalHelloXvars_fragment(); // can never throw exception
+        } catch (RecognitionException re) {
+            System.err.println("impossible: "+re);
+        }
+        boolean success = !state.failed;
+        input.rewind(start);
+        state.backtracking--;
+        state.failed=false;
+        return success;
+    }
     public final boolean synpred57_InternalHelloXvars() {
         state.backtracking++;
         int start = input.mark();
@@ -42926,20 +43035,6 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
         state.failed=false;
         return success;
     }
-    public final boolean synpred104_InternalHelloXvars() {
-        state.backtracking++;
-        int start = input.mark();
-        try {
-            synpred104_InternalHelloXvars_fragment(); // can never throw exception
-        } catch (RecognitionException re) {
-            System.err.println("impossible: "+re);
-        }
-        boolean success = !state.failed;
-        input.rewind(start);
-        state.backtracking--;
-        state.failed=false;
-        return success;
-    }
     public final boolean synpred42_InternalHelloXvars() {
         state.backtracking++;
         int start = input.mark();
@@ -42966,7 +43061,7 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
     protected DFA67 dfa67 = new DFA67(this);
     protected DFA73 dfa73 = new DFA73(this);
     protected DFA76 dfa76 = new DFA76(this);
-    protected DFA83 dfa83 = new DFA83(this);
+    protected DFA84 dfa84 = new DFA84(this);
     static final String DFA13_eotS =
         "\33\uffff";
     static final String DFA13_eofS =
@@ -44606,19 +44701,19 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
             throw nvae;
         }
     }
-    static final String DFA83_eotS =
+    static final String DFA84_eotS =
         "\75\uffff";
-    static final String DFA83_eofS =
+    static final String DFA84_eofS =
         "\1\2\74\uffff";
-    static final String DFA83_minS =
+    static final String DFA84_minS =
         "\1\4\1\0\73\uffff";
-    static final String DFA83_maxS =
+    static final String DFA84_maxS =
         "\1\112\1\0\73\uffff";
-    static final String DFA83_acceptS =
+    static final String DFA84_acceptS =
         "\2\uffff\1\2\71\uffff\1\1";
-    static final String DFA83_specialS =
+    static final String DFA84_specialS =
         "\1\uffff\1\0\73\uffff}>";
-    static final String[] DFA83_transitionS = {
+    static final String[] DFA84_transitionS = {
             "\3\2\5\uffff\10\2\1\1\15\2\2\uffff\1\2\1\uffff\23\2\1\uffff"+
             "\11\2\3\uffff\2\2\1\uffff\2\2",
             "\1\uffff",
@@ -44683,61 +44778,61 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
             ""
     };
 
-    static final short[] DFA83_eot = DFA.unpackEncodedString(DFA83_eotS);
-    static final short[] DFA83_eof = DFA.unpackEncodedString(DFA83_eofS);
-    static final char[] DFA83_min = DFA.unpackEncodedStringToUnsignedChars(DFA83_minS);
-    static final char[] DFA83_max = DFA.unpackEncodedStringToUnsignedChars(DFA83_maxS);
-    static final short[] DFA83_accept = DFA.unpackEncodedString(DFA83_acceptS);
-    static final short[] DFA83_special = DFA.unpackEncodedString(DFA83_specialS);
-    static final short[][] DFA83_transition;
+    static final short[] DFA84_eot = DFA.unpackEncodedString(DFA84_eotS);
+    static final short[] DFA84_eof = DFA.unpackEncodedString(DFA84_eofS);
+    static final char[] DFA84_min = DFA.unpackEncodedStringToUnsignedChars(DFA84_minS);
+    static final char[] DFA84_max = DFA.unpackEncodedStringToUnsignedChars(DFA84_maxS);
+    static final short[] DFA84_accept = DFA.unpackEncodedString(DFA84_acceptS);
+    static final short[] DFA84_special = DFA.unpackEncodedString(DFA84_specialS);
+    static final short[][] DFA84_transition;
 
     static {
-        int numStates = DFA83_transitionS.length;
-        DFA83_transition = new short[numStates][];
+        int numStates = DFA84_transitionS.length;
+        DFA84_transition = new short[numStates][];
         for (int i=0; i<numStates; i++) {
-            DFA83_transition[i] = DFA.unpackEncodedString(DFA83_transitionS[i]);
+            DFA84_transition[i] = DFA.unpackEncodedString(DFA84_transitionS[i]);
         }
     }
 
-    class DFA83 extends DFA {
+    class DFA84 extends DFA {
 
-        public DFA83(BaseRecognizer recognizer) {
+        public DFA84(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
-            this.decisionNumber = 83;
-            this.eot = DFA83_eot;
-            this.eof = DFA83_eof;
-            this.min = DFA83_min;
-            this.max = DFA83_max;
-            this.accept = DFA83_accept;
-            this.special = DFA83_special;
-            this.transition = DFA83_transition;
+            this.decisionNumber = 84;
+            this.eot = DFA84_eot;
+            this.eof = DFA84_eof;
+            this.min = DFA84_min;
+            this.max = DFA84_max;
+            this.accept = DFA84_accept;
+            this.special = DFA84_special;
+            this.transition = DFA84_transition;
         }
         public String getDescription() {
-            return "12332:1: ( rule__JvmParameterizedTypeReference__Group_1__0 )?";
+            return "12362:1: ( rule__JvmParameterizedTypeReference__Group_1__0 )?";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA83_1 = input.LA(1);
+                        int LA84_1 = input.LA(1);
 
                          
-                        int index83_1 = input.index();
+                        int index84_1 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred104_InternalHelloXvars()) ) {s = 60;}
+                        if ( (synpred105_InternalHelloXvars()) ) {s = 60;}
 
                         else if ( (true) ) {s = 2;}
 
                          
-                        input.seek(index83_1);
+                        input.seek(index84_1);
                         if ( s>=0 ) return s;
                         break;
             }
             if (state.backtracking>0) {state.failed=true; return -1;}
             NoViableAltException nvae =
-                new NoViableAltException(getDescription(), 83, _s, input);
+                new NoViableAltException(getDescription(), 84, _s, input);
             error(nvae);
             throw nvae;
         }
@@ -45765,180 +45860,182 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
     public static final BitSet FOLLOW_66_in_rule__XFunctionTypeRef__Group__1__Impl24210 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group__2__Impl_in_rule__XFunctionTypeRef__Group__224241 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__XFunctionTypeRef__ReturnTypeAssignment_2_in_rule__XFunctionTypeRef__Group__2__Impl24268 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group_0__0__Impl_in_rule__XFunctionTypeRef__Group_0__024304 = new BitSet(new long[]{0x0000200000000010L,0x0000000000000004L});
+    public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group_0__0__Impl_in_rule__XFunctionTypeRef__Group_0__024304 = new BitSet(new long[]{0x0000220000000010L,0x0000000000000004L});
     public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group_0__1_in_rule__XFunctionTypeRef__Group_0__024307 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_45_in_rule__XFunctionTypeRef__Group_0__0__Impl24335 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group_0__1__Impl_in_rule__XFunctionTypeRef__Group_0__124366 = new BitSet(new long[]{0x0000030000000000L});
+    public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group_0__1__Impl_in_rule__XFunctionTypeRef__Group_0__124366 = new BitSet(new long[]{0x0000220000000010L,0x0000000000000004L});
     public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group_0__2_in_rule__XFunctionTypeRef__Group_0__124369 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__XFunctionTypeRef__ParamTypesAssignment_0_1_in_rule__XFunctionTypeRef__Group_0__1__Impl24396 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group_0__2__Impl_in_rule__XFunctionTypeRef__Group_0__224426 = new BitSet(new long[]{0x0000030000000000L});
-    public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group_0__3_in_rule__XFunctionTypeRef__Group_0__224429 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group_0_2__0_in_rule__XFunctionTypeRef__Group_0__2__Impl24456 = new BitSet(new long[]{0x0000010000000002L});
-    public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group_0__3__Impl_in_rule__XFunctionTypeRef__Group_0__324487 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_41_in_rule__XFunctionTypeRef__Group_0__3__Impl24515 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group_0_2__0__Impl_in_rule__XFunctionTypeRef__Group_0_2__024554 = new BitSet(new long[]{0x0000200000000010L,0x0000000000000004L});
-    public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group_0_2__1_in_rule__XFunctionTypeRef__Group_0_2__024557 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_40_in_rule__XFunctionTypeRef__Group_0_2__0__Impl24585 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group_0_2__1__Impl_in_rule__XFunctionTypeRef__Group_0_2__124616 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__XFunctionTypeRef__ParamTypesAssignment_0_2_1_in_rule__XFunctionTypeRef__Group_0_2__1__Impl24643 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group__0__Impl_in_rule__JvmParameterizedTypeReference__Group__024677 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group__1_in_rule__JvmParameterizedTypeReference__Group__024680 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__TypeAssignment_0_in_rule__JvmParameterizedTypeReference__Group__0__Impl24707 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group__1__Impl_in_rule__JvmParameterizedTypeReference__Group__124737 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1__0_in_rule__JvmParameterizedTypeReference__Group__1__Impl24764 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1__0__Impl_in_rule__JvmParameterizedTypeReference__Group_1__024799 = new BitSet(new long[]{0x0000200000000010L,0x000000000000000CL});
-    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1__1_in_rule__JvmParameterizedTypeReference__Group_1__024802 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__JvmParameterizedTypeReference__Group_1__0__Impl24831 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1__1__Impl_in_rule__JvmParameterizedTypeReference__Group_1__124863 = new BitSet(new long[]{0x0000010000080000L});
-    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1__2_in_rule__JvmParameterizedTypeReference__Group_1__124866 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1_in_rule__JvmParameterizedTypeReference__Group_1__1__Impl24893 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1__2__Impl_in_rule__JvmParameterizedTypeReference__Group_1__224923 = new BitSet(new long[]{0x0000010000080000L});
-    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1__3_in_rule__JvmParameterizedTypeReference__Group_1__224926 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1_2__0_in_rule__JvmParameterizedTypeReference__Group_1__2__Impl24953 = new BitSet(new long[]{0x0000010000000002L});
-    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1__3__Impl_in_rule__JvmParameterizedTypeReference__Group_1__324984 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__JvmParameterizedTypeReference__Group_1__3__Impl25012 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1_2__0__Impl_in_rule__JvmParameterizedTypeReference__Group_1_2__025051 = new BitSet(new long[]{0x0000200000000010L,0x000000000000000CL});
-    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1_2__1_in_rule__JvmParameterizedTypeReference__Group_1_2__025054 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_40_in_rule__JvmParameterizedTypeReference__Group_1_2__0__Impl25082 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1_2__1__Impl_in_rule__JvmParameterizedTypeReference__Group_1_2__125113 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1_in_rule__JvmParameterizedTypeReference__Group_1_2__1__Impl25140 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmWildcardTypeReference__Group__0__Impl_in_rule__JvmWildcardTypeReference__Group__025174 = new BitSet(new long[]{0x0000200000000010L,0x000000000000000CL});
-    public static final BitSet FOLLOW_rule__JvmWildcardTypeReference__Group__1_in_rule__JvmWildcardTypeReference__Group__025177 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmWildcardTypeReference__Group__1__Impl_in_rule__JvmWildcardTypeReference__Group__125235 = new BitSet(new long[]{0x0000000100000000L,0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__JvmWildcardTypeReference__Group__2_in_rule__JvmWildcardTypeReference__Group__125238 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_67_in_rule__JvmWildcardTypeReference__Group__1__Impl25266 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmWildcardTypeReference__Group__2__Impl_in_rule__JvmWildcardTypeReference__Group__225297 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmWildcardTypeReference__Alternatives_2_in_rule__JvmWildcardTypeReference__Group__2__Impl25324 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmUpperBound__Group__0__Impl_in_rule__JvmUpperBound__Group__025361 = new BitSet(new long[]{0x0000200000000010L,0x0000000000000004L});
-    public static final BitSet FOLLOW_rule__JvmUpperBound__Group__1_in_rule__JvmUpperBound__Group__025364 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_68_in_rule__JvmUpperBound__Group__0__Impl25392 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmUpperBound__Group__1__Impl_in_rule__JvmUpperBound__Group__125423 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmUpperBound__TypeReferenceAssignment_1_in_rule__JvmUpperBound__Group__1__Impl25450 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmUpperBoundAnded__Group__0__Impl_in_rule__JvmUpperBoundAnded__Group__025484 = new BitSet(new long[]{0x0000200000000010L,0x0000000000000004L});
-    public static final BitSet FOLLOW_rule__JvmUpperBoundAnded__Group__1_in_rule__JvmUpperBoundAnded__Group__025487 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_69_in_rule__JvmUpperBoundAnded__Group__0__Impl25515 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmUpperBoundAnded__Group__1__Impl_in_rule__JvmUpperBoundAnded__Group__125546 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmUpperBoundAnded__TypeReferenceAssignment_1_in_rule__JvmUpperBoundAnded__Group__1__Impl25573 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmLowerBound__Group__0__Impl_in_rule__JvmLowerBound__Group__025607 = new BitSet(new long[]{0x0000200000000010L,0x0000000000000004L});
-    public static final BitSet FOLLOW_rule__JvmLowerBound__Group__1_in_rule__JvmLowerBound__Group__025610 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_32_in_rule__JvmLowerBound__Group__0__Impl25638 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmLowerBound__Group__1__Impl_in_rule__JvmLowerBound__Group__125669 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmLowerBound__TypeReferenceAssignment_1_in_rule__JvmLowerBound__Group__1__Impl25696 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleImport_in_rule__Model__ImportsAssignment_025737 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXVariableDeclaration_in_rule__Model__VarDeclarationsAssignment_125768 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleGreeting_in_rule__Model__GreetingsAssignment_225799 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedNameWithWildcard_in_rule__Import__ImportedNamespaceAssignment_125830 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Greeting__NameAssignment_125861 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__Greeting__ExpressionAssignment_325892 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleValidID_in_rule__XAssignment__FeatureAssignment_0_125927 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXAssignment_in_rule__XAssignment__ValueAssignment_0_325962 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOpMultiAssign_in_rule__XAssignment__FeatureAssignment_1_1_0_0_125997 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXAssignment_in_rule__XAssignment__RightOperandAssignment_1_1_126032 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOpOr_in_rule__XOrExpression__FeatureAssignment_1_0_0_126067 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXAndExpression_in_rule__XOrExpression__RightOperandAssignment_1_126102 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOpAnd_in_rule__XAndExpression__FeatureAssignment_1_0_0_126137 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXEqualityExpression_in_rule__XAndExpression__RightOperandAssignment_1_126172 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOpEquality_in_rule__XEqualityExpression__FeatureAssignment_1_0_0_126207 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXRelationalExpression_in_rule__XEqualityExpression__RightOperandAssignment_1_126242 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__XRelationalExpression__TypeAssignment_1_0_126277 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOpCompare_in_rule__XRelationalExpression__FeatureAssignment_1_1_0_0_126316 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXOtherOperatorExpression_in_rule__XRelationalExpression__RightOperandAssignment_1_1_126351 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOpOther_in_rule__XOtherOperatorExpression__FeatureAssignment_1_0_0_126386 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXAdditiveExpression_in_rule__XOtherOperatorExpression__RightOperandAssignment_1_126421 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOpAdd_in_rule__XAdditiveExpression__FeatureAssignment_1_0_0_126456 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXMultiplicativeExpression_in_rule__XAdditiveExpression__RightOperandAssignment_1_126491 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOpMulti_in_rule__XMultiplicativeExpression__FeatureAssignment_1_0_0_126526 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXUnaryOperation_in_rule__XMultiplicativeExpression__RightOperandAssignment_1_126561 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOpUnary_in_rule__XUnaryOperation__FeatureAssignment_0_126596 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXCastedExpression_in_rule__XUnaryOperation__OperandAssignment_0_226631 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XCastedExpression__TypeAssignment_1_126662 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleValidID_in_rule__XMemberFeatureCall__FeatureAssignment_1_0_0_0_226697 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXAssignment_in_rule__XMemberFeatureCall__ValueAssignment_1_0_126732 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_70_in_rule__XMemberFeatureCall__NullSafeAssignment_1_1_0_0_1_126768 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_71_in_rule__XMemberFeatureCall__SpreadingAssignment_1_1_0_0_1_226812 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_126851 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_2_126882 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleValidID_in_rule__XMemberFeatureCall__FeatureAssignment_1_1_226917 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_45_in_rule__XMemberFeatureCall__ExplicitOperationCallAssignment_1_1_3_026957 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXShortClosure_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_026996 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_027027 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_1_127058 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXClosure_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_427089 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XClosure__DeclaredFormalParametersAssignment_2_0_0_027120 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XClosure__DeclaredFormalParametersAssignment_2_0_0_1_127151 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_72_in_rule__XClosure__ExplicitSyntaxAssignment_2_0_127187 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpressionInClosure_in_rule__XClosure__ExpressionAssignment_327226 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpressionInsideBlock_in_rule__XExpressionInClosure__ExpressionsAssignment_1_027257 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_027288 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_1_127319 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_72_in_rule__XShortClosure__ExplicitSyntaxAssignment_0_0_227355 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XShortClosure__ExpressionAssignment_127394 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XIfExpression__IfAssignment_327425 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XIfExpression__ThenAssignment_527456 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XIfExpression__ElseAssignment_6_127487 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleValidID_in_rule__XSwitchExpression__LocalVarNameAssignment_2_0_027518 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XSwitchExpression__SwitchAssignment_327549 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXCasePart_in_rule__XSwitchExpression__CasesAssignment_527580 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XSwitchExpression__DefaultAssignment_6_227611 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XCasePart__TypeGuardAssignment_027642 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XCasePart__CaseAssignment_1_127673 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XCasePart__ThenAssignment_327704 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XForLoopExpression__DeclaredParamAssignment_327735 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XForLoopExpression__ForExpressionAssignment_527766 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XForLoopExpression__EachExpressionAssignment_727797 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XWhileExpression__PredicateAssignment_327828 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XWhileExpression__BodyAssignment_527859 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XDoWhileExpression__BodyAssignment_227890 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XDoWhileExpression__PredicateAssignment_527921 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpressionInsideBlock_in_rule__XBlockExpression__ExpressionsAssignment_2_027952 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_73_in_rule__XVariableDeclaration__WriteableAssignment_1_027988 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XVariableDeclaration__TypeAssignment_2_0_0_028027 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleValidID_in_rule__XVariableDeclaration__NameAssignment_2_0_0_128058 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleValidID_in_rule__XVariableDeclaration__NameAssignment_2_128089 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XVariableDeclaration__RightAssignment_3_128120 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__JvmFormalParameter__ParameterTypeAssignment_028151 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleValidID_in_rule__JvmFormalParameter__NameAssignment_128182 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__FullJvmFormalParameter__ParameterTypeAssignment_028213 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleValidID_in_rule__FullJvmFormalParameter__NameAssignment_128244 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleStaticQualifier_in_rule__XFeatureCall__DeclaringTypeAssignment_128279 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XFeatureCall__TypeArgumentsAssignment_2_128314 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XFeatureCall__TypeArgumentsAssignment_2_2_128345 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleIdOrSuper_in_rule__XFeatureCall__FeatureAssignment_328380 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_45_in_rule__XFeatureCall__ExplicitOperationCallAssignment_4_028420 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXShortClosure_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_028459 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_1_028490 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_1_1_128521 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXClosure_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_528552 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__XConstructorCall__ConstructorAssignment_228587 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XConstructorCall__TypeArgumentsAssignment_3_128622 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XConstructorCall__TypeArgumentsAssignment_3_2_128653 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXShortClosure_in_rule__XConstructorCall__ArgumentsAssignment_5_028684 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XConstructorCall__ArgumentsAssignment_5_1_028715 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XConstructorCall__ArgumentsAssignment_5_1_1_128746 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXClosure_in_rule__XConstructorCall__ArgumentsAssignment_728777 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_74_in_rule__XBooleanLiteral__IsTrueAssignment_1_128813 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_rule__XIntLiteral__ValueAssignment_128852 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__XStringLiteral__ValueAssignment_128883 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__XTypeLiteral__TypeAssignment_328918 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XThrowExpression__ExpressionAssignment_228953 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XReturnExpression__ExpressionAssignment_228984 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__ExpressionAssignment_229015 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXCatchClause_in_rule__XTryCatchFinallyExpression__CatchClausesAssignment_3_0_029046 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_0_1_129077 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_1_129108 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleFullJvmFormalParameter_in_rule__XCatchClause__DeclaredParamAssignment_229139 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleXExpression_in_rule__XCatchClause__ExpressionAssignment_429170 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ParamTypesAssignment_0_129201 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ParamTypesAssignment_0_2_129232 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ReturnTypeAssignment_229263 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__JvmParameterizedTypeReference__TypeAssignment_029298 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_129333 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_129364 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmUpperBound_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_029395 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmLowerBound_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_129426 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__JvmUpperBound__TypeReferenceAssignment_129457 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__JvmUpperBoundAnded__TypeReferenceAssignment_129488 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__JvmLowerBound__TypeReferenceAssignment_129519 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group_0_1__0_in_rule__XFunctionTypeRef__Group_0__1__Impl24396 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group_0__2__Impl_in_rule__XFunctionTypeRef__Group_0__224427 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_41_in_rule__XFunctionTypeRef__Group_0__2__Impl24455 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group_0_1__0__Impl_in_rule__XFunctionTypeRef__Group_0_1__024492 = new BitSet(new long[]{0x0000010000000000L});
+    public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group_0_1__1_in_rule__XFunctionTypeRef__Group_0_1__024495 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__XFunctionTypeRef__ParamTypesAssignment_0_1_0_in_rule__XFunctionTypeRef__Group_0_1__0__Impl24522 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group_0_1__1__Impl_in_rule__XFunctionTypeRef__Group_0_1__124552 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group_0_1_1__0_in_rule__XFunctionTypeRef__Group_0_1__1__Impl24579 = new BitSet(new long[]{0x0000010000000002L});
+    public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group_0_1_1__0__Impl_in_rule__XFunctionTypeRef__Group_0_1_1__024614 = new BitSet(new long[]{0x0000200000000010L,0x0000000000000004L});
+    public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group_0_1_1__1_in_rule__XFunctionTypeRef__Group_0_1_1__024617 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_40_in_rule__XFunctionTypeRef__Group_0_1_1__0__Impl24645 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__XFunctionTypeRef__Group_0_1_1__1__Impl_in_rule__XFunctionTypeRef__Group_0_1_1__124676 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_1_in_rule__XFunctionTypeRef__Group_0_1_1__1__Impl24703 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group__0__Impl_in_rule__JvmParameterizedTypeReference__Group__024737 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group__1_in_rule__JvmParameterizedTypeReference__Group__024740 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__TypeAssignment_0_in_rule__JvmParameterizedTypeReference__Group__0__Impl24767 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group__1__Impl_in_rule__JvmParameterizedTypeReference__Group__124797 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1__0_in_rule__JvmParameterizedTypeReference__Group__1__Impl24824 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1__0__Impl_in_rule__JvmParameterizedTypeReference__Group_1__024859 = new BitSet(new long[]{0x0000200000000010L,0x000000000000000CL});
+    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1__1_in_rule__JvmParameterizedTypeReference__Group_1__024862 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_rule__JvmParameterizedTypeReference__Group_1__0__Impl24891 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1__1__Impl_in_rule__JvmParameterizedTypeReference__Group_1__124923 = new BitSet(new long[]{0x0000010000080000L});
+    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1__2_in_rule__JvmParameterizedTypeReference__Group_1__124926 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_1_in_rule__JvmParameterizedTypeReference__Group_1__1__Impl24953 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1__2__Impl_in_rule__JvmParameterizedTypeReference__Group_1__224983 = new BitSet(new long[]{0x0000010000080000L});
+    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1__3_in_rule__JvmParameterizedTypeReference__Group_1__224986 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1_2__0_in_rule__JvmParameterizedTypeReference__Group_1__2__Impl25013 = new BitSet(new long[]{0x0000010000000002L});
+    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1__3__Impl_in_rule__JvmParameterizedTypeReference__Group_1__325044 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__JvmParameterizedTypeReference__Group_1__3__Impl25072 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1_2__0__Impl_in_rule__JvmParameterizedTypeReference__Group_1_2__025111 = new BitSet(new long[]{0x0000200000000010L,0x000000000000000CL});
+    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1_2__1_in_rule__JvmParameterizedTypeReference__Group_1_2__025114 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_40_in_rule__JvmParameterizedTypeReference__Group_1_2__0__Impl25142 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1_2__1__Impl_in_rule__JvmParameterizedTypeReference__Group_1_2__125173 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_1_in_rule__JvmParameterizedTypeReference__Group_1_2__1__Impl25200 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmWildcardTypeReference__Group__0__Impl_in_rule__JvmWildcardTypeReference__Group__025234 = new BitSet(new long[]{0x0000200000000010L,0x000000000000000CL});
+    public static final BitSet FOLLOW_rule__JvmWildcardTypeReference__Group__1_in_rule__JvmWildcardTypeReference__Group__025237 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmWildcardTypeReference__Group__1__Impl_in_rule__JvmWildcardTypeReference__Group__125295 = new BitSet(new long[]{0x0000000100000000L,0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__JvmWildcardTypeReference__Group__2_in_rule__JvmWildcardTypeReference__Group__125298 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_67_in_rule__JvmWildcardTypeReference__Group__1__Impl25326 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmWildcardTypeReference__Group__2__Impl_in_rule__JvmWildcardTypeReference__Group__225357 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmWildcardTypeReference__Alternatives_2_in_rule__JvmWildcardTypeReference__Group__2__Impl25384 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmUpperBound__Group__0__Impl_in_rule__JvmUpperBound__Group__025421 = new BitSet(new long[]{0x0000200000000010L,0x0000000000000004L});
+    public static final BitSet FOLLOW_rule__JvmUpperBound__Group__1_in_rule__JvmUpperBound__Group__025424 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_68_in_rule__JvmUpperBound__Group__0__Impl25452 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmUpperBound__Group__1__Impl_in_rule__JvmUpperBound__Group__125483 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmUpperBound__TypeReferenceAssignment_1_in_rule__JvmUpperBound__Group__1__Impl25510 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmUpperBoundAnded__Group__0__Impl_in_rule__JvmUpperBoundAnded__Group__025544 = new BitSet(new long[]{0x0000200000000010L,0x0000000000000004L});
+    public static final BitSet FOLLOW_rule__JvmUpperBoundAnded__Group__1_in_rule__JvmUpperBoundAnded__Group__025547 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_69_in_rule__JvmUpperBoundAnded__Group__0__Impl25575 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmUpperBoundAnded__Group__1__Impl_in_rule__JvmUpperBoundAnded__Group__125606 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmUpperBoundAnded__TypeReferenceAssignment_1_in_rule__JvmUpperBoundAnded__Group__1__Impl25633 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmLowerBound__Group__0__Impl_in_rule__JvmLowerBound__Group__025667 = new BitSet(new long[]{0x0000200000000010L,0x0000000000000004L});
+    public static final BitSet FOLLOW_rule__JvmLowerBound__Group__1_in_rule__JvmLowerBound__Group__025670 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_32_in_rule__JvmLowerBound__Group__0__Impl25698 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmLowerBound__Group__1__Impl_in_rule__JvmLowerBound__Group__125729 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmLowerBound__TypeReferenceAssignment_1_in_rule__JvmLowerBound__Group__1__Impl25756 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleImport_in_rule__Model__ImportsAssignment_025797 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXVariableDeclaration_in_rule__Model__VarDeclarationsAssignment_125828 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleGreeting_in_rule__Model__GreetingsAssignment_225859 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedNameWithWildcard_in_rule__Import__ImportedNamespaceAssignment_125890 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Greeting__NameAssignment_125921 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__Greeting__ExpressionAssignment_325952 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValidID_in_rule__XAssignment__FeatureAssignment_0_125987 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXAssignment_in_rule__XAssignment__ValueAssignment_0_326022 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOpMultiAssign_in_rule__XAssignment__FeatureAssignment_1_1_0_0_126057 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXAssignment_in_rule__XAssignment__RightOperandAssignment_1_1_126092 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOpOr_in_rule__XOrExpression__FeatureAssignment_1_0_0_126127 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXAndExpression_in_rule__XOrExpression__RightOperandAssignment_1_126162 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOpAnd_in_rule__XAndExpression__FeatureAssignment_1_0_0_126197 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXEqualityExpression_in_rule__XAndExpression__RightOperandAssignment_1_126232 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOpEquality_in_rule__XEqualityExpression__FeatureAssignment_1_0_0_126267 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXRelationalExpression_in_rule__XEqualityExpression__RightOperandAssignment_1_126302 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__XRelationalExpression__TypeAssignment_1_0_126337 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOpCompare_in_rule__XRelationalExpression__FeatureAssignment_1_1_0_0_126376 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXOtherOperatorExpression_in_rule__XRelationalExpression__RightOperandAssignment_1_1_126411 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOpOther_in_rule__XOtherOperatorExpression__FeatureAssignment_1_0_0_126446 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXAdditiveExpression_in_rule__XOtherOperatorExpression__RightOperandAssignment_1_126481 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOpAdd_in_rule__XAdditiveExpression__FeatureAssignment_1_0_0_126516 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXMultiplicativeExpression_in_rule__XAdditiveExpression__RightOperandAssignment_1_126551 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOpMulti_in_rule__XMultiplicativeExpression__FeatureAssignment_1_0_0_126586 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXUnaryOperation_in_rule__XMultiplicativeExpression__RightOperandAssignment_1_126621 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOpUnary_in_rule__XUnaryOperation__FeatureAssignment_0_126656 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXCastedExpression_in_rule__XUnaryOperation__OperandAssignment_0_226691 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XCastedExpression__TypeAssignment_1_126722 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValidID_in_rule__XMemberFeatureCall__FeatureAssignment_1_0_0_0_226757 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXAssignment_in_rule__XMemberFeatureCall__ValueAssignment_1_0_126792 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_70_in_rule__XMemberFeatureCall__NullSafeAssignment_1_1_0_0_1_126828 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_71_in_rule__XMemberFeatureCall__SpreadingAssignment_1_1_0_0_1_226872 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_126911 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XMemberFeatureCall__TypeArgumentsAssignment_1_1_1_2_126942 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValidID_in_rule__XMemberFeatureCall__FeatureAssignment_1_1_226977 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_45_in_rule__XMemberFeatureCall__ExplicitOperationCallAssignment_1_1_3_027017 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXShortClosure_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_027056 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_027087 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_1_1_127118 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXClosure_in_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_427149 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XClosure__DeclaredFormalParametersAssignment_2_0_0_027180 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XClosure__DeclaredFormalParametersAssignment_2_0_0_1_127211 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_72_in_rule__XClosure__ExplicitSyntaxAssignment_2_0_127247 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpressionInClosure_in_rule__XClosure__ExpressionAssignment_327286 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpressionInsideBlock_in_rule__XExpressionInClosure__ExpressionsAssignment_1_027317 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_027348 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XShortClosure__DeclaredFormalParametersAssignment_0_0_1_1_127379 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_72_in_rule__XShortClosure__ExplicitSyntaxAssignment_0_0_227415 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XShortClosure__ExpressionAssignment_127454 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XIfExpression__IfAssignment_327485 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XIfExpression__ThenAssignment_527516 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XIfExpression__ElseAssignment_6_127547 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValidID_in_rule__XSwitchExpression__LocalVarNameAssignment_2_0_027578 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XSwitchExpression__SwitchAssignment_327609 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXCasePart_in_rule__XSwitchExpression__CasesAssignment_527640 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XSwitchExpression__DefaultAssignment_6_227671 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XCasePart__TypeGuardAssignment_027702 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XCasePart__CaseAssignment_1_127733 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XCasePart__ThenAssignment_327764 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmFormalParameter_in_rule__XForLoopExpression__DeclaredParamAssignment_327795 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XForLoopExpression__ForExpressionAssignment_527826 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XForLoopExpression__EachExpressionAssignment_727857 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XWhileExpression__PredicateAssignment_327888 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XWhileExpression__BodyAssignment_527919 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XDoWhileExpression__BodyAssignment_227950 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XDoWhileExpression__PredicateAssignment_527981 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpressionInsideBlock_in_rule__XBlockExpression__ExpressionsAssignment_2_028012 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_73_in_rule__XVariableDeclaration__WriteableAssignment_1_028048 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XVariableDeclaration__TypeAssignment_2_0_0_028087 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValidID_in_rule__XVariableDeclaration__NameAssignment_2_0_0_128118 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValidID_in_rule__XVariableDeclaration__NameAssignment_2_128149 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XVariableDeclaration__RightAssignment_3_128180 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__JvmFormalParameter__ParameterTypeAssignment_028211 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValidID_in_rule__JvmFormalParameter__NameAssignment_128242 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__FullJvmFormalParameter__ParameterTypeAssignment_028273 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValidID_in_rule__FullJvmFormalParameter__NameAssignment_128304 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleStaticQualifier_in_rule__XFeatureCall__DeclaringTypeAssignment_128339 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XFeatureCall__TypeArgumentsAssignment_2_128374 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XFeatureCall__TypeArgumentsAssignment_2_2_128405 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleIdOrSuper_in_rule__XFeatureCall__FeatureAssignment_328440 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_45_in_rule__XFeatureCall__ExplicitOperationCallAssignment_4_028480 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXShortClosure_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_028519 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_1_028550 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_1_1_128581 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXClosure_in_rule__XFeatureCall__FeatureCallArgumentsAssignment_528612 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__XConstructorCall__ConstructorAssignment_228647 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XConstructorCall__TypeArgumentsAssignment_3_128682 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__XConstructorCall__TypeArgumentsAssignment_3_2_128713 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXShortClosure_in_rule__XConstructorCall__ArgumentsAssignment_5_028744 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XConstructorCall__ArgumentsAssignment_5_1_028775 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XConstructorCall__ArgumentsAssignment_5_1_1_128806 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXClosure_in_rule__XConstructorCall__ArgumentsAssignment_728837 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_74_in_rule__XBooleanLiteral__IsTrueAssignment_1_128873 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_rule__XIntLiteral__ValueAssignment_128912 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__XStringLiteral__ValueAssignment_128943 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__XTypeLiteral__TypeAssignment_328978 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XThrowExpression__ExpressionAssignment_229013 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XReturnExpression__ExpressionAssignment_229044 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__ExpressionAssignment_229075 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXCatchClause_in_rule__XTryCatchFinallyExpression__CatchClausesAssignment_3_0_029106 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_0_1_129137 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XTryCatchFinallyExpression__FinallyExpressionAssignment_3_1_129168 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleFullJvmFormalParameter_in_rule__XCatchClause__DeclaredParamAssignment_229199 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleXExpression_in_rule__XCatchClause__ExpressionAssignment_429230 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ParamTypesAssignment_0_1_029261 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ParamTypesAssignment_0_1_1_129292 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__XFunctionTypeRef__ReturnTypeAssignment_229323 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_rule__JvmParameterizedTypeReference__TypeAssignment_029358 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_129393 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_rule__JvmParameterizedTypeReference__ArgumentsAssignment_1_2_129424 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmUpperBound_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_029455 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmLowerBound_in_rule__JvmWildcardTypeReference__ConstraintsAssignment_2_129486 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__JvmUpperBound__TypeReferenceAssignment_129517 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__JvmUpperBoundAnded__TypeReferenceAssignment_129548 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_rule__JvmLowerBound__TypeReferenceAssignment_129579 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__XMemberFeatureCall__MemberCallArgumentsAssignment_1_1_3_1_0_in_synpred19_InternalHelloXvars4765 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__XVariableDeclaration__Group_2_0__0_in_synpred39_InternalHelloXvars5271 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__XFeatureCall__FeatureCallArgumentsAssignment_4_1_0_in_synpred40_InternalHelloXvars5322 = new BitSet(new long[]{0x0000000000000002L});
@@ -45965,6 +46062,6 @@ public class InternalHelloXvarsParser extends AbstractInternalContentAssistParse
     public static final BitSet FOLLOW_rule__XTryCatchFinallyExpression__Group_3_0_1__0_in_synpred99_InternalHelloXvars22907 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__QualifiedName__Group_1__0_in_synpred100_InternalHelloXvars23591 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__JvmTypeReference__Group_0_1__0_in_synpred101_InternalHelloXvars23836 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1__0_in_synpred104_InternalHelloXvars24764 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JvmParameterizedTypeReference__Group_1__0_in_synpred105_InternalHelloXvars24824 = new BitSet(new long[]{0x0000000000000002L});
 
 }

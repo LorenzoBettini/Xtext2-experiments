@@ -12673,7 +12673,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleXFunctionTypeRef"
-    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4385:1: ruleXFunctionTypeRef returns [EObject current=null] : ( (otherlv_0= '(' ( (lv_paramTypes_1_0= ruleJvmTypeReference ) ) (otherlv_2= ',' ( (lv_paramTypes_3_0= ruleJvmTypeReference ) ) )* otherlv_4= ')' )? otherlv_5= '=>' ( (lv_returnType_6_0= ruleJvmTypeReference ) ) ) ;
+    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4385:1: ruleXFunctionTypeRef returns [EObject current=null] : ( (otherlv_0= '(' ( ( (lv_paramTypes_1_0= ruleJvmTypeReference ) ) (otherlv_2= ',' ( (lv_paramTypes_3_0= ruleJvmTypeReference ) ) )* )? otherlv_4= ')' )? otherlv_5= '=>' ( (lv_returnType_6_0= ruleJvmTypeReference ) ) ) ;
     public final EObject ruleXFunctionTypeRef() throws RecognitionException {
         EObject current = null;
 
@@ -12691,22 +12691,22 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4388:28: ( ( (otherlv_0= '(' ( (lv_paramTypes_1_0= ruleJvmTypeReference ) ) (otherlv_2= ',' ( (lv_paramTypes_3_0= ruleJvmTypeReference ) ) )* otherlv_4= ')' )? otherlv_5= '=>' ( (lv_returnType_6_0= ruleJvmTypeReference ) ) ) )
-            // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4389:1: ( (otherlv_0= '(' ( (lv_paramTypes_1_0= ruleJvmTypeReference ) ) (otherlv_2= ',' ( (lv_paramTypes_3_0= ruleJvmTypeReference ) ) )* otherlv_4= ')' )? otherlv_5= '=>' ( (lv_returnType_6_0= ruleJvmTypeReference ) ) )
+            // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4388:28: ( ( (otherlv_0= '(' ( ( (lv_paramTypes_1_0= ruleJvmTypeReference ) ) (otherlv_2= ',' ( (lv_paramTypes_3_0= ruleJvmTypeReference ) ) )* )? otherlv_4= ')' )? otherlv_5= '=>' ( (lv_returnType_6_0= ruleJvmTypeReference ) ) ) )
+            // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4389:1: ( (otherlv_0= '(' ( ( (lv_paramTypes_1_0= ruleJvmTypeReference ) ) (otherlv_2= ',' ( (lv_paramTypes_3_0= ruleJvmTypeReference ) ) )* )? otherlv_4= ')' )? otherlv_5= '=>' ( (lv_returnType_6_0= ruleJvmTypeReference ) ) )
             {
-            // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4389:1: ( (otherlv_0= '(' ( (lv_paramTypes_1_0= ruleJvmTypeReference ) ) (otherlv_2= ',' ( (lv_paramTypes_3_0= ruleJvmTypeReference ) ) )* otherlv_4= ')' )? otherlv_5= '=>' ( (lv_returnType_6_0= ruleJvmTypeReference ) ) )
-            // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4389:2: (otherlv_0= '(' ( (lv_paramTypes_1_0= ruleJvmTypeReference ) ) (otherlv_2= ',' ( (lv_paramTypes_3_0= ruleJvmTypeReference ) ) )* otherlv_4= ')' )? otherlv_5= '=>' ( (lv_returnType_6_0= ruleJvmTypeReference ) )
+            // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4389:1: ( (otherlv_0= '(' ( ( (lv_paramTypes_1_0= ruleJvmTypeReference ) ) (otherlv_2= ',' ( (lv_paramTypes_3_0= ruleJvmTypeReference ) ) )* )? otherlv_4= ')' )? otherlv_5= '=>' ( (lv_returnType_6_0= ruleJvmTypeReference ) ) )
+            // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4389:2: (otherlv_0= '(' ( ( (lv_paramTypes_1_0= ruleJvmTypeReference ) ) (otherlv_2= ',' ( (lv_paramTypes_3_0= ruleJvmTypeReference ) ) )* )? otherlv_4= ')' )? otherlv_5= '=>' ( (lv_returnType_6_0= ruleJvmTypeReference ) )
             {
-            // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4389:2: (otherlv_0= '(' ( (lv_paramTypes_1_0= ruleJvmTypeReference ) ) (otherlv_2= ',' ( (lv_paramTypes_3_0= ruleJvmTypeReference ) ) )* otherlv_4= ')' )?
-            int alt75=2;
-            int LA75_0 = input.LA(1);
+            // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4389:2: (otherlv_0= '(' ( ( (lv_paramTypes_1_0= ruleJvmTypeReference ) ) (otherlv_2= ',' ( (lv_paramTypes_3_0= ruleJvmTypeReference ) ) )* )? otherlv_4= ')' )?
+            int alt76=2;
+            int LA76_0 = input.LA(1);
 
-            if ( (LA75_0==40) ) {
-                alt75=1;
+            if ( (LA76_0==40) ) {
+                alt76=1;
             }
-            switch (alt75) {
+            switch (alt76) {
                 case 1 :
-                    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4389:4: otherlv_0= '(' ( (lv_paramTypes_1_0= ruleJvmTypeReference ) ) (otherlv_2= ',' ( (lv_paramTypes_3_0= ruleJvmTypeReference ) ) )* otherlv_4= ')'
+                    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4389:4: otherlv_0= '(' ( ( (lv_paramTypes_1_0= ruleJvmTypeReference ) ) (otherlv_2= ',' ( (lv_paramTypes_3_0= ruleJvmTypeReference ) ) )* )? otherlv_4= ')'
                     {
                     otherlv_0=(Token)match(input,40,FOLLOW_40_in_ruleXFunctionTypeRef10251); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
@@ -12714,110 +12714,127 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
                           	newLeafNode(otherlv_0, grammarAccess.getXFunctionTypeRefAccess().getLeftParenthesisKeyword_0_0());
                           
                     }
-                    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4393:1: ( (lv_paramTypes_1_0= ruleJvmTypeReference ) )
-                    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4394:1: (lv_paramTypes_1_0= ruleJvmTypeReference )
-                    {
-                    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4394:1: (lv_paramTypes_1_0= ruleJvmTypeReference )
-                    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4395:3: lv_paramTypes_1_0= ruleJvmTypeReference
-                    {
+                    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4393:1: ( ( (lv_paramTypes_1_0= ruleJvmTypeReference ) ) (otherlv_2= ',' ( (lv_paramTypes_3_0= ruleJvmTypeReference ) ) )* )?
+                    int alt75=2;
+                    int LA75_0 = input.LA(1);
+
+                    if ( (LA75_0==RULE_ID||LA75_0==40||LA75_0==71) ) {
+                        alt75=1;
+                    }
+                    switch (alt75) {
+                        case 1 :
+                            // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4393:2: ( (lv_paramTypes_1_0= ruleJvmTypeReference ) ) (otherlv_2= ',' ( (lv_paramTypes_3_0= ruleJvmTypeReference ) ) )*
+                            {
+                            // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4393:2: ( (lv_paramTypes_1_0= ruleJvmTypeReference ) )
+                            // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4394:1: (lv_paramTypes_1_0= ruleJvmTypeReference )
+                            {
+                            // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4394:1: (lv_paramTypes_1_0= ruleJvmTypeReference )
+                            // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4395:3: lv_paramTypes_1_0= ruleJvmTypeReference
+                            {
+                            if ( state.backtracking==0 ) {
+                               
+                              	        newCompositeNode(grammarAccess.getXFunctionTypeRefAccess().getParamTypesJvmTypeReferenceParserRuleCall_0_1_0_0()); 
+                              	    
+                            }
+                            pushFollow(FOLLOW_ruleJvmTypeReference_in_ruleXFunctionTypeRef10273);
+                            lv_paramTypes_1_0=ruleJvmTypeReference();
+
+                            state._fsp--;
+                            if (state.failed) return current;
+                            if ( state.backtracking==0 ) {
+
+                              	        if (current==null) {
+                              	            current = createModelElementForParent(grammarAccess.getXFunctionTypeRefRule());
+                              	        }
+                                     		add(
+                                     			current, 
+                                     			"paramTypes",
+                                      		lv_paramTypes_1_0, 
+                                      		"JvmTypeReference");
+                              	        afterParserOrEnumRuleCall();
+                              	    
+                            }
+
+                            }
+
+
+                            }
+
+                            // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4411:2: (otherlv_2= ',' ( (lv_paramTypes_3_0= ruleJvmTypeReference ) ) )*
+                            loop74:
+                            do {
+                                int alt74=2;
+                                int LA74_0 = input.LA(1);
+
+                                if ( (LA74_0==39) ) {
+                                    alt74=1;
+                                }
+
+
+                                switch (alt74) {
+                            	case 1 :
+                            	    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4411:4: otherlv_2= ',' ( (lv_paramTypes_3_0= ruleJvmTypeReference ) )
+                            	    {
+                            	    otherlv_2=(Token)match(input,39,FOLLOW_39_in_ruleXFunctionTypeRef10286); if (state.failed) return current;
+                            	    if ( state.backtracking==0 ) {
+
+                            	          	newLeafNode(otherlv_2, grammarAccess.getXFunctionTypeRefAccess().getCommaKeyword_0_1_1_0());
+                            	          
+                            	    }
+                            	    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4415:1: ( (lv_paramTypes_3_0= ruleJvmTypeReference ) )
+                            	    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4416:1: (lv_paramTypes_3_0= ruleJvmTypeReference )
+                            	    {
+                            	    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4416:1: (lv_paramTypes_3_0= ruleJvmTypeReference )
+                            	    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4417:3: lv_paramTypes_3_0= ruleJvmTypeReference
+                            	    {
+                            	    if ( state.backtracking==0 ) {
+                            	       
+                            	      	        newCompositeNode(grammarAccess.getXFunctionTypeRefAccess().getParamTypesJvmTypeReferenceParserRuleCall_0_1_1_1_0()); 
+                            	      	    
+                            	    }
+                            	    pushFollow(FOLLOW_ruleJvmTypeReference_in_ruleXFunctionTypeRef10307);
+                            	    lv_paramTypes_3_0=ruleJvmTypeReference();
+
+                            	    state._fsp--;
+                            	    if (state.failed) return current;
+                            	    if ( state.backtracking==0 ) {
+
+                            	      	        if (current==null) {
+                            	      	            current = createModelElementForParent(grammarAccess.getXFunctionTypeRefRule());
+                            	      	        }
+                            	             		add(
+                            	             			current, 
+                            	             			"paramTypes",
+                            	              		lv_paramTypes_3_0, 
+                            	              		"JvmTypeReference");
+                            	      	        afterParserOrEnumRuleCall();
+                            	      	    
+                            	    }
+
+                            	    }
+
+
+                            	    }
+
+
+                            	    }
+                            	    break;
+
+                            	default :
+                            	    break loop74;
+                                }
+                            } while (true);
+
+
+                            }
+                            break;
+
+                    }
+
+                    otherlv_4=(Token)match(input,41,FOLLOW_41_in_ruleXFunctionTypeRef10323); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
-                       
-                      	        newCompositeNode(grammarAccess.getXFunctionTypeRefAccess().getParamTypesJvmTypeReferenceParserRuleCall_0_1_0()); 
-                      	    
-                    }
-                    pushFollow(FOLLOW_ruleJvmTypeReference_in_ruleXFunctionTypeRef10272);
-                    lv_paramTypes_1_0=ruleJvmTypeReference();
 
-                    state._fsp--;
-                    if (state.failed) return current;
-                    if ( state.backtracking==0 ) {
-
-                      	        if (current==null) {
-                      	            current = createModelElementForParent(grammarAccess.getXFunctionTypeRefRule());
-                      	        }
-                             		add(
-                             			current, 
-                             			"paramTypes",
-                              		lv_paramTypes_1_0, 
-                              		"JvmTypeReference");
-                      	        afterParserOrEnumRuleCall();
-                      	    
-                    }
-
-                    }
-
-
-                    }
-
-                    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4411:2: (otherlv_2= ',' ( (lv_paramTypes_3_0= ruleJvmTypeReference ) ) )*
-                    loop74:
-                    do {
-                        int alt74=2;
-                        int LA74_0 = input.LA(1);
-
-                        if ( (LA74_0==39) ) {
-                            alt74=1;
-                        }
-
-
-                        switch (alt74) {
-                    	case 1 :
-                    	    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4411:4: otherlv_2= ',' ( (lv_paramTypes_3_0= ruleJvmTypeReference ) )
-                    	    {
-                    	    otherlv_2=(Token)match(input,39,FOLLOW_39_in_ruleXFunctionTypeRef10285); if (state.failed) return current;
-                    	    if ( state.backtracking==0 ) {
-
-                    	          	newLeafNode(otherlv_2, grammarAccess.getXFunctionTypeRefAccess().getCommaKeyword_0_2_0());
-                    	          
-                    	    }
-                    	    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4415:1: ( (lv_paramTypes_3_0= ruleJvmTypeReference ) )
-                    	    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4416:1: (lv_paramTypes_3_0= ruleJvmTypeReference )
-                    	    {
-                    	    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4416:1: (lv_paramTypes_3_0= ruleJvmTypeReference )
-                    	    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4417:3: lv_paramTypes_3_0= ruleJvmTypeReference
-                    	    {
-                    	    if ( state.backtracking==0 ) {
-                    	       
-                    	      	        newCompositeNode(grammarAccess.getXFunctionTypeRefAccess().getParamTypesJvmTypeReferenceParserRuleCall_0_2_1_0()); 
-                    	      	    
-                    	    }
-                    	    pushFollow(FOLLOW_ruleJvmTypeReference_in_ruleXFunctionTypeRef10306);
-                    	    lv_paramTypes_3_0=ruleJvmTypeReference();
-
-                    	    state._fsp--;
-                    	    if (state.failed) return current;
-                    	    if ( state.backtracking==0 ) {
-
-                    	      	        if (current==null) {
-                    	      	            current = createModelElementForParent(grammarAccess.getXFunctionTypeRefRule());
-                    	      	        }
-                    	             		add(
-                    	             			current, 
-                    	             			"paramTypes",
-                    	              		lv_paramTypes_3_0, 
-                    	              		"JvmTypeReference");
-                    	      	        afterParserOrEnumRuleCall();
-                    	      	    
-                    	    }
-
-                    	    }
-
-
-                    	    }
-
-
-                    	    }
-                    	    break;
-
-                    	default :
-                    	    break loop74;
-                        }
-                    } while (true);
-
-                    otherlv_4=(Token)match(input,41,FOLLOW_41_in_ruleXFunctionTypeRef10320); if (state.failed) return current;
-                    if ( state.backtracking==0 ) {
-
-                          	newLeafNode(otherlv_4, grammarAccess.getXFunctionTypeRefAccess().getRightParenthesisKeyword_0_3());
+                          	newLeafNode(otherlv_4, grammarAccess.getXFunctionTypeRefAccess().getRightParenthesisKeyword_0_2());
                           
                     }
 
@@ -12826,7 +12843,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_5=(Token)match(input,71,FOLLOW_71_in_ruleXFunctionTypeRef10334); if (state.failed) return current;
+            otherlv_5=(Token)match(input,71,FOLLOW_71_in_ruleXFunctionTypeRef10337); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_5, grammarAccess.getXFunctionTypeRefAccess().getEqualsSignGreaterThanSignKeyword_1());
@@ -12843,7 +12860,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
               	        newCompositeNode(grammarAccess.getXFunctionTypeRefAccess().getReturnTypeJvmTypeReferenceParserRuleCall_2_0()); 
               	    
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_ruleXFunctionTypeRef10355);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_ruleXFunctionTypeRef10358);
             lv_returnType_6_0=ruleJvmTypeReference();
 
             state._fsp--;
@@ -12904,7 +12921,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getJvmParameterizedTypeReferenceRule()); 
             }
-            pushFollow(FOLLOW_ruleJvmParameterizedTypeReference_in_entryRuleJvmParameterizedTypeReference10391);
+            pushFollow(FOLLOW_ruleJvmParameterizedTypeReference_in_entryRuleJvmParameterizedTypeReference10394);
             iv_ruleJvmParameterizedTypeReference=ruleJvmParameterizedTypeReference();
 
             state._fsp--;
@@ -12912,7 +12929,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleJvmParameterizedTypeReference; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleJvmParameterizedTypeReference10401); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleJvmParameterizedTypeReference10404); if (state.failed) return current;
 
             }
 
@@ -12969,7 +12986,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
               	        newCompositeNode(grammarAccess.getJvmParameterizedTypeReferenceAccess().getTypeJvmTypeCrossReference_0_0()); 
               	    
             }
-            pushFollow(FOLLOW_ruleQualifiedName_in_ruleJvmParameterizedTypeReference10449);
+            pushFollow(FOLLOW_ruleQualifiedName_in_ruleJvmParameterizedTypeReference10452);
             ruleQualifiedName();
 
             state._fsp--;
@@ -12986,16 +13003,16 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
             }
 
             // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4495:2: ( ( ( '<' )=>otherlv_1= '<' ) ( (lv_arguments_2_0= ruleJvmArgumentTypeReference ) ) (otherlv_3= ',' ( (lv_arguments_4_0= ruleJvmArgumentTypeReference ) ) )* otherlv_5= '>' )?
-            int alt77=2;
-            alt77 = dfa77.predict(input);
-            switch (alt77) {
+            int alt78=2;
+            alt78 = dfa78.predict(input);
+            switch (alt78) {
                 case 1 :
                     // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4495:3: ( ( '<' )=>otherlv_1= '<' ) ( (lv_arguments_2_0= ruleJvmArgumentTypeReference ) ) (otherlv_3= ',' ( (lv_arguments_4_0= ruleJvmArgumentTypeReference ) ) )* otherlv_5= '>'
                     {
                     // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4495:3: ( ( '<' )=>otherlv_1= '<' )
                     // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4495:4: ( '<' )=>otherlv_1= '<'
                     {
-                    otherlv_1=(Token)match(input,26,FOLLOW_26_in_ruleJvmParameterizedTypeReference10470); if (state.failed) return current;
+                    otherlv_1=(Token)match(input,26,FOLLOW_26_in_ruleJvmParameterizedTypeReference10473); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_1, grammarAccess.getJvmParameterizedTypeReferenceAccess().getLessThanSignKeyword_1_0());
@@ -13015,7 +13032,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
                       	        newCompositeNode(grammarAccess.getJvmParameterizedTypeReferenceAccess().getArgumentsJvmArgumentTypeReferenceParserRuleCall_1_1_0()); 
                       	    
                     }
-                    pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_ruleJvmParameterizedTypeReference10492);
+                    pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_ruleJvmParameterizedTypeReference10495);
                     lv_arguments_2_0=ruleJvmArgumentTypeReference();
 
                     state._fsp--;
@@ -13040,21 +13057,21 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
                     }
 
                     // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4518:2: (otherlv_3= ',' ( (lv_arguments_4_0= ruleJvmArgumentTypeReference ) ) )*
-                    loop76:
+                    loop77:
                     do {
-                        int alt76=2;
-                        int LA76_0 = input.LA(1);
+                        int alt77=2;
+                        int LA77_0 = input.LA(1);
 
-                        if ( (LA76_0==39) ) {
-                            alt76=1;
+                        if ( (LA77_0==39) ) {
+                            alt77=1;
                         }
 
 
-                        switch (alt76) {
+                        switch (alt77) {
                     	case 1 :
                     	    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4518:4: otherlv_3= ',' ( (lv_arguments_4_0= ruleJvmArgumentTypeReference ) )
                     	    {
-                    	    otherlv_3=(Token)match(input,39,FOLLOW_39_in_ruleJvmParameterizedTypeReference10505); if (state.failed) return current;
+                    	    otherlv_3=(Token)match(input,39,FOLLOW_39_in_ruleJvmParameterizedTypeReference10508); if (state.failed) return current;
                     	    if ( state.backtracking==0 ) {
 
                     	          	newLeafNode(otherlv_3, grammarAccess.getJvmParameterizedTypeReferenceAccess().getCommaKeyword_1_2_0());
@@ -13071,7 +13088,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
                     	      	        newCompositeNode(grammarAccess.getJvmParameterizedTypeReferenceAccess().getArgumentsJvmArgumentTypeReferenceParserRuleCall_1_2_1_0()); 
                     	      	    
                     	    }
-                    	    pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_ruleJvmParameterizedTypeReference10526);
+                    	    pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_ruleJvmParameterizedTypeReference10529);
                     	    lv_arguments_4_0=ruleJvmArgumentTypeReference();
 
                     	    state._fsp--;
@@ -13100,11 +13117,11 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop76;
+                    	    break loop77;
                         }
                     } while (true);
 
-                    otherlv_5=(Token)match(input,25,FOLLOW_25_in_ruleJvmParameterizedTypeReference10540); if (state.failed) return current;
+                    otherlv_5=(Token)match(input,25,FOLLOW_25_in_ruleJvmParameterizedTypeReference10543); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_5, grammarAccess.getJvmParameterizedTypeReferenceAccess().getGreaterThanSignKeyword_1_3());
@@ -13153,7 +13170,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getJvmArgumentTypeReferenceRule()); 
             }
-            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_entryRuleJvmArgumentTypeReference10578);
+            pushFollow(FOLLOW_ruleJvmArgumentTypeReference_in_entryRuleJvmArgumentTypeReference10581);
             iv_ruleJvmArgumentTypeReference=ruleJvmArgumentTypeReference();
 
             state._fsp--;
@@ -13161,7 +13178,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleJvmArgumentTypeReference; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleJvmArgumentTypeReference10588); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleJvmArgumentTypeReference10591); if (state.failed) return current;
 
             }
 
@@ -13195,23 +13212,23 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
             // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4565:1: (this_JvmTypeReference_0= ruleJvmTypeReference | this_JvmWildcardTypeReference_1= ruleJvmWildcardTypeReference )
             {
             // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4565:1: (this_JvmTypeReference_0= ruleJvmTypeReference | this_JvmWildcardTypeReference_1= ruleJvmWildcardTypeReference )
-            int alt78=2;
-            int LA78_0 = input.LA(1);
+            int alt79=2;
+            int LA79_0 = input.LA(1);
 
-            if ( (LA78_0==RULE_ID||LA78_0==40||LA78_0==71) ) {
-                alt78=1;
+            if ( (LA79_0==RULE_ID||LA79_0==40||LA79_0==71) ) {
+                alt79=1;
             }
-            else if ( (LA78_0==72) ) {
-                alt78=2;
+            else if ( (LA79_0==72) ) {
+                alt79=2;
             }
             else {
                 if (state.backtracking>0) {state.failed=true; return current;}
                 NoViableAltException nvae =
-                    new NoViableAltException("", 78, 0, input);
+                    new NoViableAltException("", 79, 0, input);
 
                 throw nvae;
             }
-            switch (alt78) {
+            switch (alt79) {
                 case 1 :
                     // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4566:5: this_JvmTypeReference_0= ruleJvmTypeReference
                     {
@@ -13220,7 +13237,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
                               newCompositeNode(grammarAccess.getJvmArgumentTypeReferenceAccess().getJvmTypeReferenceParserRuleCall_0()); 
                           
                     }
-                    pushFollow(FOLLOW_ruleJvmTypeReference_in_ruleJvmArgumentTypeReference10635);
+                    pushFollow(FOLLOW_ruleJvmTypeReference_in_ruleJvmArgumentTypeReference10638);
                     this_JvmTypeReference_0=ruleJvmTypeReference();
 
                     state._fsp--;
@@ -13242,7 +13259,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
                               newCompositeNode(grammarAccess.getJvmArgumentTypeReferenceAccess().getJvmWildcardTypeReferenceParserRuleCall_1()); 
                           
                     }
-                    pushFollow(FOLLOW_ruleJvmWildcardTypeReference_in_ruleJvmArgumentTypeReference10662);
+                    pushFollow(FOLLOW_ruleJvmWildcardTypeReference_in_ruleJvmArgumentTypeReference10665);
                     this_JvmWildcardTypeReference_1=ruleJvmWildcardTypeReference();
 
                     state._fsp--;
@@ -13293,7 +13310,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getJvmWildcardTypeReferenceRule()); 
             }
-            pushFollow(FOLLOW_ruleJvmWildcardTypeReference_in_entryRuleJvmWildcardTypeReference10697);
+            pushFollow(FOLLOW_ruleJvmWildcardTypeReference_in_entryRuleJvmWildcardTypeReference10700);
             iv_ruleJvmWildcardTypeReference=ruleJvmWildcardTypeReference();
 
             state._fsp--;
@@ -13301,7 +13318,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleJvmWildcardTypeReference; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleJvmWildcardTypeReference10707); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleJvmWildcardTypeReference10710); if (state.failed) return current;
 
             }
 
@@ -13351,23 +13368,23 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,72,FOLLOW_72_in_ruleJvmWildcardTypeReference10753); if (state.failed) return current;
+            otherlv_1=(Token)match(input,72,FOLLOW_72_in_ruleJvmWildcardTypeReference10756); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_1, grammarAccess.getJvmWildcardTypeReferenceAccess().getQuestionMarkKeyword_1());
                   
             }
             // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4615:1: ( ( (lv_constraints_2_0= ruleJvmUpperBound ) ) | ( (lv_constraints_3_0= ruleJvmLowerBound ) ) )?
-            int alt79=3;
-            int LA79_0 = input.LA(1);
+            int alt80=3;
+            int LA80_0 = input.LA(1);
 
-            if ( (LA79_0==73) ) {
-                alt79=1;
+            if ( (LA80_0==73) ) {
+                alt80=1;
             }
-            else if ( (LA79_0==59) ) {
-                alt79=2;
+            else if ( (LA80_0==59) ) {
+                alt80=2;
             }
-            switch (alt79) {
+            switch (alt80) {
                 case 1 :
                     // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4615:2: ( (lv_constraints_2_0= ruleJvmUpperBound ) )
                     {
@@ -13382,7 +13399,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
                       	        newCompositeNode(grammarAccess.getJvmWildcardTypeReferenceAccess().getConstraintsJvmUpperBoundParserRuleCall_2_0_0()); 
                       	    
                     }
-                    pushFollow(FOLLOW_ruleJvmUpperBound_in_ruleJvmWildcardTypeReference10775);
+                    pushFollow(FOLLOW_ruleJvmUpperBound_in_ruleJvmWildcardTypeReference10778);
                     lv_constraints_2_0=ruleJvmUpperBound();
 
                     state._fsp--;
@@ -13423,7 +13440,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
                       	        newCompositeNode(grammarAccess.getJvmWildcardTypeReferenceAccess().getConstraintsJvmLowerBoundParserRuleCall_2_1_0()); 
                       	    
                     }
-                    pushFollow(FOLLOW_ruleJvmLowerBound_in_ruleJvmWildcardTypeReference10802);
+                    pushFollow(FOLLOW_ruleJvmLowerBound_in_ruleJvmWildcardTypeReference10805);
                     lv_constraints_3_0=ruleJvmLowerBound();
 
                     state._fsp--;
@@ -13490,7 +13507,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getJvmUpperBoundRule()); 
             }
-            pushFollow(FOLLOW_ruleJvmUpperBound_in_entryRuleJvmUpperBound10840);
+            pushFollow(FOLLOW_ruleJvmUpperBound_in_entryRuleJvmUpperBound10843);
             iv_ruleJvmUpperBound=ruleJvmUpperBound();
 
             state._fsp--;
@@ -13498,7 +13515,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleJvmUpperBound; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleJvmUpperBound10850); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleJvmUpperBound10853); if (state.failed) return current;
 
             }
 
@@ -13533,7 +13550,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
             // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4673:1: (otherlv_0= 'extends' ( (lv_typeReference_1_0= ruleJvmTypeReference ) ) )
             // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4673:3: otherlv_0= 'extends' ( (lv_typeReference_1_0= ruleJvmTypeReference ) )
             {
-            otherlv_0=(Token)match(input,73,FOLLOW_73_in_ruleJvmUpperBound10887); if (state.failed) return current;
+            otherlv_0=(Token)match(input,73,FOLLOW_73_in_ruleJvmUpperBound10890); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_0, grammarAccess.getJvmUpperBoundAccess().getExtendsKeyword_0());
@@ -13550,7 +13567,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
               	        newCompositeNode(grammarAccess.getJvmUpperBoundAccess().getTypeReferenceJvmTypeReferenceParserRuleCall_1_0()); 
               	    
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_ruleJvmUpperBound10908);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_ruleJvmUpperBound10911);
             lv_typeReference_1_0=ruleJvmTypeReference();
 
             state._fsp--;
@@ -13611,7 +13628,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getJvmUpperBoundAndedRule()); 
             }
-            pushFollow(FOLLOW_ruleJvmUpperBoundAnded_in_entryRuleJvmUpperBoundAnded10944);
+            pushFollow(FOLLOW_ruleJvmUpperBoundAnded_in_entryRuleJvmUpperBoundAnded10947);
             iv_ruleJvmUpperBoundAnded=ruleJvmUpperBoundAnded();
 
             state._fsp--;
@@ -13619,7 +13636,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleJvmUpperBoundAnded; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleJvmUpperBoundAnded10954); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleJvmUpperBoundAnded10957); if (state.failed) return current;
 
             }
 
@@ -13654,7 +13671,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
             // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4716:1: (otherlv_0= '&' ( (lv_typeReference_1_0= ruleJvmTypeReference ) ) )
             // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4716:3: otherlv_0= '&' ( (lv_typeReference_1_0= ruleJvmTypeReference ) )
             {
-            otherlv_0=(Token)match(input,74,FOLLOW_74_in_ruleJvmUpperBoundAnded10991); if (state.failed) return current;
+            otherlv_0=(Token)match(input,74,FOLLOW_74_in_ruleJvmUpperBoundAnded10994); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_0, grammarAccess.getJvmUpperBoundAndedAccess().getAmpersandKeyword_0());
@@ -13671,7 +13688,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
               	        newCompositeNode(grammarAccess.getJvmUpperBoundAndedAccess().getTypeReferenceJvmTypeReferenceParserRuleCall_1_0()); 
               	    
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_ruleJvmUpperBoundAnded11012);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_ruleJvmUpperBoundAnded11015);
             lv_typeReference_1_0=ruleJvmTypeReference();
 
             state._fsp--;
@@ -13732,7 +13749,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getJvmLowerBoundRule()); 
             }
-            pushFollow(FOLLOW_ruleJvmLowerBound_in_entryRuleJvmLowerBound11048);
+            pushFollow(FOLLOW_ruleJvmLowerBound_in_entryRuleJvmLowerBound11051);
             iv_ruleJvmLowerBound=ruleJvmLowerBound();
 
             state._fsp--;
@@ -13740,7 +13757,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleJvmLowerBound; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleJvmLowerBound11058); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleJvmLowerBound11061); if (state.failed) return current;
 
             }
 
@@ -13775,7 +13792,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
             // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4759:1: (otherlv_0= 'super' ( (lv_typeReference_1_0= ruleJvmTypeReference ) ) )
             // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4759:3: otherlv_0= 'super' ( (lv_typeReference_1_0= ruleJvmTypeReference ) )
             {
-            otherlv_0=(Token)match(input,59,FOLLOW_59_in_ruleJvmLowerBound11095); if (state.failed) return current;
+            otherlv_0=(Token)match(input,59,FOLLOW_59_in_ruleJvmLowerBound11098); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_0, grammarAccess.getJvmLowerBoundAccess().getSuperKeyword_0());
@@ -13792,7 +13809,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
               	        newCompositeNode(grammarAccess.getJvmLowerBoundAccess().getTypeReferenceJvmTypeReferenceParserRuleCall_1_0()); 
               	    
             }
-            pushFollow(FOLLOW_ruleJvmTypeReference_in_ruleJvmLowerBound11116);
+            pushFollow(FOLLOW_ruleJvmTypeReference_in_ruleJvmLowerBound11119);
             lv_typeReference_1_0=ruleJvmTypeReference();
 
             state._fsp--;
@@ -13853,7 +13870,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getValidIDRule()); 
             }
-            pushFollow(FOLLOW_ruleValidID_in_entryRuleValidID11155);
+            pushFollow(FOLLOW_ruleValidID_in_entryRuleValidID11158);
             iv_ruleValidID=ruleValidID();
 
             state._fsp--;
@@ -13861,7 +13878,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleValidID.getText(); 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleValidID11166); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleValidID11169); if (state.failed) return current;
 
             }
 
@@ -13891,7 +13908,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
             // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4803:28: (this_ID_0= RULE_ID )
             // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4804:5: this_ID_0= RULE_ID
             {
-            this_ID_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleValidID11205); if (state.failed) return current;
+            this_ID_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleValidID11208); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               		current.merge(this_ID_0);
@@ -14326,32 +14343,32 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
         }
 
         // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:1548:2: ( '.' | ( ( '?.' ) ) | ( ( '*.' ) ) )
-        int alt80=3;
+        int alt81=3;
         switch ( input.LA(1) ) {
         case 36:
             {
-            alt80=1;
+            alt81=1;
             }
             break;
         case 37:
             {
-            alt80=2;
+            alt81=2;
             }
             break;
         case 38:
             {
-            alt80=3;
+            alt81=3;
             }
             break;
         default:
             if (state.backtracking>0) {state.failed=true; return ;}
             NoViableAltException nvae =
-                new NoViableAltException("", 80, 0, input);
+                new NoViableAltException("", 81, 0, input);
 
             throw nvae;
         }
 
-        switch (alt80) {
+        switch (alt81) {
             case 1 :
                 // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:1548:4: '.'
                 {
@@ -14439,13 +14456,13 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
         }
 
         // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:1690:2: ( ( ( ruleJvmFormalParameter ) ) ( ',' ( ( ruleJvmFormalParameter ) ) )* )?
-        int alt82=2;
-        int LA82_0 = input.LA(1);
+        int alt83=2;
+        int LA83_0 = input.LA(1);
 
-        if ( (LA82_0==RULE_ID||LA82_0==40||LA82_0==71) ) {
-            alt82=1;
+        if ( (LA83_0==RULE_ID||LA83_0==40||LA83_0==71) ) {
+            alt83=1;
         }
-        switch (alt82) {
+        switch (alt83) {
             case 1 :
                 // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:1690:3: ( ( ruleJvmFormalParameter ) ) ( ',' ( ( ruleJvmFormalParameter ) ) )*
                 {
@@ -14467,17 +14484,17 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
                 }
 
                 // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:1694:2: ( ',' ( ( ruleJvmFormalParameter ) ) )*
-                loop81:
+                loop82:
                 do {
-                    int alt81=2;
-                    int LA81_0 = input.LA(1);
+                    int alt82=2;
+                    int LA82_0 = input.LA(1);
 
-                    if ( (LA81_0==39) ) {
-                        alt81=1;
+                    if ( (LA82_0==39) ) {
+                        alt82=1;
                     }
 
 
-                    switch (alt81) {
+                    switch (alt82) {
                 	case 1 :
                 	    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:1694:4: ',' ( ( ruleJvmFormalParameter ) )
                 	    {
@@ -14504,7 +14521,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
                 	    break;
 
                 	default :
-                	    break loop81;
+                	    break loop82;
                     }
                 } while (true);
 
@@ -14565,13 +14582,13 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
         // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:2051:4: ( ( ( ruleJvmFormalParameter ) ) ( ',' ( ( ruleJvmFormalParameter ) ) )* )? ( ( '|' ) )
         {
         // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:2051:4: ( ( ( ruleJvmFormalParameter ) ) ( ',' ( ( ruleJvmFormalParameter ) ) )* )?
-        int alt84=2;
-        int LA84_0 = input.LA(1);
+        int alt85=2;
+        int LA85_0 = input.LA(1);
 
-        if ( (LA84_0==RULE_ID||LA84_0==40||LA84_0==71) ) {
-            alt84=1;
+        if ( (LA85_0==RULE_ID||LA85_0==40||LA85_0==71) ) {
+            alt85=1;
         }
-        switch (alt84) {
+        switch (alt85) {
             case 1 :
                 // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:2051:5: ( ( ruleJvmFormalParameter ) ) ( ',' ( ( ruleJvmFormalParameter ) ) )*
                 {
@@ -14593,17 +14610,17 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
                 }
 
                 // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:2055:2: ( ',' ( ( ruleJvmFormalParameter ) ) )*
-                loop83:
+                loop84:
                 do {
-                    int alt83=2;
-                    int LA83_0 = input.LA(1);
+                    int alt84=2;
+                    int LA84_0 = input.LA(1);
 
-                    if ( (LA83_0==39) ) {
-                        alt83=1;
+                    if ( (LA84_0==39) ) {
+                        alt84=1;
                     }
 
 
-                    switch (alt83) {
+                    switch (alt84) {
                 	case 1 :
                 	    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:2055:4: ',' ( ( ruleJvmFormalParameter ) )
                 	    {
@@ -14630,7 +14647,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
                 	    break;
 
                 	default :
-                	    break loop83;
+                	    break loop84;
                     }
                 } while (true);
 
@@ -14787,13 +14804,13 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
         }
 
         // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:3376:2: ( ( ( ruleJvmFormalParameter ) ) ( ',' ( ( ruleJvmFormalParameter ) ) )* )?
-        int alt88=2;
-        int LA88_0 = input.LA(1);
+        int alt89=2;
+        int LA89_0 = input.LA(1);
 
-        if ( (LA88_0==RULE_ID||LA88_0==40||LA88_0==71) ) {
-            alt88=1;
+        if ( (LA89_0==RULE_ID||LA89_0==40||LA89_0==71) ) {
+            alt89=1;
         }
-        switch (alt88) {
+        switch (alt89) {
             case 1 :
                 // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:3376:3: ( ( ruleJvmFormalParameter ) ) ( ',' ( ( ruleJvmFormalParameter ) ) )*
                 {
@@ -14815,17 +14832,17 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
                 }
 
                 // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:3380:2: ( ',' ( ( ruleJvmFormalParameter ) ) )*
-                loop87:
+                loop88:
                 do {
-                    int alt87=2;
-                    int LA87_0 = input.LA(1);
+                    int alt88=2;
+                    int LA88_0 = input.LA(1);
 
-                    if ( (LA87_0==39) ) {
-                        alt87=1;
+                    if ( (LA88_0==39) ) {
+                        alt88=1;
                     }
 
 
-                    switch (alt87) {
+                    switch (alt88) {
                 	case 1 :
                 	    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:3380:4: ',' ( ( ruleJvmFormalParameter ) )
                 	    {
@@ -14852,7 +14869,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
                 	    break;
 
                 	default :
-                	    break loop87;
+                	    break loop88;
                     }
                 } while (true);
 
@@ -14918,13 +14935,13 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
         }
 
         // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:3652:2: ( ( ( ruleJvmFormalParameter ) ) ( ',' ( ( ruleJvmFormalParameter ) ) )* )?
-        int alt90=2;
-        int LA90_0 = input.LA(1);
+        int alt91=2;
+        int LA91_0 = input.LA(1);
 
-        if ( (LA90_0==RULE_ID||LA90_0==40||LA90_0==71) ) {
-            alt90=1;
+        if ( (LA91_0==RULE_ID||LA91_0==40||LA91_0==71) ) {
+            alt91=1;
         }
-        switch (alt90) {
+        switch (alt91) {
             case 1 :
                 // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:3652:3: ( ( ruleJvmFormalParameter ) ) ( ',' ( ( ruleJvmFormalParameter ) ) )*
                 {
@@ -14946,17 +14963,17 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
                 }
 
                 // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:3656:2: ( ',' ( ( ruleJvmFormalParameter ) ) )*
-                loop89:
+                loop90:
                 do {
-                    int alt89=2;
-                    int LA89_0 = input.LA(1);
+                    int alt90=2;
+                    int LA90_0 = input.LA(1);
 
-                    if ( (LA89_0==39) ) {
-                        alt89=1;
+                    if ( (LA90_0==39) ) {
+                        alt90=1;
                     }
 
 
-                    switch (alt89) {
+                    switch (alt90) {
                 	case 1 :
                 	    // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:3656:4: ',' ( ( ruleJvmFormalParameter ) )
                 	    {
@@ -14983,7 +15000,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
                 	    break;
 
                 	default :
-                	    break loop89;
+                	    break loop90;
                     }
                 } while (true);
 
@@ -15117,7 +15134,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
         // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4495:4: ( '<' )
         // ../org.xtext.example.helloxvars/src-gen/org/xtext/example/helloxvars/parser/antlr/internal/InternalHelloXvars.g:4495:6: '<'
         {
-        match(input,26,FOLLOW_26_in_synpred32_InternalHelloXvars10462); if (state.failed) return ;
+        match(input,26,FOLLOW_26_in_synpred32_InternalHelloXvars10465); if (state.failed) return ;
 
         }
     }
@@ -15557,7 +15574,7 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
     protected DFA64 dfa64 = new DFA64(this);
     protected DFA65 dfa65 = new DFA65(this);
     protected DFA67 dfa67 = new DFA67(this);
-    protected DFA77 dfa77 = new DFA77(this);
+    protected DFA78 dfa78 = new DFA78(this);
     static final String DFA27_eotS =
         "\75\uffff";
     static final String DFA27_eofS =
@@ -17290,19 +17307,19 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
             throw nvae;
         }
     }
-    static final String DFA77_eotS =
+    static final String DFA78_eotS =
         "\75\uffff";
-    static final String DFA77_eofS =
+    static final String DFA78_eofS =
         "\1\2\74\uffff";
-    static final String DFA77_minS =
+    static final String DFA78_minS =
         "\1\4\1\0\73\uffff";
-    static final String DFA77_maxS =
+    static final String DFA78_maxS =
         "\1\107\1\0\73\uffff";
-    static final String DFA77_acceptS =
+    static final String DFA78_acceptS =
         "\2\uffff\1\2\71\uffff\1\1";
-    static final String DFA77_specialS =
+    static final String DFA78_specialS =
         "\1\uffff\1\0\73\uffff}>";
-    static final String[] DFA77_transitionS = {
+    static final String[] DFA78_transitionS = {
             "\3\2\6\uffff\1\2\1\uffff\1\2\1\uffff\11\2\1\1\20\2\1\uffff\20"+
             "\2\1\uffff\13\2",
             "\1\uffff",
@@ -17367,34 +17384,34 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
             ""
     };
 
-    static final short[] DFA77_eot = DFA.unpackEncodedString(DFA77_eotS);
-    static final short[] DFA77_eof = DFA.unpackEncodedString(DFA77_eofS);
-    static final char[] DFA77_min = DFA.unpackEncodedStringToUnsignedChars(DFA77_minS);
-    static final char[] DFA77_max = DFA.unpackEncodedStringToUnsignedChars(DFA77_maxS);
-    static final short[] DFA77_accept = DFA.unpackEncodedString(DFA77_acceptS);
-    static final short[] DFA77_special = DFA.unpackEncodedString(DFA77_specialS);
-    static final short[][] DFA77_transition;
+    static final short[] DFA78_eot = DFA.unpackEncodedString(DFA78_eotS);
+    static final short[] DFA78_eof = DFA.unpackEncodedString(DFA78_eofS);
+    static final char[] DFA78_min = DFA.unpackEncodedStringToUnsignedChars(DFA78_minS);
+    static final char[] DFA78_max = DFA.unpackEncodedStringToUnsignedChars(DFA78_maxS);
+    static final short[] DFA78_accept = DFA.unpackEncodedString(DFA78_acceptS);
+    static final short[] DFA78_special = DFA.unpackEncodedString(DFA78_specialS);
+    static final short[][] DFA78_transition;
 
     static {
-        int numStates = DFA77_transitionS.length;
-        DFA77_transition = new short[numStates][];
+        int numStates = DFA78_transitionS.length;
+        DFA78_transition = new short[numStates][];
         for (int i=0; i<numStates; i++) {
-            DFA77_transition[i] = DFA.unpackEncodedString(DFA77_transitionS[i]);
+            DFA78_transition[i] = DFA.unpackEncodedString(DFA78_transitionS[i]);
         }
     }
 
-    class DFA77 extends DFA {
+    class DFA78 extends DFA {
 
-        public DFA77(BaseRecognizer recognizer) {
+        public DFA78(BaseRecognizer recognizer) {
             this.recognizer = recognizer;
-            this.decisionNumber = 77;
-            this.eot = DFA77_eot;
-            this.eof = DFA77_eof;
-            this.min = DFA77_min;
-            this.max = DFA77_max;
-            this.accept = DFA77_accept;
-            this.special = DFA77_special;
-            this.transition = DFA77_transition;
+            this.decisionNumber = 78;
+            this.eot = DFA78_eot;
+            this.eof = DFA78_eof;
+            this.min = DFA78_min;
+            this.max = DFA78_max;
+            this.accept = DFA78_accept;
+            this.special = DFA78_special;
+            this.transition = DFA78_transition;
         }
         public String getDescription() {
             return "4495:2: ( ( ( '<' )=>otherlv_1= '<' ) ( (lv_arguments_2_0= ruleJvmArgumentTypeReference ) ) (otherlv_3= ',' ( (lv_arguments_4_0= ruleJvmArgumentTypeReference ) ) )* otherlv_5= '>' )?";
@@ -17404,10 +17421,10 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA77_1 = input.LA(1);
+                        int LA78_1 = input.LA(1);
 
                          
-                        int index77_1 = input.index();
+                        int index78_1 = input.index();
                         input.rewind();
                         s = -1;
                         if ( (synpred32_InternalHelloXvars()) ) {s = 60;}
@@ -17415,13 +17432,13 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
                         else if ( (true) ) {s = 2;}
 
                          
-                        input.seek(index77_1);
+                        input.seek(index78_1);
                         if ( s>=0 ) return s;
                         break;
             }
             if (state.backtracking>0) {state.failed=true; return -1;}
             NoViableAltException nvae =
-                new NoViableAltException(getDescription(), 77, _s, input);
+                new NoViableAltException(getDescription(), 78, _s, input);
             error(nvae);
             throw nvae;
         }
@@ -17793,45 +17810,45 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_ruleXFunctionTypeRef_in_ruleJvmTypeReference10168 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleXFunctionTypeRef_in_entryRuleXFunctionTypeRef10203 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleXFunctionTypeRef10213 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_40_in_ruleXFunctionTypeRef10251 = new BitSet(new long[]{0x0000010000000010L,0x0000000000000080L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_ruleXFunctionTypeRef10272 = new BitSet(new long[]{0x0000028000000000L});
-    public static final BitSet FOLLOW_39_in_ruleXFunctionTypeRef10285 = new BitSet(new long[]{0x0000010000000010L,0x0000000000000080L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_ruleXFunctionTypeRef10306 = new BitSet(new long[]{0x0000028000000000L});
-    public static final BitSet FOLLOW_41_in_ruleXFunctionTypeRef10320 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000080L});
-    public static final BitSet FOLLOW_71_in_ruleXFunctionTypeRef10334 = new BitSet(new long[]{0x0000010000000010L,0x0000000000000080L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_ruleXFunctionTypeRef10355 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmParameterizedTypeReference_in_entryRuleJvmParameterizedTypeReference10391 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleJvmParameterizedTypeReference10401 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_ruleJvmParameterizedTypeReference10449 = new BitSet(new long[]{0x0000000004000002L});
-    public static final BitSet FOLLOW_26_in_ruleJvmParameterizedTypeReference10470 = new BitSet(new long[]{0x0000010000000010L,0x0000000000000180L});
-    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_ruleJvmParameterizedTypeReference10492 = new BitSet(new long[]{0x0000008002000000L});
-    public static final BitSet FOLLOW_39_in_ruleJvmParameterizedTypeReference10505 = new BitSet(new long[]{0x0000010000000010L,0x0000000000000180L});
-    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_ruleJvmParameterizedTypeReference10526 = new BitSet(new long[]{0x0000008002000000L});
-    public static final BitSet FOLLOW_25_in_ruleJvmParameterizedTypeReference10540 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_entryRuleJvmArgumentTypeReference10578 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleJvmArgumentTypeReference10588 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_ruleJvmArgumentTypeReference10635 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmWildcardTypeReference_in_ruleJvmArgumentTypeReference10662 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmWildcardTypeReference_in_entryRuleJvmWildcardTypeReference10697 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleJvmWildcardTypeReference10707 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_72_in_ruleJvmWildcardTypeReference10753 = new BitSet(new long[]{0x0800000000000002L,0x0000000000000200L});
-    public static final BitSet FOLLOW_ruleJvmUpperBound_in_ruleJvmWildcardTypeReference10775 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmLowerBound_in_ruleJvmWildcardTypeReference10802 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmUpperBound_in_entryRuleJvmUpperBound10840 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleJvmUpperBound10850 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_73_in_ruleJvmUpperBound10887 = new BitSet(new long[]{0x0000010000000010L,0x0000000000000080L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_ruleJvmUpperBound10908 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmUpperBoundAnded_in_entryRuleJvmUpperBoundAnded10944 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleJvmUpperBoundAnded10954 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_74_in_ruleJvmUpperBoundAnded10991 = new BitSet(new long[]{0x0000010000000010L,0x0000000000000080L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_ruleJvmUpperBoundAnded11012 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJvmLowerBound_in_entryRuleJvmLowerBound11048 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleJvmLowerBound11058 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_59_in_ruleJvmLowerBound11095 = new BitSet(new long[]{0x0000010000000010L,0x0000000000000080L});
-    public static final BitSet FOLLOW_ruleJvmTypeReference_in_ruleJvmLowerBound11116 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleValidID_in_entryRuleValidID11155 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleValidID11166 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleValidID11205 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_40_in_ruleXFunctionTypeRef10251 = new BitSet(new long[]{0x0000030000000010L,0x0000000000000080L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_ruleXFunctionTypeRef10273 = new BitSet(new long[]{0x0000028000000000L});
+    public static final BitSet FOLLOW_39_in_ruleXFunctionTypeRef10286 = new BitSet(new long[]{0x0000010000000010L,0x0000000000000080L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_ruleXFunctionTypeRef10307 = new BitSet(new long[]{0x0000028000000000L});
+    public static final BitSet FOLLOW_41_in_ruleXFunctionTypeRef10323 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000080L});
+    public static final BitSet FOLLOW_71_in_ruleXFunctionTypeRef10337 = new BitSet(new long[]{0x0000010000000010L,0x0000000000000080L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_ruleXFunctionTypeRef10358 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmParameterizedTypeReference_in_entryRuleJvmParameterizedTypeReference10394 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleJvmParameterizedTypeReference10404 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_ruleJvmParameterizedTypeReference10452 = new BitSet(new long[]{0x0000000004000002L});
+    public static final BitSet FOLLOW_26_in_ruleJvmParameterizedTypeReference10473 = new BitSet(new long[]{0x0000010000000010L,0x0000000000000180L});
+    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_ruleJvmParameterizedTypeReference10495 = new BitSet(new long[]{0x0000008002000000L});
+    public static final BitSet FOLLOW_39_in_ruleJvmParameterizedTypeReference10508 = new BitSet(new long[]{0x0000010000000010L,0x0000000000000180L});
+    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_ruleJvmParameterizedTypeReference10529 = new BitSet(new long[]{0x0000008002000000L});
+    public static final BitSet FOLLOW_25_in_ruleJvmParameterizedTypeReference10543 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmArgumentTypeReference_in_entryRuleJvmArgumentTypeReference10581 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleJvmArgumentTypeReference10591 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_ruleJvmArgumentTypeReference10638 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmWildcardTypeReference_in_ruleJvmArgumentTypeReference10665 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmWildcardTypeReference_in_entryRuleJvmWildcardTypeReference10700 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleJvmWildcardTypeReference10710 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_72_in_ruleJvmWildcardTypeReference10756 = new BitSet(new long[]{0x0800000000000002L,0x0000000000000200L});
+    public static final BitSet FOLLOW_ruleJvmUpperBound_in_ruleJvmWildcardTypeReference10778 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmLowerBound_in_ruleJvmWildcardTypeReference10805 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmUpperBound_in_entryRuleJvmUpperBound10843 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleJvmUpperBound10853 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_73_in_ruleJvmUpperBound10890 = new BitSet(new long[]{0x0000010000000010L,0x0000000000000080L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_ruleJvmUpperBound10911 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmUpperBoundAnded_in_entryRuleJvmUpperBoundAnded10947 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleJvmUpperBoundAnded10957 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_74_in_ruleJvmUpperBoundAnded10994 = new BitSet(new long[]{0x0000010000000010L,0x0000000000000080L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_ruleJvmUpperBoundAnded11015 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJvmLowerBound_in_entryRuleJvmLowerBound11051 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleJvmLowerBound11061 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_59_in_ruleJvmLowerBound11098 = new BitSet(new long[]{0x0000010000000010L,0x0000000000000080L});
+    public static final BitSet FOLLOW_ruleJvmTypeReference_in_ruleJvmLowerBound11119 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValidID_in_entryRuleValidID11158 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleValidID11169 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleValidID11208 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleOpMultiAssign_in_synpred1_InternalHelloXvars831 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleOpOr_in_synpred2_InternalHelloXvars1179 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleOpAnd_in_synpred3_InternalHelloXvars1438 = new BitSet(new long[]{0x0000000000000002L});
@@ -17880,6 +17897,6 @@ public class InternalHelloXvarsParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_36_in_synpred30_InternalHelloXvars9949 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_42_in_synpred31_InternalHelloXvars10101 = new BitSet(new long[]{0x0000100000000000L});
     public static final BitSet FOLLOW_44_in_synpred31_InternalHelloXvars10105 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_synpred32_InternalHelloXvars10462 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_synpred32_InternalHelloXvars10465 = new BitSet(new long[]{0x0000000000000002L});
 
 }

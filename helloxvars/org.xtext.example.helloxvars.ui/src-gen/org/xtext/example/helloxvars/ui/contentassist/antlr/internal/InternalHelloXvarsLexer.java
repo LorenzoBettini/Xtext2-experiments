@@ -1425,10 +1425,10 @@ public class InternalHelloXvarsLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14690:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )* )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14690:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14720:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )* )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14720:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14690:11: ( '^' )?
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14720:11: ( '^' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -1437,7 +1437,7 @@ public class InternalHelloXvarsLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14690:11: '^'
+                    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14720:11: '^'
                     {
                     match('^'); 
 
@@ -1455,7 +1455,7 @@ public class InternalHelloXvarsLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14690:44: ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14720:44: ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
             loop2:
             do {
                 int alt2=2;
@@ -1504,10 +1504,10 @@ public class InternalHelloXvarsLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14692:10: ( ( '0' .. '9' )+ )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14692:12: ( '0' .. '9' )+
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14722:10: ( ( '0' .. '9' )+ )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14722:12: ( '0' .. '9' )+
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14692:12: ( '0' .. '9' )+
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14722:12: ( '0' .. '9' )+
             int cnt3=0;
             loop3:
             do {
@@ -1521,7 +1521,7 @@ public class InternalHelloXvarsLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14692:13: '0' .. '9'
+            	    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14722:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -1553,10 +1553,10 @@ public class InternalHelloXvarsLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14694:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14694:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14724:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14724:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14694:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14724:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -1574,10 +1574,10 @@ public class InternalHelloXvarsLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14694:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14724:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14694:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14724:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop4:
                     do {
                         int alt4=3;
@@ -1593,7 +1593,7 @@ public class InternalHelloXvarsLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14694:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14724:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -1609,7 +1609,7 @@ public class InternalHelloXvarsLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14694:66: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14724:66: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1634,10 +1634,10 @@ public class InternalHelloXvarsLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14694:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14724:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14694:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14724:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -1653,7 +1653,7 @@ public class InternalHelloXvarsLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14694:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14724:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -1669,7 +1669,7 @@ public class InternalHelloXvarsLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14694:137: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14724:137: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1712,12 +1712,12 @@ public class InternalHelloXvarsLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14696:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14696:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14726:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14726:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14696:24: ( options {greedy=false; } : . )*
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14726:24: ( options {greedy=false; } : . )*
             loop7:
             do {
                 int alt7=2;
@@ -1742,7 +1742,7 @@ public class InternalHelloXvarsLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14696:52: .
+            	    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14726:52: .
             	    {
             	    matchAny(); 
 
@@ -1772,12 +1772,12 @@ public class InternalHelloXvarsLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14698:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14698:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14728:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14728:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14698:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14728:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop8:
             do {
                 int alt8=2;
@@ -1790,7 +1790,7 @@ public class InternalHelloXvarsLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14698:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14728:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -1810,7 +1810,7 @@ public class InternalHelloXvarsLexer extends Lexer {
                 }
             } while (true);
 
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14698:40: ( ( '\\r' )? '\\n' )?
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14728:40: ( ( '\\r' )? '\\n' )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -1819,9 +1819,9 @@ public class InternalHelloXvarsLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14698:41: ( '\\r' )? '\\n'
+                    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14728:41: ( '\\r' )? '\\n'
                     {
-                    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14698:41: ( '\\r' )?
+                    // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14728:41: ( '\\r' )?
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -1830,7 +1830,7 @@ public class InternalHelloXvarsLexer extends Lexer {
                     }
                     switch (alt9) {
                         case 1 :
-                            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14698:41: '\\r'
+                            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14728:41: '\\r'
                             {
                             match('\r'); 
 
@@ -1862,10 +1862,10 @@ public class InternalHelloXvarsLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14700:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14700:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14730:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14730:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14700:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14730:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt11=0;
             loop11:
             do {
@@ -1919,8 +1919,8 @@ public class InternalHelloXvarsLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14702:16: ( . )
-            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14702:18: .
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14732:16: ( . )
+            // ../org.xtext.example.helloxvars.ui/src-gen/org/xtext/example/helloxvars/ui/contentassist/antlr/internal/InternalHelloXvars.g:14732:18: .
             {
             matchAny(); 
 

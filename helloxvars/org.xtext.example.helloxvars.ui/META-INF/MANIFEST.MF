@@ -21,5 +21,6 @@ Import-Package: org.apache.log4j,
  org.apache.commons.logging
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Export-Package: org.xtext.example.helloxvars.ui.contentassist.antlr,
- org.xtext.example.helloxvars.ui.internal
+ org.xtext.example.helloxvars.ui.internal,
+ org.xtext.example.helloxvars.ui.contentassist
 Bundle-Activator: org.xtext.example.helloxvars.ui.internal.HelloXvarsActivator
