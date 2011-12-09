@@ -4,6 +4,7 @@ import com.google.inject.Inject;
 import java.util.List;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.xtend2.lib.StringConcatenation;
 import org.eclipse.xtext.common.types.JvmGenericType;
 import org.eclipse.xtext.common.types.TypesFactory;
 import org.eclipse.xtext.generator.IFileSystemAccess;
@@ -16,7 +17,6 @@ import org.eclipse.xtext.xbase.lib.BooleanExtensions;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
 import org.eclipse.xtext.xbase.lib.StringExtensions;
 import org.eclipse.xtext.xtend2.lib.ResourceExtensions;
-import org.eclipse.xtext.xtend2.lib.StringConcatenation;
 import org.xtext.example.helloxbase.helloXbase.Greeting;
 
 @SuppressWarnings("all")
@@ -33,7 +33,7 @@ public class HelloXbaseGenerator implements IGenerator {
       String _className = this.className(greeting);
       String _operator_plus_1 = StringExtensions.operator_plus(_operator_plus, _className);
       String _operator_plus_2 = StringExtensions.operator_plus(_operator_plus_1, ".java");
-      StringConcatenation _compile = this.compile(greeting);
+      CharSequence _compile = this.compile(greeting);
       fsa.generateFile(_operator_plus_2, _compile);
     }
   }
@@ -52,14 +52,14 @@ public class HelloXbaseGenerator implements IGenerator {
     return _xblockexpression;
   }
   
-  public StringConcatenation compile(final Greeting greeting) {
+  public CharSequence compile(final Greeting greeting) {
     StringConcatenation _builder = new StringConcatenation();
     JvmGenericType _jvmType = this.getJvmType(greeting);
     ImportManager _importManager = new ImportManager(true, _jvmType);
     final ImportManager importManager = _importManager;
     _builder.newLineIfNotEmpty();
-    StringConcatenation _compile = this.compile(greeting, importManager);
-    final StringConcatenation mainMethod = _compile;
+    CharSequence _compile = this.compile(greeting, importManager);
+    final CharSequence mainMethod = _compile;
     _builder.newLineIfNotEmpty();
     _builder.append("package ");
     String _packageName = this.packageName(greeting);
@@ -89,7 +89,7 @@ public class HelloXbaseGenerator implements IGenerator {
     return _builder;
   }
   
-  public StringConcatenation compile(final Greeting greeting, final ImportManager importManager) {
+  public CharSequence compile(final Greeting greeting, final ImportManager importManager) {
     StringConcatenation _builder = new StringConcatenation();
     XExpression _expression = greeting.getExpression();
     StringBuilderBasedAppendable _compile = this.compile(_expression, importManager);
