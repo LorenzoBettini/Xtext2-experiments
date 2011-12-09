@@ -8,6 +8,7 @@ import org.eclipse.xtext.junit4.XtextRunner;
 import org.eclipse.xtext.junit4.util.ParseHelper;
 import org.eclipse.xtext.junit4.validation.ValidationTestHelper;
 import org.eclipse.xtext.xbase.XbasePackage;
+import org.eclipse.xtext.xbase.lib.Exceptions;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.xtext.example.helloxvars.HelloXvarsInjectorProvider;
@@ -24,34 +25,54 @@ public class HelloXvarsParserTest {
   private ValidationTestHelper _validationTestHelper;
   
   @Test
-  public void testParsingAndLinking() throws Exception {
-    Model _parse = this.parser.parse("Hello foo from new String()!");
-    this._validationTestHelper.assertNoErrors(_parse);
+  public void testParsingAndLinking() {
+    try {
+      Model _parse = this.parser.parse("Hello foo from new String()!");
+      this._validationTestHelper.assertNoErrors(_parse);
+    } catch (Exception _e) {
+      throw Exceptions.sneakyThrow(_e);
+    }
   }
   
   @Test
-  public void testParsingAndLinkingWithVars() throws Exception {
-    Model _parse = this.parser.parse("\n\t\t\tval s1 = \'foo\'\n\t\t\tval s2 = \'bar\'\n\t\t\tval s3 = s1 + s2\n\t\t\tHello foo from new String(s3)!\n\t\t");
-    this._validationTestHelper.assertNoErrors(_parse);
+  public void testParsingAndLinkingWithVars() {
+    try {
+      Model _parse = this.parser.parse("\n\t\t\tval s1 = \'foo\'\n\t\t\tval s2 = \'bar\'\n\t\t\tval s3 = s1 + s2\n\t\t\tHello foo from new String(s3)!\n\t\t");
+      this._validationTestHelper.assertNoErrors(_parse);
+    } catch (Exception _e) {
+      throw Exceptions.sneakyThrow(_e);
+    }
   }
   
   @Test
-  public void testParsingAndLinkingWithClosures() throws Exception {
-    Model _parse = this.parser.parse("\n\t\t\tval s1 = \'foo\'\n\t\t\tval s2 = \'bar\'\n\t\t\tval s3 = s1 + [ s | s.toFirstLower + s1 ].apply(s2 + s1)\n\t\t\tHello foo from new String(s3)!\n\t\t");
-    this._validationTestHelper.assertNoErrors(_parse);
+  public void testParsingAndLinkingWithClosures() {
+    try {
+      Model _parse = this.parser.parse("\n\t\t\tval s1 = \'foo\'\n\t\t\tval s2 = \'bar\'\n\t\t\tval s3 = s1 + [ s | s.toFirstLower + s1 ].apply(s2 + s1)\n\t\t\tHello foo from new String(s3)!\n\t\t");
+      this._validationTestHelper.assertNoErrors(_parse);
+    } catch (Exception _e) {
+      throw Exceptions.sneakyThrow(_e);
+    }
   }
   
   @Test
-  public void testParsingAndLinkingWithMissingVar() throws Exception {
-    Model _parse = this.parser.parse("\n\t\t\tHello foo from new String(s)!\n\t\t");
-    EClass _xFeatureCall = XbasePackage.eINSTANCE.getXFeatureCall();
-    this._validationTestHelper.assertError(_parse, _xFeatureCall, Diagnostic.LINKING_DIAGNOSTIC, "Couldn\'t resolve reference to JvmIdentifiableElement \'s\'.");
+  public void testParsingAndLinkingWithMissingVar() {
+    try {
+      Model _parse = this.parser.parse("\n\t\t\tHello foo from new String(s)!\n\t\t");
+      EClass _xFeatureCall = XbasePackage.eINSTANCE.getXFeatureCall();
+      this._validationTestHelper.assertError(_parse, _xFeatureCall, Diagnostic.LINKING_DIAGNOSTIC, "Couldn\'t resolve reference to JvmIdentifiableElement \'s\'.");
+    } catch (Exception _e) {
+      throw Exceptions.sneakyThrow(_e);
+    }
   }
   
   @Test
-  public void testParsingAndLinkingWithWrongVarOrder() throws Exception {
-    Model _parse = this.parser.parse("\n\t\t\tval s1 = s2\n\t\t\tval s2 = s1\n\t\t\tHello foo from new String(s1)!\n\t\t");
-    EClass _xFeatureCall = XbasePackage.eINSTANCE.getXFeatureCall();
-    this._validationTestHelper.assertError(_parse, _xFeatureCall, Diagnostic.LINKING_DIAGNOSTIC, "Couldn\'t resolve reference to JvmIdentifiableElement \'s2\'.");
+  public void testParsingAndLinkingWithWrongVarOrder() {
+    try {
+      Model _parse = this.parser.parse("\n\t\t\tval s1 = s2\n\t\t\tval s2 = s1\n\t\t\tHello foo from new String(s1)!\n\t\t");
+      EClass _xFeatureCall = XbasePackage.eINSTANCE.getXFeatureCall();
+      this._validationTestHelper.assertError(_parse, _xFeatureCall, Diagnostic.LINKING_DIAGNOSTIC, "Couldn\'t resolve reference to JvmIdentifiableElement \'s2\'.");
+    } catch (Exception _e) {
+      throw Exceptions.sneakyThrow(_e);
+    }
   }
 }

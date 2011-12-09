@@ -1,6 +1,7 @@
 package org.xtext.example.helloxvars.jvmmodel;
 
 import com.google.inject.Inject;
+import java.util.Arrays;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.common.types.JvmDeclaredType;
 import org.eclipse.xtext.util.IAcceptor;
@@ -37,8 +38,11 @@ public class HelloXvarsJvmModelInferrer extends AbstractModelInferrer {
   public void infer(final EObject element, final IAcceptor<JvmDeclaredType> acceptor, final boolean isPrelinkingPhase) {
     if (element instanceof Model) {
       _infer((Model)element, acceptor, isPrelinkingPhase);
-    } else {
+    } else if (element != null) {
       _infer(element, acceptor, isPrelinkingPhase);
+    } else {
+      throw new IllegalArgumentException("Unhandled parameter types: " +
+        Arrays.<Object>asList(element, acceptor, isPrelinkingPhase).toString());
     }
   }
 }
