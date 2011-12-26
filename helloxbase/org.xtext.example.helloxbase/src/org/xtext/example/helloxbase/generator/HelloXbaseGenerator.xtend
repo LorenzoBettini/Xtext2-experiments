@@ -14,7 +14,7 @@ import org.eclipse.xtext.xbase.compiler.StringBuilderBasedAppendable
 import org.eclipse.xtext.xbase.compiler.XbaseCompiler
 import org.xtext.example.helloxbase.helloXbase.Greeting
 
-import static extension org.eclipse.xtext.xtend2.lib.ResourceExtensions.*
+import static extension org.eclipse.xtext.xbase.lib.IteratorExtensions.*
 
 class HelloXbaseGenerator implements IGenerator {
 	
@@ -22,7 +22,7 @@ class HelloXbaseGenerator implements IGenerator {
 	protected XbaseCompiler xbaseCompiler
 
 	override void doGenerate(Resource resource, IFileSystemAccess fsa) {
-		for(greeting: resource.allContentsIterable.filter(typeof(Greeting))) {
+		for(greeting: resource.allContents.toIterable.filter(typeof(Greeting))) {
 			fsa.generateFile(
 				greeting.packageName + "/" + // package
 				greeting.className + ".java", // class name

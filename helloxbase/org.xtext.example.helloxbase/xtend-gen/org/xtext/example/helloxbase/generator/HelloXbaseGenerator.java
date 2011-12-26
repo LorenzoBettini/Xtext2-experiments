@@ -2,6 +2,7 @@ package org.xtext.example.helloxbase.generator;
 
 import com.google.inject.Inject;
 import java.util.List;
+import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.xtend2.lib.StringConcatenation;
@@ -15,8 +16,8 @@ import org.eclipse.xtext.xbase.compiler.StringBuilderBasedAppendable;
 import org.eclipse.xtext.xbase.compiler.XbaseCompiler;
 import org.eclipse.xtext.xbase.lib.BooleanExtensions;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
+import org.eclipse.xtext.xbase.lib.IteratorExtensions;
 import org.eclipse.xtext.xbase.lib.StringExtensions;
-import org.eclipse.xtext.xtend2.lib.ResourceExtensions;
 import org.xtext.example.helloxbase.helloXbase.Greeting;
 
 @SuppressWarnings("all")
@@ -25,8 +26,9 @@ public class HelloXbaseGenerator implements IGenerator {
   protected XbaseCompiler xbaseCompiler;
   
   public void doGenerate(final Resource resource, final IFileSystemAccess fsa) {
-    Iterable<EObject> _allContentsIterable = ResourceExtensions.allContentsIterable(resource);
-    Iterable<Greeting> _filter = IterableExtensions.<Greeting>filter(_allContentsIterable, org.xtext.example.helloxbase.helloXbase.Greeting.class);
+    TreeIterator<EObject> _allContents = resource.getAllContents();
+    Iterable<EObject> _iterable = IteratorExtensions.<EObject>toIterable(_allContents);
+    Iterable<Greeting> _filter = IterableExtensions.<Greeting>filter(_iterable, org.xtext.example.helloxbase.helloXbase.Greeting.class);
     for (final Greeting greeting : _filter) {
       String _packageName = this.packageName(greeting);
       String _operator_plus = StringExtensions.operator_plus(_packageName, "/");

@@ -8,14 +8,14 @@ import org.eclipse.xtext.generator.IGenerator
 import org.eclipse.xtext.generator.IFileSystemAccess
 import org.xtext.example.hellojvmtypes.helloJvmTypes.Greeting
 
-import static extension org.eclipse.xtext.xtend2.lib.ResourceExtensions.*
+import static extension org.eclipse.xtext.xbase.lib.IteratorExtensions.*
 import org.eclipse.xtext.xbase.compiler.ImportManager
 import org.eclipse.xtext.common.types.TypesFactory
 
 class HelloJvmTypesGenerator implements IGenerator {
 	
 	override void doGenerate(Resource resource, IFileSystemAccess fsa) {
-		for(greeting: resource.allContentsIterable.filter(typeof(Greeting))) {
+		for(greeting: resource.allContents.toIterable.filter(typeof(Greeting))) {
 			fsa.generateFile(
 				greeting.packageName + "/" + // package
 				greeting.className + ".java", // class name

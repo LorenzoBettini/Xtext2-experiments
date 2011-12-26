@@ -2,6 +2,7 @@ package org.xtext.example.hellojvmtypes.generator;
 
 import java.util.List;
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.xtend2.lib.StringConcatenation;
@@ -13,15 +14,16 @@ import org.eclipse.xtext.generator.IGenerator;
 import org.eclipse.xtext.xbase.compiler.ImportManager;
 import org.eclipse.xtext.xbase.lib.BooleanExtensions;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
+import org.eclipse.xtext.xbase.lib.IteratorExtensions;
 import org.eclipse.xtext.xbase.lib.StringExtensions;
-import org.eclipse.xtext.xtend2.lib.ResourceExtensions;
 import org.xtext.example.hellojvmtypes.helloJvmTypes.Greeting;
 
 @SuppressWarnings("all")
 public class HelloJvmTypesGenerator implements IGenerator {
   public void doGenerate(final Resource resource, final IFileSystemAccess fsa) {
-    Iterable<EObject> _allContentsIterable = ResourceExtensions.allContentsIterable(resource);
-    Iterable<Greeting> _filter = IterableExtensions.<Greeting>filter(_allContentsIterable, org.xtext.example.hellojvmtypes.helloJvmTypes.Greeting.class);
+    TreeIterator<EObject> _allContents = resource.getAllContents();
+    Iterable<EObject> _iterable = IteratorExtensions.<EObject>toIterable(_allContents);
+    Iterable<Greeting> _filter = IterableExtensions.<Greeting>filter(_iterable, org.xtext.example.hellojvmtypes.helloJvmTypes.Greeting.class);
     for (final Greeting greeting : _filter) {
       String _packageName = this.packageName(greeting);
       String _operator_plus = StringExtensions.operator_plus(_packageName, "/");
