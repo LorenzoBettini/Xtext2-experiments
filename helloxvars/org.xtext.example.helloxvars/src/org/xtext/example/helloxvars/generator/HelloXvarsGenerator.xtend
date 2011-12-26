@@ -9,7 +9,7 @@ import org.eclipse.xtext.generator.IFileSystemAccess
 import com.google.inject.Inject
 import org.eclipse.xtext.xbase.compiler.XbaseCompiler
 
-import static extension org.eclipse.xtext.xtend2.lib.ResourceExtensions.*
+import static extension org.eclipse.xtext.xbase.lib.IteratorExtensions.*
 import org.xtext.example.helloxvars.helloXvars.Greeting
 import org.eclipse.xtext.common.types.TypesFactory
 import org.eclipse.xtext.xbase.compiler.ImportManager
@@ -24,7 +24,7 @@ class HelloXvarsGenerator implements IGenerator {
 	protected XbaseCompiler xbaseCompiler
 
 	override void doGenerate(Resource resource, IFileSystemAccess fsa) {
-		for(greeting: resource.allContentsIterable.filter(typeof(Greeting))) {
+		for(greeting: resource.allContents.toIterable.filter(typeof(Greeting))) {
 			fsa.generateFile(
 				greeting.packageName + "/" + // package
 				greeting.className + ".java", // class name
