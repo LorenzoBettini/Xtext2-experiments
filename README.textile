@@ -12,6 +12,8 @@ h2. helloxbase
 
 Some experiments using Xbase expressions in an Xtext DSL, while keeping control on the generation (and reusing XbaseCompiler for generating Java code corresponding to Xbase expressions).  Blogged here: "Xtext 2.1: using Xbase expressions":http://www.rcp-vision.com/?p=1640 .
 
+h2. helloxvars
 
+Some experiments using Xbase variable declarations in an Xtext DSL, while keeping control on the generation (and reusing XbaseCompiler for generating Java code corresponding to Xbase variable declarations and initialization expressions).  Blogged here: "Xtext 2.1: using Xbase variables":http://www.rcp-vision.com/?p=1796 .
 
 
