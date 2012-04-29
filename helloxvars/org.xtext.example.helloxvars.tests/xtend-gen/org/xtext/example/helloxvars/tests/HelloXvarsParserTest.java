@@ -59,7 +59,9 @@ public class HelloXvarsParserTest {
     try {
       Model _parse = this.parser.parse("\n\t\t\tHello foo from new String(s)!\n\t\t");
       EClass _xFeatureCall = XbasePackage.eINSTANCE.getXFeatureCall();
-      this._validationTestHelper.assertError(_parse, _xFeatureCall, Diagnostic.LINKING_DIAGNOSTIC, "Couldn\'t resolve reference to JvmIdentifiableElement \'s\'.");
+      this._validationTestHelper.assertError(_parse, _xFeatureCall, 
+        Diagnostic.LINKING_DIAGNOSTIC, 
+        "Couldn\'t resolve reference to JvmIdentifiableElement \'s\'.");
     } catch (Exception _e) {
       throw Exceptions.sneakyThrow(_e);
     }
@@ -70,7 +72,9 @@ public class HelloXvarsParserTest {
     try {
       Model _parse = this.parser.parse("\n\t\t\tval s1 = s2\n\t\t\tval s2 = s1\n\t\t\tHello foo from new String(s1)!\n\t\t");
       EClass _xFeatureCall = XbasePackage.eINSTANCE.getXFeatureCall();
-      this._validationTestHelper.assertError(_parse, _xFeatureCall, Diagnostic.LINKING_DIAGNOSTIC, "Couldn\'t resolve reference to JvmIdentifiableElement \'s2\'.");
+      this._validationTestHelper.assertError(_parse, _xFeatureCall, 
+        Diagnostic.LINKING_DIAGNOSTIC, 
+        "Couldn\'t resolve reference to JvmIdentifiableElement \'s2\'.");
     } catch (Exception _e) {
       throw Exceptions.sneakyThrow(_e);
     }

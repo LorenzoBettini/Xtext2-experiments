@@ -3,9 +3,8 @@ package org.xtext.example.helloxvars.jvmmodel;
 import com.google.inject.Inject;
 import java.util.Arrays;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.xtext.common.types.JvmDeclaredType;
-import org.eclipse.xtext.util.IAcceptor;
 import org.eclipse.xtext.xbase.jvmmodel.AbstractModelInferrer;
+import org.eclipse.xtext.xbase.jvmmodel.IJvmDeclaredTypeAcceptor;
 import org.eclipse.xtext.xbase.jvmmodel.JvmTypesBuilder;
 import org.xtext.example.helloxvars.helloXvars.Model;
 
@@ -18,31 +17,49 @@ import org.xtext.example.helloxvars.helloXvars.Model;
 @SuppressWarnings("all")
 public class HelloXvarsJvmModelInferrer extends AbstractModelInferrer {
   /**
-   * conveninence API to build and initialize JvmTypes and their members.
+   * convenience API to build and initialize JVM types and their members.
    */
   @Inject
   private JvmTypesBuilder _jvmTypesBuilder;
   
   /**
-   * Is called for each instance of the first argument's type contained in a resource.
+   * The dispatch method {@code infer} is called for each instance of the
+   * given element's type that is contained in a resource.
    * 
-   * @param element - the model to create one or more JvmDeclaredTypes from.
-   * @param acceptor - each created JvmDeclaredType without a container should be passed to the acceptor in order get attached to the
-   *                   current resource.
-   * @param isPreLinkingPhase - whether the method is called in a pre linking phase, i.e. when the global index isn't fully updated. You
-   *        must not rely on linking using the index if iPrelinkingPhase is <code>true</code>
+   * @param element
+   *            the model to create one or more
+   *            {@link org.eclipse.xtext.common.types.JvmDeclaredType declared
+   *            types} from.
+   * @param acceptor
+   *            each created
+   *            {@link org.eclipse.xtext.common.types.JvmDeclaredType type}
+   *            without a container should be passed to the acceptor in order
+   *            get attached to the current resource. The acceptor's
+   *            {@link IJvmDeclaredTypeAcceptor#accept(org.eclipse.xtext.common.types.JvmDeclaredType)
+   *            accept(..)} method takes the constructed empty type for the
+   *            pre-indexing phase. This one is further initialized in the
+   *            indexing phase using the closure you pass to the returned
+   *            {@link org.eclipse.xtext.xbase.jvmmodel.IJvmDeclaredTypeAcceptor.IPostIndexingInitializing#initializeLater(org.eclipse.xtext.xbase.lib.Procedures.Procedure1)
+   *            initializeLater(..)}.
+   * @param isPreIndexingPhase
+   *            whether the method is called in a pre-indexing phase, i.e.
+   *            when the global index is not yet fully updated. You must not
+   *            rely on linking using the index if isPreIndexingPhase is
+   *            <code>true</code>.
    */
-  protected void _infer(final Model element, final IAcceptor<JvmDeclaredType> acceptor, final boolean isPrelinkingPhase) {
+  protected void _infer(final Model element, final IJvmDeclaredTypeAcceptor acceptor, final boolean isPreIndexingPhase) {
   }
   
-  public void infer(final EObject element, final IAcceptor<JvmDeclaredType> acceptor, final boolean isPrelinkingPhase) {
+  public void infer(final EObject element, final IJvmDeclaredTypeAcceptor acceptor, final boolean isPreIndexingPhase) {
     if (element instanceof Model) {
-      _infer((Model)element, acceptor, isPrelinkingPhase);
+      _infer((Model)element, acceptor, isPreIndexingPhase);
+      return;
     } else if (element != null) {
-      _infer(element, acceptor, isPrelinkingPhase);
+      _infer(element, acceptor, isPreIndexingPhase);
+      return;
     } else {
       throw new IllegalArgumentException("Unhandled parameter types: " +
-        Arrays.<Object>asList(element, acceptor, isPrelinkingPhase).toString());
+        Arrays.<Object>asList(element, acceptor, isPreIndexingPhase).toString());
     }
   }
 }

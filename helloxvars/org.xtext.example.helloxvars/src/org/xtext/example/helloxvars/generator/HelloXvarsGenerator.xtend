@@ -1,19 +1,17 @@
 package org.xtext.example.helloxvars.generator
 
-import org.eclipse.emf.ecore.resource.Resource
-import org.eclipse.xtext.generator.IGenerator
-import org.eclipse.xtext.generator.IFileSystemAccess
 import com.google.inject.Inject
-import org.eclipse.xtext.xbase.compiler.XbaseCompiler
-
-import static extension org.eclipse.xtext.xbase.lib.IteratorExtensions.*
-import org.xtext.example.helloxvars.helloXvars.Greeting
+import org.eclipse.emf.ecore.resource.Resource
 import org.eclipse.xtext.common.types.TypesFactory
-import org.eclipse.xtext.xbase.compiler.ImportManager
+import org.eclipse.xtext.generator.IFileSystemAccess
+import org.eclipse.xtext.generator.IGenerator
 import org.eclipse.xtext.xbase.XExpression
-import org.eclipse.xtext.xbase.compiler.StringBuilderBasedAppendable
-import org.xtext.example.helloxvars.helloXvars.Model
 import org.eclipse.xtext.xbase.XFeatureCall
+import org.eclipse.xtext.xbase.compiler.ImportManager
+import org.eclipse.xtext.xbase.compiler.XbaseCompiler
+import org.eclipse.xtext.xbase.compiler.output.FakeTreeAppendable
+import org.xtext.example.helloxvars.helloXvars.Greeting
+import org.xtext.example.helloxvars.helloXvars.Model
 
 class HelloXvarsGenerator implements IGenerator {
 	
@@ -51,7 +49,7 @@ class HelloXvarsGenerator implements IGenerator {
 	'''
 
 	def compile(Greeting greeting, ImportManager importManager) {
-		var result = new StringBuilderBasedAppendable(importManager)
+		var result = new FakeTreeAppendable(importManager)
 		for (varDecl : (greeting.eContainer as Model).varDeclarations) {
 			result.append("\n// variable declaration")
 			result = compile(varDecl, result)
@@ -75,7 +73,7 @@ class HelloXvarsGenerator implements IGenerator {
 		compiled
 	}
     
-	def compile(XExpression xExpression, StringBuilderBasedAppendable result) {
+	def compile(XExpression xExpression, FakeTreeAppendable result) {
 		xbaseCompiler.toJavaStatement(xExpression, result, true)
 		result
 	}

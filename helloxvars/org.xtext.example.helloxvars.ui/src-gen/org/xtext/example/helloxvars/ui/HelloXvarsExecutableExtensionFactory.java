@@ -8,6 +8,8 @@ import org.osgi.framework.Bundle;
 
 import com.google.inject.Injector;
 
+import org.xtext.example.helloxvars.ui.internal.HelloXvarsActivator;
+
 /**
  * This class was generated. Customizations should only happen in a newly
  * introduced subclass. 
@@ -16,12 +18,12 @@ public class HelloXvarsExecutableExtensionFactory extends AbstractGuiceAwareExec
 
 	@Override
 	protected Bundle getBundle() {
-		return org.xtext.example.helloxvars.ui.internal.HelloXvarsActivator.getInstance().getBundle();
+		return HelloXvarsActivator.getInstance().getBundle();
 	}
 	
 	@Override
 	protected Injector getInjector() {
-		return org.xtext.example.helloxvars.ui.internal.HelloXvarsActivator.getInstance().getInjector("org.xtext.example.helloxvars.HelloXvars");
+		return HelloXvarsActivator.getInstance().getInjector(HelloXvarsActivator.ORG_XTEXT_EXAMPLE_HELLOXVARS_HELLOXVARS);
 	}
 	
 }
