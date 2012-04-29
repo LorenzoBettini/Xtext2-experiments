@@ -73,18 +73,16 @@ public class ParserTest {
   @Test
   public void testJvmTypeAccess() {
     try {
-      {
-        Model _parse = this.parser.parse("Hello foo from java.util.List!");
-        final Model model = _parse;
-        EList<Greeting> _greetings = model.getGreetings();
-        Greeting _head = IterableExtensions.<Greeting>head(_greetings);
-        final Greeting greeting = ((Greeting) _head);
-        EList<JvmType> _javaTypes = greeting.getJavaTypes();
-        JvmType _get = _javaTypes.get(0);
-        final JvmGenericType jvmType = ((JvmGenericType) _get);
-        String _identifier = jvmType.getIdentifier();
-        Assert.assertEquals("java.util.List", _identifier);
-      }
+      final Model model = this.parser.parse(
+        "Hello foo from java.util.List!");
+      EList<Greeting> _greetings = model.getGreetings();
+      Greeting _head = IterableExtensions.<Greeting>head(_greetings);
+      final Greeting greeting = ((Greeting) _head);
+      EList<JvmType> _javaTypes = greeting.getJavaTypes();
+      JvmType _get = _javaTypes.get(0);
+      final JvmGenericType jvmType = ((JvmGenericType) _get);
+      String _identifier = jvmType.getIdentifier();
+      Assert.assertEquals("java.util.List", _identifier);
     } catch (Exception _e) {
       throw Exceptions.sneakyThrow(_e);
     }

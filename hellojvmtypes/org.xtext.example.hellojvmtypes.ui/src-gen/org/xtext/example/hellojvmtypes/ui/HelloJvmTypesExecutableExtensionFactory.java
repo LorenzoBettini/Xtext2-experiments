@@ -8,6 +8,8 @@ import org.osgi.framework.Bundle;
 
 import com.google.inject.Injector;
 
+import org.xtext.example.hellojvmtypes.ui.internal.HelloJvmTypesActivator;
+
 /**
  * This class was generated. Customizations should only happen in a newly
  * introduced subclass. 
@@ -16,12 +18,12 @@ public class HelloJvmTypesExecutableExtensionFactory extends AbstractGuiceAwareE
 
 	@Override
 	protected Bundle getBundle() {
-		return org.xtext.example.hellojvmtypes.ui.internal.HelloJvmTypesActivator.getInstance().getBundle();
+		return HelloJvmTypesActivator.getInstance().getBundle();
 	}
 	
 	@Override
 	protected Injector getInjector() {
-		return org.xtext.example.hellojvmtypes.ui.internal.HelloJvmTypesActivator.getInstance().getInjector("org.xtext.example.hellojvmtypes.HelloJvmTypes");
+		return HelloJvmTypesActivator.getInstance().getInjector(HelloJvmTypesActivator.ORG_XTEXT_EXAMPLE_HELLOJVMTYPES_HELLOJVMTYPES);
 	}
 	
 }
