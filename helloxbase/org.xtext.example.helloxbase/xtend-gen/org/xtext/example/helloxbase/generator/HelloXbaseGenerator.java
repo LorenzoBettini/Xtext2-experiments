@@ -1,5 +1,6 @@
 package org.xtext.example.helloxbase.generator;
 
+import com.google.common.collect.Iterables;
 import com.google.inject.Inject;
 import java.util.List;
 import org.eclipse.emf.common.util.TreeIterator;
@@ -12,10 +13,8 @@ import org.eclipse.xtext.generator.IFileSystemAccess;
 import org.eclipse.xtext.generator.IGenerator;
 import org.eclipse.xtext.xbase.XExpression;
 import org.eclipse.xtext.xbase.compiler.ImportManager;
-import org.eclipse.xtext.xbase.compiler.StringBuilderBasedAppendable;
 import org.eclipse.xtext.xbase.compiler.XbaseCompiler;
-import org.eclipse.xtext.xbase.lib.BooleanExtensions;
-import org.eclipse.xtext.xbase.lib.IterableExtensions;
+import org.eclipse.xtext.xbase.compiler.output.FakeTreeAppendable;
 import org.eclipse.xtext.xbase.lib.IteratorExtensions;
 import org.eclipse.xtext.xbase.lib.StringExtensions;
 import org.xtext.example.helloxbase.helloXbase.Greeting;
@@ -28,23 +27,22 @@ public class HelloXbaseGenerator implements IGenerator {
   public void doGenerate(final Resource resource, final IFileSystemAccess fsa) {
     TreeIterator<EObject> _allContents = resource.getAllContents();
     Iterable<EObject> _iterable = IteratorExtensions.<EObject>toIterable(_allContents);
-    Iterable<Greeting> _filter = IterableExtensions.<Greeting>filter(_iterable, org.xtext.example.helloxbase.helloXbase.Greeting.class);
+    Iterable<Greeting> _filter = Iterables.<Greeting>filter(_iterable, Greeting.class);
     for (final Greeting greeting : _filter) {
       String _packageName = this.packageName(greeting);
-      String _operator_plus = StringExtensions.operator_plus(_packageName, "/");
+      String _plus = (_packageName + "/");
       String _className = this.className(greeting);
-      String _operator_plus_1 = StringExtensions.operator_plus(_operator_plus, _className);
-      String _operator_plus_2 = StringExtensions.operator_plus(_operator_plus_1, ".java");
+      String _plus_1 = (_plus + _className);
+      String _plus_2 = (_plus_1 + ".java");
       CharSequence _compile = this.compile(greeting);
-      fsa.generateFile(_operator_plus_2, _compile);
+      fsa.generateFile(_plus_2, _compile);
     }
   }
   
   public JvmGenericType getJvmType(final Greeting greeting) {
     JvmGenericType _xblockexpression = null;
     {
-      JvmGenericType _createJvmGenericType = TypesFactory.eINSTANCE.createJvmGenericType();
-      final JvmGenericType declaredType = _createJvmGenericType;
+      final JvmGenericType declaredType = TypesFactory.eINSTANCE.createJvmGenericType();
       String _className = this.className(greeting);
       declaredType.setSimpleName(_className);
       String _packageName = this.packageName(greeting);
@@ -60,8 +58,7 @@ public class HelloXbaseGenerator implements IGenerator {
     ImportManager _importManager = new ImportManager(true, _jvmType);
     final ImportManager importManager = _importManager;
     _builder.newLineIfNotEmpty();
-    CharSequence _compile = this.compile(greeting, importManager);
-    final CharSequence mainMethod = _compile;
+    final CharSequence mainMethod = this.compile(greeting, importManager);
     _builder.newLineIfNotEmpty();
     _builder.append("package ");
     String _packageName = this.packageName(greeting);
@@ -71,8 +68,8 @@ public class HelloXbaseGenerator implements IGenerator {
     {
       List<String> _imports = importManager.getImports();
       boolean _isEmpty = _imports.isEmpty();
-      boolean _operator_not = BooleanExtensions.operator_not(_isEmpty);
-      if (_operator_not) {
+      boolean _not = (!_isEmpty);
+      if (_not) {
         _builder.newLine();
         {
           List<String> _imports_1 = importManager.getImports();
@@ -94,8 +91,7 @@ public class HelloXbaseGenerator implements IGenerator {
   public CharSequence compile(final Greeting greeting, final ImportManager importManager) {
     StringConcatenation _builder = new StringConcatenation();
     XExpression _expression = greeting.getExpression();
-    StringBuilderBasedAppendable _compile = this.compile(_expression, importManager);
-    final StringBuilderBasedAppendable result = _compile;
+    final FakeTreeAppendable result = this.compile(_expression, importManager);
     _builder.newLineIfNotEmpty();
     _builder.append("public class ");
     String _className = this.className(greeting);
@@ -133,11 +129,11 @@ public class HelloXbaseGenerator implements IGenerator {
     return _builder;
   }
   
-  public StringBuilderBasedAppendable compile(final XExpression xExpression, final ImportManager importManager) {
-    StringBuilderBasedAppendable _xblockexpression = null;
+  public FakeTreeAppendable compile(final XExpression xExpression, final ImportManager importManager) {
+    FakeTreeAppendable _xblockexpression = null;
     {
-      StringBuilderBasedAppendable _stringBuilderBasedAppendable = new StringBuilderBasedAppendable(importManager);
-      final StringBuilderBasedAppendable result = _stringBuilderBasedAppendable;
+      FakeTreeAppendable _fakeTreeAppendable = new FakeTreeAppendable(importManager);
+      final FakeTreeAppendable result = _fakeTreeAppendable;
       this.xbaseCompiler.toJavaStatement(xExpression, result, true);
       _xblockexpression = (result);
     }

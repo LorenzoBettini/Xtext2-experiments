@@ -40,12 +40,10 @@ public class ParserTest {
   @Test
   public void testExpression() {
     try {
-      {
-        Model _parse = this.parser.parse("Hello foo from new String()!");
-        final Model model = _parse;
-        EList<Greeting> _greetings = model.getGreetings();
-        IterableExtensions.<Greeting>head(_greetings);
-      }
+      final Model model = this.parser.parse(
+        "Hello foo from new String()!");
+      EList<Greeting> _greetings = model.getGreetings();
+      IterableExtensions.<Greeting>head(_greetings);
     } catch (Exception _e) {
       throw Exceptions.sneakyThrow(_e);
     }

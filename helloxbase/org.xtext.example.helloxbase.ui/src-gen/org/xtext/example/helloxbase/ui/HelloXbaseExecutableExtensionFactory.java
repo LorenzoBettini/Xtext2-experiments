@@ -8,6 +8,8 @@ import org.osgi.framework.Bundle;
 
 import com.google.inject.Injector;
 
+import org.xtext.example.helloxbase.ui.internal.HelloXbaseActivator;
+
 /**
  * This class was generated. Customizations should only happen in a newly
  * introduced subclass. 
@@ -16,12 +18,12 @@ public class HelloXbaseExecutableExtensionFactory extends AbstractGuiceAwareExec
 
 	@Override
 	protected Bundle getBundle() {
-		return org.xtext.example.helloxbase.ui.internal.HelloXbaseActivator.getInstance().getBundle();
+		return HelloXbaseActivator.getInstance().getBundle();
 	}
 	
 	@Override
 	protected Injector getInjector() {
-		return org.xtext.example.helloxbase.ui.internal.HelloXbaseActivator.getInstance().getInjector("org.xtext.example.helloxbase.HelloXbase");
+		return HelloXbaseActivator.getInstance().getInjector(HelloXbaseActivator.ORG_XTEXT_EXAMPLE_HELLOXBASE_HELLOXBASE);
 	}
 	
 }

@@ -10,11 +10,9 @@ import org.eclipse.xtext.generator.IFileSystemAccess
 import org.eclipse.xtext.generator.IGenerator
 import org.eclipse.xtext.xbase.XExpression
 import org.eclipse.xtext.xbase.compiler.ImportManager
-import org.eclipse.xtext.xbase.compiler.StringBuilderBasedAppendable
 import org.eclipse.xtext.xbase.compiler.XbaseCompiler
+import org.eclipse.xtext.xbase.compiler.output.FakeTreeAppendable
 import org.xtext.example.helloxbase.helloXbase.Greeting
-
-import static extension org.eclipse.xtext.xbase.lib.IteratorExtensions.*
 
 class HelloXbaseGenerator implements IGenerator {
 	
@@ -65,7 +63,7 @@ class HelloXbaseGenerator implements IGenerator {
 	'''
     
 	def compile(XExpression xExpression, ImportManager importManager) {
-		val result = new StringBuilderBasedAppendable(importManager)
+		val result = new FakeTreeAppendable(importManager)
 		xbaseCompiler.toJavaStatement(xExpression, result, true)
 		result
 	}
