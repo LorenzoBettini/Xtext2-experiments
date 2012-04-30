@@ -1,8 +1,8 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: org.xtext.example.helloxbase.tests
-Bundle-Vendor: My Company
-Bundle-Version: 1.0.0
+Bundle-Vendor: Lorenzo Bettini
+Bundle-Version: 1.0.0.qualifier
 Bundle-SymbolicName: org.xtext.example.helloxbase.tests; singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: org.xtext.example.helloxbase,
