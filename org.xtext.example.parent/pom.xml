@@ -41,8 +41,8 @@
 
 	<modules>
 		<module>../helloxbase/org.xtext.example.helloxbase</module>
+		<module>../helloxbase/org.xtext.example.helloxbase.ui</module>
 <!-- 		<module>../helloxbase/org.xtext.example.helloxbase.tests</module> -->
-<!-- 		<module>../helloxbase/org.xtext.example.helloxbase.ui</module> -->
 	</modules>
 
 </project>
