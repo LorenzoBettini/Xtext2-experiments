@@ -43,6 +43,8 @@
 		<module>../helloxbase/org.xtext.example.helloxbase</module>
 		<module>../helloxbase/org.xtext.example.helloxbase.ui</module>
 		<module>../helloxbase/org.xtext.example.helloxbase.tests</module>
+		<module>../helloinferrer/org.xtext.example.helloinferrer</module>
+		<module>../helloinferrer/org.xtext.example.helloinferrer.ui</module>
 	</modules>
 
 </project>
