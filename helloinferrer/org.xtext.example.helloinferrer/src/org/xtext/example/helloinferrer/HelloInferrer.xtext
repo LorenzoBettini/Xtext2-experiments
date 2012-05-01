@@ -1,0 +1,9 @@
+grammar org.xtext.example.helloinferrer.HelloInferrer with org.eclipse.xtext.common.Terminals
+
+generate helloInferrer "http://www.xtext.org/example/helloinferrer/HelloInferrer"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
