@@ -10,7 +10,25 @@ Require-Bundle: org.eclipse.xtext;bundle-version="2.1.0";visibility:=reexport,
  org.eclipse.xtext.generator;resolution:=optional,
  org.eclipse.emf.codegen.ecore;resolution:=optional,
  org.eclipse.emf.mwe.utils;resolution:=optional,
- org.eclipse.emf.mwe2.launch;resolution:=optional
+ org.eclipse.emf.mwe2.launch;resolution:=optional,
+ org.eclipse.xtext.util,
+ org.eclipse.emf.ecore,
+ org.eclipse.emf.common,
+ org.antlr.runtime,
+ org.eclipse.xtext.common.types,
+ org.eclipse.xtext.xbase.lib
 Import-Package: org.apache.log4j,
  org.apache.commons.logging
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: org.xtext.example.helloinferrer,
+ org.xtext.example.helloinferrer.services,
+ org.xtext.example.helloinferrer.helloInferrer,
+ org.xtext.example.helloinferrer.helloInferrer.impl,
+ org.xtext.example.helloinferrer.helloInferrer.util,
+ org.xtext.example.helloinferrer.serializer,
+ org.xtext.example.helloinferrer.parser.antlr,
+ org.xtext.example.helloinferrer.parser.antlr.internal,
+ org.xtext.example.helloinferrer.validation,
+ org.xtext.example.helloinferrer.formatting,
+ org.xtext.example.helloinferrer.jvmmodel
+

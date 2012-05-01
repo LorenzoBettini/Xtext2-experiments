@@ -1,9 +1,20 @@
-grammar org.xtext.example.helloinferrer.HelloInferrer with org.eclipse.xtext.common.Terminals
+grammar org.xtext.example.helloinferrer.HelloInferrer with 
+	org.eclipse.xtext.xbase.Xbase
 
 generate helloInferrer "http://www.xtext.org/example/helloinferrer/HelloInferrer"
 
 Model:
+	imports += Import*
 	greetings+=Greeting*;
-	
+
+Import:
+  'import' importedNamespace = QualifiedNameWithWildcard
+;
+
+QualifiedNameWithWildcard:
+  QualifiedName '.*'?
+; 
+
 Greeting:
-	'Hello' name=ID '!';
+    'Hello' name=ID 'from' expression = XExpression '!'
+;
