@@ -3,10 +3,15 @@ package org.xtext.example.helloinferrer.jvmmodel;
 import com.google.inject.Inject;
 import java.util.Arrays;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.xtext.common.types.JvmGenericType;
+import org.eclipse.xtext.naming.IQualifiedNameProvider;
+import org.eclipse.xtext.naming.QualifiedName;
 import org.eclipse.xtext.xbase.jvmmodel.AbstractModelInferrer;
 import org.eclipse.xtext.xbase.jvmmodel.IJvmDeclaredTypeAcceptor;
+import org.eclipse.xtext.xbase.jvmmodel.IJvmDeclaredTypeAcceptor.IPostIndexingInitializing;
 import org.eclipse.xtext.xbase.jvmmodel.JvmTypesBuilder;
-import org.xtext.example.helloinferrer.helloInferrer.Model;
+import org.eclipse.xtext.xbase.lib.Procedures.Procedure1;
+import org.xtext.example.helloinferrer.helloInferrer.Greeting;
 
 /**
  * <p>Infers a JVM model from the source model.</p>
@@ -21,6 +26,9 @@ public class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
    */
   @Inject
   private JvmTypesBuilder _jvmTypesBuilder;
+  
+  @Inject
+  private IQualifiedNameProvider _iQualifiedNameProvider;
   
   /**
    * The dispatch method {@code infer} is called for each instance of the
@@ -47,12 +55,22 @@ public class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
    *            rely on linking using the index if isPreIndexingPhase is
    *            <code>true</code>.
    */
-  protected void _infer(final Model element, final IJvmDeclaredTypeAcceptor acceptor, final boolean isPreIndexingPhase) {
+  protected void _infer(final Greeting element, final IJvmDeclaredTypeAcceptor acceptor, final boolean isPreIndexingPhase) {
+    QualifiedName _fullyQualifiedName = this._iQualifiedNameProvider.getFullyQualifiedName(element);
+    JvmGenericType _class = this._jvmTypesBuilder.toClass(element, _fullyQualifiedName);
+    IPostIndexingInitializing<JvmGenericType> _accept = acceptor.<JvmGenericType>accept(_class);
+    final Procedure1<JvmGenericType> _function = new Procedure1<JvmGenericType>() {
+        public void apply(final JvmGenericType it) {
+          String _documentation = HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.getDocumentation(element);
+          HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.setDocumentation(it, _documentation);
+        }
+      };
+    _accept.initializeLater(_function);
   }
   
   public void infer(final EObject element, final IJvmDeclaredTypeAcceptor acceptor, final boolean isPreIndexingPhase) {
-    if (element instanceof Model) {
-      _infer((Model)element, acceptor, isPreIndexingPhase);
+    if (element instanceof Greeting) {
+      _infer((Greeting)element, acceptor, isPreIndexingPhase);
       return;
     } else if (element != null) {
       _infer(element, acceptor, isPreIndexingPhase);
