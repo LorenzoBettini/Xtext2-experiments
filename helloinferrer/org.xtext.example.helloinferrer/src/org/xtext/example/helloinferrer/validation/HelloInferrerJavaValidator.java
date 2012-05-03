@@ -1,13 +1,26 @@
 package org.xtext.example.helloinferrer.validation;
- 
 
-public class HelloInferrerJavaValidator extends AbstractHelloInferrerJavaValidator {
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.xtext.common.types.JvmFormalParameter;
+import org.eclipse.xtext.common.types.JvmIdentifiableElement;
+import org.eclipse.xtext.xbase.XAssignment;
+import org.xtext.example.helloinferrer.helloInferrer.Operation;
 
-//	@Check
-//	public void checkGreetingStartsWithCapital(Greeting greeting) {
-//		if (!Character.isUpperCase(greeting.getName().charAt(0))) {
-//			warning("Name should start with a capital", MyDslPackage.Literals.GREETING__NAME);
-//		}
-//	}
+@SuppressWarnings("restriction")
+public class HelloInferrerJavaValidator extends
+		AbstractHelloInferrerJavaValidator {
 
+	@Override
+	public void checkAssignment(XAssignment assignment) {
+		JvmIdentifiableElement assignmentFeature = assignment.getFeature();
+		if (assignmentFeature instanceof JvmFormalParameter) {
+			EObject container = assignmentFeature.eContainer();
+			// it is OK to assign to an Operation's output parameter
+			if (container instanceof Operation
+					&& ((Operation) container).getOutput() == assignmentFeature) {
+				return;
+			}
+		}
+		super.checkAssignment(assignment);
+	}
 }

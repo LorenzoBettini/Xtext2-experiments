@@ -21,14 +21,15 @@ Import-Package: org.apache.log4j,
  org.apache.commons.logging
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Export-Package: org.xtext.example.helloinferrer,
- org.xtext.example.helloinferrer.services,
+ org.xtext.example.helloinferrer.formatting,
  org.xtext.example.helloinferrer.helloInferrer,
  org.xtext.example.helloinferrer.helloInferrer.impl,
  org.xtext.example.helloinferrer.helloInferrer.util,
- org.xtext.example.helloinferrer.serializer,
+ org.xtext.example.helloinferrer.jvmmodel,
  org.xtext.example.helloinferrer.parser.antlr,
  org.xtext.example.helloinferrer.parser.antlr.internal,
- org.xtext.example.helloinferrer.validation,
- org.xtext.example.helloinferrer.formatting,
- org.xtext.example.helloinferrer.jvmmodel
+ org.xtext.example.helloinferrer.scoping,
+ org.xtext.example.helloinferrer.serializer,
+ org.xtext.example.helloinferrer.services,
+ org.xtext.example.helloinferrer.validation
 
