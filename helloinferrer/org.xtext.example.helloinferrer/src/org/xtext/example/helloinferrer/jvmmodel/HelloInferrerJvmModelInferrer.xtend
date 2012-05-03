@@ -7,6 +7,8 @@ import org.eclipse.xtext.xbase.jvmmodel.IJvmDeclaredTypeAcceptor
 import org.eclipse.xtext.xbase.jvmmodel.JvmTypesBuilder
 import org.xtext.example.helloinferrer.helloInferrer.Greeting
 import org.eclipse.xtext.common.types.util.TypeReferences
+import org.eclipse.xtext.xbase.compiler.XbaseCompiler
+import org.eclipse.xtext.xbase.compiler.TypeReferenceSerializer
 
 /**
  * <p>Infers a JVM model from the source model.</p> 
@@ -24,6 +26,10 @@ class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
 	@Inject extension IQualifiedNameProvider
 	
 	@Inject extension TypeReferences
+	
+	@Inject extension TypeReferenceSerializer
+	
+	@Inject XbaseCompiler xbaseCompiler
 
 	/**
 	 * The dispatch method {@code infer} is called for each instance of the
@@ -61,7 +67,12 @@ class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
 					for (p : o.params) {
 						parameters += p.toParameter(p.name, p.parameterType)
 					}
-					body = o.body
+					body = [
+						val outputVarName = it.declareVariable(o.output, o.output.simpleName)
+						o.output.parameterType.serialize(o, it)
+						it.append(" " + outputVarName + " = null; // output parameter")
+						xbaseCompiler.compile(o.body, it, "void".getTypeForName(o), null)
+					]
 				]
 			}
 		]

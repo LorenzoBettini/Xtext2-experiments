@@ -66,7 +66,49 @@ public class HelloInferrerCompilerTest {
     _builder_1.append("public void myOp(final String s, final int i) {");
     _builder_1.newLine();
     _builder_1.append("    ");
+    _builder_1.append("Boolean b = null; // output parameter");
+    _builder_1.newLine();
+    _builder_1.append("    ");
     _builder_1.append("final String foo = (s + Integer.valueOf(i));");
+    _builder_1.newLine();
+    _builder_1.append("  ");
+    _builder_1.append("}");
+    _builder_1.newLine();
+    _builder_1.append("}");
+    _builder_1.newLine();
+    this.assertCorrectJavaCodeGeneration(_builder, _builder_1);
+  }
+  
+  @Test
+  public void testAccessToOututParameter() {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("Hello my.test.MyHello {");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("op myOp(String s, int i) output Boolean b {");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("b = true");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("}");
+    _builder.newLine();
+    StringConcatenation _builder_1 = new StringConcatenation();
+    _builder_1.append("package my.test;");
+    _builder_1.newLine();
+    _builder_1.newLine();
+    _builder_1.append("public class MyHello {");
+    _builder_1.newLine();
+    _builder_1.append("  ");
+    _builder_1.append("public void myOp(final String s, final int i) {");
+    _builder_1.newLine();
+    _builder_1.append("    ");
+    _builder_1.append("Boolean b = null; // output parameter");
+    _builder_1.newLine();
+    _builder_1.append("    ");
+    _builder_1.append("b = Boolean.valueOf(true);");
     _builder_1.newLine();
     _builder_1.append("  ");
     _builder_1.append("}");

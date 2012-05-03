@@ -45,7 +45,29 @@ package my.test;
 
 public class MyHello {
   public void myOp(final String s, final int i) {
+    Boolean b = null; // output parameter
     final String foo = (s + Integer.valueOf(i));
+  }
+}
+''')
+	}
+	
+	@Test
+	def void testAccessToOututParameter() {
+'''
+Hello my.test.MyHello {
+	op myOp(String s, int i) output Boolean b {
+		b = true
+	}
+}
+'''.assertCorrectJavaCodeGeneration(
+'''
+package my.test;
+
+public class MyHello {
+  public void myOp(final String s, final int i) {
+    Boolean b = null; // output parameter
+    b = Boolean.valueOf(true);
   }
 }
 ''')
