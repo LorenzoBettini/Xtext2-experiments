@@ -20,11 +20,11 @@ class HelloInferrerParserTest {
 	@Inject extension ValidationTestHelper
 	
 	@Test
-	def void testGeneratedJava() {
+	def void testOperation() {
 		'''
 		Hello my.test.hello {
 			op myOp(String s, int i) output Boolean b {
-				//val foo = s + i
+				val foo = s + i
 			}
 		}
 		'''.checkModel

@@ -6,6 +6,7 @@ import org.eclipse.xtext.xbase.jvmmodel.AbstractModelInferrer
 import org.eclipse.xtext.xbase.jvmmodel.IJvmDeclaredTypeAcceptor
 import org.eclipse.xtext.xbase.jvmmodel.JvmTypesBuilder
 import org.xtext.example.helloinferrer.helloInferrer.Greeting
+import org.eclipse.xtext.common.types.util.TypeReferences
 
 /**
  * <p>Infers a JVM model from the source model.</p> 
@@ -21,6 +22,8 @@ class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
 	@Inject extension JvmTypesBuilder
 	
 	@Inject extension IQualifiedNameProvider
+	
+	@Inject extension TypeReferences
 
 	/**
 	 * The dispatch method {@code infer} is called for each instance of the
@@ -52,6 +55,15 @@ class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
 			element.toClass( element.fullyQualifiedName )
 		).initializeLater [
 			documentation = element.documentation
+			for (o : element.operations) {
+				members += o.toMethod(o.name, "void".getTypeForName(o)) [
+					documentation = o.documentation
+					for (p : o.params) {
+						parameters += p.toParameter(p.name, p.parameterType)
+					}
+					body = o.body
+				]
+			}
 		]
    	}
 }

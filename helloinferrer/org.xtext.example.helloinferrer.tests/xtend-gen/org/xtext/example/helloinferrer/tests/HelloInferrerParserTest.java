@@ -24,7 +24,7 @@ public class HelloInferrerParserTest {
   private ValidationTestHelper _validationTestHelper;
   
   @Test
-  public void testGeneratedJava() {
+  public void testOperation() {
     StringConcatenation _builder = new StringConcatenation();
     _builder.append("Hello my.test.hello {");
     _builder.newLine();
@@ -32,7 +32,7 @@ public class HelloInferrerParserTest {
     _builder.append("op myOp(String s, int i) output Boolean b {");
     _builder.newLine();
     _builder.append("\t\t");
-    _builder.append("//val foo = s + i");
+    _builder.append("val foo = s + i");
     _builder.newLine();
     _builder.append("\t");
     _builder.append("}");
