@@ -5,9 +5,9 @@
  */
 package org.xtext.example.helloinferrer.helloInferrer;
 
-import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.common.util.EList;
 
-import org.eclipse.xtext.xbase.XExpression;
+import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -18,7 +18,7 @@ import org.eclipse.xtext.xbase.XExpression;
  * The following features are supported:
  * <ul>
  *   <li>{@link org.xtext.example.helloinferrer.helloInferrer.Greeting#getName <em>Name</em>}</li>
- *   <li>{@link org.xtext.example.helloinferrer.helloInferrer.Greeting#getExpression <em>Expression</em>}</li>
+ *   <li>{@link org.xtext.example.helloinferrer.helloInferrer.Greeting#getOperations <em>Operations</em>}</li>
  * </ul>
  * </p>
  *
@@ -55,29 +55,19 @@ public interface Greeting extends EObject
   void setName(String value);
 
   /**
-   * Returns the value of the '<em><b>Expression</b></em>' containment reference.
+   * Returns the value of the '<em><b>Operations</b></em>' containment reference list.
+   * The list contents are of type {@link org.xtext.example.helloinferrer.helloInferrer.Operation}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Expression</em>' containment reference isn't clear,
+   * If the meaning of the '<em>Operations</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Expression</em>' containment reference.
-   * @see #setExpression(XExpression)
-   * @see org.xtext.example.helloinferrer.helloInferrer.HelloInferrerPackage#getGreeting_Expression()
+   * @return the value of the '<em>Operations</em>' containment reference list.
+   * @see org.xtext.example.helloinferrer.helloInferrer.HelloInferrerPackage#getGreeting_Operations()
    * @model containment="true"
    * @generated
    */
-  XExpression getExpression();
-
-  /**
-   * Sets the value of the '{@link org.xtext.example.helloinferrer.helloInferrer.Greeting#getExpression <em>Expression</em>}' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Expression</em>' containment reference.
-   * @see #getExpression()
-   * @generated
-   */
-  void setExpression(XExpression value);
+  EList<Operation> getOperations();
 
 } // Greeting

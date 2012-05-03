@@ -10,7 +10,8 @@ Require-Bundle: org.xtext.example.helloinferrer,
  org.eclipse.core.runtime,
  org.eclipse.xtext.junit4,
  org.junit4,
- org.eclipse.ui.workbench;resolution:=optional
+ org.eclipse.ui.workbench;resolution:=optional,
+ org.eclipse.xtext.xbase.junit;bundle-version="2.3.0"
 Import-Package: org.apache.log4j,
  org.apache.commons.logging
 Bundle-RequiredExecutionEnvironment: J2SE-1.5

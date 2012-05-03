@@ -45,6 +45,7 @@
 		<module>../helloxbase/org.xtext.example.helloxbase.tests</module>
 		<module>../helloinferrer/org.xtext.example.helloinferrer</module>
 		<module>../helloinferrer/org.xtext.example.helloinferrer.ui</module>
+		<module>../helloinferrer/org.xtext.example.helloinferrer.tests</module>
 	</modules>
 
 </project>

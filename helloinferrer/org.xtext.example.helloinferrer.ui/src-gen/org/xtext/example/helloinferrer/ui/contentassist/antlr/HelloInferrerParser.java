@@ -71,6 +71,9 @@ public class HelloInferrerParser extends AbstractContentAssistParser {
 					put(grammarAccess.getImportAccess().getGroup(), "rule__Import__Group__0");
 					put(grammarAccess.getQualifiedNameWithWildcardAccess().getGroup(), "rule__QualifiedNameWithWildcard__Group__0");
 					put(grammarAccess.getGreetingAccess().getGroup(), "rule__Greeting__Group__0");
+					put(grammarAccess.getOperationAccess().getGroup(), "rule__Operation__Group__0");
+					put(grammarAccess.getOperationAccess().getGroup_3(), "rule__Operation__Group_3__0");
+					put(grammarAccess.getOperationAccess().getGroup_3_1(), "rule__Operation__Group_3_1__0");
 					put(grammarAccess.getXAssignmentAccess().getGroup_0(), "rule__XAssignment__Group_0__0");
 					put(grammarAccess.getXAssignmentAccess().getGroup_1(), "rule__XAssignment__Group_1__0");
 					put(grammarAccess.getXAssignmentAccess().getGroup_1_1(), "rule__XAssignment__Group_1_1__0");
@@ -209,7 +212,12 @@ public class HelloInferrerParser extends AbstractContentAssistParser {
 					put(grammarAccess.getModelAccess().getGreetingsAssignment_1(), "rule__Model__GreetingsAssignment_1");
 					put(grammarAccess.getImportAccess().getImportedNamespaceAssignment_1(), "rule__Import__ImportedNamespaceAssignment_1");
 					put(grammarAccess.getGreetingAccess().getNameAssignment_1(), "rule__Greeting__NameAssignment_1");
-					put(grammarAccess.getGreetingAccess().getExpressionAssignment_3(), "rule__Greeting__ExpressionAssignment_3");
+					put(grammarAccess.getGreetingAccess().getOperationsAssignment_3(), "rule__Greeting__OperationsAssignment_3");
+					put(grammarAccess.getOperationAccess().getNameAssignment_1(), "rule__Operation__NameAssignment_1");
+					put(grammarAccess.getOperationAccess().getParamsAssignment_3_0(), "rule__Operation__ParamsAssignment_3_0");
+					put(grammarAccess.getOperationAccess().getParamsAssignment_3_1_1(), "rule__Operation__ParamsAssignment_3_1_1");
+					put(grammarAccess.getOperationAccess().getOutputAssignment_6(), "rule__Operation__OutputAssignment_6");
+					put(grammarAccess.getOperationAccess().getBodyAssignment_7(), "rule__Operation__BodyAssignment_7");
 					put(grammarAccess.getXAssignmentAccess().getFeatureAssignment_0_1(), "rule__XAssignment__FeatureAssignment_0_1");
 					put(grammarAccess.getXAssignmentAccess().getValueAssignment_0_3(), "rule__XAssignment__ValueAssignment_0_3");
 					put(grammarAccess.getXAssignmentAccess().getFeatureAssignment_1_1_0_0_1(), "rule__XAssignment__FeatureAssignment_1_1_0_0_1");

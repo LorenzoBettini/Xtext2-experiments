@@ -95,39 +95,121 @@ public class HelloInferrerGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cHelloKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cNameIDTerminalRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
-		private final Keyword cFromKeyword_2 = (Keyword)cGroup.eContents().get(2);
-		private final Assignment cExpressionAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final RuleCall cExpressionXExpressionParserRuleCall_3_0 = (RuleCall)cExpressionAssignment_3.eContents().get(0);
-		private final Keyword cExclamationMarkKeyword_4 = (Keyword)cGroup.eContents().get(4);
+		private final RuleCall cNameQualifiedNameParserRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
+		private final Keyword cLeftCurlyBracketKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final Assignment cOperationsAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final RuleCall cOperationsOperationParserRuleCall_3_0 = (RuleCall)cOperationsAssignment_3.eContents().get(0);
+		private final Keyword cRightCurlyBracketKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
 		//Greeting:
-		//	"Hello" name=ID "from" expression=XExpression "!";
+		//	"Hello" name=QualifiedName "{" operations+=Operation* "}";
 		public ParserRule getRule() { return rule; }
 
-		//"Hello" name=ID "from" expression=XExpression "!"
+		//"Hello" name=QualifiedName "{" operations+=Operation* "}"
 		public Group getGroup() { return cGroup; }
 
 		//"Hello"
 		public Keyword getHelloKeyword_0() { return cHelloKeyword_0; }
 
-		//name=ID
+		//name=QualifiedName
 		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
 
-		//ID
-		public RuleCall getNameIDTerminalRuleCall_1_0() { return cNameIDTerminalRuleCall_1_0; }
+		//QualifiedName
+		public RuleCall getNameQualifiedNameParserRuleCall_1_0() { return cNameQualifiedNameParserRuleCall_1_0; }
 
-		//"from"
-		public Keyword getFromKeyword_2() { return cFromKeyword_2; }
+		//"{"
+		public Keyword getLeftCurlyBracketKeyword_2() { return cLeftCurlyBracketKeyword_2; }
 
-		//expression=XExpression
-		public Assignment getExpressionAssignment_3() { return cExpressionAssignment_3; }
+		//operations+=Operation*
+		public Assignment getOperationsAssignment_3() { return cOperationsAssignment_3; }
 
-		//XExpression
-		public RuleCall getExpressionXExpressionParserRuleCall_3_0() { return cExpressionXExpressionParserRuleCall_3_0; }
+		//Operation
+		public RuleCall getOperationsOperationParserRuleCall_3_0() { return cOperationsOperationParserRuleCall_3_0; }
 
-		//"!"
-		public Keyword getExclamationMarkKeyword_4() { return cExclamationMarkKeyword_4; }
+		//"}"
+		public Keyword getRightCurlyBracketKeyword_4() { return cRightCurlyBracketKeyword_4; }
+	}
+
+	public class OperationElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Operation");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cOpKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cNameValidIDParserRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
+		private final Keyword cLeftParenthesisKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
+		private final Assignment cParamsAssignment_3_0 = (Assignment)cGroup_3.eContents().get(0);
+		private final RuleCall cParamsFullJvmFormalParameterParserRuleCall_3_0_0 = (RuleCall)cParamsAssignment_3_0.eContents().get(0);
+		private final Group cGroup_3_1 = (Group)cGroup_3.eContents().get(1);
+		private final Keyword cCommaKeyword_3_1_0 = (Keyword)cGroup_3_1.eContents().get(0);
+		private final Assignment cParamsAssignment_3_1_1 = (Assignment)cGroup_3_1.eContents().get(1);
+		private final RuleCall cParamsFullJvmFormalParameterParserRuleCall_3_1_1_0 = (RuleCall)cParamsAssignment_3_1_1.eContents().get(0);
+		private final Keyword cRightParenthesisKeyword_4 = (Keyword)cGroup.eContents().get(4);
+		private final Keyword cOutputKeyword_5 = (Keyword)cGroup.eContents().get(5);
+		private final Assignment cOutputAssignment_6 = (Assignment)cGroup.eContents().get(6);
+		private final RuleCall cOutputFullJvmFormalParameterParserRuleCall_6_0 = (RuleCall)cOutputAssignment_6.eContents().get(0);
+		private final Assignment cBodyAssignment_7 = (Assignment)cGroup.eContents().get(7);
+		private final RuleCall cBodyXBlockExpressionParserRuleCall_7_0 = (RuleCall)cBodyAssignment_7.eContents().get(0);
+		
+		//Operation:
+		//	"op" name=ValidID "(" (params+=FullJvmFormalParameter ("," params+=FullJvmFormalParameter)*)? ")" "output"
+		//	output=FullJvmFormalParameter body=XBlockExpression;
+		public ParserRule getRule() { return rule; }
+
+		//"op" name=ValidID "(" (params+=FullJvmFormalParameter ("," params+=FullJvmFormalParameter)*)? ")" "output"
+		//output=FullJvmFormalParameter body=XBlockExpression
+		public Group getGroup() { return cGroup; }
+
+		//"op"
+		public Keyword getOpKeyword_0() { return cOpKeyword_0; }
+
+		//name=ValidID
+		public Assignment getNameAssignment_1() { return cNameAssignment_1; }
+
+		//ValidID
+		public RuleCall getNameValidIDParserRuleCall_1_0() { return cNameValidIDParserRuleCall_1_0; }
+
+		//"("
+		public Keyword getLeftParenthesisKeyword_2() { return cLeftParenthesisKeyword_2; }
+
+		//(params+=FullJvmFormalParameter ("," params+=FullJvmFormalParameter)*)?
+		public Group getGroup_3() { return cGroup_3; }
+
+		//params+=FullJvmFormalParameter
+		public Assignment getParamsAssignment_3_0() { return cParamsAssignment_3_0; }
+
+		//FullJvmFormalParameter
+		public RuleCall getParamsFullJvmFormalParameterParserRuleCall_3_0_0() { return cParamsFullJvmFormalParameterParserRuleCall_3_0_0; }
+
+		//("," params+=FullJvmFormalParameter)*
+		public Group getGroup_3_1() { return cGroup_3_1; }
+
+		//","
+		public Keyword getCommaKeyword_3_1_0() { return cCommaKeyword_3_1_0; }
+
+		//params+=FullJvmFormalParameter
+		public Assignment getParamsAssignment_3_1_1() { return cParamsAssignment_3_1_1; }
+
+		//FullJvmFormalParameter
+		public RuleCall getParamsFullJvmFormalParameterParserRuleCall_3_1_1_0() { return cParamsFullJvmFormalParameterParserRuleCall_3_1_1_0; }
+
+		//")"
+		public Keyword getRightParenthesisKeyword_4() { return cRightParenthesisKeyword_4; }
+
+		//"output"
+		public Keyword getOutputKeyword_5() { return cOutputKeyword_5; }
+
+		//output=FullJvmFormalParameter
+		public Assignment getOutputAssignment_6() { return cOutputAssignment_6; }
+
+		//FullJvmFormalParameter
+		public RuleCall getOutputFullJvmFormalParameterParserRuleCall_6_0() { return cOutputFullJvmFormalParameterParserRuleCall_6_0; }
+
+		//body=XBlockExpression
+		public Assignment getBodyAssignment_7() { return cBodyAssignment_7; }
+
+		//XBlockExpression
+		public RuleCall getBodyXBlockExpressionParserRuleCall_7_0() { return cBodyXBlockExpressionParserRuleCall_7_0; }
 	}
 	
 	
@@ -135,6 +217,7 @@ public class HelloInferrerGrammarAccess extends AbstractGrammarElementFinder {
 	private ImportElements pImport;
 	private QualifiedNameWithWildcardElements pQualifiedNameWithWildcard;
 	private GreetingElements pGreeting;
+	private OperationElements pOperation;
 	
 	private final GrammarProvider grammarProvider;
 
@@ -188,13 +271,24 @@ public class HelloInferrerGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Greeting:
-	//	"Hello" name=ID "from" expression=XExpression "!";
+	//	"Hello" name=QualifiedName "{" operations+=Operation* "}";
 	public GreetingElements getGreetingAccess() {
 		return (pGreeting != null) ? pGreeting : (pGreeting = new GreetingElements());
 	}
 	
 	public ParserRule getGreetingRule() {
 		return getGreetingAccess().getRule();
+	}
+
+	//Operation:
+	//	"op" name=ValidID "(" (params+=FullJvmFormalParameter ("," params+=FullJvmFormalParameter)*)? ")" "output"
+	//	output=FullJvmFormalParameter body=XBlockExpression;
+	public OperationElements getOperationAccess() {
+		return (pOperation != null) ? pOperation : (pOperation = new OperationElements());
+	}
+	
+	public ParserRule getOperationRule() {
+		return getOperationAccess().getRule();
 	}
 
 	//XExpression:

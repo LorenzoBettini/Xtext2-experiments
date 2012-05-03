@@ -12,6 +12,8 @@ import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
+import org.eclipse.xtext.common.types.TypesPackage;
+
 import org.eclipse.xtext.xbase.XbasePackage;
 
 import org.xtext.example.helloinferrer.helloInferrer.Greeting;
@@ -19,6 +21,7 @@ import org.xtext.example.helloinferrer.helloInferrer.HelloInferrerFactory;
 import org.xtext.example.helloinferrer.helloInferrer.HelloInferrerPackage;
 import org.xtext.example.helloinferrer.helloInferrer.Import;
 import org.xtext.example.helloinferrer.helloInferrer.Model;
+import org.xtext.example.helloinferrer.helloInferrer.Operation;
 
 /**
  * <!-- begin-user-doc -->
@@ -48,6 +51,13 @@ public class HelloInferrerPackageImpl extends EPackageImpl implements HelloInfer
    * @generated
    */
   private EClass greetingEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass operationEClass = null;
 
   /**
    * Creates an instance of the model <b>Package</b>, registered with
@@ -190,9 +200,59 @@ public class HelloInferrerPackageImpl extends EPackageImpl implements HelloInfer
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getGreeting_Expression()
+  public EReference getGreeting_Operations()
   {
     return (EReference)greetingEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getOperation()
+  {
+    return operationEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getOperation_Name()
+  {
+    return (EAttribute)operationEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getOperation_Params()
+  {
+    return (EReference)operationEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getOperation_Output()
+  {
+    return (EReference)operationEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getOperation_Body()
+  {
+    return (EReference)operationEClass.getEStructuralFeatures().get(3);
   }
 
   /**
@@ -234,7 +294,13 @@ public class HelloInferrerPackageImpl extends EPackageImpl implements HelloInfer
 
     greetingEClass = createEClass(GREETING);
     createEAttribute(greetingEClass, GREETING__NAME);
-    createEReference(greetingEClass, GREETING__EXPRESSION);
+    createEReference(greetingEClass, GREETING__OPERATIONS);
+
+    operationEClass = createEClass(OPERATION);
+    createEAttribute(operationEClass, OPERATION__NAME);
+    createEReference(operationEClass, OPERATION__PARAMS);
+    createEReference(operationEClass, OPERATION__OUTPUT);
+    createEReference(operationEClass, OPERATION__BODY);
   }
 
   /**
@@ -262,6 +328,7 @@ public class HelloInferrerPackageImpl extends EPackageImpl implements HelloInfer
     setNsURI(eNS_URI);
 
     // Obtain other dependent packages
+    TypesPackage theTypesPackage = (TypesPackage)EPackage.Registry.INSTANCE.getEPackage(TypesPackage.eNS_URI);
     XbasePackage theXbasePackage = (XbasePackage)EPackage.Registry.INSTANCE.getEPackage(XbasePackage.eNS_URI);
 
     // Create type parameters
@@ -280,7 +347,13 @@ public class HelloInferrerPackageImpl extends EPackageImpl implements HelloInfer
 
     initEClass(greetingEClass, Greeting.class, "Greeting", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getGreeting_Name(), ecorePackage.getEString(), "name", null, 0, 1, Greeting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getGreeting_Expression(), theXbasePackage.getXExpression(), null, "expression", null, 0, 1, Greeting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getGreeting_Operations(), this.getOperation(), null, "operations", null, 0, -1, Greeting.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(operationEClass, Operation.class, "Operation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getOperation_Name(), ecorePackage.getEString(), "name", null, 0, 1, Operation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getOperation_Params(), theTypesPackage.getJvmFormalParameter(), null, "params", null, 0, -1, Operation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getOperation_Output(), theTypesPackage.getJvmFormalParameter(), null, "output", null, 0, 1, Operation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getOperation_Body(), theXbasePackage.getXExpression(), null, "body", null, 0, 1, Operation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     // Create resource
     createResource(eNS_URI);

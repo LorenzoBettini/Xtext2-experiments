@@ -144,13 +144,13 @@ public interface HelloInferrerPackage extends EPackage
   int GREETING__NAME = 0;
 
   /**
-   * The feature id for the '<em><b>Expression</b></em>' containment reference.
+   * The feature id for the '<em><b>Operations</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int GREETING__EXPRESSION = 1;
+  int GREETING__OPERATIONS = 1;
 
   /**
    * The number of structural features of the '<em>Greeting</em>' class.
@@ -160,6 +160,61 @@ public interface HelloInferrerPackage extends EPackage
    * @ordered
    */
   int GREETING_FEATURE_COUNT = 2;
+
+  /**
+   * The meta object id for the '{@link org.xtext.example.helloinferrer.helloInferrer.impl.OperationImpl <em>Operation</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see org.xtext.example.helloinferrer.helloInferrer.impl.OperationImpl
+   * @see org.xtext.example.helloinferrer.helloInferrer.impl.HelloInferrerPackageImpl#getOperation()
+   * @generated
+   */
+  int OPERATION = 3;
+
+  /**
+   * The feature id for the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int OPERATION__NAME = 0;
+
+  /**
+   * The feature id for the '<em><b>Params</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int OPERATION__PARAMS = 1;
+
+  /**
+   * The feature id for the '<em><b>Output</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int OPERATION__OUTPUT = 2;
+
+  /**
+   * The feature id for the '<em><b>Body</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int OPERATION__BODY = 3;
+
+  /**
+   * The number of structural features of the '<em>Operation</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int OPERATION_FEATURE_COUNT = 4;
 
 
   /**
@@ -237,15 +292,69 @@ public interface HelloInferrerPackage extends EPackage
   EAttribute getGreeting_Name();
 
   /**
-   * Returns the meta object for the containment reference '{@link org.xtext.example.helloinferrer.helloInferrer.Greeting#getExpression <em>Expression</em>}'.
+   * Returns the meta object for the containment reference list '{@link org.xtext.example.helloinferrer.helloInferrer.Greeting#getOperations <em>Operations</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference '<em>Expression</em>'.
-   * @see org.xtext.example.helloinferrer.helloInferrer.Greeting#getExpression()
+   * @return the meta object for the containment reference list '<em>Operations</em>'.
+   * @see org.xtext.example.helloinferrer.helloInferrer.Greeting#getOperations()
    * @see #getGreeting()
    * @generated
    */
-  EReference getGreeting_Expression();
+  EReference getGreeting_Operations();
+
+  /**
+   * Returns the meta object for class '{@link org.xtext.example.helloinferrer.helloInferrer.Operation <em>Operation</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Operation</em>'.
+   * @see org.xtext.example.helloinferrer.helloInferrer.Operation
+   * @generated
+   */
+  EClass getOperation();
+
+  /**
+   * Returns the meta object for the attribute '{@link org.xtext.example.helloinferrer.helloInferrer.Operation#getName <em>Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see org.xtext.example.helloinferrer.helloInferrer.Operation#getName()
+   * @see #getOperation()
+   * @generated
+   */
+  EAttribute getOperation_Name();
+
+  /**
+   * Returns the meta object for the containment reference list '{@link org.xtext.example.helloinferrer.helloInferrer.Operation#getParams <em>Params</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference list '<em>Params</em>'.
+   * @see org.xtext.example.helloinferrer.helloInferrer.Operation#getParams()
+   * @see #getOperation()
+   * @generated
+   */
+  EReference getOperation_Params();
+
+  /**
+   * Returns the meta object for the containment reference '{@link org.xtext.example.helloinferrer.helloInferrer.Operation#getOutput <em>Output</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>Output</em>'.
+   * @see org.xtext.example.helloinferrer.helloInferrer.Operation#getOutput()
+   * @see #getOperation()
+   * @generated
+   */
+  EReference getOperation_Output();
+
+  /**
+   * Returns the meta object for the containment reference '{@link org.xtext.example.helloinferrer.helloInferrer.Operation#getBody <em>Body</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the containment reference '<em>Body</em>'.
+   * @see org.xtext.example.helloinferrer.helloInferrer.Operation#getBody()
+   * @see #getOperation()
+   * @generated
+   */
+  EReference getOperation_Body();
 
   /**
    * Returns the factory that creates the instances of the model.
@@ -333,12 +442,54 @@ public interface HelloInferrerPackage extends EPackage
     EAttribute GREETING__NAME = eINSTANCE.getGreeting_Name();
 
     /**
-     * The meta object literal for the '<em><b>Expression</b></em>' containment reference feature.
+     * The meta object literal for the '<em><b>Operations</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference GREETING__EXPRESSION = eINSTANCE.getGreeting_Expression();
+    EReference GREETING__OPERATIONS = eINSTANCE.getGreeting_Operations();
+
+    /**
+     * The meta object literal for the '{@link org.xtext.example.helloinferrer.helloInferrer.impl.OperationImpl <em>Operation</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.xtext.example.helloinferrer.helloInferrer.impl.OperationImpl
+     * @see org.xtext.example.helloinferrer.helloInferrer.impl.HelloInferrerPackageImpl#getOperation()
+     * @generated
+     */
+    EClass OPERATION = eINSTANCE.getOperation();
+
+    /**
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute OPERATION__NAME = eINSTANCE.getOperation_Name();
+
+    /**
+     * The meta object literal for the '<em><b>Params</b></em>' containment reference list feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference OPERATION__PARAMS = eINSTANCE.getOperation_Params();
+
+    /**
+     * The meta object literal for the '<em><b>Output</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference OPERATION__OUTPUT = eINSTANCE.getOperation_Output();
+
+    /**
+     * The meta object literal for the '<em><b>Body</b></em>' containment reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference OPERATION__BODY = eINSTANCE.getOperation_Body();
 
   }
 

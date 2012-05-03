@@ -5,8 +5,12 @@
  */
 package org.xtext.example.helloinferrer.helloInferrer.impl;
 
+import java.util.Collection;
+
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
@@ -14,10 +18,12 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.xtext.xbase.XExpression;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 import org.xtext.example.helloinferrer.helloInferrer.Greeting;
 import org.xtext.example.helloinferrer.helloInferrer.HelloInferrerPackage;
+import org.xtext.example.helloinferrer.helloInferrer.Operation;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +33,7 @@ import org.xtext.example.helloinferrer.helloInferrer.HelloInferrerPackage;
  * The following features are implemented:
  * <ul>
  *   <li>{@link org.xtext.example.helloinferrer.helloInferrer.impl.GreetingImpl#getName <em>Name</em>}</li>
- *   <li>{@link org.xtext.example.helloinferrer.helloInferrer.impl.GreetingImpl#getExpression <em>Expression</em>}</li>
+ *   <li>{@link org.xtext.example.helloinferrer.helloInferrer.impl.GreetingImpl#getOperations <em>Operations</em>}</li>
  * </ul>
  * </p>
  *
@@ -56,14 +62,14 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
   protected String name = NAME_EDEFAULT;
 
   /**
-   * The cached value of the '{@link #getExpression() <em>Expression</em>}' containment reference.
+   * The cached value of the '{@link #getOperations() <em>Operations</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getExpression()
+   * @see #getOperations()
    * @generated
    * @ordered
    */
-  protected XExpression expression;
+  protected EList<Operation> operations;
 
   /**
    * <!-- begin-user-doc -->
@@ -114,47 +120,13 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
    * <!-- end-user-doc -->
    * @generated
    */
-  public XExpression getExpression()
+  public EList<Operation> getOperations()
   {
-    return expression;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public NotificationChain basicSetExpression(XExpression newExpression, NotificationChain msgs)
-  {
-    XExpression oldExpression = expression;
-    expression = newExpression;
-    if (eNotificationRequired())
+    if (operations == null)
     {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, HelloInferrerPackage.GREETING__EXPRESSION, oldExpression, newExpression);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
+      operations = new EObjectContainmentEList<Operation>(Operation.class, this, HelloInferrerPackage.GREETING__OPERATIONS);
     }
-    return msgs;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public void setExpression(XExpression newExpression)
-  {
-    if (newExpression != expression)
-    {
-      NotificationChain msgs = null;
-      if (expression != null)
-        msgs = ((InternalEObject)expression).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - HelloInferrerPackage.GREETING__EXPRESSION, null, msgs);
-      if (newExpression != null)
-        msgs = ((InternalEObject)newExpression).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - HelloInferrerPackage.GREETING__EXPRESSION, null, msgs);
-      msgs = basicSetExpression(newExpression, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, HelloInferrerPackage.GREETING__EXPRESSION, newExpression, newExpression));
+    return operations;
   }
 
   /**
@@ -167,8 +139,8 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
   {
     switch (featureID)
     {
-      case HelloInferrerPackage.GREETING__EXPRESSION:
-        return basicSetExpression(null, msgs);
+      case HelloInferrerPackage.GREETING__OPERATIONS:
+        return ((InternalEList<?>)getOperations()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -185,8 +157,8 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
     {
       case HelloInferrerPackage.GREETING__NAME:
         return getName();
-      case HelloInferrerPackage.GREETING__EXPRESSION:
-        return getExpression();
+      case HelloInferrerPackage.GREETING__OPERATIONS:
+        return getOperations();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -196,6 +168,7 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
    * <!-- end-user-doc -->
    * @generated
    */
+  @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue)
   {
@@ -204,8 +177,9 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
       case HelloInferrerPackage.GREETING__NAME:
         setName((String)newValue);
         return;
-      case HelloInferrerPackage.GREETING__EXPRESSION:
-        setExpression((XExpression)newValue);
+      case HelloInferrerPackage.GREETING__OPERATIONS:
+        getOperations().clear();
+        getOperations().addAll((Collection<? extends Operation>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -224,8 +198,8 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
       case HelloInferrerPackage.GREETING__NAME:
         setName(NAME_EDEFAULT);
         return;
-      case HelloInferrerPackage.GREETING__EXPRESSION:
-        setExpression((XExpression)null);
+      case HelloInferrerPackage.GREETING__OPERATIONS:
+        getOperations().clear();
         return;
     }
     super.eUnset(featureID);
@@ -243,8 +217,8 @@ public class GreetingImpl extends MinimalEObjectImpl.Container implements Greeti
     {
       case HelloInferrerPackage.GREETING__NAME:
         return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-      case HelloInferrerPackage.GREETING__EXPRESSION:
-        return expression != null;
+      case HelloInferrerPackage.GREETING__OPERATIONS:
+        return operations != null && !operations.isEmpty();
     }
     return super.eIsSet(featureID);
   }

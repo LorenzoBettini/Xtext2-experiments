@@ -55,6 +55,7 @@ import org.xtext.example.helloinferrer.helloInferrer.Greeting;
 import org.xtext.example.helloinferrer.helloInferrer.HelloInferrerPackage;
 import org.xtext.example.helloinferrer.helloInferrer.Import;
 import org.xtext.example.helloinferrer.helloInferrer.Model;
+import org.xtext.example.helloinferrer.helloInferrer.Operation;
 import org.xtext.example.helloinferrer.services.HelloInferrerGrammarAccess;
 
 @SuppressWarnings("restriction")
@@ -106,6 +107,12 @@ public class AbstractHelloInferrerSemanticSequencer extends AbstractSemanticSequ
 			case HelloInferrerPackage.MODEL:
 				if(context == grammarAccess.getModelRule()) {
 					sequence_Model(context, (Model) semanticObject); 
+					return; 
+				}
+				else break;
+			case HelloInferrerPackage.OPERATION:
+				if(context == grammarAccess.getOperationRule()) {
+					sequence_Operation(context, (Operation) semanticObject); 
 					return; 
 				}
 				else break;
@@ -980,20 +987,10 @@ public class AbstractHelloInferrerSemanticSequencer extends AbstractSemanticSequ
 	
 	/**
 	 * Constraint:
-	 *     (name=ID expression=XExpression)
+	 *     (name=QualifiedName operations+=Operation*)
 	 */
 	protected void sequence_Greeting(EObject context, Greeting semanticObject) {
-		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, HelloInferrerPackage.Literals.GREETING__NAME) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HelloInferrerPackage.Literals.GREETING__NAME));
-			if(transientValues.isValueTransient(semanticObject, HelloInferrerPackage.Literals.GREETING__EXPRESSION) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HelloInferrerPackage.Literals.GREETING__EXPRESSION));
-		}
-		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
-		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getGreetingAccess().getNameIDTerminalRuleCall_1_0(), semanticObject.getName());
-		feeder.accept(grammarAccess.getGreetingAccess().getExpressionXExpressionParserRuleCall_3_0(), semanticObject.getExpression());
-		feeder.finish();
+		genericSequencer.createSequence(context, semanticObject);
 	}
 	
 	
@@ -1090,6 +1087,15 @@ public class AbstractHelloInferrerSemanticSequencer extends AbstractSemanticSequ
 	 *     (imports+=Import* greetings+=Greeting*)
 	 */
 	protected void sequence_Model(EObject context, Model semanticObject) {
+		genericSequencer.createSequence(context, semanticObject);
+	}
+	
+	
+	/**
+	 * Constraint:
+	 *     (name=ValidID (params+=FullJvmFormalParameter params+=FullJvmFormalParameter*)? output=FullJvmFormalParameter body=XBlockExpression)
+	 */
+	protected void sequence_Operation(EObject context, Operation semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
 	}
 	

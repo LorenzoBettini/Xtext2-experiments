@@ -70,6 +70,7 @@ public class HelloInferrerFactoryImpl extends EFactoryImpl implements HelloInfer
       case HelloInferrerPackage.MODEL: return createModel();
       case HelloInferrerPackage.IMPORT: return createImport();
       case HelloInferrerPackage.GREETING: return createGreeting();
+      case HelloInferrerPackage.OPERATION: return createOperation();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
     }
@@ -106,6 +107,17 @@ public class HelloInferrerFactoryImpl extends EFactoryImpl implements HelloInfer
   {
     GreetingImpl greeting = new GreetingImpl();
     return greeting;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public Operation createOperation()
+  {
+    OperationImpl operation = new OperationImpl();
+    return operation;
   }
 
   /**
