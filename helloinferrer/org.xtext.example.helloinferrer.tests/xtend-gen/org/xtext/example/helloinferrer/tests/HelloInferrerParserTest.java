@@ -11,6 +11,7 @@ import org.eclipse.xtext.junit4.validation.ValidationTestHelper;
 import org.eclipse.xtext.xbase.XbasePackage;
 import org.eclipse.xtext.xbase.lib.Exceptions;
 import org.eclipse.xtext.xbase.validation.IssueCodes;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.xtext.example.helloinferrer.HelloInferrerInjectorProvider;
@@ -25,6 +26,11 @@ public class HelloInferrerParserTest {
   
   @Inject
   private ValidationTestHelper _validationTestHelper;
+  
+  @BeforeClass
+  public static void setNewLine() {
+    System.setProperty("line.separator", "\n");
+  }
   
   @Test
   public void testOperation() {

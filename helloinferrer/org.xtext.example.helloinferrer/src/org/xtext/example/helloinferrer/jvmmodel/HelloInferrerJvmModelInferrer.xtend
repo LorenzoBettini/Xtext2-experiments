@@ -9,6 +9,10 @@ import org.xtext.example.helloinferrer.helloInferrer.Greeting
 import org.eclipse.xtext.common.types.util.TypeReferences
 import org.eclipse.xtext.xbase.compiler.XbaseCompiler
 import org.eclipse.xtext.xbase.compiler.TypeReferenceSerializer
+import org.eclipse.xtext.common.types.util.Primitives
+import org.eclipse.xtext.common.types.JvmPrimitiveType
+import org.eclipse.xtext.common.types.JvmFormalParameter
+import org.eclipse.xtext.xbase.compiler.output.ITreeAppendable
 
 /**
  * <p>Infers a JVM model from the source model.</p> 
@@ -28,6 +32,8 @@ class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
 	@Inject extension TypeReferences
 	
 	@Inject extension TypeReferenceSerializer
+	
+	@Inject Primitives primitives
 	
 	@Inject XbaseCompiler xbaseCompiler
 
@@ -68,14 +74,32 @@ class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
 						parameters += p.toParameter(p.name, p.parameterType)
 					}
 					body = [
-						val outputVarName = it.declareVariable(o.output, o.output.simpleName)
-						o.output.parameterType.serialize(o, it)
-						it.append(" " + outputVarName + " = null; // output parameter")
+						it.declareVariableForOutputParameter(o.output)
+						
 						xbaseCompiler.compile(o.body, it, "void".getTypeForName(o), null)
 					]
 				]
 			}
 		]
+   	}
+   	
+   	def declareVariableForOutputParameter(ITreeAppendable it, JvmFormalParameter o) {
+   		val outputVarName = it.declareVariable(o, o.simpleName)
+		o.parameterType.serialize(o, it)
+		it.append(" " + outputVarName + " = ")
+		if (primitives.isPrimitive(o.parameterType)) {
+			val primitiveKind = primitives.
+				primitiveKind
+					(o.parameterType.type as JvmPrimitiveType)
+			if (primitiveKind == Primitives$Primitive::Boolean)
+				it.append("false")
+			else
+				it.append("0")
+		} else {
+			it.append("null")
+		}
+		it.append("; // output parameter")
+		outputVarName
    	}
 }
 

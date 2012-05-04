@@ -1,5 +1,6 @@
 package org.xtext.example.helloinferrer.jvmmodel;
 
+import com.google.common.base.Objects;
 import com.google.inject.Inject;
 import java.util.Arrays;
 import org.eclipse.emf.common.util.EList;
@@ -8,7 +9,11 @@ import org.eclipse.xtext.common.types.JvmFormalParameter;
 import org.eclipse.xtext.common.types.JvmGenericType;
 import org.eclipse.xtext.common.types.JvmMember;
 import org.eclipse.xtext.common.types.JvmOperation;
+import org.eclipse.xtext.common.types.JvmPrimitiveType;
+import org.eclipse.xtext.common.types.JvmType;
 import org.eclipse.xtext.common.types.JvmTypeReference;
+import org.eclipse.xtext.common.types.util.Primitives;
+import org.eclipse.xtext.common.types.util.Primitives.Primitive;
 import org.eclipse.xtext.common.types.util.TypeReferences;
 import org.eclipse.xtext.naming.IQualifiedNameProvider;
 import org.eclipse.xtext.naming.QualifiedName;
@@ -46,6 +51,9 @@ public class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
   
   @Inject
   private TypeReferenceSerializer _typeReferenceSerializer;
+  
+  @Inject
+  private Primitives primitives;
   
   @Inject
   private XbaseCompiler xbaseCompiler;
@@ -103,15 +111,7 @@ public class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
                   final Procedure1<ITreeAppendable> _function = new Procedure1<ITreeAppendable>() {
                       public void apply(final ITreeAppendable it) {
                         JvmFormalParameter _output = o.getOutput();
-                        JvmFormalParameter _output_1 = o.getOutput();
-                        String _simpleName = _output_1.getSimpleName();
-                        final String outputVarName = it.declareVariable(_output, _simpleName);
-                        JvmFormalParameter _output_2 = o.getOutput();
-                        JvmTypeReference _parameterType = _output_2.getParameterType();
-                        HelloInferrerJvmModelInferrer.this._typeReferenceSerializer.serialize(_parameterType, o, it);
-                        String _plus = (" " + outputVarName);
-                        String _plus_1 = (_plus + " = null; // output parameter");
-                        it.append(_plus_1);
+                        HelloInferrerJvmModelInferrer.this.declareVariableForOutputParameter(it, _output);
                         XExpression _body = o.getBody();
                         JvmTypeReference _typeForName = HelloInferrerJvmModelInferrer.this._typeReferences.getTypeForName("void", o);
                         HelloInferrerJvmModelInferrer.this.xbaseCompiler.compile(_body, it, _typeForName, null);
@@ -126,6 +126,37 @@ public class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
         }
       };
     _accept.initializeLater(_function);
+  }
+  
+  public String declareVariableForOutputParameter(final ITreeAppendable it, final JvmFormalParameter o) {
+    String _xblockexpression = null;
+    {
+      String _simpleName = o.getSimpleName();
+      final String outputVarName = it.declareVariable(o, _simpleName);
+      JvmTypeReference _parameterType = o.getParameterType();
+      this._typeReferenceSerializer.serialize(_parameterType, o, it);
+      String _plus = (" " + outputVarName);
+      String _plus_1 = (_plus + " = ");
+      it.append(_plus_1);
+      JvmTypeReference _parameterType_1 = o.getParameterType();
+      boolean _isPrimitive = this.primitives.isPrimitive(_parameterType_1);
+      if (_isPrimitive) {
+        JvmTypeReference _parameterType_2 = o.getParameterType();
+        JvmType _type = _parameterType_2.getType();
+        final Primitive primitiveKind = this.primitives.primitiveKind(((JvmPrimitiveType) _type));
+        boolean _equals = Objects.equal(primitiveKind, Primitive.Boolean);
+        if (_equals) {
+          it.append("false");
+        } else {
+          it.append("0");
+        }
+      } else {
+        it.append("null");
+      }
+      it.append("; // output parameter");
+      _xblockexpression = (outputVarName);
+    }
+    return _xblockexpression;
   }
   
   public void infer(final EObject element, final IJvmDeclaredTypeAcceptor acceptor, final boolean isPreIndexingPhase) {

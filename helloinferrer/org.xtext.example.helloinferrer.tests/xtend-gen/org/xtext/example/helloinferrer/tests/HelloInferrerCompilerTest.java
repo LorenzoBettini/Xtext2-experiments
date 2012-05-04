@@ -170,7 +170,7 @@ public class HelloInferrerCompilerTest {
     _builder_1.append("public void myOpWithBasicOutputParameter(final String s, final int i) {");
     _builder_1.newLine();
     _builder_1.append("    ");
-    _builder_1.append("boolean b = null; // output parameter");
+    _builder_1.append("boolean b = false; // output parameter");
     _builder_1.newLine();
     _builder_1.append("  ");
     _builder_1.append("}");
@@ -236,7 +236,7 @@ public class HelloInferrerCompilerTest {
     _builder_1.append("public void myOp2(final boolean b, final String s) {");
     _builder_1.newLine();
     _builder_1.append("    ");
-    _builder_1.append("int i = null; // output parameter");
+    _builder_1.append("int i = 0; // output parameter");
     _builder_1.newLine();
     _builder_1.append("  ");
     _builder_1.append("}");

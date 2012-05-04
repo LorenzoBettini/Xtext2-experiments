@@ -101,7 +101,7 @@ public class MyHello {
   }
   
   public void myOpWithBasicOutputParameter(final String s, final int i) {
-    boolean b = null; // output parameter
+    boolean b = false; // output parameter
   }
 }
 ''')
@@ -132,7 +132,7 @@ public class MyHello {
   }
   
   public void myOp2(final boolean b, final String s) {
-    int i = null; // output parameter
+    int i = 0; // output parameter
   }
 }
 ''')

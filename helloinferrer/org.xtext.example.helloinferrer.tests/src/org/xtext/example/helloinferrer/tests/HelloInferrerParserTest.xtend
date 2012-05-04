@@ -12,6 +12,7 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.xtext.example.helloinferrer.HelloInferrerInjectorProvider
 import org.xtext.example.helloinferrer.helloInferrer.Model
+import org.junit.BeforeClass
 
 @RunWith(typeof(XtextRunner))
 @InjectWith(typeof(HelloInferrerInjectorProvider))
@@ -20,6 +21,11 @@ class HelloInferrerParserTest {
 	@Inject extension ParseHelper<Model>
 	
 	@Inject extension ValidationTestHelper
+	
+	@BeforeClass
+	def static void setNewLine() {
+		System::setProperty("line.separator", "\n")
+	}
 	
 	@Test
 	def void testOperation() {
