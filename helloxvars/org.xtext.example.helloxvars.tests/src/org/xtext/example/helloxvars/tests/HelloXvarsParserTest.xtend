@@ -28,40 +28,39 @@ class HelloXvarsParserTest {
 
 	@Test
 	def void testParsingAndLinkingWithVars() {
-		parser.parse("
+		parser.parse('''
 			val s1 = 'foo'
 			val s2 = 'bar'
 			val s3 = s1 + s2
 			Hello foo from new String(s3)!
-		").assertNoErrors
+		''').assertNoErrors
 	}
 	
 	@Test
 	def void testParsingAndLinkingWithClosures() {
-		parser.parse("
+		parser.parse('''
 			val s1 = 'foo'
 			val s2 = 'bar'
 			val s3 = s1 + [ s | s.toFirstLower + s1 ].apply(s2 + s1)
 			Hello foo from new String(s3)!
-		").assertNoErrors
+		''').assertNoErrors
 	}
 
 	@Test
 	def void testParsingAndLinkingWithMissingVar() {
-		parser.parse("
-			Hello foo from new String(s)!
-		").assertError(XbasePackage::eINSTANCE.XFeatureCall,
+		parser.parse("Hello foo from new String(s)!").
+		assertError(XbasePackage::eINSTANCE.XFeatureCall,
 				Diagnostic::LINKING_DIAGNOSTIC,
 				"Couldn't resolve reference to JvmIdentifiableElement 's'.")
 	}
 
 	@Test
 	def void testParsingAndLinkingWithWrongVarOrder() {
-		parser.parse("
+		parser.parse('''
 			val s1 = s2
 			val s2 = s1
 			Hello foo from new String(s1)!
-		").assertError(XbasePackage::eINSTANCE.XFeatureCall,
+		''').assertError(XbasePackage::eINSTANCE.XFeatureCall,
 				Diagnostic::LINKING_DIAGNOSTIC,
 				"Couldn't resolve reference to JvmIdentifiableElement 's2'.")
 	}

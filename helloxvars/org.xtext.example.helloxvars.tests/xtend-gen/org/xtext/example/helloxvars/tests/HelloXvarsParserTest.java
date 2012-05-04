@@ -2,6 +2,7 @@ package org.xtext.example.helloxvars.tests;
 
 import com.google.inject.Inject;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.xtend2.lib.StringConcatenation;
 import org.eclipse.xtext.diagnostics.Diagnostic;
 import org.eclipse.xtext.junit4.InjectWith;
 import org.eclipse.xtext.junit4.XtextRunner;
@@ -37,7 +38,16 @@ public class HelloXvarsParserTest {
   @Test
   public void testParsingAndLinkingWithVars() {
     try {
-      Model _parse = this.parser.parse("\n\t\t\tval s1 = \'foo\'\n\t\t\tval s2 = \'bar\'\n\t\t\tval s3 = s1 + s2\n\t\t\tHello foo from new String(s3)!\n\t\t");
+      StringConcatenation _builder = new StringConcatenation();
+      _builder.append("val s1 = \'foo\'");
+      _builder.newLine();
+      _builder.append("val s2 = \'bar\'");
+      _builder.newLine();
+      _builder.append("val s3 = s1 + s2");
+      _builder.newLine();
+      _builder.append("Hello foo from new String(s3)!");
+      _builder.newLine();
+      Model _parse = this.parser.parse(_builder);
       this._validationTestHelper.assertNoErrors(_parse);
     } catch (Exception _e) {
       throw Exceptions.sneakyThrow(_e);
@@ -47,7 +57,16 @@ public class HelloXvarsParserTest {
   @Test
   public void testParsingAndLinkingWithClosures() {
     try {
-      Model _parse = this.parser.parse("\n\t\t\tval s1 = \'foo\'\n\t\t\tval s2 = \'bar\'\n\t\t\tval s3 = s1 + [ s | s.toFirstLower + s1 ].apply(s2 + s1)\n\t\t\tHello foo from new String(s3)!\n\t\t");
+      StringConcatenation _builder = new StringConcatenation();
+      _builder.append("val s1 = \'foo\'");
+      _builder.newLine();
+      _builder.append("val s2 = \'bar\'");
+      _builder.newLine();
+      _builder.append("val s3 = s1 + [ s | s.toFirstLower + s1 ].apply(s2 + s1)");
+      _builder.newLine();
+      _builder.append("Hello foo from new String(s3)!");
+      _builder.newLine();
+      Model _parse = this.parser.parse(_builder);
       this._validationTestHelper.assertNoErrors(_parse);
     } catch (Exception _e) {
       throw Exceptions.sneakyThrow(_e);
@@ -57,7 +76,7 @@ public class HelloXvarsParserTest {
   @Test
   public void testParsingAndLinkingWithMissingVar() {
     try {
-      Model _parse = this.parser.parse("\n\t\t\tHello foo from new String(s)!\n\t\t");
+      Model _parse = this.parser.parse("Hello foo from new String(s)!");
       EClass _xFeatureCall = XbasePackage.eINSTANCE.getXFeatureCall();
       this._validationTestHelper.assertError(_parse, _xFeatureCall, 
         Diagnostic.LINKING_DIAGNOSTIC, 
@@ -70,7 +89,14 @@ public class HelloXvarsParserTest {
   @Test
   public void testParsingAndLinkingWithWrongVarOrder() {
     try {
-      Model _parse = this.parser.parse("\n\t\t\tval s1 = s2\n\t\t\tval s2 = s1\n\t\t\tHello foo from new String(s1)!\n\t\t");
+      StringConcatenation _builder = new StringConcatenation();
+      _builder.append("val s1 = s2");
+      _builder.newLine();
+      _builder.append("val s2 = s1");
+      _builder.newLine();
+      _builder.append("Hello foo from new String(s1)!");
+      _builder.newLine();
+      Model _parse = this.parser.parse(_builder);
       EClass _xFeatureCall = XbasePackage.eINSTANCE.getXFeatureCall();
       this._validationTestHelper.assertError(_parse, _xFeatureCall, 
         Diagnostic.LINKING_DIAGNOSTIC, 
