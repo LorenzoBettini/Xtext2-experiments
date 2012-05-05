@@ -13,6 +13,7 @@ import org.eclipse.xtext.common.types.util.Primitives
 import org.eclipse.xtext.common.types.JvmPrimitiveType
 import org.eclipse.xtext.common.types.JvmFormalParameter
 import org.eclipse.xtext.xbase.compiler.output.ITreeAppendable
+import org.xtext.example.helloinferrer.runtime.HelloResult
 
 /**
  * <p>Infers a JVM model from the source model.</p> 
@@ -68,7 +69,9 @@ class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
 		).initializeLater [
 			documentation = element.documentation
 			for (o : element.operations) {
-				members += o.toMethod(o.name, "void".getTypeForName(o)) [
+				members += o.toMethod(o.name, 
+					o.output.returnType
+				) [
 					documentation = o.documentation
 					for (p : o.params) {
 						parameters += p.toParameter(p.name, p.parameterType)
@@ -77,6 +80,8 @@ class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
 						it.declareVariableForOutputParameter(o.output)
 						
 						xbaseCompiler.compile(o.body, it, "void".getTypeForName(o), null)
+						
+						it.generateFinalReturnStatement(o.output)
 					]
 				]
 			}
@@ -100,6 +105,17 @@ class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
 		}
 		it.append("; // output parameter")
 		outputVarName
+   	}
+   	
+   	def returnType(JvmFormalParameter o) {
+   		typeof(HelloResult).
+						getTypeForName(o, o.parameterType)
+   	}
+   	
+   	def generateFinalReturnStatement(ITreeAppendable it, JvmFormalParameter o) {
+   		it.newLine.append("return new ")
+   		o.returnType.serialize(o, it)
+   		it.append('''(«it.getName(o)»);''')
    	}
 }
 

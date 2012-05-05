@@ -88,6 +88,21 @@ class HelloInferrerParserTest {
 		)
 	}
 	
+	@Test
+	def void testInvalidReturn() {
+		'''
+		Hello my.test.hello {
+			op myOp(String s, int i) output Boolean b {
+				return true
+			}
+		}
+		'''.parse.assertError(
+			XbasePackage::eINSTANCE.XReturnExpression,
+			IssueCodes::INVALID_RETURN,
+			"Explicit return not available in this language."
+		)
+	}
+	
 	def checkModel(CharSequence prog) {
 		val model = prog.parse
 		Assert::assertNotNull(model)

@@ -49,10 +49,13 @@ Hello my.test.MyHello {
 '''
 package my.test;
 
+import org.xtext.example.helloinferrer.runtime.HelloResult;
+
 public class MyHello {
-  public void myOp(final String s, final int i) {
+  public HelloResult<Boolean> myOp(final String s, final int i) {
     Boolean b = null; // output parameter
     final String foo = (s + Integer.valueOf(i));
+    return new HelloResult<Boolean>(b);
   }
 }
 ''')
@@ -70,10 +73,13 @@ Hello my.test.MyHello {
 '''
 package my.test;
 
+import org.xtext.example.helloinferrer.runtime.HelloResult;
+
 public class MyHello {
-  public void myOp(final String s, final int i) {
+  public HelloResult<Boolean> myOp(final String s, final int i) {
     Boolean b = null; // output parameter
     b = Boolean.valueOf(true);
+    return new HelloResult<Boolean>(b);
   }
 }
 ''')
@@ -95,13 +101,17 @@ Hello my.test.MyHello {
 '''
 package my.test;
 
+import org.xtext.example.helloinferrer.runtime.HelloResult;
+
 public class MyHello {
-  public void myOpWithClassOutputParameter(final String s, final int i) {
+  public HelloResult<Boolean> myOpWithClassOutputParameter(final String s, final int i) {
     Boolean b = null; // output parameter
+    return new HelloResult<Boolean>(b);
   }
   
-  public void myOpWithBasicOutputParameter(final String s, final int i) {
+  public HelloResult<Boolean> myOpWithBasicOutputParameter(final String s, final int i) {
     boolean b = false; // output parameter
+    return new HelloResult<Boolean>(b);
   }
 }
 ''')
@@ -124,15 +134,19 @@ Hello my.test.MyHello {
 '''
 package my.test;
 
+import org.xtext.example.helloinferrer.runtime.HelloResult;
+
 public class MyHello {
-  public void myOp(final String s, final int i) {
+  public HelloResult<Boolean> myOp(final String s, final int i) {
     Boolean b = null; // output parameter
     this.myOp2(true, "foo");
     this.myOp2(true, "foo");
+    return new HelloResult<Boolean>(b);
   }
   
-  public void myOp2(final boolean b, final String s) {
+  public HelloResult<Integer> myOp2(final boolean b, final String s) {
     int i = 0; // output parameter
+    return new HelloResult<Integer>(i);
   }
 }
 ''')

@@ -141,6 +141,33 @@ public class HelloInferrerParserTest {
     }
   }
   
+  @Test
+  public void testInvalidReturn() {
+    try {
+      StringConcatenation _builder = new StringConcatenation();
+      _builder.append("Hello my.test.hello {");
+      _builder.newLine();
+      _builder.append("\t");
+      _builder.append("op myOp(String s, int i) output Boolean b {");
+      _builder.newLine();
+      _builder.append("\t\t");
+      _builder.append("return true");
+      _builder.newLine();
+      _builder.append("\t");
+      _builder.append("}");
+      _builder.newLine();
+      _builder.append("}");
+      _builder.newLine();
+      Model _parse = this._parseHelper.parse(_builder);
+      EClass _xReturnExpression = XbasePackage.eINSTANCE.getXReturnExpression();
+      this._validationTestHelper.assertError(_parse, _xReturnExpression, 
+        IssueCodes.INVALID_RETURN, 
+        "Explicit return not available in this language.");
+    } catch (Exception _e) {
+      throw Exceptions.sneakyThrow(_e);
+    }
+  }
+  
   public Model checkModel(final CharSequence prog) {
     try {
       Model _xblockexpression = null;

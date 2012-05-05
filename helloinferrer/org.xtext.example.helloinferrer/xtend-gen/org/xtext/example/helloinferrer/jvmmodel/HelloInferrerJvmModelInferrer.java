@@ -5,6 +5,7 @@ import com.google.inject.Inject;
 import java.util.Arrays;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.xtend2.lib.StringConcatenation;
 import org.eclipse.xtext.common.types.JvmFormalParameter;
 import org.eclipse.xtext.common.types.JvmGenericType;
 import org.eclipse.xtext.common.types.JvmMember;
@@ -28,6 +29,7 @@ import org.eclipse.xtext.xbase.jvmmodel.JvmTypesBuilder;
 import org.eclipse.xtext.xbase.lib.Procedures.Procedure1;
 import org.xtext.example.helloinferrer.helloInferrer.Greeting;
 import org.xtext.example.helloinferrer.helloInferrer.Operation;
+import org.xtext.example.helloinferrer.runtime.HelloResult;
 
 /**
  * <p>Infers a JVM model from the source model.</p>
@@ -95,7 +97,8 @@ public class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
           for (final Operation o : _operations) {
             EList<JvmMember> _members = it.getMembers();
             String _name = o.getName();
-            JvmTypeReference _typeForName = HelloInferrerJvmModelInferrer.this._typeReferences.getTypeForName("void", o);
+            JvmFormalParameter _output = o.getOutput();
+            JvmTypeReference _returnType = HelloInferrerJvmModelInferrer.this.returnType(_output);
             final Procedure1<JvmOperation> _function = new Procedure1<JvmOperation>() {
                 public void apply(final JvmOperation it) {
                   String _documentation = HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.getDocumentation(o);
@@ -115,12 +118,14 @@ public class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
                         XExpression _body = o.getBody();
                         JvmTypeReference _typeForName = HelloInferrerJvmModelInferrer.this._typeReferences.getTypeForName("void", o);
                         HelloInferrerJvmModelInferrer.this.xbaseCompiler.compile(_body, it, _typeForName, null);
+                        JvmFormalParameter _output_1 = o.getOutput();
+                        HelloInferrerJvmModelInferrer.this.generateFinalReturnStatement(it, _output_1);
                       }
                     };
                   HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.setBody(it, _function);
                 }
               };
-            JvmOperation _method = HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.toMethod(o, _name, _typeForName, _function);
+            JvmOperation _method = HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.toMethod(o, _name, _returnType, _function);
             HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.<JvmOperation>operator_add(_members, _method);
           }
         }
@@ -155,6 +160,30 @@ public class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
       }
       it.append("; // output parameter");
       _xblockexpression = (outputVarName);
+    }
+    return _xblockexpression;
+  }
+  
+  public JvmTypeReference returnType(final JvmFormalParameter o) {
+    JvmTypeReference _parameterType = o.getParameterType();
+    JvmTypeReference _typeForName = this._typeReferences.getTypeForName(HelloResult.class, o, _parameterType);
+    return _typeForName;
+  }
+  
+  public ITreeAppendable generateFinalReturnStatement(final ITreeAppendable it, final JvmFormalParameter o) {
+    ITreeAppendable _xblockexpression = null;
+    {
+      ITreeAppendable _newLine = it.newLine();
+      _newLine.append("return new ");
+      JvmTypeReference _returnType = this.returnType(o);
+      this._typeReferenceSerializer.serialize(_returnType, o, it);
+      StringConcatenation _builder = new StringConcatenation();
+      _builder.append("(");
+      String _name = it.getName(o);
+      _builder.append(_name, "");
+      _builder.append(");");
+      ITreeAppendable _append = it.append(_builder);
+      _xblockexpression = (_append);
     }
     return _xblockexpression;
   }
