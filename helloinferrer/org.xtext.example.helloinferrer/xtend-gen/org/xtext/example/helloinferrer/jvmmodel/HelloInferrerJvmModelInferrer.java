@@ -10,11 +10,7 @@ import org.eclipse.xtext.common.types.JvmFormalParameter;
 import org.eclipse.xtext.common.types.JvmGenericType;
 import org.eclipse.xtext.common.types.JvmMember;
 import org.eclipse.xtext.common.types.JvmOperation;
-import org.eclipse.xtext.common.types.JvmPrimitiveType;
-import org.eclipse.xtext.common.types.JvmType;
 import org.eclipse.xtext.common.types.JvmTypeReference;
-import org.eclipse.xtext.common.types.util.Primitives;
-import org.eclipse.xtext.common.types.util.Primitives.Primitive;
 import org.eclipse.xtext.common.types.util.TypeReferences;
 import org.eclipse.xtext.naming.IQualifiedNameProvider;
 import org.eclipse.xtext.naming.QualifiedName;
@@ -53,9 +49,6 @@ public class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
   
   @Inject
   private TypeReferenceSerializer _typeReferenceSerializer;
-  
-  @Inject
-  private Primitives primitives;
   
   @Inject
   private XbaseCompiler xbaseCompiler;
@@ -133,33 +126,17 @@ public class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
     _accept.initializeLater(_function);
   }
   
-  public String declareVariableForOutputParameter(final ITreeAppendable it, final JvmFormalParameter o) {
-    String _xblockexpression = null;
+  public ITreeAppendable declareVariableForOutputParameter(final ITreeAppendable it, final JvmFormalParameter o) {
+    ITreeAppendable _xblockexpression = null;
     {
       String _simpleName = o.getSimpleName();
       final String outputVarName = it.declareVariable(o, _simpleName);
       JvmTypeReference _parameterType = o.getParameterType();
       this._typeReferenceSerializer.serialize(_parameterType, o, it);
       String _plus = (" " + outputVarName);
-      String _plus_1 = (_plus + " = ");
-      it.append(_plus_1);
-      JvmTypeReference _parameterType_1 = o.getParameterType();
-      boolean _isPrimitive = this.primitives.isPrimitive(_parameterType_1);
-      if (_isPrimitive) {
-        JvmTypeReference _parameterType_2 = o.getParameterType();
-        JvmType _type = _parameterType_2.getType();
-        final Primitive primitiveKind = this.primitives.primitiveKind(((JvmPrimitiveType) _type));
-        boolean _equals = Objects.equal(primitiveKind, Primitive.Boolean);
-        if (_equals) {
-          it.append("false");
-        } else {
-          it.append("0");
-        }
-      } else {
-        it.append("null");
-      }
-      it.append("; // output parameter");
-      _xblockexpression = (outputVarName);
+      String _plus_1 = (_plus + " = null; // output parameter");
+      ITreeAppendable _append = it.append(_plus_1);
+      _xblockexpression = (_append);
     }
     return _xblockexpression;
   }

@@ -4,6 +4,7 @@ import com.google.inject.Inject;
 import junit.framework.Assert;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.xtend2.lib.StringConcatenation;
+import org.eclipse.xtext.common.types.TypesPackage;
 import org.eclipse.xtext.junit4.InjectWith;
 import org.eclipse.xtext.junit4.XtextRunner;
 import org.eclipse.xtext.junit4.util.ParseHelper;
@@ -163,6 +164,33 @@ public class HelloInferrerParserTest {
       this._validationTestHelper.assertError(_parse, _xReturnExpression, 
         IssueCodes.INVALID_RETURN, 
         "Explicit return not available in this language.");
+    } catch (Exception _e) {
+      throw Exceptions.sneakyThrow(_e);
+    }
+  }
+  
+  @Test
+  public void testInvalidPrimitiveType() {
+    try {
+      StringConcatenation _builder = new StringConcatenation();
+      _builder.append("Hello my.test.hello {");
+      _builder.newLine();
+      _builder.append("\t");
+      _builder.append("op myOp(String s, int i) output boolean b {");
+      _builder.newLine();
+      _builder.append("\t\t");
+      _builder.append("return true");
+      _builder.newLine();
+      _builder.append("\t");
+      _builder.append("}");
+      _builder.newLine();
+      _builder.append("}");
+      _builder.newLine();
+      Model _parse = this._parseHelper.parse(_builder);
+      EClass _jvmTypeReference = TypesPackage.eINSTANCE.getJvmTypeReference();
+      this._validationTestHelper.assertError(_parse, _jvmTypeReference, 
+        IssueCodes.INVALID_USE_OF_TYPE, 
+        "Primitive types cannot be used as output parameters.");
     } catch (Exception _e) {
       throw Exceptions.sneakyThrow(_e);
     }

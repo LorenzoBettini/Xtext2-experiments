@@ -92,10 +92,6 @@ Hello my.test.MyHello {
 	op myOpWithClassOutputParameter(String s, int i) output Boolean b {
 		
 	}
-	
-	op myOpWithBasicOutputParameter(String s, int i) output boolean b {
-		
-	}
 }
 '''.assertCorrectJavaCodeGeneration(
 '''
@@ -106,11 +102,6 @@ import org.xtext.example.helloinferrer.runtime.HelloResult;
 public class MyHello {
   public HelloResult<Boolean> myOpWithClassOutputParameter(final String s, final int i) {
     Boolean b = null; // output parameter
-    return new HelloResult<Boolean>(b);
-  }
-  
-  public HelloResult<Boolean> myOpWithBasicOutputParameter(final String s, final int i) {
-    boolean b = false; // output parameter
     return new HelloResult<Boolean>(b);
   }
 }
@@ -126,7 +117,7 @@ Hello my.test.MyHello {
 		this.myOp2(true, 'foo')
 	}
 	
-	op myOp2(boolean b, String s) output int i {
+	op myOp2(boolean b, String s) output Integer i {
 		
 	}
 }
@@ -145,7 +136,7 @@ public class MyHello {
   }
   
   public HelloResult<Integer> myOp2(final boolean b, final String s) {
-    int i = 0; // output parameter
+    Integer i = null; // output parameter
     return new HelloResult<Integer>(i);
   }
 }

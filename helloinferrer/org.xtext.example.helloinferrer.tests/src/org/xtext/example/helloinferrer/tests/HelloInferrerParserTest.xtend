@@ -2,17 +2,18 @@ package org.xtext.example.helloinferrer.tests
 
 import com.google.inject.Inject
 import junit.framework.Assert
+import org.eclipse.xtext.common.types.TypesPackage
 import org.eclipse.xtext.junit4.InjectWith
 import org.eclipse.xtext.junit4.XtextRunner
 import org.eclipse.xtext.junit4.util.ParseHelper
 import org.eclipse.xtext.junit4.validation.ValidationTestHelper
 import org.eclipse.xtext.xbase.XbasePackage
 import org.eclipse.xtext.xbase.validation.IssueCodes
+import org.junit.BeforeClass
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.xtext.example.helloinferrer.HelloInferrerInjectorProvider
 import org.xtext.example.helloinferrer.helloInferrer.Model
-import org.junit.BeforeClass
 
 @RunWith(typeof(XtextRunner))
 @InjectWith(typeof(HelloInferrerInjectorProvider))
@@ -100,6 +101,21 @@ class HelloInferrerParserTest {
 			XbasePackage::eINSTANCE.XReturnExpression,
 			IssueCodes::INVALID_RETURN,
 			"Explicit return not available in this language."
+		)
+	}
+	
+	@Test
+	def void testInvalidPrimitiveType() {
+		'''
+		Hello my.test.hello {
+			op myOp(String s, int i) output boolean b {
+				return true
+			}
+		}
+		'''.parse.assertError(
+			TypesPackage::eINSTANCE.jvmTypeReference,
+			IssueCodes::INVALID_USE_OF_TYPE,
+			"Primitive types cannot be used as output parameters."
 		)
 	}
 	

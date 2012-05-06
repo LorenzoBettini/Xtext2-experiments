@@ -1,18 +1,16 @@
 package org.xtext.example.helloinferrer.jvmmodel
 
 import com.google.inject.Inject
+import org.eclipse.xtext.common.types.JvmFormalParameter
+import org.eclipse.xtext.common.types.util.TypeReferences
 import org.eclipse.xtext.naming.IQualifiedNameProvider
+import org.eclipse.xtext.xbase.compiler.TypeReferenceSerializer
+import org.eclipse.xtext.xbase.compiler.XbaseCompiler
+import org.eclipse.xtext.xbase.compiler.output.ITreeAppendable
 import org.eclipse.xtext.xbase.jvmmodel.AbstractModelInferrer
 import org.eclipse.xtext.xbase.jvmmodel.IJvmDeclaredTypeAcceptor
 import org.eclipse.xtext.xbase.jvmmodel.JvmTypesBuilder
 import org.xtext.example.helloinferrer.helloInferrer.Greeting
-import org.eclipse.xtext.common.types.util.TypeReferences
-import org.eclipse.xtext.xbase.compiler.XbaseCompiler
-import org.eclipse.xtext.xbase.compiler.TypeReferenceSerializer
-import org.eclipse.xtext.common.types.util.Primitives
-import org.eclipse.xtext.common.types.JvmPrimitiveType
-import org.eclipse.xtext.common.types.JvmFormalParameter
-import org.eclipse.xtext.xbase.compiler.output.ITreeAppendable
 import org.xtext.example.helloinferrer.runtime.HelloResult
 
 /**
@@ -33,8 +31,6 @@ class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
 	@Inject extension TypeReferences
 	
 	@Inject extension TypeReferenceSerializer
-	
-	@Inject Primitives primitives
 	
 	@Inject XbaseCompiler xbaseCompiler
 
@@ -91,20 +87,7 @@ class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
    	def declareVariableForOutputParameter(ITreeAppendable it, JvmFormalParameter o) {
    		val outputVarName = it.declareVariable(o, o.simpleName)
 		o.parameterType.serialize(o, it)
-		it.append(" " + outputVarName + " = ")
-		if (primitives.isPrimitive(o.parameterType)) {
-			val primitiveKind = primitives.
-				primitiveKind
-					(o.parameterType.type as JvmPrimitiveType)
-			if (primitiveKind == Primitives$Primitive::Boolean)
-				it.append("false")
-			else
-				it.append("0")
-		} else {
-			it.append("null")
-		}
-		it.append("; // output parameter")
-		outputVarName
+		it.append(" " + outputVarName + " = null; // output parameter")
    	}
    	
    	def returnType(JvmFormalParameter o) {
