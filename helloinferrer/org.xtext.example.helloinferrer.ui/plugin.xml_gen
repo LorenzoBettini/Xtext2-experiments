@@ -267,6 +267,17 @@
             </attribute>
         </markerResolutionGenerator>
     </extension>
+
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <wizard
+            category="org.eclipse.xtext.projectwiz"
+            class="org.xtext.example.helloinferrer.ui.HelloInferrerExecutableExtensionFactory:org.xtext.example.helloinferrer.ui.wizard.HelloInferrerNewProjectWizard"
+            id="org.xtext.example.helloinferrer.ui.wizard.HelloInferrerNewProjectWizard"
+            name="HelloInferrer Project"
+            project="true">
+      </wizard>
+   </extension>
    	<!-- Rename Refactoring -->
 	<extension point="org.eclipse.ui.handlers">
 		<handler 
