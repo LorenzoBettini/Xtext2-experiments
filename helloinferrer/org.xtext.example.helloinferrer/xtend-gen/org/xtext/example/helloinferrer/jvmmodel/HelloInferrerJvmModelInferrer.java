@@ -165,9 +165,22 @@ public class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
   }
   
   public JvmTypeReference returnType(final JvmFormalParameter o) {
-    JvmTypeReference _parameterType = o.getParameterType();
-    JvmTypeReference _typeForName = this._typeReferences.getTypeForName(HelloResult.class, o, _parameterType);
-    return _typeForName;
+    JvmTypeReference _xifexpression = null;
+    boolean _and = false;
+    boolean _notEquals = (!Objects.equal(o, null));
+    if (!_notEquals) {
+      _and = false;
+    } else {
+      JvmTypeReference _parameterType = o.getParameterType();
+      boolean _notEquals_1 = (!Objects.equal(_parameterType, null));
+      _and = (_notEquals && _notEquals_1);
+    }
+    if (_and) {
+      JvmTypeReference _parameterType_1 = o.getParameterType();
+      JvmTypeReference _typeForName = this._typeReferences.getTypeForName(HelloResult.class, o, _parameterType_1);
+      _xifexpression = _typeForName;
+    }
+    return _xifexpression;
   }
   
   public ITreeAppendable generateFinalReturnStatement(final ITreeAppendable it, final JvmFormalParameter o) {

@@ -108,8 +108,8 @@ class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
    	}
    	
    	def returnType(JvmFormalParameter o) {
-   		typeof(HelloResult).
-						getTypeForName(o, o.parameterType)
+   		if (o != null && o.parameterType != null)
+   			typeof(HelloResult).getTypeForName(o, o.parameterType)
    	}
    	
    	def generateFinalReturnStatement(ITreeAppendable it, JvmFormalParameter o) {
