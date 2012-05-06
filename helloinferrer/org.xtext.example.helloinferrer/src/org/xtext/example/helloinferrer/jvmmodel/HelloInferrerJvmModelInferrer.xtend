@@ -115,7 +115,7 @@ class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
    	def generateFinalReturnStatement(ITreeAppendable it, JvmFormalParameter o) {
    		it.newLine.append("return new ")
    		o.returnType.serialize(o, it)
-   		it.append('''(«it.getName(o)»);''')
+   		it.append('''(Â«it.getName(o)Â»);''')
    	}
 }
 
