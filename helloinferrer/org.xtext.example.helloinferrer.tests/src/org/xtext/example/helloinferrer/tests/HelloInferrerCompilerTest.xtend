@@ -174,6 +174,54 @@ public class MyHello {
 ''')
 	}
 
+	@Test
+	def void testUseOfResult() {
+'''
+Hello MyHello {
+	
+	op foo(int j) output Integer i {
+		i = new MyHello().bar(this).value.bar2().value
+	}
+
+	op bar(MyHello myHello) output MyHello result {
+		result = myHello
+	}
+	
+	op bar2() output Integer res {
+		res = 10
+	}
+}
+'''.assertCorrectJavaCodeGeneration(
+'''
+import org.xtext.example.helloinferrer.runtime.HelloResult;
+
+public class MyHello {
+  public HelloResult<Integer> foo(final int j) {
+    Integer i = null; // output parameter
+    MyHello _myHello = new MyHello();
+    HelloResult<MyHello> _bar = _myHello.bar(this);
+    MyHello _value = _bar.getValue();
+    HelloResult<Integer> _bar2 = _value.bar2();
+    Integer _value_1 = _bar2.getValue();
+    i = _value_1;
+    return new HelloResult<Integer>(i);
+  }
+  
+  public HelloResult<MyHello> bar(final MyHello myHello) {
+    MyHello result = null; // output parameter
+    result = myHello;
+    return new HelloResult<MyHello>(result);
+  }
+  
+  public HelloResult<Integer> bar2() {
+    Integer res = null; // output parameter
+    res = Integer.valueOf(10);
+    return new HelloResult<Integer>(res);
+  }
+}
+''')
+	}
+
 	def private assertCorrectJavaCodeGeneration(CharSequence input, CharSequence expected) {
 		input.compile [
 			// check the expected Java code
