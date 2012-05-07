@@ -142,6 +142,37 @@ public class MyHello {
 }
 ''')
 	}
+	
+	@Test
+	def void testAutomaticBoxing() {
+'''
+Hello my.test.MyHello {
+	op myOp(String s, int j) output Integer i {
+		i = j + 1
+		if (i < 0)
+			i = 1
+	}
+}
+'''.assertCorrectJavaCodeGeneration(
+'''
+package my.test;
+
+import org.xtext.example.helloinferrer.runtime.HelloResult;
+
+public class MyHello {
+  public HelloResult<Integer> myOp(final String s, final int j) {
+    Integer i = null; // output parameter
+    int _plus = (j + 1);
+    i = Integer.valueOf(_plus);
+    boolean _lessThan = ((i).intValue() < 0);
+    if (_lessThan) {
+      i = Integer.valueOf(1);
+    }
+    return new HelloResult<Integer>(i);
+  }
+}
+''')
+	}
 
 	def private assertCorrectJavaCodeGeneration(CharSequence input, CharSequence expected) {
 		input.compile [

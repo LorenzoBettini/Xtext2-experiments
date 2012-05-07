@@ -252,6 +252,72 @@ public class HelloInferrerCompilerTest {
     this.assertCorrectJavaCodeGeneration(_builder, _builder_1);
   }
   
+  @Test
+  public void testAutomaticBoxing() {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("Hello my.test.MyHello {");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("op myOp(String s, int j) output Integer i {");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("i = j + 1");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("if (i < 0)");
+    _builder.newLine();
+    _builder.append("\t\t\t");
+    _builder.append("i = 1");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("}");
+    _builder.newLine();
+    StringConcatenation _builder_1 = new StringConcatenation();
+    _builder_1.append("package my.test;");
+    _builder_1.newLine();
+    _builder_1.newLine();
+    _builder_1.append("import org.xtext.example.helloinferrer.runtime.HelloResult;");
+    _builder_1.newLine();
+    _builder_1.newLine();
+    _builder_1.append("public class MyHello {");
+    _builder_1.newLine();
+    _builder_1.append("  ");
+    _builder_1.append("public HelloResult<Integer> myOp(final String s, final int j) {");
+    _builder_1.newLine();
+    _builder_1.append("    ");
+    _builder_1.append("Integer i = null; // output parameter");
+    _builder_1.newLine();
+    _builder_1.append("    ");
+    _builder_1.append("int _plus = (j + 1);");
+    _builder_1.newLine();
+    _builder_1.append("    ");
+    _builder_1.append("i = Integer.valueOf(_plus);");
+    _builder_1.newLine();
+    _builder_1.append("    ");
+    _builder_1.append("boolean _lessThan = ((i).intValue() < 0);");
+    _builder_1.newLine();
+    _builder_1.append("    ");
+    _builder_1.append("if (_lessThan) {");
+    _builder_1.newLine();
+    _builder_1.append("      ");
+    _builder_1.append("i = Integer.valueOf(1);");
+    _builder_1.newLine();
+    _builder_1.append("    ");
+    _builder_1.append("}");
+    _builder_1.newLine();
+    _builder_1.append("    ");
+    _builder_1.append("return new HelloResult<Integer>(i);");
+    _builder_1.newLine();
+    _builder_1.append("  ");
+    _builder_1.append("}");
+    _builder_1.newLine();
+    _builder_1.append("}");
+    _builder_1.newLine();
+    this.assertCorrectJavaCodeGeneration(_builder, _builder_1);
+  }
+  
   private void assertCorrectJavaCodeGeneration(final CharSequence input, final CharSequence expected) {
     final Procedure1<Result> _function = new Procedure1<Result>() {
         public void apply(final Result it) {
