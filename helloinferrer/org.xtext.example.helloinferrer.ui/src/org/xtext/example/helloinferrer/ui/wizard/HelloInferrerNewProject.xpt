@@ -6,23 +6,47 @@
 «ENDDEFINE»
 
 «DEFINE model FOR HelloInferrerProjectInfo»
-«FILE "src/model/Model.helloinferrer"-»
+«FILE "src/my/hello/MyHello.helloinferrer"-»
 /*
- * This is an example model
+ * Operations do not explicitly 'return' values: they can
+ * assign values to the output parameter; if the output parameter
+ * is of type T, in Java, this will correspond to a method
+ * returning a HelloResult<T>
  */
-Hello Xtext!
+
+import java.util.*
+ 
+Hello my.hello.MyHello {
+	
+	op printMappedList(Object anotherObject) output Integer i {
+		val list = newArrayList(10, true, 'foo', true, 10, anotherObject)
+		mapListToStringSet(list).value.forEach [
+			println(it)
+		]
+		i = list.size
+	}
+
+	op mapListToStringSet(List<? extends Object> myList) 
+			output Set<? extends String> result {
+		result = myList.map[ toString.toUpperCase ].toSet
+	}
+}
 «ENDFILE»
 «ENDDEFINE»
 
 «DEFINE workflow FOR HelloInferrerProjectInfo»
-«FILE "src/Generator.mwe2"-»
-module Generator
+«FILE "src/my/main/MyHelloMain.java"-»
+package my.main;
 
-var targetDir = "src-gen"
-var modelPath = "src/model"
+import my.hello.MyHello;
 
-Workflow {
-	component = @workflow.HelloInferrerGenerator auto-inject {}
+public class MyHelloMain {
+
+	public static void main(String[] args) {
+		MyHello myHello = new MyHello();
+		myHello.printMappedList(myHello);
+	}
+
 }
 «ENDFILE»
 «ENDDEFINE»
