@@ -14,9 +14,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.xtext.example.helloinferrer.tests.HelloInferrerInjectorProviderCustom;
 
+@RunWith(value = XtextRunner.class)
+@InjectWith(value = HelloInferrerInjectorProviderCustom.class)
 @SuppressWarnings("all")
-@RunWith(XtextRunner.class)
-@InjectWith(HelloInferrerInjectorProviderCustom.class)
 public class HelloInferrerCompilerTest {
   @Inject
   private CompilationTestHelper _compilationTestHelper;

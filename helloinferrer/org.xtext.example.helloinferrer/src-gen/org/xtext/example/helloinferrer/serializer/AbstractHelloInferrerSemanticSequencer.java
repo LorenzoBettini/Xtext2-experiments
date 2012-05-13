@@ -58,7 +58,7 @@ import org.xtext.example.helloinferrer.helloInferrer.Model;
 import org.xtext.example.helloinferrer.helloInferrer.Operation;
 import org.xtext.example.helloinferrer.services.HelloInferrerGrammarAccess;
 
-@SuppressWarnings("restriction")
+@SuppressWarnings("all")
 public class AbstractHelloInferrerSemanticSequencer extends AbstractSemanticSequencer {
 
 	@Inject

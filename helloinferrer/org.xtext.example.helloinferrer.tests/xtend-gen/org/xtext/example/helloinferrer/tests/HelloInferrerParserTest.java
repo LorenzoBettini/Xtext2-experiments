@@ -18,9 +18,9 @@ import org.junit.runner.RunWith;
 import org.xtext.example.helloinferrer.HelloInferrerInjectorProvider;
 import org.xtext.example.helloinferrer.helloInferrer.Model;
 
+@RunWith(value = XtextRunner.class)
+@InjectWith(value = HelloInferrerInjectorProvider.class)
 @SuppressWarnings("all")
-@RunWith(XtextRunner.class)
-@InjectWith(HelloInferrerInjectorProvider.class)
 public class HelloInferrerParserTest {
   @Inject
   private ParseHelper<Model> _parseHelper;

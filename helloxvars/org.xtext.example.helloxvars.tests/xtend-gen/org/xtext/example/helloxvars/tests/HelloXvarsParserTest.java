@@ -15,9 +15,9 @@ import org.junit.runner.RunWith;
 import org.xtext.example.helloxvars.HelloXvarsInjectorProvider;
 import org.xtext.example.helloxvars.helloXvars.Model;
 
+@InjectWith(value = HelloXvarsInjectorProvider.class)
+@RunWith(value = XtextRunner.class)
 @SuppressWarnings("all")
-@InjectWith(HelloXvarsInjectorProvider.class)
-@RunWith(XtextRunner.class)
 public class HelloXvarsParserTest {
   @Inject
   private ParseHelper<Model> parser;

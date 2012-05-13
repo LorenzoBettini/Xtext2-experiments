@@ -14,7 +14,7 @@ import org.eclipse.xtext.serializer.analysis.ISyntacticSequencerPDAProvider.ISyn
 import org.eclipse.xtext.serializer.sequencer.AbstractSyntacticSequencer;
 import org.xtext.example.helloinferrer.services.HelloInferrerGrammarAccess;
 
-@SuppressWarnings("restriction")
+@SuppressWarnings("all")
 public class AbstractHelloInferrerSyntacticSequencer extends AbstractSyntacticSequencer {
 
 	protected HelloInferrerGrammarAccess grammarAccess;
