@@ -73,11 +73,13 @@ class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
 						parameters += p.toParameter(p.name, p.parameterType)
 					}
 					body = [
+						it.openScope
 						it.declareVariableForOutputParameter(o.output)
 						
-						xbaseCompiler.compile(o.body, it, "void".getTypeForName(o), null)
+						xbaseCompiler.compile(o.body, it, Void::TYPE.getTypeForName(o), null)
 						
 						it.generateFinalReturnStatement(o.output)
+						it.closeScope
 					]
 				]
 			}
@@ -86,8 +88,9 @@ class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
    	
    	def declareVariableForOutputParameter(ITreeAppendable it, JvmFormalParameter o) {
    		val outputVarName = it.declareVariable(o, o.simpleName)
-		o.parameterType.serialize(o, it)
-		it.append(" " + outputVarName + " = null; // output parameter")
+   		val childAppendable = it.trace(o, true)
+		o.parameterType.serialize(o, childAppendable)
+		childAppendable.append(" " + outputVarName + " = null; // output parameter")
    	}
    	
    	def returnType(JvmFormalParameter o) {
@@ -96,9 +99,10 @@ class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
    	}
    	
    	def generateFinalReturnStatement(ITreeAppendable it, JvmFormalParameter o) {
-   		it.newLine.append("return new ")
-   		o.returnType.serialize(o, it)
-   		it.append('''(«it.getName(o)»);''')
+   		val childAppendable = it.trace(o, false)
+   		childAppendable.newLine.append("return new ")
+   		o.returnType.serialize(o, childAppendable)
+   		childAppendable.append('''(«childAppendable.getName(o)»);''')
    	}
 }
 

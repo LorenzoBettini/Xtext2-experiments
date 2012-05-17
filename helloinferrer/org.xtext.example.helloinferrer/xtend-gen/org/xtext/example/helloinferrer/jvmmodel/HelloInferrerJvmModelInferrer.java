@@ -106,13 +106,15 @@ public class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
                   }
                   final Procedure1<ITreeAppendable> _function = new Procedure1<ITreeAppendable>() {
                       public void apply(final ITreeAppendable it) {
+                        it.openScope();
                         JvmFormalParameter _output = o.getOutput();
                         HelloInferrerJvmModelInferrer.this.declareVariableForOutputParameter(it, _output);
                         XExpression _body = o.getBody();
-                        JvmTypeReference _typeForName = HelloInferrerJvmModelInferrer.this._typeReferences.getTypeForName("void", o);
+                        JvmTypeReference _typeForName = HelloInferrerJvmModelInferrer.this._typeReferences.getTypeForName(Void.TYPE, o);
                         HelloInferrerJvmModelInferrer.this.xbaseCompiler.compile(_body, it, _typeForName, null);
                         JvmFormalParameter _output_1 = o.getOutput();
                         HelloInferrerJvmModelInferrer.this.generateFinalReturnStatement(it, _output_1);
+                        it.closeScope();
                       }
                     };
                   HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.setBody(it, _function);
@@ -131,11 +133,12 @@ public class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
     {
       String _simpleName = o.getSimpleName();
       final String outputVarName = it.declareVariable(o, _simpleName);
+      final ITreeAppendable childAppendable = it.trace(o, true);
       JvmTypeReference _parameterType = o.getParameterType();
-      this._typeReferenceSerializer.serialize(_parameterType, o, it);
+      this._typeReferenceSerializer.serialize(_parameterType, o, childAppendable);
       String _plus = (" " + outputVarName);
       String _plus_1 = (_plus + " = null; // output parameter");
-      ITreeAppendable _append = it.append(_plus_1);
+      ITreeAppendable _append = childAppendable.append(_plus_1);
       _xblockexpression = (_append);
     }
     return _xblockexpression;
@@ -163,16 +166,17 @@ public class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
   public ITreeAppendable generateFinalReturnStatement(final ITreeAppendable it, final JvmFormalParameter o) {
     ITreeAppendable _xblockexpression = null;
     {
-      ITreeAppendable _newLine = it.newLine();
+      final ITreeAppendable childAppendable = it.trace(o, false);
+      ITreeAppendable _newLine = childAppendable.newLine();
       _newLine.append("return new ");
       JvmTypeReference _returnType = this.returnType(o);
-      this._typeReferenceSerializer.serialize(_returnType, o, it);
+      this._typeReferenceSerializer.serialize(_returnType, o, childAppendable);
       StringConcatenation _builder = new StringConcatenation();
       _builder.append("(");
-      String _name = it.getName(o);
+      String _name = childAppendable.getName(o);
       _builder.append(_name, "");
       _builder.append(");");
-      ITreeAppendable _append = it.append(_builder);
+      ITreeAppendable _append = childAppendable.append(_builder);
       _xblockexpression = (_append);
     }
     return _xblockexpression;
