@@ -273,6 +273,7 @@
       <wizard
             category="org.eclipse.xtext.projectwiz"
             class="org.xtext.example.helloinferrer.ui.HelloInferrerExecutableExtensionFactory:org.xtext.example.helloinferrer.ui.wizard.HelloInferrerNewProjectWizard"
+            icon="icons/helloinferrer.gif"
             id="org.xtext.example.helloinferrer.ui.wizard.HelloInferrerNewProjectWizard"
             name="HelloInferrer Project"
             project="true">
