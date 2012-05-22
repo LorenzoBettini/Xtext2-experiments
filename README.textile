@@ -1,6 +1,8 @@
 h1. Xtext 2 experiment
 
-Here you will find some experiments with Xtext 2.1 and Xbase.
+Here you will find some experiments with Xtext 2.3 and Xbase.
+
+(The versions for Xtext 2.2.1 can be found in the branch xtext-2.2.1)
 
 You will find the following projects:
 
@@ -15,5 +17,9 @@ Some experiments using Xbase expressions in an Xtext DSL, while keeping control 
 h2. helloxvars
 
 Some experiments using Xbase variable declarations in an Xtext DSL, while keeping control on the generation (and reusing XbaseCompiler for generating Java code corresponding to Xbase variable declarations and initialization expressions).  Blogged here: "Xtext 2.1: using Xbase variables":http://www.rcp-vision.com/?p=1796 .
+
+h2. helloinferrer
+
+Some experiments using Xbase in an Xtext DSL with non direct mapping to Java, using JvmModelInferrer (with custom scoping and validation) and debugging features.  Blogged here: "The JvmModelInferrer, the debugger and Xbase in Xtext 2.3":http://www.rcp-vision.com/?p=4089 .
 
 
