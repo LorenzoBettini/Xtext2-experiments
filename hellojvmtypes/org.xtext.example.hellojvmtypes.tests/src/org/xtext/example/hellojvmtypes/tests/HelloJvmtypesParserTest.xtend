@@ -15,7 +15,7 @@ import org.xtext.example.hellojvmtypes.helloJvmTypes.Model
 
 @InjectWith(typeof(HelloJvmTypesInjectorProvider))
 @RunWith(typeof(XtextRunner))
-class ParserTest {
+class HelloJvmtypesParserTest {
     
     @Inject
     ParseHelper<Model> parser

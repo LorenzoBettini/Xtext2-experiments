@@ -1,0 +1,10 @@
+import releng/org.xtext.example.experiments.buckminster/projects-platform.cquery
+import releng/org.xtext.example.experiments.buckminster/project.cquery
+clean
+build
+perform -D target.os=* -D target.ws=* -D target.arch=* org.xtext.example.experiments.site#buckminster.clean
+perform -D target.os=* -D target.ws=* -D target.arch=* org.xtext.example.experiments.site#site.p2.zip
+junit -l 'org.xtext.example.hellojvmtypes.tests/HelloJvmtypesParserTest.launch' --stderr -o 'tests_output/HelloJvmtypesParserTest.xml'
+junit -l 'org.xtext.example.helloxbase.tests/HelloXbaseParserTest.launch' --stderr -o 'tests_output/HelloXbaseParserTest.xml'
+junit -l 'org.xtext.example.helloxvars.tests/HelloXvarsParserTest.launch' --stderr -o 'tests_output/HelloXvarsParserTest.xml'
+junit -l 'org.xtext.example.helloinferrer.tests/HelloInferrerAllTests.launch' --stderr -o 'tests_output/HelloInferrerAllTests.xml'

@@ -13,7 +13,7 @@ import org.xtext.example.helloxbase.helloXbase.Model
 
 @InjectWith(typeof(HelloXbaseInjectorProvider))
 @RunWith(typeof(XtextRunner))
-class ParserTest {
+class HelloXbaseParserTest {
 	
 	@Inject
     ParseHelper<Model> parser

@@ -18,7 +18,7 @@ import org.xtext.example.helloxbase.helloXbase.Model;
 @InjectWith(value = HelloXbaseInjectorProvider.class)
 @RunWith(value = XtextRunner.class)
 @SuppressWarnings("all")
-public class ParserTest {
+public class HelloXbaseParserTest {
   @Inject
   private ParseHelper<Model> parser;
   

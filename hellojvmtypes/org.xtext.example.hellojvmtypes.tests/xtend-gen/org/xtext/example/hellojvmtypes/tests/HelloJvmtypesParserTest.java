@@ -21,7 +21,7 @@ import org.xtext.example.hellojvmtypes.helloJvmTypes.Model;
 @InjectWith(value = HelloJvmTypesInjectorProvider.class)
 @RunWith(value = XtextRunner.class)
 @SuppressWarnings("all")
-public class ParserTest {
+public class HelloJvmtypesParserTest {
   @Inject
   private ParseHelper<Model> parser;
   
