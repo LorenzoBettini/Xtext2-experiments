@@ -1,4 +1,4 @@
-h1. Xtext 2 experiment
+h1. Xtext 2 experiments
 
 Here you will find some experiments with Xtext 2.3 and Xbase.
 
