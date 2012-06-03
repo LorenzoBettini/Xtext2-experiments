@@ -15,7 +15,7 @@ import org.eclipse.xtext.serializer.sequencer.AbstractSyntacticSequencer;
 import org.xtext.example.helloinferrer.services.HelloInferrerGrammarAccess;
 
 @SuppressWarnings("all")
-public class AbstractHelloInferrerSyntacticSequencer extends AbstractSyntacticSequencer {
+public class HelloInferrerSyntacticSequencer extends AbstractSyntacticSequencer {
 
 	protected HelloInferrerGrammarAccess grammarAccess;
 	protected AbstractElementAlias match_XBlockExpression_SemicolonKeyword_2_1_q;
@@ -43,6 +43,11 @@ public class AbstractHelloInferrerSyntacticSequencer extends AbstractSyntacticSe
 		return "";
 	}
 	
+	/**
+	 * OpSingleAssign:
+	 * 	'='
+	 * ;
+	 */
 	protected String getOpSingleAssignToken(EObject semanticObject, RuleCall ruleCall, INode node) {
 		if (node != null)
 			return getTokenText(node);

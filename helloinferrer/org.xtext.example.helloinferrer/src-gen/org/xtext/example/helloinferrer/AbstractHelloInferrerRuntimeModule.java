@@ -41,12 +41,12 @@ public abstract class AbstractHelloInferrerRuntimeModule extends DefaultRuntimeM
 
 	// contributed by org.eclipse.xtext.generator.serializer.SerializerFragment
 	public Class<? extends org.eclipse.xtext.serializer.sequencer.ISemanticSequencer> bindISemanticSequencer() {
-		return org.xtext.example.helloinferrer.serializer.AbstractHelloInferrerSemanticSequencer.class;
+		return org.xtext.example.helloinferrer.serializer.HelloInferrerSemanticSequencer.class;
 	}
 
 	// contributed by org.eclipse.xtext.generator.serializer.SerializerFragment
 	public Class<? extends org.eclipse.xtext.serializer.sequencer.ISyntacticSequencer> bindISyntacticSequencer() {
-		return org.xtext.example.helloinferrer.serializer.AbstractHelloInferrerSyntacticSequencer.class;
+		return org.xtext.example.helloinferrer.serializer.HelloInferrerSyntacticSequencer.class;
 	}
 
 	// contributed by org.eclipse.xtext.generator.serializer.SerializerFragment

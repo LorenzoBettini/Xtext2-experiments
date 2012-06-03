@@ -1,4 +1,8 @@
 /**
+ * <copyright>
+ * </copyright>
+ *
+
  */
 package org.xtext.example.helloinferrer.helloInferrer;
 
