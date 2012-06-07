@@ -1,4 +1,4 @@
-package org.xtext.example.helloxbase.serializer;
+package org.xtext.example.helloxvars.serializer;
 
 import com.google.inject.Inject;
 import java.util.List;
@@ -12,12 +12,12 @@ import org.eclipse.xtext.serializer.analysis.GrammarAlias.TokenAlias;
 import org.eclipse.xtext.serializer.analysis.ISyntacticSequencerPDAProvider.ISynNavigable;
 import org.eclipse.xtext.serializer.analysis.ISyntacticSequencerPDAProvider.ISynTransition;
 import org.eclipse.xtext.serializer.sequencer.AbstractSyntacticSequencer;
-import org.xtext.example.helloxbase.services.HelloXbaseGrammarAccess;
+import org.xtext.example.helloxvars.services.HelloXvarsGrammarAccess;
 
-@SuppressWarnings("restriction")
-public class AbstractHelloXbaseSyntacticSequencer extends AbstractSyntacticSequencer {
+@SuppressWarnings("all")
+public class HelloXvarsSyntacticSequencer extends AbstractSyntacticSequencer {
 
-	protected HelloXbaseGrammarAccess grammarAccess;
+	protected HelloXvarsGrammarAccess grammarAccess;
 	protected AbstractElementAlias match_XBlockExpression_SemicolonKeyword_2_1_q;
 	protected AbstractElementAlias match_XConstructorCall___LeftParenthesisKeyword_4_0_RightParenthesisKeyword_4_2__q;
 	protected AbstractElementAlias match_XExpressionInClosure_SemicolonKeyword_1_1_q;
@@ -27,7 +27,7 @@ public class AbstractHelloXbaseSyntacticSequencer extends AbstractSyntacticSeque
 	
 	@Inject
 	protected void init(IGrammarAccess access) {
-		grammarAccess = (HelloXbaseGrammarAccess) access;
+		grammarAccess = (HelloXvarsGrammarAccess) access;
 		match_XBlockExpression_SemicolonKeyword_2_1_q = new TokenAlias(false, true, grammarAccess.getXBlockExpressionAccess().getSemicolonKeyword_2_1());
 		match_XConstructorCall___LeftParenthesisKeyword_4_0_RightParenthesisKeyword_4_2__q = new GroupAlias(false, true, new TokenAlias(false, false, grammarAccess.getXConstructorCallAccess().getLeftParenthesisKeyword_4_0()), new TokenAlias(false, false, grammarAccess.getXConstructorCallAccess().getRightParenthesisKeyword_4_2()));
 		match_XExpressionInClosure_SemicolonKeyword_1_1_q = new TokenAlias(false, true, grammarAccess.getXExpressionInClosureAccess().getSemicolonKeyword_1_1());
@@ -43,6 +43,11 @@ public class AbstractHelloXbaseSyntacticSequencer extends AbstractSyntacticSeque
 		return "";
 	}
 	
+	/**
+	 * OpSingleAssign:
+	 * 	'='
+	 * ;
+	 */
 	protected String getOpSingleAssignToken(EObject semanticObject, RuleCall ruleCall, INode node) {
 		if (node != null)
 			return getTokenText(node);

@@ -41,12 +41,12 @@ public abstract class AbstractHelloXbaseRuntimeModule extends DefaultRuntimeModu
 
 	// contributed by org.eclipse.xtext.generator.serializer.SerializerFragment
 	public Class<? extends org.eclipse.xtext.serializer.sequencer.ISemanticSequencer> bindISemanticSequencer() {
-		return org.xtext.example.helloxbase.serializer.AbstractHelloXbaseSemanticSequencer.class;
+		return org.xtext.example.helloxbase.serializer.HelloXbaseSemanticSequencer.class;
 	}
 
 	// contributed by org.eclipse.xtext.generator.serializer.SerializerFragment
 	public Class<? extends org.eclipse.xtext.serializer.sequencer.ISyntacticSequencer> bindISyntacticSequencer() {
-		return org.xtext.example.helloxbase.serializer.AbstractHelloXbaseSyntacticSequencer.class;
+		return org.xtext.example.helloxbase.serializer.HelloXbaseSyntacticSequencer.class;
 	}
 
 	// contributed by org.eclipse.xtext.generator.serializer.SerializerFragment

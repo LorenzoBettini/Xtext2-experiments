@@ -6,7 +6,7 @@
     modelPluginID="org.xtext.example.helloxbase" forceOverwrite="true" modelName="HelloXbase"
     updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     complianceLevel="5.0" copyrightFields="false" editPluginID="org.xtext.example.helloxbase.edit"
-    editorPluginID="org.xtext.example.helloxbase.editor" usedGenPackages="../../../../../../org.eclipse.xtext.xbase/model/Xbase.genmodel#//xbase">
+    editorPluginID="org.xtext.example.helloxbase.editor" runtimeVersion="2.7" usedGenPackages="../../../../../../org.eclipse.xtext.xbase/model/Xbase.genmodel#//xbase">
   <genPackages prefix="HelloXbase" basePackage="org.xtext.example.helloxbase" disposableProviderFactory="true"
       ecorePackage="HelloXbase.ecore#/">
     <genClasses ecoreClass="HelloXbase.ecore#//Model">
