@@ -11,8 +11,8 @@ import org.eclipse.xtext.serializer.analysis.ISyntacticSequencerPDAProvider.ISyn
 import org.eclipse.xtext.serializer.sequencer.AbstractSyntacticSequencer;
 import org.xtext.example.hellojvmtypes.services.HelloJvmTypesGrammarAccess;
 
-@SuppressWarnings("restriction")
-public class AbstractHelloJvmTypesSyntacticSequencer extends AbstractSyntacticSequencer {
+@SuppressWarnings("all")
+public class HelloJvmTypesSyntacticSequencer extends AbstractSyntacticSequencer {
 
 	protected HelloJvmTypesGrammarAccess grammarAccess;
 	

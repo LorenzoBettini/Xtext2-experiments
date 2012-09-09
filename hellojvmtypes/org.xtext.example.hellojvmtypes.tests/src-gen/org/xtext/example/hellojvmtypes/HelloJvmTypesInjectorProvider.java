@@ -24,10 +24,14 @@ public class HelloJvmTypesInjectorProvider implements IInjectorProvider, IRegist
 	{
 		if (injector == null) {
 			stateBeforeInjectorCreation = GlobalRegistries.makeCopyOfGlobalState();
-			this.injector = new HelloJvmTypesStandaloneSetup().createInjectorAndDoEMFRegistration();
+			this.injector = internalCreateInjector();
 			stateAfterInjectorCreation = GlobalRegistries.makeCopyOfGlobalState();
 		}
 		return injector;
+	}
+	
+	protected Injector internalCreateInjector() {
+	    return new HelloJvmTypesStandaloneSetup().createInjectorAndDoEMFRegistration();
 	}
 
 	public void restoreRegistry() {

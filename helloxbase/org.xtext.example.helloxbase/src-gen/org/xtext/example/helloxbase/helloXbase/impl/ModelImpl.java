@@ -1,7 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
  */
 package org.xtext.example.helloxbase.helloXbase.impl;
 

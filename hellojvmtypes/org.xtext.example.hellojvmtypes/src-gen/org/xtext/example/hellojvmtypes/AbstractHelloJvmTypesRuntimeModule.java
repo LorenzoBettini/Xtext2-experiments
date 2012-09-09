@@ -41,12 +41,12 @@ public abstract class AbstractHelloJvmTypesRuntimeModule extends DefaultRuntimeM
 
 	// contributed by org.eclipse.xtext.generator.serializer.SerializerFragment
 	public Class<? extends org.eclipse.xtext.serializer.sequencer.ISemanticSequencer> bindISemanticSequencer() {
-		return org.xtext.example.hellojvmtypes.serializer.AbstractHelloJvmTypesSemanticSequencer.class;
+		return org.xtext.example.hellojvmtypes.serializer.HelloJvmTypesSemanticSequencer.class;
 	}
 
 	// contributed by org.eclipse.xtext.generator.serializer.SerializerFragment
 	public Class<? extends org.eclipse.xtext.serializer.sequencer.ISyntacticSequencer> bindISyntacticSequencer() {
-		return org.xtext.example.hellojvmtypes.serializer.AbstractHelloJvmTypesSyntacticSequencer.class;
+		return org.xtext.example.hellojvmtypes.serializer.HelloJvmTypesSyntacticSequencer.class;
 	}
 
 	// contributed by org.eclipse.xtext.generator.serializer.SerializerFragment
