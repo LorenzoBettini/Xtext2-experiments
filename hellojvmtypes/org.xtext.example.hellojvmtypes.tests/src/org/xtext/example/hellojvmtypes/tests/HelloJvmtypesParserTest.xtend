@@ -1,7 +1,6 @@
 package org.xtext.example.hellojvmtypes.tests
 
 import com.google.inject.Inject
-import junit.framework.Assert
 import org.eclipse.xtext.common.types.JvmGenericType
 import org.eclipse.xtext.junit4.InjectWith
 import org.eclipse.xtext.junit4.XtextRunner
@@ -12,11 +11,12 @@ import org.junit.runner.RunWith
 import org.xtext.example.hellojvmtypes.HelloJvmTypesInjectorProvider
 import org.xtext.example.hellojvmtypes.helloJvmTypes.Greeting
 import org.xtext.example.hellojvmtypes.helloJvmTypes.Model
+import org.junit.Assert
 
 @InjectWith(typeof(HelloJvmTypesInjectorProvider))
 @RunWith(typeof(XtextRunner))
 class HelloJvmtypesParserTest {
-    
+ 
     @Inject
     ParseHelper<Model> parser
     

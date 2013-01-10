@@ -1,7 +1,6 @@
 package org.xtext.example.helloinferrer.tests
 
 import com.google.inject.Inject
-import junit.framework.Assert
 import org.eclipse.xtext.common.types.TypesPackage
 import org.eclipse.xtext.junit4.InjectWith
 import org.eclipse.xtext.junit4.XtextRunner
@@ -14,6 +13,7 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.xtext.example.helloinferrer.HelloInferrerInjectorProvider
 import org.xtext.example.helloinferrer.helloInferrer.Model
+import org.junit.Assert
 
 @RunWith(typeof(XtextRunner))
 @InjectWith(typeof(HelloInferrerInjectorProvider))

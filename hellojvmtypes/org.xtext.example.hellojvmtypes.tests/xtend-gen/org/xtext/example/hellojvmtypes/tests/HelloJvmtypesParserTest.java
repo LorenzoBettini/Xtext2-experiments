@@ -1,7 +1,6 @@
 package org.xtext.example.hellojvmtypes.tests;
 
 import com.google.inject.Inject;
-import junit.framework.Assert;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.xtend2.lib.StringConcatenation;
 import org.eclipse.xtext.common.types.JvmGenericType;
@@ -12,6 +11,7 @@ import org.eclipse.xtext.junit4.util.ParseHelper;
 import org.eclipse.xtext.junit4.validation.ValidationTestHelper;
 import org.eclipse.xtext.xbase.lib.Exceptions;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.xtext.example.hellojvmtypes.HelloJvmTypesInjectorProvider;

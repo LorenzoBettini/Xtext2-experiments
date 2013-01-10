@@ -1,7 +1,6 @@
 package org.xtext.example.helloinferrer.tests;
 
 import com.google.inject.Inject;
-import junit.framework.Assert;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.xtend2.lib.StringConcatenation;
 import org.eclipse.xtext.common.types.TypesPackage;
@@ -12,6 +11,7 @@ import org.eclipse.xtext.junit4.validation.ValidationTestHelper;
 import org.eclipse.xtext.xbase.XbasePackage;
 import org.eclipse.xtext.xbase.lib.Exceptions;
 import org.eclipse.xtext.xbase.validation.IssueCodes;
+import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
