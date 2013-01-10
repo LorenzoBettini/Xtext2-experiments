@@ -1,11 +1,9 @@
 package org.xtext.example.helloxvars.jvmmodel;
 
-import com.google.inject.Inject;
 import java.util.Arrays;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.xtext.xbase.jvmmodel.AbstractModelInferrer;
 import org.eclipse.xtext.xbase.jvmmodel.IJvmDeclaredTypeAcceptor;
-import org.eclipse.xtext.xbase.jvmmodel.JvmTypesBuilder;
 import org.xtext.example.helloxvars.helloXvars.Model;
 
 /**
@@ -16,12 +14,6 @@ import org.xtext.example.helloxvars.helloXvars.Model;
  */
 @SuppressWarnings("all")
 public class HelloXvarsJvmModelInferrer extends AbstractModelInferrer {
-  /**
-   * convenience API to build and initialize JVM types and their members.
-   */
-  @Inject
-  private JvmTypesBuilder _jvmTypesBuilder;
-  
   /**
    * The dispatch method {@code infer} is called for each instance of the
    * given element's type that is contained in a resource.

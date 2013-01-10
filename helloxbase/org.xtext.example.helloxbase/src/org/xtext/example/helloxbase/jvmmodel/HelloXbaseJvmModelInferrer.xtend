@@ -1,9 +1,7 @@
 package org.xtext.example.helloxbase.jvmmodel
 
-import com.google.inject.Inject
 import org.eclipse.xtext.xbase.jvmmodel.AbstractModelInferrer
 import org.eclipse.xtext.xbase.jvmmodel.IJvmDeclaredTypeAcceptor
-import org.eclipse.xtext.xbase.jvmmodel.JvmTypesBuilder
 import org.xtext.example.helloxbase.helloXbase.Model
 
 /**
@@ -13,11 +11,6 @@ import org.xtext.example.helloxbase.helloXbase.Model
  * which is generated from the source model. Other models link against the JVM model rather than the source model.</p>     
  */
 class HelloXbaseJvmModelInferrer extends AbstractModelInferrer {
-
-    /**
-     * convenience API to build and initialize JVM types and their members.
-     */
-	@Inject extension JvmTypesBuilder
 
 	/**
 	 * The dispatch method {@code infer} is called for each instance of the

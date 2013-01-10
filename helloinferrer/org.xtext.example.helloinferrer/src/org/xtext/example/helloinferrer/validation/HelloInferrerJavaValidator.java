@@ -16,7 +16,6 @@ import org.xtext.example.helloinferrer.helloInferrer.Operation;
 
 import com.google.inject.Inject;
 
-@SuppressWarnings("restriction")
 public class HelloInferrerJavaValidator extends
 		AbstractHelloInferrerJavaValidator {
 
