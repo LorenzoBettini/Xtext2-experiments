@@ -3,5 +3,6 @@
     <cs:dependencies>
         <cs:dependency name="org.eclipse.platform" componentType="eclipse.feature"/>
         <cs:dependency name="org.eclipse.xtext.sdk" componentType="eclipse.feature"/>
+        <cs:dependency name="org.xtext.example.experiments.site" componentType="eclipse.feature"/>
     </cs:dependencies>
 </cs:cspec>

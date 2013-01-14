@@ -1,7 +1,6 @@
 setpref targetPlatformPath="${target.platform}"
 
-resolve "${projects.location}/releng/org.xtext.example.experiments.buckminster/projects-platform.cquery"
-resolve "${projects.location}/releng/org.xtext.example.experiments.buckminster/project.cquery"
+resolve "${projects.location}/releng/org.xtext.example.experiments.buckminster/build.cquery"
 
 build
 
