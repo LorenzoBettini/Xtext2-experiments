@@ -19,6 +19,28 @@
 	<property name="projects.location" location="${WORKSPACE}" />
 	<property name="commands.file" location="${projects.location}/releng/org.xtext.example.experiments.buckminster/commands.txt" />
 	<property name="target.platform" value="target.platform" />
+	<property name="eclipse.download" value="http://download.eclipse.org" />
+
+	<!-- = = = = = = = = = = = = = = = = =
+          macrodef: replace_win_slashes          
+         = = = = = = = = = = = = = = = = = -->
+	<macrodef name="replace_win_slashes">
+		<attribute name="property.to.process" default="default" />
+		<attribute name="output.property" default="default" />
+		<sequential>
+			<echo message="@{property.to.process}" file="some.tmp.file" />
+			<loadfile property="@{output.property}" srcFile="some.tmp.file">
+				<filterchain>
+					<tokenfilter>
+						<replaceregex pattern="\\" replace="/" flags="g" />
+					</tokenfilter>
+				</filterchain>
+			</loadfile>
+			<delete file="some.tmp.file" />
+		</sequential>
+	</macrodef>
+
+	<replace_win_slashes property.to.process="${eclipse.download}" output.property="eclipse-download" />
 	
 	<target name="buckminster" depends="cleanup" description="description">
 		<echo message="IMPORTANT: Populating an empty target platform may took over 10 minutes." />
@@ -37,6 +59,7 @@
 			<sysproperty key="buckminster.output.root" value="${build.root}/buckminster.output" />
 			<sysproperty key="buckminster.temp.root" value="${build.root}/buckminster.temp" />
 			<sysproperty key="target.platform" value="${build.root}/${target.platform}" />
+			<sysproperty key="eclipse.download" value="${eclipse-download}" />
 			<jvmarg line=" -Xms256m -Xmx512m" />
 		</java>
 

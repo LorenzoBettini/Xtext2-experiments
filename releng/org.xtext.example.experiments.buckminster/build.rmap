@@ -6,6 +6,9 @@
 	<rm:property key="xtext.p2.repository"
 		value="${eclipse.download}/modeling/tmf/xtext/updates/composite/releases/" />
 	<rm:property key="eclipse.target.platform" value="${eclipse.download}/releases/juno" />
+	<rm:property key="orbit.repository"
+		value="${eclipse.download}/tools/orbit/downloads/drops/R20120526062928/repository" />
+
 	<rm:property key="projects.location" value="${workspace.root}" />
 
 	<rm:locator
@@ -26,6 +29,7 @@
 	<rm:locator pattern="^org.xtext.example.experiments(?:\..+)?$"
 		searchPathRef="releng" />
 
+	<rm:locator pattern="^org\.apache*" searchPathRef="orbit" />
 	<rm:locator searchPathRef="eclipse" failOnError="true" />
 
 	<rm:searchPath name="xtext">
@@ -44,6 +48,15 @@
 			<rm:property key="buckminster.mutable" value="false" />
 			<rm:uri format="{0}">
 				<bc:propertyRef key="eclipse.target.platform" />
+			</rm:uri>
+		</rm:provider>
+	</rm:searchPath>
+	<rm:searchPath name="orbit">
+		<rm:provider componentTypes="osgi.bundle,eclipse.feature"
+			readerType="p2" source="false">
+			<rm:property key="buckminster.source" value="false" />
+			<rm:uri format="{0}">
+				<bc:propertyRef key="orbit.repository" />
 			</rm:uri>
 		</rm:provider>
 	</rm:searchPath>
