@@ -2,6 +2,8 @@
 <rm:rmap xmlns:bc="http://www.eclipse.org/buckminster/Common-1.0"
 	xmlns:rm="http://www.eclipse.org/buckminster/RMap-1.0">
 
+	<rm:property key="git.clone.dir" value="${user.home}/git/Xtext2-experiments" />
+
 	<rm:property key="eclipse.download" value="http://download.eclipse.org" />
 	<rm:property key="xtext.p2.repository"
 		value="${eclipse.download}/modeling/tmf/xtext/updates/composite/latest/" />
@@ -68,6 +70,16 @@
 				<bc:propertyRef key="buckminster.component" />
 			</rm:uri>
 		</rm:provider>
+		<rm:provider componentTypes="osgi.bundle,eclipse.feature,buckminster"
+			readerType="git">
+			<rm:property key="git.remote.uri"
+				value="git://github.com/LorenzoBettini/Xtext2-experiments.git" />
+			<rm:property key="git.auto.fetch" value="true" />
+			<rm:uri format="{0},hellojvmtypes/{1}">
+				<bc:propertyRef key="git.clone.dir" />
+				<bc:propertyRef key="buckminster.component" />
+			</rm:uri>
+		</rm:provider>
 	</rm:searchPath>
 
 	<rm:searchPath name="helloxbase">
@@ -75,6 +87,16 @@
 			mutable="false">
 			<rm:uri format="{0}/helloxbase/{1}">
 				<bc:propertyRef key="projects.location" />
+				<bc:propertyRef key="buckminster.component" />
+			</rm:uri>
+		</rm:provider>
+		<rm:provider componentTypes="osgi.bundle,eclipse.feature,buckminster"
+			readerType="git">
+			<rm:property key="git.remote.uri"
+				value="git://github.com/LorenzoBettini/Xtext2-experiments.git" />
+			<rm:property key="git.auto.fetch" value="true" />
+			<rm:uri format="{0},helloxbase/{1}">
+				<bc:propertyRef key="git.clone.dir" />
 				<bc:propertyRef key="buckminster.component" />
 			</rm:uri>
 		</rm:provider>
@@ -88,6 +110,16 @@
 				<bc:propertyRef key="buckminster.component" />
 			</rm:uri>
 		</rm:provider>
+		<rm:provider componentTypes="osgi.bundle,eclipse.feature,buckminster"
+			readerType="git">
+			<rm:property key="git.remote.uri"
+				value="git://github.com/LorenzoBettini/Xtext2-experiments.git" />
+			<rm:property key="git.auto.fetch" value="true" />
+			<rm:uri format="{0},helloxvars/{1}">
+				<bc:propertyRef key="git.clone.dir" />
+				<bc:propertyRef key="buckminster.component" />
+			</rm:uri>
+		</rm:provider>
 	</rm:searchPath>
 
 	<rm:searchPath name="helloinferrer">
@@ -98,6 +130,16 @@
 				<bc:propertyRef key="buckminster.component" />
 			</rm:uri>
 		</rm:provider>
+		<rm:provider componentTypes="osgi.bundle,eclipse.feature,buckminster"
+			readerType="git">
+			<rm:property key="git.remote.uri"
+				value="git://github.com/LorenzoBettini/Xtext2-experiments.git" />
+			<rm:property key="git.auto.fetch" value="true" />
+			<rm:uri format="{0},helloinferrer/{1}">
+				<bc:propertyRef key="git.clone.dir" />
+				<bc:propertyRef key="buckminster.component" />
+			</rm:uri>
+		</rm:provider>
 	</rm:searchPath>
 
 	<rm:searchPath name="releng">
@@ -105,6 +147,16 @@
 			readerType="local" mutable="false">
 			<rm:uri format="{0}/releng/{1}">
 				<bc:propertyRef key="projects.location" />
+				<bc:propertyRef key="buckminster.component" />
+			</rm:uri>
+		</rm:provider>
+		<rm:provider componentTypes="osgi.bundle,eclipse.feature,buckminster"
+			readerType="git">
+			<rm:property key="git.remote.uri"
+				value="git://github.com/LorenzoBettini/Xtext2-experiments.git" />
+			<rm:property key="git.auto.fetch" value="true" />
+			<rm:uri format="{0},releng/{1}">
+				<bc:propertyRef key="git.clone.dir" />
 				<bc:propertyRef key="buckminster.component" />
 			</rm:uri>
 		</rm:provider>
