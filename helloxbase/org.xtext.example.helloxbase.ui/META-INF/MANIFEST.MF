@@ -22,5 +22,6 @@ Import-Package: org.apache.log4j,
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Export-Package: org.xtext.example.helloxbase.ui.contentassist.antlr,
  org.xtext.example.helloxbase.ui.internal,
- org.xtext.example.helloxbase.ui.contentassist
+ org.xtext.example.helloxbase.ui.contentassist,
+ org.xtext.example.helloxbase.ui.quickfix
 Bundle-Activator: org.xtext.example.helloxbase.ui.internal.HelloXbaseActivator

@@ -30,7 +30,7 @@ public class HelloXvarsFactoryImpl extends EFactoryImpl implements HelloXvarsFac
   {
     try
     {
-      HelloXvarsFactory theHelloXvarsFactory = (HelloXvarsFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.xtext.org/example/helloxvars/HelloXvars"); 
+      HelloXvarsFactory theHelloXvarsFactory = (HelloXvarsFactory)EPackage.Registry.INSTANCE.getEFactory(HelloXvarsPackage.eNS_URI);
       if (theHelloXvarsFactory != null)
       {
         return theHelloXvarsFactory;

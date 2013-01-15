@@ -26,5 +26,6 @@ Import-Package: org.apache.log4j,
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Export-Package: org.xtext.example.helloinferrer.ui.contentassist,
  org.xtext.example.helloinferrer.ui.contentassist.antlr,
- org.xtext.example.helloinferrer.ui.internal
+ org.xtext.example.helloinferrer.ui.internal,
+ org.xtext.example.helloinferrer.ui.quickfix
 Bundle-Activator: org.xtext.example.helloinferrer.ui.internal.HelloInferrerActivator

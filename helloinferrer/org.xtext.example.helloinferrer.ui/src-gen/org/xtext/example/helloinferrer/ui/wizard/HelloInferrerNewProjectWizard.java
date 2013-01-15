@@ -2,11 +2,10 @@ package org.xtext.example.helloinferrer.ui.wizard;
 
 import org.eclipse.ui.dialogs.WizardNewProjectCreationPage;
 import org.eclipse.xtext.ui.wizard.IProjectInfo;
-import org.eclipse.xtext.ui.wizard.XtextNewProjectWizard;
 import org.eclipse.xtext.ui.wizard.IProjectCreator;
 import com.google.inject.Inject;
 
-public class HelloInferrerNewProjectWizard extends XtextNewProjectWizard {
+public class HelloInferrerNewProjectWizard extends org.eclipse.xtext.ui.wizard.XtextNewProjectWizard {
 
 	private WizardNewProjectCreationPage mainPage;
 

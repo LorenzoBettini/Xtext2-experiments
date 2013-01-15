@@ -7,6 +7,7 @@ import org.eclipse.xtext.junit4.XtextRunner;
 import org.eclipse.xtext.util.IAcceptor;
 import org.eclipse.xtext.xbase.compiler.CompilationTestHelper;
 import org.eclipse.xtext.xbase.compiler.CompilationTestHelper.Result;
+import org.eclipse.xtext.xbase.lib.Exceptions;
 import org.eclipse.xtext.xbase.lib.Procedures.Procedure1;
 import org.junit.Assert;
 import org.junit.BeforeClass;
@@ -28,22 +29,26 @@ public class HelloInferrerCompilerTest {
   
   @Test
   public void testGeneratedJavaClass() {
-    StringConcatenation _builder = new StringConcatenation();
-    _builder.append("Hello my.test.MyHello {");
-    _builder.newLine();
-    _builder.append("\t");
-    _builder.newLine();
-    _builder.append("}");
-    _builder.newLine();
-    StringConcatenation _builder_1 = new StringConcatenation();
-    _builder_1.append("package my.test;");
-    _builder_1.newLine();
-    _builder_1.newLine();
-    _builder_1.append("public class MyHello {");
-    _builder_1.newLine();
-    _builder_1.append("}");
-    _builder_1.newLine();
-    this._compilationTestHelper.assertCompilesTo(_builder, _builder_1);
+    try {
+      StringConcatenation _builder = new StringConcatenation();
+      _builder.append("Hello my.test.MyHello {");
+      _builder.newLine();
+      _builder.append("\t");
+      _builder.newLine();
+      _builder.append("}");
+      _builder.newLine();
+      StringConcatenation _builder_1 = new StringConcatenation();
+      _builder_1.append("package my.test;");
+      _builder_1.newLine();
+      _builder_1.newLine();
+      _builder_1.append("public class MyHello {");
+      _builder_1.newLine();
+      _builder_1.append("}");
+      _builder_1.newLine();
+      this._compilationTestHelper.assertCompilesTo(_builder, _builder_1);
+    } catch (Exception _e) {
+      throw Exceptions.sneakyThrow(_e);
+    }
   }
   
   @Test
@@ -433,18 +438,22 @@ public class HelloInferrerCompilerTest {
   }
   
   private void assertCorrectJavaCodeGeneration(final CharSequence input, final CharSequence expected) {
-    final Procedure1<Result> _function = new Procedure1<Result>() {
-        public void apply(final Result it) {
-          String _string = expected.toString();
-          String _generatedCode = it.getGeneratedCode();
-          Assert.assertEquals(_string, _generatedCode);
-          it.getCompiledClass();
-        }
-      };
-    this._compilationTestHelper.compile(input, new IAcceptor<Result>() {
-        public void accept(Result t) {
-          _function.apply(t);
-        }
-    });
+    try {
+      final Procedure1<Result> _function = new Procedure1<Result>() {
+          public void apply(final Result it) {
+            String _string = expected.toString();
+            String _singleGeneratedCode = it.getSingleGeneratedCode();
+            Assert.assertEquals(_string, _singleGeneratedCode);
+            it.getCompiledClass();
+          }
+        };
+      this._compilationTestHelper.compile(input, new IAcceptor<Result>() {
+          public void accept(Result t) {
+            _function.apply(t);
+          }
+      });
+    } catch (Exception _e) {
+      throw Exceptions.sneakyThrow(_e);
+    }
   }
 }

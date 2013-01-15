@@ -225,7 +225,7 @@ public class MyHello {
 	def private assertCorrectJavaCodeGeneration(CharSequence input, CharSequence expected) {
 		input.compile [
 			// check the expected Java code
-			assertEquals(expected.toString, generatedCode)
+			assertEquals(expected.toString, singleGeneratedCode)
 			// this will issue Java generation
 			compiledClass
 		]

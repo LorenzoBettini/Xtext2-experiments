@@ -30,7 +30,7 @@ public class HelloXbaseFactoryImpl extends EFactoryImpl implements HelloXbaseFac
   {
     try
     {
-      HelloXbaseFactory theHelloXbaseFactory = (HelloXbaseFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.xtext.org/example/helloxbase/HelloXbase"); 
+      HelloXbaseFactory theHelloXbaseFactory = (HelloXbaseFactory)EPackage.Registry.INSTANCE.getEFactory(HelloXbasePackage.eNS_URI);
       if (theHelloXbaseFactory != null)
       {
         return theHelloXbaseFactory;

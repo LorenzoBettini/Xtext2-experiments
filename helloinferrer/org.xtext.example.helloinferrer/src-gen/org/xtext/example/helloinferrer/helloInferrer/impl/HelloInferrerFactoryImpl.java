@@ -30,7 +30,7 @@ public class HelloInferrerFactoryImpl extends EFactoryImpl implements HelloInfer
   {
     try
     {
-      HelloInferrerFactory theHelloInferrerFactory = (HelloInferrerFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.xtext.org/example/helloinferrer/HelloInferrer"); 
+      HelloInferrerFactory theHelloInferrerFactory = (HelloInferrerFactory)EPackage.Registry.INSTANCE.getEFactory(HelloInferrerPackage.eNS_URI);
       if (theHelloInferrerFactory != null)
       {
         return theHelloInferrerFactory;

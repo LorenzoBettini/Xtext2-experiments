@@ -12,10 +12,6 @@ Import:
 	'import' importedNamespace = QualifiedNameWithWildcard
 ;
 
-QualifiedNameWithWildcard:
-	QualifiedName '.*'?
-; 
-
 Greeting:
 	'Hello' name=ID 'from' expression = XExpression '!'
 ;

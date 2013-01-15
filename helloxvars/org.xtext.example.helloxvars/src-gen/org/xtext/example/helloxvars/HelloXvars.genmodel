@@ -4,7 +4,7 @@
     editorDirectory="/org.xtext.example.helloxvars.editor/src" modelPluginID="org.xtext.example.helloxvars"
     forceOverwrite="true" modelName="HelloXvars" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     complianceLevel="5.0" copyrightFields="false" editPluginID="org.xtext.example.helloxvars.edit"
-    editorPluginID="org.xtext.example.helloxvars.editor" runtimeVersion="2.8" usedGenPackages="../../../../../../org.eclipse.xtext.xbase/model/Xbase.genmodel#//xbase">
+    editorPluginID="org.xtext.example.helloxvars.editor" runtimeVersion="2.9" usedGenPackages="../../../../../../org.eclipse.xtext.xbase/model/Xbase.genmodel#//xbase">
   <genPackages prefix="HelloXvars" basePackage="org.xtext.example.helloxvars" disposableProviderFactory="true"
       ecorePackage="HelloXvars.ecore#/">
     <genClasses ecoreClass="HelloXvars.ecore#//Model">

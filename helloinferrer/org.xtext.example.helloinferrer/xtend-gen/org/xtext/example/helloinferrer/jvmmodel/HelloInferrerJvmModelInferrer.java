@@ -1,6 +1,5 @@
 package org.xtext.example.helloinferrer.jvmmodel;
 
-import com.google.common.base.Objects;
 import com.google.inject.Inject;
 import java.util.Arrays;
 import org.eclipse.emf.common.util.EList;
@@ -22,6 +21,7 @@ import org.eclipse.xtext.xbase.jvmmodel.AbstractModelInferrer;
 import org.eclipse.xtext.xbase.jvmmodel.IJvmDeclaredTypeAcceptor;
 import org.eclipse.xtext.xbase.jvmmodel.IJvmDeclaredTypeAcceptor.IPostIndexingInitializing;
 import org.eclipse.xtext.xbase.jvmmodel.JvmTypesBuilder;
+import org.eclipse.xtext.xbase.lib.ObjectExtensions;
 import org.eclipse.xtext.xbase.lib.Procedures.Procedure1;
 import org.xtext.example.helloinferrer.helloInferrer.Greeting;
 import org.xtext.example.helloinferrer.helloInferrer.Operation;
@@ -60,6 +60,7 @@ public class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
    * @param element
    *            the model to create one or more
    *            {@link org.eclipse.xtext.common.types.JvmDeclaredType declared
+  	 *            types
    *            types} from.
    * @param acceptor
    *            each created
@@ -147,12 +148,12 @@ public class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
   public JvmTypeReference returnType(final JvmFormalParameter o) {
     JvmTypeReference _xifexpression = null;
     boolean _and = false;
-    boolean _notEquals = (!Objects.equal(o, null));
+    boolean _notEquals = ObjectExtensions.operator_notEquals(o, null);
     if (!_notEquals) {
       _and = false;
     } else {
       JvmTypeReference _parameterType = o.getParameterType();
-      boolean _notEquals_1 = (!Objects.equal(_parameterType, null));
+      boolean _notEquals_1 = ObjectExtensions.operator_notEquals(_parameterType, null);
       _and = (_notEquals && _notEquals_1);
     }
     if (_and) {
