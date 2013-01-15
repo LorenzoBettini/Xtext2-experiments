@@ -4,10 +4,10 @@
 
 	<rm:property key="eclipse.download" value="http://download.eclipse.org" />
 	<rm:property key="xtext.p2.repository"
-		value="${eclipse.download}/modeling/tmf/xtext/updates/composite/releases/" />
-	<rm:property key="eclipse.target.platform" value="${eclipse.download}/releases/juno" />
+		value="${eclipse.download}/modeling/tmf/xtext/updates/composite/latest/" />
+	<rm:property key="eclipse.target.platform" value="${eclipse.download}/releases/kepler" />
 	<rm:property key="orbit.repository"
-		value="${eclipse.download}/tools/orbit/downloads/drops/R20120526062928/repository" />
+		value="${eclipse.download}/tools/orbit/downloads/drops/S20121207152029/repository" />
 
 	<rm:property key="projects.location" value="${workspace.root}" />
 
@@ -29,7 +29,6 @@
 	<rm:locator pattern="^org.xtext.example.experiments(?:\..+)?$"
 		searchPathRef="releng" />
 
-	<rm:locator pattern="^org\.apache*" searchPathRef="orbit" />
 	<rm:locator searchPathRef="eclipse" failOnError="true" />
 
 	<rm:searchPath name="xtext">
