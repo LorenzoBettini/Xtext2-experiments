@@ -1,8 +1,8 @@
 h1. Xtext 2 experiments
 
-Here you will find some experiments with Xtext 2.3 and Xbase.
+Here you will find some experiments with Xtext and Xbase.
 
-(The versions for Xtext 2.2.1 can be found in the branch xtext-2.2.1)
+(The versions for Xtext 2.2.1 can be found in the branch xtext-2.2.1, the versions for Xtext 2.3.1 can be found in the branch xtext-2.3; the branch master deals with the current version of Xtext, or the latest version.)
 
 You will find the following projects:
 
