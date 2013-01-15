@@ -48,4 +48,20 @@ public class HelloXbaseParserTest {
       throw Exceptions.sneakyThrow(_e);
     }
   }
+  
+  @Test
+  public void testImports() {
+    try {
+      StringConcatenation _builder = new StringConcatenation();
+      _builder.append("import java.util.Date");
+      _builder.newLine();
+      _builder.newLine();
+      _builder.append("Hello foo from new Date()!");
+      _builder.newLine();
+      Model _parse = this.parser.parse(_builder);
+      this._validationTestHelper.assertNoErrors(_parse);
+    } catch (Exception _e) {
+      throw Exceptions.sneakyThrow(_e);
+    }
+  }
 }

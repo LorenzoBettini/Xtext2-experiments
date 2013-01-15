@@ -14,8 +14,8 @@ import java.util.ArrayList;
 public class InternalHelloInferrerLexer extends Lexer {
     public static final int T__68=68;
     public static final int T__69=69;
-    public static final int RULE_ID=8;
     public static final int T__66=66;
+    public static final int RULE_ID=8;
     public static final int T__67=67;
     public static final int T__29=29;
     public static final int T__64=64;
@@ -43,8 +43,8 @@ public class InternalHelloInferrerLexer extends Lexer {
     public static final int T__58=58;
     public static final int T__16=16;
     public static final int T__51=51;
-    public static final int T__15=15;
     public static final int T__52=52;
+    public static final int T__15=15;
     public static final int T__53=53;
     public static final int T__18=18;
     public static final int T__54=54;
@@ -110,10 +110,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__13;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:11:7: ( 'import' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:11:9: 'import'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:11:7: ( 'Hello' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:11:9: 'Hello'
             {
-            match("import"); 
+            match("Hello"); 
 
 
             }
@@ -131,11 +131,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__14;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:12:7: ( 'Hello' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:12:9: 'Hello'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:12:7: ( '{' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:12:9: '{'
             {
-            match("Hello"); 
-
+            match('{'); 
 
             }
 
@@ -152,10 +151,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__15;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:13:7: ( '{' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:13:9: '{'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:13:7: ( '}' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:13:9: '}'
             {
-            match('{'); 
+            match('}'); 
 
             }
 
@@ -172,10 +171,11 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__16;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:14:7: ( '}' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:14:9: '}'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:14:7: ( 'op' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:14:9: 'op'
             {
-            match('}'); 
+            match("op"); 
+
 
             }
 
@@ -192,11 +192,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__17;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:15:7: ( 'op' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:15:9: 'op'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:15:7: ( '(' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:15:9: '('
             {
-            match("op"); 
-
+            match('('); 
 
             }
 
@@ -213,10 +212,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__18;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:16:7: ( '(' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:16:9: '('
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:16:7: ( ',' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:16:9: ','
             {
-            match('('); 
+            match(','); 
 
             }
 
@@ -233,10 +232,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__19;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:17:7: ( ',' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:17:9: ','
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:17:7: ( ')' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:17:9: ')'
             {
-            match(','); 
+            match(')'); 
 
             }
 
@@ -253,10 +252,11 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__20;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:18:7: ( ')' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:18:9: ')'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:18:7: ( 'output' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:18:9: 'output'
             {
-            match(')'); 
+            match("output"); 
+
 
             }
 
@@ -273,11 +273,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__21;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:19:7: ( 'output' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:19:9: 'output'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:19:7: ( '=' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:19:9: '='
             {
-            match("output"); 
-
+            match('='); 
 
             }
 
@@ -294,10 +293,11 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__22;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:20:7: ( '=' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:20:9: '='
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:20:7: ( '+=' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:20:9: '+='
             {
-            match('='); 
+            match("+="); 
+
 
             }
 
@@ -314,10 +314,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__23;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:21:7: ( '+=' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:21:9: '+='
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:21:7: ( '||' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:21:9: '||'
             {
-            match("+="); 
+            match("||"); 
 
 
             }
@@ -335,10 +335,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__24;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:22:7: ( '||' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:22:9: '||'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:22:7: ( '&&' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:22:9: '&&'
             {
-            match("||"); 
+            match("&&"); 
 
 
             }
@@ -356,10 +356,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__25;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:23:7: ( '&&' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:23:9: '&&'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:23:7: ( '==' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:23:9: '=='
             {
-            match("&&"); 
+            match("=="); 
 
 
             }
@@ -377,10 +377,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__26;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:24:7: ( '==' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:24:9: '=='
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:24:7: ( '!=' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:24:9: '!='
             {
-            match("=="); 
+            match("!="); 
 
 
             }
@@ -398,10 +398,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__27;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:25:7: ( '!=' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:25:9: '!='
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:25:7: ( 'instanceof' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:25:9: 'instanceof'
             {
-            match("!="); 
+            match("instanceof"); 
 
 
             }
@@ -419,10 +419,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__28;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:26:7: ( 'instanceof' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:26:9: 'instanceof'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:26:7: ( '>=' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:26:9: '>='
             {
-            match("instanceof"); 
+            match(">="); 
 
 
             }
@@ -440,10 +440,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__29;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:27:7: ( '>=' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:27:9: '>='
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:27:7: ( '<=' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:27:9: '<='
             {
-            match(">="); 
+            match("<="); 
 
 
             }
@@ -461,11 +461,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__30;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:28:7: ( '<=' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:28:9: '<='
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:28:7: ( '>' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:28:9: '>'
             {
-            match("<="); 
-
+            match('>'); 
 
             }
 
@@ -482,10 +481,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__31;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:29:7: ( '>' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:29:9: '>'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:29:7: ( '<' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:29:9: '<'
             {
-            match('>'); 
+            match('<'); 
 
             }
 
@@ -502,10 +501,11 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__32;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:30:7: ( '<' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:30:9: '<'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:30:7: ( '->' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:30:9: '->'
             {
-            match('<'); 
+            match("->"); 
+
 
             }
 
@@ -522,10 +522,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__33;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:31:7: ( '->' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:31:9: '->'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:31:7: ( '..' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:31:9: '..'
             {
-            match("->"); 
+            match(".."); 
 
 
             }
@@ -543,10 +543,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__34;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:32:7: ( '..' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:32:9: '..'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:32:7: ( '=>' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:32:9: '=>'
             {
-            match(".."); 
+            match("=>"); 
 
 
             }
@@ -564,10 +564,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__35;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:33:7: ( '=>' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:33:9: '=>'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:33:7: ( '<>' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:33:9: '<>'
             {
-            match("=>"); 
+            match("<>"); 
 
 
             }
@@ -585,10 +585,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__36;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:34:7: ( '<>' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:34:9: '<>'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:34:7: ( '?:' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:34:9: '?:'
             {
-            match("<>"); 
+            match("?:"); 
 
 
             }
@@ -606,10 +606,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__37;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:35:7: ( '?:' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:35:9: '?:'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:35:7: ( '<=>' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:35:9: '<=>'
             {
-            match("?:"); 
+            match("<=>"); 
 
 
             }
@@ -627,11 +627,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__38;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:36:7: ( '<=>' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:36:9: '<=>'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:36:7: ( '+' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:36:9: '+'
             {
-            match("<=>"); 
-
+            match('+'); 
 
             }
 
@@ -648,10 +647,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__39;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:37:7: ( '+' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:37:9: '+'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:37:7: ( '-' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:37:9: '-'
             {
-            match('+'); 
+            match('-'); 
 
             }
 
@@ -668,10 +667,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__40;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:38:7: ( '-' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:38:9: '-'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:38:7: ( '*' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:38:9: '*'
             {
-            match('-'); 
+            match('*'); 
 
             }
 
@@ -688,10 +687,11 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__41;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:39:7: ( '*' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:39:9: '*'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:39:7: ( '**' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:39:9: '**'
             {
-            match('*'); 
+            match("**"); 
+
 
             }
 
@@ -708,11 +708,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__42;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:40:7: ( '**' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:40:9: '**'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:40:7: ( '/' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:40:9: '/'
             {
-            match("**"); 
-
+            match('/'); 
 
             }
 
@@ -729,10 +728,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__43;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:41:7: ( '/' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:41:9: '/'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:41:7: ( '%' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:41:9: '%'
             {
-            match('/'); 
+            match('%'); 
 
             }
 
@@ -749,10 +748,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__44;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:42:7: ( '%' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:42:9: '%'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:42:7: ( '!' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:42:9: '!'
             {
-            match('%'); 
+            match('!'); 
 
             }
 
@@ -769,10 +768,11 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__45;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:43:7: ( '!' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:43:9: '!'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:43:7: ( 'as' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:43:9: 'as'
             {
-            match('!'); 
+            match("as"); 
+
 
             }
 
@@ -789,11 +789,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__46;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:44:7: ( 'as' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:44:9: 'as'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:44:7: ( '.' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:44:9: '.'
             {
-            match("as"); 
-
+            match('.'); 
 
             }
 
@@ -810,10 +809,11 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__47;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:45:7: ( '.' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:45:9: '.'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:45:7: ( '?.' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:45:9: '?.'
             {
-            match('.'); 
+            match("?."); 
+
 
             }
 
@@ -830,10 +830,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__48;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:46:7: ( '?.' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:46:9: '?.'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:46:7: ( '*.' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:46:9: '*.'
             {
-            match("?."); 
+            match("*."); 
 
 
             }
@@ -851,11 +851,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__49;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:47:7: ( '*.' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:47:9: '*.'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:47:7: ( '[' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:47:9: '['
             {
-            match("*."); 
-
+            match('['); 
 
             }
 
@@ -872,10 +871,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__50;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:48:7: ( '[' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:48:9: '['
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:48:7: ( '|' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:48:9: '|'
             {
-            match('['); 
+            match('|'); 
 
             }
 
@@ -892,10 +891,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__51;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:49:7: ( '|' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:49:9: '|'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:49:7: ( ']' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:49:9: ']'
             {
-            match('|'); 
+            match(']'); 
 
             }
 
@@ -912,10 +911,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__52;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:50:7: ( ']' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:50:9: ']'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:50:7: ( ';' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:50:9: ';'
             {
-            match(']'); 
+            match(';'); 
 
             }
 
@@ -932,10 +931,11 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__53;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:51:7: ( ';' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:51:9: ';'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:51:7: ( 'if' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:51:9: 'if'
             {
-            match(';'); 
+            match("if"); 
+
 
             }
 
@@ -952,10 +952,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__54;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:52:7: ( 'if' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:52:9: 'if'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:52:7: ( 'else' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:52:9: 'else'
             {
-            match("if"); 
+            match("else"); 
 
 
             }
@@ -973,10 +973,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__55;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:53:7: ( 'else' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:53:9: 'else'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:53:7: ( 'switch' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:53:9: 'switch'
             {
-            match("else"); 
+            match("switch"); 
 
 
             }
@@ -994,11 +994,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__56;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:54:7: ( 'switch' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:54:9: 'switch'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:54:7: ( ':' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:54:9: ':'
             {
-            match("switch"); 
-
+            match(':'); 
 
             }
 
@@ -1015,10 +1014,11 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__57;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:55:7: ( ':' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:55:9: ':'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:55:7: ( 'default' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:55:9: 'default'
             {
-            match(':'); 
+            match("default"); 
+
 
             }
 
@@ -1035,10 +1035,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__58;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:56:7: ( 'default' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:56:9: 'default'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:56:7: ( 'case' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:56:9: 'case'
             {
-            match("default"); 
+            match("case"); 
 
 
             }
@@ -1056,10 +1056,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__59;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:57:7: ( 'case' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:57:9: 'case'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:57:7: ( 'for' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:57:9: 'for'
             {
-            match("case"); 
+            match("for"); 
 
 
             }
@@ -1077,10 +1077,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__60;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:58:7: ( 'for' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:58:9: 'for'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:58:7: ( 'while' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:58:9: 'while'
             {
-            match("for"); 
+            match("while"); 
 
 
             }
@@ -1098,10 +1098,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__61;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:59:7: ( 'while' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:59:9: 'while'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:59:7: ( 'do' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:59:9: 'do'
             {
-            match("while"); 
+            match("do"); 
 
 
             }
@@ -1119,10 +1119,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__62;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:60:7: ( 'do' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:60:9: 'do'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:60:7: ( 'var' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:60:9: 'var'
             {
-            match("do"); 
+            match("var"); 
 
 
             }
@@ -1140,10 +1140,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__63;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:61:7: ( 'var' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:61:9: 'var'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:61:7: ( 'val' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:61:9: 'val'
             {
-            match("var"); 
+            match("val"); 
 
 
             }
@@ -1161,10 +1161,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__64;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:62:7: ( 'val' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:62:9: 'val'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:62:7: ( 'super' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:62:9: 'super'
             {
-            match("val"); 
+            match("super"); 
 
 
             }
@@ -1182,10 +1182,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__65;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:63:7: ( 'super' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:63:9: 'super'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:63:7: ( '::' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:63:9: '::'
             {
-            match("super"); 
+            match("::"); 
 
 
             }
@@ -1203,10 +1203,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__66;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:64:7: ( '::' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:64:9: '::'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:64:7: ( 'new' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:64:9: 'new'
             {
-            match("::"); 
+            match("new"); 
 
 
             }
@@ -1224,10 +1224,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__67;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:65:7: ( 'new' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:65:9: 'new'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:65:7: ( 'false' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:65:9: 'false'
             {
-            match("new"); 
+            match("false"); 
 
 
             }
@@ -1245,10 +1245,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__68;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:66:7: ( 'false' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:66:9: 'false'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:66:7: ( 'true' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:66:9: 'true'
             {
-            match("false"); 
+            match("true"); 
 
 
             }
@@ -1266,10 +1266,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__69;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:67:7: ( 'true' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:67:9: 'true'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:67:7: ( 'null' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:67:9: 'null'
             {
-            match("true"); 
+            match("null"); 
 
 
             }
@@ -1287,10 +1287,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__70;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:68:7: ( 'null' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:68:9: 'null'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:68:7: ( 'typeof' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:68:9: 'typeof'
             {
-            match("null"); 
+            match("typeof"); 
 
 
             }
@@ -1308,10 +1308,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__71;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:69:7: ( 'typeof' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:69:9: 'typeof'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:69:7: ( 'throw' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:69:9: 'throw'
             {
-            match("typeof"); 
+            match("throw"); 
 
 
             }
@@ -1329,10 +1329,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__72;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:70:7: ( 'throw' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:70:9: 'throw'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:70:7: ( 'return' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:70:9: 'return'
             {
-            match("throw"); 
+            match("return"); 
 
 
             }
@@ -1350,10 +1350,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__73;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:71:7: ( 'return' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:71:9: 'return'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:71:7: ( 'try' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:71:9: 'try'
             {
-            match("return"); 
+            match("try"); 
 
 
             }
@@ -1371,10 +1371,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__74;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:72:7: ( 'try' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:72:9: 'try'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:72:7: ( 'finally' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:72:9: 'finally'
             {
-            match("try"); 
+            match("finally"); 
 
 
             }
@@ -1392,10 +1392,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__75;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:73:7: ( 'finally' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:73:9: 'finally'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:73:7: ( 'catch' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:73:9: 'catch'
             {
-            match("finally"); 
+            match("catch"); 
 
 
             }
@@ -1413,11 +1413,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__76;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:74:7: ( 'catch' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:74:9: 'catch'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:74:7: ( '?' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:74:9: '?'
             {
-            match("catch"); 
-
+            match('?'); 
 
             }
 
@@ -1434,10 +1433,11 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__77;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:75:7: ( '?' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:75:9: '?'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:75:7: ( 'extends' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:75:9: 'extends'
             {
-            match('?'); 
+            match("extends"); 
+
 
             }
 
@@ -1454,11 +1454,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__78;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:76:7: ( 'extends' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:76:9: 'extends'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:76:7: ( '&' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:76:9: '&'
             {
-            match("extends"); 
-
+            match('&'); 
 
             }
 
@@ -1475,10 +1474,11 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = T__79;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:77:7: ( '&' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:77:9: '&'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:77:7: ( 'import' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:77:9: 'import'
             {
-            match('&'); 
+            match("import"); 
+
 
             }
 
@@ -1537,10 +1537,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = RULE_HEX;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5326:10: ( ( '0x' | '0X' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+ ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )? )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5326:12: ( '0x' | '0X' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+ ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )?
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5320:10: ( ( '0x' | '0X' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+ ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )? )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5320:12: ( '0x' | '0X' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+ ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )?
             {
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5326:12: ( '0x' | '0X' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5320:12: ( '0x' | '0X' )
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -1568,7 +1568,7 @@ public class InternalHelloInferrerLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5326:13: '0x'
+                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5320:13: '0x'
                     {
                     match("0x"); 
 
@@ -1576,7 +1576,7 @@ public class InternalHelloInferrerLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5326:18: '0X'
+                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5320:18: '0X'
                     {
                     match("0X"); 
 
@@ -1586,7 +1586,7 @@ public class InternalHelloInferrerLexer extends Lexer {
 
             }
 
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5326:24: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5320:24: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+
             int cnt2=0;
             loop2:
             do {
@@ -1624,7 +1624,7 @@ public class InternalHelloInferrerLexer extends Lexer {
                 cnt2++;
             } while (true);
 
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5326:58: ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )?
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5320:58: ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )?
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -1633,10 +1633,10 @@ public class InternalHelloInferrerLexer extends Lexer {
             }
             switch (alt4) {
                 case 1 :
-                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5326:59: '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) )
+                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5320:59: '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) )
                     {
                     match('#'); 
-                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5326:63: ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) )
+                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5320:63: ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) )
                     int alt3=2;
                     int LA3_0 = input.LA(1);
 
@@ -1654,7 +1654,7 @@ public class InternalHelloInferrerLexer extends Lexer {
                     }
                     switch (alt3) {
                         case 1 :
-                            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5326:64: ( 'b' | 'B' ) ( 'i' | 'I' )
+                            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5320:64: ( 'b' | 'B' ) ( 'i' | 'I' )
                             {
                             if ( input.LA(1)=='B'||input.LA(1)=='b' ) {
                                 input.consume();
@@ -1678,7 +1678,7 @@ public class InternalHelloInferrerLexer extends Lexer {
                             }
                             break;
                         case 2 :
-                            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5326:84: ( 'l' | 'L' )
+                            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5320:84: ( 'l' | 'L' )
                             {
                             if ( input.LA(1)=='L'||input.LA(1)=='l' ) {
                                 input.consume();
@@ -1717,11 +1717,11 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5328:10: ( '0' .. '9' ( '0' .. '9' | '_' )* )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5328:12: '0' .. '9' ( '0' .. '9' | '_' )*
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5322:10: ( '0' .. '9' ( '0' .. '9' | '_' )* )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5322:12: '0' .. '9' ( '0' .. '9' | '_' )*
             {
             matchRange('0','9'); 
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5328:21: ( '0' .. '9' | '_' )*
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5322:21: ( '0' .. '9' | '_' )*
             loop5:
             do {
                 int alt5=2;
@@ -1770,11 +1770,11 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = RULE_DECIMAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5330:14: ( RULE_INT ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )? ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )? )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5330:16: RULE_INT ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )? ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )?
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5324:14: ( RULE_INT ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )? ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )? )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5324:16: RULE_INT ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )? ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )?
             {
             mRULE_INT(); 
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5330:25: ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )?
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5324:25: ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )?
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -1783,7 +1783,7 @@ public class InternalHelloInferrerLexer extends Lexer {
             }
             switch (alt7) {
                 case 1 :
-                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5330:26: ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT
+                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5324:26: ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT
                     {
                     if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
                         input.consume();
@@ -1794,7 +1794,7 @@ public class InternalHelloInferrerLexer extends Lexer {
                         recover(mse);
                         throw mse;}
 
-                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5330:36: ( '+' | '-' )?
+                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5324:36: ( '+' | '-' )?
                     int alt6=2;
                     int LA6_0 = input.LA(1);
 
@@ -1827,7 +1827,7 @@ public class InternalHelloInferrerLexer extends Lexer {
 
             }
 
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5330:58: ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )?
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5324:58: ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )?
             int alt8=3;
             int LA8_0 = input.LA(1);
 
@@ -1839,7 +1839,7 @@ public class InternalHelloInferrerLexer extends Lexer {
             }
             switch (alt8) {
                 case 1 :
-                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5330:59: ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' )
+                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5324:59: ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' )
                     {
                     if ( input.LA(1)=='B'||input.LA(1)=='b' ) {
                         input.consume();
@@ -1863,7 +1863,7 @@ public class InternalHelloInferrerLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5330:87: ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' )
+                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5324:87: ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' )
                     {
                     if ( input.LA(1)=='D'||input.LA(1)=='F'||input.LA(1)=='L'||input.LA(1)=='d'||input.LA(1)=='f'||input.LA(1)=='l' ) {
                         input.consume();
@@ -1896,10 +1896,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5332:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )* )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5332:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5326:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )* )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5326:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
             {
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5332:11: ( '^' )?
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5326:11: ( '^' )?
             int alt9=2;
             int LA9_0 = input.LA(1);
 
@@ -1908,7 +1908,7 @@ public class InternalHelloInferrerLexer extends Lexer {
             }
             switch (alt9) {
                 case 1 :
-                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5332:11: '^'
+                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5326:11: '^'
                     {
                     match('^'); 
 
@@ -1926,7 +1926,7 @@ public class InternalHelloInferrerLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5332:44: ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5326:44: ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
             loop10:
             do {
                 int alt10=2;
@@ -1975,10 +1975,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5334:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5334:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5328:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5328:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5334:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5328:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt13=2;
             int LA13_0 = input.LA(1);
 
@@ -1996,10 +1996,10 @@ public class InternalHelloInferrerLexer extends Lexer {
             }
             switch (alt13) {
                 case 1 :
-                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5334:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5328:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5334:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5328:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop11:
                     do {
                         int alt11=3;
@@ -2015,7 +2015,7 @@ public class InternalHelloInferrerLexer extends Lexer {
 
                         switch (alt11) {
                     	case 1 :
-                    	    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5334:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5328:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -2031,7 +2031,7 @@ public class InternalHelloInferrerLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5334:66: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5328:66: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -2056,10 +2056,10 @@ public class InternalHelloInferrerLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5334:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5328:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5334:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5328:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop12:
                     do {
                         int alt12=3;
@@ -2075,7 +2075,7 @@ public class InternalHelloInferrerLexer extends Lexer {
 
                         switch (alt12) {
                     	case 1 :
-                    	    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5334:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5328:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -2091,7 +2091,7 @@ public class InternalHelloInferrerLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5334:137: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5328:137: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -2134,12 +2134,12 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5336:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5336:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5330:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5330:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5336:24: ( options {greedy=false; } : . )*
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5330:24: ( options {greedy=false; } : . )*
             loop14:
             do {
                 int alt14=2;
@@ -2164,7 +2164,7 @@ public class InternalHelloInferrerLexer extends Lexer {
 
                 switch (alt14) {
             	case 1 :
-            	    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5336:52: .
+            	    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5330:52: .
             	    {
             	    matchAny(); 
 
@@ -2194,12 +2194,12 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5338:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5338:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5332:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5332:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5338:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5332:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop15:
             do {
                 int alt15=2;
@@ -2212,7 +2212,7 @@ public class InternalHelloInferrerLexer extends Lexer {
 
                 switch (alt15) {
             	case 1 :
-            	    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5338:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5332:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -2232,7 +2232,7 @@ public class InternalHelloInferrerLexer extends Lexer {
                 }
             } while (true);
 
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5338:40: ( ( '\\r' )? '\\n' )?
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5332:40: ( ( '\\r' )? '\\n' )?
             int alt17=2;
             int LA17_0 = input.LA(1);
 
@@ -2241,9 +2241,9 @@ public class InternalHelloInferrerLexer extends Lexer {
             }
             switch (alt17) {
                 case 1 :
-                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5338:41: ( '\\r' )? '\\n'
+                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5332:41: ( '\\r' )? '\\n'
                     {
-                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5338:41: ( '\\r' )?
+                    // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5332:41: ( '\\r' )?
                     int alt16=2;
                     int LA16_0 = input.LA(1);
 
@@ -2252,7 +2252,7 @@ public class InternalHelloInferrerLexer extends Lexer {
                     }
                     switch (alt16) {
                         case 1 :
-                            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5338:41: '\\r'
+                            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5332:41: '\\r'
                             {
                             match('\r'); 
 
@@ -2284,10 +2284,10 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5340:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5340:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5334:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5334:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5340:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5334:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt18=0;
             loop18:
             do {
@@ -2341,8 +2341,8 @@ public class InternalHelloInferrerLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5342:16: ( . )
-            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5342:18: .
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5336:16: ( . )
+            // ../org.xtext.example.helloinferrer/src-gen/org/xtext/example/helloinferrer/parser/antlr/internal/InternalHelloInferrer.g:5336:18: .
             {
             matchAny(); 
 
@@ -2915,91 +2915,91 @@ public class InternalHelloInferrerLexer extends Lexer {
 
     protected DFA19 dfa19 = new DFA19(this);
     static final String DFA19_eotS =
-        "\1\uffff\2\60\2\uffff\1\60\3\uffff\1\73\1\75\1\77\1\101\1\103\1"+
-        "\105\1\110\1\112\1\114\1\117\1\122\1\125\1\uffff\1\60\3\uffff\2"+
-        "\60\1\141\10\60\2\162\1\54\1\uffff\2\54\2\uffff\2\60\1\170\1\uffff"+
-        "\1\60\2\uffff\1\172\1\60\20\uffff\1\175\20\uffff\1\176\3\uffff\5"+
-        "\60\2\uffff\1\60\1\u0085\14\60\1\uffff\1\162\4\uffff\2\60\1\uffff"+
-        "\1\60\1\uffff\1\60\3\uffff\6\60\1\uffff\2\60\1\u00a1\3\60\1\u00a5"+
-        "\1\u00a6\1\u00a7\2\60\1\u00aa\7\60\1\u00b2\5\60\1\u00b8\1\60\1\uffff"+
-        "\3\60\3\uffff\1\u00bd\1\u00be\1\uffff\5\60\1\u00c4\1\60\1\uffff"+
-        "\2\60\1\u00c9\2\60\1\uffff\1\u00cc\1\u00cd\1\60\1\u00cf\2\uffff"+
-        "\1\60\1\u00d1\1\60\1\u00d3\1\60\1\uffff\1\u00d5\2\60\1\u00d8\1\uffff"+
-        "\1\u00d9\1\60\2\uffff\1\60\1\uffff\1\u00dc\1\uffff\1\u00dd\1\uffff"+
-        "\1\60\1\uffff\1\u00df\1\60\2\uffff\1\u00e1\1\u00e2\2\uffff\1\60"+
-        "\1\uffff\1\60\2\uffff\1\60\1\u00e6\1\u00e7\2\uffff";
+        "\1\uffff\1\56\2\uffff\1\56\3\uffff\1\70\1\72\1\74\1\76\1\100\1\56"+
+        "\1\105\1\110\1\112\1\114\1\117\1\122\1\125\1\uffff\1\56\3\uffff"+
+        "\2\56\1\141\10\56\2\162\1\54\1\uffff\2\54\2\uffff\1\56\3\uffff\1"+
+        "\167\1\56\16\uffff\1\56\1\172\1\56\2\uffff\1\175\20\uffff\1\176"+
+        "\3\uffff\5\56\2\uffff\1\56\1\u0085\14\56\1\uffff\1\162\4\uffff\1"+
+        "\56\1\uffff\2\56\1\uffff\1\56\3\uffff\6\56\1\uffff\2\56\1\u00a1"+
+        "\3\56\1\u00a5\1\u00a6\1\u00a7\2\56\1\u00aa\7\56\1\u00b2\5\56\1\u00b8"+
+        "\1\56\1\uffff\3\56\3\uffff\1\u00bd\1\u00be\1\uffff\3\56\1\u00c2"+
+        "\3\56\1\uffff\2\56\1\u00c9\2\56\1\uffff\1\u00cc\1\u00cd\1\56\1\u00cf"+
+        "\2\uffff\1\56\1\u00d1\1\56\1\uffff\1\u00d3\1\56\1\u00d5\2\56\1\u00d8"+
+        "\1\uffff\1\u00d9\1\56\2\uffff\1\56\1\uffff\1\u00dc\1\uffff\1\u00dd"+
+        "\1\uffff\1\56\1\uffff\1\u00df\1\56\2\uffff\1\u00e1\1\u00e2\2\uffff"+
+        "\1\56\1\uffff\1\56\2\uffff\1\56\1\u00e6\1\u00e7\2\uffff";
     static final String DFA19_eofS =
         "\u00e8\uffff";
     static final String DFA19_minS =
-        "\1\0\1\146\1\145\2\uffff\1\160\3\uffff\2\75\1\174\1\46\3\75\1\76"+
-        "\2\56\2\52\1\uffff\1\163\3\uffff\1\154\1\164\1\72\1\145\2\141\1"+
-        "\150\1\141\1\145\1\150\1\145\2\60\1\44\1\uffff\2\0\2\uffff\1\160"+
-        "\1\163\1\44\1\uffff\1\154\2\uffff\1\44\1\164\20\uffff\1\76\20\uffff"+
+        "\1\0\1\145\2\uffff\1\160\3\uffff\2\75\1\174\1\46\1\75\1\146\2\75"+
+        "\1\76\2\56\2\52\1\uffff\1\163\3\uffff\1\154\1\164\1\72\1\145\2\141"+
+        "\1\150\1\141\1\145\1\150\1\145\2\60\1\44\1\uffff\2\0\2\uffff\1\154"+
+        "\3\uffff\1\44\1\164\16\uffff\1\163\1\44\1\160\2\uffff\1\76\20\uffff"+
         "\1\44\3\uffff\1\163\1\164\1\151\1\160\1\141\2\uffff\1\146\1\44\1"+
         "\163\1\162\1\154\1\156\1\151\1\154\1\167\1\154\1\165\1\160\1\162"+
-        "\1\164\1\uffff\1\60\4\uffff\1\157\1\164\1\uffff\1\154\1\uffff\1"+
-        "\160\3\uffff\2\145\1\164\1\145\1\164\1\141\1\uffff\1\145\1\143\1"+
+        "\1\164\1\uffff\1\60\4\uffff\1\154\1\uffff\1\160\1\164\1\uffff\1"+
+        "\157\3\uffff\2\145\1\164\1\145\1\164\1\141\1\uffff\1\145\1\143\1"+
         "\44\1\163\1\141\1\154\3\44\1\154\1\145\1\44\1\145\1\157\1\165\1"+
-        "\162\1\141\1\157\1\165\1\44\1\156\1\143\1\162\1\151\1\165\1\44\1"+
+        "\157\1\165\1\141\1\162\1\44\1\156\1\143\1\162\1\151\1\165\1\44\1"+
         "\150\1\uffff\1\145\1\154\1\145\3\uffff\2\44\1\uffff\1\157\1\167"+
-        "\1\162\1\164\1\156\1\44\1\164\1\uffff\1\144\1\150\1\44\1\143\1\154"+
-        "\1\uffff\2\44\1\154\1\44\2\uffff\1\146\1\44\1\156\1\44\1\143\1\uffff"+
-        "\1\44\1\163\1\151\1\44\1\uffff\1\44\1\164\2\uffff\1\171\1\uffff"+
+        "\1\162\1\44\1\164\1\156\1\164\1\uffff\1\144\1\150\1\44\1\143\1\154"+
+        "\1\uffff\2\44\1\154\1\44\2\uffff\1\146\1\44\1\156\1\uffff\1\44\1"+
+        "\143\1\44\1\163\1\151\1\44\1\uffff\1\44\1\164\2\uffff\1\171\1\uffff"+
         "\1\44\1\uffff\1\44\1\uffff\1\145\1\uffff\1\44\1\157\2\uffff\2\44"+
         "\2\uffff\1\157\1\uffff\1\156\2\uffff\1\146\2\44\2\uffff";
     static final String DFA19_maxS =
-        "\1\uffff\1\156\1\145\2\uffff\1\165\3\uffff\1\76\1\75\1\174\1\46"+
-        "\2\75\2\76\1\56\1\72\1\56\1\57\1\uffff\1\163\3\uffff\1\170\1\167"+
-        "\1\72\1\157\1\141\1\157\1\150\1\141\1\165\1\171\1\145\1\170\1\154"+
-        "\1\172\1\uffff\2\uffff\2\uffff\1\160\1\163\1\172\1\uffff\1\154\2"+
-        "\uffff\1\172\1\164\20\uffff\1\76\20\uffff\1\172\3\uffff\1\163\1"+
-        "\164\1\151\1\160\1\141\2\uffff\1\146\1\172\1\164\1\162\1\154\1\156"+
-        "\1\151\1\162\1\167\1\154\1\171\1\160\1\162\1\164\1\uffff\1\154\4"+
-        "\uffff\1\157\1\164\1\uffff\1\154\1\uffff\1\160\3\uffff\2\145\1\164"+
-        "\1\145\1\164\1\141\1\uffff\1\145\1\143\1\172\1\163\1\141\1\154\3"+
-        "\172\1\154\1\145\1\172\1\145\1\157\1\165\1\162\1\141\1\157\1\165"+
+        "\1\uffff\1\145\2\uffff\1\165\3\uffff\1\76\1\75\1\174\1\46\1\75\1"+
+        "\156\1\75\2\76\1\56\1\72\1\56\1\57\1\uffff\1\163\3\uffff\1\170\1"+
+        "\167\1\72\1\157\1\141\1\157\1\150\1\141\1\165\1\171\1\145\1\170"+
+        "\1\154\1\172\1\uffff\2\uffff\2\uffff\1\154\3\uffff\1\172\1\164\16"+
+        "\uffff\1\163\1\172\1\160\2\uffff\1\76\20\uffff\1\172\3\uffff\1\163"+
+        "\1\164\1\151\1\160\1\141\2\uffff\1\146\1\172\1\164\1\162\1\154\1"+
+        "\156\1\151\1\162\1\167\1\154\1\171\1\160\1\162\1\164\1\uffff\1\154"+
+        "\4\uffff\1\154\1\uffff\1\160\1\164\1\uffff\1\157\3\uffff\2\145\1"+
+        "\164\1\145\1\164\1\141\1\uffff\1\145\1\143\1\172\1\163\1\141\1\154"+
+        "\3\172\1\154\1\145\1\172\1\145\1\157\1\165\1\157\1\165\1\141\1\162"+
         "\1\172\1\156\1\143\1\162\1\151\1\165\1\172\1\150\1\uffff\1\145\1"+
-        "\154\1\145\3\uffff\2\172\1\uffff\1\157\1\167\1\162\1\164\1\156\1"+
-        "\172\1\164\1\uffff\1\163\1\150\1\172\1\143\1\154\1\uffff\2\172\1"+
-        "\154\1\172\2\uffff\1\146\1\172\1\156\1\172\1\143\1\uffff\1\172\1"+
+        "\154\1\145\3\uffff\2\172\1\uffff\1\157\1\167\1\162\1\172\1\164\1"+
+        "\156\1\164\1\uffff\1\163\1\150\1\172\1\143\1\154\1\uffff\2\172\1"+
+        "\154\1\172\2\uffff\1\146\1\172\1\156\1\uffff\1\172\1\143\1\172\1"+
         "\163\1\151\1\172\1\uffff\1\172\1\164\2\uffff\1\171\1\uffff\1\172"+
         "\1\uffff\1\172\1\uffff\1\145\1\uffff\1\172\1\157\2\uffff\2\172\2"+
         "\uffff\1\157\1\uffff\1\156\2\uffff\1\146\2\172\2\uffff";
     static final String DFA19_acceptS =
-        "\3\uffff\1\3\1\4\1\uffff\1\6\1\7\1\10\14\uffff\1\40\1\uffff\1\46"+
-        "\1\50\1\51\16\uffff\1\111\2\uffff\1\115\1\116\3\uffff\1\111\1\uffff"+
-        "\1\3\1\4\2\uffff\1\6\1\7\1\10\1\16\1\27\1\12\1\13\1\33\1\14\1\47"+
-        "\1\15\1\103\1\17\1\41\1\21\1\23\1\uffff\1\30\1\24\1\25\1\34\1\26"+
-        "\1\43\1\31\1\44\1\101\1\36\1\45\1\35\1\113\1\114\1\37\1\40\1\uffff"+
-        "\1\46\1\50\1\51\5\uffff\1\66\1\55\16\uffff\1\106\1\uffff\1\107\1"+
-        "\110\1\112\1\115\2\uffff\1\52\1\uffff\1\5\1\uffff\1\32\1\22\1\42"+
-        "\6\uffff\1\62\33\uffff\1\60\3\uffff\1\63\1\64\1\67\2\uffff\1\76"+
-        "\7\uffff\1\53\5\uffff\1\57\4\uffff\1\72\1\71\5\uffff\1\2\4\uffff"+
-        "\1\65\2\uffff\1\100\1\70\1\uffff\1\61\1\uffff\1\74\1\uffff\1\1\1"+
-        "\uffff\1\11\2\uffff\1\54\1\104\2\uffff\1\73\1\75\1\uffff\1\102\1"+
-        "\uffff\1\56\1\77\3\uffff\1\105\1\20";
+        "\2\uffff\1\2\1\3\1\uffff\1\5\1\6\1\7\15\uffff\1\37\1\uffff\1\45"+
+        "\1\47\1\50\16\uffff\1\111\2\uffff\1\115\1\116\1\uffff\1\111\1\2"+
+        "\1\3\2\uffff\1\5\1\6\1\7\1\15\1\26\1\11\1\12\1\32\1\13\1\46\1\14"+
+        "\1\102\1\16\1\40\3\uffff\1\20\1\22\1\uffff\1\27\1\23\1\24\1\33\1"+
+        "\25\1\42\1\30\1\43\1\100\1\35\1\44\1\34\1\113\1\114\1\36\1\37\1"+
+        "\uffff\1\45\1\47\1\50\5\uffff\1\65\1\54\16\uffff\1\106\1\uffff\1"+
+        "\107\1\110\1\112\1\115\1\uffff\1\4\2\uffff\1\51\1\uffff\1\31\1\21"+
+        "\1\41\6\uffff\1\61\33\uffff\1\57\3\uffff\1\62\1\63\1\66\2\uffff"+
+        "\1\75\7\uffff\1\52\5\uffff\1\56\4\uffff\1\71\1\70\3\uffff\1\1\6"+
+        "\uffff\1\64\2\uffff\1\77\1\67\1\uffff\1\60\1\uffff\1\73\1\uffff"+
+        "\1\10\1\uffff\1\103\2\uffff\1\53\1\104\2\uffff\1\72\1\74\1\uffff"+
+        "\1\101\1\uffff\1\55\1\76\3\uffff\1\105\1\17";
     static final String DFA19_specialS =
         "\1\2\50\uffff\1\0\1\1\u00bd\uffff}>";
     static final String[] DFA19_transitionS = {
-            "\11\54\2\53\2\54\1\53\22\54\1\53\1\15\1\51\1\54\1\50\1\25\1"+
-            "\14\1\52\1\6\1\10\1\23\1\12\1\7\1\20\1\21\1\24\1\45\11\46\1"+
-            "\34\1\31\1\17\1\11\1\16\1\22\1\54\7\50\1\2\22\50\1\27\1\54\1"+
-            "\30\1\47\1\50\1\54\1\26\1\50\1\36\1\35\1\32\1\37\2\50\1\1\4"+
-            "\50\1\42\1\5\2\50\1\44\1\33\1\43\1\50\1\41\1\40\3\50\1\3\1\13"+
-            "\1\4\uff82\54",
-            "\1\57\6\uffff\1\55\1\56",
-            "\1\61",
+            "\11\54\2\53\2\54\1\53\22\54\1\53\1\14\1\51\1\54\1\50\1\25\1"+
+            "\13\1\52\1\5\1\7\1\23\1\11\1\6\1\20\1\21\1\24\1\45\11\46\1\34"+
+            "\1\31\1\17\1\10\1\16\1\22\1\54\7\50\1\1\22\50\1\27\1\54\1\30"+
+            "\1\47\1\50\1\54\1\26\1\50\1\36\1\35\1\32\1\37\2\50\1\15\4\50"+
+            "\1\42\1\4\2\50\1\44\1\33\1\43\1\50\1\41\1\40\3\50\1\2\1\12\1"+
+            "\3\uff82\54",
+            "\1\55",
             "",
             "",
-            "\1\64\4\uffff\1\65",
+            "\1\61\4\uffff\1\62",
             "",
             "",
             "",
-            "\1\71\1\72",
-            "\1\74",
-            "\1\76",
-            "\1\100",
-            "\1\102",
+            "\1\66\1\67",
+            "\1\71",
+            "\1\73",
+            "\1\75",
+            "\1\77",
+            "\1\102\6\uffff\1\103\1\101",
             "\1\104",
             "\1\106\1\107",
             "\1\111",
@@ -3028,37 +3028,37 @@ public class InternalHelloInferrerLexer extends Lexer {
             "\13\uffff\1\160",
             "\12\161\10\uffff\1\163\1\uffff\3\163\5\uffff\1\163\22\uffff"+
             "\1\161\2\uffff\1\163\1\uffff\3\163\5\uffff\1\163",
-            "\1\60\34\uffff\32\60\4\uffff\1\60\1\uffff\32\60",
+            "\1\56\34\uffff\32\56\4\uffff\1\56\1\uffff\32\56",
             "",
             "\0\164",
             "\0\164",
             "",
             "",
             "\1\166",
-            "\1\167",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "",
+            "",
+            "",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
+            "\1\170",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "",
             "\1\171",
-            "",
-            "",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
             "\1\173",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
             "",
             "",
             "\1\174",
@@ -3078,8 +3078,8 @@ public class InternalHelloInferrerLexer extends Lexer {
             "",
             "",
             "",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
             "",
             "",
             "",
@@ -3091,8 +3091,8 @@ public class InternalHelloInferrerLexer extends Lexer {
             "",
             "",
             "\1\u0084",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
             "\1\u0086\1\u0087",
             "\1\u0088",
             "\1\u0089",
@@ -3113,8 +3113,8 @@ public class InternalHelloInferrerLexer extends Lexer {
             "",
             "",
             "\1\u0095",
-            "\1\u0096",
             "",
+            "\1\u0096",
             "\1\u0097",
             "",
             "\1\u0098",
@@ -3130,21 +3130,21 @@ public class InternalHelloInferrerLexer extends Lexer {
             "",
             "\1\u009f",
             "\1\u00a0",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
             "\1\u00a2",
             "\1\u00a3",
             "\1\u00a4",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
             "\1\u00a8",
             "\1\u00a9",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
             "\1\u00ab",
             "\1\u00ac",
             "\1\u00ad",
@@ -3152,15 +3152,15 @@ public class InternalHelloInferrerLexer extends Lexer {
             "\1\u00af",
             "\1\u00b0",
             "\1\u00b1",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
             "\1\u00b3",
             "\1\u00b4",
             "\1\u00b5",
             "\1\u00b6",
             "\1\u00b7",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
             "\1\u00b9",
             "",
             "\1\u00ba",
@@ -3169,75 +3169,75 @@ public class InternalHelloInferrerLexer extends Lexer {
             "",
             "",
             "",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
             "",
             "\1\u00bf",
             "\1\u00c0",
             "\1\u00c1",
-            "\1\u00c2",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
             "\1\u00c3",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "\1\u00c4",
             "\1\u00c5",
             "",
             "\1\u00c6\16\uffff\1\u00c7",
             "\1\u00c8",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
             "\1\u00ca",
             "\1\u00cb",
             "",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
             "\1\u00ce",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
             "",
             "",
             "\1\u00d0",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
             "\1\u00d2",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
-            "\1\u00d4",
             "",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
+            "\1\u00d4",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
             "\1\u00d6",
             "\1\u00d7",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
             "",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
             "\1\u00da",
             "",
             "",
             "\1\u00db",
             "",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
             "",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
             "",
             "\1\u00de",
             "",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
             "\1\u00e0",
             "",
             "",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
             "",
             "",
             "\1\u00e3",
@@ -3246,10 +3246,10 @@ public class InternalHelloInferrerLexer extends Lexer {
             "",
             "",
             "\1\u00e5",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
-            "\1\60\13\uffff\12\60\7\uffff\32\60\4\uffff\1\60\1\uffff\32"+
-            "\60",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
+            "\1\56\13\uffff\12\56\7\uffff\32\56\4\uffff\1\56\1\uffff\32"+
+            "\56",
             "",
             ""
     };
@@ -3314,31 +3314,31 @@ public class InternalHelloInferrerLexer extends Lexer {
                         int LA19_0 = input.LA(1);
 
                         s = -1;
-                        if ( (LA19_0=='i') ) {s = 1;}
+                        if ( (LA19_0=='H') ) {s = 1;}
 
-                        else if ( (LA19_0=='H') ) {s = 2;}
+                        else if ( (LA19_0=='{') ) {s = 2;}
 
-                        else if ( (LA19_0=='{') ) {s = 3;}
+                        else if ( (LA19_0=='}') ) {s = 3;}
 
-                        else if ( (LA19_0=='}') ) {s = 4;}
+                        else if ( (LA19_0=='o') ) {s = 4;}
 
-                        else if ( (LA19_0=='o') ) {s = 5;}
+                        else if ( (LA19_0=='(') ) {s = 5;}
 
-                        else if ( (LA19_0=='(') ) {s = 6;}
+                        else if ( (LA19_0==',') ) {s = 6;}
 
-                        else if ( (LA19_0==',') ) {s = 7;}
+                        else if ( (LA19_0==')') ) {s = 7;}
 
-                        else if ( (LA19_0==')') ) {s = 8;}
+                        else if ( (LA19_0=='=') ) {s = 8;}
 
-                        else if ( (LA19_0=='=') ) {s = 9;}
+                        else if ( (LA19_0=='+') ) {s = 9;}
 
-                        else if ( (LA19_0=='+') ) {s = 10;}
+                        else if ( (LA19_0=='|') ) {s = 10;}
 
-                        else if ( (LA19_0=='|') ) {s = 11;}
+                        else if ( (LA19_0=='&') ) {s = 11;}
 
-                        else if ( (LA19_0=='&') ) {s = 12;}
+                        else if ( (LA19_0=='!') ) {s = 12;}
 
-                        else if ( (LA19_0=='!') ) {s = 13;}
+                        else if ( (LA19_0=='i') ) {s = 13;}
 
                         else if ( (LA19_0=='>') ) {s = 14;}
 

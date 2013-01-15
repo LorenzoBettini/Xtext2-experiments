@@ -316,6 +316,11 @@ public abstract class AbstractHelloInferrerUiModule extends DefaultUiModule {
 		return org.eclipse.xtext.xbase.ui.contentassist.ImportingTypesProposalProvider.class;
 	}
 
+	// contributed by org.eclipse.xtext.generator.xbase.XbaseGeneratorFragment
+	public Class<? extends org.eclipse.xtext.xbase.imports.IUnresolvedTypeResolver> bindIUnresolvedTypeResolver() {
+		return org.eclipse.xtext.xbase.ui.imports.InteractiveUnresolvedTypeResolver.class;
+	}
+
 	// contributed by org.eclipse.xtext.ui.generator.templates.CodetemplatesGeneratorFragment
 	public com.google.inject.Provider<org.eclipse.xtext.ui.codetemplates.ui.preferences.TemplatesLanguageConfiguration> provideTemplatesLanguageConfiguration() {
 		return org.eclipse.xtext.ui.codetemplates.ui.AccessibleCodetemplatesActivator.getTemplatesLanguageConfigurationProvider();

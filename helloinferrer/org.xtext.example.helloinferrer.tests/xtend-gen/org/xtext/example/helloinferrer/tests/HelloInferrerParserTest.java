@@ -53,6 +53,36 @@ public class HelloInferrerParserTest {
   }
   
   @Test
+  public void testImports() {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("import java.util.Date");
+    _builder.newLine();
+    _builder.append("import java.io.BufferedInputStream");
+    _builder.newLine();
+    _builder.newLine();
+    _builder.append("Hello my.test.hello {");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("op myOp(String s, int i) output Boolean b {");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("val date = new Date");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("val is = new BufferedInputStream(null, 0)");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("val foo = s + i");
+    _builder.newLine();
+    _builder.append("\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("}");
+    _builder.newLine();
+    this.checkModel(_builder);
+  }
+  
+  @Test
   public void testAccessToOutput() {
     StringConcatenation _builder = new StringConcatenation();
     _builder.append("Hello my.test.hello {");

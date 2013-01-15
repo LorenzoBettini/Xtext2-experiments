@@ -54,7 +54,6 @@ import org.eclipse.xtext.xtype.XImportSection;
 import org.eclipse.xtext.xtype.XtypePackage;
 import org.xtext.example.helloxbase.helloXbase.Greeting;
 import org.xtext.example.helloxbase.helloXbase.HelloXbasePackage;
-import org.xtext.example.helloxbase.helloXbase.Import;
 import org.xtext.example.helloxbase.helloXbase.Model;
 import org.xtext.example.helloxbase.services.HelloXbaseGrammarAccess;
 
@@ -69,12 +68,6 @@ public class HelloXbaseSemanticSequencer extends XbaseSemanticSequencer {
 			case HelloXbasePackage.GREETING:
 				if(context == grammarAccess.getGreetingRule()) {
 					sequence_Greeting(context, (Greeting) semanticObject); 
-					return; 
-				}
-				else break;
-			case HelloXbasePackage.IMPORT:
-				if(context == grammarAccess.getImportRule()) {
-					sequence_Import(context, (Import) semanticObject); 
 					return; 
 				}
 				else break;
@@ -977,23 +970,7 @@ public class HelloXbaseSemanticSequencer extends XbaseSemanticSequencer {
 	
 	/**
 	 * Constraint:
-	 *     importedNamespace=QualifiedNameWithWildcard
-	 */
-	protected void sequence_Import(EObject context, Import semanticObject) {
-		if(errorAcceptor != null) {
-			if(transientValues.isValueTransient(semanticObject, HelloXbasePackage.Literals.IMPORT__IMPORTED_NAMESPACE) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, HelloXbasePackage.Literals.IMPORT__IMPORTED_NAMESPACE));
-		}
-		INodesForEObjectProvider nodes = createNodeProvider(semanticObject);
-		SequenceFeeder feeder = createSequencerFeeder(semanticObject, nodes);
-		feeder.accept(grammarAccess.getImportAccess().getImportedNamespaceQualifiedNameWithWildcardParserRuleCall_1_0(), semanticObject.getImportedNamespace());
-		feeder.finish();
-	}
-	
-	
-	/**
-	 * Constraint:
-	 *     (imports+=Import* greetings+=Greeting*)
+	 *     (importSection=XImportSection? greetings+=Greeting*)
 	 */
 	protected void sequence_Model(EObject context, Model semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

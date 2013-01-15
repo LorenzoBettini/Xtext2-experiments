@@ -4,15 +4,12 @@
     editorDirectory="/org.xtext.example.helloinferrer.editor/src" modelPluginID="org.xtext.example.helloinferrer"
     forceOverwrite="true" modelName="HelloInferrer" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     complianceLevel="5.0" copyrightFields="false" editPluginID="org.xtext.example.helloinferrer.edit"
-    editorPluginID="org.xtext.example.helloinferrer.editor" runtimeVersion="2.9" usedGenPackages="../../../../../../org.eclipse.xtext.common.types/model/JavaVMTypes.genmodel#//types ../../../../../../org.eclipse.xtext.xbase/model/Xbase.genmodel#//xbase">
+    editorPluginID="org.xtext.example.helloinferrer.editor" runtimeVersion="2.9" usedGenPackages="../../../../../../org.eclipse.xtext.common.types/model/JavaVMTypes.genmodel#//types ../../../../../../org.eclipse.xtext.xbase/model/Xbase.genmodel#//xbase ../../../../../../org.eclipse.xtext.xbase/model/Xbase.genmodel#//xtype">
   <genPackages prefix="HelloInferrer" basePackage="org.xtext.example.helloinferrer"
       disposableProviderFactory="true" ecorePackage="HelloInferrer.ecore#/">
     <genClasses ecoreClass="HelloInferrer.ecore#//Model">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloInferrer.ecore#//Model/imports"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloInferrer.ecore#//Model/importSection"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloInferrer.ecore#//Model/greetings"/>
-    </genClasses>
-    <genClasses ecoreClass="HelloInferrer.ecore#//Import">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloInferrer.ecore#//Import/importedNamespace"/>
     </genClasses>
     <genClasses ecoreClass="HelloInferrer.ecore#//Greeting">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloInferrer.ecore#//Greeting/name"/>

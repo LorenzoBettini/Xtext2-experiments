@@ -65,7 +65,6 @@ public class HelloInferrerFactoryImpl extends EFactoryImpl implements HelloInfer
     switch (eClass.getClassifierID())
     {
       case HelloInferrerPackage.MODEL: return createModel();
-      case HelloInferrerPackage.IMPORT: return createImport();
       case HelloInferrerPackage.GREETING: return createGreeting();
       case HelloInferrerPackage.OPERATION: return createOperation();
       default:
@@ -82,17 +81,6 @@ public class HelloInferrerFactoryImpl extends EFactoryImpl implements HelloInfer
   {
     ModelImpl model = new ModelImpl();
     return model;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public Import createImport()
-  {
-    ImportImpl import_ = new ImportImpl();
-    return import_;
   }
 
   /**

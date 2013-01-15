@@ -14,8 +14,8 @@ import java.util.ArrayList;
 public class InternalHelloXbaseLexer extends Lexer {
     public static final int T__68=68;
     public static final int T__69=69;
-    public static final int RULE_ID=4;
     public static final int T__66=66;
+    public static final int RULE_ID=4;
     public static final int T__67=67;
     public static final int T__29=29;
     public static final int T__64=64;
@@ -43,8 +43,8 @@ public class InternalHelloXbaseLexer extends Lexer {
     public static final int T__58=58;
     public static final int T__16=16;
     public static final int T__51=51;
-    public static final int T__15=15;
     public static final int T__52=52;
+    public static final int T__15=15;
     public static final int T__53=53;
     public static final int T__18=18;
     public static final int T__54=54;
@@ -666,10 +666,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__40;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:38:7: ( 'import' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:38:9: 'import'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:38:7: ( 'Hello' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:38:9: 'Hello'
             {
-            match("import"); 
+            match("Hello"); 
 
 
             }
@@ -687,10 +687,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__41;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:39:7: ( 'Hello' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:39:9: 'Hello'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:39:7: ( 'from' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:39:9: 'from'
             {
-            match("Hello"); 
+            match("from"); 
 
 
             }
@@ -708,10 +708,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__42;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:40:7: ( 'from' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:40:9: 'from'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:40:7: ( 'instanceof' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:40:9: 'instanceof'
             {
-            match("from"); 
+            match("instanceof"); 
 
 
             }
@@ -729,10 +729,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__43;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:41:7: ( 'instanceof' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:41:9: 'instanceof'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:41:7: ( 'as' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:41:9: 'as'
             {
-            match("instanceof"); 
+            match("as"); 
 
 
             }
@@ -750,11 +750,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__44;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:42:7: ( 'as' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:42:9: 'as'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:42:7: ( ',' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:42:9: ','
             {
-            match("as"); 
-
+            match(','); 
 
             }
 
@@ -771,10 +770,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__45;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:43:7: ( ',' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:43:9: ','
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:43:7: ( ')' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:43:9: ')'
             {
-            match(','); 
+            match(')'); 
 
             }
 
@@ -791,10 +790,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__46;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:44:7: ( ')' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:44:9: ')'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:44:7: ( ']' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:44:9: ']'
             {
-            match(')'); 
+            match(']'); 
 
             }
 
@@ -811,10 +810,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__47;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:45:7: ( ']' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:45:9: ']'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:45:7: ( '[' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:45:9: '['
             {
-            match(']'); 
+            match('['); 
 
             }
 
@@ -831,10 +830,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__48;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:46:7: ( '[' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:46:9: '['
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:46:7: ( ';' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:46:9: ';'
             {
-            match('['); 
+            match(';'); 
 
             }
 
@@ -851,10 +850,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__49;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:47:7: ( ';' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:47:9: ';'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:47:7: ( '(' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:47:9: '('
             {
-            match(';'); 
+            match('('); 
 
             }
 
@@ -871,10 +870,11 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__50;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:48:7: ( '(' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:48:9: '('
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:48:7: ( 'if' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:48:9: 'if'
             {
-            match('('); 
+            match("if"); 
+
 
             }
 
@@ -891,10 +891,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__51;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:49:7: ( 'if' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:49:9: 'if'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:49:7: ( 'else' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:49:9: 'else'
             {
-            match("if"); 
+            match("else"); 
 
 
             }
@@ -912,10 +912,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__52;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:50:7: ( 'else' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:50:9: 'else'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:50:7: ( 'switch' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:50:9: 'switch'
             {
-            match("else"); 
+            match("switch"); 
 
 
             }
@@ -933,11 +933,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__53;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:51:7: ( 'switch' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:51:9: 'switch'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:51:7: ( '{' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:51:9: '{'
             {
-            match("switch"); 
-
+            match('{'); 
 
             }
 
@@ -954,10 +953,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__54;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:52:7: ( '{' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:52:9: '{'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:52:7: ( '}' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:52:9: '}'
             {
-            match('{'); 
+            match('}'); 
 
             }
 
@@ -974,10 +973,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__55;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:53:7: ( '}' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:53:9: '}'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:53:7: ( ':' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:53:9: ':'
             {
-            match('}'); 
+            match(':'); 
 
             }
 
@@ -994,10 +993,11 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__56;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:54:7: ( ':' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:54:9: ':'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:54:7: ( 'default' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:54:9: 'default'
             {
-            match(':'); 
+            match("default"); 
+
 
             }
 
@@ -1014,10 +1014,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__57;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:55:7: ( 'default' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:55:9: 'default'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:55:7: ( 'case' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:55:9: 'case'
             {
-            match("default"); 
+            match("case"); 
 
 
             }
@@ -1035,10 +1035,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__58;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:56:7: ( 'case' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:56:9: 'case'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:56:7: ( 'for' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:56:9: 'for'
             {
-            match("case"); 
+            match("for"); 
 
 
             }
@@ -1056,10 +1056,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__59;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:57:7: ( 'for' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:57:9: 'for'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:57:7: ( 'while' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:57:9: 'while'
             {
-            match("for"); 
+            match("while"); 
 
 
             }
@@ -1077,10 +1077,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__60;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:58:7: ( 'while' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:58:9: 'while'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:58:7: ( 'do' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:58:9: 'do'
             {
-            match("while"); 
+            match("do"); 
 
 
             }
@@ -1098,10 +1098,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__61;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:59:7: ( 'do' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:59:9: 'do'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:59:7: ( '::' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:59:9: '::'
             {
-            match("do"); 
+            match("::"); 
 
 
             }
@@ -1119,10 +1119,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__62;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:60:7: ( '::' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:60:9: '::'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:60:7: ( 'new' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:60:9: 'new'
             {
-            match("::"); 
+            match("new"); 
 
 
             }
@@ -1140,10 +1140,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__63;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:61:7: ( 'new' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:61:9: 'new'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:61:7: ( 'null' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:61:9: 'null'
             {
-            match("new"); 
+            match("null"); 
 
 
             }
@@ -1161,10 +1161,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__64;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:62:7: ( 'null' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:62:9: 'null'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:62:7: ( 'typeof' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:62:9: 'typeof'
             {
-            match("null"); 
+            match("typeof"); 
 
 
             }
@@ -1182,10 +1182,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__65;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:63:7: ( 'typeof' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:63:9: 'typeof'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:63:7: ( 'throw' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:63:9: 'throw'
             {
-            match("typeof"); 
+            match("throw"); 
 
 
             }
@@ -1203,10 +1203,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__66;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:64:7: ( 'throw' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:64:9: 'throw'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:64:7: ( 'return' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:64:9: 'return'
             {
-            match("throw"); 
+            match("return"); 
 
 
             }
@@ -1224,10 +1224,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__67;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:65:7: ( 'return' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:65:9: 'return'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:65:7: ( 'try' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:65:9: 'try'
             {
-            match("return"); 
+            match("try"); 
 
 
             }
@@ -1245,10 +1245,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__68;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:66:7: ( 'try' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:66:9: 'try'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:66:7: ( 'finally' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:66:9: 'finally'
             {
-            match("try"); 
+            match("finally"); 
 
 
             }
@@ -1266,10 +1266,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__69;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:67:7: ( 'finally' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:67:9: 'finally'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:67:7: ( 'catch' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:67:9: 'catch'
             {
-            match("finally"); 
+            match("catch"); 
 
 
             }
@@ -1287,11 +1287,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__70;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:68:7: ( 'catch' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:68:9: 'catch'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:68:7: ( '?' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:68:9: '?'
             {
-            match("catch"); 
-
+            match('?'); 
 
             }
 
@@ -1308,10 +1307,11 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__71;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:69:7: ( '?' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:69:9: '?'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:69:7: ( 'extends' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:69:9: 'extends'
             {
-            match('?'); 
+            match("extends"); 
+
 
             }
 
@@ -1328,11 +1328,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__72;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:70:7: ( 'extends' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:70:9: 'extends'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:70:7: ( '&' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:70:9: '&'
             {
-            match("extends"); 
-
+            match('&'); 
 
             }
 
@@ -1349,10 +1348,11 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = T__73;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:71:7: ( '&' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:71:9: '&'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:71:7: ( 'import' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:71:9: 'import'
             {
-            match('&'); 
+            match("import"); 
+
 
             }
 
@@ -1515,10 +1515,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = RULE_HEX;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16245:10: ( ( '0x' | '0X' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+ ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )? )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16245:12: ( '0x' | '0X' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+ ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )?
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16186:10: ( ( '0x' | '0X' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+ ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )? )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16186:12: ( '0x' | '0X' ) ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+ ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )?
             {
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16245:12: ( '0x' | '0X' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16186:12: ( '0x' | '0X' )
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -1546,7 +1546,7 @@ public class InternalHelloXbaseLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16245:13: '0x'
+                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16186:13: '0x'
                     {
                     match("0x"); 
 
@@ -1554,7 +1554,7 @@ public class InternalHelloXbaseLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16245:18: '0X'
+                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16186:18: '0X'
                     {
                     match("0X"); 
 
@@ -1564,7 +1564,7 @@ public class InternalHelloXbaseLexer extends Lexer {
 
             }
 
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16245:24: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16186:24: ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' | '_' )+
             int cnt2=0;
             loop2:
             do {
@@ -1602,7 +1602,7 @@ public class InternalHelloXbaseLexer extends Lexer {
                 cnt2++;
             } while (true);
 
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16245:58: ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )?
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16186:58: ( '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) ) )?
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -1611,10 +1611,10 @@ public class InternalHelloXbaseLexer extends Lexer {
             }
             switch (alt4) {
                 case 1 :
-                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16245:59: '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) )
+                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16186:59: '#' ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) )
                     {
                     match('#'); 
-                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16245:63: ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) )
+                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16186:63: ( ( 'b' | 'B' ) ( 'i' | 'I' ) | ( 'l' | 'L' ) )
                     int alt3=2;
                     int LA3_0 = input.LA(1);
 
@@ -1632,7 +1632,7 @@ public class InternalHelloXbaseLexer extends Lexer {
                     }
                     switch (alt3) {
                         case 1 :
-                            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16245:64: ( 'b' | 'B' ) ( 'i' | 'I' )
+                            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16186:64: ( 'b' | 'B' ) ( 'i' | 'I' )
                             {
                             if ( input.LA(1)=='B'||input.LA(1)=='b' ) {
                                 input.consume();
@@ -1656,7 +1656,7 @@ public class InternalHelloXbaseLexer extends Lexer {
                             }
                             break;
                         case 2 :
-                            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16245:84: ( 'l' | 'L' )
+                            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16186:84: ( 'l' | 'L' )
                             {
                             if ( input.LA(1)=='L'||input.LA(1)=='l' ) {
                                 input.consume();
@@ -1695,11 +1695,11 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16247:10: ( '0' .. '9' ( '0' .. '9' | '_' )* )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16247:12: '0' .. '9' ( '0' .. '9' | '_' )*
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16188:10: ( '0' .. '9' ( '0' .. '9' | '_' )* )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16188:12: '0' .. '9' ( '0' .. '9' | '_' )*
             {
             matchRange('0','9'); 
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16247:21: ( '0' .. '9' | '_' )*
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16188:21: ( '0' .. '9' | '_' )*
             loop5:
             do {
                 int alt5=2;
@@ -1748,11 +1748,11 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = RULE_DECIMAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16249:14: ( RULE_INT ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )? ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )? )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16249:16: RULE_INT ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )? ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )?
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16190:14: ( RULE_INT ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )? ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )? )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16190:16: RULE_INT ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )? ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )?
             {
             mRULE_INT(); 
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16249:25: ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )?
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16190:25: ( ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT )?
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -1761,7 +1761,7 @@ public class InternalHelloXbaseLexer extends Lexer {
             }
             switch (alt7) {
                 case 1 :
-                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16249:26: ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT
+                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16190:26: ( 'e' | 'E' ) ( '+' | '-' )? RULE_INT
                     {
                     if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
                         input.consume();
@@ -1772,7 +1772,7 @@ public class InternalHelloXbaseLexer extends Lexer {
                         recover(mse);
                         throw mse;}
 
-                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16249:36: ( '+' | '-' )?
+                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16190:36: ( '+' | '-' )?
                     int alt6=2;
                     int LA6_0 = input.LA(1);
 
@@ -1805,7 +1805,7 @@ public class InternalHelloXbaseLexer extends Lexer {
 
             }
 
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16249:58: ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )?
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16190:58: ( ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' ) | ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' ) )?
             int alt8=3;
             int LA8_0 = input.LA(1);
 
@@ -1817,7 +1817,7 @@ public class InternalHelloXbaseLexer extends Lexer {
             }
             switch (alt8) {
                 case 1 :
-                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16249:59: ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' )
+                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16190:59: ( 'b' | 'B' ) ( 'i' | 'I' | 'd' | 'D' )
                     {
                     if ( input.LA(1)=='B'||input.LA(1)=='b' ) {
                         input.consume();
@@ -1841,7 +1841,7 @@ public class InternalHelloXbaseLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16249:87: ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' )
+                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16190:87: ( 'l' | 'L' | 'd' | 'D' | 'f' | 'F' )
                     {
                     if ( input.LA(1)=='D'||input.LA(1)=='F'||input.LA(1)=='L'||input.LA(1)=='d'||input.LA(1)=='f'||input.LA(1)=='l' ) {
                         input.consume();
@@ -1874,10 +1874,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16251:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )* )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16251:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16192:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )* )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16192:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
             {
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16251:11: ( '^' )?
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16192:11: ( '^' )?
             int alt9=2;
             int LA9_0 = input.LA(1);
 
@@ -1886,7 +1886,7 @@ public class InternalHelloXbaseLexer extends Lexer {
             }
             switch (alt9) {
                 case 1 :
-                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16251:11: '^'
+                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16192:11: '^'
                     {
                     match('^'); 
 
@@ -1904,7 +1904,7 @@ public class InternalHelloXbaseLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16251:44: ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16192:44: ( 'a' .. 'z' | 'A' .. 'Z' | '$' | '_' | '0' .. '9' )*
             loop10:
             do {
                 int alt10=2;
@@ -1953,10 +1953,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16253:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16253:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16194:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16194:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16253:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16194:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt13=2;
             int LA13_0 = input.LA(1);
 
@@ -1974,10 +1974,10 @@ public class InternalHelloXbaseLexer extends Lexer {
             }
             switch (alt13) {
                 case 1 :
-                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16253:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16194:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16253:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16194:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop11:
                     do {
                         int alt11=3;
@@ -1993,7 +1993,7 @@ public class InternalHelloXbaseLexer extends Lexer {
 
                         switch (alt11) {
                     	case 1 :
-                    	    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16253:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16194:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -2009,7 +2009,7 @@ public class InternalHelloXbaseLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16253:66: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16194:66: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -2034,10 +2034,10 @@ public class InternalHelloXbaseLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16253:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16194:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16253:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16194:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop12:
                     do {
                         int alt12=3;
@@ -2053,7 +2053,7 @@ public class InternalHelloXbaseLexer extends Lexer {
 
                         switch (alt12) {
                     	case 1 :
-                    	    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16253:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16194:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -2069,7 +2069,7 @@ public class InternalHelloXbaseLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16253:137: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16194:137: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -2112,12 +2112,12 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16255:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16255:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16196:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16196:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16255:24: ( options {greedy=false; } : . )*
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16196:24: ( options {greedy=false; } : . )*
             loop14:
             do {
                 int alt14=2;
@@ -2142,7 +2142,7 @@ public class InternalHelloXbaseLexer extends Lexer {
 
                 switch (alt14) {
             	case 1 :
-            	    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16255:52: .
+            	    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16196:52: .
             	    {
             	    matchAny(); 
 
@@ -2172,12 +2172,12 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16257:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16257:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16198:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16198:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16257:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16198:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop15:
             do {
                 int alt15=2;
@@ -2190,7 +2190,7 @@ public class InternalHelloXbaseLexer extends Lexer {
 
                 switch (alt15) {
             	case 1 :
-            	    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16257:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16198:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -2210,7 +2210,7 @@ public class InternalHelloXbaseLexer extends Lexer {
                 }
             } while (true);
 
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16257:40: ( ( '\\r' )? '\\n' )?
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16198:40: ( ( '\\r' )? '\\n' )?
             int alt17=2;
             int LA17_0 = input.LA(1);
 
@@ -2219,9 +2219,9 @@ public class InternalHelloXbaseLexer extends Lexer {
             }
             switch (alt17) {
                 case 1 :
-                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16257:41: ( '\\r' )? '\\n'
+                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16198:41: ( '\\r' )? '\\n'
                     {
-                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16257:41: ( '\\r' )?
+                    // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16198:41: ( '\\r' )?
                     int alt16=2;
                     int LA16_0 = input.LA(1);
 
@@ -2230,7 +2230,7 @@ public class InternalHelloXbaseLexer extends Lexer {
                     }
                     switch (alt16) {
                         case 1 :
-                            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16257:41: '\\r'
+                            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16198:41: '\\r'
                             {
                             match('\r'); 
 
@@ -2262,10 +2262,10 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16259:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16259:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16200:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16200:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16259:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16200:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt18=0;
             loop18:
             do {
@@ -2319,8 +2319,8 @@ public class InternalHelloXbaseLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16261:16: ( . )
-            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16261:18: .
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16202:16: ( . )
+            // ../org.xtext.example.helloxbase.ui/src-gen/org/xtext/example/helloxbase/ui/contentassist/antlr/internal/InternalHelloXbase.g:16202:18: .
             {
             matchAny(); 
 
@@ -2894,68 +2894,68 @@ public class InternalHelloXbaseLexer extends Lexer {
         "\1\uffff\3\113\1\uffff\3\113\1\u00a4\3\113\1\u00a8\2\113\2\uffff"+
         "\4\113\1\u00af\1\uffff\4\113\1\u00b4\2\113\1\u00b7\2\113\1\uffff"+
         "\1\u00ba\2\113\1\uffff\1\u00bd\1\113\1\u00bf\2\113\1\u00c2\1\uffff"+
-        "\3\113\1\u00c6\1\uffff\2\113\1\uffff\1\u00ca\1\u00cb\1\uffff\1\113"+
-        "\1\u00cd\1\uffff\1\113\1\uffff\1\u00cf\1\u00d0\1\uffff\1\113\1\u00d2"+
-        "\1\113\1\uffff\3\113\2\uffff\1\u00d7\1\uffff\1\u00d8\2\uffff\1\u00d9"+
-        "\1\uffff\1\113\1\u00db\1\113\1\u00dd\3\uffff\1\113\1\uffff\1\113"+
-        "\1\uffff\1\113\1\u00e1\1\u00e2\2\uffff";
+        "\1\113\1\u00c4\2\113\1\uffff\2\113\1\uffff\1\u00ca\1\u00cb\1\uffff"+
+        "\1\113\1\u00cd\1\uffff\1\113\1\uffff\1\u00cf\1\u00d0\1\uffff\1\113"+
+        "\1\uffff\1\113\1\u00d3\3\113\2\uffff\1\u00d7\1\uffff\1\u00d8\2\uffff"+
+        "\1\u00d9\1\113\1\uffff\1\u00db\1\113\1\u00dd\3\uffff\1\113\1\uffff"+
+        "\1\113\1\uffff\1\113\1\u00e1\1\u00e2\2\uffff";
     static final String DFA19_eofS =
         "\u00e3\uffff";
     static final String DFA19_minS =
         "\1\0\2\75\1\174\1\46\3\75\1\76\2\56\2\52\1\uffff\1\141\1\164\1\141"+
-        "\1\146\1\145\1\163\6\uffff\1\154\2\uffff\1\72\1\145\1\141\1\150"+
+        "\1\145\1\146\1\163\6\uffff\1\154\2\uffff\1\72\1\145\1\141\1\150"+
         "\1\145\1\150\1\145\2\60\1\44\1\uffff\2\0\17\uffff\1\76\20\uffff"+
-        "\1\154\1\uffff\1\160\1\151\1\141\1\154\1\157\1\162\1\156\1\160\1"+
-        "\163\1\44\1\154\1\44\6\uffff\1\163\1\164\4\uffff\1\146\1\44\1\163"+
+        "\1\154\1\uffff\1\160\1\151\1\141\1\154\1\157\1\162\1\156\1\154\1"+
+        "\163\1\44\1\160\1\44\6\uffff\1\163\1\164\4\uffff\1\146\1\44\1\163"+
         "\1\151\1\167\1\154\1\160\1\162\1\165\1\164\1\uffff\1\60\6\uffff"+
-        "\2\44\1\145\2\164\1\163\1\155\1\44\1\141\1\157\1\164\1\uffff\1\154"+
+        "\2\44\1\145\2\164\1\163\1\155\1\44\1\141\1\154\1\164\1\uffff\1\157"+
         "\1\uffff\2\145\1\141\1\uffff\1\145\1\143\1\154\1\44\1\154\1\145"+
         "\1\157\1\44\1\145\1\165\2\uffff\1\162\1\143\1\151\1\145\1\44\1\uffff"+
-        "\1\154\1\162\1\141\1\157\1\44\1\156\1\165\1\44\1\150\1\145\1\uffff"+
+        "\1\154\1\157\1\141\1\162\1\44\1\156\1\165\1\44\1\150\1\145\1\uffff"+
         "\1\44\1\157\1\167\1\uffff\1\44\1\162\1\44\1\150\1\143\1\44\1\uffff"+
-        "\1\154\1\164\1\156\1\44\1\uffff\1\144\1\154\1\uffff\2\44\1\uffff"+
-        "\1\146\1\44\1\uffff\1\156\1\uffff\2\44\1\uffff\1\171\1\44\1\143"+
-        "\1\uffff\1\163\1\151\1\164\2\uffff\1\44\1\uffff\1\44\2\uffff\1\44"+
-        "\1\uffff\1\145\1\44\1\157\1\44\3\uffff\1\157\1\uffff\1\156\1\uffff"+
+        "\1\154\1\44\1\156\1\164\1\uffff\1\144\1\154\1\uffff\2\44\1\uffff"+
+        "\1\146\1\44\1\uffff\1\156\1\uffff\2\44\1\uffff\1\171\1\uffff\1\143"+
+        "\1\44\1\163\1\151\1\164\2\uffff\1\44\1\uffff\1\44\2\uffff\1\44\1"+
+        "\145\1\uffff\1\44\1\157\1\44\3\uffff\1\157\1\uffff\1\156\1\uffff"+
         "\1\146\2\44\2\uffff";
     static final String DFA19_maxS =
         "\1\uffff\1\76\1\75\1\174\1\46\2\75\2\76\1\56\1\72\1\56\1\57\1\uffff"+
-        "\1\141\1\167\1\162\1\156\1\145\1\163\6\uffff\1\170\2\uffff\1\72"+
+        "\1\141\1\167\1\162\1\145\1\156\1\163\6\uffff\1\170\2\uffff\1\72"+
         "\1\157\1\141\1\150\1\165\1\171\1\145\1\170\1\154\1\172\1\uffff\2"+
         "\uffff\17\uffff\1\76\20\uffff\1\162\1\uffff\1\160\1\151\1\141\1"+
-        "\154\1\157\1\162\1\156\1\160\1\163\1\172\1\154\1\172\6\uffff\1\163"+
+        "\154\1\157\1\162\1\156\1\154\1\163\1\172\1\160\1\172\6\uffff\1\163"+
         "\1\164\4\uffff\1\146\1\172\1\164\1\151\1\167\1\154\1\160\1\162\1"+
         "\171\1\164\1\uffff\1\154\6\uffff\2\172\1\145\2\164\1\163\1\155\1"+
-        "\172\1\141\1\157\1\164\1\uffff\1\154\1\uffff\2\145\1\141\1\uffff"+
+        "\172\1\141\1\154\1\164\1\uffff\1\157\1\uffff\2\145\1\141\1\uffff"+
         "\1\145\1\143\1\154\1\172\1\154\1\145\1\157\1\172\1\145\1\165\2\uffff"+
-        "\1\162\1\143\1\151\1\145\1\172\1\uffff\1\154\1\162\1\141\1\157\1"+
+        "\1\162\1\143\1\151\1\145\1\172\1\uffff\1\154\1\157\1\141\1\162\1"+
         "\172\1\156\1\165\1\172\1\150\1\145\1\uffff\1\172\1\157\1\167\1\uffff"+
-        "\1\172\1\162\1\172\1\150\1\143\1\172\1\uffff\1\154\1\164\1\156\1"+
-        "\172\1\uffff\1\163\1\154\1\uffff\2\172\1\uffff\1\146\1\172\1\uffff"+
-        "\1\156\1\uffff\2\172\1\uffff\1\171\1\172\1\143\1\uffff\1\163\1\151"+
-        "\1\164\2\uffff\1\172\1\uffff\1\172\2\uffff\1\172\1\uffff\1\145\1"+
+        "\1\172\1\162\1\172\1\150\1\143\1\172\1\uffff\1\154\1\172\1\156\1"+
+        "\164\1\uffff\1\163\1\154\1\uffff\2\172\1\uffff\1\146\1\172\1\uffff"+
+        "\1\156\1\uffff\2\172\1\uffff\1\171\1\uffff\1\143\1\172\1\163\1\151"+
+        "\1\164\2\uffff\1\172\1\uffff\1\172\2\uffff\1\172\1\145\1\uffff\1"+
         "\172\1\157\1\172\3\uffff\1\157\1\uffff\1\156\1\uffff\1\146\2\172"+
         "\2\uffff";
     static final String DFA19_acceptS =
-        "\15\uffff\1\26\6\uffff\1\41\1\42\1\43\1\44\1\45\1\46\1\uffff\1\52"+
-        "\1\53\12\uffff\1\110\2\uffff\1\114\1\115\1\5\1\15\1\1\1\2\1\21\1"+
-        "\3\1\100\1\4\1\75\1\6\1\27\1\7\1\11\1\uffff\1\16\1\12\1\13\1\22"+
-        "\1\14\1\30\1\17\1\76\1\73\1\24\1\77\1\23\1\112\1\113\1\25\1\26\1"+
-        "\uffff\1\110\14\uffff\1\41\1\42\1\43\1\44\1\45\1\46\2\uffff\1\52"+
-        "\1\53\1\62\1\54\12\uffff\1\105\1\uffff\1\106\1\107\1\111\1\114\1"+
-        "\20\1\10\13\uffff\1\47\1\uffff\1\40\3\uffff\1\61\12\uffff\1\31\1"+
-        "\101\5\uffff\1\57\12\uffff\1\63\3\uffff\1\70\6\uffff\1\36\4\uffff"+
-        "\1\50\2\uffff\1\56\2\uffff\1\64\2\uffff\1\102\1\uffff\1\32\2\uffff"+
-        "\1\33\3\uffff\1\35\3\uffff\1\72\1\60\1\uffff\1\66\1\uffff\1\51\1"+
-        "\103\1\uffff\1\34\4\uffff\1\65\1\67\1\71\1\uffff\1\74\1\uffff\1"+
-        "\55\3\uffff\1\104\1\37";
+        "\15\uffff\1\26\6\uffff\1\40\1\41\1\42\1\43\1\44\1\45\1\uffff\1\51"+
+        "\1\52\12\uffff\1\110\2\uffff\1\114\1\115\1\5\1\15\1\1\1\2\1\21\1"+
+        "\3\1\100\1\4\1\74\1\6\1\27\1\7\1\11\1\uffff\1\16\1\12\1\13\1\22"+
+        "\1\14\1\30\1\17\1\76\1\72\1\24\1\77\1\23\1\112\1\113\1\25\1\26\1"+
+        "\uffff\1\110\14\uffff\1\40\1\41\1\42\1\43\1\44\1\45\2\uffff\1\51"+
+        "\1\52\1\61\1\53\12\uffff\1\105\1\uffff\1\106\1\107\1\111\1\114\1"+
+        "\20\1\10\13\uffff\1\46\1\uffff\1\37\3\uffff\1\60\12\uffff\1\31\1"+
+        "\101\5\uffff\1\56\12\uffff\1\62\3\uffff\1\67\6\uffff\1\35\4\uffff"+
+        "\1\47\2\uffff\1\55\2\uffff\1\63\2\uffff\1\102\1\uffff\1\32\2\uffff"+
+        "\1\33\1\uffff\1\34\5\uffff\1\71\1\57\1\uffff\1\65\1\uffff\1\50\1"+
+        "\103\2\uffff\1\75\3\uffff\1\64\1\66\1\70\1\uffff\1\73\1\uffff\1"+
+        "\54\3\uffff\1\104\1\36";
     static final String DFA19_specialS =
         "\1\1\47\uffff\1\0\1\2\u00b9\uffff}>";
     static final String[] DFA19_transitionS = {
             "\11\53\2\52\2\53\1\52\22\53\1\52\1\5\1\50\1\53\1\47\1\15\1\4"+
             "\1\51\1\31\1\25\1\13\1\2\1\24\1\10\1\11\1\14\1\44\11\45\1\35"+
-            "\1\30\1\7\1\1\1\6\1\12\1\53\7\47\1\22\22\47\1\27\1\53\1\26\1"+
-            "\46\1\47\1\53\1\23\1\47\1\37\1\36\1\32\1\20\2\47\1\21\4\47\1"+
+            "\1\30\1\7\1\1\1\6\1\12\1\53\7\47\1\21\22\47\1\27\1\53\1\26\1"+
+            "\46\1\47\1\53\1\23\1\47\1\37\1\36\1\32\1\20\2\47\1\22\4\47\1"+
             "\41\3\47\1\43\1\17\1\42\1\47\1\16\1\40\3\47\1\33\1\3\1\34\uff82"+
             "\53",
             "\1\54\1\55",
@@ -2974,8 +2974,8 @@ public class InternalHelloXbaseLexer extends Lexer {
             "\1\112",
             "\1\116\1\114\1\uffff\1\115",
             "\1\117\7\uffff\1\122\5\uffff\1\121\2\uffff\1\120",
-            "\1\125\6\uffff\1\123\1\124",
-            "\1\126",
+            "\1\123",
+            "\1\125\6\uffff\1\126\1\124",
             "\1\127",
             "",
             "",
@@ -3153,10 +3153,10 @@ public class InternalHelloXbaseLexer extends Lexer {
             "\32\113",
             "",
             "\1\u00c3",
-            "\1\u00c4",
-            "\1\u00c5",
             "\1\113\13\uffff\12\113\7\uffff\32\113\4\uffff\1\113\1\uffff"+
             "\32\113",
+            "\1\u00c5",
+            "\1\u00c6",
             "",
             "\1\u00c7\16\uffff\1\u00c8",
             "\1\u00c9",
@@ -3178,10 +3178,10 @@ public class InternalHelloXbaseLexer extends Lexer {
             "\32\113",
             "",
             "\1\u00d1",
+            "",
+            "\1\u00d2",
             "\1\113\13\uffff\12\113\7\uffff\32\113\4\uffff\1\113\1\uffff"+
             "\32\113",
-            "\1\u00d3",
-            "",
             "\1\u00d4",
             "\1\u00d5",
             "\1\u00d6",
@@ -3196,8 +3196,8 @@ public class InternalHelloXbaseLexer extends Lexer {
             "",
             "\1\113\13\uffff\12\113\7\uffff\32\113\4\uffff\1\113\1\uffff"+
             "\32\113",
-            "",
             "\1\u00da",
+            "",
             "\1\113\13\uffff\12\113\7\uffff\32\113\4\uffff\1\113\1\uffff"+
             "\32\113",
             "\1\u00dc",
@@ -3301,9 +3301,9 @@ public class InternalHelloXbaseLexer extends Lexer {
 
                         else if ( (LA19_0=='f') ) {s = 16;}
 
-                        else if ( (LA19_0=='i') ) {s = 17;}
+                        else if ( (LA19_0=='H') ) {s = 17;}
 
-                        else if ( (LA19_0=='H') ) {s = 18;}
+                        else if ( (LA19_0=='i') ) {s = 18;}
 
                         else if ( (LA19_0=='a') ) {s = 19;}
 

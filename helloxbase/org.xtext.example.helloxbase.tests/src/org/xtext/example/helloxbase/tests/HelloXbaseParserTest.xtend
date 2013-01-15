@@ -31,5 +31,16 @@ class HelloXbaseParserTest {
             "Hello foo from new String()!")
         model.greetings.head as Greeting
     }
+
+    @Test
+    def void testImports() {
+        parser.parse(
+        	'''
+        	import java.util.Date
+        	
+        	Hello foo from new Date()!
+        	'''
+        ).assertNoErrors
+    }
     
 }

@@ -4,15 +4,12 @@
     editorDirectory="/org.xtext.example.helloxbase.editor/src" modelPluginID="org.xtext.example.helloxbase"
     forceOverwrite="true" modelName="HelloXbase" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     complianceLevel="5.0" copyrightFields="false" editPluginID="org.xtext.example.helloxbase.edit"
-    editorPluginID="org.xtext.example.helloxbase.editor" runtimeVersion="2.9" usedGenPackages="../../../../../../org.eclipse.xtext.xbase/model/Xbase.genmodel#//xbase">
+    editorPluginID="org.xtext.example.helloxbase.editor" runtimeVersion="2.9" usedGenPackages="../../../../../../org.eclipse.xtext.xbase/model/Xbase.genmodel#//xbase ../../../../../../org.eclipse.xtext.xbase/model/Xbase.genmodel#//xtype">
   <genPackages prefix="HelloXbase" basePackage="org.xtext.example.helloxbase" disposableProviderFactory="true"
       ecorePackage="HelloXbase.ecore#/">
     <genClasses ecoreClass="HelloXbase.ecore#//Model">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloXbase.ecore#//Model/imports"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloXbase.ecore#//Model/importSection"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloXbase.ecore#//Model/greetings"/>
-    </genClasses>
-    <genClasses ecoreClass="HelloXbase.ecore#//Import">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloXbase.ecore#//Import/importedNamespace"/>
     </genClasses>
     <genClasses ecoreClass="HelloXbase.ecore#//Greeting">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloXbase.ecore#//Greeting/name"/>

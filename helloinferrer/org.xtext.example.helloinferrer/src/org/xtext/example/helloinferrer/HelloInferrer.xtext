@@ -4,12 +4,8 @@ grammar org.xtext.example.helloinferrer.HelloInferrer with
 generate helloInferrer "http://www.xtext.org/example/helloinferrer/HelloInferrer"
 
 Model:
-	imports += Import*
+	importSection=XImportSection?
 	greetings+=Greeting*;
-
-Import:
-  'import' importedNamespace = QualifiedNameWithWildcard
-;
 
 Greeting:
     'Hello' name=QualifiedName '{'

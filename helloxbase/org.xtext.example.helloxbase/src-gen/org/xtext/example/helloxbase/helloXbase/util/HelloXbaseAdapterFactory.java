@@ -80,11 +80,6 @@ public class HelloXbaseAdapterFactory extends AdapterFactoryImpl
         return createModelAdapter();
       }
       @Override
-      public Adapter caseImport(Import object)
-      {
-        return createImportAdapter();
-      }
-      @Override
       public Adapter caseGreeting(Greeting object)
       {
         return createGreetingAdapter();
@@ -122,21 +117,6 @@ public class HelloXbaseAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createModelAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link org.xtext.example.helloxbase.helloXbase.Import <em>Import</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see org.xtext.example.helloxbase.helloXbase.Import
-   * @generated
-   */
-  public Adapter createImportAdapter()
   {
     return null;
   }

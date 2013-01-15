@@ -38,6 +38,22 @@ class HelloInferrerParserTest {
 		}
 		'''.checkModel
 	}
+
+	@Test
+	def void testImports() {
+		'''
+		import java.util.Date
+		import java.io.BufferedInputStream
+		
+		Hello my.test.hello {
+			op myOp(String s, int i) output Boolean b {
+				val date = new Date
+				val is = new BufferedInputStream(null, 0)
+				val foo = s + i
+			}
+		}
+		'''.checkModel
+	}
 	
 	@Test
 	def void testAccessToOutput() {

@@ -4,12 +4,8 @@ grammar org.xtext.example.helloxbase.HelloXbase with
 generate helloXbase "http://www.xtext.org/example/helloxbase/HelloXbase"
 
 Model:
-	imports += Import*
+	importSection=XImportSection?
 	greetings+=Greeting*;
-
-Import:
-  'import' importedNamespace = QualifiedNameWithWildcard
-;
 
 Greeting:
     'Hello' name=ID 'from' expression = XExpression '!'

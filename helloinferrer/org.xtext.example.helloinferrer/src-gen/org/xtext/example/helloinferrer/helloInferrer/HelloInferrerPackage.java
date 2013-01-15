@@ -67,13 +67,13 @@ public interface HelloInferrerPackage extends EPackage
   int MODEL = 0;
 
   /**
-   * The feature id for the '<em><b>Imports</b></em>' containment reference list.
+   * The feature id for the '<em><b>Import Section</b></em>' containment reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int MODEL__IMPORTS = 0;
+  int MODEL__IMPORT_SECTION = 0;
 
   /**
    * The feature id for the '<em><b>Greetings</b></em>' containment reference list.
@@ -94,34 +94,6 @@ public interface HelloInferrerPackage extends EPackage
   int MODEL_FEATURE_COUNT = 2;
 
   /**
-   * The meta object id for the '{@link org.xtext.example.helloinferrer.helloInferrer.impl.ImportImpl <em>Import</em>}' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see org.xtext.example.helloinferrer.helloInferrer.impl.ImportImpl
-   * @see org.xtext.example.helloinferrer.helloInferrer.impl.HelloInferrerPackageImpl#getImport()
-   * @generated
-   */
-  int IMPORT = 1;
-
-  /**
-   * The feature id for the '<em><b>Imported Namespace</b></em>' attribute.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int IMPORT__IMPORTED_NAMESPACE = 0;
-
-  /**
-   * The number of structural features of the '<em>Import</em>' class.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   * @ordered
-   */
-  int IMPORT_FEATURE_COUNT = 1;
-
-  /**
    * The meta object id for the '{@link org.xtext.example.helloinferrer.helloInferrer.impl.GreetingImpl <em>Greeting</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -129,7 +101,7 @@ public interface HelloInferrerPackage extends EPackage
    * @see org.xtext.example.helloinferrer.helloInferrer.impl.HelloInferrerPackageImpl#getGreeting()
    * @generated
    */
-  int GREETING = 2;
+  int GREETING = 1;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -166,7 +138,7 @@ public interface HelloInferrerPackage extends EPackage
    * @see org.xtext.example.helloinferrer.helloInferrer.impl.HelloInferrerPackageImpl#getOperation()
    * @generated
    */
-  int OPERATION = 3;
+  int OPERATION = 2;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -225,15 +197,15 @@ public interface HelloInferrerPackage extends EPackage
   EClass getModel();
 
   /**
-   * Returns the meta object for the containment reference list '{@link org.xtext.example.helloinferrer.helloInferrer.Model#getImports <em>Imports</em>}'.
+   * Returns the meta object for the containment reference '{@link org.xtext.example.helloinferrer.helloInferrer.Model#getImportSection <em>Import Section</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Imports</em>'.
-   * @see org.xtext.example.helloinferrer.helloInferrer.Model#getImports()
+   * @return the meta object for the containment reference '<em>Import Section</em>'.
+   * @see org.xtext.example.helloinferrer.helloInferrer.Model#getImportSection()
    * @see #getModel()
    * @generated
    */
-  EReference getModel_Imports();
+  EReference getModel_ImportSection();
 
   /**
    * Returns the meta object for the containment reference list '{@link org.xtext.example.helloinferrer.helloInferrer.Model#getGreetings <em>Greetings</em>}'.
@@ -245,27 +217,6 @@ public interface HelloInferrerPackage extends EPackage
    * @generated
    */
   EReference getModel_Greetings();
-
-  /**
-   * Returns the meta object for class '{@link org.xtext.example.helloinferrer.helloInferrer.Import <em>Import</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for class '<em>Import</em>'.
-   * @see org.xtext.example.helloinferrer.helloInferrer.Import
-   * @generated
-   */
-  EClass getImport();
-
-  /**
-   * Returns the meta object for the attribute '{@link org.xtext.example.helloinferrer.helloInferrer.Import#getImportedNamespace <em>Imported Namespace</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Imported Namespace</em>'.
-   * @see org.xtext.example.helloinferrer.helloInferrer.Import#getImportedNamespace()
-   * @see #getImport()
-   * @generated
-   */
-  EAttribute getImport_ImportedNamespace();
 
   /**
    * Returns the meta object for class '{@link org.xtext.example.helloinferrer.helloInferrer.Greeting <em>Greeting</em>}'.
@@ -387,12 +338,12 @@ public interface HelloInferrerPackage extends EPackage
     EClass MODEL = eINSTANCE.getModel();
 
     /**
-     * The meta object literal for the '<em><b>Imports</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Import Section</b></em>' containment reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference MODEL__IMPORTS = eINSTANCE.getModel_Imports();
+    EReference MODEL__IMPORT_SECTION = eINSTANCE.getModel_ImportSection();
 
     /**
      * The meta object literal for the '<em><b>Greetings</b></em>' containment reference list feature.
@@ -401,24 +352,6 @@ public interface HelloInferrerPackage extends EPackage
      * @generated
      */
     EReference MODEL__GREETINGS = eINSTANCE.getModel_Greetings();
-
-    /**
-     * The meta object literal for the '{@link org.xtext.example.helloinferrer.helloInferrer.impl.ImportImpl <em>Import</em>}' class.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @see org.xtext.example.helloinferrer.helloInferrer.impl.ImportImpl
-     * @see org.xtext.example.helloinferrer.helloInferrer.impl.HelloInferrerPackageImpl#getImport()
-     * @generated
-     */
-    EClass IMPORT = eINSTANCE.getImport();
-
-    /**
-     * The meta object literal for the '<em><b>Imported Namespace</b></em>' attribute feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EAttribute IMPORT__IMPORTED_NAMESPACE = eINSTANCE.getImport_ImportedNamespace();
 
     /**
      * The meta object literal for the '{@link org.xtext.example.helloinferrer.helloInferrer.impl.GreetingImpl <em>Greeting</em>}' class.

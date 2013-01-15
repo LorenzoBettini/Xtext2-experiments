@@ -43,18 +43,21 @@ class HelloInferrerCompilerTest {
 Hello my.test.MyHello {
 	op myOp(String s, int i) output Boolean b {
 		val foo = s + i
+		println(foo)
 	}
 }
 '''.assertCorrectJavaCodeGeneration(
 '''
 package my.test;
 
+import org.eclipse.xtext.xbase.lib.InputOutput;
 import org.xtext.example.helloinferrer.runtime.HelloResult;
 
 public class MyHello {
   public HelloResult<Boolean> myOp(final String s, final int i) {
     Boolean b = null; // output parameter
     final String foo = (s + Integer.valueOf(i));
+    InputOutput.<String>println(foo);
     return new HelloResult<Boolean>(b);
   }
 }
@@ -217,6 +220,40 @@ public class MyHello {
     Integer res = null; // output parameter
     res = Integer.valueOf(10);
     return new HelloResult<Integer>(res);
+  }
+}
+''')
+	}
+
+	@Test
+	def void testImports() {
+'''
+import java.util.Date
+import java.io.BufferedInputStream
+
+Hello my.test.hello {
+	op myOp(String s, int i) output Boolean b {
+		println(new Date)
+		println(new BufferedInputStream(null, 0))
+	}
+}
+'''.assertCorrectJavaCodeGeneration(
+'''
+package my.test;
+
+import java.io.BufferedInputStream;
+import java.util.Date;
+import org.eclipse.xtext.xbase.lib.InputOutput;
+import org.xtext.example.helloinferrer.runtime.HelloResult;
+
+public class hello {
+  public HelloResult<Boolean> myOp(final String s, final int i) {
+    Boolean b = null; // output parameter
+    Date _date = new Date();
+    InputOutput.<Date>println(_date);
+    BufferedInputStream _bufferedInputStream = new BufferedInputStream(null, 0);
+    InputOutput.<BufferedInputStream>println(_bufferedInputStream);
+    return new HelloResult<Boolean>(b);
   }
 }
 ''')

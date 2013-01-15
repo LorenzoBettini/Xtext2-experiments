@@ -22,53 +22,29 @@ public class HelloXbaseGrammarAccess extends AbstractGrammarElementFinder {
 	public class ModelElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Model");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Assignment cImportsAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final RuleCall cImportsImportParserRuleCall_0_0 = (RuleCall)cImportsAssignment_0.eContents().get(0);
+		private final Assignment cImportSectionAssignment_0 = (Assignment)cGroup.eContents().get(0);
+		private final RuleCall cImportSectionXImportSectionParserRuleCall_0_0 = (RuleCall)cImportSectionAssignment_0.eContents().get(0);
 		private final Assignment cGreetingsAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cGreetingsGreetingParserRuleCall_1_0 = (RuleCall)cGreetingsAssignment_1.eContents().get(0);
 		
 		//Model:
-		//	imports+=Import* greetings+=Greeting*;
+		//	importSection=XImportSection? greetings+=Greeting*;
 		public ParserRule getRule() { return rule; }
 
-		//imports+=Import* greetings+=Greeting*
+		//importSection=XImportSection? greetings+=Greeting*
 		public Group getGroup() { return cGroup; }
 
-		//imports+=Import*
-		public Assignment getImportsAssignment_0() { return cImportsAssignment_0; }
+		//importSection=XImportSection?
+		public Assignment getImportSectionAssignment_0() { return cImportSectionAssignment_0; }
 
-		//Import
-		public RuleCall getImportsImportParserRuleCall_0_0() { return cImportsImportParserRuleCall_0_0; }
+		//XImportSection
+		public RuleCall getImportSectionXImportSectionParserRuleCall_0_0() { return cImportSectionXImportSectionParserRuleCall_0_0; }
 
 		//greetings+=Greeting*
 		public Assignment getGreetingsAssignment_1() { return cGreetingsAssignment_1; }
 
 		//Greeting
 		public RuleCall getGreetingsGreetingParserRuleCall_1_0() { return cGreetingsGreetingParserRuleCall_1_0; }
-	}
-
-	public class ImportElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Import");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cImportKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Assignment cImportedNamespaceAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cImportedNamespaceQualifiedNameWithWildcardParserRuleCall_1_0 = (RuleCall)cImportedNamespaceAssignment_1.eContents().get(0);
-		
-		//Import:
-		//	"import" importedNamespace=QualifiedNameWithWildcard;
-		public ParserRule getRule() { return rule; }
-
-		//"import" importedNamespace=QualifiedNameWithWildcard
-		public Group getGroup() { return cGroup; }
-
-		//"import"
-		public Keyword getImportKeyword_0() { return cImportKeyword_0; }
-
-		//importedNamespace=QualifiedNameWithWildcard
-		public Assignment getImportedNamespaceAssignment_1() { return cImportedNamespaceAssignment_1; }
-
-		//QualifiedNameWithWildcard
-		public RuleCall getImportedNamespaceQualifiedNameWithWildcardParserRuleCall_1_0() { return cImportedNamespaceQualifiedNameWithWildcardParserRuleCall_1_0; }
 	}
 
 	public class GreetingElements extends AbstractParserRuleElementFinder {
@@ -113,7 +89,6 @@ public class HelloXbaseGrammarAccess extends AbstractGrammarElementFinder {
 	
 	
 	private ModelElements pModel;
-	private ImportElements pImport;
 	private GreetingElements pGreeting;
 	
 	private final Grammar grammar;
@@ -155,23 +130,13 @@ public class HelloXbaseGrammarAccess extends AbstractGrammarElementFinder {
 
 	
 	//Model:
-	//	imports+=Import* greetings+=Greeting*;
+	//	importSection=XImportSection? greetings+=Greeting*;
 	public ModelElements getModelAccess() {
 		return (pModel != null) ? pModel : (pModel = new ModelElements());
 	}
 	
 	public ParserRule getModelRule() {
 		return getModelAccess().getRule();
-	}
-
-	//Import:
-	//	"import" importedNamespace=QualifiedNameWithWildcard;
-	public ImportElements getImportAccess() {
-		return (pImport != null) ? pImport : (pImport = new ImportElements());
-	}
-	
-	public ParserRule getImportRule() {
-		return getImportAccess().getRule();
 	}
 
 	//Greeting:
