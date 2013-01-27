@@ -41,12 +41,14 @@ public class HelloInferrerCompilerTest {
       _builder_1.append("package my.test;");
       _builder_1.newLine();
       _builder_1.newLine();
+      _builder_1.append("@SuppressWarnings(\"all\")");
+      _builder_1.newLine();
       _builder_1.append("public class MyHello {");
       _builder_1.newLine();
       _builder_1.append("}");
       _builder_1.newLine();
       this._compilationTestHelper.assertCompilesTo(_builder, _builder_1);
-    } catch (Exception _e) {
+    } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }
   }
@@ -78,6 +80,8 @@ public class HelloInferrerCompilerTest {
     _builder_1.newLine();
     _builder_1.append("import org.xtext.example.helloinferrer.runtime.HelloResult;");
     _builder_1.newLine();
+    _builder_1.newLine();
+    _builder_1.append("@SuppressWarnings(\"all\")");
     _builder_1.newLine();
     _builder_1.append("public class MyHello {");
     _builder_1.newLine();
@@ -127,6 +131,8 @@ public class HelloInferrerCompilerTest {
     _builder_1.append("import org.xtext.example.helloinferrer.runtime.HelloResult;");
     _builder_1.newLine();
     _builder_1.newLine();
+    _builder_1.append("@SuppressWarnings(\"all\")");
+    _builder_1.newLine();
     _builder_1.append("public class MyHello {");
     _builder_1.newLine();
     _builder_1.append("  ");
@@ -170,6 +176,8 @@ public class HelloInferrerCompilerTest {
     _builder_1.newLine();
     _builder_1.append("import org.xtext.example.helloinferrer.runtime.HelloResult;");
     _builder_1.newLine();
+    _builder_1.newLine();
+    _builder_1.append("@SuppressWarnings(\"all\")");
     _builder_1.newLine();
     _builder_1.append("public class MyHello {");
     _builder_1.newLine();
@@ -225,6 +233,8 @@ public class HelloInferrerCompilerTest {
     _builder_1.newLine();
     _builder_1.append("import org.xtext.example.helloinferrer.runtime.HelloResult;");
     _builder_1.newLine();
+    _builder_1.newLine();
+    _builder_1.append("@SuppressWarnings(\"all\")");
     _builder_1.newLine();
     _builder_1.append("public class MyHello {");
     _builder_1.newLine();
@@ -293,6 +303,8 @@ public class HelloInferrerCompilerTest {
     _builder_1.newLine();
     _builder_1.append("import org.xtext.example.helloinferrer.runtime.HelloResult;");
     _builder_1.newLine();
+    _builder_1.newLine();
+    _builder_1.append("@SuppressWarnings(\"all\")");
     _builder_1.newLine();
     _builder_1.append("public class MyHello {");
     _builder_1.newLine();
@@ -373,6 +385,8 @@ public class HelloInferrerCompilerTest {
     StringConcatenation _builder_1 = new StringConcatenation();
     _builder_1.append("import org.xtext.example.helloinferrer.runtime.HelloResult;");
     _builder_1.newLine();
+    _builder_1.newLine();
+    _builder_1.append("@SuppressWarnings(\"all\")");
     _builder_1.newLine();
     _builder_1.append("public class MyHello {");
     _builder_1.newLine();
@@ -482,6 +496,8 @@ public class HelloInferrerCompilerTest {
     _builder_1.append("import org.xtext.example.helloinferrer.runtime.HelloResult;");
     _builder_1.newLine();
     _builder_1.newLine();
+    _builder_1.append("@SuppressWarnings(\"all\")");
+    _builder_1.newLine();
     _builder_1.append("public class hello {");
     _builder_1.newLine();
     _builder_1.append("  ");
@@ -528,7 +544,7 @@ public class HelloInferrerCompilerTest {
             _function.apply(t);
           }
       });
-    } catch (Exception _e) {
+    } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }
   }

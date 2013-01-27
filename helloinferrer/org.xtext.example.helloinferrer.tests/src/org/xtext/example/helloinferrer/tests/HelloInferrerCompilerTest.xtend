@@ -31,6 +31,7 @@ class HelloInferrerCompilerTest {
 		'''
 		package my.test;
 
+		@SuppressWarnings("all")
 		public class MyHello {
 		}
 		'''
@@ -53,6 +54,7 @@ package my.test;
 import org.eclipse.xtext.xbase.lib.InputOutput;
 import org.xtext.example.helloinferrer.runtime.HelloResult;
 
+@SuppressWarnings("all")
 public class MyHello {
   public HelloResult<Boolean> myOp(final String s, final int i) {
     Boolean b = null; // output parameter
@@ -78,6 +80,7 @@ package my.test;
 
 import org.xtext.example.helloinferrer.runtime.HelloResult;
 
+@SuppressWarnings("all")
 public class MyHello {
   public HelloResult<Boolean> myOp(final String s, final int i) {
     Boolean b = null; // output parameter
@@ -102,6 +105,7 @@ package my.test;
 
 import org.xtext.example.helloinferrer.runtime.HelloResult;
 
+@SuppressWarnings("all")
 public class MyHello {
   public HelloResult<Boolean> myOpWithClassOutputParameter(final String s, final int i) {
     Boolean b = null; // output parameter
@@ -130,6 +134,7 @@ package my.test;
 
 import org.xtext.example.helloinferrer.runtime.HelloResult;
 
+@SuppressWarnings("all")
 public class MyHello {
   public HelloResult<Boolean> myOp(final String s, final int i) {
     Boolean b = null; // output parameter
@@ -162,6 +167,7 @@ package my.test;
 
 import org.xtext.example.helloinferrer.runtime.HelloResult;
 
+@SuppressWarnings("all")
 public class MyHello {
   public HelloResult<Integer> myOp(final String s, final int j) {
     Integer i = null; // output parameter
@@ -198,6 +204,7 @@ Hello MyHello {
 '''
 import org.xtext.example.helloinferrer.runtime.HelloResult;
 
+@SuppressWarnings("all")
 public class MyHello {
   public HelloResult<Integer> foo(final int j) {
     Integer i = null; // output parameter
@@ -246,6 +253,7 @@ import java.util.Date;
 import org.eclipse.xtext.xbase.lib.InputOutput;
 import org.xtext.example.helloinferrer.runtime.HelloResult;
 
+@SuppressWarnings("all")
 public class hello {
   public HelloResult<Boolean> myOp(final String s, final int i) {
     Boolean b = null; // output parameter

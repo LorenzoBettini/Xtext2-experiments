@@ -21,7 +21,6 @@ public class HelloXvarsJvmModelInferrer extends AbstractModelInferrer {
    * @param element
    *            the model to create one or more
    *            {@link org.eclipse.xtext.common.types.JvmDeclaredType declared
-  	 *            types
    *            types} from.
    * @param acceptor
    *            each created

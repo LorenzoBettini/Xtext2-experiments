@@ -32,7 +32,7 @@ public class HelloXbaseParserTest {
       _builder.append("Hello foo from new String()!");
       Model _parse = this.parser.parse(_builder);
       this._validationTestHelper.assertNoErrors(_parse);
-    } catch (Exception _e) {
+    } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }
   }
@@ -44,7 +44,7 @@ public class HelloXbaseParserTest {
         "Hello foo from new String()!");
       EList<Greeting> _greetings = model.getGreetings();
       IterableExtensions.<Greeting>head(_greetings);
-    } catch (Exception _e) {
+    } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }
   }
@@ -60,7 +60,7 @@ public class HelloXbaseParserTest {
       _builder.newLine();
       Model _parse = this.parser.parse(_builder);
       this._validationTestHelper.assertNoErrors(_parse);
-    } catch (Exception _e) {
+    } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }
   }

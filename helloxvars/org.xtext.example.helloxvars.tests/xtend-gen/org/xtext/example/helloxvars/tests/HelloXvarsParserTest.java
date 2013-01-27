@@ -30,7 +30,7 @@ public class HelloXvarsParserTest {
     try {
       Model _parse = this.parser.parse("Hello foo from new String()!");
       this._validationTestHelper.assertNoErrors(_parse);
-    } catch (Exception _e) {
+    } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }
   }
@@ -49,7 +49,7 @@ public class HelloXvarsParserTest {
       _builder.newLine();
       Model _parse = this.parser.parse(_builder);
       this._validationTestHelper.assertNoErrors(_parse);
-    } catch (Exception _e) {
+    } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }
   }
@@ -68,7 +68,7 @@ public class HelloXvarsParserTest {
       _builder.newLine();
       Model _parse = this.parser.parse(_builder);
       this._validationTestHelper.assertNoErrors(_parse);
-    } catch (Exception _e) {
+    } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }
   }
@@ -81,7 +81,7 @@ public class HelloXvarsParserTest {
       this._validationTestHelper.assertError(_parse, _xFeatureCall, 
         Diagnostic.LINKING_DIAGNOSTIC, 
         "Couldn\'t resolve reference to JvmIdentifiableElement \'s\'.");
-    } catch (Exception _e) {
+    } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }
   }
@@ -101,7 +101,7 @@ public class HelloXvarsParserTest {
       this._validationTestHelper.assertError(_parse, _xFeatureCall, 
         Diagnostic.LINKING_DIAGNOSTIC, 
         "Couldn\'t resolve reference to JvmIdentifiableElement \'s2\'.");
-    } catch (Exception _e) {
+    } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }
   }

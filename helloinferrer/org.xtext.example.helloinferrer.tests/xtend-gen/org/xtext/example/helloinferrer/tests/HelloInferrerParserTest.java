@@ -141,7 +141,7 @@ public class HelloInferrerParserTest {
       EClass _xAssignment = XbasePackage.eINSTANCE.getXAssignment();
       this._validationTestHelper.assertError(_parse, _xAssignment, 
         IssueCodes.ASSIGNMENT_TO_FINAL);
-    } catch (Exception _e) {
+    } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }
   }
@@ -167,7 +167,7 @@ public class HelloInferrerParserTest {
       EClass _xFeatureCall = XbasePackage.eINSTANCE.getXFeatureCall();
       this._validationTestHelper.assertError(_parse, _xFeatureCall, 
         IssueCodes.INCOMPATIBLE_TYPES);
-    } catch (Exception _e) {
+    } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }
   }
@@ -194,7 +194,7 @@ public class HelloInferrerParserTest {
       this._validationTestHelper.assertError(_parse, _xReturnExpression, 
         IssueCodes.INVALID_RETURN, 
         "Explicit return not available in this language.");
-    } catch (Exception _e) {
+    } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }
   }
@@ -221,7 +221,7 @@ public class HelloInferrerParserTest {
       this._validationTestHelper.assertError(_parse, _jvmTypeReference, 
         IssueCodes.INVALID_USE_OF_TYPE, 
         "Primitive types cannot be used as output parameters.");
-    } catch (Exception _e) {
+    } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }
   }
@@ -236,7 +236,7 @@ public class HelloInferrerParserTest {
         _xblockexpression = (model);
       }
       return _xblockexpression;
-    } catch (Exception _e) {
+    } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }
   }
