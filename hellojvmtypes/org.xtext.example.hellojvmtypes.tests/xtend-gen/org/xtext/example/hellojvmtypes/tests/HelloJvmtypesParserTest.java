@@ -10,6 +10,7 @@ import org.eclipse.xtext.junit4.XtextRunner;
 import org.eclipse.xtext.junit4.util.ParseHelper;
 import org.eclipse.xtext.junit4.validation.ValidationTestHelper;
 import org.eclipse.xtext.xbase.lib.Exceptions;
+import org.eclipse.xtext.xbase.lib.Extension;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
 import org.junit.Assert;
 import org.junit.Test;
@@ -18,14 +19,15 @@ import org.xtext.example.hellojvmtypes.HelloJvmTypesInjectorProvider;
 import org.xtext.example.hellojvmtypes.helloJvmTypes.Greeting;
 import org.xtext.example.hellojvmtypes.helloJvmTypes.Model;
 
-@InjectWith(value = HelloJvmTypesInjectorProvider.class)
-@RunWith(value = XtextRunner.class)
+@InjectWith(HelloJvmTypesInjectorProvider.class)
+@RunWith(XtextRunner.class)
 @SuppressWarnings("all")
 public class HelloJvmtypesParserTest {
   @Inject
   private ParseHelper<Model> parser;
   
   @Inject
+  @Extension
   private ValidationTestHelper _validationTestHelper;
   
   @Test
@@ -35,7 +37,7 @@ public class HelloJvmtypesParserTest {
       _builder.append("Hello foo from java.util.List!");
       Model _parse = this.parser.parse(_builder);
       this._validationTestHelper.assertNoErrors(_parse);
-    } catch (Exception _e) {
+    } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }
   }
@@ -50,7 +52,7 @@ public class HelloJvmtypesParserTest {
       _builder.newLine();
       Model _parse = this.parser.parse(_builder);
       this._validationTestHelper.assertNoErrors(_parse);
-    } catch (Exception _e) {
+    } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }
   }
@@ -65,7 +67,7 @@ public class HelloJvmtypesParserTest {
       _builder.newLine();
       Model _parse = this.parser.parse(_builder);
       this._validationTestHelper.assertNoErrors(_parse);
-    } catch (Exception _e) {
+    } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }
   }
@@ -83,7 +85,7 @@ public class HelloJvmtypesParserTest {
       final JvmGenericType jvmType = ((JvmGenericType) _get);
       String _identifier = jvmType.getIdentifier();
       Assert.assertEquals("java.util.List", _identifier);
-    } catch (Exception _e) {
+    } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }
   }

@@ -8,6 +8,7 @@ import org.eclipse.xtext.junit4.XtextRunner;
 import org.eclipse.xtext.junit4.util.ParseHelper;
 import org.eclipse.xtext.junit4.validation.ValidationTestHelper;
 import org.eclipse.xtext.xbase.lib.Exceptions;
+import org.eclipse.xtext.xbase.lib.Extension;
 import org.eclipse.xtext.xbase.lib.IterableExtensions;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,14 +16,15 @@ import org.xtext.example.helloxbase.HelloXbaseInjectorProvider;
 import org.xtext.example.helloxbase.helloXbase.Greeting;
 import org.xtext.example.helloxbase.helloXbase.Model;
 
-@InjectWith(value = HelloXbaseInjectorProvider.class)
-@RunWith(value = XtextRunner.class)
+@InjectWith(HelloXbaseInjectorProvider.class)
+@RunWith(XtextRunner.class)
 @SuppressWarnings("all")
 public class HelloXbaseParserTest {
   @Inject
   private ParseHelper<Model> parser;
   
   @Inject
+  @Extension
   private ValidationTestHelper _validationTestHelper;
   
   @Test

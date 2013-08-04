@@ -10,19 +10,21 @@ import org.eclipse.xtext.junit4.util.ParseHelper;
 import org.eclipse.xtext.junit4.validation.ValidationTestHelper;
 import org.eclipse.xtext.xbase.XbasePackage;
 import org.eclipse.xtext.xbase.lib.Exceptions;
+import org.eclipse.xtext.xbase.lib.Extension;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.xtext.example.helloxvars.HelloXvarsInjectorProvider;
 import org.xtext.example.helloxvars.helloXvars.Model;
 
-@InjectWith(value = HelloXvarsInjectorProvider.class)
-@RunWith(value = XtextRunner.class)
+@InjectWith(HelloXvarsInjectorProvider.class)
+@RunWith(XtextRunner.class)
 @SuppressWarnings("all")
 public class HelloXvarsParserTest {
   @Inject
   private ParseHelper<Model> parser;
   
   @Inject
+  @Extension
   private ValidationTestHelper _validationTestHelper;
   
   @Test

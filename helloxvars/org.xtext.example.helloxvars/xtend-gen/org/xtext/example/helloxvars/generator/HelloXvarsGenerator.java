@@ -62,7 +62,7 @@ public class HelloXvarsGenerator implements IGenerator {
     ImportManager _importManager = new ImportManager(true, _jvmType);
     final ImportManager importManager = _importManager;
     _builder.newLineIfNotEmpty();
-    final CharSequence mainMethod = this.compile(greeting, importManager);
+    final String mainMethod = this.compile(greeting, importManager);
     _builder.newLineIfNotEmpty();
     _builder.append("package ");
     String _packageName = this.packageName(greeting);
@@ -92,8 +92,8 @@ public class HelloXvarsGenerator implements IGenerator {
     return _builder;
   }
   
-  public CharSequence compile(final Greeting greeting, final ImportManager importManager) {
-    CharSequence _xblockexpression = null;
+  public String compile(final Greeting greeting, final ImportManager importManager) {
+    String _xblockexpression = null;
     {
       FakeTreeAppendable _fakeTreeAppendable = new FakeTreeAppendable(importManager);
       FakeTreeAppendable result = _fakeTreeAppendable;
@@ -151,7 +151,7 @@ public class HelloXvarsGenerator implements IGenerator {
       _builder.newLine();
       _builder.append("}");
       _builder.newLine();
-      final CharSequence compiled = _builder;
+      final String compiled = _builder.toString();
       _xblockexpression = (compiled);
     }
     return _xblockexpression;

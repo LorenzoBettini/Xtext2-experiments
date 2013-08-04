@@ -10,6 +10,7 @@ import org.eclipse.xtext.junit4.util.ParseHelper;
 import org.eclipse.xtext.junit4.validation.ValidationTestHelper;
 import org.eclipse.xtext.xbase.XbasePackage;
 import org.eclipse.xtext.xbase.lib.Exceptions;
+import org.eclipse.xtext.xbase.lib.Extension;
 import org.eclipse.xtext.xbase.validation.IssueCodes;
 import org.junit.Assert;
 import org.junit.BeforeClass;
@@ -18,14 +19,16 @@ import org.junit.runner.RunWith;
 import org.xtext.example.helloinferrer.HelloInferrerInjectorProvider;
 import org.xtext.example.helloinferrer.helloInferrer.Model;
 
-@RunWith(value = XtextRunner.class)
-@InjectWith(value = HelloInferrerInjectorProvider.class)
+@RunWith(XtextRunner.class)
+@InjectWith(HelloInferrerInjectorProvider.class)
 @SuppressWarnings("all")
 public class HelloInferrerParserTest {
   @Inject
+  @Extension
   private ParseHelper<Model> _parseHelper;
   
   @Inject
+  @Extension
   private ValidationTestHelper _validationTestHelper;
   
   @BeforeClass

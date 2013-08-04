@@ -8,18 +8,19 @@ import org.eclipse.xtext.util.IAcceptor;
 import org.eclipse.xtext.xbase.compiler.CompilationTestHelper;
 import org.eclipse.xtext.xbase.compiler.CompilationTestHelper.Result;
 import org.eclipse.xtext.xbase.lib.Exceptions;
-import org.eclipse.xtext.xbase.lib.Procedures.Procedure1;
+import org.eclipse.xtext.xbase.lib.Extension;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.xtext.example.helloinferrer.tests.HelloInferrerInjectorProviderCustom;
 
-@RunWith(value = XtextRunner.class)
-@InjectWith(value = HelloInferrerInjectorProviderCustom.class)
+@RunWith(XtextRunner.class)
+@InjectWith(HelloInferrerInjectorProviderCustom.class)
 @SuppressWarnings("all")
 public class HelloInferrerCompilerTest {
   @Inject
+  @Extension
   private CompilationTestHelper _compilationTestHelper;
   
   @BeforeClass
@@ -531,19 +532,15 @@ public class HelloInferrerCompilerTest {
   
   private void assertCorrectJavaCodeGeneration(final CharSequence input, final CharSequence expected) {
     try {
-      final Procedure1<Result> _function = new Procedure1<Result>() {
-          public void apply(final Result it) {
+      final IAcceptor<Result> _function = new IAcceptor<Result>() {
+          public void accept(final Result it) {
             String _string = expected.toString();
             String _singleGeneratedCode = it.getSingleGeneratedCode();
             Assert.assertEquals(_string, _singleGeneratedCode);
             it.getCompiledClass();
           }
         };
-      this._compilationTestHelper.compile(input, new IAcceptor<Result>() {
-          public void accept(Result t) {
-            _function.apply(t);
-          }
-      });
+      this._compilationTestHelper.compile(input, _function);
     } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
     }
