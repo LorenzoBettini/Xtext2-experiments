@@ -3,8 +3,8 @@
  */
 package org.xtext.example.helloinferrer;
 
-import org.eclipse.xtext.scoping.IScopeProvider;
-import org.xtext.example.helloinferrer.scoping.HelloInferrerScopeProvider;
+import org.eclipse.xtext.xbase.compiler.XbaseCompiler;
+import org.xtext.example.helloinferrer.jvmmodel.HelloInferrerXbaseCompiler;
 
 /**
  * Use this class to register components to be used at runtime / without the
@@ -12,8 +12,9 @@ import org.xtext.example.helloinferrer.scoping.HelloInferrerScopeProvider;
  */
 public class HelloInferrerRuntimeModule extends
 		org.xtext.example.helloinferrer.AbstractHelloInferrerRuntimeModule {
-	@Override
-	public Class<? extends IScopeProvider> bindIScopeProvider() {
-		return HelloInferrerScopeProvider.class;
+
+	public Class<? extends XbaseCompiler> bindXbaseCompiler() {
+		return HelloInferrerXbaseCompiler.class;
 	}
+
 }

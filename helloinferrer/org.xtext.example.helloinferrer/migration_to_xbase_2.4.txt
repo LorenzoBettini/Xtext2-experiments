@@ -14,3 +14,23 @@ checkImplicitReturn does not exist anymore
 		return false;
 	}
 	
+Don't use
+
+public class HelloInferrerScopeProvider extends XbaseScopeProvider {
+
+
+					body = o.body
+//					body = [
+//						it.openScope
+//						it.declareVariableForOutputParameter(o.output)
+//						
+//						xbaseCompiler.compile(o.body, it, Void::TYPE.getTypeForName(o), null)
+//						
+//						it.generateFinalReturnStatement(o.output)
+//						it.closeScope
+//					]
+
+xbase compiler does not find types
+
+custom xbase compiler which adds before and after, and in the inferrer
+simply assign the body

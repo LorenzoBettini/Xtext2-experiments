@@ -5,7 +5,6 @@ import org.eclipse.xtext.common.types.JvmFormalParameter
 import org.eclipse.xtext.common.types.util.TypeReferences
 import org.eclipse.xtext.naming.IQualifiedNameProvider
 import org.eclipse.xtext.xbase.compiler.TypeReferenceSerializer
-import org.eclipse.xtext.xbase.compiler.XbaseCompiler
 import org.eclipse.xtext.xbase.compiler.output.ITreeAppendable
 import org.eclipse.xtext.xbase.jvmmodel.AbstractModelInferrer
 import org.eclipse.xtext.xbase.jvmmodel.IJvmDeclaredTypeAcceptor
@@ -31,8 +30,6 @@ class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
 	@Inject extension TypeReferences
 	
 	@Inject extension TypeReferenceSerializer
-	
-	@Inject XbaseCompiler xbaseCompiler
 
 	/**
 	 * The dispatch method {@code infer} is called for each instance of the
@@ -72,15 +69,16 @@ class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
 					for (p : o.params) {
 						parameters += p.toParameter(p.name, p.parameterType)
 					}
-					body = [
-						it.openScope
-						it.declareVariableForOutputParameter(o.output)
-						
-						xbaseCompiler.compile(o.body, it, Void::TYPE.getTypeForName(o), null)
-						
-						it.generateFinalReturnStatement(o.output)
-						it.closeScope
-					]
+					body = o.body
+//					body = [
+//						it.openScope
+//						it.declareVariableForOutputParameter(o.output)
+//						
+//						xbaseCompiler.compile(o.body, it, Void::TYPE.getTypeForName(o), null)
+//						
+//						it.generateFinalReturnStatement(o.output)
+//						it.closeScope
+//					]
 				]
 			}
 		]

@@ -16,7 +16,6 @@ import org.eclipse.xtext.naming.IQualifiedNameProvider;
 import org.eclipse.xtext.naming.QualifiedName;
 import org.eclipse.xtext.xbase.XExpression;
 import org.eclipse.xtext.xbase.compiler.TypeReferenceSerializer;
-import org.eclipse.xtext.xbase.compiler.XbaseCompiler;
 import org.eclipse.xtext.xbase.compiler.output.ITreeAppendable;
 import org.eclipse.xtext.xbase.jvmmodel.AbstractModelInferrer;
 import org.eclipse.xtext.xbase.jvmmodel.IJvmDeclaredTypeAcceptor;
@@ -54,9 +53,6 @@ public class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
   @Inject
   @Extension
   private TypeReferenceSerializer _typeReferenceSerializer;
-  
-  @Inject
-  private XbaseCompiler xbaseCompiler;
   
   /**
    * The dispatch method {@code infer} is called for each instance of the
@@ -109,20 +105,8 @@ public class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
                     JvmFormalParameter _parameter = HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.toParameter(p, _name, _parameterType);
                     HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.<JvmFormalParameter>operator_add(_parameters, _parameter);
                   }
-                  final Procedure1<ITreeAppendable> _function = new Procedure1<ITreeAppendable>() {
-                      public void apply(final ITreeAppendable it) {
-                        it.openScope();
-                        JvmFormalParameter _output = o.getOutput();
-                        HelloInferrerJvmModelInferrer.this.declareVariableForOutputParameter(it, _output);
-                        XExpression _body = o.getBody();
-                        JvmTypeReference _typeForName = HelloInferrerJvmModelInferrer.this._typeReferences.getTypeForName(Void.TYPE, o);
-                        HelloInferrerJvmModelInferrer.this.xbaseCompiler.compile(_body, it, _typeForName, null);
-                        JvmFormalParameter _output_1 = o.getOutput();
-                        HelloInferrerJvmModelInferrer.this.generateFinalReturnStatement(it, _output_1);
-                        it.closeScope();
-                      }
-                    };
-                  HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.setBody(it, _function);
+                  XExpression _body = o.getBody();
+                  HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.setBody(it, _body);
                 }
               };
             JvmOperation _method = HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.toMethod(o, _name, _returnType, _function);
