@@ -4,7 +4,9 @@
 package org.xtext.example.helloinferrer;
 
 import org.eclipse.xtext.xbase.compiler.XbaseCompiler;
+import org.eclipse.xtext.xbase.typesystem.computation.ITypeComputer;
 import org.xtext.example.helloinferrer.jvmmodel.HelloInferrerXbaseCompiler;
+import org.xtext.example.helloinferrer.typesystem.HelloInferrerTypeComputer;
 
 /**
  * Use this class to register components to be used at runtime / without the
@@ -17,4 +19,8 @@ public class HelloInferrerRuntimeModule extends
 		return HelloInferrerXbaseCompiler.class;
 	}
 
+	@Override
+	public Class<? extends ITypeComputer> bindITypeComputer() {
+		return HelloInferrerTypeComputer.class;
+	}
 }
