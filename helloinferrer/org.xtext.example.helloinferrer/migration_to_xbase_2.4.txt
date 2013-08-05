@@ -1,0 +1,16 @@
+In the validator
+
+	@Override
+	public void checkImplicitReturn(XExpression expr) {
+		// we will deal with this during generation
+		return;
+	}
+	
+checkImplicitReturn does not exist anymore
+
+	@Override
+	public boolean isImplicitReturn(XExpression expr) {
+		// we will deal with this during generation
+		return false;
+	}
+	

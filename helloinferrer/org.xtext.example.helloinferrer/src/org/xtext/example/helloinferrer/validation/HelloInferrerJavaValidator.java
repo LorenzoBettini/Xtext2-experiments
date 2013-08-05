@@ -37,9 +37,9 @@ public class HelloInferrerJavaValidator extends
 	}
 
 	@Override
-	public void checkImplicitReturn(XExpression expr) {
+	public boolean isImplicitReturn(XExpression expr) {
 		// we will deal with this during generation
-		return;
+		return false;
 	}
 
 	@Override
