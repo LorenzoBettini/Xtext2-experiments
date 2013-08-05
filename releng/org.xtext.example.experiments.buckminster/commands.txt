@@ -7,5 +7,8 @@ build
 perform -D target.os=* -D target.ws=* -D target.arch=* org.xtext.example.experiments.site#site.p2.zip
 junit -l "org.xtext.example.hellojvmtypes.tests/HelloJvmtypesParserTest.launch"  --flatXML --output "${buckminster.output.root}/test.results/HelloJvmtypesParserTest.launch.xml"
 junit -l "org.xtext.example.helloxbase.tests/HelloXbaseParserTest.launch"  --flatXML --output "${buckminster.output.root}/test.results/HelloXbaseParserTest.launch.xml"
-junit -l "org.xtext.example.helloxvars.tests/HelloXvarsParserTest.launch"  --flatXML --output "${buckminster.output.root}/test.results/HelloXvarsParserTest.launch.xml"
 junit -l "org.xtext.example.helloinferrer.tests/HelloInferrerAllTests.launch"  --flatXML --output "${buckminster.output.root}/test.results/HelloInferrerAllTests.launch.xml"
+
+# The following DSL was an experiment with Xtext 2.3
+# and it is not ported to Xtext 2.4
+# junit -l "org.xtext.example.helloxvars.tests/HelloXvarsParserTest.launch"  --flatXML --output "${buckminster.output.root}/test.results/HelloXvarsParserTest.launch.xml"
