@@ -9,6 +9,7 @@ import org.eclipse.xtext.xbase.compiler.CompilationTestHelper;
 import org.eclipse.xtext.xbase.compiler.CompilationTestHelper.Result;
 import org.eclipse.xtext.xbase.lib.Exceptions;
 import org.eclipse.xtext.xbase.lib.Extension;
+import org.eclipse.xtext.xbase.lib.util.ReflectExtensions;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -22,6 +23,10 @@ public class HelloInferrerCompilerTest {
   @Inject
   @Extension
   private CompilationTestHelper _compilationTestHelper;
+  
+  @Inject
+  @Extension
+  private ReflectExtensions _reflectExtensions;
   
   @BeforeClass
   public static void setNewLine() {
@@ -528,6 +533,59 @@ public class HelloInferrerCompilerTest {
     _builder_1.append("}");
     _builder_1.newLine();
     this.assertCorrectJavaCodeGeneration(_builder, _builder_1);
+  }
+  
+  @Test
+  public void testGeneratedJavaCodeBehavior() {
+    try {
+      StringConcatenation _builder = new StringConcatenation();
+      _builder.append("Hello my.hello.MyHello {");
+      _builder.newLine();
+      _builder.append("\t");
+      _builder.newLine();
+      _builder.append("\t");
+      _builder.append("op lenOfString(String s) output Integer result {");
+      _builder.newLine();
+      _builder.append("\t\t");
+      _builder.append("if (s == null)");
+      _builder.newLine();
+      _builder.append("\t\t\t");
+      _builder.append("result = 0");
+      _builder.newLine();
+      _builder.append("\t\t");
+      _builder.append("else");
+      _builder.newLine();
+      _builder.append("\t\t\t");
+      _builder.append("result = s.length");
+      _builder.newLine();
+      _builder.append("\t");
+      _builder.append("}");
+      _builder.newLine();
+      _builder.append("}");
+      _builder.newLine();
+      final IAcceptor<Result> _function = new IAcceptor<Result>() {
+          public void accept(final Result it) {
+            try {
+              Class<? extends Object> _compiledClass = it.getCompiledClass();
+              final Object obj = _compiledClass.newInstance();
+              Object result = HelloInferrerCompilerTest.this._reflectExtensions.invoke(obj, "lenOfString", "TestString");
+              Object _invoke = HelloInferrerCompilerTest.this._reflectExtensions.invoke(result, "getValue");
+              String _string = _invoke.toString();
+              Assert.assertEquals("10", _string);
+              Object _invoke_1 = HelloInferrerCompilerTest.this._reflectExtensions.invoke(obj, "lenOfString", null);
+              result = _invoke_1;
+              Object _invoke_2 = HelloInferrerCompilerTest.this._reflectExtensions.invoke(result, "getValue");
+              String _string_1 = _invoke_2.toString();
+              Assert.assertEquals("0", _string_1);
+            } catch (Throwable _e) {
+              throw Exceptions.sneakyThrow(_e);
+            }
+          }
+        };
+      this._compilationTestHelper.compile(_builder, _function);
+    } catch (Throwable _e) {
+      throw Exceptions.sneakyThrow(_e);
+    }
   }
   
   private void assertCorrectJavaCodeGeneration(final CharSequence input, final CharSequence expected) {

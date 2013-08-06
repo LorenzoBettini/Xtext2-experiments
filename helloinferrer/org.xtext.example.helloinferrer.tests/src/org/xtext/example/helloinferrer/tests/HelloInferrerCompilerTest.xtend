@@ -4,8 +4,9 @@ import com.google.inject.Inject
 import org.eclipse.xtext.junit4.InjectWith
 import org.eclipse.xtext.junit4.XtextRunner
 import org.eclipse.xtext.xbase.compiler.CompilationTestHelper
-import org.junit.Test
+import org.eclipse.xtext.xbase.lib.util.ReflectExtensions
 import org.junit.BeforeClass
+import org.junit.Test
 import org.junit.runner.RunWith
 
 import static org.junit.Assert.*
@@ -15,6 +16,7 @@ import static org.junit.Assert.*
 class HelloInferrerCompilerTest {
 	
 	@Inject extension CompilationTestHelper
+	@Inject extension ReflectExtensions
 	
 	@BeforeClass
 	def static void setNewLine() {
@@ -265,6 +267,30 @@ public class hello {
   }
 }
 ''')
+	}
+	
+	@Test def void testGeneratedJavaCodeBehavior() {
+		'''
+		Hello my.hello.MyHello {
+			
+			op lenOfString(String s) output Integer result {
+				if (s == null)
+					result = 0
+				else
+					result = s.length
+			}
+		}
+		'''.compile[
+			val obj = it.compiledClass.newInstance
+			
+			var result = obj.invoke('lenOfString', 'TestString')
+			// 10 is the length of TestString
+			assertEquals("10", result.invoke('getValue').toString)
+			
+			result = obj.invoke('lenOfString', null)
+			// 0 since we passed a null string
+			assertEquals("0", result.invoke('getValue').toString)	
+		]
 	}
 
 	def private assertCorrectJavaCodeGeneration(CharSequence input, CharSequence expected) {
