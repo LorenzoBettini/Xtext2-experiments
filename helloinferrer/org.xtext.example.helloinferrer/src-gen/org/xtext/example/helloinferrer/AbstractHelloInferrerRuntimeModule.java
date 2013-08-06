@@ -89,9 +89,9 @@ public abstract class AbstractHelloInferrerRuntimeModule extends DefaultRuntimeM
 		return org.eclipse.xtext.parser.antlr.AntlrTokenDefProvider.class;
 	}
 
-	// contributed by org.eclipse.xtext.generator.validation.JavaValidatorFragment
-	@org.eclipse.xtext.service.SingletonBinding(eager=true)	public Class<? extends org.xtext.example.helloinferrer.validation.HelloInferrerJavaValidator> bindHelloInferrerJavaValidator() {
-		return org.xtext.example.helloinferrer.validation.HelloInferrerJavaValidator.class;
+	// contributed by org.eclipse.xtext.generator.validation.ValidatorFragment
+	@org.eclipse.xtext.service.SingletonBinding(eager=true)	public Class<? extends org.xtext.example.helloinferrer.validation.HelloInferrerValidator> bindHelloInferrerValidator() {
+		return org.xtext.example.helloinferrer.validation.HelloInferrerValidator.class;
 	}
 
 	// contributed by org.eclipse.xtext.generator.scoping.AbstractScopingFragment

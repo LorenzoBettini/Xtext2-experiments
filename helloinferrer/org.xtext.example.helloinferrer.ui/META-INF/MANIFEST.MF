@@ -22,7 +22,8 @@ Require-Bundle: org.xtext.example.helloinferrer;visibility:=reexport,
  org.eclipse.xtend,
  org.eclipse.xpand
 Import-Package: org.apache.log4j,
- org.apache.commons.logging
+ org.apache.commons.logging,
+ org.eclipse.xtext.xbase.lib
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Export-Package: org.xtext.example.helloinferrer.ui.contentassist,
  org.xtext.example.helloinferrer.ui.contentassist.antlr,

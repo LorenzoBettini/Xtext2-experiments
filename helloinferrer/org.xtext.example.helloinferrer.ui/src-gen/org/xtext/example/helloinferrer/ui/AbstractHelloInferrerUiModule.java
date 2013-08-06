@@ -108,7 +108,7 @@ public abstract class AbstractHelloInferrerUiModule extends DefaultUiModule {
 		return org.xtext.example.helloinferrer.ui.quickfix.HelloInferrerQuickfixProvider.class;
 	}
 
-	// contributed by org.eclipse.xtext.ui.generator.contentAssist.JavaBasedContentAssistFragment
+	// contributed by org.eclipse.xtext.ui.generator.contentAssist.ContentAssistFragment
 	public Class<? extends org.eclipse.xtext.ui.editor.contentassist.IContentProposalProvider> bindIContentProposalProvider() {
 		return org.xtext.example.helloinferrer.ui.contentassist.HelloInferrerProposalProvider.class;
 	}
