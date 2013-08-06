@@ -32,4 +32,23 @@ public class HelloInferrerContestAssistTest extends AbstractContentAssistTest {
       throw Exceptions.sneakyThrow(_e);
     }
   }
+  
+  @Test
+  public void testOutputParameterCompletion() {
+    try {
+      ContentAssistProcessorTestBuilder _newBuilder = this.newBuilder();
+      StringConcatenation _builder = new StringConcatenation();
+      _builder.append("Hello my.test.hello {");
+      _builder.newLine();
+      _builder.append("\t");
+      _builder.append("op myOp(String myString, int i) output Boolean myOutputParam {");
+      _builder.newLine();
+      _builder.append("\t\t");
+      _builder.append("myOut");
+      ContentAssistProcessorTestBuilder _append = _newBuilder.append(_builder.toString());
+      _append.assertText("myOutputParam");
+    } catch (Throwable _e) {
+      throw Exceptions.sneakyThrow(_e);
+    }
+  }
 }

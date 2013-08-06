@@ -20,12 +20,12 @@ class HelloInferrerContestAssistTest extends AbstractContentAssistTest {
 		).assertText("myString")
 	}
 
-//	@Test def void testOutputParameterCompletion() {
-//		newBuilder.append(
-//		'''
-//		Hello my.test.hello {
-//			op myOp(String myString, int i) output Boolean myOutputParam {
-//				myOut'''
-//		).assertText("myOutputParam")
-//	}
+	@Test def void testOutputParameterCompletion() {
+		newBuilder.append(
+		'''
+		Hello my.test.hello {
+			op myOp(String myString, int i) output Boolean myOutputParam {
+				myOut'''
+		).assertText("myOutputParam")
+	}
 }

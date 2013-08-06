@@ -3,9 +3,11 @@
  */
 package org.xtext.example.helloinferrer;
 
+import org.eclipse.xtext.scoping.IScopeProvider;
 import org.eclipse.xtext.xbase.compiler.XbaseCompiler;
 import org.eclipse.xtext.xbase.typesystem.computation.ITypeComputer;
 import org.xtext.example.helloinferrer.jvmmodel.HelloInferrerXbaseCompiler;
+import org.xtext.example.helloinferrer.scoping.HelloInferrerXbaseScopeProvider;
 import org.xtext.example.helloinferrer.typesystem.HelloInferrerTypeComputer;
 
 /**
@@ -22,5 +24,10 @@ public class HelloInferrerRuntimeModule extends
 	@Override
 	public Class<? extends ITypeComputer> bindITypeComputer() {
 		return HelloInferrerTypeComputer.class;
+	}
+	
+	@Override
+	public Class<? extends IScopeProvider> bindIScopeProvider() {
+		return HelloInferrerXbaseScopeProvider.class;
 	}
 }
