@@ -2,7 +2,7 @@ h1. Xtext 2 experiments
 
 Here you will find some experiments with Xtext and Xbase.
 
-(The versions for Xtext 2.2.1 can be found in the branch xtext-2.2.1, the versions for Xtext 2.3.1 can be found in the branch xtext-2.3; the branch master deals with the current version of Xtext, or the latest version.)
+(The versions for _Xtext 2.2.1_ can be found in the branch *xtext-2.2.1*, the versions for _Xtext 2.3.1_ can be found in the branch *xtext-2.3*; the branch *master* deals with the current version of Xtext, or the latest version.)
 
 You will find the following projects:
 
@@ -18,10 +18,10 @@ h2. helloxvars
 
 Some experiments using Xbase variable declarations in an Xtext DSL, while keeping control on the generation (and reusing XbaseCompiler for generating Java code corresponding to Xbase variable declarations and initialization expressions).  Blogged here: "Xtext 2.1: using Xbase variables":http://www.rcp-vision.com/?p=1796 .
 
-*This DSL DOES not work on Xtext 2.4 (and it has not been ported since it was only an experiment that made sense only in previous versions). Use xtext-2.3 branch if you want to use this DSL with Xtext 2.3.* 
+*This DSL DOES not work on Xtext 2.4 (and it has not been ported since it was an experiment that made sense only in previous versions). Use xtext-2.3 branch if you want to use this DSL with Xtext 2.3.* 
 
 h2. helloinferrer
 
-Some experiments using Xbase in an Xtext DSL with non direct mapping to Java, using JvmModelInferrer (with custom scoping and validation) and debugging features.  Blogged here: "The JvmModelInferrer, the debugger and Xbase in Xtext 2.3":http://www.rcp-vision.com/?p=4089 .
+Some experiments using Xbase in an Xtext DSL with non direct mapping to Java, using JvmModelInferrer (with custom scoping and validation) and debugging features.  The blog post "The JvmModelInferrer, the debugger and Xbase in Xtext 2.3":http://www.rcp-vision.com/?p=4089 refers to the version in branch *xtext-2.3*.
 
 

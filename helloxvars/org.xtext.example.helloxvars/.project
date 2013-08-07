@@ -31,4 +31,11 @@
 		<nature>org.eclipse.pde.PluginNature</nature>
 		<nature>org.eclipse.xtext.ui.shared.xtextNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>README.textile</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PARENT_LOC/README.textile</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>

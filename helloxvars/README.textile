@@ -1,0 +1,1 @@
+*This DSL DOES not work on Xtext 2.4 (and it has not been ported since it was an experiment that made sense only in previous versions). Use xtext-2.3 branch if you want to use this DSL with Xtext 2.3.* 
