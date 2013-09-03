@@ -564,24 +564,24 @@ public class HelloInferrerCompilerTest {
       _builder.append("}");
       _builder.newLine();
       final IAcceptor<Result> _function = new IAcceptor<Result>() {
-          public void accept(final Result it) {
-            try {
-              Class<? extends Object> _compiledClass = it.getCompiledClass();
-              final Object obj = _compiledClass.newInstance();
-              Object result = HelloInferrerCompilerTest.this._reflectExtensions.invoke(obj, "lenOfString", "TestString");
-              Object _invoke = HelloInferrerCompilerTest.this._reflectExtensions.invoke(result, "getValue");
-              String _string = _invoke.toString();
-              Assert.assertEquals("10", _string);
-              Object _invoke_1 = HelloInferrerCompilerTest.this._reflectExtensions.invoke(obj, "lenOfString", null);
-              result = _invoke_1;
-              Object _invoke_2 = HelloInferrerCompilerTest.this._reflectExtensions.invoke(result, "getValue");
-              String _string_1 = _invoke_2.toString();
-              Assert.assertEquals("0", _string_1);
-            } catch (Throwable _e) {
-              throw Exceptions.sneakyThrow(_e);
-            }
+        public void accept(final Result it) {
+          try {
+            Class<? extends Object> _compiledClass = it.getCompiledClass();
+            final Object obj = _compiledClass.newInstance();
+            Object result = HelloInferrerCompilerTest.this._reflectExtensions.invoke(obj, "lenOfString", "TestString");
+            Object _invoke = HelloInferrerCompilerTest.this._reflectExtensions.invoke(result, "getValue");
+            String _string = _invoke.toString();
+            Assert.assertEquals("10", _string);
+            Object _invoke_1 = HelloInferrerCompilerTest.this._reflectExtensions.invoke(obj, "lenOfString", null);
+            result = _invoke_1;
+            Object _invoke_2 = HelloInferrerCompilerTest.this._reflectExtensions.invoke(result, "getValue");
+            String _string_1 = _invoke_2.toString();
+            Assert.assertEquals("0", _string_1);
+          } catch (Throwable _e) {
+            throw Exceptions.sneakyThrow(_e);
           }
-        };
+        }
+      };
       this._compilationTestHelper.compile(_builder, _function);
     } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);
@@ -591,13 +591,13 @@ public class HelloInferrerCompilerTest {
   private void assertCorrectJavaCodeGeneration(final CharSequence input, final CharSequence expected) {
     try {
       final IAcceptor<Result> _function = new IAcceptor<Result>() {
-          public void accept(final Result it) {
-            String _string = expected.toString();
-            String _singleGeneratedCode = it.getSingleGeneratedCode();
-            Assert.assertEquals(_string, _singleGeneratedCode);
-            it.getCompiledClass();
-          }
-        };
+        public void accept(final Result it) {
+          String _string = expected.toString();
+          String _singleGeneratedCode = it.getSingleGeneratedCode();
+          Assert.assertEquals(_string, _singleGeneratedCode);
+          it.getCompiledClass();
+        }
+      };
       this._compilationTestHelper.compile(input, _function);
     } catch (Throwable _e) {
       throw Exceptions.sneakyThrow(_e);

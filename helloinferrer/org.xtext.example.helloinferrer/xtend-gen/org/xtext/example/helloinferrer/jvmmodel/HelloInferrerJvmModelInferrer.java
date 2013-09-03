@@ -84,36 +84,36 @@ public class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
     JvmGenericType _class = this._jvmTypesBuilder.toClass(element, _fullyQualifiedName);
     IPostIndexingInitializing<JvmGenericType> _accept = acceptor.<JvmGenericType>accept(_class);
     final Procedure1<JvmGenericType> _function = new Procedure1<JvmGenericType>() {
-        public void apply(final JvmGenericType it) {
-          String _documentation = HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.getDocumentation(element);
-          HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.setDocumentation(it, _documentation);
-          EList<Operation> _operations = element.getOperations();
-          for (final Operation o : _operations) {
-            EList<JvmMember> _members = it.getMembers();
-            String _name = o.getName();
-            JvmFormalParameter _output = o.getOutput();
-            JvmTypeReference _returnType = HelloInferrerJvmModelInferrer.this.returnType(_output);
-            final Procedure1<JvmOperation> _function = new Procedure1<JvmOperation>() {
-                public void apply(final JvmOperation it) {
-                  String _documentation = HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.getDocumentation(o);
-                  HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.setDocumentation(it, _documentation);
-                  EList<JvmFormalParameter> _params = o.getParams();
-                  for (final JvmFormalParameter p : _params) {
-                    EList<JvmFormalParameter> _parameters = it.getParameters();
-                    String _name = p.getName();
-                    JvmTypeReference _parameterType = p.getParameterType();
-                    JvmFormalParameter _parameter = HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.toParameter(p, _name, _parameterType);
-                    HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.<JvmFormalParameter>operator_add(_parameters, _parameter);
-                  }
-                  XExpression _body = o.getBody();
-                  HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.setBody(it, _body);
-                }
-              };
-            JvmOperation _method = HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.toMethod(o, _name, _returnType, _function);
-            HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.<JvmOperation>operator_add(_members, _method);
-          }
+      public void apply(final JvmGenericType it) {
+        String _documentation = HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.getDocumentation(element);
+        HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.setDocumentation(it, _documentation);
+        EList<Operation> _operations = element.getOperations();
+        for (final Operation o : _operations) {
+          EList<JvmMember> _members = it.getMembers();
+          String _name = o.getName();
+          JvmFormalParameter _output = o.getOutput();
+          JvmTypeReference _returnType = HelloInferrerJvmModelInferrer.this.returnType(_output);
+          final Procedure1<JvmOperation> _function = new Procedure1<JvmOperation>() {
+            public void apply(final JvmOperation it) {
+              String _documentation = HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.getDocumentation(o);
+              HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.setDocumentation(it, _documentation);
+              EList<JvmFormalParameter> _params = o.getParams();
+              for (final JvmFormalParameter p : _params) {
+                EList<JvmFormalParameter> _parameters = it.getParameters();
+                String _name = p.getName();
+                JvmTypeReference _parameterType = p.getParameterType();
+                JvmFormalParameter _parameter = HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.toParameter(p, _name, _parameterType);
+                HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.<JvmFormalParameter>operator_add(_parameters, _parameter);
+              }
+              XExpression _body = o.getBody();
+              HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.setBody(it, _body);
+            }
+          };
+          JvmOperation _method = HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.toMethod(o, _name, _returnType, _function);
+          HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.<JvmOperation>operator_add(_members, _method);
         }
-      };
+      }
+    };
     _accept.initializeLater(_function);
   }
   
