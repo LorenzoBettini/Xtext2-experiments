@@ -49,9 +49,7 @@ public class HelloInferrerXbaseCompiler extends XbaseCompiler {
       final ITreeAppendable childAppendable = it.trace(o, true);
       JvmTypeReference _parameterType = o.getParameterType();
       this.serialize(_parameterType, o, childAppendable);
-      String _plus = (" " + outputVarName);
-      String _plus_1 = (_plus + " = null; // output parameter");
-      ITreeAppendable _append = childAppendable.append(_plus_1);
+      ITreeAppendable _append = childAppendable.append(((" " + outputVarName) + " = null; // output parameter"));
       _xblockexpression = (_append);
     }
     return _xblockexpression;

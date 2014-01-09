@@ -4,7 +4,7 @@
     editorDirectory="/org.xtext.example.hellojvmtypes.editor/src" modelPluginID="org.xtext.example.hellojvmtypes"
     forceOverwrite="true" modelName="HelloJvmTypes" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     complianceLevel="5.0" copyrightFields="false" editPluginID="org.xtext.example.hellojvmtypes.edit"
-    editorPluginID="org.xtext.example.hellojvmtypes.editor" runtimeVersion="2.8" usedGenPackages="../../../../../../org.eclipse.xtext.common.types/model/JavaVMTypes.genmodel#//types">
+    editorPluginID="org.xtext.example.hellojvmtypes.editor" runtimeVersion="2.9" usedGenPackages="../../../../../../org.eclipse.xtext.common.types/model/JavaVMTypes.genmodel#//types">
   <genPackages prefix="HelloJvmTypes" basePackage="org.xtext.example.hellojvmtypes"
       disposableProviderFactory="true" ecorePackage="HelloJvmTypes.ecore#/">
     <genClasses ecoreClass="HelloJvmTypes.ecore#//Model">

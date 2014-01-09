@@ -8,7 +8,7 @@ import org.eclipse.xtext.naming.QualifiedName;
 import org.eclipse.xtext.xbase.annotations.scoping.XbaseWithAnnotationsScopeProvider;
 import org.eclipse.xtext.xbase.jvmmodel.IJvmModelAssociations;
 import org.eclipse.xtext.xbase.lib.Extension;
-import org.eclipse.xtext.xbase.scoping.XbaseScopeProvider.LocalVariableAcceptor;
+import org.eclipse.xtext.xbase.scoping.XbaseScopeProvider;
 import org.eclipse.xtext.xbase.scoping.featurecalls.LocalVarDescription;
 import org.xtext.example.helloinferrer.helloInferrer.Operation;
 
@@ -23,7 +23,7 @@ public class HelloInferrerXbaseScopeProvider extends XbaseWithAnnotationsScopePr
   @Extension
   private IJvmModelAssociations _iJvmModelAssociations;
   
-  protected void createLocalVarScopeForJvmOperation(final JvmOperation context, final LocalVariableAcceptor acceptor) {
+  protected void createLocalVarScopeForJvmOperation(final JvmOperation context, final XbaseScopeProvider.LocalVariableAcceptor acceptor) {
     super.createLocalVarScopeForJvmOperation(context, acceptor);
     final EObject sourceElement = this._iJvmModelAssociations.getPrimarySourceElement(context);
     if ((sourceElement instanceof Operation)) {

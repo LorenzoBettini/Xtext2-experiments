@@ -30,7 +30,7 @@ public class HelloJvmTypesFactoryImpl extends EFactoryImpl implements HelloJvmTy
   {
     try
     {
-      HelloJvmTypesFactory theHelloJvmTypesFactory = (HelloJvmTypesFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.xtext.org/example/hellojvmtypes/HelloJvmTypes"); 
+      HelloJvmTypesFactory theHelloJvmTypesFactory = (HelloJvmTypesFactory)EPackage.Registry.INSTANCE.getEFactory(HelloJvmTypesPackage.eNS_URI);
       if (theHelloJvmTypesFactory != null)
       {
         return theHelloJvmTypesFactory;

@@ -6,7 +6,6 @@ import org.eclipse.xtext.junit4.InjectWith;
 import org.eclipse.xtext.junit4.XtextRunner;
 import org.eclipse.xtext.util.IAcceptor;
 import org.eclipse.xtext.xbase.compiler.CompilationTestHelper;
-import org.eclipse.xtext.xbase.compiler.CompilationTestHelper.Result;
 import org.eclipse.xtext.xbase.lib.Exceptions;
 import org.eclipse.xtext.xbase.lib.Extension;
 import org.eclipse.xtext.xbase.lib.util.ReflectExtensions;
@@ -321,16 +320,10 @@ public class HelloInferrerCompilerTest {
     _builder_1.append("Integer i = null; // output parameter");
     _builder_1.newLine();
     _builder_1.append("    ");
-    _builder_1.append("int _plus = (j + 1);");
+    _builder_1.append("i = Integer.valueOf((j + 1));");
     _builder_1.newLine();
     _builder_1.append("    ");
-    _builder_1.append("i = Integer.valueOf(_plus);");
-    _builder_1.newLine();
-    _builder_1.append("    ");
-    _builder_1.append("boolean _lessThan = ((i).intValue() < 0);");
-    _builder_1.newLine();
-    _builder_1.append("    ");
-    _builder_1.append("if (_lessThan) {");
+    _builder_1.append("if (((i).intValue() < 0)) {");
     _builder_1.newLine();
     _builder_1.append("      ");
     _builder_1.append("i = Integer.valueOf(1);");
@@ -563,8 +556,8 @@ public class HelloInferrerCompilerTest {
       _builder.newLine();
       _builder.append("}");
       _builder.newLine();
-      final IAcceptor<Result> _function = new IAcceptor<Result>() {
-        public void accept(final Result it) {
+      final IAcceptor<CompilationTestHelper.Result> _function = new IAcceptor<CompilationTestHelper.Result>() {
+        public void accept(final CompilationTestHelper.Result it) {
           try {
             Class<? extends Object> _compiledClass = it.getCompiledClass();
             final Object obj = _compiledClass.newInstance();
@@ -590,8 +583,8 @@ public class HelloInferrerCompilerTest {
   
   private void assertCorrectJavaCodeGeneration(final CharSequence input, final CharSequence expected) {
     try {
-      final IAcceptor<Result> _function = new IAcceptor<Result>() {
-        public void accept(final Result it) {
+      final IAcceptor<CompilationTestHelper.Result> _function = new IAcceptor<CompilationTestHelper.Result>() {
+        public void accept(final CompilationTestHelper.Result it) {
           String _string = expected.toString();
           String _singleGeneratedCode = it.getSingleGeneratedCode();
           Assert.assertEquals(_string, _singleGeneratedCode);

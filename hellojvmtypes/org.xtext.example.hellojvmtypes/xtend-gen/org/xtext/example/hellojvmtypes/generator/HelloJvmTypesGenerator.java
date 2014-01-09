@@ -102,13 +102,13 @@ public class HelloJvmTypesGenerator implements IGenerator {
         _builder.append("\t\t");
         _builder.append("System.out.println(\"Hello ");
         String _name = greeting.getName();
-        _builder.append(_name, "		");
+        _builder.append(_name, "\t\t");
         _builder.append(" from \" +");
         _builder.newLineIfNotEmpty();
         _builder.append("\t\t");
         _builder.append("\t");
         CharSequence _serialize = importManager.serialize(javaType);
-        _builder.append(_serialize, "			");
+        _builder.append(_serialize, "\t\t\t");
         _builder.append(".class.getName());");
         _builder.newLineIfNotEmpty();
       }

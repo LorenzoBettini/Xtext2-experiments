@@ -32,7 +32,7 @@ public class HelloInferrerValidator extends AbstractHelloInferrerValidator {
   public void checkAssignment(final XAssignment assignment) {
     final JvmIdentifiableElement assignmentFeature = assignment.getFeature();
     if ((assignmentFeature instanceof JvmFormalParameter)) {
-      final EObject container = assignmentFeature.eContainer();
+      final EObject container = ((JvmFormalParameter)assignmentFeature).eContainer();
       boolean _and = false;
       if (!(container instanceof Operation)) {
         _and = false;

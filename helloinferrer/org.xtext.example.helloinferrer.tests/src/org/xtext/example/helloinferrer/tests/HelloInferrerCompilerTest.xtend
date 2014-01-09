@@ -173,10 +173,8 @@ import org.xtext.example.helloinferrer.runtime.HelloResult;
 public class MyHello {
   public HelloResult<Integer> myOp(final String s, final int j) {
     Integer i = null; // output parameter
-    int _plus = (j + 1);
-    i = Integer.valueOf(_plus);
-    boolean _lessThan = ((i).intValue() < 0);
-    if (_lessThan) {
+    i = Integer.valueOf((j + 1));
+    if (((i).intValue() < 0)) {
       i = Integer.valueOf(1);
     }
     return new HelloResult<Integer>(i);

@@ -19,7 +19,6 @@ import org.eclipse.xtext.xbase.compiler.TypeReferenceSerializer;
 import org.eclipse.xtext.xbase.compiler.output.ITreeAppendable;
 import org.eclipse.xtext.xbase.jvmmodel.AbstractModelInferrer;
 import org.eclipse.xtext.xbase.jvmmodel.IJvmDeclaredTypeAcceptor;
-import org.eclipse.xtext.xbase.jvmmodel.IJvmDeclaredTypeAcceptor.IPostIndexingInitializing;
 import org.eclipse.xtext.xbase.jvmmodel.JvmTypesBuilder;
 import org.eclipse.xtext.xbase.lib.Extension;
 import org.eclipse.xtext.xbase.lib.Procedures.Procedure1;
@@ -82,7 +81,7 @@ public class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
   protected void _infer(final Greeting element, final IJvmDeclaredTypeAcceptor acceptor, final boolean isPreIndexingPhase) {
     QualifiedName _fullyQualifiedName = this._iQualifiedNameProvider.getFullyQualifiedName(element);
     JvmGenericType _class = this._jvmTypesBuilder.toClass(element, _fullyQualifiedName);
-    IPostIndexingInitializing<JvmGenericType> _accept = acceptor.<JvmGenericType>accept(_class);
+    IJvmDeclaredTypeAcceptor.IPostIndexingInitializing<JvmGenericType> _accept = acceptor.<JvmGenericType>accept(_class);
     final Procedure1<JvmGenericType> _function = new Procedure1<JvmGenericType>() {
       public void apply(final JvmGenericType it) {
         String _documentation = HelloInferrerJvmModelInferrer.this._jvmTypesBuilder.getDocumentation(element);
@@ -125,9 +124,7 @@ public class HelloInferrerJvmModelInferrer extends AbstractModelInferrer {
       final ITreeAppendable childAppendable = it.trace(o, true);
       JvmTypeReference _parameterType = o.getParameterType();
       this._typeReferenceSerializer.serialize(_parameterType, o, childAppendable);
-      String _plus = (" " + outputVarName);
-      String _plus_1 = (_plus + " = null; // output parameter");
-      ITreeAppendable _append = childAppendable.append(_plus_1);
+      ITreeAppendable _append = childAppendable.append(((" " + outputVarName) + " = null; // output parameter"));
       _xblockexpression = (_append);
     }
     return _xblockexpression;
