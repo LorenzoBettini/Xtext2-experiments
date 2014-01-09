@@ -19,6 +19,8 @@ import org.eclipse.core.resources.IncrementalProjectBuilder;
 import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.NullProgressMonitor;
+import org.eclipse.core.runtime.OperationCanceledException;
+import org.eclipse.core.runtime.jobs.Job;
 import org.eclipse.ui.texteditor.MarkerUtilities;
 import org.junit.Test;
 
@@ -33,8 +35,10 @@ public class InternalBuilderTest {
 		long free = Runtime.getRuntime().freeMemory() / (1024 * 1024);
 		long used = Runtime.getRuntime().totalMemory() / (1024 * 1024);
 		System.out.println("Starting build. Memory max=" + maxMem + "m, total=" + used + "m, free=" + free + "m");
-		ResourcesPlugin.getWorkspace().build(IncrementalProjectBuilder.CLEAN_BUILD, new NullProgressMonitor());
-
+		
+		//ResourcesPlugin.getWorkspace().build(IncrementalProjectBuilder.CLEAN_BUILD, new NullProgressMonitor());
+		cleanBuild();
+		
 		final IMarker[] markers = ResourcesPlugin.getWorkspace().getRoot()
 				.findMarkers(IMarker.PROBLEM, true, IResource.DEPTH_INFINITE);
 		List<String> errors = new ArrayList<String>();
@@ -57,6 +61,23 @@ public class InternalBuilderTest {
 		System.out.println("Finished build. Memory max=" + maxMem + "m, total=" + used + "m, free=" + free + "m");
 		assertTrue("Problems found (" + top10.size() + " from " + errors.size() + "): " + join(errors, ", "),
 				errors.isEmpty());
+	}
+
+	public static void cleanBuild() throws CoreException {
+		ResourcesPlugin.getWorkspace().build(
+				IncrementalProjectBuilder.CLEAN_BUILD, new NullProgressMonitor());
+		boolean wasInterrupted = false;
+		do {
+			try {
+				Job.getJobManager().join(ResourcesPlugin.FAMILY_MANUAL_BUILD,
+						null);
+				wasInterrupted = false;
+			} catch (OperationCanceledException e) {
+				e.printStackTrace();
+			} catch (InterruptedException e) {
+				wasInterrupted = true;
+			}
+		} while (wasInterrupted);
 	}
 
 }
