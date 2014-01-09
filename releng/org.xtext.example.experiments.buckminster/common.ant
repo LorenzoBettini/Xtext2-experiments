@@ -166,6 +166,14 @@
 		</delete>
 	</target>
 
+	<target name="clean-xtend-gen-dirs" unless="dont-clean-xtend-gen">
+		<delete failonerror="false" includeemptydirs="true">
+			<fileset dir="${projects.location}" defaultexcludes="false">
+				<include name="**/xtend-gen" />
+			</fileset>
+		</delete>
+	</target>
+
 	<target name="reset.target-platform">
 		<delete includeemptydirs="true">
 			<fileset dir="${build.root}" defaultexcludes="false">
