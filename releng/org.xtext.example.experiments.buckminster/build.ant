@@ -22,7 +22,7 @@
 	<property name="build.properties" location="${projects.location}/releng/org.xtext.example.experiments.buckminster/buckminster.properties" />
 	
 	<target name="buckminster" 
-		depends="common.cleanup,clean-xtend-gen-dirs,install.buckminster.headless" description="description">
+		depends="common.cleanup,clean-xtend-gen,install.buckminster.headless" description="description">
 
 		<fail unless="buckminster.home" message="buckminster.home must be specified." />
 
