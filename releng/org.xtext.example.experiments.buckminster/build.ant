@@ -17,7 +17,8 @@
 	
 	<import file="common.ant" />
 	
-	<property name="commands.file" location="${projects.location}/releng/org.xtext.example.experiments.buckminster/commands.txt" />
+	<property name="build.commands.file" location="${projects.location}/releng/org.xtext.example.experiments.buckminster/build-commands.txt" />
+	<property name="perform.commands.file" location="${projects.location}/releng/org.xtext.example.experiments.buckminster/perform-commands.txt" />
 	<property name="build.properties" location="${projects.location}/releng/org.xtext.example.experiments.buckminster/buckminster.properties" />
 	
 	<target name="buckminster" 
@@ -25,7 +26,8 @@
 
 		<fail unless="buckminster.home" message="buckminster.home must be specified." />
 
-		<run_buckminster commandsfile="${commands.file}" propertiesfile="${build.properties}" />
+		<run_buckminster commandsfile="${build.commands.file}" propertiesfile="${build.properties}" />
+		<run_buckminster commandsfile="${perform.commands.file}" propertiesfile="${build.properties}" />
 	</target>
 
 </project>

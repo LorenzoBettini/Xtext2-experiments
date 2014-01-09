@@ -1,9 +1,3 @@
-setpref targetPlatformPath="${target.platform}"
-
-resolve "${projects.location}/releng/org.xtext.example.experiments.buckminster/build.cquery"
-
-build
-
 perform -D target.os=* -D target.ws=* -D target.arch=* org.xtext.example.experiments.site#site.p2.zip
 
 junit -l "org.xtext.example.hellojvmtypes.tests/HelloJvmtypesParserTest.launch"  --flatXML --output "${buckminster.output.root}/test.results/HelloJvmtypesParserTest.launch.xml"
