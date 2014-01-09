@@ -2,8 +2,9 @@ setpref targetPlatformPath="${target.platform}"
 
 resolve "${projects.location}/releng/org.xtext.example.experiments.buckminster/build.cquery"
 
+# first build to compile at least the build project
 build --continueonerror
 
-junit --stdout --launch "org.xtext.example.experiments.build/bootstrap-build.launch"  --flatXML --output "${buckminster.output.root}/builder-run.result.xml"
+junit --launch "org.xtext.example.experiments.build/bootstrap-build.launch"  --flatXML --output "${buckminster.output.root}/builder-run.result.xml"
 
 build --clean
