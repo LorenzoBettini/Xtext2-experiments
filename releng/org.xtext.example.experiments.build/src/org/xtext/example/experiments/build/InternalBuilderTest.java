@@ -41,9 +41,10 @@ public class InternalBuilderTest {
 		System.out.println("Starting build. Memory max=" + maxMem + "m, total=" + used + "m, free=" + free + "m");
 		
 		//ResourcesPlugin.getWorkspace().build(IncrementalProjectBuilder.CLEAN_BUILD, new NullProgressMonitor());
-		setAutoBuild();
+		setAutoBuild(true);
 		cleanBuild();
 		waitForAutoBuild();
+		setAutoBuild(false);
 		
 		final IMarker[] markers = ResourcesPlugin.getWorkspace().getRoot()
 				.findMarkers(IMarker.PROBLEM, true, IResource.DEPTH_INFINITE);
@@ -118,16 +119,14 @@ public class InternalBuilderTest {
 		} while (wasInterrupted);
 	}
 
-	public static void setAutoBuild() {
+	public static void setAutoBuild(boolean b) {
 		IWorkspace workspace = ResourcesPlugin.getWorkspace();
-		if (!workspace.isAutoBuilding()) {
-			try {
-				IWorkspaceDescription desc = workspace.getDescription();
-				desc.setAutoBuilding(true);
-				workspace.setDescription(desc);
-			} catch (CoreException e) {
-				e.printStackTrace();
-			}
+		try {
+			IWorkspaceDescription desc = workspace.getDescription();
+			desc.setAutoBuilding(b);
+			workspace.setDescription(desc);
+		} catch (CoreException e) {
+			e.printStackTrace();
 		}
 	}
 }
