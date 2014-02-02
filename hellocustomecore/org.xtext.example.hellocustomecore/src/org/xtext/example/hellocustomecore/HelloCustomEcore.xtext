@@ -1,7 +1,8 @@
 grammar org.xtext.example.hellocustomecore.HelloCustomEcore with 
 	org.eclipse.xtext.xbase.Xbase
 
-generate hellocustomecore "http://www.xtext.org/example/hellocustomecore/HelloCustomEcore"
+//generate hellocustomecore "http://www.xtext.org/example/hellocustomecore/HelloCustomEcore"
+import "http://www.xtext.org/example/hellocustomecore/HelloCustomEcore"
 
 Model:
 	importSection=XImportSection?

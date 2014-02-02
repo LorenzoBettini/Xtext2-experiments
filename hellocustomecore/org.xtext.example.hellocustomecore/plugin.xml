@@ -7,11 +7,8 @@
     <package 
        uri = "http://www.xtext.org/example/hellocustomecore/HelloCustomEcore" 
        class = "org.xtext.example.hellocustomecore.hellocustomecore.HellocustomecorePackage"
-       genModel = "model/generated/HelloCustomEcore.genmodel" /> 
+       genModel = "model/custom/HelloCustomEcore.genmodel" /> 
 	
   </extension>
-
-
-
 
 </plugin>
