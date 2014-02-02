@@ -7,5 +7,5 @@ build --continueonerror
 
 junit --launch "org.xtext.example.experiments.build/bootstrap-build.launch"  --flatXML --output "${buckminster.output.root}/builder-run.result.xml"
 
-# useless to rebuild
-# build --clean
+# perform a clean build to reveal compilation errors
+build --clean
