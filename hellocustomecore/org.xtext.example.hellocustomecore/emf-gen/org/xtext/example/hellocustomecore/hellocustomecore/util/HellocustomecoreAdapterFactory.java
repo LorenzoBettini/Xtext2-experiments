@@ -90,6 +90,11 @@ public class HellocustomecoreAdapterFactory extends AdapterFactoryImpl
 				return createGreetingAdapter();
 			}
 			@Override
+			public Adapter caseElement(Element object)
+			{
+				return createElementAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object)
 			{
 				return createEObjectAdapter();
@@ -152,6 +157,21 @@ public class HellocustomecoreAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	public Adapter createGreetingAdapter()
+	{
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.xtext.example.hellocustomecore.hellocustomecore.Element <em>Element</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.xtext.example.hellocustomecore.hellocustomecore.Element
+	 * @generated
+	 */
+	public Adapter createElementAdapter()
 	{
 		return null;
 	}

@@ -103,6 +103,25 @@ public interface HellocustomecorePackage extends EPackage
 	int MODEL_FEATURE_COUNT = 3;
 
 	/**
+	 * The meta object id for the '{@link org.xtext.example.hellocustomecore.hellocustomecore.Element <em>Element</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.xtext.example.hellocustomecore.hellocustomecore.Element
+	 * @see org.xtext.example.hellocustomecore.hellocustomecore.impl.HellocustomecorePackageImpl#getElement()
+	 * @generated
+	 */
+	int ELEMENT = 3;
+
+	/**
+	 * The number of structural features of the '<em>Element</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ELEMENT_FEATURE_COUNT = 0;
+
+	/**
 	 * The meta object id for the '{@link org.xtext.example.hellocustomecore.hellocustomecore.impl.HelloImpl <em>Hello</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -119,7 +138,7 @@ public interface HellocustomecorePackage extends EPackage
 	 * @generated
 	 * @ordered
 	 */
-	int HELLO__NAME = 0;
+	int HELLO__NAME = ELEMENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Hello</em>' class.
@@ -128,7 +147,7 @@ public interface HellocustomecorePackage extends EPackage
 	 * @generated
 	 * @ordered
 	 */
-	int HELLO_FEATURE_COUNT = 1;
+	int HELLO_FEATURE_COUNT = ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link org.xtext.example.hellocustomecore.hellocustomecore.impl.GreetingImpl <em>Greeting</em>}' class.
@@ -147,7 +166,7 @@ public interface HellocustomecorePackage extends EPackage
 	 * @generated
 	 * @ordered
 	 */
-	int GREETING__NAME = 0;
+	int GREETING__NAME = ELEMENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Expression</b></em>' containment reference.
@@ -156,7 +175,7 @@ public interface HellocustomecorePackage extends EPackage
 	 * @generated
 	 * @ordered
 	 */
-	int GREETING__EXPRESSION = 1;
+	int GREETING__EXPRESSION = ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Greeting</em>' class.
@@ -165,7 +184,7 @@ public interface HellocustomecorePackage extends EPackage
 	 * @generated
 	 * @ordered
 	 */
-	int GREETING_FEATURE_COUNT = 2;
+	int GREETING_FEATURE_COUNT = ELEMENT_FEATURE_COUNT + 2;
 
 
 	/**
@@ -263,6 +282,16 @@ public interface HellocustomecorePackage extends EPackage
 	 * @generated
 	 */
 	EReference getGreeting_Expression();
+
+	/**
+	 * Returns the meta object for class '{@link org.xtext.example.hellocustomecore.hellocustomecore.Element <em>Element</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Element</em>'.
+	 * @see org.xtext.example.hellocustomecore.hellocustomecore.Element
+	 * @generated
+	 */
+	EClass getElement();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -364,6 +393,16 @@ public interface HellocustomecorePackage extends EPackage
 		 * @generated
 		 */
 		EReference GREETING__EXPRESSION = eINSTANCE.getGreeting_Expression();
+
+		/**
+		 * The meta object literal for the '{@link org.xtext.example.hellocustomecore.hellocustomecore.Element <em>Element</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.xtext.example.hellocustomecore.hellocustomecore.Element
+		 * @see org.xtext.example.hellocustomecore.hellocustomecore.impl.HellocustomecorePackageImpl#getElement()
+		 * @generated
+		 */
+		EClass ELEMENT = eINSTANCE.getElement();
 
 	}
 

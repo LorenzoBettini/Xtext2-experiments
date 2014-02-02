@@ -3,6 +3,14 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="hellocustomecore" nsURI="http://www.xtext.org/example/hellocustomecore/HelloCustomEcore"
     nsPrefix="hellocustomecore">
   <eClassifiers xsi:type="ecore:EClass" name="Model">
+    <eOperations name="getElements">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+        <details key="body" value="return &#xA;&#x9;com.google.common.collect.Iterables.&lt;Element>concat&#xA;&#x9;&#x9;(getHellos(), getGreetings());"/>
+      </eAnnotations>
+      <eGenericType eClassifier="ecore:EDataType ../../../org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//Iterable">
+        <eTypeArguments eClassifier="#//Element"/>
+      </eGenericType>
+    </eOperations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="importSection" eType="ecore:EClass ../../../org.eclipse.xtext.xbase/model/Xtype.ecore#//XImportSection"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="hellos" upperBound="-1"
@@ -10,12 +18,15 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="greetings" upperBound="-1"
         eType="#//Greeting" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Hello">
+  <eClassifiers xsi:type="ecore:EClass" name="Hello" eSuperTypes="#//Element">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Greeting">
+  <eClassifiers xsi:type="ecore:EClass" name="Greeting" eSuperTypes="#//Element">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="expression" eType="ecore:EClass ../../../org.eclipse.xtext.xbase/model/Xbase.ecore#//XExpression"
         containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Element" abstract="true" interface="true">
+    <eOperations name="getName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
 </ecore:EPackage>

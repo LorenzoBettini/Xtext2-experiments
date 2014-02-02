@@ -83,6 +83,7 @@ public class HellocustomecoreSwitch<T> extends Switch<T>
 			{
 				Hello hello = (Hello)theEObject;
 				T result = caseHello(hello);
+				if (result == null) result = caseElement(hello);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -90,6 +91,14 @@ public class HellocustomecoreSwitch<T> extends Switch<T>
 			{
 				Greeting greeting = (Greeting)theEObject;
 				T result = caseGreeting(greeting);
+				if (result == null) result = caseElement(greeting);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case HellocustomecorePackage.ELEMENT:
+			{
+				Element element = (Element)theEObject;
+				T result = caseElement(element);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -141,6 +150,22 @@ public class HellocustomecoreSwitch<T> extends Switch<T>
 	 * @generated
 	 */
 	public T caseGreeting(Greeting object)
+	{
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Element</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Element</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseElement(Element object)
 	{
 		return null;
 	}

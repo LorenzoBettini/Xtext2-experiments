@@ -2,6 +2,8 @@
  */
 package org.xtext.example.hellocustomecore.hellocustomecore.impl;
 
+import java.lang.Iterable;
+
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -20,6 +22,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
 
 import org.eclipse.xtext.xtype.XImportSection;
 
+import org.xtext.example.hellocustomecore.hellocustomecore.Element;
 import org.xtext.example.hellocustomecore.hellocustomecore.Greeting;
 import org.xtext.example.hellocustomecore.hellocustomecore.Hello;
 import org.xtext.example.hellocustomecore.hellocustomecore.HellocustomecorePackage;
@@ -167,6 +170,18 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
 			greetings = new EObjectContainmentEList<Greeting>(Greeting.class, this, HellocustomecorePackage.MODEL__GREETINGS);
 		}
 		return greetings;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Iterable<Element> getElements()
+	{
+		return 
+			com.google.common.collect.Iterables.<Element>concat
+				(getHellos(), getGreetings());
 	}
 
 	/**

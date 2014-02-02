@@ -2,6 +2,8 @@
  */
 package org.xtext.example.hellocustomecore.hellocustomecore;
 
+import java.lang.Iterable;
+
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
@@ -85,5 +87,14 @@ public interface Model extends EObject
 	 * @generated
 	 */
 	EList<Greeting> getGreetings();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" dataType="org.eclipse.xtext.common.types.Iterable<org.xtext.example.hellocustomecore.hellocustomecore.Element>"
+	 *        annotation="http://www.eclipse.org/emf/2002/GenModel body='return \n\tcom.google.common.collect.Iterables.<Element>concat\n\t\t(getHellos(), getGreetings());'"
+	 * @generated
+	 */
+	Iterable<Element> getElements();
 
 } // Model
