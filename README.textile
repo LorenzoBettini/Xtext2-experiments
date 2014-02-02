@@ -24,4 +24,8 @@ h2. helloinferrer
 
 Some experiments using Xbase in an Xtext DSL with non direct mapping to Java, using JvmModelInferrer (with custom scoping and validation) and debugging features.  The blog post "The JvmModelInferrer, the debugger and Xbase in Xtext 2.3":http://www.rcp-vision.com/?p=4089 refers to the version in branch *xtext-2.3*.
 
+h2. hellocustomecore
+
+An example using an imported Ecore model (after switching from the automatically inferred one).  Blogged here "Switching from an inferred Ecore model to an imported one in your Xtext grammar":http://www.lorenzobettini.it/2014/02/switching-from-an-inferred-ecore-model-to-an-imported-one-in-your-xtext-grammar/ .
+
 
