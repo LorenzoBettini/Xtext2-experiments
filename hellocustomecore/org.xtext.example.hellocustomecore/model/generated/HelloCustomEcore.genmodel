@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.xtext.example.hellocustomecore/src-gen" editDirectory="/org.xtext.example.hellocustomecore.edit/src"
+    editorDirectory="/org.xtext.example.hellocustomecore.editor/src" modelPluginID="org.xtext.example.hellocustomecore"
+    forceOverwrite="true" modelName="HelloCustomEcore" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="org.xtext.example.hellocustomecore.edit"
+    editorPluginID="org.xtext.example.hellocustomecore.editor" runtimeVersion="2.9"
+    usedGenPackages="../../../org.eclipse.xtext.xbase/model/Xbase.genmodel#//xbase ../../../org.eclipse.xtext.xbase/model/Xbase.genmodel#//xtype">
+  <genPackages prefix="Hellocustomecore" basePackage="org.xtext.example.hellocustomecore"
+      disposableProviderFactory="true" fileExtensions="hellocustomecore" ecorePackage="HelloCustomEcore.ecore#/">
+    <genClasses ecoreClass="HelloCustomEcore.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloCustomEcore.ecore#//Model/importSection"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloCustomEcore.ecore#//Model/hellos"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloCustomEcore.ecore#//Model/greetings"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloCustomEcore.ecore#//Hello">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloCustomEcore.ecore#//Hello/name"/>
+    </genClasses>
+    <genClasses ecoreClass="HelloCustomEcore.ecore#//Greeting">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute HelloCustomEcore.ecore#//Greeting/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference HelloCustomEcore.ecore#//Greeting/expression"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

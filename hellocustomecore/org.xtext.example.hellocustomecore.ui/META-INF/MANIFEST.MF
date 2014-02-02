@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.xtext.example.hellocustomecore.ui
+Bundle-Vendor: Lorenzo Bettini
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.xtext.example.hellocustomecore.ui; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.xtext.example.hellocustomecore;visibility:=reexport,
+ org.eclipse.xtext.ui,
+ org.eclipse.ui.editors;bundle-version="3.5.0",
+ org.eclipse.ui.ide;bundle-version="3.5.0",
+ org.eclipse.xtext.ui.shared,
+ org.eclipse.xtext.xbase.ui,
+ org.eclipse.ui,
+ org.eclipse.xtext.builder,
+ org.antlr.runtime,
+ org.eclipse.xtext.common.types.ui,
+ org.eclipse.xtext.ui.codetemplates.ui,
+ org.eclipse.compare
+Import-Package: org.apache.log4j,
+ org.eclipse.xtext.xbase.lib
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: org.xtext.example.hellocustomecore.ui.quickfix,
+ org.xtext.example.hellocustomecore.ui.contentassist,
+ org.xtext.example.hellocustomecore.ui.contentassist.antlr,
+ org.xtext.example.hellocustomecore.ui.internal
+Bundle-Activator: org.xtext.example.hellocustomecore.ui.internal.HelloCustomEcoreActivator

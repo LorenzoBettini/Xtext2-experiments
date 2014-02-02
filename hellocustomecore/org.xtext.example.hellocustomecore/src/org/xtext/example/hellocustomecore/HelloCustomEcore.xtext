@@ -1,0 +1,18 @@
+grammar org.xtext.example.hellocustomecore.HelloCustomEcore with 
+	org.eclipse.xtext.xbase.Xbase
+
+generate hellocustomecore "http://www.xtext.org/example/hellocustomecore/HelloCustomEcore"
+
+Model:
+	importSection=XImportSection?
+	hellos+=Hello*
+	greetings+=Greeting*
+;
+
+Hello:
+    'Hello' name=ID '!'
+;
+
+Greeting:
+    'Greeting' name=ID expression = XExpression
+;

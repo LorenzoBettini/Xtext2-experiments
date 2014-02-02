@@ -7,6 +7,8 @@ junit -l "org.xtext.example.helloxbase.tests/HelloXbaseParserTest.launch"  --fla
 junit -l "org.xtext.example.helloinferrer.tests/org.xtext.example.helloinferrer.tests.launch"  --flatXML --output "${buckminster.output.root}/test.results/org.xtext.example.helloinferrer.tests.launch.xml"
 junit -l "org.xtext.example.helloinferrer.tests/org.xtext.example.helloinferrer.ui.tests.launch"  --flatXML --output "${buckminster.output.root}/test.results/org.xtext.example.helloinferrer.ui.tests.launch.xml"
 
+junit -l "org.xtext.example.hellocustomecore.tests/org.xtext.example.hellocustomecore.tests.launch"  --flatXML --output "${buckminster.output.root}/test.results/org.xtext.example.hellocustomecore.tests.launch.xml"
+
 # The following DSL was an experiment with Xtext 2.3
 # and it is not ported to Xtext 2.4
 # junit -l "org.xtext.example.helloxvars.tests/HelloXvarsParserTest.launch"  --flatXML --output "${buckminster.output.root}/test.results/HelloXvarsParserTest.launch.xml"

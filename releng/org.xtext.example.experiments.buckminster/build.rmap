@@ -29,6 +29,8 @@
 		searchPathRef="helloxvars" />
 	<rm:locator pattern="^org.xtext.example.helloinferrer(?:\..+)?$"
 		searchPathRef="helloinferrer" />
+	<rm:locator pattern="^org.xtext.example.hellocustomecore(?:\..+)?$"
+		searchPathRef="hellocustomecore" />
 	<rm:locator pattern="^org.xtext.example.experiments(?:\..+)?$"
 		searchPathRef="releng" />
 
@@ -144,6 +146,26 @@
 				value="git://github.com/LorenzoBettini/Xtext2-experiments.git" />
 			<rm:property key="git.auto.fetch" value="true" />
 			<rm:uri format="{0},helloinferrer/{1}">
+				<bc:propertyRef key="git.clone.dir" />
+				<bc:propertyRef key="buckminster.component" />
+			</rm:uri>
+		</rm:provider>
+	</rm:searchPath>
+
+	<rm:searchPath name="hellocustomecore">
+		<rm:provider componentTypes="osgi.bundle" readerType="local"
+			mutable="false">
+			<rm:uri format="{0}/hellocustomecore/{1}">
+				<bc:propertyRef key="projects.location" />
+				<bc:propertyRef key="buckminster.component" />
+			</rm:uri>
+		</rm:provider>
+		<rm:provider componentTypes="osgi.bundle,eclipse.feature,buckminster"
+			readerType="git">
+			<rm:property key="git.remote.uri"
+				value="git://github.com/LorenzoBettini/Xtext2-experiments.git" />
+			<rm:property key="git.auto.fetch" value="true" />
+			<rm:uri format="{0},hellocustomecore/{1}">
 				<bc:propertyRef key="git.clone.dir" />
 				<bc:propertyRef key="buckminster.component" />
 			</rm:uri>
