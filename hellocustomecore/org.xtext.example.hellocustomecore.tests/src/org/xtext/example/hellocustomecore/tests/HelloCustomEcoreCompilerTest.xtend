@@ -48,8 +48,7 @@ public class MyFile {
   
   public String sayBar() {
     Date _date = new Date();
-    String _string = _date.toString();
-    return _string;
+    return _date.toString();
   }
 }
 '''
