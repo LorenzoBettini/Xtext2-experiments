@@ -1,0 +1,18 @@
+grammar org.xtext.example.helloxcore.HelloXcore with 
+	org.eclipse.xtext.xbase.Xbase
+
+generate helloxcore "http://www.xtext.org/example/helloxcore/HelloXcore"
+
+Model:
+    importSection=XImportSection?
+    hellos+=Hello*
+    greetings+=Greeting*
+;
+ 
+Hello:
+    'Hello' name=ID '!'
+;
+ 
+Greeting:
+    'Greeting' name=ID expression = XExpression
+;

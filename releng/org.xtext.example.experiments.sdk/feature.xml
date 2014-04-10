@@ -73,4 +73,18 @@
          version="0.0.0"
          unpack="false"/>
 
+   <plugin
+         id="org.xtext.example.helloxcore"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.xtext.example.helloxcore.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
 </feature>
