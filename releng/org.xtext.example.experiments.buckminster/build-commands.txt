@@ -5,7 +5,7 @@ resolve "${projects.location}/releng/org.xtext.example.experiments.buckminster/b
 # first build to compile at least the build project
 build --continueonerror
 
-junit --launch "org.xtext.example.experiments.build/bootstrap-build.launch"  --flatXML --output "${buckminster.output.root}/builder-run.result.xml"
+junit --launch "org.xtext.example.experiments.build/bootstrap-build.launch" --stderr --flatXML --output "${buckminster.output.root}/builder-run.result.xml"
 
 # perform a clean build to reveal compilation errors
 build --clean
