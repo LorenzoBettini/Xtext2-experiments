@@ -4,7 +4,7 @@
     editorDirectory="/org.xtext.example.helloxcore.editor/src" modelPluginID="org.xtext.example.helloxcore"
     forceOverwrite="true" modelName="HelloXcore" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     complianceLevel="5.0" copyrightFields="false" editPluginID="org.xtext.example.helloxcore.edit"
-    editorPluginID="org.xtext.example.helloxcore.editor" runtimeVersion="2.9" usedGenPackages="../../../org.eclipse.xtext.xbase/model/Xbase.genmodel#//xbase ../../../org.eclipse.xtext.xbase/model/Xbase.genmodel#//xtype">
+    editorPluginID="org.xtext.example.helloxcore.editor" runtimeVersion="2.9" usedGenPackages="../../../org.eclipse.xtext.common.types/model/JavaVMTypes.genmodel#//types ../../../org.eclipse.xtext.xbase/model/Xbase.genmodel#//xbase ../../../org.eclipse.xtext.xbase/model/Xbase.genmodel#//xtype">
   <genPackages prefix="Helloxcore" basePackage="org.xtext.example.helloxcore" disposableProviderFactory="true"
       fileExtensions="helloxcore" ecorePackage="HelloXcore.ecore#/">
     <genClasses ecoreClass="HelloXcore.ecore#//Model">
