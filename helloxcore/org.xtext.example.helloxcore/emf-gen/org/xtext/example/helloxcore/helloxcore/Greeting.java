@@ -36,7 +36,7 @@ public interface Greeting extends EObject
    * @return the value of the '<em>Name</em>' attribute.
    * @see #setName(String)
    * @see org.xtext.example.helloxcore.helloxcore.HelloxcorePackage#getGreeting_Name()
-   * @model
+   * @model unique="false"
    * @generated
    */
   String getName();

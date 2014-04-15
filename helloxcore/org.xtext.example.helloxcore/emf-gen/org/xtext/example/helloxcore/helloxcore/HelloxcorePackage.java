@@ -14,12 +14,14 @@ import org.eclipse.emf.ecore.EReference;
  * <ul>
  *   <li>each class,</li>
  *   <li>each feature of each class,</li>
+ *   <li>each operation of each class,</li>
  *   <li>each enum,</li>
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
  * @see org.xtext.example.helloxcore.helloxcore.HelloxcoreFactory
  * @model kind="package"
+ *        annotation="http://www.eclipse.org/emf/2002/GenModel modelDirectory='/org.xtext.example.helloxcore/emf-gen' forceOverwrite='true' modelName='HelloXcore' updateClasspath='false' basePackage='org.xtext.example.helloxcore'"
  * @generated
  */
 public interface HelloxcorePackage extends EPackage
@@ -103,6 +105,15 @@ public interface HelloxcorePackage extends EPackage
   int MODEL_FEATURE_COUNT = 3;
 
   /**
+   * The number of operations of the '<em>Model</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MODEL_OPERATION_COUNT = 0;
+
+  /**
    * The meta object id for the '{@link org.xtext.example.helloxcore.helloxcore.impl.HelloImpl <em>Hello</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -129,6 +140,15 @@ public interface HelloxcorePackage extends EPackage
    * @ordered
    */
   int HELLO_FEATURE_COUNT = 1;
+
+  /**
+   * The number of operations of the '<em>Hello</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int HELLO_OPERATION_COUNT = 0;
 
   /**
    * The meta object id for the '{@link org.xtext.example.helloxcore.helloxcore.impl.GreetingImpl <em>Greeting</em>}' class.
@@ -166,6 +186,15 @@ public interface HelloxcorePackage extends EPackage
    * @ordered
    */
   int GREETING_FEATURE_COUNT = 2;
+
+  /**
+   * The number of operations of the '<em>Greeting</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int GREETING_OPERATION_COUNT = 0;
 
 
   /**
@@ -279,6 +308,7 @@ public interface HelloxcorePackage extends EPackage
    * <ul>
    *   <li>each class,</li>
    *   <li>each feature of each class,</li>
+   *   <li>each operation of each class,</li>
    *   <li>each enum,</li>
    *   <li>and each data type</li>
    * </ul>

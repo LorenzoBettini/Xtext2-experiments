@@ -33,7 +33,7 @@ public interface Hello extends EObject
    * @return the value of the '<em>Name</em>' attribute.
    * @see #setName(String)
    * @see org.xtext.example.helloxcore.helloxcore.HelloxcorePackage#getHello_Name()
-   * @model
+   * @model unique="false"
    * @generated
    */
   String getName();

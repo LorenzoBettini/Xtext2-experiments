@@ -18,7 +18,8 @@ Require-Bundle: org.eclipse.xtext;visibility:=reexport,
  org.antlr.runtime,
  org.eclipse.xtext.common.types,
  org.eclipse.xtext.xbase.lib,
- org.objectweb.asm;bundle-version="5.0.1";visibility:=reexport
+ org.objectweb.asm;bundle-version="5.0.1";visibility:=reexport,
+ org.eclipse.emf.ecore.xcore.lib
 Import-Package: org.apache.log4j,
  org.eclipse.xtext.xbase.lib
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
@@ -32,8 +33,4 @@ Export-Package: org.xtext.example.helloxcore,
  org.xtext.example.helloxcore.parser.antlr.internal,
  org.xtext.example.helloxcore.validation,
  org.xtext.example.helloxcore.formatting,
- org.xtext.example.helloxcore.jvmmodel,
- org.xtext.example.helloxcore.helloxcore,
- org.xtext.example.helloxcore.helloxcore.impl,
- org.xtext.example.helloxcore.helloxcore.util
-
+ org.xtext.example.helloxcore.jvmmodel

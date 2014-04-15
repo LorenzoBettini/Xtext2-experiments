@@ -13,7 +13,7 @@ import org.xtext.example.helloxcore.helloxcore.Model
 
 @RunWith(typeof(XtextRunner))
 @InjectWith(typeof(HelloXcoreInjectorProvider))
-class HelloCustomEcoreParserTest {
+class HelloXcoreParserTest {
 	
 	@Inject extension ParseHelper<Model>
 	

@@ -1,0 +1,26 @@
+@Ecore(nsURI="http://www.xtext.org/example/helloxcore/HelloXcore")
+@GenModel(
+	modelDirectory="/org.xtext.example.helloxcore/emf-gen", 
+	forceOverwrite="true", 
+	modelName="HelloXcore", 
+	updateClasspath="false"
+)
+package org.xtext.example.helloxcore.helloxcore
+
+import org.eclipse.xtext.xbase.XExpression
+import org.eclipse.xtext.xtype.XImportSection
+
+class Model {
+	contains XImportSection importSection
+	contains Hello[] hellos
+	contains Greeting[] greetings
+}
+
+class Hello {
+	String name
+}
+
+class Greeting {
+	String name
+	contains XExpression expression
+}
