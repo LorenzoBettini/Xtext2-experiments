@@ -13,7 +13,7 @@ class HelloCustomEcoreValidator extends AbstractHelloCustomEcoreValidator {
 	public static val DUPLICATE_NAME = 'HelloCustomEcoreDuplicateName'
 
 	@Check
-	def checkGreetingStartsWithCapital(Model model) {
+	def checkDuplicateElements(Model model) {
 		val nameMap = <String,Element>Multimaps2.newLinkedHashListMultimap
 		
 		for (e : model.elements)
