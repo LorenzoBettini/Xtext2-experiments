@@ -99,8 +99,8 @@ public class HelloxcorePackageImpl extends EPackageImpl implements HelloxcorePac
 
     // Initialize simple dependencies
     XbasePackage.eINSTANCE.eClass();
-    EcorePackage.eINSTANCE.eClass();
     XtypePackage.eINSTANCE.eClass();
+    EcorePackage.eINSTANCE.eClass();
 
     // Create package meta-data objects
     theHelloxcorePackage.createPackageContents();

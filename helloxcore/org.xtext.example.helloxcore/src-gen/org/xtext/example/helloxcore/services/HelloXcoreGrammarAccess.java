@@ -799,7 +799,7 @@ public class HelloXcoreGrammarAccess extends AbstractGrammarElementFinder {
 		return getStaticQualifierAccess().getRule();
 	}
 
-	//terminal HEX:
+	//terminal HEX returns ecore::EString:
 	//	("0x" | "0X") ("0".."9" | "a".."f" | "A".."F" | "_")+ ("#" (("b" | "B") ("i" | "I") | ("l" | "L")))?;
 	public TerminalRule getHEXRule() {
 		return gaXbase.getHEXRule();
@@ -811,7 +811,7 @@ public class HelloXcoreGrammarAccess extends AbstractGrammarElementFinder {
 		return gaXbase.getINTRule();
 	} 
 
-	//terminal DECIMAL:
+	//terminal DECIMAL returns ecore::EString:
 	//	INT (("e" | "E") ("+" | "-")? INT)? (("b" | "B") ("i" | "I" | "d" | "D") | ("l" | "L" | "d" | "D" | "f" | "F"))?;
 	public TerminalRule getDECIMALRule() {
 		return gaXbase.getDECIMALRule();
@@ -960,38 +960,38 @@ public class HelloXcoreGrammarAccess extends AbstractGrammarElementFinder {
 		return getXImportDeclarationAccess().getRule();
 	}
 
-	//terminal ID:
+	//terminal ID returns ecore::EString:
 	//	"^"? ("a".."z" | "A".."Z" | "$" | "_") ("a".."z" | "A".."Z" | "$" | "_" | "0".."9")*;
 	public TerminalRule getIDRule() {
 		return gaXbase.getIDRule();
 	} 
 
-	//terminal STRING:
+	//terminal STRING returns ecore::EString:
 	//	"\"" ("\\" ("b" | "t" | "n" | "f" | "r" | "u" | "\"" | "\'" | "\\") | !("\\" | "\""))* "\"" | "\'" ("\\" ("b" | "t" |
 	//	"n" | "f" | "r" | "u" | "\"" | "\'" | "\\") | !("\\" | "\'"))* "\'";
 	public TerminalRule getSTRINGRule() {
 		return gaXbase.getSTRINGRule();
 	} 
 
-	//terminal ML_COMMENT:
+	//terminal ML_COMMENT returns ecore::EString:
 	//	"/ *"->"* /";
 	public TerminalRule getML_COMMENTRule() {
 		return gaXbase.getML_COMMENTRule();
 	} 
 
-	//terminal SL_COMMENT:
+	//terminal SL_COMMENT returns ecore::EString:
 	//	"//" !("\n" | "\r")* ("\r"? "\n")?;
 	public TerminalRule getSL_COMMENTRule() {
 		return gaXbase.getSL_COMMENTRule();
 	} 
 
-	//terminal WS:
+	//terminal WS returns ecore::EString:
 	//	(" " | "\t" | "\r" | "\n")+;
 	public TerminalRule getWSRule() {
 		return gaXbase.getWSRule();
 	} 
 
-	//terminal ANY_OTHER:
+	//terminal ANY_OTHER returns ecore::EString:
 	//	.;
 	public TerminalRule getANY_OTHERRule() {
 		return gaXbase.getANY_OTHERRule();
