@@ -3,6 +3,10 @@
 */
 package org.xtext.example.helloxcore;
 
+import org.eclipse.emf.ecore.EPackage;
+
+import com.google.inject.Injector;
+
 
 /**
  * Initialization support for running Xtext languages 
@@ -12,6 +16,16 @@ public class HelloXcoreStandaloneSetup extends HelloXcoreStandaloneSetupGenerate
 
 	public static void doSetup() {
 		new HelloXcoreStandaloneSetup().createInjectorAndDoEMFRegistration();
+	}
+	
+	@Override
+	public void register(Injector injector) {
+		// added after the switching to Xcore
+		if (!EPackage.Registry.INSTANCE.containsKey("http://www.xtext.org/example/helloxcore/HelloXcore")) {
+			EPackage.Registry.INSTANCE.put("http://www.xtext.org/example/helloxcore/HelloXcore", org.xtext.example.helloxcore.helloxcore.HelloxcorePackage.eINSTANCE);
+		}
+
+		super.register(injector);
 	}
 }
 
