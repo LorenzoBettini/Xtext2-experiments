@@ -7,7 +7,7 @@
     <package 
        uri = "http://www.xtext.org/example/helloxcore/HelloXcore" 
        class = "org.xtext.example.helloxcore.helloxcore.HelloxcorePackage"
-       genModel = "model/generated/HelloXcore.genmodel" /> 
+       genModel = "model/Helloxcore.xcore" /> 
 	
   </extension>
 
