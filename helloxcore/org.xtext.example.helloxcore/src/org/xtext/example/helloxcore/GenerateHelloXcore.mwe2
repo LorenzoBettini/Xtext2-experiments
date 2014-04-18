@@ -23,10 +23,11 @@ Workflow {
     component = DirectoryCleaner {
     	directory = "${runtimeProject}/src-gen"
     }
-    
-    component = DirectoryCleaner {
-    	directory = "${runtimeProject}/model"
-    }
+
+      // switch to xcore
+//    component = DirectoryCleaner {
+//    	directory = "${runtimeProject}/model"
+//    }
     
     component = DirectoryCleaner {
     	directory = "${runtimeProject}.ui/src-gen"
@@ -44,13 +45,22 @@ Workflow {
     	projectNameUi = "${projectName}.ui"
     	encoding = encoding
     	language = auto-inject {
+    		// switch to xcore
+        	loadedResource = "platform:/resource/org.eclipse.emf.ecore.xcore.lib/model/XcoreLang.xcore"
+			loadedResource = "classpath:/model/Xbase.ecore"
+    		loadedResource = "classpath:/model/Xbase.genmodel"
+    		loadedResource = "classpath:/model/Ecore.ecore"
+			loadedResource = "classpath:/model/Ecore.genmodel"
+        	loadedResource = "platform:/resource/${projectName}/model/Helloxcore.xcore"
+        	
     		uri = grammarURI
     
     		// Java API to access grammar elements (required by several other fragments)
     		fragment = grammarAccess.GrammarAccessFragment auto-inject {}
     
     		// generates Java API for the generated EPackages
-    		fragment = ecore.EMFGeneratorFragment auto-inject {}
+    		// switch to xcore
+    		// fragment = ecore.EMFGeneratorFragment auto-inject {}
     
     		// the old serialization component
     		// fragment = parseTreeConstructor.ParseTreeConstructorFragment auto-inject {}    
