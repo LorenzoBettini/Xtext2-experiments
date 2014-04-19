@@ -9,18 +9,27 @@ package org.xtext.example.helloxcore.helloxcore
 
 import org.eclipse.xtext.xbase.XExpression
 import org.eclipse.xtext.xtype.XImportSection
+import org.eclipse.xtext.common.types.Iterable
 
 class Model {
 	contains XImportSection importSection
 	contains Hello[] hellos
 	contains Greeting[] greetings
+	
+	op Iterable<Element> getElements() {
+		return hellos + greetings
+	}
 }
 
-class Hello {
+interface Element {
+	op String getName()
+}
+
+class Hello extends Element {
 	String name
 }
 
-class Greeting {
+class Greeting extends Element {
 	String name
 	contains XExpression expression
 }

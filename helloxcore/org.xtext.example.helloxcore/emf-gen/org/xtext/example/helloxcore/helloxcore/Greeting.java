@@ -2,8 +2,6 @@
  */
 package org.xtext.example.helloxcore.helloxcore;
 
-import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.xtext.xbase.XExpression;
 
 /**
@@ -23,7 +21,7 @@ import org.eclipse.xtext.xbase.XExpression;
  * @model
  * @generated
  */
-public interface Greeting extends EObject
+public interface Greeting extends Element
 {
   /**
    * Returns the value of the '<em><b>Name</b></em>' attribute.

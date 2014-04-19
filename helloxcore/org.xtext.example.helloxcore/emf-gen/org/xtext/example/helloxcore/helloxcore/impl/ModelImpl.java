@@ -2,6 +2,9 @@
  */
 package org.xtext.example.helloxcore.helloxcore.impl;
 
+import com.google.common.collect.Iterables;
+import java.lang.Iterable;
+import java.lang.reflect.InvocationTargetException;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -20,6 +23,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
 
 import org.eclipse.xtext.xtype.XImportSection;
 
+import org.xtext.example.helloxcore.helloxcore.Element;
 import org.xtext.example.helloxcore.helloxcore.Greeting;
 import org.xtext.example.helloxcore.helloxcore.Hello;
 import org.xtext.example.helloxcore.helloxcore.HelloxcorePackage;
@@ -174,6 +178,18 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
    * <!-- end-user-doc -->
    * @generated
    */
+  public Iterable<Element> getElements()
+  {
+    EList<Hello> _hellos = this.getHellos();
+    EList<Greeting> _greetings = this.getGreetings();
+    return Iterables.<Element>concat(_hellos, _greetings);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
@@ -276,6 +292,22 @@ public class ModelImpl extends MinimalEObjectImpl.Container implements Model
         return greetings != null && !greetings.isEmpty();
     }
     return super.eIsSet(featureID);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException
+  {
+    switch (operationID)
+    {
+      case HelloxcorePackage.MODEL___GET_ELEMENTS:
+        return getElements();
+    }
+    return super.eInvoke(operationID, arguments);
   }
 
 } //ModelImpl

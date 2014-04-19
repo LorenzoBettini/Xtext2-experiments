@@ -2,6 +2,7 @@
  */
 package org.xtext.example.helloxcore.helloxcore;
 
+import java.lang.Iterable;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
@@ -85,5 +86,14 @@ public interface Model extends EObject
    * @generated
    */
   EList<Greeting> getGreetings();
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @model kind="operation" dataType="org.eclipse.xtext.common.types.Iterable<org.xtext.example.helloxcore.helloxcore.Element>" unique="false"
+   *        annotation="http://www.eclipse.org/emf/2002/GenModel body='<%org.eclipse.emf.common.util.EList%><<%org.xtext.example.helloxcore.helloxcore.Hello%>> _hellos = this.getHellos();\n<%org.eclipse.emf.common.util.EList%><<%org.xtext.example.helloxcore.helloxcore.Greeting%>> _greetings = this.getGreetings();\nreturn <%com.google.common.collect.Iterables%>.<<%org.xtext.example.helloxcore.helloxcore.Element%>>concat(_hellos, _greetings);'"
+   * @generated
+   */
+  Iterable<Element> getElements();
 
 } // Model

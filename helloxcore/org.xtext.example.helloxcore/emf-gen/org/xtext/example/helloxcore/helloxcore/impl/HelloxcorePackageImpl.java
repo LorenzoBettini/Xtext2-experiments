@@ -4,16 +4,20 @@ package org.xtext.example.helloxcore.helloxcore.impl;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EGenericType;
+import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EcorePackage;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
+import org.eclipse.xtext.common.types.TypesPackage;
 import org.eclipse.xtext.xbase.XbasePackage;
 
 import org.eclipse.xtext.xtype.XtypePackage;
 
+import org.xtext.example.helloxcore.helloxcore.Element;
 import org.xtext.example.helloxcore.helloxcore.Greeting;
 import org.xtext.example.helloxcore.helloxcore.Hello;
 import org.xtext.example.helloxcore.helloxcore.HelloxcoreFactory;
@@ -34,6 +38,13 @@ public class HelloxcorePackageImpl extends EPackageImpl implements HelloxcorePac
    * @generated
    */
   private EClass modelEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass elementEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -98,9 +109,9 @@ public class HelloxcorePackageImpl extends EPackageImpl implements HelloxcorePac
     isInited = true;
 
     // Initialize simple dependencies
-    XbasePackage.eINSTANCE.eClass();
-    XtypePackage.eINSTANCE.eClass();
     EcorePackage.eINSTANCE.eClass();
+    XtypePackage.eINSTANCE.eClass();
+    XbasePackage.eINSTANCE.eClass();
 
     // Create package meta-data objects
     theHelloxcorePackage.createPackageContents();
@@ -155,6 +166,36 @@ public class HelloxcorePackageImpl extends EPackageImpl implements HelloxcorePac
   public EReference getModel_Greetings()
   {
     return (EReference)modelEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EOperation getModel__GetElements()
+  {
+    return modelEClass.getEOperations().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getElement()
+  {
+    return elementEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EOperation getElement__GetName()
+  {
+    return elementEClass.getEOperations().get(0);
   }
 
   /**
@@ -241,6 +282,10 @@ public class HelloxcorePackageImpl extends EPackageImpl implements HelloxcorePac
     createEReference(modelEClass, MODEL__IMPORT_SECTION);
     createEReference(modelEClass, MODEL__HELLOS);
     createEReference(modelEClass, MODEL__GREETINGS);
+    createEOperation(modelEClass, MODEL___GET_ELEMENTS);
+
+    elementEClass = createEClass(ELEMENT);
+    createEOperation(elementEClass, ELEMENT___GET_NAME);
 
     helloEClass = createEClass(HELLO);
     createEAttribute(helloEClass, HELLO__NAME);
@@ -276,6 +321,7 @@ public class HelloxcorePackageImpl extends EPackageImpl implements HelloxcorePac
 
     // Obtain other dependent packages
     XtypePackage theXtypePackage = (XtypePackage)EPackage.Registry.INSTANCE.getEPackage(XtypePackage.eNS_URI);
+    TypesPackage theTypesPackage = (TypesPackage)EPackage.Registry.INSTANCE.getEPackage(TypesPackage.eNS_URI);
     EcorePackage theEcorePackage = (EcorePackage)EPackage.Registry.INSTANCE.getEPackage(EcorePackage.eNS_URI);
     XbasePackage theXbasePackage = (XbasePackage)EPackage.Registry.INSTANCE.getEPackage(XbasePackage.eNS_URI);
 
@@ -284,12 +330,24 @@ public class HelloxcorePackageImpl extends EPackageImpl implements HelloxcorePac
     // Set bounds for type parameters
 
     // Add supertypes to classes
+    helloEClass.getESuperTypes().add(this.getElement());
+    greetingEClass.getESuperTypes().add(this.getElement());
 
     // Initialize classes, features, and operations; add parameters
     initEClass(modelEClass, Model.class, "Model", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getModel_ImportSection(), theXtypePackage.getXImportSection(), null, "importSection", null, 0, 1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getModel_Hellos(), this.getHello(), null, "hellos", null, 0, -1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getModel_Greetings(), this.getGreeting(), null, "greetings", null, 0, -1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    EOperation op = initEOperation(getModel__GetElements(), null, "getElements", 0, 1, !IS_UNIQUE, IS_ORDERED);
+    EGenericType g1 = createEGenericType(theTypesPackage.getIterable());
+    EGenericType g2 = createEGenericType(this.getElement());
+    g1.getETypeArguments().add(g2);
+    initEOperation(op, g1);
+
+    initEClass(elementEClass, Element.class, "Element", IS_ABSTRACT, IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    initEOperation(getElement__GetName(), theEcorePackage.getEString(), "getName", 0, 1, !IS_UNIQUE, IS_ORDERED);
 
     initEClass(helloEClass, Hello.class, "Hello", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getHello_Name(), theEcorePackage.getEString(), "name", null, 0, 1, Hello.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

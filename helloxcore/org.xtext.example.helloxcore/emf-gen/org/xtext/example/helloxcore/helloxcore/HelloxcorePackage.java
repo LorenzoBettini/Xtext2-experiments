@@ -4,6 +4,7 @@ package org.xtext.example.helloxcore.helloxcore;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -105,13 +106,59 @@ public interface HelloxcorePackage extends EPackage
   int MODEL_FEATURE_COUNT = 3;
 
   /**
+   * The operation id for the '<em>Get Elements</em>' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MODEL___GET_ELEMENTS = 0;
+
+  /**
    * The number of operations of the '<em>Model</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int MODEL_OPERATION_COUNT = 0;
+  int MODEL_OPERATION_COUNT = 1;
+
+  /**
+   * The meta object id for the '{@link org.xtext.example.helloxcore.helloxcore.Element <em>Element</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see org.xtext.example.helloxcore.helloxcore.Element
+   * @see org.xtext.example.helloxcore.helloxcore.impl.HelloxcorePackageImpl#getElement()
+   * @generated
+   */
+  int ELEMENT = 1;
+
+  /**
+   * The number of structural features of the '<em>Element</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ELEMENT_FEATURE_COUNT = 0;
+
+  /**
+   * The operation id for the '<em>Get Name</em>' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ELEMENT___GET_NAME = 0;
+
+  /**
+   * The number of operations of the '<em>Element</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ELEMENT_OPERATION_COUNT = 1;
 
   /**
    * The meta object id for the '{@link org.xtext.example.helloxcore.helloxcore.impl.HelloImpl <em>Hello</em>}' class.
@@ -121,7 +168,7 @@ public interface HelloxcorePackage extends EPackage
    * @see org.xtext.example.helloxcore.helloxcore.impl.HelloxcorePackageImpl#getHello()
    * @generated
    */
-  int HELLO = 1;
+  int HELLO = 2;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -130,7 +177,7 @@ public interface HelloxcorePackage extends EPackage
    * @generated
    * @ordered
    */
-  int HELLO__NAME = 0;
+  int HELLO__NAME = ELEMENT_FEATURE_COUNT + 0;
 
   /**
    * The number of structural features of the '<em>Hello</em>' class.
@@ -139,7 +186,16 @@ public interface HelloxcorePackage extends EPackage
    * @generated
    * @ordered
    */
-  int HELLO_FEATURE_COUNT = 1;
+  int HELLO_FEATURE_COUNT = ELEMENT_FEATURE_COUNT + 1;
+
+  /**
+   * The operation id for the '<em>Get Name</em>' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int HELLO___GET_NAME = ELEMENT___GET_NAME;
 
   /**
    * The number of operations of the '<em>Hello</em>' class.
@@ -148,7 +204,7 @@ public interface HelloxcorePackage extends EPackage
    * @generated
    * @ordered
    */
-  int HELLO_OPERATION_COUNT = 0;
+  int HELLO_OPERATION_COUNT = ELEMENT_OPERATION_COUNT + 0;
 
   /**
    * The meta object id for the '{@link org.xtext.example.helloxcore.helloxcore.impl.GreetingImpl <em>Greeting</em>}' class.
@@ -158,7 +214,7 @@ public interface HelloxcorePackage extends EPackage
    * @see org.xtext.example.helloxcore.helloxcore.impl.HelloxcorePackageImpl#getGreeting()
    * @generated
    */
-  int GREETING = 2;
+  int GREETING = 3;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -167,7 +223,7 @@ public interface HelloxcorePackage extends EPackage
    * @generated
    * @ordered
    */
-  int GREETING__NAME = 0;
+  int GREETING__NAME = ELEMENT_FEATURE_COUNT + 0;
 
   /**
    * The feature id for the '<em><b>Expression</b></em>' containment reference.
@@ -176,7 +232,7 @@ public interface HelloxcorePackage extends EPackage
    * @generated
    * @ordered
    */
-  int GREETING__EXPRESSION = 1;
+  int GREETING__EXPRESSION = ELEMENT_FEATURE_COUNT + 1;
 
   /**
    * The number of structural features of the '<em>Greeting</em>' class.
@@ -185,7 +241,16 @@ public interface HelloxcorePackage extends EPackage
    * @generated
    * @ordered
    */
-  int GREETING_FEATURE_COUNT = 2;
+  int GREETING_FEATURE_COUNT = ELEMENT_FEATURE_COUNT + 2;
+
+  /**
+   * The operation id for the '<em>Get Name</em>' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int GREETING___GET_NAME = ELEMENT___GET_NAME;
 
   /**
    * The number of operations of the '<em>Greeting</em>' class.
@@ -194,7 +259,7 @@ public interface HelloxcorePackage extends EPackage
    * @generated
    * @ordered
    */
-  int GREETING_OPERATION_COUNT = 0;
+  int GREETING_OPERATION_COUNT = ELEMENT_OPERATION_COUNT + 0;
 
 
   /**
@@ -239,6 +304,36 @@ public interface HelloxcorePackage extends EPackage
    * @generated
    */
   EReference getModel_Greetings();
+
+  /**
+   * Returns the meta object for the '{@link org.xtext.example.helloxcore.helloxcore.Model#getElements() <em>Get Elements</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the '<em>Get Elements</em>' operation.
+   * @see org.xtext.example.helloxcore.helloxcore.Model#getElements()
+   * @generated
+   */
+  EOperation getModel__GetElements();
+
+  /**
+   * Returns the meta object for class '{@link org.xtext.example.helloxcore.helloxcore.Element <em>Element</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Element</em>'.
+   * @see org.xtext.example.helloxcore.helloxcore.Element
+   * @generated
+   */
+  EClass getElement();
+
+  /**
+   * Returns the meta object for the '{@link org.xtext.example.helloxcore.helloxcore.Element#getName() <em>Get Name</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the '<em>Get Name</em>' operation.
+   * @see org.xtext.example.helloxcore.helloxcore.Element#getName()
+   * @generated
+   */
+  EOperation getElement__GetName();
 
   /**
    * Returns the meta object for class '{@link org.xtext.example.helloxcore.helloxcore.Hello <em>Hello</em>}'.
@@ -350,6 +445,32 @@ public interface HelloxcorePackage extends EPackage
      * @generated
      */
     EReference MODEL__GREETINGS = eINSTANCE.getModel_Greetings();
+
+    /**
+     * The meta object literal for the '<em><b>Get Elements</b></em>' operation.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EOperation MODEL___GET_ELEMENTS = eINSTANCE.getModel__GetElements();
+
+    /**
+     * The meta object literal for the '{@link org.xtext.example.helloxcore.helloxcore.Element <em>Element</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see org.xtext.example.helloxcore.helloxcore.Element
+     * @see org.xtext.example.helloxcore.helloxcore.impl.HelloxcorePackageImpl#getElement()
+     * @generated
+     */
+    EClass ELEMENT = eINSTANCE.getElement();
+
+    /**
+     * The meta object literal for the '<em><b>Get Name</b></em>' operation.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EOperation ELEMENT___GET_NAME = eINSTANCE.getElement__GetName();
 
     /**
      * The meta object literal for the '{@link org.xtext.example.helloxcore.helloxcore.impl.HelloImpl <em>Hello</em>}' class.

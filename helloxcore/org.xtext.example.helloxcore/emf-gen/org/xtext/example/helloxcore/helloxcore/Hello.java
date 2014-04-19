@@ -2,7 +2,6 @@
  */
 package org.xtext.example.helloxcore.helloxcore;
 
-import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -20,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface Hello extends EObject
+public interface Hello extends Element
 {
   /**
    * Returns the value of the '<em><b>Name</b></em>' attribute.
